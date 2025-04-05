@@ -282,7 +282,7 @@
 
 **Problem Statement 1**
 
-La escasez de recursos hídricos y el uso ineficiente del agua en la agricultura son problemas comunes que enfrentan los agricultores, lo que genera tanto costos elevados como una escasa rentabilidad en sus cultivos. Las técnicas de riego tradicionales no son suficientemente efectivas, y los agricultores tienen poca visibilidad sobre el estado de la humedad del suelo, lo que resulta en un uso excesivo de agua o un riego insuficiente.
+La escasez de recursos hídricos y el uso ineficiente del agua en la agricultura son problemas comunes que enfrentan los agricultores, lo que genera en ocasiones costos elevados como una escasa rentabilidad en sus cultivos. Las técnicas de riego tradicionales no son suficientemente efectivas, y los agricultores tienen poca visibilidad sobre el estado de la humedad del suelo, lo que resulta en un uso excesivo de agua o un riego insuficiente.
 
 <table> 
     <tr> 
@@ -301,8 +301,67 @@ En muchos casos, los agricultores carecen de tecnología que les brinde informac
 El riego automatizado es aún una práctica poco adoptada por los agricultores debido a su costo y complejidad. Muchos agricultores desconocen las tecnologías disponibles y cómo podrían implementarlas de forma rentable en sus cultivos.
 <table> <tr> <td><strong>El producto tiene como objetivo facilitar la implementación de sistemas de riego automatizado accesibles y fáciles de usar.</strong></td> </tr> <tr> <td>Hemos observado que los agricultores desean adoptar soluciones automatizadas de riego, pero a menudo no tienen los conocimientos ni los recursos para hacerlo de manera rentable y sencilla.</td> </tr> <tr> <td>¿Podría HydroSmart ofrecer una solución de riego automatizado fácil de implementar y a un costo accesible para los agricultores?</td> </tr> </table>
 
+Presentación de Otros Supuestos
+<table border="1"> <tr> <td>Considero que los agricultores necesitan una solución que les permita gestionar de manera eficiente el uso del agua y optimizar el riego en sus cultivos, mejorando así la productividad y reduciendo costos. Generaré ingresos a través de la venta de suscripciones mensuales a nuestra plataforma HydroSmart.</td> <td>Estas necesidades se pueden resolver mediante el uso de sensores de humedad del suelo, un sistema de riego automatizado y una plataforma accesible que brinde recomendaciones basadas en datos precisos y en tiempo real.</td> </tr> <tr> <td>Mi competencia principal en el mercado serán otras soluciones tecnológicas para la agricultura como PRISMAB y Netafim Perú.</td> <td>Mis clientes iniciales estarán compuestos por agricultores de pequeña y mediana escala que buscan mejorar la eficiencia del uso del agua en sus cultivos, especialmente en áreas agrícolas de Perú.</td> </tr> <tr> <td>Superaremos los desafíos del sector agrícola mediante una interfaz fácil de usar y asequible que permita a los agricultores de todo nivel tecnológico acceder a un sistema de riego eficiente y con una curva de aprendizaje mínima.</td> <td>El principal valor que un cliente busca en mi servicio es la mejora de la eficiencia en el uso del agua, la reducción de costos operativos y el aumento de la productividad de sus cultivos, adoptando prácticas sostenibles.</td> </tr> <tr> <td>El mayor riesgo para mi producto es la falta de confianza de los agricultores en la tecnología y la resistencia al cambio, ya que muchos están acostumbrados a métodos de riego tradicionales.</td> <td>El cliente podría optar por abandonar el uso de HydroSmart si no ve mejoras significativas en la eficiencia del riego y en la productividad de sus cultivos durante los primeros meses de uso.</td> </tr> <tr> <td>Resolveremos esto mediante una estrategia educativa que incluya tutoriales fáciles de seguir, demostraciones prácticas y casos de éxito que demuestren el valor tangible de nuestra solución. Además, ofreceremos soporte técnico continuo.</td> <td>Voy a adquirir la mayoría de mis clientes a través de campañas de marketing digital dirigidas, demostraciones en ferias agrícolas, y asociaciones con cooperativas agrícolas locales que promuevan la adopción de tecnologías innovadoras.</td> </tr> <tr> <td>Nuestro enfoque principal es ayudar a los agricultores a optimizar el uso del agua y mejorar la eficiencia del riego mediante una solución sencilla, rentable y eficaz, enfocada en el cuidado y la sostenibilidad de los cultivos.</td> </tr> </table>
+ 
+
 #### 1.2.2.2. Lean UX Assumptions
+
+**1. ¿Quién es el usuario?**
+
+El usuario principal de HydroSmart son los agricultores, especialmente aquellos que carecen de experiencia en la implementación de tecnologías avanzadas de riego y gestión de cultivos. Nuestro sistema está dirigido a agricultores de pequeña y mediana escala que buscan optimizar el uso del agua y mejorar la productividad de sus cultivos de manera rentable.
+
+**2. ¿Dónde encaja nuestro producto en su trabajo o vida?**
+
+HydroSmart se integra en la vida diaria del agricultor proporcionando datos en tiempo real sobre la humedad del suelo y controlando el riego de forma automatizada. La plataforma se usa en campo, permitiendo a los agricultores tomar decisiones informadas sobre cuándo y cuánto regar, todo desde su teléfono móvil o dispositivo conectado.
+
+**3. ¿Qué problemas tiene nuestro producto? ¿Resolver?**
+
+Los agricultores enfrentan la falta de tecnologías accesibles y prácticas para gestionar eficientemente el riego y el uso del agua en sus cultivos. El uso ineficiente del agua no solo aumenta los costos operativos, sino que también impacta negativamente en la sostenibilidad de sus cultivos. HydroSmart busca resolver este problema brindando un sistema de riego automatizado basado en datos reales de humedad del suelo.
+
+**4. ¿Cuándo y cómo es nuestro producto? ¿Usado?**
+
+HydroSmart es utilizado principalmente durante las estaciones de crecimiento de los cultivos, cuando el monitoreo del riego es esencial para garantizar la salud de las plantas. Los agricultores lo usarán tanto en sus dispositivos móviles como en estaciones de control de riego en el campo, en tiempo real, para gestionar el riego de manera eficiente.
+
+**5. ¿Qué características son importantes?**
+
+- Sensores de humedad del suelo precisos y de bajo costo.
+- Sistema de riego automatizado, que se activa de acuerdo con los datos recogidos.
+- Interfaz fácil de usar para visualizar el estado de los cultivos y controlar el riego.
+- Alerta de condiciones de riego deficientes o excesivos.
+
+**6. ¿Cómo debe verse nuestro producto y cómo comportarse?**
+
+HydroSmart debe tener una interfaz simple, clara y fácil de usar, ideal para agricultores con poca experiencia tecnológica. La aplicación debe ser intuitiva y rápida, mostrando los datos de manera visual y comprensible. Además, debe ser robusta, segura y capaz de manejar grandes volúmenes de datos sin fallos.
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
+
+**Hypothesis Statement 1**
+
+| Creemos que al proporcionar a los agricultores acceso a datos en tiempo real sobre la humedad del suelo y automatizar el proceso de riego, mejoraremos la eficiencia del uso del agua en los cultivos. |
+| - |
+| Sabremos que esto es cierto… |
+| Cuando se observe una reducción del 20% en el consumo de agua durante los primeros 6 meses de uso en los cultivos de los agricultores que implementen HydroSmart. |
+
+---
+
+**Hypothesis Statement 2**
+
+| Creemos que al ofrecer un sistema de riego automatizado accesible y fácil de usar, aumentaremos la adopción de la tecnología entre los agricultores de pequeña y mediana escala. |
+| - |
+| Sabremos que esto es cierto… |
+| Cuando el 30% de los agricultores que usan HydroSmart durante los primeros 3 meses adopten el sistema de riego automatizado. |
+
+---
+
+**Hypothesis Statement 3**
+
+| Creemos que al permitir a los agricultores tomar decisiones informadas sobre el riego, se aumentará la productividad y rentabilidad de sus cultivos. |
+| - |
+| Sabremos que esto es cierto… |
+| Cuando se observe un incremento del 15% en la productividad de los cultivos de los agricultores que utilicen HydroSmart durante los primeros 6 meses. |
+
+
 #### 1.2.2.4. Lean UX Canvas
 
 ## 1.3. Segmentos objetivo
