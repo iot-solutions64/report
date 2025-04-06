@@ -364,6 +364,8 @@ HydroSmart debe tener una interfaz simple, clara y fácil de usar, ideal para ag
 
 #### 1.2.2.4. Lean UX Canvas
 
+<img src="img/lean-ux-canvas.png" alt="Lean UX Canvas" width="100%" />
+
 ## 1.3. Segmentos objetivo
 
 # Capítulo II: Requirements Elicitation & Analysis
