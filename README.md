@@ -10,7 +10,7 @@
   <p><strong>Sección:</strong> 2942</p>
   <p><strong>Profesor:</strong> León Baca, Marco Antonio</p>
   <p><strong>"Informe de Trabajo Final"</strong></p>
-  <p><strong>Startup:</strong> IOT Solutions</p>
+  <p><strong>Startup:</strong> IoT Solutions</p>
   <p><strong>Producto:</strong> HydroSmart</p>
 </div>
 
@@ -290,11 +290,75 @@ WIP
 
 ### 1.1.1. Descripción de la Startup
 
+Nuestra startup se llama IoT Solutions y se especializa en enfrentar los desafíos del riego agrícola mediante nuestra solución inteligente HydroSmart. Nos enfocamos en optimizar el uso del agua a través de sensores de humedad y sistemas de riego automatizados, facilitando una gestión eficiente y sostenible de los cultivos.
+
+**Misión**: Brindar a los agricultores una herramienta accesible e inteligente para optimizar el uso del agua en sus cultivos, promoviendo una agricultura más sostenible, eficiente y rentable.
+
+**Visión**: Ser líderes en innovación tecnológica para el riego agrícola, contribuyendo al desarrollo sostenible de la agricultura mediante soluciones basadas en IoT.
+
 ### 1.1.2. Perfiles de integrantes del equipo
+
+<table>
+  <tr>
+    <th>
+      Imagen
+    </th>
+    <td valign="top">
+      <p><b>Paredes Puente, Sebastian Roberto</b></p>
+      <p>
+        Descripcion
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <th>
+      Imagen
+    </th>
+    <td valign="top">
+      <p><b>Salinas Torres, Salvador Antonio</b></p>
+      <p>
+        Descripcion
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <th>
+      <img src="img/perfil_piero.jpg" alt="Foto de perfil de Piero" width="800px">
+    </th>
+    <td valign="top">
+      <p><b>Delgado Corrales, Piero Gonzalo</b></p>
+      <p>
+        Soy estudiante del séptimo ciclo de Ingeniería de Software. Tengo conocimientos en diseño web utilizando HTML, CSS. Además, utilizo herramientas como Figma para la creación de prototipos. Asimismo, he aprendido a trabajar con frameworks para frontend (Vue, Angular y React) y backend (Spring Boot, .NET y Django).  
+        Soy una persona responsable y me esfuerzo por mantener una organización óptima para gestionar mi tiempo de forma eficiente.
+      </p>
+    </td>
+  </tr>
+
+</table>
 
 ## 1.2. Solution Profile
 
 ### 1.2.1 Antecedentes y problemática
+
+La gestión ineficiente del agua en el riego agrícola representa un desafío crítico para la sostenibilidad y productividad del sector. Muchos agricultores aún dependen de métodos manuales o tradicionales, lo que genera un uso excesivo o insuficiente del agua, afectando tanto al rendimiento de los cultivos como al medio ambiente.
+
+**5 W's**
+
+**What:** El riego agrícola enfrenta desafíos significativos debido al uso ineficiente del agua, la falta de automatización en los procesos y la limitada capacidad para adaptar los sistemas a condiciones climáticas cambiantes. Esto provoca un manejo inapropiado del recurso hídrico, que impacta negativamente tanto en el rendimiento de los cultivos como en el medio ambiente.
+
+**Where:** La solución se implementará en zonas agrícolas del Perú, especialmente en regiones con alta actividad agrícola y limitaciones hídricas, donde la eficiencia en el riego es crucial para la productividad.
+
+**When:** Actualmente, el cambio climático y la escasez de agua están afectando la producción agrícola. La necesidad de soluciones inteligentes como HydroSmart es urgente para enfrentar estos problemas en el corto y largo plazo.
+
+**Who:** Los principales beneficiarios son los agricultores, quienes podrán automatizar sus procesos de riego, reducir el desperdicio de agua y aumentar la productividad. También se benefician cooperativas y comunidades agrícolas que buscan soluciones sostenibles a gran escala.
+
+**Why:** La ineficiencia en el uso del agua en la agricultura peruana limita la productividad y sostenibilidad del sector, especialmente en zonas con estrés hídrico. Debido a esto, la implementación de sistemas de riego inteligente se vuelve crucial ya que permite optimizar el uso del recurso hídrico, garantizando una distribución adecuada que favorezca el crecimiento de los cultivos sin comprometer los recursos naturales.
+
+**2 H's**
+
+**How:** A través de HydroSmart, se instalarán sensores de humedad en el suelo conectados a un sistema automatizado de riego. El sistema analiza en tiempo real las condiciones del cultivo y activa el riego solo cuando es necesario, asegurando un uso óptimo del recurso hídrico.
+
+**How much:** Según la Escuela de Gestión Pública de la Universidad del Pacífico (2022) el sector agropecuario absorbe la mayor cantidad de fuerza laboral en la economía peruana, representando el 27.5% de la población activa  en 2021. Esta cifra resalta la importancia de abordar los desafíos del sector, como la ineficiencia en el uso del agua, para mejorar la productividad y el bienestar de millones de trabajadores agrícolas.
 
 ### 1.2.2 Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
@@ -305,23 +369,73 @@ La escasez de recursos hídricos y el uso ineficiente del agua en la agricultura
 
 <table> 
     <tr> 
-    <td> <strong>El producto tiene como objetivo optimizar el uso del agua en los cultivos agrícolas.</strong></td> 
-    </tr> <tr> <td>Hemos observado que los agricultores enfrentan grandes dificultades para gestionar el riego de sus cultivos, lo que afecta la eficiencia del uso del agua y su productividad general.</td> </tr> <tr> <td>¿Podría nuestro sistema HydroSmart ayudar a los agricultores a gestionar de manera más eficiente el uso del agua en sus cultivos y mejorar su productividad?</td> </tr> 
+      <td><strong>El producto tiene como objetivo optimizar el uso del agua en los cultivos agrícolas.</strong></td>
+    </tr>
+    <tr>
+      <td>Hemos observado que los agricultores enfrentan grandes dificultades para gestionar el riego de sus cultivos, lo que afecta la eficiencia del uso del agua y su productividad general.</td>
+    </tr>
+    <tr>
+      <td>¿Podría nuestro sistema HydroSmart ayudar a los agricultores a gestionar de manera más eficiente el uso del agua en sus cultivos y mejorar su productividad?</td>
+    </tr> 
 </table>
 
 **Problem Statement 2**
 
 En muchos casos, los agricultores carecen de tecnología que les brinde información precisa y en tiempo real sobre las condiciones de sus cultivos, lo que dificulta la toma de decisiones informadas sobre el riego y el cuidado del suelo.
 
-<table> <tr> <td><strong>El producto tiene como objetivo proporcionar datos en tiempo real sobre la humedad del suelo para optimizar el riego.</strong></td> </tr> <tr> <td>Hemos observado que los agricultores tienen dificultades para obtener datos precisos sobre la humedad del suelo y sus cultivos, lo que lleva a decisiones erróneas en cuanto al riego.</td> </tr> <tr> <td>¿Podría HydroSmart ofrecer datos precisos y fáciles de interpretar para que los agricultores optimicen el riego de manera más eficiente?</td> </tr> </table>
+<table>
+  <tr>
+    <td><strong>El producto tiene como objetivo proporcionar datos en tiempo real sobre la humedad del suelo para optimizar el riego.</strong></td>
+  </tr>
+  <tr>
+    <td>Hemos observado que los agricultores tienen dificultades para obtener datos precisos sobre la humedad del suelo y sus cultivos, lo que lleva a decisiones erróneas en cuanto al riego.</td>
+  </tr>
+  <tr>
+    <td>¿Podría HydroSmart ofrecer datos precisos y fáciles de interpretar para que los agricultores optimicen el riego de manera más eficiente?</td>
+  </tr>
+</table>
 
 **Problem Statement 3**
 
 El riego automatizado es aún una práctica poco adoptada por los agricultores debido a su costo y complejidad. Muchos agricultores desconocen las tecnologías disponibles y cómo podrían implementarlas de forma rentable en sus cultivos.
-<table> <tr> <td><strong>El producto tiene como objetivo facilitar la implementación de sistemas de riego automatizado accesibles y fáciles de usar.</strong></td> </tr> <tr> <td>Hemos observado que los agricultores desean adoptar soluciones automatizadas de riego, pero a menudo no tienen los conocimientos ni los recursos para hacerlo de manera rentable y sencilla.</td> </tr> <tr> <td>¿Podría HydroSmart ofrecer una solución de riego automatizado fácil de implementar y a un costo accesible para los agricultores?</td> </tr> </table>
+<table>
+  <tr>
+    <td><strong>El producto tiene como objetivo facilitar la implementación de sistemas de riego automatizado accesibles y fáciles de usar.</strong></td>
+  </tr>
+  <tr>
+    <td>Hemos observado que los agricultores desean adoptar soluciones automatizadas de riego, pero a menudo no tienen los conocimientos ni los recursos para hacerlo de manera rentable y sencilla.</td>
+    </tr>
+    <tr>
+    <td>¿Podría HydroSmart ofrecer una solución de riego automatizado fácil de implementar y a un costo accesible para los agricultores?</td>
+   </tr>
+</table>
 
 Presentación de Otros Supuestos
-<table border="1"> <tr> <td>Considero que los agricultores necesitan una solución que les permita gestionar de manera eficiente el uso del agua y optimizar el riego en sus cultivos, mejorando así la productividad y reduciendo costos. Generaré ingresos a través de la venta de suscripciones mensuales a nuestra plataforma HydroSmart.</td> <td>Estas necesidades se pueden resolver mediante el uso de sensores de humedad del suelo, un sistema de riego automatizado y una plataforma accesible que brinde recomendaciones basadas en datos precisos y en tiempo real.</td> </tr> <tr> <td>Mi competencia principal en el mercado serán otras soluciones tecnológicas para la agricultura como PRISMAB y Netafim Perú.</td> <td>Mis clientes iniciales estarán compuestos por agricultores de pequeña y mediana escala que buscan mejorar la eficiencia del uso del agua en sus cultivos, especialmente en áreas agrícolas de Perú.</td> </tr> <tr> <td>Superaremos los desafíos del sector agrícola mediante una interfaz fácil de usar y asequible que permita a los agricultores de todo nivel tecnológico acceder a un sistema de riego eficiente y con una curva de aprendizaje mínima.</td> <td>El principal valor que un cliente busca en mi servicio es la mejora de la eficiencia en el uso del agua, la reducción de costos operativos y el aumento de la productividad de sus cultivos, adoptando prácticas sostenibles.</td> </tr> <tr> <td>El mayor riesgo para mi producto es la falta de confianza de los agricultores en la tecnología y la resistencia al cambio, ya que muchos están acostumbrados a métodos de riego tradicionales.</td> <td>El cliente podría optar por abandonar el uso de HydroSmart si no ve mejoras significativas en la eficiencia del riego y en la productividad de sus cultivos durante los primeros meses de uso.</td> </tr> <tr> <td>Resolveremos esto mediante una estrategia educativa que incluya tutoriales fáciles de seguir, demostraciones prácticas y casos de éxito que demuestren el valor tangible de nuestra solución. Además, ofreceremos soporte técnico continuo.</td> <td>Voy a adquirir la mayoría de mis clientes a través de campañas de marketing digital dirigidas, demostraciones en ferias agrícolas, y asociaciones con cooperativas agrícolas locales que promuevan la adopción de tecnologías innovadoras.</td> </tr> <tr> <td>Nuestro enfoque principal es ayudar a los agricultores a optimizar el uso del agua y mejorar la eficiencia del riego mediante una solución sencilla, rentable y eficaz, enfocada en el cuidado y la sostenibilidad de los cultivos.</td> </tr> </table>
+<table border="1">
+  <tr>
+    <td>Considero que los agricultores necesitan una solución que les permita gestionar de manera eficiente el uso del agua y optimizar el riego en sus cultivos, mejorando así la productividad y reduciendo costos. Generaré ingresos a través de la venta de suscripciones mensuales a nuestra plataforma HydroSmart.</td>
+    <td>Estas necesidades se pueden resolver mediante el uso de sensores de humedad del suelo, un sistema de riego automatizado y una plataforma accesible que brinde recomendaciones basadas en datos precisos y en tiempo real.</td>
+  </tr>
+  <tr>
+    <td>Mi competencia principal en el mercado serán otras soluciones tecnológicas para la agricultura como PRISMAB y Netafim Perú.</td>
+    <td>Mis clientes iniciales estarán compuestos por agricultores de pequeña y mediana escala que buscan mejorar la eficiencia del uso del agua en sus cultivos, especialmente en áreas agrícolas de Perú.</td>
+  </tr>
+  <tr>
+    <td>Superaremos los desafíos del sector agrícola mediante una interfaz fácil de usar y asequible que permita a los agricultores de todo nivel tecnológico acceder a un sistema de riego eficiente y con una curva de aprendizaje mínima.</td>
+    <td>El principal valor que un cliente busca en mi servicio es la mejora de la eficiencia en el uso del agua, la reducción de costos operativos y el aumento de la productividad de sus cultivos, adoptando prácticas sostenibles.</td>
+  </tr>
+  <tr>
+    <td>El mayor riesgo para mi producto es la falta de confianza de los agricultores en la tecnología y la resistencia al cambio, ya que muchos están acostumbrados a métodos de riego tradicionales.</td>
+    <td>El cliente podría optar por abandonar el uso de HydroSmart si no ve mejoras significativas en la eficiencia del riego y en la productividad de sus cultivos durante los primeros meses de uso.</td>
+  </tr>
+  <tr>
+    <td>Resolveremos esto mediante una estrategia educativa que incluya tutoriales fáciles de seguir, demostraciones prácticas y casos de éxito que demuestren el valor tangible de nuestra solución. Además, ofreceremos soporte técnico continuo.</td>
+    <td>Voy a adquirir la mayoría de mis clientes a través de campañas de marketing digital dirigidas, demostraciones en ferias agrícolas, y asociaciones con cooperativas agrícolas locales que promuevan la adopción de tecnologías innovadoras.</td>
+  </tr>
+  <tr>
+    <td>Nuestro enfoque principal es ayudar a los agricultores a optimizar el uso del agua y mejorar la eficiencia del riego mediante una solución sencilla, rentable y eficaz, enfocada en el cuidado y la sostenibilidad de los cultivos.</td>
+  </tr>
+</table>
  
 
 #### 1.2.2.2. Lean UX Assumptions
@@ -387,6 +501,17 @@ HydroSmart debe tener una interfaz simple, clara y fácil de usar, ideal para ag
 
 ## 1.3. Segmentos objetivo
 
+**Agricultores**
+Los agricultores en Perú enfrentan desafíos en la gestión del agua para el riego debido a la falta de tecnologías adecuadas y prácticas sostenibles, lo que afecta la productividad y rentabilidad. HydroSmart les ofrecerá una solución para optimizar su uso del agua promoviendo una agricultura más eficiente y sostenible.
+
+|**Segmento objetivo**|Agricultores|
+| :- | :- |
+|**Edad**|25-55 años|
+|**Ubicación**|Perú|
+|**Sexo**|Masculino y Femenino|
+|**Formación educativa**|Primaria, Secundaria o Técnico|
+|**Poder adquisitivo**|Bajo y medio|
+
 # Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores
@@ -416,6 +541,25 @@ HydroSmart debe tener una interfaz simple, clara y fácil de usar, ideal para ag
 ### 2.3.5. As-is Scenario Mapping
 
 ## 2.4. Ubiquitous Language
+
+### 2.4 Ubiquitous Language
+
+| **Término (en inglés)**    | **Término (en español)**       | **Definición** |
+|----------------------------|--------------------------------|----------------|
+| **Farmer**                 | Agricultor                     | Persona que se dedica al cultivo de la tierra y al manejo de cultivos agrícolas. |
+| **Irrigation**             | Riego                          | Proceso de aplicar agua a los cultivos de manera controlada para asegurar su crecimiento. |
+| **Smart irrigation system**| Sistema de riego inteligente   | Tecnología que permite automatizar y optimizar el uso del agua en el riego agrícola, considerando factores climáticos y del suelo. |
+| **Water efficiency**       | Eficiencia del agua            | Grado en que el uso del agua logra el máximo beneficio con el menor desperdicio posible. |
+| **Crop yield**             | Rendimiento de cultivo         | Cantidad de producto agrícola cosechado por unidad de área sembrada. |
+| **Water scarcity**         | Escasez de agua                | Situación en la que la disponibilidad de agua es insuficiente para satisfacer las demandas agrícolas y otras necesidades. |
+| **Sustainable agriculture**| Agricultura sostenible         | Práctica agrícola que busca equilibrar la producción de alimentos con el cuidado del medio ambiente y los recursos naturales. |
+| **Weather data**           | Datos climáticos               | Información relacionada al clima (temperatura, humedad, lluvia, etc.) usada para tomar decisiones en el riego. |
+| **Soil moisture**          | Humedad del suelo              | Cantidad de agua presente en el suelo, relevante para determinar la necesidad de riego. |
+| **Field**                  | Campo                          | Terreno destinado al cultivo de productos agrícolas. |
+| **Agricultural productivity**| Productividad agrícola      | Relación entre la producción obtenida y los recursos utilizados en la actividad agrícola. |
+| **Irrigation scheduling**  | Programación de riego          | Planificación del momento y duración del riego según las necesidades del cultivo y condiciones ambientales. |
+| **Climate change**         | Cambio climático               | Alteraciones significativas y duraderas en los patrones del clima, que afectan la disponibilidad de agua y la producción agrícola. |
+
 
 # Capítulo III: Requirements Specification
 
@@ -558,5 +702,7 @@ HydroSmart debe tener una interfaz simple, clara y fácil de usar, ideal para ag
 # Video About-the-Team
 
 # Bibliografía
+
+Escuela de Gestión Pública de la Universidad del Pacífico. (2022). Informe de evidencia: Sector agropecuario en el Perú. *Universidad del Pacífico*. https://www.up.edu.pe/egp/programas-especializacion_copy%281%29/SiteAssets/Lists/Observatorio/AllItems/Informe%20de%20Evidencia%20sector%20Agropecuario%20-%20EGP.pdf
 
 # Anexos
