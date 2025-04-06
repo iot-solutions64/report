@@ -5,12 +5,12 @@
 <div align="center">
   <h1>Universidad Peruana de Ciencias Aplicadas</h1>
   <p><strong>Carrera:</strong> Ingeniería de Software</p>
-  <p><strong>Ciclo:</strong> 2025 - 1</p>
-  <p><strong>Curso:</strong> Desarrollo de Soluciones IOT</p>
-  <p><strong>Sección:</strong> 1ASI0572</p>
+  <p><strong>Ciclo:</strong> 2025 - 10</p>
+  <p><strong>Curso:</strong> Desarrollo de Soluciones IOT (1ASI0572)</p>
+  <p><strong>Sección:</strong> 2942</p>
   <p><strong>Profesor:</strong> León Baca, Marco Antonio</p>
   <p><strong>"Informe de Trabajo Final"</strong></p>
-  <p><strong>Startup:</strong> IOT-Solutions</p>
+  <p><strong>Startup:</strong> IOT Solutions</p>
   <p><strong>Producto:</strong> HydroSmart</p>
 </div>
 
@@ -32,11 +32,11 @@
     <td>U20221B127</td>
   </tr>
     <tr>
-    <td>ALUMNO X</td>
+    <td>Neyra Santa Cruz, Marcelo Sebastian</td>
     <td>codigo</td>
   </tr>
     <tr>
-    <td>ALUMNO X</td>
+    <td>Soto Salis, Natanael David</td>
     <td>codigo</td>
   </tr>
 </table>
@@ -64,8 +64,8 @@
           <li>Paredes Puente, Sebastian Roberto</li>
           <li>Delgado Corrales, Piero Gonzalo</li>
           <li>Salinas Torres, Salvador Antonio</li>
-          <li>ALUMNO X</li>
-          <li>ALUMNO X</li>
+          <li>Neyra Santa Cruz, Marcelo Sebastian</li>
+          <li>Soto Salis, Natanael David</li>
         </ul>
       </td>
       <td>
@@ -143,6 +143,9 @@
   </tbody>
 </table>
 
+# Project Report Collaboration Insights
+
+WIP
 
 # Tabla de Contenidos
 
@@ -261,9 +264,25 @@
 
 **Criterio:** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
 
-
-
-
+<table>
+  <thead>
+    <tr>
+      <th><strong>Criterio específico</strong></th>
+      <th><strong>Acciones realizadas</strong></th>
+      <th><strong>Conclusiones</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>criterio 1 (WIP)</td>
+      <td>
+        <p><strong>Paredes Puente, Sebastian Roberto</strong></p>
+        <p>Acciones</p>
+      </td>
+      <td>Conclusiones generales</td>
+    </tr>
+  </tbody>
+</table>
 
 # Capítulo 1: Presentación
 
