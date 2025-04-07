@@ -518,7 +518,174 @@ Los agricultores en Perú enfrentan desafíos en la gestión del agua para el ri
 
 ### 2.1.1. Análisis competitivo
 
+
+<table>
+   <tr>
+      <th colspan="6" valign="top"><b>Competitive Analysis Landscape</b></th>
+   </tr>
+   <tr>
+      <td rowspan="2" valign="top">¿Por qué llevar a cabo este análisis? </td>
+     <td colspan="5" valign="top">
+      <ul>
+        <li>Objetivo 1: Obtener información sobre las ofertas de nuestros competidores y aprender de las áreas en las que tienen limitaciones.</li>
+        <li>Objetivo 2: Reconocer las fortalezas y debilidades de nuestros competidores para desarrollar una estrategia competitiva robusta y eficaz.</li>
+      </ul>
+     </td>
+   </tr>
+   <tr></tr>
+   <tr>
+      <td colspan="2" valign="top">(En la cabecera colocar por cada competidor nombre y logo)</td>
+      <td valign="top">
+         <p>HydroSmart</p>
+         <p><img src="img/hydrosmart-logo.png" alt="Logo de HydroSmart" width="150" /></p>
+      </td>
+      <td valign="top">
+         <p>CropX</p>
+         <p><img src="img/cropx-logo.png" alt="Logo de CropX" width="150" /></p>
+      </td>
+      <td valign="top">
+         <p>AgriWebb</p>
+         <p><img src="img/agriwebb-logo.png" alt="Logo de AgriWebb" width="150" /></p>
+      </td>
+      <td valign="top">
+         <p>DigiFarmz</p>
+         <p><img src="img/digifarmz-logo.png" alt="Logo de DigiFarmz" width="150" /></p>
+      </td>
+   </tr>
+   <tr>
+      <td rowspan="2">Perfil</td>
+      <td valign="top">Overview</td>
+      <td valign="top"><b>HydroSmart</b> es una solución que tiene como propósito optimizar el uso de agua en el riego de los cultivos utilizando sistemas de riego y sensores de humedad eficaces.</td>
+      <td valign="top"><b>CropX</b> es un sistema de gestión agrícola que recopila y analiza datos para ayudar a los agricultores a administrar sus cultivos.</td>
+      <td valign="top"><b>AgriWebb</b> es una plataforma que ofrece una solución integral para ayudar a los agricultores a registrar datos de forma segura para decisiones agrícolas y fines de auditoría.</td>
+      <td valign="top"><b>DigiFarmz</b> es una plataforma que viene a ayudar en los trabajos de técnicos y productores para maximizar los rendimientos, con el manejo eficiente de las enfermedades en el cultivo de soja.</td>
+   </tr>
+   <tr>
+      <td valign="top">
+         <p>Ventaja competitiva</p>
+         <p>¿Qué valor ofrece a los clientes?</p>
+      </td>
+      <td valign="top">Integración simple y económica para pequeños agricultores.</td>
+      <td valign="top">Análisis avanzado del suelo y recomendaciones</td>
+      <td valign="top">Fuerte enfoque en la trazabilidad y la capacidad de capturar datos en tiempo real</td>
+      <td valign="top">Recomendaciones agronómicas en tiempo real</td>
+   </tr>
+   <tr>
+      <td rowspan="2">Perfil de Marketing</td>
+      <td valign="top">Mercado objetivo</td>
+      <td valign="top">Pequeños y medianos agricultores en Perú</td>
+      <td valign="top">Productores medianos y grandes a nivel global</td>
+      <td valign="top">Productores agropecuarios, sobre todo en Australia</td>
+      <td valign="top">Agricultores en Latinoamérica, especialmente Brasil</td>
+   </tr>
+   <tr>
+      <td valign="top">Estrategias de marketing</td>
+      <td valign="top">Marketing digital, colaboraciones con asociaciones agrícolas</td>
+      <td valign="top">Presencia global, partners agrícolas</td>
+      <td valign="top">Promoción digital y alianzas con universidades</td>
+      <td valign="top">Redes sociales, asociaciones con institutos técnicos</td>
+   </tr>
+   <tr>
+      <td rowspan="3">Perfil de Producto</td>
+      <td valign="top">Productos & Servicios</td>
+      <td valign="top">Sensores de humedad, control de riego inteligente, y aplicación web/móvil para tener control sobre estos.</td>
+      <td valign="top">Sensores, dashboard en la nube, app móvil</td>
+      <td valign="top">App de gestión, integración de datos y sensores</td>
+      <td valign="top">Recomendaciones de cultivo con base en clima y suelo</td>
+   </tr>
+   <tr>
+      <td valign="top">Precios & Costos</td>
+      <td valign="top">Bajo costo, modelo SaaS mensual</td>
+      <td valign="top">Planes de suscripción, precios altos</td>
+      <td valign="top">Suscripción mensual, depende del tamaño de la finca</td>
+      <td valign="top">Freemium + suscripción mensual accesible</td>
+   </tr>
+   <tr>
+      <td valign="top">Canales de distribución (Web y/o Móvil)</td>
+      <td valign="top">App móvil y app web</td>
+      <td valign="top">Web y app, integración con ERPs</td>
+      <td valign="top">Web, app móvil y plataforma online</td>
+      <td valign="top">Web, app móvil, redes sociales</td>
+   </tr>
+   <tr>
+      <td rowspan="5">Análisis SWOT</td>
+      <td colspan="5" valign="top">Realice esto para su startup y sus competidores. Sus fortalezas deberían apoyar sus oportunidades y contribuir a lo que ustedes definen como su posible ventaja competitiva. </td>
+   </tr>
+   <tr>
+      <td valign="top">
+         <p>Fortalezas</p>
+         <p></p>
+      </td>
+      <td valign="top">
+        Simple, accesible, centrado en usuarios rurales
+      </td>
+      <td valign="top">
+        Precisión científica, soporte global
+      </td>
+      <td valign="top">
+        Completa gestión de finca con enfoque práctico
+      </td>
+      <td valign="top">
+        Rápida adaptación a condiciones regionales
+      </td>
+   </tr>
+   <tr>
+      <td valign="top">Debilidades</td>
+      <td valign="top">
+        Menor madurez tecnológica, recién ingresando al mercado
+      </td>
+      <td valign="top">
+        Costoso, complejo de implementar
+      </td>
+      <td valign="top">
+        Costoso para pequeñas fincas, poca especialización en agricultura no ganadera
+      </td>
+      <td valign="top">
+        Está muy limitado fuera de Brasil
+      </td>
+   </tr>
+   <tr>
+      <td valign="top">Oportunidades</td>
+      <td valign="top">
+        Alta demanda de soluciones accesibles y simples
+      </td>
+      <td valign="top">
+        Expansión a mercados emergentes
+      </td>
+      <td valign="top">
+        Adaptación a otros cultivos y regiones
+      </td>
+      <td valign="top">
+        Escalar hacia otros países de LatAm
+      </td>
+   </tr>
+   <tr>
+      <td valign="top">Amenazas</td>
+      <td valign="top">
+        Competencia de plataformas más establecidas o especializadas en áreas específicas
+      </td>
+      <td valign="top">
+        Competencia de startups más ágiles
+      </td>
+      <td valign="top">
+        Cambios en regulaciones o tecnologías
+      </td>
+      <td valign="top">
+        Competidores con mayor inversión y tecnologías más avanzadas
+      </td>
+   </tr>
+</table>
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
+
+**Experiencia personalizada de soporte:** Ofrecer soporte por videollamada o visitas puntuales de técnicos aliados para ayudar en la instalación inicial. Esta táctica genera confianza, fideliza al cliente desde el inicio y reduce errores en el uso del sistema.
+
+**Penetración de mercado en zonas rurales:** Promocionar el producto en radios rurales, ferias agrícolas locales y visitas técnicas, aprovechando medios accesibles para el público objetivo. De esta forma, también se puede generar confianza y credibilidad en la comunidad agrícola.
+
+**Expansión de la Red de Colaboradores:** Formar alianzas con universidades y centros de investigación agrícola para desarrollar nuevos conocimientos y tecnologías. Estas colaboraciones permitirán el acceso a investigaciones avanzadas y tecnologías emergentes, lo que puede enriquecer la oferta de HydroSmart y fomentar la innovación.
+
+**Mejora continua:** Siempre tener en cuenta las opiniones de los usuarios, y así obtener feedback, sugerencias y casos de éxito para alimentar el desarrollo del producto. Por otro lado, se puede analizar mensualmente las funcionalidades de los competidores y priorizar mejoras clave en base a lo que el usuario realmente valora.
+
 
 ## 2.2. Entrevistas
 
