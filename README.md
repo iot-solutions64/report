@@ -312,12 +312,12 @@ Nuestra startup se llama IoT Solutions y se especializa en enfrentar los desafí
   </tr>
   <tr>
     <th>
-      Imagen
+      <img src="img/perfil_salvador.jpg" alt="Foto de perfil de Salvador" width="800px">
     </th>
     <td valign="top">
       <p><b>Salinas Torres, Salvador Antonio</b></p>
       <p>
-        Descripcion
+        Soy Salvador y actualmente curso el séptimo ciclo de la carrera de Ingeniería de Software. Poseo conocimientos en: programación orientada a objetos en C++, Python, C# y Java; desarrollo de Frontend Web con frameworks de Angular y Vue; desarrollo de backend con frameworks de Spring Boot y .NET; desarrollo móvil con Kotlin y Dart; gestión de base de datos en SQL Server, MySQL y SQLite. Considero que soy una persona responsable y siempre organizo el tiempo para hacerlos tranquilamente antes de la fecha de entrega.
       </p>
     </td>
   </tr>
