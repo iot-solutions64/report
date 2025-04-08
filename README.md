@@ -20,24 +20,24 @@
     <th>Código</th>
   </tr>
   <tr>
+    <td>Delgado Corrales, Piero Gonzalo</td>
+    <td>U202210749</td>
+  </tr>
+  <tr>
+    <td>Neyra Santa Cruz, Marcelo Sebastian</td>
+    <td>U202217241</td>
+  </tr>
+  <tr>
     <td>Paredes Puente, Sebastián Roberto</td>
     <td>U202217239</td>
   </tr>
   <tr>
-    <td>Delgado Corrales, Piero Gonzalo</td>
-    <td>U202210749</td>
-  </tr> 
-  <tr>
     <td>Salinas Torres, Salvador Antonio</td>
     <td>U20221B127</td>
   </tr>
-    <tr>
-    <td>Neyra Santa Cruz, Marcelo Sebastian</td>
-    <td>codigo</td>
-  </tr>
-    <tr>
+  <tr>
     <td>Soto Salis, Natanael David</td>
-    <td>codigo</td>
+    <td>U20201C607</td>
   </tr>
 </table>
 
@@ -58,8 +58,8 @@
   <tbody>
   <tr>
       <td><strong>TB1</strong></td>
-      <td>--/--/--</td>
-      <td>
+      <td>08/04/2025</td>
+      <td> <!--Agregar rowspan="num de entregas" en el futuro-->
         <ul>
           <li>Paredes Puente, Sebastian Roberto</li>
           <li>Delgado Corrales, Piero Gonzalo</li>
@@ -69,14 +69,16 @@
         </ul>
       </td>
       <td>
-        DESCRIPCION X
+        Se han agregado los siguientes capítulos
         <ul>
-          <li>X</li>
-          <li>X</li>
-          <li>X</li>
+          <li>Capítulo 1</li>
+          <li>Capítulo 2</li>
+          <li>Capítulo 3</li>
+          <li>Capítulo 4</li>
         </ul>
       </td>
   </tr>
+  <!--
   <tr>
       <td><strong>TP1</strong></td>
       <td>--/--/--</td>
@@ -140,18 +142,20 @@
         </ul>
       </td>
   </tr>
+  -->
   </tbody>
 </table>
 
 # Project Report Collaboration Insights
 
-WIP
+### TB1
+TBD
 
 # Tabla de Contenidos
 
-[Registro de Versiones](#registro-de-versiones)  
-[Student Outcome](#student-outcome)  
-[Capítulo I: Introducción](#capítulo-i-introducción)  
+### [Registro de Versiones](#registro-de-versiones)  
+### [Student Outcome](#student-outcome)  
+### [Capítulo I: Introducción](#capítulo-i-introducción)  
 - [1.1. Startup Profile](#11-startup-profile)  
   - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)  
   - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)  
@@ -163,8 +167,7 @@ WIP
     - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)  
     - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)  
 - [1.3. Segmentos objetivo](#13-segmentos-objetivo)  
-
-[Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)  
+### [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)  
 - [2.1. Competidores](#21-competidores)  
   - [2.1.1. Análisis competitivo](#211-análisis-competitivo)  
   - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)  
@@ -179,14 +182,13 @@ WIP
   - [2.3.4. Empathy Mapping](#234-empathy-mapping)  
   - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)  
 - [2.4. Ubiquitous Language](#24-ubiquitous-language)  
-
-[Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)  
+### [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)  
 - [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)  
 - [3.2. User Stories](#32-user-stories)  
 - [3.3. Impact Mapping](#33-impact-mapping)  
 - [3.4. Product Backlog](#34-product-backlog)  
 
-[Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)  
+### [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)  
 - [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)  
   - [4.1.1. EventStorming](#411-eventstorming)  
     - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)  
@@ -209,7 +211,7 @@ WIP
       - [4.2.X.6.1. Domain Layer Class Diagrams](#42x61-domain-layer-class-diagrams)  
       - [4.2.X.6.2. Database Design Diagram](#42x62-database-design-diagram)  
 
-[Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)  
+### [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)  
 - [5.1. Style Guidelines](#51-style-guidelines)  
   - [5.1.1. General Style Guidelines](#511-general-style-guidelines)  
   - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)  
@@ -229,7 +231,7 @@ WIP
   - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)  
 - [5.5. Applications Prototyping](#55-applications-prototyping)  
 
-[Capítulo VI: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)  
+### [Capítulo VI: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)  
 - [6.1. Software Configuration Management](#61-software-configuration-management)  
   - [6.1.1. Development Environment Configuration](#611-development-environment-configuration)  
   - [6.1.2. Source Code Management](#612-source-code-management)  
@@ -252,17 +254,14 @@ WIP
   - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)  
 - [6.4. Video About-the-Product](#64-video-about-the-product)  
 
-[Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)  
-[Video About-the-Team](#video-about-the-team)  
-[Bibliografía](#bibliografía)  
-[Anexos](#anexos)
+### [7. Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)  
+### [8. Video About-the-Team](#video-about-the-team)  
+### [9. Bibliografía](#bibliografía)  
+### [10. Anexos](#anexos)
 
 
 # Student Outcome
-
-**ABET – EAC - Student Outcome 5**
-
-**Criterio:** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
+> **ABET – EAC - Student Outcome 5** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
 
 <table>
   <thead>
@@ -299,41 +298,62 @@ Nuestra startup se llama IoT Solutions y se especializa en enfrentar los desafí
 ### 1.1.2. Perfiles de integrantes del equipo
 
 <table>
+  <th colspan="2">Delgado Corrales, Piero Gonzalo</th>
   <tr>
-    <th>
-      Imagen
-    </th>
-    <td valign="top">
-      <p><b>Paredes Puente, Sebastian Roberto</b></p>
-      <p>
-        Descripcion
-      </p>
+    <td>
+    <img src="img/perfil_piero.jpg" alt="Foto de perfil de Piero" width="800px">
     </td>
-  </tr>
-  <tr>
-    <th>
-      <img src="img/perfil_salvador.jpg" alt="Foto de perfil de Salvador" width="800px">
-    </th>
-    <td valign="top">
-      <p><b>Salinas Torres, Salvador Antonio</b></p>
-      <p>
-        Soy Salvador y actualmente curso el séptimo ciclo de la carrera de Ingeniería de Software. Poseo conocimientos en: programación orientada a objetos en C++, Python, C# y Java; desarrollo de Frontend Web con frameworks de Angular y Vue; desarrollo de backend con frameworks de Spring Boot y .NET; desarrollo móvil con Kotlin y Dart; gestión de base de datos en SQL Server, MySQL y SQLite. Considero que soy una persona responsable y siempre organizo el tiempo para hacerlos tranquilamente antes de la fecha de entrega.
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <th>
-      <img src="img/perfil_piero.jpg" alt="Foto de perfil de Piero" width="800px">
-    </th>
-    <td valign="top">
-      <p><b>Delgado Corrales, Piero Gonzalo</b></p>
+    <td>
       <p>
         Soy estudiante del séptimo ciclo de Ingeniería de Software. Tengo conocimientos en diseño web utilizando HTML, CSS. Además, utilizo herramientas como Figma para la creación de prototipos. Asimismo, he aprendido a trabajar con frameworks para frontend (Vue, Angular y React) y backend (Spring Boot, .NET y Django).  
         Soy una persona responsable y me esfuerzo por mantener una organización óptima para gestionar mi tiempo de forma eficiente.
       </p>
     </td>
   </tr>
-
+  <th colspan="2">Neyra Santa Cruz, Marcelo Sebastian</th>
+  <tr>
+    <td>
+    <img src="img/perfil_marcelo.jpg" alt="Foto de perfil de Marcelo" width="800px">
+    </td>
+    <td>
+      <p>
+        Descripción básica que agregaré más tarde
+      </p>
+    </td>
+  </tr>
+  <th colspan="2">Salinas Torres, Salvador Antonio</th>
+  <tr>
+    <td>
+    <img src="img/perfil_salvador.jpg" alt="Foto de perfil de Salvador" width="800px">
+    </td>
+    <td>
+      <p>
+        Soy Salvador y actualmente curso el séptimo ciclo de la carrera de Ingeniería de Software. Poseo conocimientos en: programación orientada a objetos en C++, Python, C# y Java; desarrollo de Frontend Web con frameworks de Angular y Vue; desarrollo de backend con frameworks de Spring Boot y .NET; desarrollo móvil con Kotlin y Dart; gestión de base de datos en SQL Server, MySQL y SQLite. Considero que soy una persona responsable y siempre organizo el tiempo para hacerlos tranquilamente antes de la fecha de entrega.
+      </p>
+    </td>
+  </tr>
+  <th colspan="2">Paredes Puente, Sebastian Roberto</th>
+  <tr>
+    <td>
+    <img src="img/perfil_sebastian.jpg" alt="Foto de perfil de Sebastian" width="800px">
+    </td>
+    <td>
+      <p>
+        Descripción básica de Sebastian
+      </p>
+    </td>
+  </tr>
+  <th colspan="2">Soto Salis, Natanael David</th>
+  <tr>
+    <td>
+    <img src="img/perfil_natanael.jpg" alt="Foto de perfil de Natanael" width="800px">
+    </td>
+    <td>
+      <p>
+        Descripción básica de Natanael
+      </p>
+    </td>
+  </tr>
 </table>
 
 ## 1.2. Solution Profile
