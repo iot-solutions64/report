@@ -289,8 +289,10 @@ TBD
 
 ### 1.1.1. Descripción de la Startup
 
+Somos el grupo IOT Solutions, una startup especializada en enfrentar los desafíos del riego agrícola. Para ello, el equipo ha desarrollado la aplicación **HydroSmart** con la tecnología de Internet de las Cosas. Con la aplicación, los usuarios podrán optimizar el uso del agua a través de sensores de humedad y sistemas de riego automatizados, facilitando así la gestión eficiente y sostenible de sus cultivos.
+<!-- Cambiar a este si no les gusta el cambio. Borrar, de lo contrario
 Nuestra startup se llama IoT Solutions y se especializa en enfrentar los desafíos del riego agrícola mediante nuestra solución inteligente HydroSmart. Nos enfocamos en optimizar el uso del agua a través de sensores de humedad y sistemas de riego automatizados, facilitando una gestión eficiente y sostenible de los cultivos.
-
+-->
 **Misión**: Brindar a los agricultores una herramienta accesible e inteligente para optimizar el uso del agua en sus cultivos, promoviendo una agricultura más sostenible, eficiente y rentable.
 
 **Visión**: Ser líderes en innovación tecnológica para el riego agrícola, contribuyendo al desarrollo sostenible de la agricultura mediante soluciones basadas en IoT.
@@ -317,7 +319,7 @@ Nuestra startup se llama IoT Solutions y se especializa en enfrentar los desafí
     </td>
     <td>
       <p>
-        Descripción básica que agregaré más tarde
+        Mi nombre es Marcelo Sebastian Neyra Santa Cruz, Actualmente estudio la carrera de ingeniería de software en la  UPC. Entre mis habilidades, podemos destacar el buen uso de tecnologías web y móviles. Me considero como una persona perseverante, trabajadora y amable.
       </p>
     </td>
   </tr>
