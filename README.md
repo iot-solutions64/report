@@ -716,7 +716,7 @@ Las entrevistas representan una estrategia de investigación que implica el inte
   6. ¿Cree que gasta más agua de la que realmente necesita para regar sus cultivos?
   7. ¿Le parece que regar los cultivos es una tarea pesada o cansada? ¿Por qué?
   8. ¿Cree que la calidad del agua que usa para regar afecta a sus cultivos? ¿Por qué?
-  9. Si existiera una aplicación que le avise cuándo regar y controle el sistema de riego por usted, ¿estaría dispuesto a probarla?
+  9. Si existiera una aplicación que controle el sistema de riego por usted y le avise cuando se esté regando los cultivos, ¿estaría dispuesto a probarla?
   10. ¿Ha tenido problemas con el riego en épocas de cambio climático o sequías recientes?
 ### 2.2.3. Análisis de entrevistas
 
