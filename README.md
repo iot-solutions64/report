@@ -875,8 +875,8 @@ Segmento objetivo: Agricultor
   </tr>
   <!--Epic 1-->
   <tr>
-    <th rowspan="8"> EP01 </th>
-    <th rowspan="8"> Landing Page </th>
+    <th rowspan="7"> EP01 </th>
+    <th rowspan="7"> Landing Page </th>
     <td> US01 </td>
     <td> Implementación de Barra de navegación </td>
   </tr>
@@ -903,10 +903,6 @@ Segmento objetivo: Agricultor
   <tr>
     <td> US07 </td>
     <td> Traslación a la aplicación web </td>
-  </tr>
-  <tr>
-    <td> TS-US07 </td>
-    <td> Traslado a un entorno diferente </td>
   </tr>
   <!--Epic 2-->
   <tr>
@@ -1063,6 +1059,164 @@ Segmento objetivo: Agricultor
     <th> Descripción </th>
     <th> Criterios de Aceptación </th>
     <th> Relacionado con (Epic ID) </th>
+  </tr>
+  <tr>
+    <td colspan="5">
+      <h5 style="text-align: center">EPIC 1: LANDING PAGE</h5>
+      <p>
+        Como visitante, quiero contar con una landing page para visualizar todas las funcionalidades que tiene la aplicación móvil que ofrece la empresa
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP01 / US01</th>
+    <th>US01</th>
+    <th>Implementación de Barra de navegación</th>
+    <td>
+      <p> Como visitante </p>
+      <p> Quiero tener la opción de atravesar todas las secciones de la landing page a través de una barra de navegación </p>
+      <p> Para facilitar el acceso a la información </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Traslado de una sección a otra</h5>
+        <p> Dado que el usuario se encuentra en la landing page </p>
+        <p> Cuando el usuario seleccione una de las secciones de la barra de navegación </p>
+        <p> Entonces se trasladará a la sección seleccionada </p>
+      <h5>Escenario 2: Selección de la misma sección de la landing page</h5>
+        <p> Dado que el usuario se encuentra en una sección específica de la landing page </p>
+        <p> Cuando el usuario seleccione la misma sección en la barra de navegación </p>
+        <p> Entonces la pantalla no se moverá a otra sección diferente </p>
+    </td>
+    <td>EP01</td>
+    </tr>
+  <tr>
+    <th>EP01 / US02</th>
+    <th> US02 </th>
+    <th> Logo y Descripción de la empresa </th>
+    <td>
+      <p> Como visitante </p>
+      <p> Quiero visualizar el logo y descripción de la empresa </p>
+      <p> Para verificar que estoy en la landing page oficial de la empresa </p>
+    </td>
+    <td>
+      <h5> Escenario 1: Visualización del Logo </h5>
+        <p> Dado que el usuario se encuentra en la landing page </p>
+        <p> Cuando el usuario seleccione “Inicio” en la barra de navegación </p>
+        <p> Entonces se trasladará al usuario a la sección del logo y descripción de la empresa </p>
+      <h5>Escenario 2: El logo no aparece</h5>
+        <p> Dado que el usuario se encuentra en una sección específica de la landing page </p>
+        <p> Cuando el usuario seleccione “Inicio” en la barra de navegación </p>
+        <p> Y el logo de la empresa no haya cargado </p>
+        <p> Entonces se trasladará al usuario a la sección del logo y descripción de la empresa </p>
+        <p> Y aparecerá solo la descripción </p>
+    </td>
+    <td>EP01</td>
+  </tr>
+  <tr>
+    <th>EP01 / US03</th>
+    <th>US03</th>
+    <th>Detalles y Servicios de la empresa</th>
+    <td>
+      <p> Como visitante </p>
+      <p> Quiero visualizar los detalles y servicios de la empresa </p>
+      <p> Para conocer de qué manera se puede utilizar la aplicación </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Traslado a la sección servicios</h5>
+        <p> Dado que el usuario se encuentra en la landing page </p>
+        <p> Cuando el usuario seleccione “Servicios” en la barra de navegación </p>
+        <p> Entonces se trasladará al usuario a la sección de detalles de servicios </p>
+      <h5>Escenario 2: El usuario ya se encuentra en la sección servicios</h5>
+        <p> Dado que el usuario se encuentra en la sección “servicios” </p>
+        <p> Cuando el usuario seleccione “Servicios” en la barra de navegación </p>
+        <p> Entonces el sistema mantendrá al usuario en la sección seleccionada </p>
+    </td>
+    <td>EP01</td>
+  </tr>
+  <tr>
+    <th>EP01 / US04</th>
+    <th>US04</th>
+    <th>Clientes de la empresa</th>
+    <td>
+      <p> Como visitante </p>
+      <p> Quiero visualizar las experiencias de clientes previos de la empresa </p>
+      <p> Para es que la vida de los usuarios cambió al utilizar la aplicación </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Traslado a la sección clientes</h5>
+        <p> Dado que el usuario se encuentra en la landing page </p>
+        <p> Cuando el usuario seleccione “Clientes” en la barra de navegación </p>
+        <p> Entonces se trasladará al usuario a la sección de experiencia de clientes </p>
+      <h5>Escenario 2: El usuario ya se encuentra en la sección clientes</h5>
+        <p> Dado que el usuario se encuentra en la sección “clientes” </p>
+        <p> Cuando el usuario seleccione “Clientes” en la barra de navegación </p>
+        <p> Entonces el sistema mantendrá al usuario en la sección seleccionada </p>
+    </td>
+    <td>EP01</td>
+  </tr>
+  <tr>
+    <th>EP01 / US05</th>
+    <th>US05</th>
+    <th>Acerca de nosotros</th>
+    <td>
+      <p> Como visitante </p>
+      <p> Quiero visualizar la misión y visión de la empresa </p>
+      <p> Para conocer qué planes tienen a futuro </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Traslado a la sección Nosotros</h5>
+        <p> Dado que el usuario se encuentra en la landing page </p>
+        <p> Cuando el usuario seleccione “Acerca de Nosotros” en la barra de navegación </p>
+        <p> Entonces se trasladará al usuario a la sección de experiencia de clientes </p>
+      <h5>Escenario 2: El usuario ya se encuentra en la sección nosotros</h5>
+        <p> Dado que el usuario se encuentra en la sección “Nosotros” </p>
+        <p> Cuando el usuario seleccione “Acerca de Nosotros” en la barra de navegación </p>
+        <p> Entonces el sistema mantendrá al usuario en la sección seleccionada </p>
+    </td>
+    <td>EP01</td>
+  </tr>
+  <tr>
+    <th>EP01 / US06</th>
+    <th>US06</th>
+    <th>Implementación de un Footer</th>
+    <td>
+      <p> Como visitante </p>
+      <p> Quiero visualizar un Footer al final de la página </p>
+      <p> Para ver las redes sociales asociadas a la empresa </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Traslado a la sección de footer</h5>
+        <p> Dado que el usuario se encuentra en la landing page </p>
+        <p> Cuando el usuario se dirija al final de la landing page </p>
+        <p> Entonces el usuario visualizará las redes sociales asociadas a la empresa </p>
+      <h5>Escenario 2: Traslado al usuario de la red social seleccionada</h5>
+        <p> Dado que el usuario se encuentra en el footer </p>
+        <p> Cuando el usuario seleccione una de íconos de las redes sociales que aparecen la sección del footer </p>
+        <p> Entonces el sistema redirigirá al usuario a la red social indicada </p>
+      </td>
+    <td>EP01</td>
+  </tr>
+  <tr>
+    <th>EP01 / US07</th>  
+    <th>US07</th>
+    <th>Translación a la aplicación web</th>
+    <td>
+      <p> Como visitante </p>
+      <p> Quiero contar con un botón que me redirija a la aplicación web </p>
+      <p> Para tener un acceso directo y rápido a ella </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Traslado a la aplicación web</h5>
+        <p> Dado que el usuario se encuentra en la landing page </p>
+        <p> Cuando el dé click en el botón "Abrir App" </p>
+        <p> Entonces el sistema redirigirá al usuario a la aplicación web </p>
+      <h5>Escenario 2: Aplicación actualmente en mantenimiento</h5>
+        <p> Dado que el usuario se encuentra en la landing page </p>
+        <p> Cuando el dé click en el botón "Abrir App" </p>
+        <p> Y lo servicios de la aplicación web estén actualmente en mantenimiento </p>
+        <p> Entonces aparecerá un mensaje, indicando que actualmente la aplicación web está en mantenimiento </p>
+    </td>
+    <td>EP01</td>
   </tr>
 </table>
 
