@@ -516,7 +516,7 @@ Cuando se observe un incremento del 15% en la productividad de los cultivos de l
 
 ## 1.3. Segmentos objetivo
 
-**Agricultores**
+##### Agricultores
 Los agricultores en Perú enfrentan desafíos en la gestión del agua para el riego debido a la falta de tecnologías adecuadas y prácticas sostenibles, lo que afecta la productividad y rentabilidad. HydroSmart les ofrecerá una solución para optimizar su uso del agua promoviendo una agricultura más eficiente y sostenible.
 
 |**Segmento objetivo**|Agricultores|
@@ -705,9 +705,19 @@ Los agricultores en Perú enfrentan desafíos en la gestión del agua para el ri
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
-
+Las entrevistas representan una estrategia de investigación que implica el intercambio de diálogo con el propósito de adquirir datos, empleando cuestionamientos específicos para explorar en profundidad el pensamiento y la visión de la persona objeto de estudio.
 ### 2.2.2. Registro de entrevistas
-
+##### Segmento Objetivo: Agricultor
+  1. ¿Con qué cultivos trabaja actualmente y en qué zona se ubica su terreno?
+  2. ¿Cuáles son los principales problemas que enfrenta en el manejo del agua para sus cultivos?
+  3. ¿Lleva usted un control sobre cuándo y cuánto riega sus cultivos?
+  4. ¿Utiliza alguna herramienta o aplicación para manejar el control de sus cultivos?
+  5. ¿Cuántas veces al día o a la semana suele regar sus cultivos? ¿Y en qué horarios normalmente lo hace?
+  6. ¿Cree que gasta más agua de la que realmente necesita para regar sus cultivos?
+  7. ¿Le parece que regar los cultivos es una tarea pesada o cansada? ¿Por qué?
+  8. ¿Cree que la calidad del agua que usa para regar afecta a sus cultivos? ¿Por qué?
+  9. Si existiera una aplicación que le avise cuándo regar y controle el sistema de riego por usted, ¿estaría dispuesto a probarla?
+  10. ¿Ha tenido problemas con el riego en épocas de cambio climático o sequías recientes?
 ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
