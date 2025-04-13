@@ -708,16 +708,17 @@ Los agricultores en Perú enfrentan desafíos en la gestión del agua para el ri
 Las entrevistas representan una estrategia de investigación que implica el intercambio de diálogo con el propósito de adquirir datos, empleando cuestionamientos específicos para explorar en profundidad el pensamiento y la visión de la persona objeto de estudio.
 ### 2.2.2. Registro de entrevistas
 ##### Segmento Objetivo: Agricultor
-  1. ¿Con qué cultivos trabaja actualmente y en qué zona se ubica su terreno?
-  2. ¿Cuáles son los principales problemas que enfrenta en el manejo del agua para sus cultivos?
-  3. ¿Lleva usted un control sobre cuándo y cuánto riega sus cultivos?
-  4. ¿Utiliza alguna herramienta o aplicación para manejar el control de sus cultivos?
-  5. ¿Cuántas veces al día o a la semana suele regar sus cultivos? ¿Y en qué horarios normalmente lo hace?
-  6. ¿Cree que gasta más agua de la que realmente necesita para regar sus cultivos?
-  7. ¿Le parece que regar los cultivos es una tarea pesada o cansada? ¿Por qué?
-  8. ¿Cree que la calidad del agua que usa para regar afecta a sus cultivos? ¿Por qué?
-  9. Si existiera una aplicación que controle el sistema de riego por usted y le avise cuando se esté regando los cultivos, ¿estaría dispuesto a probarla?
-  10. ¿Ha tenido problemas con el riego en épocas de cambio climático o sequías recientes?
+  1. En pocas palabras, ¿Cómo describiría su día a día como agricultor?
+  2. ¿Con qué cultivos trabaja actualmente y en qué zona se ubica su terreno?
+  3. ¿Cuáles son los principales problemas que enfrenta en el manejo del agua para sus cultivos?
+  4. ¿Lleva usted un control sobre cuándo y cuánto riega sus cultivos?
+  5. ¿Utiliza alguna herramienta o aplicación para manejar el control de sus cultivos?
+  6. ¿Cuántas veces al día o a la semana suele regar sus cultivos? ¿Y en qué horarios normalmente lo hace?
+  7. ¿Cree que gasta más agua de la que realmente necesita para regar sus cultivos?
+  8. ¿Le parece que regar los cultivos es una tarea pesada o cansada? ¿Por qué?
+  9. ¿Cree que la calidad del agua que usa para regar afecta a sus cultivos? ¿Por qué?
+  10. Si existiera una aplicación que controle el sistema de riego por usted y le avise cuando se esté regando los cultivos, ¿estaría dispuesto a probarla?
+  11. ¿Ha tenido problemas con el riego en épocas de cambio climático o sequías recientes?
 ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
@@ -731,10 +732,62 @@ Las entrevistas representan una estrategia de investigación que implica el inte
 ### 2.3.4. Empathy Mapping
 
 ### 2.3.5. As-is Scenario Mapping
+Segmento objetivo: Agricultor
+<table>
+  <tr>
+    <th>Fase</th>
+    <th>Inicio del día</th>
+    <th>Inspección general de los cultivos</th>
+    <th>Regado de los cultivos</th>
+    <th>Finalización e inspección del regado</th>
+  </tr>
+  <tr>
+    <th>Doing</th>
+    <td>
+      <ul>
+        <li>Me levanto a las 4:00 am</li>
+        <li>Veo qué cultivos son los que revisaré y regaré hoy</li>
+        <li>Me dirijo al campo para empezar mi día</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Reviso los cultivos que me tocaba inspeccionar hoy</li>
+        <li>Me aseguro de no ver ninguna anormalidad aparente</li>
+        <li>Verifico la calidad de la tierra</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Empiezo a regar los cultivos que tocaban hoy</li>
+        <li>Hago lo mejor que puedo que a ningún cultivo le llegue muy poca a demasiada agua</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Termino de regar los cultivos</li>
+        <li>Hago una verificación rápida de los cultivos</li>
+        <li>Empiezo con mis otras actividades diarias</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <th>Thinking</th>
+    <td>Un día más en el trabajo. A empezar otro día</td>
+    <td>Tengo que asegurarme que los cultivos y la tierra se encuentren en buen estado. Si la tierra está muy seca, tendré que pasar más tiempo regando</td>
+    <td>Tengo que tener cuidado con cuanto riego. Si me paso de agua, puedo arruinar una gran cantidad de mis cultivos</td>
+    <td>Después de unas cuantas horas, puedo finalmente seguir con mis otras actividades. Espero no haber regado de más</td>
+  </tr>
+  <tr>
+    <th>Feeling</th>
+    <td>Normal. Espero que hoy sea un buen día para los cultivos</td>
+    <td>Ligeramente ansioso. Si hay alguna anomalía, puede afectar mi rutina diaria y puede atrasarme algunas tareas</td>
+    <td>Aburrido. Mientras riego manualmente los cultivos no puedo hacer mucho más</td>
+    <td>Intranquilo. Aunque sé que tengo ya bastante experiencia regando los cultivos, uno nunca puede estar 100% seguro que lo haya hecho perfectamente</td>
+  </tr>
+</table>
 
 ## 2.4. Ubiquitous Language
-
-### 2.4 Ubiquitous Language
 
 | **Término (en inglés)**    | **Término (en español)**       | **Definición** |
 |----------------------------|--------------------------------|----------------|
