@@ -485,31 +485,24 @@ Nuestro enfoque principal es ayudar a los agricultores a optimizar el uso del ag
 -->
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
-**Hypothesis Statement 1**
-
-| Creemos que al proporcionar a los agricultores acceso a datos en tiempo real sobre la humedad del suelo y automatizar el proceso de riego, mejoraremos la eficiencia del uso del agua en los cultivos. |
-| - |
-| Sabremos que esto es cierto… |
-| Cuando se observe una reducción del 20% en el consumo de agua durante los primeros 6 meses de uso en los cultivos de los agricultores que implementen HydroSmart. |
+##### Hypothesis Statement 1
+Creemos que al proporcionar a los agricultores acceso a datos en tiempo real sobre la humedad del suelo y automatizar el proceso de riego, mejoraremos la eficiencia del uso del agua en los cultivos.
+Sabremos que esto es cierto
+Cuando se observe una reducción del 20% en el consumo de agua durante los primeros 6 meses de uso en los cultivos de los agricultores que implementen HydroSmart.
 
 ---
 
-**Hypothesis Statement 2**
-
-| Creemos que al ofrecer un sistema de riego automatizado accesible y fácil de usar, aumentaremos la adopción de la tecnología entre los agricultores de pequeña y mediana escala. |
-| - |
-| Sabremos que esto es cierto… |
-| Cuando el 30% de los agricultores que usan HydroSmart durante los primeros 3 meses adopten el sistema de riego automatizado. |
+##### Hypothesis Statement 2
+Creemos que al ofrecer un sistema de riego automatizado accesible y fácil de usar, aumentaremos la adopción de la tecnología entre los agricultores de pequeña y mediana escala.
+Sabremos que esto es cierto
+Cuando el 30% de los agricultores que usan HydroSmart durante los primeros 3 meses adopten el sistema de riego automatizado
 
 ---
 
-**Hypothesis Statement 3**
-
-| Creemos que al permitir a los agricultores tomar decisiones informadas sobre el riego, se aumentará la productividad y rentabilidad de sus cultivos. |
-| - |
-| Sabremos que esto es cierto… |
-| Cuando se observe un incremento del 15% en la productividad de los cultivos de los agricultores que utilicen HydroSmart durante los primeros 6 meses. |
-
+##### Hypothesis Statement 3
+Creemos que al permitir a los agricultores tomar decisiones informadas sobre el riego, se aumentará la productividad y rentabilidad de sus cultivos.
+Sabremos que esto es cierto
+Cuando se observe un incremento del 15% en la productividad de los cultivos de los agricultores que utilicen HydroSmart durante los primeros 6 meses.
 
 #### 1.2.2.4. Lean UX Canvas
 
