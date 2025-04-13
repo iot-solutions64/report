@@ -809,6 +809,60 @@ Segmento objetivo: Agricultor
 # Capítulo III: Requirements Specification
 
 ## 3.1. To-Be Scenario Mapping
+Segmento objetivo: Agricultor
+<table>
+  <tr>
+    <th>Fase</th>
+    <th>Inicio del día</th>
+    <th>Inspección general de los cultivos</th>
+    <th>Regado de los cultivos</th>
+    <th>Finalización e inspección del regado</th>
+  </tr>
+  <tr>
+    <th>Doing</th>
+    <td>
+      <ul>
+        <li>Me levanto a las 5:00 am</li>
+        <li>Me dirijo al campo para empezar mi día</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Reviso la aplicación HydroSmart para ver qué cultivos serán los que serán regados hoy</li>
+        <li>La aplicación me indica si es que hay alguna anormalidad relacionada con el agua</li>
+        <li>Verifico la calidad de la tierra</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>El sistema HydroSmart riega por mí los cultivos automáticamente</li>
+        <li>Le doy un vistazo al sistema para verificar cuánta agua está utilizando para los cultivos</li>
+        <li>Si considero que está utilizando mucha agua, lo detengo</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li>Los cultivos terminan de regarse automáticante</li>
+        <li>Hago una verificación rápida de los cultivos</li>
+        <li>Empiezo con mis otras actividades diarias</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <th>Thinking</th>
+    <td>Un día más en el trabajo. A empezar otro día</td>
+    <td>A través de la aplicación HydroSmart, puedo verificar si los cultivos y la tierra se encuentren en buen estado. Si existe algún problema, la aplicación me lo indicará</td>
+    <td>Con la aplicación HydroSmart no me tengo que preocupar mucho del riego. Si algo llegara a fallar, solo lo detengo</td>
+    <td>Dado que el sistema hace el regado por mí, no tuve que invertir mucho tiempo en esta etapa, por lo que puedo empezar más temprano mis otras actividades</td>
+  </tr>
+  <tr>
+    <th>Feeling</th>
+    <td>Normal. Espero que hoy sea un buen día para los cultivos</td>
+    <td>Contento. El sistema simplifica considerablemente la etapa de riego. Si hay algún problema, la aplicación me lo indica</td>
+    <td>Aliviado. Puedo realizar otras actividades mientras se están regando los cultivos</td>
+    <td>Contento. Ahora que el riego ha terminado, puedo enfocarme al 100% en mis otras actividades</td>
+  </tr>
+</table>
 
 ## 3.2. User Stories
 
