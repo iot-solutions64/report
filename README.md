@@ -910,85 +910,149 @@ Segmento objetivo: Agricultor
   </tr>
   <!--Epic 2-->
   <tr>
-    <th rowspan="3"> EP02 </th>
-    <th rowspan="3"> Monitoreo de los cultivos </th>
+    <th rowspan="6"> EP02 </th>
+    <th rowspan="6"> Monitoreo de los cultivos </th>
     <td> US08 </td>
     <td> Verificación de humedad del suelo </td>
+  </tr>
+  <tr>
+    <td>TS-US08</td>
+    <td>Verificar humedad del suelo</td>
   </tr>
   <tr>
     <td> US09 </td>
     <td> Verificación de temperatura del suelo </td>
   </tr>
   <tr>
+    <td>TS-US09</td>
+    <td>Verificar temperatura del suelo</td>
+  </tr>
+  <tr>
     <td> US10 </td>
     <td> Historial del cultivo </td>
   </tr>
+  <tr>
+    <td>TS-US10</td>
+    <td>Mostrar historial del cultivo</td>
+  </tr>
   <!--Epic 3-->
   <tr>
-    <th rowspan="3"> EP03 </th>
-    <th rowspan="3"> Sistema automático de riego </th>
+    <th rowspan="6"> EP03 </th>
+    <th rowspan="6"> Sistema automático de riego </th>
     <td> US11 </td>
-    <td> Activar / Desactivar riego automático </td>
+    <td> Interacción con el riego automático </td>
+  </tr>
+  <tr>
+    <td>TS-US11</td>
+    <td>Interactuar con el riego automático</td>
   </tr>
   <tr>
     <td> US12 </td>
     <td> Notificaciones al iniciar el regado </td>
   </tr>
   <tr>
+    <td>TS-US12</td>
+    <td>Notificar al iniciar el regado</td>
+  </tr>
+  <tr>
     <td> US13 </td>
-    <td> Limitar el uso agua por cultivo</td>
+    <td> Limites en el uso agua por cultivo</td>
+  </tr>
+  <tr>
+    <td>TS-US13</td>
+    <td>Limitar el uso de agua por cultivo</td>
   </tr>
   <!--Epic 4-->
   <tr>
-    <th rowspan="2"> EP04 </th>
-    <th rowspan="2"> Panel de control </th>
+    <th rowspan="4"> EP04 </th>
+    <th rowspan="4"> Panel de control </th>
     <td> US14 </td>
     <td> Administración de cultivos en el sistema </td>
+  </tr>
+  <tr>
+    <td>TS-US14</td>
+    <td>Administrar cultivos del sistema</td>
   </tr>
   <tr>
     <td> US15 </td>
     <td> Historial de consumo de agua mensual </td>
   </tr>
+  <tr>
+    <td>TS-US15</td>
+    <td>Mostrar historial de consumo de agua mensual</td>
+  </tr>
   <!--Epic 5-->
   <tr>
-    <th rowspan="3"> EP05 </th>
-    <th rowspan="3"> Configuración del sistema </th>
+    <th rowspan="6"> EP05 </th>
+    <th rowspan="6"> Configuración del sistema </th>
     <td> US16 </td>
-    <td> Ver estado del sistema </td>
+    <td> Verificación del estado de los sistemas </td>
+  </tr>
+  <tr>
+    <td> TS-US16 </td>
+    <td> Verificar estado de los sistemas </td>
   </tr>
   <tr>
     <td> US17 </td>
-    <td> Agregar un nuevo sistema HydroSmart </td>
+    <td> Añadir un nuevo sistema de HydroSmart </td>
+  </tr>
+  <tr>
+    <td> TS-US17 </td>
+    <td> Agregar un nuevo sistema HydroSmart</td>
   </tr>
   <tr>
     <td> US18 </td>
-    <td> Eliminar sistema HydroSmart </td>
+    <td> Quitar un sistema de HydroSmart </td>
+  </tr>
+  <tr>
+    <td> TS-US18 </td>
+    <td> Eliminar un sistema HydroSmart</td>
   </tr>
   <!--Epic 6-->
   <tr>
-    <th rowspan="2"> EP06 </th>
-    <th rowspan="2"> Autenticación de Usuarios </th>
+    <th rowspan="4"> EP06 </th>
+    <th rowspan="4"> Autenticación de Usuarios </th>
     <td> US19 </td>
     <td> Registro de usuarios </td>
+  </tr>
+  <tr>
+    <td> TS-US19 </td>
+    <td> Registar usuario</td>
   </tr>
   <tr>
     <td> US20 </td>
     <td> Acceso de Usuarios </td>
   </tr>
+  <tr>
+    <td> TS-US20 </td>
+    <td> Acceso a usuario </td>
+  </tr>
   <!--Epic 7-->
   <tr>
-    <th rowspan="3"> EP07 </th>
-    <th rowspan="3"> Manejo de Usuarios </th>
+    <th rowspan="6"> EP07 </th>
+    <th rowspan="6"> Manejo de Usuarios </th>
     <td> US21 </td>
-    <td> Actualizar contraseña </td>
+    <td> Actualización de contraseña </td>
+  </tr>
+  <tr>
+    <td> TS-US21 </td>
+    <td> Actualizar contraseña</td>
   </tr>
   <tr>
     <td> US22 </td>
-    <td> Recuperar contraseña </td>
+    <td> Recuperación de contraseña </td>
+  </tr>
+  <tr>
+    <td> TS-US22 </td>
+    <td> Recuperar de contraseña</td>
   </tr>
   <tr>
     <td> US23 </td>
-    <td> Eliminar usuario </td>
+    <td> Eliminación usuario </td>
+  </tr>
+  <tr>
+    <td> TS-US23 </td>
+    <td> Eliminar usuario</td>
   </tr>
 </table>
 
