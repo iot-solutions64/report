@@ -866,6 +866,142 @@ Segmento objetivo: Agricultor
 
 ## 3.2. User Stories
 
+<table>
+  <tr>
+    <th>Epic ID</th>
+    <th> Epic </th>
+    <th> User Story ID </th>
+    <th> User Story </th>
+  </tr>
+  <!--Epic 1-->
+  <tr>
+    <th rowspan="8"> EP01 </th>
+    <th rowspan="8"> Landing Page </th>
+    <td> US01 </td>
+    <td> Implementación de Barra de navegación </td>
+  </tr>
+  <tr>
+    <td> US02 </td>
+    <td> Logo y Descripción de la empresa </td>
+  </tr>
+  <tr>
+    <td> US03 </td>
+    <td> Detalles y Servicios de la empresa </td>
+  </tr>
+  <tr>
+    <td> US04 </td>
+    <td> Clientes de la empresa </td>
+  </tr>
+  <tr>
+    <td> US05 </td>
+    <td> Acerca de nosotros </td>
+  </tr>
+  <tr>
+    <td> US06 </td>
+    <td> Implementación de un Footer </td>
+  </tr>
+  <tr>
+    <td> US07 </td>
+    <td> Traslación a la aplicación web </td>
+  </tr>
+  <tr>
+    <td> TS-US07 </td>
+    <td> Traslado a un entorno diferente </td>
+  </tr>
+  <!--Epic 2-->
+  <tr>
+    <th rowspan="3"> EP02 </th>
+    <th rowspan="3"> Monitoreo de los cultivos </th>
+    <td> US08 </td>
+    <td> Verificación de humedad del suelo </td>
+  </tr>
+  <tr>
+    <td> US09 </td>
+    <td> Verificación de temperatura del suelo </td>
+  </tr>
+  <tr>
+    <td> US10 </td>
+    <td> Historial del cultivo </td>
+  </tr>
+  <!--Epic 3-->
+  <tr>
+    <th rowspan="3"> EP03 </th>
+    <th rowspan="3"> Sistema automático de riego </th>
+    <td> US11 </td>
+    <td> Activar / Desactivar riego automático </td>
+  </tr>
+  <tr>
+    <td> US12 </td>
+    <td> Notificaciones al iniciar el regado </td>
+  </tr>
+  <tr>
+    <td> US13 </td>
+    <td> Limitar el uso agua por cultivo</td>
+  </tr>
+  <!--Epic 4-->
+  <tr>
+    <th rowspan="2"> EP04 </th>
+    <th rowspan="2"> Panel de control </th>
+    <td> US14 </td>
+    <td> Administración de cultivos en el sistema </td>
+  </tr>
+  <tr>
+    <td> US15 </td>
+    <td> Historial de consumo de agua mensual </td>
+  </tr>
+  <!--Epic 5-->
+  <tr>
+    <th rowspan="3"> EP05 </th>
+    <th rowspan="3"> Configuración del sistema </th>
+    <td> US16 </td>
+    <td> Ver estado del sistema </td>
+  </tr>
+  <tr>
+    <td> US17 </td>
+    <td> Agregar un nuevo sistema HydroSmart </td>
+  </tr>
+  <tr>
+    <td> US18 </td>
+    <td> Eliminar sistema HydroSmart </td>
+  </tr>
+  <!--Epic 6-->
+  <tr>
+    <th rowspan="2"> EP06 </th>
+    <th rowspan="2"> Autenticación de Usuarios </th>
+    <td> US19 </td>
+    <td> Registro de usuarios </td>
+  </tr>
+  <tr>
+    <td> US20 </td>
+    <td> Acceso de Usuarios </td>
+  </tr>
+  <!--Epic 7-->
+  <tr>
+    <th rowspan="3"> EP07 </th>
+    <th rowspan="3"> Manejo de Usuarios </th>
+    <td> US21 </td>
+    <td> Actualizar contraseña </td>
+  </tr>
+  <tr>
+    <td> US22 </td>
+    <td> Recuperar contraseña </td>
+  </tr>
+  <tr>
+    <td> US23 </td>
+    <td> Eliminar usuario </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <th> Epic / Story ID </th>
+    <th> Título </th>
+    <th> Descripción </th>
+    <th> Criterios de Aceptación </th>
+    <th> Relacionado con (Epic ID) </th>
+  </tr>
+</table>
+
 ## 3.3. Impact Mapping
 
 ## 3.4. Product Backlog
