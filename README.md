@@ -431,36 +431,11 @@ El riego automatizado es aún una práctica poco adoptada por los agricultores d
     <td>¿Podría HydroSmart ofrecer una solución de riego automatizado fácil de implementar y a un costo accesible para los agricultores?</td>
    </tr>
 </table>
-
-Presentación de Otros Supuestos
-<table border="1">
-  <tr>
-    <td>Considero que los agricultores necesitan una solución que les permita gestionar de manera eficiente el uso del agua y optimizar el riego en sus cultivos, mejorando así la productividad y reduciendo costos. Generaré ingresos a través de la venta de suscripciones mensuales a nuestra plataforma HydroSmart.</td>
-    <td>Estas necesidades se pueden resolver mediante el uso de sensores de humedad del suelo, un sistema de riego automatizado y una plataforma accesible que brinde recomendaciones basadas en datos precisos y en tiempo real.</td>
-  </tr>
-  <tr>
-    <td>Mi competencia principal en el mercado serán otras soluciones tecnológicas para la agricultura como PRISMAB y Netafim Perú.</td>
-    <td>Mis clientes iniciales estarán compuestos por agricultores de pequeña y mediana escala que buscan mejorar la eficiencia del uso del agua en sus cultivos, especialmente en áreas agrícolas de Perú.</td>
-  </tr>
-  <tr>
-    <td>Superaremos los desafíos del sector agrícola mediante una interfaz fácil de usar y asequible que permita a los agricultores de todo nivel tecnológico acceder a un sistema de riego eficiente y con una curva de aprendizaje mínima.</td>
-    <td>El principal valor que un cliente busca en mi servicio es la mejora de la eficiencia en el uso del agua, la reducción de costos operativos y el aumento de la productividad de sus cultivos, adoptando prácticas sostenibles.</td>
-  </tr>
-  <tr>
-    <td>El mayor riesgo para mi producto es la falta de confianza de los agricultores en la tecnología y la resistencia al cambio, ya que muchos están acostumbrados a métodos de riego tradicionales.</td>
-    <td>El cliente podría optar por abandonar el uso de HydroSmart si no ve mejoras significativas en la eficiencia del riego y en la productividad de sus cultivos durante los primeros meses de uso.</td>
-  </tr>
-  <tr>
-    <td>Resolveremos esto mediante una estrategia educativa que incluya tutoriales fáciles de seguir, demostraciones prácticas y casos de éxito que demuestren el valor tangible de nuestra solución. Además, ofreceremos soporte técnico continuo.</td>
-    <td>Voy a adquirir la mayoría de mis clientes a través de campañas de marketing digital dirigidas, demostraciones en ferias agrícolas, y asociaciones con cooperativas agrícolas locales que promuevan la adopción de tecnologías innovadoras.</td>
-  </tr>
-  <tr>
-    <td>Nuestro enfoque principal es ayudar a los agricultores a optimizar el uso del agua y mejorar la eficiencia del riego mediante una solución sencilla, rentable y eficaz, enfocada en el cuidado y la sostenibilidad de los cultivos.</td>
-  </tr>
-</table>
  
 
 #### 1.2.2.2. Lean UX Assumptions
+
+##### **User Assumptions**
 
 **1. ¿Quién es el usuario?**
 
@@ -489,6 +464,25 @@ HydroSmart es utilizado principalmente durante las estaciones de crecimiento de 
 
 HydroSmart debe tener una interfaz simple, clara y fácil de usar, ideal para agricultores con poca experiencia tecnológica. La aplicación debe ser intuitiva y rápida, mostrando los datos de manera visual y comprensible. Además, debe ser robusta, segura y capaz de manejar grandes volúmenes de datos sin fallos.
 
+##### **Business Assumptions**
+  1. **Creo que mis clientes necesitan** una solución que les permita gestionar de manera eficiente el uso del agua y optimizar el riego en sus cultivos, mejorando así la productividad y reduciendo costos.
+  2. **Estas necesidades se pueden resolver con** el uso de sensores de humedad del suelo, un sistema de riego automatizado y una plataforma accesible que brinde recomendaciones basadas en datos precisos y en tiempo real.
+  3. **Mis clientes iniciales son** agricultores de pequeña y mediana escala que buscan mejorar la eficiencia del uso del agua en sus cultivos, especialmente en áreas agrícolas de Perú.
+  4. **El valor N.°1 que mi cliente quiere de mi servicio es** la mejora de la eficiencia en el uso del agua, la reducción de costos operativos y el aumento de la productividad de sus cultivos, adoptando prácticas sostenibles.
+  5. **Mi cliente también puede obtener estos beneficios adicionales:** Una aplicación web y móvil que les permita adminisitrar el regado todos sus cultivos
+  6. **Voy a adquirir la mayoría de mis clientes a través de** campañas de marketing digital dirigidas, demostraciones en ferias agrícolas, y asociaciones con cooperativas agrícolas locales que promuevan la adopción de tecnologías innovadoras.
+  7. **Haré dinero a través de** la venta de suscripciones mensuales a nuestra plataforma HydroSmart.
+  8. **Mi competencia principal en el mercado serán** otras soluciones tecnológicas para la agricultura como PRISMAB y Netafim Perú.
+  9. **Los venceremos debido a que** la aplicación cuenta con una interfaz de usuario muy sencilla de utilizar, con una curva de aprendizaje mínima, por lo que todo tipo de usuario puede adquirirlo y usarlo sin ningún tipo de problemas
+  10. **Mi mayor riesgo de producto es** la falta de confianza de los agricultores en la tecnología y la resistencia al cambio, ya que muchos están acostumbrados a métodos de riego tradicionales.
+  11. **Resolveremos esto a través de** una estrategia educativa que incluya tutoriales fáciles de seguir, demostraciones prácticas y casos de éxito que demuestren el valor tangible de nuestra solución. Además, ofreceremos soporte técnico continuo.
+
+<!--
+Agregar como extra (?)
+El cliente podría optar por abandonar el uso de HydroSmart si no ve mejoras significativas en la eficiencia del riego y en la productividad de sus cultivos durante los primeros meses de uso.
+
+Nuestro enfoque principal es ayudar a los agricultores a optimizar el uso del agua y mejorar la eficiencia del riego mediante una solución sencilla, rentable y eficaz, enfocada en el cuidado y la sostenibilidad de los cultivos.
+-->
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
 **Hypothesis Statement 1**
