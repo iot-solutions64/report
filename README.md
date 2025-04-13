@@ -1070,7 +1070,6 @@ Segmento objetivo: Agricultor
   </tr>
   <tr>
     <th>EP01 / US01</th>
-    <th>US01</th>
     <th>Implementación de Barra de navegación</th>
     <td>
       <p> Como visitante </p>
@@ -1091,7 +1090,6 @@ Segmento objetivo: Agricultor
     </tr>
   <tr>
     <th>EP01 / US02</th>
-    <th> US02 </th>
     <th> Logo y Descripción de la empresa </th>
     <td>
       <p> Como visitante </p>
@@ -1114,7 +1112,6 @@ Segmento objetivo: Agricultor
   </tr>
   <tr>
     <th>EP01 / US03</th>
-    <th>US03</th>
     <th>Detalles y Servicios de la empresa</th>
     <td>
       <p> Como visitante </p>
@@ -1135,7 +1132,6 @@ Segmento objetivo: Agricultor
   </tr>
   <tr>
     <th>EP01 / US04</th>
-    <th>US04</th>
     <th>Clientes de la empresa</th>
     <td>
       <p> Como visitante </p>
@@ -1156,7 +1152,6 @@ Segmento objetivo: Agricultor
   </tr>
   <tr>
     <th>EP01 / US05</th>
-    <th>US05</th>
     <th>Acerca de nosotros</th>
     <td>
       <p> Como visitante </p>
@@ -1177,7 +1172,6 @@ Segmento objetivo: Agricultor
   </tr>
   <tr>
     <th>EP01 / US06</th>
-    <th>US06</th>
     <th>Implementación de un Footer</th>
     <td>
       <p> Como visitante </p>
@@ -1198,7 +1192,6 @@ Segmento objetivo: Agricultor
   </tr>
   <tr>
     <th>EP01 / US07</th>  
-    <th>US07</th>
     <th>Translación a la aplicación web</th>
     <td>
       <p> Como visitante </p>
