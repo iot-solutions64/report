@@ -706,7 +706,7 @@ Los agricultores en Perú enfrentan desafíos en la gestión del agua para el ri
 
 ### 2.2.1. Diseño de entrevistas
 Las entrevistas representan una estrategia de investigación que implica el intercambio de diálogo con el propósito de adquirir datos, empleando cuestionamientos específicos para explorar en profundidad el pensamiento y la visión de la persona objeto de estudio.
-### 2.2.2. Registro de entrevistas
+
 ##### Segmento Objetivo: Agricultor
   1. En pocas palabras, ¿Cómo describiría su día a día como agricultor?
   2. ¿Con qué cultivos trabaja actualmente y en qué zona se ubica su terreno?
@@ -719,6 +719,25 @@ Las entrevistas representan una estrategia de investigación que implica el inte
   9. ¿Cree que la calidad del agua que usa para regar afecta a sus cultivos? ¿Por qué?
   10. Si existiera una aplicación que controle el sistema de riego por usted y le avise cuando se esté regando los cultivos, ¿estaría dispuesto a probarla?
   11. ¿Ha tenido problemas con el riego en épocas de cambio climático o sequías recientes?
+
+### 2.2.2. Registro de entrevistas
+
+**Entrevista 1**
+
+**Entrevistador:** Salvador Salinas
+
+**Entrevistado:** Anderson Gonza
+
+**Edad:** 23 años
+
+**Distrito:** Lurín
+
+**Enlace a entrevista:** [Entrevista en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b127_upc_edu_pe/EfplQNX-V1hArtEGzQFt-3ABzYYTV6e37eDV4HN7HzpS2A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=yWJug5)
+
+<img src="img/entrevista1.png" alt="Entrevista 1" width="100%" />
+
+**Resumen:** Anderson es un agricultor de 23 años que cultiva hortalizas junto a su padre en Lurín. Mencionó que uno de los problemas con el agua es la irregularidad en el suministro de agua del canal y la presión que a veces no alcanza. Comenta que es bastante problable que se utilice más agua de la necesaria al no tener un control sobre este. De esta forma, le gustaría contar con una herramienta que le ayude a optimizar el riego. Anderson está dispuesto a probar una aplicación que le facilite esta tarea.
+
 ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
