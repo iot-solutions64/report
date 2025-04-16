@@ -738,6 +738,23 @@ Las entrevistas representan una estrategia de investigación que implica el inte
 
 **Resumen:** Anderson es un agricultor de 23 años que cultiva hortalizas junto a su padre en Lurín. Mencionó que uno de los problemas con el agua es la irregularidad en el suministro de agua del canal y la presión que a veces no alcanza. Comenta que es bastante problable que se utilice más agua de la necesaria al no tener un control sobre este. De esta forma, le gustaría contar con una herramienta que le ayude a optimizar el riego. Anderson está dispuesto a probar una aplicación que le facilite esta tarea.
 
+**Entrevista 2**
+
+**Entrevistador:** Sebastian Paredes
+
+**Entrevistado:** Alessandra Chaupis
+
+**Edad:** 20 años
+
+**Distrito:** San Juan de Lurigancho
+
+**Enlace a entrevista:** [Entrevista 2](https://youtu.be/gyszZzqHZyA)
+
+<img src="img/entrevista2.png" alt="Entrevista 2" width="100%" />
+
+**Resumen:** Alessandra, de 20 años, tiene un familiar que se dedica a la agricultura en una zona rural de la Sierra, donde cultiva papa, maíz y habas. Señala que uno de los principales problemas es el acceso irregular al agua y la falta de tecnología para un mejor aprovechamiento. Su familiar no lleva un control preciso del riego ni utiliza herramientas digitales, por lo que muchas veces termina usando más agua de la necesaria. El riego es una tarea física y demandante, especialmente por la necesidad de trasladar agua. Además, cree que la calidad del agua puede afectar directamente a los cultivos. Debido a estas dificultades, Alessandra considera que su familiar estaría muy interesado en probar una aplicación que ayude a automatizar y optimizar el sistema de riego, sobre todo ante los efectos del cambio climático y las sequías recientes.
+
+
 ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
