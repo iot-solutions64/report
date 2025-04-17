@@ -941,8 +941,8 @@ Segmento objetivo: Agricultor
   </tr>
   <!--Epic 2-->
   <tr>
-    <th rowspan="6"> EP02 </th>
-    <th rowspan="6"> Monitoreo de los cultivos </th>
+    <th rowspan="7"> EP02 </th>
+    <th rowspan="7"> Monitoreo de los cultivos </th>
     <td> US08 </td>
     <td> Verificación de humedad del suelo </td>
   </tr>
@@ -960,129 +960,133 @@ Segmento objetivo: Agricultor
   </tr>
   <tr>
     <td> US10 </td>
+    <td> Acciones Recomendadas </td>
+  </tr>
+  <tr>
+    <td> US11 </td>
     <td> Historial del cultivo </td>
   </tr>
   <tr>
-    <td>TS-US10</td>
+    <td>TS-US11</td>
     <td>Mostrar historial del cultivo</td>
   </tr>
   <!--Epic 3-->
   <tr>
     <th rowspan="6"> EP03 </th>
     <th rowspan="6"> Sistema automático de riego </th>
-    <td> US11 </td>
+    <td> US12 </td>
     <td> Interacción con el riego automático </td>
   </tr>
   <tr>
-    <td>TS-US11</td>
+    <td>TS-US12</td>
     <td>Interactuar con el riego automático</td>
   </tr>
   <tr>
-    <td> US12 </td>
+    <td> US13 </td>
     <td> Notificaciones al iniciar el regado </td>
   </tr>
   <tr>
-    <td>TS-US12</td>
+    <td>TS-US13</td>
     <td>Notificar al iniciar el regado</td>
   </tr>
   <tr>
-    <td> US13 </td>
+    <td> US14 </td>
     <td> Limites en el uso agua por cultivo</td>
   </tr>
   <tr>
-    <td>TS-US13</td>
+    <td>TS-US14</td>
     <td>Limitar el uso de agua por cultivo</td>
   </tr>
   <!--Epic 4-->
   <tr>
     <th rowspan="4"> EP04 </th>
     <th rowspan="4"> Panel de control </th>
-    <td> US14 </td>
+    <td> US15 </td>
     <td> Administración de cultivos en el sistema </td>
   </tr>
   <tr>
-    <td>TS-US14</td>
+    <td>TS-US15</td>
     <td>Administrar cultivos del sistema</td>
   </tr>
   <tr>
-    <td> US15 </td>
+    <td> US16 </td>
     <td> Historial de consumo de agua mensual </td>
   </tr>
   <tr>
-    <td>TS-US15</td>
+    <td>TS-US16</td>
     <td>Mostrar historial de consumo de agua mensual</td>
   </tr>
   <!--Epic 5-->
   <tr>
     <th rowspan="6"> EP05 </th>
     <th rowspan="6"> Configuración del sistema </th>
-    <td> US16 </td>
+    <td> US17 </td>
     <td> Verificación del estado de los sistemas </td>
   </tr>
   <tr>
-    <td> TS-US16 </td>
+    <td> TS-US17 </td>
     <td> Verificar estado de los sistemas </td>
   </tr>
   <tr>
-    <td> US17 </td>
+    <td> US18 </td>
     <td> Añadir un nuevo sistema de HydroSmart </td>
   </tr>
   <tr>
-    <td> TS-US17 </td>
+    <td> TS-US18 </td>
     <td> Agregar un nuevo sistema HydroSmart</td>
   </tr>
   <tr>
-    <td> US18 </td>
+    <td> US19 </td>
     <td> Quitar un sistema de HydroSmart </td>
   </tr>
   <tr>
-    <td> TS-US18 </td>
+    <td> TS-US19 </td>
     <td> Eliminar un sistema HydroSmart</td>
   </tr>
   <!--Epic 6-->
   <tr>
     <th rowspan="4"> EP06 </th>
     <th rowspan="4"> Autenticación de Usuarios </th>
-    <td> US19 </td>
+    <td> US20 </td>
     <td> Registro de usuarios </td>
   </tr>
   <tr>
-    <td> TS-US19 </td>
+    <td> TS-US20 </td>
     <td> Registar usuario</td>
   </tr>
   <tr>
-    <td> US20 </td>
+    <td> US21 </td>
     <td> Acceso de Usuarios </td>
   </tr>
   <tr>
-    <td> TS-US20 </td>
+    <td> TS-US21 </td>
     <td> Acceso a usuario </td>
   </tr>
   <!--Epic 7-->
   <tr>
     <th rowspan="6"> EP07 </th>
     <th rowspan="6"> Manejo de Usuarios </th>
-    <td> US21 </td>
+    <td> US22 </td>
     <td> Actualización de contraseña </td>
   </tr>
   <tr>
-    <td> TS-US21 </td>
+    <td> TS-US22 </td>
     <td> Actualizar contraseña</td>
   </tr>
   <tr>
-    <td> US22 </td>
+    <td> US23 </td>
     <td> Recuperación de contraseña </td>
   </tr>
   <tr>
-    <td> TS-US22 </td>
+    <td> TS-US23 </td>
     <td> Recuperar de contraseña</td>
   </tr>
   <tr>
-    <td> US23 </td>
+    <td> US24 </td>
     <td> Eliminación usuario </td>
   </tr>
   <tr>
-    <td> TS-US23 </td>
+    <td> TS-US24 </td>
     <td> Eliminar usuario</td>
   </tr>
 </table>
@@ -1245,6 +1249,243 @@ Segmento objetivo: Agricultor
         <p> Entonces aparecerá un mensaje, indicando que actualmente la aplicación web está en mantenimiento </p>
     </td>
     <td>EP01</td>
+  </tr>
+  <!--EPIC 2-->
+  <tr>
+    <td colspan="5">
+      <h5 style="text-align: center">EPIC 2: Monitoreo de Cultivos</h5>
+      <p>
+        Como agricultor, quiero contar con una interfaz que me indique el estado de los cultivos para facilitar la administración de estos
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP02 / US08</th>
+    <th>Verificación de la humedad del suelo</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero contar con indicador de la humedad del suelo de cada uno de mis cultivos </p>
+      <p> Para asegurarme que cada uno de los suelos esté en el estado correcto para no arruinar los cultivos </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Suelo con humedad dentro de los parámetros normales</h5>
+        <p>Dado que el agricultor se encuentra en la página "Detalles del suelo"</p>
+        <p>Cuando el agricultor quiera visualizar la humedad del suelo</p>
+        <p>Y la humedad del suelo esté dentro de los parámetros aceptables</p>
+        <p>Entonces se podrán ver los datos importantes del suelo</p>
+        <p>Y en la parte inferior aparecerá un mensaje, indicando que el suelo se encuentra con la humedad favorable</p>
+      <h5>Escenario 2: Suelo con humedad ligeramente fuera de los parámetros normales</h5>
+        <p>Dado que el agricultor se encuentra en la página "Detalles del suelo"</p>
+        <p>Cuando el agricultor quiera visualizar la humedad del suelo</p>
+        <p>Y la humedad del suelo esté ligeramente fuera de los parámetros aceptables</p>
+        <p>Entonces se podrán ver los datos importantes del suelo</p>
+        <p>Y en la parte inferior aparecerá un mensaje de precaución, indicando que el suelo no se encuentra en un estado aceptable y que requiere atención</p>
+      <h5>Escenario 3: Suelo con humedad fuera de los parámetros normales</h5>
+        <p>Dado que el agricultor se encuentra en la página "Detalles del suelo"</p>
+        <p>Cuando el agricultor quiera visualizar la humedad del suelo</p>
+        <p>Y la humedad del suelo esté muy por fuera de los parámetros aceptables</p>
+        <p>Entonces aparecerá un mensaje de peligro, indicando que el suelo necesita atención urgente y que se pueden hechar a perder los cultivos</p>
+        <p>Y en la parte inferior se encontrarán los datos del cultivo</p>
+      <h5>Escenario 4: Suelo inundado</h5>
+        <p>Dado que el agricultor se encuentra en la página "Detalles del suelo"</p>
+        <p>Cuando el agricultor quiera visualizar la humedad del suelo</p>
+        <p>Y el suelo se encuentra inundado</p>
+        <p>Entonces aparecerá un mensaje, indicando que el suelo se encuentra en una situación no favorable</p>
+        <p>Y en la parte inferior se encontrarán los datos del cultivo</p>
+        <p>Y aparecerá el botón "Acciones recomendadas"</p>
+      <h5>Escenario 5: Suelo seco</h5>
+        <p>Dado que el agricultor se encuentra en la página "Detalles del suelo"</p>
+        <p>Cuando el agricultor quiera visualizar la humedad del suelo</p>
+        <p>Y el suelo se encuentra muy seco</p>
+        <p>Entonces aparecerá un mensaje, indicando que el suelo se encuentra en una situación no favorable</p>
+        <p>Y en la parte inferior se encontrarán los datos del cultivo</p>
+        <p>Y aparecerá el botón "Acciones recomendadas"</p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP02 / TS-US08</th>
+    <th>Verificar humedad del suelo</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero agregar un indicador de la humedad del suelo </p>
+      <p> Para que los usuarios puedan ver el estado de los suelos de sus cultivos </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Suelo con humedad dentro de los parámetros normales</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud GET sea enviada al presionar el botón "Detalles del cultivo"</p>
+        <p>Y la humedad del suelo esté dentro de los parámetros aceptables (high: 80%-100%, medio: 60%-80%, bajo: 40%-60%) para el tipo de cultivo que es</p>
+        <p>Entonces se recibe una respuesta con el estado 200</p>
+        <p>Y la página mostrará todos los datos importantes del suelo</p>
+        <p>Y el mensaje "Humedad favorable" es mostrado</p>
+      <h5>Escenario 2: Suelo con humedad ligeramente fuera de los parámetros normales</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud GET sea enviada al presionar el botón "Detalles del cultivo"</p>
+        <p>Y la humedad del suelo esté ligeramente fuera de los parámetros aceptables (high: 75%-79%, medio: 55%-59% o 81%-85%, bajo: 35%-39% o 61%-65%) para el tipo de cultivo que es</p>
+        <p>Entonces se recibe una respuesta con el estado 200</p>
+        <p>Y la página mostrará todos los datos importantes del suelo</p>
+        <p>Y el mensaje "Humedad ligeramente desfavorable, se recomienda una acción" es mostrado</p>
+      <h5>Escenario 3: Suelo con humedad fuera de los parámetros normales</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud GET sea enviada al presionar el botón "Detalles del cultivo"</p>
+        <p>Y la humedad del suelo esté muy por fuera de los parámetros aceptables (high: < 75%, medio: < 55% o > 85%, bajo: < 35% o > 65%) para el tipo de cultivo que es</p>
+        <p>Entonces se recibe una respuesta con el estado 200</p>
+        <p>Y la página mostrará todos los datos importantes del suelo</p>
+        <p>Y el mensaje "Humedad desfavorable, se requiere acción" es mostrado</p>
+      <h5>Escenario 4: Suelo inundado</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud GET sea enviada al presionar el botón "Detalles del cultivo"</p>
+        <p>Y el suelo se encuentre inundado</p>
+        <p>Entonces se recibe una respuesta con el estado 200</p>
+        <p>Y la página mostrará todos los datos importantes del suelo, junto con un botón "Acciones Recomendadas"</p>
+        <p>Y el mensaje "Suelo inundado, se requiere acción inmediata" es mostrado</p>
+      <h5>Escenario 5: Suelo seco</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud GET sea enviada al presionar el botón "Detalles del cultivo"</p>
+        <p>Y el suelo se encuentre muy seco (humedad < 10%)</p>
+        <p>Entonces se recibe una respuesta con el estado 200</p>
+        <p>Y la página mostrará todos los datos importantes del suelo, junto con un botón "Acciones Recomendadas"</p>
+        <p>Y el mensaje "Suelo seco, se requiere acción inmediata" es mostrado</p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP02 / US09</th>
+    <th>Verificación de temperatura del suelo</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero contar con indicador de la temperatura del suelo de cada uno de mis cultivos </p>
+      <p> Para asegurarme que el suelo en donde se encuentran mis cultivos se encuentren con la temperatura correcta para no arruinar los cultivos </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Suelo con temperatura dentro de los parámetros normales</h5>
+        <p>Dado que el agricultor se encuentra en la página "Detalles del suelo"</p>
+        <p>Cuando el agricultor quiera visualizar la temperatura del suelo</p>
+        <p>Y la temperatura del suelo esté dentro de los parámetros aceptables</p>
+        <p>Entonces se podrán ver los datos importantes del suelo</p>
+        <p>Y en la parte inferior aparecerá un mensaje, indicando que el suelo se encuentra con la temperatura favorable</p>
+      <h5>Escenario 2: Suelo con temperatura ligeramente fuera de los parámetros normales</h5>
+        <p>Dado que el agricultor se encuentra en la página "Detalles del suelo"</p>
+        <p>Cuando el agricultor quiera visualizar la temperatura del suelo</p>
+        <p>Y la temperatura del suelo esté ligeramente fuera de los parámetros aceptables</p>
+        <p>Entonces se podrán ver los datos importantes del suelo</p>
+        <p>Y en la parte inferior aparecerá un mensaje de precaución, indicando que el suelo no se encuentra con una temperatura aceptable y que requiere atención</p>
+      <h5>Escenario 3: Suelo con temperatura fuera de los parámetros normales</h5>
+        <p>Dado que el agricultor se encuentra en la página "Detalles del suelo"</p>
+        <p>Cuando el agricultor quiera visualizar la temperatura del suelo</p>
+        <p>Y la temperatura del suelo esté muy por fuera de los parámetros aceptables</p>
+        <p>Entonces aparecerá un mensaje de peligro, indicando que el suelo necesita atención urgente y que se pueden hechar a perder los cultivos</p>
+        <p>Y en la parte inferior se encontrarán los datos del cultivo</p>
+      <h5>Escenario 4: Suelo en llamas</h5>
+        <p>Dado que el agricultor se encuentra en la página "Detalles del suelo"</p>
+        <p>Cuando el agricultor quiera visualizar la temperatura del suelo</p>
+        <p>Y el suelo se encuentra en llamas</p>
+        <p>Entonces aparecerá un mensaje de peligro, indicando que el suelo está en llamas</p>
+        <p>Y en la parte inferior se encontrarán los datos del cultivo</p>
+        <p>Y aparecerá el botón "Acciones recomendadas"</p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP02 / TS-US09</th>
+    <th>Verificar temperatura del suelo</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero agregar un indicador de la temperatura del suelo </p>
+      <p> Para que los usuarios puedan ver el estado de los suelos de sus cultivos </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Suelo con temperatura dentro de los parámetros normales</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud GET sea enviada al presionar el botón "Detalles del cultivo"</p>
+        <p>Y la temperatura del suelo esté dentro de los parámetros aceptables (Tropicales/calor: 20–30°C, Templados: 15–25°C, Frescos/resistentes: 10–20°C) para el tipo de cultivo que es</p>
+        <p>Entonces se recibe una respuesta con el estado 200</p>
+        <p>Y la página mostrará todos los datos importantes del suelo</p>
+        <p>Y el mensaje "Temperatura favorable" es mostrado</p>
+      <h5>Escenario 2: Suelo con temperatura ligeramente fuera de los parámetros normales</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud GET sea enviada al presionar el botón "Detalles del cultivo"</p>
+        <p>Y la temperatura del suelo esté ligeramente fuera de los parámetros aceptables (Tropicales/calor: 16-19°C o 31-34°C, Templados: 11-14°C o 25-28°C, Frescos/resistentes: 6-9°C o 21-24°C) para el tipo de cultivo que es</p>
+        <p>Entonces se recibe una respuesta con el estado 200</p>
+        <p>Y la página mostrará todos los datos importantes del suelo</p>
+        <p>Y el mensaje "Temperatura ligeramente desfavorable, se recomienda una acción" es mostrado</p>
+      <h5>Escenario 3: Suelo con temperatura fuera de los parámetros normales</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud GET sea enviada al presionar el botón "Detalles del cultivo"</p>
+        <p>Y la temperatura del suelo esté muy por fuera de los parámetros aceptables (Tropicales/calor: < 15°C o > 35°C, Templados: < 11°C o > 28°C, Frescos/resistentes: < 6°C o > 24°C) para el tipo de cultivo que es</p>
+        <p>Entonces se recibe una respuesta con el estado 200</p>
+        <p>Y la página mostrará todos los datos importantes del suelo</p>
+        <p>Y el mensaje "Temperatura desfavorable, se requiere acción" es mostrado</p>
+      <h5>Escenario 4: Suelo en llamas</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud GET sea enviada al presionar el botón "Detalles del cultivo"</p>
+        <p>Y el suelo está en llamas</p>
+        <p>Entonces se recibe una respuesta con el estado 200</p>
+        <p>Y la página mostrará todos los datos importantes del suelo, junto con un botón "Acciones Recomendadas"</p>
+        <p>Y el mensaje "Suelo en llamas, acción inmediata requerida" es mostrado</p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP02 / US10</th>
+    <th>Acciones Recomendadas para los cultivos</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero contar una interfaz que me permita ver qué acciones debo realizar en situaciones de peligro</p>
+      <p> Para que mis cultivos siempre se encuentren saludables y a salvo</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Ingreso a la página Acciones Recomendadas</h5>
+        <p>Dado que el agricultor se encuentra en la página "Detalles del suelo"</p>
+        <p>Y que el suelo se encuentra en una situación no favorable</p>
+        <p>Cuando el agricultor haga click en el botón "Acciones Recomendadas"</p>
+        <p>Entonces el agricultor será redirigido a la página de "Acciones Recomendadas"</p>
+      <h5>Escenario 2: Tutoriales</h5>
+        <p>Dado que el agricultor se encuentra en la página "Acciones Recomendadas"</p>
+        <p>Cuando el agricultor haga click en cualquiera de los tutoriales</p>
+        <p>Entonces se redirigirá al agricultor a la página del tutorial seleccionado</p>
+      <h5>Escenario 3: Videos tutoriales</h5>
+        <p>Dado que el agricultor se encuentra en la página "Acciones Recomendadas"</p>
+        <p>Cuando el agricultor haga click en cualquiera de los video tutoriales</p>
+        <p>Entonces se redirigirá al agricultor a la video de Youtube correspondiente</p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP02 / US11</th>
+    <th>Historial del cultivo</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero contar con una historial de cultivos</p>
+      <p> Para visualizar cómo han estado los cultivos en los últimos días</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Visualizar el estado de los cultivos</h5>
+        <p>Dado que el agricultor se encuentra en la página "Detalles del suelo"</p>
+        <p>Cuando el agricultor haga click en "Visualizar Historial de cultivos"</p>
+        <p>Entonces aparecerá en la parte inferior una lista del estado (temperatura y humedad) de los cultivos en los últimos 30 días </p>
+      <h5>Escenario 2: Visualizar el estado de los cultivos en más de 30 días</h5>
+        <p>Dado que el agricultor se encuentra en la página "Detalles del suelo"</p>
+        <p>Cuando el agricultor haga click en "Visualizar Historial Completo de cultivos"</p>
+        <p>Entonces se redirigirá al agricultor a la página "Historial Detallado", en donde aparecerá el historial completo de los cultivos </p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP02 / TS-US11</th>
+    <th>Mostrar historial del cultivo</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que el usuario cuente con historial de cultivos</p>
+      <p> Para que pueda verificar el estado de sus cultivos</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Visualizar el estado de los cultivos</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando un solicitud GET sea enviada al presionar "Visualizar Historial de cultivos"</p>
+        <p>Entonces se recibe una respuesta con el estado 200 </p>
+        <p>Y el mensaje "Mostrando historial de cultivos" es mostrado</p>
+      <h5>Escenario 2: Visualizar el estado de los cultivos en más de 30 días</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando un solicitud GET sea enviada al presionar "Visualizar Historial Completo de cultivos"</p>
+        <p>Entonces se recibe una respuesta con el estado 200 </p>
+        <p>Y el mensaje "Mostrando historial completo de cultivos" es mostrado</p>
+    </td>
   </tr>
 </table>
 
