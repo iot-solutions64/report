@@ -1301,6 +1301,7 @@ Segmento objetivo: Agricultor
         <p>Y en la parte inferior se encontrarán los datos del cultivo</p>
         <p>Y aparecerá el botón "Acciones recomendadas"</p>
     </td>
+    <td>EP02</td>
   </tr>
   <tr>
     <th>EP02 / TS-US08</th>
@@ -1347,6 +1348,7 @@ Segmento objetivo: Agricultor
         <p>Y la página mostrará todos los datos importantes del suelo, junto con un botón "Acciones Recomendadas"</p>
         <p>Y el mensaje "Suelo seco, se requiere acción inmediata" es mostrado</p>
     </td>
+    <td>EP02</td>
   </tr>
   <tr>
     <th>EP02 / US09</th>
@@ -1383,6 +1385,7 @@ Segmento objetivo: Agricultor
         <p>Y en la parte inferior se encontrarán los datos del cultivo</p>
         <p>Y aparecerá el botón "Acciones recomendadas"</p>
     </td>
+    <td>EP02</td>
   </tr>
   <tr>
     <th>EP02 / TS-US09</th>
@@ -1422,6 +1425,7 @@ Segmento objetivo: Agricultor
         <p>Y la página mostrará todos los datos importantes del suelo, junto con un botón "Acciones Recomendadas"</p>
         <p>Y el mensaje "Suelo en llamas, acción inmediata requerida" es mostrado</p>
     </td>
+    <td>EP02</td>
   </tr>
   <tr>
     <th>EP02 / US10</th>
@@ -1446,6 +1450,7 @@ Segmento objetivo: Agricultor
         <p>Cuando el agricultor haga click en cualquiera de los video tutoriales</p>
         <p>Entonces se redirigirá al agricultor a la video de Youtube correspondiente</p>
     </td>
+    <td>EP02</td>
   </tr>
   <tr>
     <th>EP02 / US11</th>
@@ -1465,6 +1470,7 @@ Segmento objetivo: Agricultor
         <p>Cuando el agricultor haga click en "Visualizar Historial Completo de cultivos"</p>
         <p>Entonces se redirigirá al agricultor a la página "Historial Detallado", en donde aparecerá el historial completo de los cultivos </p>
     </td>
+    <td>EP02</td>
   </tr>
   <tr>
     <th>EP02 / TS-US11</th>
@@ -1486,6 +1492,7 @@ Segmento objetivo: Agricultor
         <p>Entonces se recibe una respuesta con el estado 200 </p>
         <p>Y el mensaje "Mostrando historial completo de cultivos" es mostrado</p>
     </td>
+    <td>EP02</td>
   </tr>
 </table>
 
