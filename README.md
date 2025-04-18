@@ -941,8 +941,8 @@ Segmento objetivo: Agricultor
   </tr>
   <!--Epic 2-->
   <tr>
-    <th rowspan="9"> EP02 </th>
-    <th rowspan="9"> Monitoreo de los cultivos </th>
+    <th rowspan="7"> EP02 </th>
+    <th rowspan="7"> Monitoreo de los cultivos </th>
     <td> US08 </td>
     <td> Verificación de humedad del suelo </td>
   </tr>
@@ -970,104 +970,139 @@ Segmento objetivo: Agricultor
     <td>TS-US11</td>
     <td>Mostrar historial del cultivo</td>
   </tr>
-  <tr>
-    <td> US12 </td>
-    <td> Historial de consumo de agua mensual </td>
-  </tr>
-  <tr>
-    <td>TS-US12</td>
-    <td>Mostrar historial de consumo de agua mensual</td>
-  </tr>
   <!--Epic 3-->
   <tr>
     <th rowspan="6"> EP03 </th>
     <th rowspan="6"> Sistema automático de riego </th>
-    <td> US13 </td>
+    <td> US12 </td>
     <td> Interacción con el riego automático </td>
   </tr>
   <tr>
-    <td>TS-US13</td>
+    <td>TS-US12</td>
     <td>Interactuar con el riego automático</td>
   </tr>
   <tr>
-    <td> US14 </td>
+    <td> US13 </td>
     <td> Notificaciones de regado </td>
   </tr>
   <tr>
-    <td>TS-US14</td>
+    <td>TS-US13</td>
     <td>Notificar el regado</td>
   </tr>
   <tr>
-    <td> US15 </td>
+    <td> US14 </td>
     <td> Limites en el uso agua por cultivo</td>
   </tr>
   <tr>
-    <td>TS-US15</td>
+    <td>TS-US14</td>
     <td>Limitar el uso de agua por cultivo</td>
   </tr>
   <!--Epic 4-->
   <tr>
-    <th rowspan="6"> EP04 </th>
-    <th rowspan="6"> Configuración del sistema </th>
+    <th rowspan="4"> EP04 </th>
+    <th rowspan="4"> Administración de Agua </th>
+    <td> US15 </td>
+    <td> Cantidad de agua disponible </td>
+  </tr>
+  <tr>
+    <td>TS-US15</td>
+    <td>Mostrar Cantidad de agua disponible</td>
+  </tr>
+  <tr>
     <td> US16 </td>
-    <td> Verificación del estado de los sistemas </td>
+    <td> Historial de consumo de agua mensual </td>
   </tr>
   <tr>
-    <td> TS-US16 </td>
-    <td> Verificar estado de los sistemas </td>
-  </tr>
-  <tr>
-    <td> US17 </td>
-    <td> Añadir un nuevo sistema de HydroSmart </td>
-  </tr>
-  <tr>
-    <td> TS-US17 </td>
-    <td> Agregar un nuevo sistema HydroSmart</td>
-  </tr>
-  <tr>
-    <td> US18 </td>
-    <td> Quitar un sistema de HydroSmart </td>
-  </tr>
-  <tr>
-    <td> TS-US18 </td>
-    <td> Eliminar un sistema HydroSmart</td>
+    <td>TS-US16</td>
+    <td>Mostrar historial de consumo de agua mensual</td>
   </tr>
   <!--Epic 5-->
   <tr>
-    <th rowspan="4"> EP05 </th>
-    <th rowspan="4"> Autenticación de Usuarios </th>
+    <th rowspan="12"> EP05 </th>
+    <th rowspan="12"> Configuración del sistema </th>
+    <td> US17 </td>
+    <td> Verificación del estado del sistema de regado</td>
+  </tr>
+  <tr>
+    <td> TS-US17 </td>
+    <td> Verificar estado del sistema de regado </td>
+  </tr>
+  <tr>
+    <td> US18 </td>
+    <td> Verificación del estado del sensor de humedad </td>
+  </tr>
+  <tr>
+    <td> TS-US18 </td>
+    <td> Verificar estado del sensor de humedad </td>
+  </tr>
+  <tr>
     <td> US19 </td>
-    <td> Registro de usuarios </td>
+    <td> Verificación del estado del sensor de temperatura </td>
   </tr>
   <tr>
     <td> TS-US19 </td>
-    <td> Registar usuario</td>
+    <td> Verificar estado del sensor de temperatura </td>
   </tr>
   <tr>
     <td> US20 </td>
-    <td> Acceso de Usuarios </td>
+    <td> Verificación de la batería</td>
   </tr>
   <tr>
     <td> TS-US20 </td>
-    <td> Acceso a usuario </td>
+    <td> Verificar batería </td>
+  </tr>
+  <tr>
+    <td> US21 </td>
+    <td> Añadir un nuevo sistema de HydroSmart </td>
+  </tr>
+  <tr>
+    <td> TS-US21 </td>
+    <td> Agregar un nuevo sistema HydroSmart</td>
+  </tr>
+  <tr>
+    <td> US22 </td>
+    <td> Quitar un sistema de HydroSmart </td>
+  </tr>
+  <tr>
+    <td> TS-US22 </td>
+    <td> Eliminar un sistema HydroSmart</td>
   </tr>
   <!--Epic 6-->
   <tr>
     <th rowspan="4"> EP06 </th>
+    <th rowspan="4"> Autenticación de Usuarios </th>
+    <td> US23 </td>
+    <td> Registro de usuarios </td>
+  </tr>
+  <tr>
+    <td> TS-US23 </td>
+    <td> Registar usuario</td>
+  </tr>
+  <tr>
+    <td> US24 </td>
+    <td> Acceso de Usuarios </td>
+  </tr>
+  <tr>
+    <td> TS-US24 </td>
+    <td> Acceso a usuario </td>
+  </tr>
+  <!--Epic 7-->
+  <tr>
+    <th rowspan="4"> EP07 </th>
     <th rowspan="4"> Administración de Contraseña de Usuarios </th>
-    <td> US21 </td>
+    <td> US25 </td>
     <td> Actualización de contraseña </td>
   </tr>
   <tr>
-    <td> TS-US21 </td>
+    <td> TS-US25 </td>
     <td> Actualizar contraseña</td>
   </tr>
   <tr>
-    <td> US22 </td>
+    <td> US26 </td>
     <td> Recuperación de contraseña </td>
   </tr>
   <tr>
-    <td> TS-US22 </td>
+    <td> TS-US26 </td>
     <td> Recuperar de contraseña</td>
   </tr>
 </table>
