@@ -2678,7 +2678,7 @@ Se utilizó la aplicación Trello para el desarrollo del product backlog **[Trel
 | 21 | US01 |	Implementación de Barra de navegación |	Como visitante quiero tener la opción de atravesar todas las secciones de la landing page a través de una barra de navegación para facilitar el acceso a la información |	1 |
 | 22 | US02 |	Implementación de Barra de navegación | Como visitante quiero visualizar el logo y descripción de la empresa para verificar que estoy en la landing page oficial de la empresa | 1 |
 | 23 | US03 |	Detalles y Servicios de la empresa | Como visitante quiero visualizar los detalles y servicios de la empresa para conocer de qué manera se puede utilizar la aplicación | 1 |
-| 24 | US04 |	Clientes de la empresa | Como visitante quiero visualizar las experiencias de clientes previos de la empresa para es que la vida de los usuarios cambió al utilizar la aplicación	1
+| 24 | US04 |	Clientes de la empresa | Como visitante quiero visualizar las experiencias de clientes previos de la empresa para es que la vida de los usuarios cambió al utilizar la aplicación | 1 |
 | 25 | US05 |	Acerca de nosotros | Como visitante quiero visualizar la misión y visión de la empresa para conocer qué planes tienen a futuro | 1 |
 | 26 | US06 |	Implementación de un Footer |	Como visitante quiero visualizar un Footer al final de la página para ver las redes sociales asociadas a la empresa |	1 |
 | 27 | US07 |	Translación a la aplicación web |	Como visitante quiero contar con un botón que me redirija a la aplicación web para tener un acceso directo y rápido a ella | 1 |
