@@ -941,8 +941,8 @@ Segmento objetivo: Agricultor
   </tr>
   <!--Epic 2-->
   <tr>
-    <th rowspan="7"> EP02 </th>
-    <th rowspan="7"> Monitoreo de los cultivos </th>
+    <th rowspan="9"> EP02 </th>
+    <th rowspan="9"> Monitoreo de los cultivos </th>
     <td> US08 </td>
     <td> Verificación de humedad del suelo </td>
   </tr>
@@ -1053,8 +1053,8 @@ Segmento objetivo: Agricultor
   </tr>
   <!--Epic 7-->
   <tr>
-    <th rowspan="6"> EP07 </th>
-    <th rowspan="6"> Administración de Contraseña de Usuarios </th>
+    <th rowspan="4"> EP07 </th>
+    <th rowspan="4"> Administración de Contraseña de Usuarios </th>
     <td> US21 </td>
     <td> Actualización de contraseña </td>
   </tr>
