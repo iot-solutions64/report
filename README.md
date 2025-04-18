@@ -983,11 +983,11 @@ Segmento objetivo: Agricultor
   </tr>
   <tr>
     <td> US13 </td>
-    <td> Notificaciones al iniciar el regado </td>
+    <td> Notificaciones de regado </td>
   </tr>
   <tr>
     <td>TS-US13</td>
-    <td>Notificar al iniciar el regado</td>
+    <td>Notificar el regado</td>
   </tr>
   <tr>
     <td> US14 </td>
@@ -1493,6 +1493,220 @@ Segmento objetivo: Agricultor
         <p>Y el mensaje "Mostrando historial completo de cultivos" es mostrado</p>
     </td>
     <td>EP02</td>
+  </tr>
+  <!--EPIC 3-->
+  <tr>
+    <td colspan="5">
+      <h5 style="text-align: center">EPIC 3: Sistema automático de riego</h5>
+      <p>
+        Como agricultor, quiero contar con un sistema que riegue automáticamente mis cultivos cuando sea necesario para poder utilizar mi tiempo en otras tareas relacionadas con los cultivos con mayor calma y facilidad
+      </p>
+    </td>
+  </tr>
+  <tr>
+  <tr>
+    <th>EP03 / US12</th>
+    <th>Interacción con el riego automático</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero poder activar y desactivar el riego automático </p>
+      <p> Para tener mayor control con el agua que se está utilizando para el regado de cultivos</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Activar regado automático</h5>
+        <p>Dado que el agricultor se encuentra en la página "Cultivos"</p>
+        <p>Y el regado automático está desactivado</p>
+        <p>Cuando el agricultor haga click en el switch "Toggle Regado"</p>
+        <p>Entonces el regado automático se activará para el cultivo seleccionado</p>
+        <p>Y aparecerá un mensaje de confirmación, indicando que el regado automático ha sido activado</p>
+      <h5>Escenario 2: Desactivar regado automático</h5>
+        <p>Dado que el agricultor se encuentra en la página "Cultivos"</p>
+        <p>Y el regado automático está activado</p>
+        <p>Cuando el agricultor haga click en el switch "Toggle Regado"</p>
+        <p>Entonces el regado automático se desactivará para el cultivo seleccionado</p>
+        <p>Y aparecerá un mensaje de confirmación, indicando que el regado automático ha sido desactivado</p>
+      <h5>Escenario 3: Desactivar regado automático mientras se está regando</h5>
+        <p>Dado que el agricultor se encuentra en la página "Cultivos"</p>
+        <p>Y el regado automático está activado</p>
+        <p>Y actualmente se está regando</p>
+        <p>Cuando el agricultor haga click en el switch "Toggle Regado"</p>
+        <p>Entonces aparecerá un mensaje, indicando que se está regando en este momento, junto con un botón para confirmar la desactivación</p>
+      <h5>Escenario 4: Activar regado automático para todos los cultivos</h5>
+        <p>Dado que el agricultor se encuentra en la página "Cultivos"</p>
+        <p>Cuando el agricultor haga click en el botón "Activar Regado de todos los cultivos"</p>
+        <p>Entonces aparecerá un mensaje, indicando se ha activado el regado automático para todos los cultivos</p>
+      <h5>Escenario 5: Desactivar regado automático para todos los cultivos</h5>
+        <p>Dado que el agricultor se encuentra en la página "Cultivos"</p>
+        <p>Cuando el agricultor haga click en el botón "Desactivar Regado de todos los cultivos"</p>
+        <p>Entonces aparecerá un mensaje, indicando se ha desactivado el regado automático para todos los cultivos</p>
+      <h5>Escenario 6: Desactivar regado automático para todos los cultivos mientras al menos 1 se está actualmente</h5>
+        <p>Dado que el agricultor se encuentra en la página "Cultivos"</p>
+        <p>Cuando el agricultor haga click en el botón "Desactivar Regado de todos los cultivos"</p>
+        <p>Y al menos 1 cultivo se esté regando</p>
+        <p>Entonces aparecerá un mensaje, indicando que se está regando en este momento, junto con un botón para confirmar la desactivación</p>
+    </td>
+    <td>EP03</td>
+  </tr>
+  <tr>
+    <th>EP03 / TS-US12</th>
+    <th>Interacción con el riego automático</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero un botón para activar y desactivar el riego automático </p>
+      <p> Para que los usuarios tengan un mayor control con el agua que se está utilizando para el regado de cultivos</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Verificación de estado inicial</h5>
+        <p>Dado que el endpoint/usuario se encuentra disponible</p>
+        <p>Cuando una solicitud GET sea enviada al entrar por a la página "Cultivos"</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y se muestran todos los cultivos con sus respectivos estados de regado automático</p>
+      <h5>Escenario 2: Activar regado automático</h5>
+        <p>Dado que el endpoint/usuario se encuentra disponible</p>
+        <p>Y el regado automático está desactivado</p>
+        <p>Cuando una solicitud PATCH sea enviada al presionar el switch "Toggle Regado"</p>
+        <p>Entonces se recibe una respuesta con estado 200 </p>
+        <p>Y el mensaje "Regado automático activado" es mostrado</p>
+        <p>Y el regado automático se activa para el cultivo seleccionado</p>
+      <h5>Escenario 3: Desactivar regado automático</h5>
+        <p>Dado que el endpoint/usuario se encuentra disponible</p>
+        <p>Y el regado automático está activado</p>
+        <p>Cuando una solicitud PATCH sea enviada al presionar el switch "Toggle Regado"</p>
+        <p>Entonces se recibe una respuesta con estado 200 </p>
+        <p>Y el mensaje "Regado automático desactivado" es mostrado</p>
+        <p>Y el regado automático se desactiva para el cultivo seleccionado</p>
+      <h5>Escenario 4: Activar regado automático para todos los cultivos</h5>
+        <p>Dado que el endpoint/usuario se encuentra disponible</p>
+        <p>Cuando una solicitud PATCH sea enviada al presionar el switch "Activar Regado Automático de todos los cultivos"</p>
+        <p>Entonces se recibe una respuesta con estado 200 </p>
+        <p>Y el mensaje "Regado automático activado para todos los cultivos" es mostrado</p>
+        <p>Y el regado automático se activa para el cultivo seleccionado</p>
+      <h5>Escenario 5: Desactivar regado automático para todos los cultivos</h5>
+        <p>Dado que el endpoint/usuario se encuentra disponible</p>
+        <p>Cuando una solicitud PATCH sea enviada al presionar el switch "Desactivar Regado Automático de todos los cultivos"</p>
+        <p>Entonces se recibe una respuesta con estado 200 </p>
+        <p>Y el mensaje "Regado automático desactivado para todos los cultivos" es mostrado</p>
+        <p>Y el regado automático se desactiva para el cultivo seleccionado</p>
+    </td>
+    <td>EP03</td>
+  </tr>
+  <tr>
+    <th>EP03 / US13</th>
+    <th>Notificaciones de regado</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero que la aplicación cuente con notificaciones que me indiquen cuándo se inicia el regado de cada cultivo </p>
+      <p> Para saber cuándo se está regando los cultivos </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Notificación al iniciar regado automático</h5>
+        <p>Dado que el agricultor cuenta con la aplicación móvil HydroSmart</p>
+        <p>Cuando el regado de un cultivo esté por iniciar</p>
+        <p>Entonces se le envía una notificación al agricultor, indicando que el regado automático está por iniciar</p>
+      <h5>Escenario 2: Error al iniciar regado automático</h5>
+        <p>Dado que el agricultor cuenta con la aplicación móvil HydroSmart</p>
+        <p>Cuando el regado de un cultivo esté por iniciar</p>
+        <p>Y algún error interno ocurre que impide el regado automático</p>
+        <p>Entonces se le envía una notificación al agricultor, indicando que el regado automático no se ha podido iniciar</p>
+      <h5>Escenario 3: Fin de regado automático</h5>
+        <p>Dado que el agricultor cuenta con la aplicación móvil HydroSmart</p>
+        <p>Cuando el regado de un cultivo haya concluido</p>
+        <p>Entonces se le envía una notificación al agricultor, indicando que el regado automático ha concluido</p>
+    </td>
+    <td>EP03</td>
+  </tr>
+  <tr>
+    <th>EP03 / TS-US13</th>
+    <th>Notificar el regado</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que la aplicación cuente con notificaciones que le indiquen al usuario cuándo se inicia el regado de cada cultivo </p>
+      <p> Para que sepan cuándo se está regando los cultivos </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Notificación al iniciar regado automático</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud POST sea enviada en el momento que el regado de un cultivo esté a 5 minutos de iniciar</p>
+        <p>Entonces se recibe una respuesta con estado 200 </p>
+        <p>Y el sistema envía una notificación al agricultor con el mensaje "Cultivo {nombre}: El regado automático está por iniciar"</p>
+      <h5>Escenario 2: Error al iniciar regado automático</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud POST sea enviada en el momento que el regado de un cultivo esté a 5 minutos de iniciar</p>
+        <p>Y algún error interno (falta de agua, obstrucción del sistema de regado) ocurra</p>
+        <p>Entonces se recibe una respuesta con estado 400 </p>
+        <p>Y el sistema envía una notificación al agricultor con el mensaje "Cultivo {nombre}: El regado automático no se ha podido iniciar debido a el siguiente motivo: {motivo}"</p>
+      <h5>Escenario 3: Fin de regado automático</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud POST sea enviada en el momento que el regado de un cultivo haya concluido</p>
+        <p>Entonces se recibe una respuesta con estado 200 </p>
+        <p>Y el sistema envía una notificación al agricultor con el mensaje "Cultivo {nombre}: El regado automático ha concluido"</p>
+    </td>
+    <td>EP03</td>
+  </tr>
+  <tr>
+    <th>EP03 / US14</th>
+    <th>Limites en el uso agua por cultivo</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero que la aplicación me permita limitar la cantidad de agua utilizada por cada cultivo </p>
+      <p> Para asegurarme que ningún cultivo utilice agua de más </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Ingresar a la interfaz "Limitar uso de agua"</h5>
+        <p>Dado que el agricultor se encuentra en la pantalla "Cultivos"</p>
+        <p>Cuando el usuario haga click en el botón "Limitar uso de agua"</p>
+        <p>Entonces aparecerá un diálogo que le permite al usuario limitar el uso del agua</p>
+      <h5>Escenario 2: Limitar uso del agua</h5>
+        <p>Dado que el agricultor se encuentra en el diálogo "Limitar uso de agua"</p>
+        <p>Cuando el usuario escriba la cantidad máxima de agua que el cultivo pueda usar</p>
+        <p>Y haga click en "Confirmar"</p>
+        <p>Entonces la cantidad de agua que utiliza el cultivo será limitada a la cantidad indicada</p>
+        <p>Y aparecerá un mensaje de confirmación, indicando que la cantidad utilizable de agua máxima ha sido cambiada </p>
+      <h5>Escenario 3: Error al limitar uso del agua</h5>
+        <p>Dado que el agricultor se encuentra en el diálogo "Limitar uso de agua"</p>
+        <p>Cuando el usuario escriba la cantidad máxima de agua que el cultivo pueda usar</p>
+        <p>Y haga click en "Confirmar"</p>
+        <p>Y algún error impida guardar los cambios</p>
+        <p>Entonces la cantidad de agua que utiliza el cultivo se mantendrá como estaba antes de iniciar el cambio</p>
+        <p>Y aparecerá un mensaje de error, indicando que no se ha hecho ningún cambio </p>
+      <h5>Escenario 4: Restablecer cantidad máxima de agua utilizable</h5>
+        <p>Dado que el agricultor se encuentra en el diálogo "Limitar uso de agua"</p>
+        <p>Cuando el usuario haga click en "Restablecer"</p>
+        <p>Y haga click en "Confirmar"</p>
+        <p>Entonces el límite de agua utilizable volverá al predeterminado</p>
+        <p>Y aparecerá un mensaje de confirmación, indicando que la cantidad utilizable de agua máxima ha sido restablecida a su valor original</p>
+    </td>
+    <td>EP03</td>
+  </tr>
+  <tr>
+    <th>EP03 / TS-US14</th>
+    <th>Limitar uso agua por cultivo</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que haya un método para limitar el uso de agua por cultivo </p>
+      <p> Para que el usuario se asegure que no se utilice más agua por cultivo que la deseada </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Ingresar a la interfaz "Limitar uso de agua"</h5>
+        <p>Dado endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud PATCH sea enviada con el dato de cantidad máxima de agua que el cultivo pueda usar al hacer click al botón "Confirmar"</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y el sistema establece como límite de cantidad de agua utilizable en el cultivo el valor indicado por el usuario</p>
+        <p>Y el mensaje "Límite de agua actualizado" es mostrado </p>
+      <h5>Escenario 2: Error al limitar uso del agua</h5>
+        <p>Dado endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud PATCH sea enviada con el dato de cantidad máxima de agua que el cultivo pueda usar al hacer click el botón "Confirmar"</p>
+        <p>Y el valor ingresado no es un número real positivo mayor a la cantidad mínima necesaria</p>
+        <p>Entonces se recibe una respuesta con estado 400</p>
+        <p>Y el mensaje "Error al actualizar límite de agua utilizable: el valor ingresado no es un número real positivo mayor a la cantidad mínima necesaria" es mostrado </p>
+      <h5>Escenario 3: Restablecer cantidad máxima de agua utilizable</h5>
+        <p>Dado endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud PATCH sea enviada con el valor predeterminado de agua utilizable al hacer click al botón "Restablecer"</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y el sistema restablece el valor de agua utilizable al valor predeterminado</p>
+        <p>Y el mensaje "Límite restablecido al valor predeterminado" es mostrado </p>
+    </td>
+    <td>EP03</td>
   </tr>
 </table>
 
