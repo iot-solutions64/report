@@ -2699,7 +2699,7 @@ Se utilizó la aplicación Trello para el desarrollo del product backlog **[Trel
 ### 4.1.3. Software Architecture
 
 #### 4.1.3.1. System Landscape Diagram
-
+![Diagrama de Paisaje de Sistema](img/c4-landscape.png)
 #### 4.1.3.2. Context Level Diagrams
 ![Diagrama de Contexto](img/c4-context.png)
 #### 4.1.3.3. Container Level Diagrams
@@ -2719,7 +2719,11 @@ Se utilizó la aplicación Trello para el desarrollo del product backlog **[Trel
 #### 4.2.X.4. Infrastructure Layer
 
 #### 4.2.X.5. Component Level Diagrams
-
+![Diagrama de Componentes: Auth](img/c4-component-auth.png)
+![Diagrama de Componentes: Temperatura](img/c4-component-temp.png)
+![Diagrama de Componentes: Humedad](img/c4-component-hum.png)
+![Diagrama de Componentes: Cantidad de Agua](img/c4-component-agua.png)
+![Diagrama de Componentes: Dispositivo IOT](img/c4-component-iot-device.png)
 #### 4.2.X.6. Code Level Diagrams
 
 ##### 4.2.X.6.1. Domain Layer Class Diagrams
