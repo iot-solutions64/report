@@ -2120,6 +2120,159 @@ Segmento objetivo: Agricultor
     </td>
     <td>EP04</td>
   </tr>
+  <!--EPIC 5-->
+  <tr>
+    <td colspan="5">
+      <h5 style="text-align: center">EPIC 5: Autenticación de Usuarios</h5>
+        <p>
+          Como usuario, quiero poder registrarme e iniciar sesión para acceder a todas las herramientas que HydroSmart me ofrece
+        </p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP05 / US19</th>
+    <th>Registro de usuario</th>
+    <td>
+      <p> Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema </p>
+      <p> Quiero poder registrarme en la aplicación </p>
+      <p> Para acceder a todas sus funcionalidades </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Ingreso a la página "Crear una cuenta"</h5>
+        <p> Dado que el usuario se encuentra en la página "Inicio Sesión" </p>
+        <p> Cuando el usuario seleccione el botón "Crear nueva cuenta" </p>
+        <p> Entonces se redirige al usuario a la página "Crear nueva cuenta" </p>
+      <h5>Escenario 2: Registro exitoso</h5>
+        <p> Dado que el usuario se encuentra en la página “Crear nueva cuenta” </p>
+        <p> Cuando el usuario ingrese todos sus datos de registro </p>
+        <p> Entonces el sistema crea una nueva cuenta, incluyendo los datos de registro proporcionados por el usuario </p>
+        <p> Y se redirige al usuario a la página principal </p>
+      <h5>Escenario 3: Registro con datos incompletos</h5>
+        <p> Dado que el usuario se encuentra en la página “Crear nueva cuenta” </p>
+        <p> Cuando el usuario intente registrar una cuenta sin proporcionar todos los datos de registro requeridos </p>
+        <p> Entonces se muestra un mensaje de error, indicando que no puede crearse una cuenta sin haber completado todos los campos </p>
+      <h5>Escenario 4: Registro con correo electrónico ya registrado</h5>
+        <p> Dado que el usuario se encuentra en la página “Crear nueva cuenta” </p>
+        <p> Cuando el usuario ingrese una dirección de correo electrónico ya está registrada en el sistema </p>
+        <p> Entonces se muestra un mensaje de error, indicando que la dirección de correo electrónico ya está en uso </p>
+      <h5>Escenario 5: Registro con un nombre inválido</h5>
+        <p> Dado que el usuario se encuentra en la página “Crear nueva cuenta” </p>
+        <p> Cuando el usuario ingrese un nombre inválido </p>
+        <p> Entonces se muestra un mensaje de error, indicando que el nombre escrito no puede ser utilizado para crear una cuenta </p>
+    </td>
+    <td>EP05</td>
+  </tr>
+  <tr>
+    <th>EP05 / TS-US19</th>
+    <th>Registrar Usuario</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero agregar usuarios a la base de datos </p>
+      <p> Para que puedan utilizar mi aplicación </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Registro de usuario exitoso</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con los datos de nombre, edad, sexo, correo electrónico, contraseña </p>
+        <p> Entonces se recibe una respuesta con el status 201 </p>
+        <p> Y un recurso de usuario es incluido en el campo de respuestas con un nuevo ID y los datos ofrecidos por el usuario </p>
+      <h5>Escenario 2: Registro con correo electrónico ya registrado</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con los datos de nombre, edad, sexo, correo electrónico, contraseña </p>
+        <p> Y la dirección de correo electrónico ingresada ya está registrada en el sistema </p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y un mensaje con el valor “Correo ya registrado” es mostrado </p>
+      <h5>Escenario 3: Registro con datos incompletos</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con solo algunos de los datos de nombre, edad, sexo, correo electrónico, contraseña </p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y un mensaje con el valor “Faltan datos” es mostrado </p>
+      <h5>Escenario 4: Registro con un nombre de usuario prohibido</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con los datos de nombre, edad, sexo, correo electrónico, contraseña </p>
+        <p> Y el dato nombre sea una palabra inválida </p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y un mensaje con el valor “Nombre Prohibido” es mostrado </p>
+      <h5>Escenario 5: Registro con una edad inválida</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con los datos de nombre, edad, sexo, correo electrónico, contraseña </p>
+        <p> Y el dato edad menor o igual a 0 o mayor que 130 </p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y un mensaje con el valor “La edad no es número entero positivo menor a 130” es mostrado </p>
+      <h5>Escenario 6: Registro con una contraseña débil</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con los datos de nombre, edad, sexo, correo electrónico, contraseña </p>
+        <p> Y la contraseña sea muy débil (sin al menos una letra mayúscula, una letra minúscula, un número y un carácter especial) </p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y un mensaje con el valor de “La contraseña no incluye al menos una letra mayúscula, una letra minúscula, un número y un carácter especial” es mostrado </p>
+    </td>
+    <td>EP05</td>
+  </tr>
+  <tr>
+    <th>EP05 / US20</th>
+    <th>Acceso de usuario</th>
+    <td>
+      <p> Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema </p>
+      <p> Quiero poder iniciar sesión en la aplicación utilizando mi dirección de correo electrónico y contraseña </p>
+      <p> Para acceder a mi cuenta y utilizar todas las funcionalidades de la aplicación </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Inicio de sesión exitoso</h5>
+        <p> Dado que el usuario se encuentra en la página "Inicio Sesión" </p>
+        <p> Cuando el usuario ingrese una dirección de correo electrónico que tenga una cuenta registrada en el sistema </p>
+        <p>Y el usuario ingrese la contraseña asociada al correo electrónico proporcionado</p>
+        <p> Entonces se redirige al usuario a la página principal de la aplicación </p>
+      <h5>Escenario 2: Inicio de sesión con un correo electrónico no registrado en el sistema</h5>
+        <p> Dado que el usuario se encuentra en la página “Inicio Sesión” </p>
+        <p> Cuando el usuario ingrese una dirección de correo electrónico que no tenga una cuenta registrada en el sistema </p>
+        <p> Entonces se muestra un mensaje de error, indicando que el correo o contraseña es incorrecto </p>
+      <h5>Escenario 3: Inicio de sesión con una contraseña inválida</h5>
+        <p> Dado que el usuario se encuentra en la página “Inicio Sesión” </p>
+        <p> Cuando el usuario ingrese una dirección de correo electrónico </p>
+        <p> Y una contraseña inválida</p>
+        <p> Entonces se muestra un mensaje de 1error, indicando que el correo o contraseña es incorrecto </p>
+      <h5>Escenario 4: Inicio de sesión con una cuenta desactivada</h5>
+        <p> Dado que el usuario se encuentra en la página de “Inicio Sesión” </p>
+        <p> Cuando el usuario intente iniciar sesión con una cuenta desactivada </p>
+        <p> Entonces el sistema activa automáticamente la cuenta</p>
+        <p> Y se redirige al usuario a la página principal de la aplicación</p>
+    </td>
+    <td>EP05</td>
+  </tr>
+  <tr>
+    <th>EP05 / TS-US20</th>
+    <th>Acceder Usuarios</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero poder permitir el acceso a los usuarios a la aplicación móvil </p>
+      <p> Para que puedan utilizar los servicios ofrecidos por nuestra empresa </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Inicio de sesión exitoso</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con los datos de dirección de correo electrónico y contraseña que se encuentren guardados dentro de la base de datos</p>
+        <p> Entonces se recibe una respuesta con el status 202 </p>
+        <p> Y el sistema permite el acceso al usuario a la página principal </p>
+      <h5>Escenario 2: Registro con correo electrónico ya registrado</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con los datos de dirección de correo electrónico y contraseña </p>
+        <p> Y la dirección de correo electrónico no esté guardada en la base de datos </p>
+        <p> Entonces se recibe una respuesta con el status 404 </p>
+        <p> Y un mensaje con el valor de “No existe una cuenta asociada a el correo electrónico proporcionado” es mostrado </p>
+      <h5>Escenario 3: Inicio de sesión con contraseña incorrecta</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con los datos de dirección de correo electrónico y contraseña </p>
+        <p> Y la contraseña sea incorrecta </p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y un mensaje con el valor “Datos incorrectos” es mostrado </p>
+      <h5>Escenario 4: Inicio de sesión con datos incompletos</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con solo uno de los datos de dirección de correo electrónico y contraseña </p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y un mensaje con el valor “Faltan Datos” es mostrado </p>
+    </td>
+    <td>EP05</td>
+  </tr>
 </table>
 
 ## 3.3. Impact Mapping
