@@ -1005,9 +1005,9 @@ Segmento objetivo: Agricultor
     <td>TS-US15</td>
     <td>Limitar el uso de agua por cultivo</td>
   </tr>
-  <!--Epic 5-->
+  <!--Epic 4-->
   <tr>
-    <th rowspan="6"> EP05 </th>
+    <th rowspan="6"> EP04 </th>
     <th rowspan="6"> Configuración del sistema </th>
     <td> US16 </td>
     <td> Verificación del estado de los sistemas </td>
@@ -1032,9 +1032,9 @@ Segmento objetivo: Agricultor
     <td> TS-US18 </td>
     <td> Eliminar un sistema HydroSmart</td>
   </tr>
-  <!--Epic 6-->
+  <!--Epic 5-->
   <tr>
-    <th rowspan="4"> EP06 </th>
+    <th rowspan="4"> EP05 </th>
     <th rowspan="4"> Autenticación de Usuarios </th>
     <td> US19 </td>
     <td> Registro de usuarios </td>
@@ -1051,9 +1051,9 @@ Segmento objetivo: Agricultor
     <td> TS-US20 </td>
     <td> Acceso a usuario </td>
   </tr>
-  <!--Epic 7-->
+  <!--Epic 6-->
   <tr>
-    <th rowspan="4"> EP07 </th>
+    <th rowspan="4"> EP06 </th>
     <th rowspan="4"> Administración de Contraseña de Usuarios </th>
     <td> US21 </td>
     <td> Actualización de contraseña </td>
@@ -1475,6 +1475,64 @@ Segmento objetivo: Agricultor
     </td>
     <td>EP02</td>
   </tr>
+  <tr>
+    <th>EP02 / US12</th>
+    <th>Historial de consumo de agua mensual</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero contar con una historial de consumo de agua mensual</p>
+      <p> Para visualizar cuánta agua utilizo por mes</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Visualizar consumo de agua mensual</h5>
+        <p>Dado que el agricultor se encuentra en la página principal</p>
+        <p>Cuando el agricultor haga click en "Ver consumo de agua mensual"</p>
+        <p>Entonces se redirigirá al agricultor a la página "Consumo de agua mensual"</p>
+        <p>Y aparecerá un listado de consumo de agua por mes</p>
+      <h5>Escenario 2: Visualizar consumo detallado de agua mensual</h5>
+        <p>Dado que el agricultor se encuentra en la página "Consumo de agua mensual"</p>
+        <p>Cuando el agricultor dé click en "Historial detallado"</p>
+        <p>Entonces se redirigirá al agricultor a la página "Historial Detallado" </p>
+        <p>Y aparecerá un gráfico de barras indicando la cantidad diaria de agua utilizada</p>
+    </td>
+    <td>EP02</td>
+  </tr>
+  <tr>
+    <th>EP02 / TS-US12</th>
+    <th>Mostrar historial de consumo de agua mensual</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que se pueda visualizar en una tabla la cantidad de agua utilizada mensualmente</p>
+      <p> Para que el agricultor pueda contar con un seguimiento de cantidad de agua utilizada</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Visualizar consumo de agua mensual</h5>
+        <p>Dado endpoint/usuario esté disponible</p>
+        <p>Cuando una solicitud GET sea enviada al hacer click en "Ver consumo de agua mensual"</p>
+        <p>Entonces se recibirá una respuesta con estado 200</p>
+        <p>Y el sistema mostrará un listado de consumo de agua por mes en formato gráfico de barras</p>
+        <p>Y el mensaje "Cantidad de agua utilizada mensualmente obtenida satisfactoriamente" es mostrado</p>
+      <h5>Escenario 2: Visualizar consumo de agua mensual para usuario nuevo</h5>
+        <p>Dado endpoint/usuario esté disponible</p>
+        <p>Y el usuario es nuevo</p>
+        <p>Cuando una solicitud GET sea enviada al hacer click en "Ver consumo de agua mensual"</p>
+        <p>Entonces se recibirá una respuesta con estado 400</p>
+        <p>Y el mensaje "No hay datos para mostrar" es mostrado</p>
+      <h5>Escenario 3: Visualizar consumo detallado de agua mensual</h5>
+        <p>Dado endpoint/usuario esté disponible</p>
+        <p>Cuando una solicitud GET sea enviada al hacer click en "Historial detallado"</p>
+        <p>Entonces se recibirá una respuesta con estado 200</p>
+        <p>Y el sistema mostrará un listado de consumo de agua por diario en formato gráfico de barras</p>
+        <p>Y el mensaje "Cantidad de agua utilizada mensualmente en formato diario obtenida satisfactoriamente" es mostrado</p>
+      <h5>Escenario 4: Visualizar consumo detallado de agua mensual para usuario nuevo</h5>
+        <p>Dado endpoint/usuario esté disponible</p>
+        <p>Y el usuario es nuevo</p>
+        <p>Cuando una solicitud GET sea enviada al hacer click en "Historial detallado"</p>
+        <p>Entonces se recibirá una respuesta con estado 400</p>
+        <p>Y el mensaje "No hay datos para mostrar" es mostrado</p>
+    </td>
+    <td>EP02</td>
+  </tr>
   <!--EPIC 3-->
   <tr>
     <td colspan="5">
@@ -1486,7 +1544,7 @@ Segmento objetivo: Agricultor
   </tr>
   <tr>
   <tr>
-    <th>EP03 / US12</th>
+    <th>EP03 / US13</th>
     <th>Interacción con el riego automático</th>
     <td>
       <p> Como agricultor </p>
@@ -1529,7 +1587,7 @@ Segmento objetivo: Agricultor
     <td>EP03</td>
   </tr>
   <tr>
-    <th>EP03 / TS-US12</th>
+    <th>EP03 / TS-US13</th>
     <th>Interacción con el riego automático</th>
     <td>
       <p> Como desarrollador </p>
@@ -1572,7 +1630,7 @@ Segmento objetivo: Agricultor
     <td>EP03</td>
   </tr>
   <tr>
-    <th>EP03 / US13</th>
+    <th>EP03 / US14</th>
     <th>Notificaciones de regado</th>
     <td>
       <p> Como agricultor </p>
@@ -1597,7 +1655,7 @@ Segmento objetivo: Agricultor
     <td>EP03</td>
   </tr>
   <tr>
-    <th>EP03 / TS-US13</th>
+    <th>EP03 / TS-US14</th>
     <th>Notificar el regado</th>
     <td>
       <p> Como desarrollador </p>
@@ -1625,7 +1683,7 @@ Segmento objetivo: Agricultor
     <td>EP03</td>
   </tr>
   <tr>
-    <th>EP03 / US14</th>
+    <th>EP03 / US15</th>
     <th>Limites en el uso agua por cultivo</th>
     <td>
       <p> Como agricultor </p>
@@ -1660,7 +1718,7 @@ Segmento objetivo: Agricultor
     <td>EP03</td>
   </tr>
   <tr>
-    <th>EP03 / TS-US14</th>
+    <th>EP03 / TS-US15</th>
     <th>Limitar uso agua por cultivo</th>
     <td>
       <p> Como desarrollador </p>
