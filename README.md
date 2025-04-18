@@ -2701,7 +2701,7 @@ Se utilizó la aplicación Trello para el desarrollo del product backlog **[Trel
 #### 4.1.3.1. System Landscape Diagram
 
 #### 4.1.3.2. Context Level Diagrams
-
+![Diagrama de Contexto](img/c4-context.png)
 #### 4.1.3.3. Container Level Diagrams
 
 #### 4.1.3.4. Deployment Diagrams
