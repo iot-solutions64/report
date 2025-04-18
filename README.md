@@ -1747,6 +1747,379 @@ Segmento objetivo: Agricultor
     </td>
     <td>EP03</td>
   </tr>
+  <!--EPIC 4-->
+  <tr>
+    <td colspan="5">
+      <h5 style="text-align: center">EPIC 4: Configuración del sistema</h5>
+      <p>
+        Como agricultor, quiero controlar los sistemas de regadío que me ofrece HydroSmart a través de una interfaz para que sea más sencillo poder modificar los datos y las funcionalidades a mi gusto
+      </p>
+    </td>
+  </tr>
+  <tr>
+  <tr>
+    <th>EP04 / US16</th>
+    <th>Verificación del estado de los sistemas</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero poder verificar el estado de cada uno de los sistemas que tengo instalado en mi propiedad</p>
+      <p> Para asegurarme que estén funcionando correctamente</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Ver estado del sistema</h5>
+        <p>Dado que el agricultor se encuentra en la página "Configuración"</p>
+        <p>Cuando el agricultor haga click en alguno de los sistemas</p>
+        <p>Entonces aparecerán todos los estados modificables del sistemas</p>
+      <h5>Escenario 2: Encender un sistema</h5>
+        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
+        <p>Cuando el agricultor haga click en el switch "On/Off"</p>
+        <p>Entonces el sistema se encenderá</p>
+        <p>Y en pantalla se mostrará el momento en el que el sistema se encienda por completo</p>
+      <h5>Escenario 3: Apagar un sistema mientras no está regando</h5>
+        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
+        <p>Cuando el agricultor haga click en el switch "On/Off"</p>
+        <p>Y el sistema no se encuentra regando en este momento</p>
+        <p>Entonces el sistema se apagará</p>
+        <p>Y en pantalla se mostrará el momento en el que el sistema se apague por completo</p>
+      <h5>Escenario 4: Apagar un sistema mientras se está regando</h5>
+        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
+        <p>Cuando el agricultor haga click en el switch "On/Off"</p>
+        <p>Y el sistema se encuentra regando en este momento</p>
+        <p>Entonces aparecerá un mensaje, indicando si es el sistema se encuentra regando en este momento, junto con un botón de confirmación de apagado de sistema</p>
+      <h5>Escenario 5: Comprobar sistema de regado</h5>
+        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
+        <p>Cuando el agricultor haga click en el botón "Comprobar sistema de regado"</p>
+        <p>Entonces el sistema comprobará si es que el sistema de regado está obstruido</p>
+        <p>Y aparecerá un mensaje, indicando si el sistema de regado está funcionando correctamente</p>
+      <h5>Escenario 6: Comprobar sensor de humedad</h5>
+        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
+        <p>Cuando el agricultor haga click en el botón "Comprobar sensor de humedad"</p>
+        <p>Entonces el sistema comprobará si es que el sensor de humedad está funcionando correctamente, activándolo brevemente</p>
+        <p>Y aparecerá un mensaje, indicando si el sensor de humedad está funcionando correctamente</p>
+      <h5>Escenario 7: Comprobar humedad</h5>
+        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
+        <p>Cuando el agricultor haga click en el botón "Comprobar humedad del suelo"</p>
+        <p>Entonces el sistema comprobará la humedad del suelo</p>
+        <p>Y aparecerá un mensaje, indicando la humedad del suelo</p>
+      <h5>Escenario 8: Comprobar sensor de temperatura</h5>
+        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
+        <p>Cuando el agricultor haga click en el botón "Comprobar sensor de temperatura"</p>
+        <p>Entonces el sistema comprobará si es que el sensor de temperatura está funcionando correctamente, activándolo brevemente</p>
+        <p>Y aparecerá un mensaje, indicando si el sensor de temperatura está funcionando correctamente</p>
+      <h5>Escenario 9: Comprobar temperatura</h5>
+        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
+        <p>Cuando el agricultor haga click en el botón "Comprobar temperatura del suelo"</p>
+        <p>Entonces el sistema comprobará la temperatura del suelo</p>
+        <p>Y aparecerá un mensaje, indicando la temperatura del suelo</p>
+      <h5>Escenario 10: Verificar batería</h5>
+        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
+        <p>Cuando el agricultor quiera ver la batería</p>
+        <p>Entonces aparecerá la cantidad de batería con la que cuenta el sistema</p>
+    </td>
+    <td>EP04</td>
+  </tr>
+  <tr>
+    <th>EP04 / TS-US16</th>
+    <th>Verificar el estado de los sistemas</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que el usuario pueda verificar el estado de cada uno de los sistemas que tengo instalado en su propiedad</p>
+      <p> Para que pueda asegurarse que estén funcionando correctamente</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Encender/Apagar un sistema</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud POST sea enviada al hacer click en el switch "On/Off"</p>
+        <p>Entonces se recibirá una respuesta con estado 200</p>
+        <p>Y el sistema cambiará al estado correspondiente</p>
+        <p>Y el mensaje "Sistema {estado}" es mostrado</p>
+      <h5>Escenario 2: Apagar un sistema mientras se está regando</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud POST sea enviada al hacer click en el switch "On/Off"</p>
+        <p>Y el sistema está regando actualmente</p>
+        <p>Entonces se recibirá una respuesta con estado 400</p>
+        <p>Y el mensaje "Sistema regando. No es posible apagarlo en este momento" es mostrado</p>
+      <h5>Escenario 3: Inicia comprobación del sistema de regado</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud POST sea enviada al hacer click en el botón "Comprobar sistema de regado"</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y se envía la solicitud al sistema</p>
+        <p>Y el mensaje "Iniciando comprobación" es mostrado</p>
+      <h5>Escenario 4: Comprobación del sistema de regado</h5>
+        <p>Dado que el endpoint/sistemaIOT está disponible</p>
+        <p>Cuando la solicitud POST, enviada al hacer click en el botón "Comprobar sistema de regado", sea recibida por el sistema</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y el sistema comprobará si es que el sistema de regado está obstruido, fluyendo un poco de agua</p>
+        <p>Y el mensaje "Comprobando sistema de regado" es mostrado</p>
+      <h5>Escenario 5: Sistema de regado en estado correcto</h5>
+        <p>Dado que el endpoint/sistemaIOT está disponible</p>
+        <p>Cuando el sistema haya terminado la verificación del sistema de regado</p>
+        <p> Y no detecte ningún problema </p>
+        <p>Entonces se devuelve la respuesta 200 a la plataforma, mediante una solicitud POST</p>
+        <p>Y el mensaje "Sistema sin obstrucciones" es mostrado</p>
+      <h5>Escenario 6: Sistema de regado obstruído</h5>
+        <p>Dado que el endpoint/sistemaIOT está disponible</p>
+        <p>Cuando el sistema haya terminado la verificación del sistema de regado</p>
+        <p> Y detecta una obstrucción en el sistema de regado </p>
+        <p>Entonces se devuelve la respuesta 400 a la plataforma, mediante una solicitud POST</p>
+        <p>Y el mensaje "Sistema obstruído" es mostrado</p>
+      <h5>Escenario 7: Recepción del estado del sistema de regado por plataforma</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando la solicitud POST, enviada por el sistema al terminar su evaluación, sea recibida</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y el mensaje "Sistema de regado en estado {estado}" es mostrado</p>
+      <h5>Escenario 8: Sin respuesta del sistema</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando la solicitud POST, enviada al hacer click en el botón "Comprobar sistema de regado", no tenga una respuesta por el sistema de regado</p>
+        <p>Entonces se recibe una respuesta con estado 404</p>
+        <p>Y el mensaje "No se pudo comunicar con el sistema de regado" es mostrado</p>
+      <h5>Escenario 9: Inicia comprobación del sensor de humedad</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud POST sea enviada al hacer click en el botón "Comprobar sensor de humedad"</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y se envía la solicitud al sistema</p>
+        <p>Y el mensaje "Iniciando comprobación" es mostrado</p>
+      <h5>Escenario 10: Comprobación del sensor de humedad</h5>
+        <p>Dado que el endpoint/sistemaIOT está disponible</p>
+        <p>Cuando la solicitud POST, enviada al hacer click en el botón "Comprobar sensor de humedad", sea recibida por el sistema</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y el sistema comprobará si es que el sensor de humedad está funcionando correctamente, activándolo brevemente</p>
+        <p>Y el mensaje "Comprobando sensor de humedad" es mostrado</p>
+      <h5>Escenario 11: Sensor de humedad en estado correcto</h5>
+        <p>Dado que el endpoint/sistemaIOT está disponible</p>
+        <p>Cuando el sistema haya terminado la verificación del sensor de humedad</p>
+        <p> Y no detecte ningún problema </p>
+        <p>Entonces se devuelve la respuesta 200 a la plataforma, mediante una solicitud POST</p>
+        <p>Y el mensaje "Sensor de humedad funcionando correctamente" es mostrado</p>
+      <h5>Escenario 12: Sensor de humedad defectuoso</h5>
+        <p>Dado que el endpoint/sistemaIOT está disponible</p>
+        <p>Cuando el sistema haya terminado la verificación del sensor de humedad</p>
+        <p> Y detecta que el sensor de humedad no está funcionando correctamente (detecta 0% de humedad, lee un +-20% de nivel de humedad en comparación a la última comprobación, detecta una humedad muy fluctuante) </p>
+        <p>Entonces se devuelve la respuesta 400 a la plataforma, mediante una solicitud POST</p>
+        <p>Y el mensaje "Sensor de humedad mal estado" es mostrado</p>
+      <h5>Escenario 13: Sin respuesta del sensor de humedad</h5>
+        <p>Dado que el endpoint/sistemaIOT está disponible</p>
+        <p>Cuando el sistema haya terminado la verificación del sensor de humedad</p>
+        <p> Y el sensor de humedad no devuelve ninguna respuesta (no enciende, no hay ningún sensor) </p>
+        <p>Entonces se devuelve la respuesta 404 a la plataforma, mediante una solicitud POST</p>
+        <p>Y el mensaje "No hay respuesta del sensor de humedad" es mostrado</p>
+      <h5>Escenario 14: Recepción del estado del sensor de humedad por plataforma</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando la solicitud POST, enviada por el sistema al terminar su evaluación, sea recibida</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y el mensaje "Sensor en estado {estado}" es mostrado</p>
+      <h5>Escenario 15: Sin respuesta del sistema</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando la solicitud POST, enviada al hacer click en el botón "Comprobar sensor de humedad", no tenga una respuesta por el sensor de humedad</p>
+        <p>Entonces se recibe una respuesta con estado 404</p>
+        <p>Y el mensaje "No se pudo comunicar con el sensor de humedad" es mostrado</p>
+      <h5>Escenario 16: Inicia comprobación del sensor de temperatura</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud POST sea enviada al hacer click en el botón "Comprobar sensor de temperatura"</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y se envía la solicitud al sistema</p>
+        <p>Y el mensaje "Iniciando comprobación" es mostrado</p>
+      <h5>Escenario 17: Comprobación del sensor de temperatura</h5>
+        <p>Dado que el endpoint/sistemaIOT está disponible</p>
+        <p>Cuando la solicitud POST, enviada al hacer click en el botón "Comprobar sensor de temperatura", sea recibida por el sistema</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y el sistema comprobará si es que el sensor de temperatura está funcionando correctamente, activándolo brevemente</p>
+        <p>Y el mensaje "Comprobando sensor de temperatura" es mostrado</p>
+      <h5>Escenario 18: Sensor de temperatura en estado correcto</h5>
+        <p>Dado que el endpoint/sistemaIOT está disponible</p>
+        <p>Cuando el sistema haya terminado la verificación del sensor de temperatura</p>
+        <p> Y no detecte ningún problema </p>
+        <p>Entonces se devuelve la respuesta 200 a la plataforma, mediante una solicitud POST</p>
+        <p>Y el mensaje "Sensor de temperatura funcionando correctamente" es mostrado</p>
+      <h5>Escenario 19: Sensor de temperatura defectuoso</h5>
+        <p>Dado que el endpoint/sistemaIOT está disponible</p>
+        <p>Cuando el sistema haya terminado la verificación del sensor de temperatura</p>
+        <p> Y detecta que el sensor de temperatura no está funcionando correctamente (detecta una temperatura de <-10C°, lee un +-20% de nivel de temperatura en comparación a la última comprobación, detecta una temperatura >60°C, detecta una temperatura muy fluctuante) </p>
+        <p>Entonces se devuelve la respuesta 400 a la plataforma, mediante una solicitud POST</p>
+        <p>Y el mensaje "Sensor de temperatura mal estado" es mostrado</p>
+      <h5>Escenario 20: Sin respuesta del sensor de temperatura</h5>
+        <p>Dado que el endpoint/sistemaIOT está disponible</p>
+        <p>Cuando el sistema haya terminado la verificación del sensor de temperatura</p>
+        <p> Y el sensor de temperatura no devuelve ninguna respuesta (no enciende, no hay ningún sensor) </p>
+        <p>Entonces se devuelve la respuesta 404 a la plataforma, mediante una solicitud POST</p>
+        <p>Y el mensaje "No hay respuesta del sensor de temperatura" es mostrado</p>
+      <h5>Escenario 21: Recepción del estado del sensor de temperatura por plataforma</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando la solicitud POST, enviada por el sistema al terminar su evaluación, sea recibida</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y el mensaje "Sensor en estado {estado}" es mostrado</p>
+      <h5>Escenario 22: Sin respuesta del sistema</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando la solicitud POST, enviada al hacer click en el botón "Comprobar sensor de temperatura", no tenga una respuesta por el sensor de temperatura</p>
+        <p>Entonces se recibe una respuesta con estado 404</p>
+        <p>Y el mensaje "No se pudo comunicar con el sensor de temperatura" es mostrado</p>
+      <h5>Escenario 23: Verificar batería</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud GET sea enviada al ingresar a la sección "Configuración"</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y el mensaje "Mostrando batería" es mostrado</p>
+        <p>Y la plataforma muestra la batería correspondiente del sistema IOT</p>
+      <h5>Escenario 24: Sin respuesta del sistema IOT</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud GET sea enviada al ingresar a la sección "Configuración"</p>
+        <p>Y el sistema IOT no devuelva una respuesta (sin batería, sin conexión a internet)</p>
+        <p>Entonces se recibe una respuesta con estado 404</p>
+        <p>Y el mensaje "Sin respuesta del sistema IOT" es mostrado</p>
+    </td>
+    <td>EP04</td>
+  </tr>
+  <tr>
+    <th>EP04 / US17</th>
+    <th>Añadir un nuevo sistema de HydroSmart</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero poder agregar un nuevo sistema de HydroSmart </p>
+      <p> Para automatizar aún más el proceso de regado de mis cultivos </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Buscar un nuevo sistema para añadir</h5>
+        <p>Dado que el agricultor se encuentra en la página "Configuración"</p>
+        <p>Cuando el agricultor haga click en "Agregar nuevo sistema"</p>
+        <p>Entonces se redirigirá al agricultor a la página "Agregar nuevo sistema"</p>
+        <p>Y la plataforma empezará a buscar un nuevo sistema cercano</p>
+      <h5>Escenario 2: Sin detección de sistemas</h5>
+        <p>Dado que el agricultor se encuentra en la página "Agregar nuevo sistema"</p>
+        <p>Cuando la plataforma se encuentre buscando los sistemas cercanos</p>
+        <p>Y hayan pasado más de 30 segundos buscando</p>
+        <p>Entonces aparecerá un mensaje de error, indicando que no se encontró ningún sistema cercano, junto con un botón para reintar el proceso</p>
+      <h5>Escenario 3: Agregar nuevo sistema</h5>
+        <p>Dado que el agricultor se encuentra en la página "Agregar nuevo sistema"</p>
+        <p>Cuando la plataforma encuentre un sistema nuevo para agregar</p>
+        <p>Y el agricultor haga click en "Agregar"</p>
+        <p>Entonces la plataforma agregará automáticamente el nuevo sistema</p>
+        <p>Y aparecerá un mensaje de confirmación, indicando que el nuevo sistema ha sido agregando</p>
+        <p>Y el nuevo sistema será visible en la interfaz de configuración, junto con la personalización del mismo</p>
+      <h5>Escenario 4: Error al agregar nuevo sistema</h5>
+        <p>Dado que el agricultor se encuentra en la página "Agregar nuevo sistema"</p>
+        <p>Cuando la plataforma encuentre un sistema nuevo para agregar</p>
+        <p>Y el agricultor haga click en "Agregar"</p>
+        <p>Y algún error interno impida agregar el nuevo sistema</p>
+        <p>Entonces aparecerá un mensaje de error, indicando que no fue posible agregar el nuevo sistema, junto con un botón para reintar el proceso</p>
+    </td>
+    <td>EP04</td>
+  </tr>
+  <tr>
+    <th>EP04 / TS-US17</th>
+    <th>Agregar un nuevo sistema HydroSmart</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que el usuario pueda agregar un nuevo sistema de HydroSmart </p>
+      <p> Para que pueda utilizar más de nuestros productos en su propiedad </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Se encontró un nuevo sistema para añadir</h5>
+        <p>Dado que el endpoint/usuario se encuentra disponible</p>
+        <p>Cuando una solicitud GET sea enviada al hacer click en "Agregar nuevo sistema"</p>
+        <p>Y se ha encontrado al menos un nuevo sistema cercano</p>
+        <p>Entonces se recibe un respuesta con estado 200</p>
+        <p>Y el mensaje "Se han encontrado {cantidad} sistema(s)" es mostrado</p>
+      <h5>Escenario 2: No se encontró un nuevo sistema para añadir</h5>
+        <p>Dado que el endpoint/usuario se encuentra disponible</p>
+        <p>Cuando una solicitud GET sea enviada al hacer click en "Agregar nuevo sistema"</p>
+        <p>Y han pasado más de 30 segundos buscando sistemas</p>
+        <p>Y no se ha encontrado al menos un nuevo sistema cercano</p>
+        <p>Entonces se recibe un respuesta con estado 404</p>
+        <p>Y el mensaje "No se ha encontrado ningún sistema" es mostrado</p>
+      <h5>Escenario 3: Agregar nuevo sistema</h5>
+        <p>Dado que el endpoint/usuario se encuentra disponible</p>
+        <p>Cuando una solicitud POST sea enviada al hacer click en "Agregar"</p>
+        <p>Entonces se recibe una respuesta con estado 201</p>
+        <p>Y la plataforma agrega automáticamente el nuevo sistema</p>
+        <p>Y mensaje "Nuevo sistema agregado satisfactoriamente" es mostrado</p>
+      <h5>Escenario 4: Error al agregar nuevo sistema</h5>
+        <p>Dado que el endpoint/usuario se encuentra disponible</p>
+        <p>Cuando una solicitud POST sea enviada al hacer click en "Agregar"</p>
+        <p>Y algún error de conexión ocurra (sistema corrupto, sistema conectándose a otra plataforma, sin respuesta del sistema)</p>
+        <p>Entonces se recibe una respuesta con estado 400</p>
+        <p>Y mensaje "Error al agregar el nuevo sistema: {error}" es mostrado</p>
+    </td>
+    <td>EP04</td>
+  </tr>
+  <tr>
+    <th>EP04 / US18</th>
+    <th>Quitar un sistema de HydroSmart</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero poder quitar un sistema de HydroSmart </p>
+      <p> Para no tener sistemas que ya no utilizo en la plataforma </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Elegir sistema a eliminar</h5>
+        <p>Dado que el agricultor se encuentra en la página "Configuración"</p>
+        <p>Cuando el agricultor haga click en "Eliminar sistema"</p>
+        <p>Entonces se redirigirá al agricultor a la página "Eliminar sistema"</p>
+        <p>Y la plataforma mostrará todos los sistemas disponibles para la eliminación</p>
+      <h5>Escenario 2: Sin detección de sistemas</h5>
+        <p>Dado que el agricultor se encuentra en la página "Configuración"</p>
+        <p>Y actualmente no cuente con ningún sistema disponible</p>
+        <p>Cuando el agricultor haga click en "Eliminar sistema"</p>
+        <p>Entonces aparecerá un mensaje, indicando que no cuenta con ningún sistema disponible </p>
+      <h5>Escenario 3: Inicio de eliminación sistema</h5>
+        <p>Dado que el agricultor se encuentra en la página "Eliminar sistema"</p>
+        <p>Cuando el agricultor haga click en el botón "Eliminar" de cualquiera de los sistemas disponibles</p>
+        <p>Entonces aparecerá un diálogo de confirmación, indicando que la acción es irreversible, junto con un botón de confirmación</p>
+      <h5>Escenario 4: Eliminación definitiva de sistema</h5>
+        <p>Dado que el agricultor se encuentra en el diálogo de confirmación de eliminación de sistema</p>
+        <p>Cuando el agricultor haga click en "Eliminar Definitivamente"</p>
+        <p>Entonces la plataforma empezará a eliminar todo dato del sistema de la plataforma</p>
+        <p>Y aparecerá un mensaje de confirmación, indicando que el sistema ha sido eliminado</p>
+      <h5>Escenario 5: Eliminación definitiva de sistema que está regando</h5>
+        <p>Dado que el agricultor se encuentra en el diálogo de confirmación de eliminación de sistema</p>
+        <p>Cuando el agricultor haga click en "Eliminar Definitivamente"</p>
+        <p>Entonces la plataforma detendrá el sistema de regado automático del sistema</p>
+        <p>Y empezará a eliminar todo dato del sistema de la plataforma</p>
+        <p>Y aparecerá un mensaje de confirmación, indicando que el sistema ha sido eliminado</p>
+    </td>
+    <td>EP04</td>
+  </tr>
+  <tr>
+    <th>EP04 / TS-US18</th>
+    <th>Eliminar un sistema de HydroSmart</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que el usuario pueda quitar un sistema de HydroSmart </p>
+      <p> Para que no tenga sistemas que ya no utiliza en la plataforma </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Elegir sistema a eliminar</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud GET sea enviada al dar click en "Eliminar sistema"</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y la plataforma muestra todos los dispositivos disponibles para eliminar</p>
+        <p>Y el mensaje, "Mostrando {cantidad} dispositivos disponibles para eliminar"</p>
+      <h5>Escenario 2: Sin detección de sistemas</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud GET sea enviada al dar click en "Eliminar sistema"</p>
+        <p>Y no haya ningún sistema para eliminar</p>
+        <p>Entonces se recibe una respuesta con estado 404</p>
+        <p>Y el mensaje, "No hay dispositivos disponibles para eliminar"</p>
+      <h5>Escenario 3: Inicio de eliminación sistema</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud GET sea enviada al hacer click en el botón "Eliminar" de cualquiera de los sistemas disponibles</p>
+        <p>Entonces se recibe una respuesta con estado 200 con el dato del estado del sistema </p>
+        <p>Y el mensaje "El sistema se encuentra actualmente {estado}" es mostrado</p>
+      <h5>Escenario 4: Eliminación definitiva de sistema</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud DELETE sea enviada al hacer click en "Eliminar Definitivamente"</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y la plataforma empezará a eliminar todo dato del sistema de la plataforma </p>
+        <p>Y el mensaje "Sistema eliminado de la plataforma" es mostrado</p>
+      <h5>Escenario 5: Eliminación definitiva de sistema que está regando</h5>
+        <p>Dado que el endpoint/usuario está disponible</p>
+        <p>Cuando una solicitud DELETE sea enviada al hacer click en "Eliminar Definitivamente"</p>
+        <p>Y el sistema se encuentra actualmente regando</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y la plataforma detiene el funcionamiento del sistema</p>
+        <p>Y la plataforma empezará a eliminar todo dato del sistema de la plataforma </p>
+        <p>Y el mensaje "Sistema eliminado de la plataforma" es mostrado</p>
+    </td>
+    <td>EP04</td>
+  </tr>
 </table>
 
 ## 3.3. Impact Mapping
