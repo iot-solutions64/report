@@ -970,124 +970,105 @@ Segmento objetivo: Agricultor
     <td>TS-US11</td>
     <td>Mostrar historial del cultivo</td>
   </tr>
+  <tr>
+    <td> US12 </td>
+    <td> Historial de consumo de agua mensual </td>
+  </tr>
+  <tr>
+    <td>TS-US12</td>
+    <td>Mostrar historial de consumo de agua mensual</td>
+  </tr>
   <!--Epic 3-->
   <tr>
     <th rowspan="6"> EP03 </th>
     <th rowspan="6"> Sistema automático de riego </th>
-    <td> US12 </td>
+    <td> US13 </td>
     <td> Interacción con el riego automático </td>
   </tr>
   <tr>
-    <td>TS-US12</td>
+    <td>TS-US13</td>
     <td>Interactuar con el riego automático</td>
   </tr>
   <tr>
-    <td> US13 </td>
+    <td> US14 </td>
     <td> Notificaciones de regado </td>
   </tr>
   <tr>
-    <td>TS-US13</td>
+    <td>TS-US14</td>
     <td>Notificar el regado</td>
   </tr>
   <tr>
-    <td> US14 </td>
+    <td> US15 </td>
     <td> Limites en el uso agua por cultivo</td>
   </tr>
   <tr>
-    <td>TS-US14</td>
-    <td>Limitar el uso de agua por cultivo</td>
-  </tr>
-  <!--Epic 4-->
-  <tr>
-    <th rowspan="4"> EP04 </th>
-    <th rowspan="4"> Panel de control </th>
-    <td> US15 </td>
-    <td> Administración de cultivos en el sistema </td>
-  </tr>
-  <tr>
     <td>TS-US15</td>
-    <td>Administrar cultivos del sistema</td>
-  </tr>
-  <tr>
-    <td> US16 </td>
-    <td> Historial de consumo de agua mensual </td>
-  </tr>
-  <tr>
-    <td>TS-US16</td>
-    <td>Mostrar historial de consumo de agua mensual</td>
+    <td>Limitar el uso de agua por cultivo</td>
   </tr>
   <!--Epic 5-->
   <tr>
     <th rowspan="6"> EP05 </th>
     <th rowspan="6"> Configuración del sistema </th>
-    <td> US17 </td>
+    <td> US16 </td>
     <td> Verificación del estado de los sistemas </td>
   </tr>
   <tr>
-    <td> TS-US17 </td>
+    <td> TS-US16 </td>
     <td> Verificar estado de los sistemas </td>
   </tr>
   <tr>
-    <td> US18 </td>
+    <td> US17 </td>
     <td> Añadir un nuevo sistema de HydroSmart </td>
   </tr>
   <tr>
-    <td> TS-US18 </td>
+    <td> TS-US17 </td>
     <td> Agregar un nuevo sistema HydroSmart</td>
   </tr>
   <tr>
-    <td> US19 </td>
+    <td> US18 </td>
     <td> Quitar un sistema de HydroSmart </td>
   </tr>
   <tr>
-    <td> TS-US19 </td>
+    <td> TS-US18 </td>
     <td> Eliminar un sistema HydroSmart</td>
   </tr>
   <!--Epic 6-->
   <tr>
     <th rowspan="4"> EP06 </th>
     <th rowspan="4"> Autenticación de Usuarios </th>
-    <td> US20 </td>
+    <td> US19 </td>
     <td> Registro de usuarios </td>
   </tr>
   <tr>
-    <td> TS-US20 </td>
+    <td> TS-US19 </td>
     <td> Registar usuario</td>
   </tr>
   <tr>
-    <td> US21 </td>
+    <td> US20 </td>
     <td> Acceso de Usuarios </td>
   </tr>
   <tr>
-    <td> TS-US21 </td>
+    <td> TS-US20 </td>
     <td> Acceso a usuario </td>
   </tr>
   <!--Epic 7-->
   <tr>
     <th rowspan="6"> EP07 </th>
-    <th rowspan="6"> Manejo de Usuarios </th>
-    <td> US22 </td>
+    <th rowspan="6"> Administración de Contraseña de Usuarios </th>
+    <td> US21 </td>
     <td> Actualización de contraseña </td>
   </tr>
   <tr>
-    <td> TS-US22 </td>
+    <td> TS-US21 </td>
     <td> Actualizar contraseña</td>
   </tr>
   <tr>
-    <td> US23 </td>
+    <td> US22 </td>
     <td> Recuperación de contraseña </td>
   </tr>
   <tr>
-    <td> TS-US23 </td>
+    <td> TS-US22 </td>
     <td> Recuperar de contraseña</td>
-  </tr>
-  <tr>
-    <td> US24 </td>
-    <td> Eliminación usuario </td>
-  </tr>
-  <tr>
-    <td> TS-US24 </td>
-    <td> Eliminar usuario</td>
   </tr>
 </table>
 
