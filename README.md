@@ -1018,91 +1018,99 @@ Segmento objetivo: Agricultor
   </tr>
   <!--Epic 5-->
   <tr>
-    <th rowspan="12"> EP05 </th>
-    <th rowspan="12"> Configuración del sistema </th>
+    <th rowspan="14"> EP05 </th>
+    <th rowspan="14"> Configuración del sistema </th>
     <td> US17 </td>
-    <td> Verificación del estado del sistema de regado</td>
+    <td> Apagar y Encender los Sistemas</td>
   </tr>
   <tr>
     <td> TS-US17 </td>
-    <td> Verificar estado del sistema de regado </td>
+    <td> Apagar/Encender Sistemas </td>
   </tr>
   <tr>
     <td> US18 </td>
-    <td> Verificación del estado del sensor de humedad </td>
+    <td> Verificación del estado del sistema de regado</td>
   </tr>
   <tr>
     <td> TS-US18 </td>
-    <td> Verificar estado del sensor de humedad </td>
+    <td> Verificar estado del sistema de regado </td>
   </tr>
   <tr>
     <td> US19 </td>
-    <td> Verificación del estado del sensor de temperatura </td>
+    <td> Verificación del estado del sensor de humedad </td>
   </tr>
   <tr>
     <td> TS-US19 </td>
-    <td> Verificar estado del sensor de temperatura </td>
+    <td> Verificar estado del sensor de humedad </td>
   </tr>
   <tr>
     <td> US20 </td>
-    <td> Verificación de la batería</td>
+    <td> Verificación del estado del sensor de temperatura </td>
   </tr>
   <tr>
     <td> TS-US20 </td>
-    <td> Verificar batería </td>
+    <td> Verificar estado del sensor de temperatura </td>
   </tr>
   <tr>
     <td> US21 </td>
-    <td> Añadir un nuevo sistema de HydroSmart </td>
+    <td> Verificación de la batería</td>
   </tr>
   <tr>
     <td> TS-US21 </td>
-    <td> Agregar un nuevo sistema HydroSmart</td>
+    <td> Verificar batería </td>
   </tr>
   <tr>
     <td> US22 </td>
-    <td> Quitar un sistema de HydroSmart </td>
+    <td> Añadir un nuevo sistema de HydroSmart </td>
   </tr>
   <tr>
     <td> TS-US22 </td>
+    <td> Agregar un nuevo sistema HydroSmart</td>
+  </tr>
+  <tr>
+    <td> US23 </td>
+    <td> Quitar un sistema de HydroSmart </td>
+  </tr>
+  <tr>
+    <td> TS-US23 </td>
     <td> Eliminar un sistema HydroSmart</td>
   </tr>
   <!--Epic 6-->
   <tr>
     <th rowspan="4"> EP06 </th>
     <th rowspan="4"> Autenticación de Usuarios </th>
-    <td> US23 </td>
+    <td> US24 </td>
     <td> Registro de usuarios </td>
   </tr>
   <tr>
-    <td> TS-US23 </td>
+    <td> TS-US24 </td>
     <td> Registar usuario</td>
   </tr>
   <tr>
-    <td> US24 </td>
+    <td> US25 </td>
     <td> Acceso de Usuarios </td>
   </tr>
   <tr>
-    <td> TS-US24 </td>
+    <td> TS-US25 </td>
     <td> Acceso a usuario </td>
   </tr>
   <!--Epic 7-->
   <tr>
     <th rowspan="4"> EP07 </th>
     <th rowspan="4"> Administración de Contraseña de Usuarios </th>
-    <td> US25 </td>
+    <td> US26 </td>
     <td> Actualización de contraseña </td>
   </tr>
   <tr>
-    <td> TS-US25 </td>
+    <td> TS-US26 </td>
     <td> Actualizar contraseña</td>
   </tr>
   <tr>
-    <td> US26 </td>
+    <td> US27 </td>
     <td> Recuperación de contraseña </td>
   </tr>
   <tr>
-    <td> TS-US26 </td>
+    <td> TS-US27 </td>
     <td> Recuperar de contraseña</td>
   </tr>
 </table>
@@ -1510,64 +1518,6 @@ Segmento objetivo: Agricultor
     </td>
     <td>EP02</td>
   </tr>
-  <tr>
-    <th>EP02 / US12</th>
-    <th>Historial de consumo de agua mensual</th>
-    <td>
-      <p> Como agricultor </p>
-      <p> Quiero contar con una historial de consumo de agua mensual</p>
-      <p> Para visualizar cuánta agua utilizo por mes</p>
-    </td>
-    <td>
-      <h5>Escenario 1: Visualizar consumo de agua mensual</h5>
-        <p>Dado que el agricultor se encuentra en la página principal</p>
-        <p>Cuando el agricultor haga click en "Ver consumo de agua mensual"</p>
-        <p>Entonces se redirigirá al agricultor a la página "Consumo de agua mensual"</p>
-        <p>Y aparecerá un listado de consumo de agua por mes</p>
-      <h5>Escenario 2: Visualizar consumo detallado de agua mensual</h5>
-        <p>Dado que el agricultor se encuentra en la página "Consumo de agua mensual"</p>
-        <p>Cuando el agricultor dé click en "Historial detallado"</p>
-        <p>Entonces se redirigirá al agricultor a la página "Historial Detallado" </p>
-        <p>Y aparecerá un gráfico de barras indicando la cantidad diaria de agua utilizada</p>
-    </td>
-    <td>EP02</td>
-  </tr>
-  <tr>
-    <th>EP02 / TS-US12</th>
-    <th>Mostrar historial de consumo de agua mensual</th>
-    <td>
-      <p> Como desarrollador </p>
-      <p> Quiero que se pueda visualizar en una tabla la cantidad de agua utilizada mensualmente</p>
-      <p> Para que el agricultor pueda contar con un seguimiento de cantidad de agua utilizada</p>
-    </td>
-    <td>
-      <h5>Escenario 1: Visualizar consumo de agua mensual</h5>
-        <p>Dado endpoint/usuario esté disponible</p>
-        <p>Cuando una solicitud GET sea enviada al hacer click en "Ver consumo de agua mensual"</p>
-        <p>Entonces se recibirá una respuesta con estado 200</p>
-        <p>Y el sistema mostrará un listado de consumo de agua por mes en formato gráfico de barras</p>
-        <p>Y el mensaje "Cantidad de agua utilizada mensualmente obtenida satisfactoriamente" es mostrado</p>
-      <h5>Escenario 2: Visualizar consumo de agua mensual para usuario nuevo</h5>
-        <p>Dado endpoint/usuario esté disponible</p>
-        <p>Y el usuario es nuevo</p>
-        <p>Cuando una solicitud GET sea enviada al hacer click en "Ver consumo de agua mensual"</p>
-        <p>Entonces se recibirá una respuesta con estado 400</p>
-        <p>Y el mensaje "No hay datos para mostrar" es mostrado</p>
-      <h5>Escenario 3: Visualizar consumo detallado de agua mensual</h5>
-        <p>Dado endpoint/usuario esté disponible</p>
-        <p>Cuando una solicitud GET sea enviada al hacer click en "Historial detallado"</p>
-        <p>Entonces se recibirá una respuesta con estado 200</p>
-        <p>Y el sistema mostrará un listado de consumo de agua por diario en formato gráfico de barras</p>
-        <p>Y el mensaje "Cantidad de agua utilizada mensualmente en formato diario obtenida satisfactoriamente" es mostrado</p>
-      <h5>Escenario 4: Visualizar consumo detallado de agua mensual para usuario nuevo</h5>
-        <p>Dado endpoint/usuario esté disponible</p>
-        <p>Y el usuario es nuevo</p>
-        <p>Cuando una solicitud GET sea enviada al hacer click en "Historial detallado"</p>
-        <p>Entonces se recibirá una respuesta con estado 400</p>
-        <p>Y el mensaje "No hay datos para mostrar" es mostrado</p>
-    </td>
-    <td>EP02</td>
-  </tr>
   <!--EPIC 3-->
   <tr>
     <td colspan="5">
@@ -1579,7 +1529,7 @@ Segmento objetivo: Agricultor
   </tr>
   <tr>
   <tr>
-    <th>EP03 / US13</th>
+    <th>EP03 / US12</th>
     <th>Interacción con el riego automático</th>
     <td>
       <p> Como agricultor </p>
@@ -1622,7 +1572,7 @@ Segmento objetivo: Agricultor
     <td>EP03</td>
   </tr>
   <tr>
-    <th>EP03 / TS-US13</th>
+    <th>EP03 / TS-US12</th>
     <th>Interacción con el riego automático</th>
     <td>
       <p> Como desarrollador </p>
@@ -1665,7 +1615,7 @@ Segmento objetivo: Agricultor
     <td>EP03</td>
   </tr>
   <tr>
-    <th>EP03 / US14</th>
+    <th>EP03 / US13</th>
     <th>Notificaciones de regado</th>
     <td>
       <p> Como agricultor </p>
@@ -1690,7 +1640,7 @@ Segmento objetivo: Agricultor
     <td>EP03</td>
   </tr>
   <tr>
-    <th>EP03 / TS-US14</th>
+    <th>EP03 / TS-US13</th>
     <th>Notificar el regado</th>
     <td>
       <p> Como desarrollador </p>
@@ -1718,7 +1668,7 @@ Segmento objetivo: Agricultor
     <td>EP03</td>
   </tr>
   <tr>
-    <th>EP03 / US15</th>
+    <th>EP03 / US14</th>
     <th>Limites en el uso agua por cultivo</th>
     <td>
       <p> Como agricultor </p>
@@ -1753,7 +1703,7 @@ Segmento objetivo: Agricultor
     <td>EP03</td>
   </tr>
   <tr>
-    <th>EP03 / TS-US15</th>
+    <th>EP03 / TS-US14</th>
     <th>Limitar uso agua por cultivo</th>
     <td>
       <p> Como desarrollador </p>
@@ -1785,7 +1735,167 @@ Segmento objetivo: Agricultor
   <!--EPIC 4-->
   <tr>
     <td colspan="5">
-      <h5 style="text-align: center">EPIC 4: Configuración del sistema</h5>
+      <h5 style="text-align: center">EPIC 5: Administración de Agua</h5>
+      <p>
+        Como agricultor, quiero verificar la cantidad de agua con la que cuento para asegurarme de estar utilizando la cantidad adecuada de agua para mis cultivos
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <th>EP04 / US15</th>
+    <th>Cantidad de agua disponible</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero verificar la cantidad de agua disponible para mis cultivos</p>
+      <p> Para visualizar si tengo suficiente agua para mis culivos</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Visualizar cantidad de agua</h5>
+        <p>Dado que el agricultor se encuentra en la página principal</p>
+        <p>Cuando el agricultor haga click en "Ver cantidad de agua disponible"</p>
+        <p>Entonces se redirigirá al agricultor a la página "Agua Disponible"</p>
+        <p>Y aparecerá la cantidad de agua disponible, en litros</p>
+      <h5>Escenario 2: No hay agua disponible</h5>
+        <p>Dado que el agricultor se encuentra en la página principal</p>
+        <p>Cuando el agricultor haga click en "Ver cantidad de agua disponible"</p>
+        <p>Y no haya agua disponible</p>
+        <p>Entonces se redirigirá al agricultor a la página "Agua Disponible"</p>
+        <p>Y aparecerá un mensaje, indicando que no hay agua disponible</p>
+    </td>
+    <td>EP04</td>
+  </tr>
+  <tr>
+    <th>EP04 / TS-US15</th>
+    <th>Mostrar Cantidad de agua disponible</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que se pueda verificar la cantidad de agua disponible para mis cultivos</p>
+      <p> Para que el agricultor visualizar si tengo suficiente agua para mis culivos</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Iniciar verificación de nivel de agua</h5>
+        <p>Dado endpoint/usuario esté disponible</p>
+        <p>Cuando una solicitud POST sea enviada al hacer click en "Ver cantidad de agua disponible"</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y la solicitud es enviada al sistema IOT</p>
+        <p>Y el mensaje "Iniciando comprobación de nivel de agua" es mostrado</p>
+      <h5>Escenario 2: Verificación del nivel del agua</h5>
+        <p>Dado endpoint/sistemaIOT esté disponible</p>
+        <p>Cuando una solicitud POST, enviada por la plataforma al hacer click en "Ver cantidad de agua disponible", se recibida</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y el sistema sistema comprueba la cantidad de agua que se encuentra en el tanque</p>
+        <p>Y el mensaje "Verificando cantidad de agua" es mostrado</p>
+      <h5>Escenario 3: Comprobación de cantidad de agua concluida</h5>
+        <p>Dado endpoint/sistemaIOT esté disponible</p>
+        <p>Cuando el sistema IOT haya terminado de verificar la cantidad de agua</p>
+        <p>Y la cantidad de agua es mayor o igual a 200 L</p>
+        <p>Entonces se devuelve una respuesta a la plataforma con estado 200, mediante una solicitud POST</p>
+        <p>Y el mensaje "Mostrando cantidad de agua. Cantidad de agua suficiente" es mostrado</p>
+      <h5>Escenario 4: Comprobación de cantidad de agua concluida con agua insuficiente</h5>
+        <p>Dado endpoint/sistemaIOT esté disponible</p>
+        <p>Cuando el sistema IOT haya terminado de verificar la cantidad de agua</p>
+        <p>Y la cantidad de agua es menor a 200 L</p>
+        <p>Entonces se devuelve una respuesta a la plataforma con estado 200, mediante una solicitud POST</p>
+        <p>Y el mensaje "Mostrando cantidad de agua. Cantidad de agua insuficiente" es mostrado</p>
+      <h5>Escenario 5: Comprobación de cantidad de agua concluida sin agua en el tanque</h5>
+        <p>Dado endpoint/sistemaIOT esté disponible</p>
+        <p>Cuando el sistema IOT haya terminado de verificar la cantidad de agua</p>
+        <p>Y el sistema no detecta agua en el tanque</p>
+        <p>Entonces se devuelve una respuesta a la plataforma con estado 404, mediante una solicitud POST</p>
+        <p>Y el mensaje "No hay agua en el tanque" es mostrado</p>
+      <h5>Escenario 6: Comprobación defectuosa de cantidad de agua</h5>
+        <p>Dado endpoint/sistemaIOT esté disponible</p>
+        <p>Cuando el sistema IOT haya terminado de verificar la cantidad de agua</p>
+        <p>Y el sistema presenta algún error al verificar el nivel del agua (cantidad de agua fluctuante durante la comprobación, cantidad de agua detectada por encima de la capacidad del tanque, cantidad de agua < 0)</p>
+        <p>Entonces se devuelve una respuesta a la plataforma con estado 400, mediante una solicitud POST</p>
+        <p>Y el mensaje "Error al comprobar cantidad de agua" es mostrado</p>
+      <h5>Escenario 7: Sin respuesta del verificador de cantidad de agua</h5>
+        <p>Dado endpoint/sistemaIOT esté disponible</p>
+        <p>Cuando hayan pasado más de 30 segundos</p>
+        <p>Y el verificador de cantidad de agua no da ninguna respuesta</p>
+        <p>Entonces se devuelve una respuesta a la plataforma con estado 500, mediante una solicitud POST</p>
+        <p>Y el mensaje "No hay respuesta del verificador de cantidad de agua" es mostrado</p>
+      <h5>Escenario 8: Recepción de la respuesta del verificador de cantidad de agua</h5>
+        <p>Dado endpoint/usuario esté disponible</p>
+        <p>Cuando la solicitud POST, enviada por el sistema al terminar su evaluación, sea recibida</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y el mensaje "Cantidad de agua disponible: {cantidad}" es mostrado</p>
+      <h5>Escenario 9: Recepción de la respuesta del verificador de cantidad de agua con agua insuficiente</h5>
+        <p>Dado endpoint/usuario esté disponible</p>
+        <p>Cuando la solicitud POST, enviada por el sistema al terminar su evaluación, sea recibida</p>
+        <p>Y la cantidad de agua no es suficiente para el regado de los cultivos</p>
+        <p>Entonces se recibe una respuesta con estado 200</p>
+        <p>Y el mensaje "Cantidad de agua disponible: {cantidad}. No es suficiente para regar los cultivos" es mostrado</p>
+      <h5>Escenario 10: Sin respuesta del sistema</h5>
+        <p>Dado endpoint/usuario esté disponible</p>
+        <p>Cuando la solicitud POST, enviada por la plataforma al hacer click en "Ver cantidad de agua disponible", no tenga una respuesta en menos de 30 segundos</p>
+        <p>Entonces se recibe una respuesta con estado 500</p>
+        <p>Y el mensaje "No se pudo comunicar con el verificador de cantidad de agua" es mostrado</p>
+    </td>
+    <td>EP04</td>
+  </tr>
+  <tr>
+    <th>EP04 / US16</th>
+    <th>Historial de consumo de agua mensual</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero contar con una historial de consumo de agua mensual</p>
+      <p> Para visualizar cuánta agua utilizo por mes</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Visualizar consumo de agua mensual</h5>
+        <p>Dado que el agricultor se encuentra en la página principal</p>
+        <p>Cuando el agricultor haga click en "Ver consumo de agua mensual"</p>
+        <p>Entonces se redirigirá al agricultor a la página "Consumo de agua mensual"</p>
+        <p>Y aparecerá un listado de consumo de agua por mes</p>
+      <h5>Escenario 2: Visualizar consumo detallado de agua mensual</h5>
+        <p>Dado que el agricultor se encuentra en la página "Consumo de agua mensual"</p>
+        <p>Cuando el agricultor dé click en "Historial detallado"</p>
+        <p>Entonces se redirigirá al agricultor a la página "Historial Detallado" </p>
+        <p>Y aparecerá un gráfico de barras indicando la cantidad diaria de agua utilizada</p>
+    </td>
+    <td>EP04</td>
+  </tr>
+  <tr>
+    <th>EP04 / TS-US16</th>
+    <th>Mostrar historial de consumo de agua mensual</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que se pueda visualizar en una tabla la cantidad de agua utilizada mensualmente</p>
+      <p> Para que el agricultor pueda contar con un seguimiento de cantidad de agua utilizada</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Visualizar consumo de agua mensual</h5>
+        <p>Dado endpoint/usuario esté disponible</p>
+        <p>Cuando una solicitud GET sea enviada al hacer click en "Ver consumo de agua mensual"</p>
+        <p>Entonces se recibirá una respuesta con estado 200</p>
+        <p>Y el sistema mostrará un listado de consumo de agua por mes en formato gráfico de barras</p>
+        <p>Y el mensaje "Cantidad de agua utilizada mensualmente obtenida satisfactoriamente" es mostrado</p>
+      <h5>Escenario 2: Visualizar consumo de agua mensual para usuario nuevo</h5>
+        <p>Dado endpoint/usuario esté disponible</p>
+        <p>Y el usuario es nuevo</p>
+        <p>Cuando una solicitud GET sea enviada al hacer click en "Ver consumo de agua mensual"</p>
+        <p>Entonces se recibirá una respuesta con estado 400</p>
+        <p>Y el mensaje "No hay datos para mostrar" es mostrado</p>
+      <h5>Escenario 3: Visualizar consumo detallado de agua mensual</h5>
+        <p>Dado endpoint/usuario esté disponible</p>
+        <p>Cuando una solicitud GET sea enviada al hacer click en "Historial detallado"</p>
+        <p>Entonces se recibirá una respuesta con estado 200</p>
+        <p>Y el sistema mostrará un listado de consumo de agua por diario en formato gráfico de barras</p>
+        <p>Y el mensaje "Cantidad de agua utilizada mensualmente en formato diario obtenida satisfactoriamente" es mostrado</p>
+      <h5>Escenario 4: Visualizar consumo detallado de agua mensual para usuario nuevo</h5>
+        <p>Dado endpoint/usuario esté disponible</p>
+        <p>Y el usuario es nuevo</p>
+        <p>Cuando una solicitud GET sea enviada al hacer click en "Historial detallado"</p>
+        <p>Entonces se recibirá una respuesta con estado 400</p>
+        <p>Y el mensaje "No hay datos para mostrar" es mostrado</p>
+    </td>
+    <td>EP04</td>
+  </tr>
+  <!--EPIC 5-->
+  <tr>
+    <td colspan="5">
+      <h5 style="text-align: center">EPIC 5: Configuración del sistema</h5>
       <p>
         Como agricultor, quiero controlar los sistemas de regadío que me ofrece HydroSmart a través de una interfaz para que sea más sencillo poder modificar los datos y las funcionalidades a mi gusto
       </p>
@@ -1793,12 +1903,12 @@ Segmento objetivo: Agricultor
   </tr>
   <tr>
   <tr>
-    <th>EP04 / US16</th>
-    <th>Verificación del estado de los sistemas</th>
+    <th>EP05 / US17</th>
+    <th>Apagar y Encender los Sistemas</th>
     <td>
       <p> Como agricultor </p>
-      <p> Quiero poder verificar el estado de cada uno de los sistemas que tengo instalado en mi propiedad</p>
-      <p> Para asegurarme que estén funcionando correctamente</p>
+      <p> Quiero poder apagar y encender los sistemas en cualquier momento</p>
+      <p> Para no gastar energía innecesariamente</p>
     </td>
     <td>
       <h5>Escenario 1: Ver estado del sistema</h5>
@@ -1821,45 +1931,16 @@ Segmento objetivo: Agricultor
         <p>Cuando el agricultor haga click en el switch "On/Off"</p>
         <p>Y el sistema se encuentra regando en este momento</p>
         <p>Entonces aparecerá un mensaje, indicando si es el sistema se encuentra regando en este momento, junto con un botón de confirmación de apagado de sistema</p>
-      <h5>Escenario 5: Comprobar sistema de regado</h5>
-        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
-        <p>Cuando el agricultor haga click en el botón "Comprobar sistema de regado"</p>
-        <p>Entonces el sistema comprobará si es que el sistema de regado está obstruido</p>
-        <p>Y aparecerá un mensaje, indicando si el sistema de regado está funcionando correctamente</p>
-      <h5>Escenario 6: Comprobar sensor de humedad</h5>
-        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
-        <p>Cuando el agricultor haga click en el botón "Comprobar sensor de humedad"</p>
-        <p>Entonces el sistema comprobará si es que el sensor de humedad está funcionando correctamente, activándolo brevemente</p>
-        <p>Y aparecerá un mensaje, indicando si el sensor de humedad está funcionando correctamente</p>
-      <h5>Escenario 7: Comprobar humedad</h5>
-        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
-        <p>Cuando el agricultor haga click en el botón "Comprobar humedad del suelo"</p>
-        <p>Entonces el sistema comprobará la humedad del suelo</p>
-        <p>Y aparecerá un mensaje, indicando la humedad del suelo</p>
-      <h5>Escenario 8: Comprobar sensor de temperatura</h5>
-        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
-        <p>Cuando el agricultor haga click en el botón "Comprobar sensor de temperatura"</p>
-        <p>Entonces el sistema comprobará si es que el sensor de temperatura está funcionando correctamente, activándolo brevemente</p>
-        <p>Y aparecerá un mensaje, indicando si el sensor de temperatura está funcionando correctamente</p>
-      <h5>Escenario 9: Comprobar temperatura</h5>
-        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
-        <p>Cuando el agricultor haga click en el botón "Comprobar temperatura del suelo"</p>
-        <p>Entonces el sistema comprobará la temperatura del suelo</p>
-        <p>Y aparecerá un mensaje, indicando la temperatura del suelo</p>
-      <h5>Escenario 10: Verificar batería</h5>
-        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
-        <p>Cuando el agricultor quiera ver la batería</p>
-        <p>Entonces aparecerá la cantidad de batería con la que cuenta el sistema</p>
     </td>
-    <td>EP04</td>
+    <td>EP05</td>
   </tr>
   <tr>
-    <th>EP04 / TS-US16</th>
-    <th>Verificar el estado de los sistemas</th>
+    <th>EP05 / TS-US17</th>
+    <th>Apagar y Encender los Sistemas</th>
     <td>
       <p> Como desarrollador </p>
-      <p> Quiero que el usuario pueda verificar el estado de cada uno de los sistemas que tengo instalado en su propiedad</p>
-      <p> Para que pueda asegurarse que estén funcionando correctamente</p>
+      <p> Quiero que el usuario pueda apagar y encender los sistemas en cualquier momento</p>
+      <p> Para que no gaste energía innecesariamente</p>
     </td>
     <td>
       <h5>Escenario 1: Encender/Apagar un sistema</h5>
@@ -1874,137 +1955,267 @@ Segmento objetivo: Agricultor
         <p>Y el sistema está regando actualmente</p>
         <p>Entonces se recibirá una respuesta con estado 400</p>
         <p>Y el mensaje "Sistema regando. No es posible apagarlo en este momento" es mostrado</p>
-      <h5>Escenario 3: Inicia comprobación del sistema de regado</h5>
+    </td>
+    <td>EP05</td>
+  </tr>
+  <tr>
+    <th>EP05 / US18</th>
+    <th>Verificación del estado del sistema de regado</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero poder verificar el estado del sistema de regado</p>
+      <p> Para asegurarme que estén funcionando correctamente</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Comprobar sistema de regado</h5>
+        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
+        <p>Cuando el agricultor haga click en el botón "Comprobar sistema de regado"</p>
+        <p>Entonces el sistema comprobará si es que el sistema de regado está obstruido</p>
+        <p>Y aparecerá un mensaje, indicando si el sistema de regado está funcionando correctamente</p>
+      <h5>Escenario 2: Comprobar sensor de humedad</h5>
+        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
+        <p>Cuando el agricultor haga click en el botón "Comprobar sensor de humedad"</p>
+        <p>Entonces el sistema comprobará si es que el sensor de humedad está funcionando correctamente, activándolo brevemente</p>
+        <p>Y aparecerá un mensaje, indicando si el sensor de humedad está funcionando correctamente</p>
+    </td>
+    <td>EP05</td>
+  </tr>
+  <tr>
+    <th>EP05 / TS-US18</th>
+    <th>Verificar el estado del sistema de regado</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que el usuario pueda verificar el estado del sistema de regado</p>
+      <p> Para que pueda asegurarse que esté funcionando correctamente</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Inicia comprobación del sistema de regado</h5>
         <p>Dado que el endpoint/usuario está disponible</p>
         <p>Cuando una solicitud POST sea enviada al hacer click en el botón "Comprobar sistema de regado"</p>
         <p>Entonces se recibe una respuesta con estado 200</p>
         <p>Y se envía la solicitud al sistema</p>
         <p>Y el mensaje "Iniciando comprobación" es mostrado</p>
-      <h5>Escenario 4: Comprobación del sistema de regado</h5>
+      <h5>Escenario 2: Comprobación del sistema de regado</h5>
         <p>Dado que el endpoint/sistemaIOT está disponible</p>
         <p>Cuando la solicitud POST, enviada al hacer click en el botón "Comprobar sistema de regado", sea recibida por el sistema</p>
         <p>Entonces se recibe una respuesta con estado 200</p>
         <p>Y el sistema comprobará si es que el sistema de regado está obstruido, fluyendo un poco de agua</p>
         <p>Y el mensaje "Comprobando sistema de regado" es mostrado</p>
-      <h5>Escenario 5: Sistema de regado en estado correcto</h5>
+      <h5>Escenario 3: Sistema de regado en estado correcto</h5>
         <p>Dado que el endpoint/sistemaIOT está disponible</p>
         <p>Cuando el sistema haya terminado la verificación del sistema de regado</p>
         <p> Y no detecte ningún problema </p>
         <p>Entonces se devuelve la respuesta 200 a la plataforma, mediante una solicitud POST</p>
         <p>Y el mensaje "Sistema sin obstrucciones" es mostrado</p>
-      <h5>Escenario 6: Sistema de regado obstruído</h5>
+      <h5>Escenario 4: Sistema de regado obstruído</h5>
         <p>Dado que el endpoint/sistemaIOT está disponible</p>
         <p>Cuando el sistema haya terminado la verificación del sistema de regado</p>
         <p> Y detecta una obstrucción en el sistema de regado </p>
         <p>Entonces se devuelve la respuesta 400 a la plataforma, mediante una solicitud POST</p>
         <p>Y el mensaje "Sistema obstruído" es mostrado</p>
-      <h5>Escenario 7: Recepción del estado del sistema de regado por plataforma</h5>
+      <h5>Escenario 5: Recepción del estado del sistema de regado por plataforma</h5>
         <p>Dado que el endpoint/usuario está disponible</p>
         <p>Cuando la solicitud POST, enviada por el sistema al terminar su evaluación, sea recibida</p>
         <p>Entonces se recibe una respuesta con estado 200</p>
         <p>Y el mensaje "Sistema de regado en estado {estado}" es mostrado</p>
-      <h5>Escenario 8: Sin respuesta del sistema</h5>
+      <h5>Escenario 6: Sin respuesta del sistema</h5>
         <p>Dado que el endpoint/usuario está disponible</p>
         <p>Cuando la solicitud POST, enviada al hacer click en el botón "Comprobar sistema de regado", no tenga una respuesta por el sistema de regado</p>
-        <p>Entonces se recibe una respuesta con estado 404</p>
+        <p>Entonces se recibe una respuesta con estado 500</p>
         <p>Y el mensaje "No se pudo comunicar con el sistema de regado" es mostrado</p>
-      <h5>Escenario 9: Inicia comprobación del sensor de humedad</h5>
+    </td>
+    <td>EP05</td>
+  </tr>
+  <tr>
+    <th>EP05 / US19</th>
+    <th>Verificación del estado del sensor de humedad</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero poder verificar el estado del sensor de humedad</p>
+      <p> Para asegurarme que esté funcionando correctamente</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Comprobar sensor de humedad</h5>
+        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
+        <p>Cuando el agricultor haga click en el botón "Comprobar sensor de humedad"</p>
+        <p>Entonces el sistema comprobará si es que el sensor de humedad está funcionando correctamente, activándolo brevemente</p>
+        <p>Y aparecerá un mensaje, indicando si el sensor de humedad está funcionando correctamente</p>
+      <h5>Escenario 2: Comprobar humedad</h5>
+        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
+        <p>Cuando el agricultor haga click en el botón "Comprobar humedad del suelo"</p>
+        <p>Entonces el sistema comprobará la humedad del suelo</p>
+        <p>Y aparecerá un mensaje, indicando la humedad del suelo</p>
+    </td>
+    <td>EP05</td>
+  </tr>
+  <tr>
+    <th>EP05 / TS-US19</th>
+    <th>Verificar el estado de los sistemas</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que el usuario pueda verificar el estado del sensor de humedad</p>
+      <p> Para que pueda asegurarse que esté funcionando correctamente</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Inicia comprobación del sensor de humedad</h5>
         <p>Dado que el endpoint/usuario está disponible</p>
         <p>Cuando una solicitud POST sea enviada al hacer click en el botón "Comprobar sensor de humedad"</p>
         <p>Entonces se recibe una respuesta con estado 200</p>
         <p>Y se envía la solicitud al sistema</p>
         <p>Y el mensaje "Iniciando comprobación" es mostrado</p>
-      <h5>Escenario 10: Comprobación del sensor de humedad</h5>
+      <h5>Escenario 2: Comprobación del sensor de humedad</h5>
         <p>Dado que el endpoint/sistemaIOT está disponible</p>
         <p>Cuando la solicitud POST, enviada al hacer click en el botón "Comprobar sensor de humedad", sea recibida por el sistema</p>
         <p>Entonces se recibe una respuesta con estado 200</p>
         <p>Y el sistema comprobará si es que el sensor de humedad está funcionando correctamente, activándolo brevemente</p>
         <p>Y el mensaje "Comprobando sensor de humedad" es mostrado</p>
-      <h5>Escenario 11: Sensor de humedad en estado correcto</h5>
+      <h5>Escenario 3: Sensor de humedad en estado correcto</h5>
         <p>Dado que el endpoint/sistemaIOT está disponible</p>
         <p>Cuando el sistema haya terminado la verificación del sensor de humedad</p>
         <p> Y no detecte ningún problema </p>
         <p>Entonces se devuelve la respuesta 200 a la plataforma, mediante una solicitud POST</p>
         <p>Y el mensaje "Sensor de humedad funcionando correctamente" es mostrado</p>
-      <h5>Escenario 12: Sensor de humedad defectuoso</h5>
+      <h5>Escenario 4: Sensor de humedad defectuoso</h5>
         <p>Dado que el endpoint/sistemaIOT está disponible</p>
         <p>Cuando el sistema haya terminado la verificación del sensor de humedad</p>
         <p> Y detecta que el sensor de humedad no está funcionando correctamente (detecta 0% de humedad, lee un +-20% de nivel de humedad en comparación a la última comprobación, detecta una humedad muy fluctuante) </p>
         <p>Entonces se devuelve la respuesta 400 a la plataforma, mediante una solicitud POST</p>
         <p>Y el mensaje "Sensor de humedad mal estado" es mostrado</p>
-      <h5>Escenario 13: Sin respuesta del sensor de humedad</h5>
+      <h5>Escenario 5: Sin respuesta del sensor de humedad</h5>
         <p>Dado que el endpoint/sistemaIOT está disponible</p>
         <p>Cuando el sistema haya terminado la verificación del sensor de humedad</p>
         <p> Y el sensor de humedad no devuelve ninguna respuesta (no enciende, no hay ningún sensor) </p>
         <p>Entonces se devuelve la respuesta 404 a la plataforma, mediante una solicitud POST</p>
         <p>Y el mensaje "No hay respuesta del sensor de humedad" es mostrado</p>
-      <h5>Escenario 14: Recepción del estado del sensor de humedad por plataforma</h5>
+      <h5>Escenario 6: Recepción del estado del sensor de humedad por plataforma</h5>
         <p>Dado que el endpoint/usuario está disponible</p>
         <p>Cuando la solicitud POST, enviada por el sistema al terminar su evaluación, sea recibida</p>
         <p>Entonces se recibe una respuesta con estado 200</p>
         <p>Y el mensaje "Sensor en estado {estado}" es mostrado</p>
-      <h5>Escenario 15: Sin respuesta del sistema</h5>
+      <h5>Escenario 7: Sin respuesta del sistema</h5>
         <p>Dado que el endpoint/usuario está disponible</p>
         <p>Cuando la solicitud POST, enviada al hacer click en el botón "Comprobar sensor de humedad", no tenga una respuesta por el sensor de humedad</p>
         <p>Entonces se recibe una respuesta con estado 404</p>
         <p>Y el mensaje "No se pudo comunicar con el sensor de humedad" es mostrado</p>
-      <h5>Escenario 16: Inicia comprobación del sensor de temperatura</h5>
+    </td>
+    <td>EP05</td>
+  </tr>
+  <tr>
+    <th>EP05 / US20</th>
+    <th>Verificación del estado del sensor de temperatura</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero poder verificar el estado del sensor de temperatura</p>
+      <p> Para asegurarme que esté funcionando correctamente</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Comprobar sensor de temperatura</h5>
+        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
+        <p>Cuando el agricultor haga click en el botón "Comprobar sensor de temperatura"</p>
+        <p>Entonces el sistema comprobará si es que el sensor de temperatura está funcionando correctamente, activándolo brevemente</p>
+        <p>Y aparecerá un mensaje, indicando si el sensor de temperatura está funcionando correctamente</p>
+      <h5>Escenario 2: Comprobar temperatura</h5>
+        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
+        <p>Cuando el agricultor haga click en el botón "Comprobar temperatura del suelo"</p>
+        <p>Entonces el sistema comprobará la temperatura del suelo</p>
+        <p>Y aparecerá un mensaje, indicando la temperatura del suelo</p>
+    </td>
+    <td>EP05</td>
+  </tr>
+  <tr>
+    <th>EP05 / TS-US20</th>
+    <th>Verificar el estado de los sistemas</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que el usuario pueda verificar el estado del sensor de humedad</p>
+      <p> Para que pueda asegurarse que esté funcionando correctamente</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Inicia comprobación del sensor de temperatura</h5>
         <p>Dado que el endpoint/usuario está disponible</p>
         <p>Cuando una solicitud POST sea enviada al hacer click en el botón "Comprobar sensor de temperatura"</p>
         <p>Entonces se recibe una respuesta con estado 200</p>
         <p>Y se envía la solicitud al sistema</p>
         <p>Y el mensaje "Iniciando comprobación" es mostrado</p>
-      <h5>Escenario 17: Comprobación del sensor de temperatura</h5>
+      <h5>Escenario 2: Comprobación del sensor de temperatura</h5>
         <p>Dado que el endpoint/sistemaIOT está disponible</p>
         <p>Cuando la solicitud POST, enviada al hacer click en el botón "Comprobar sensor de temperatura", sea recibida por el sistema</p>
         <p>Entonces se recibe una respuesta con estado 200</p>
         <p>Y el sistema comprobará si es que el sensor de temperatura está funcionando correctamente, activándolo brevemente</p>
         <p>Y el mensaje "Comprobando sensor de temperatura" es mostrado</p>
-      <h5>Escenario 18: Sensor de temperatura en estado correcto</h5>
+      <h5>Escenario 3: Sensor de temperatura en estado correcto</h5>
         <p>Dado que el endpoint/sistemaIOT está disponible</p>
         <p>Cuando el sistema haya terminado la verificación del sensor de temperatura</p>
         <p> Y no detecte ningún problema </p>
         <p>Entonces se devuelve la respuesta 200 a la plataforma, mediante una solicitud POST</p>
         <p>Y el mensaje "Sensor de temperatura funcionando correctamente" es mostrado</p>
-      <h5>Escenario 19: Sensor de temperatura defectuoso</h5>
+      <h5>Escenario 4: Sensor de temperatura defectuoso</h5>
         <p>Dado que el endpoint/sistemaIOT está disponible</p>
         <p>Cuando el sistema haya terminado la verificación del sensor de temperatura</p>
         <p> Y detecta que el sensor de temperatura no está funcionando correctamente (detecta una temperatura de <-10C°, lee un +-20% de nivel de temperatura en comparación a la última comprobación, detecta una temperatura >60°C, detecta una temperatura muy fluctuante) </p>
         <p>Entonces se devuelve la respuesta 400 a la plataforma, mediante una solicitud POST</p>
         <p>Y el mensaje "Sensor de temperatura mal estado" es mostrado</p>
-      <h5>Escenario 20: Sin respuesta del sensor de temperatura</h5>
+      <h5>Escenario 5: Sin respuesta del sensor de temperatura</h5>
         <p>Dado que el endpoint/sistemaIOT está disponible</p>
         <p>Cuando el sistema haya terminado la verificación del sensor de temperatura</p>
         <p> Y el sensor de temperatura no devuelve ninguna respuesta (no enciende, no hay ningún sensor) </p>
         <p>Entonces se devuelve la respuesta 404 a la plataforma, mediante una solicitud POST</p>
         <p>Y el mensaje "No hay respuesta del sensor de temperatura" es mostrado</p>
-      <h5>Escenario 21: Recepción del estado del sensor de temperatura por plataforma</h5>
+      <h5>Escenario 6: Recepción del estado del sensor de temperatura por plataforma</h5>
         <p>Dado que el endpoint/usuario está disponible</p>
         <p>Cuando la solicitud POST, enviada por el sistema al terminar su evaluación, sea recibida</p>
         <p>Entonces se recibe una respuesta con estado 200</p>
         <p>Y el mensaje "Sensor en estado {estado}" es mostrado</p>
-      <h5>Escenario 22: Sin respuesta del sistema</h5>
+      <h5>Escenario 7: Sin respuesta del sistema</h5>
         <p>Dado que el endpoint/usuario está disponible</p>
         <p>Cuando la solicitud POST, enviada al hacer click en el botón "Comprobar sensor de temperatura", no tenga una respuesta por el sensor de temperatura</p>
         <p>Entonces se recibe una respuesta con estado 404</p>
         <p>Y el mensaje "No se pudo comunicar con el sensor de temperatura" es mostrado</p>
-      <h5>Escenario 23: Verificar batería</h5>
+    </td>
+    <td>EP05</td>
+  </tr>
+  <tr>
+    <th>EP05 / US21</th>
+    <th>Verificación del estado de la batería</th>
+    <td>
+      <p> Como agricultor </p>
+      <p> Quiero poder verificar el estado de la batería</p>
+      <p> Para asegurarme que esté funcionando correctamente</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Verificar batería</h5>
+        <p>Dado que el agricultor se encuentra en la página de un sistema</p>
+        <p>Cuando el agricultor quiera ver la batería</p>
+        <p>Entonces aparecerá la cantidad de batería con la que cuenta el sistema</p>
+    </td>
+    <td>EP05</td>
+  </tr>
+  <tr>
+    <th>EP05 / TS-US21</th>
+    <th>Verificar el estado de los sistemas</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que el usuario pueda verificar el estado del sensor de humedad</p>
+      <p> Para que pueda asegurarse que esté funcionando correctamente</p>
+    </td>
+    <td>
+      <h5>Escenario 1: Verificar batería</h5>
         <p>Dado que el endpoint/usuario está disponible</p>
         <p>Cuando una solicitud GET sea enviada al ingresar a la sección "Configuración"</p>
         <p>Entonces se recibe una respuesta con estado 200</p>
         <p>Y el mensaje "Mostrando batería" es mostrado</p>
         <p>Y la plataforma muestra la batería correspondiente del sistema IOT</p>
-      <h5>Escenario 24: Sin respuesta del sistema IOT</h5>
+      <h5>Escenario 2: Sin respuesta del sistema IOT</h5>
         <p>Dado que el endpoint/usuario está disponible</p>
         <p>Cuando una solicitud GET sea enviada al ingresar a la sección "Configuración"</p>
         <p>Y el sistema IOT no devuelva una respuesta (sin batería, sin conexión a internet)</p>
         <p>Entonces se recibe una respuesta con estado 404</p>
         <p>Y el mensaje "Sin respuesta del sistema IOT" es mostrado</p>
     </td>
-    <td>EP04</td>
+    <td>EP05</td>
   </tr>
   <tr>
-    <th>EP04 / US17</th>
+    <th>EP05 / US22</th>
     <th>Añadir un nuevo sistema de HydroSmart</th>
     <td>
       <p> Como agricultor </p>
@@ -2036,10 +2247,10 @@ Segmento objetivo: Agricultor
         <p>Y algún error interno impida agregar el nuevo sistema</p>
         <p>Entonces aparecerá un mensaje de error, indicando que no fue posible agregar el nuevo sistema, junto con un botón para reintar el proceso</p>
     </td>
-    <td>EP04</td>
+    <td>EP05</td>
   </tr>
   <tr>
-    <th>EP04 / TS-US17</th>
+    <th>EP05 / TS-US22</th>
     <th>Agregar un nuevo sistema HydroSmart</th>
     <td>
       <p> Como desarrollador </p>
@@ -2073,10 +2284,10 @@ Segmento objetivo: Agricultor
         <p>Entonces se recibe una respuesta con estado 400</p>
         <p>Y mensaje "Error al agregar el nuevo sistema: {error}" es mostrado</p>
     </td>
-    <td>EP04</td>
+    <td>EP05</td>
   </tr>
   <tr>
-    <th>EP04 / US18</th>
+    <th>EP05 / US23</th>
     <th>Quitar un sistema de HydroSmart</th>
     <td>
       <p> Como agricultor </p>
@@ -2110,10 +2321,10 @@ Segmento objetivo: Agricultor
         <p>Y empezará a eliminar todo dato del sistema de la plataforma</p>
         <p>Y aparecerá un mensaje de confirmación, indicando que el sistema ha sido eliminado</p>
     </td>
-    <td>EP04</td>
+    <td>EP05</td>
   </tr>
   <tr>
-    <th>EP04 / TS-US18</th>
+    <th>EP05 / TS-US23</th>
     <th>Eliminar un sistema de HydroSmart</th>
     <td>
       <p> Como desarrollador </p>
@@ -2153,19 +2364,19 @@ Segmento objetivo: Agricultor
         <p>Y la plataforma empezará a eliminar todo dato del sistema de la plataforma </p>
         <p>Y el mensaje "Sistema eliminado de la plataforma" es mostrado</p>
     </td>
-    <td>EP04</td>
+    <td>EP05</td>
   </tr>
-  <!--EPIC 5-->
+  <!--EPIC 6-->
   <tr>
     <td colspan="5">
-      <h5 style="text-align: center">EPIC 5: Autenticación de Usuarios</h5>
+      <h5 style="text-align: center">EPIC 6: Autenticación de Usuarios</h5>
         <p>
           Como usuario, quiero poder registrarme e iniciar sesión para acceder a todas las herramientas que HydroSmart me ofrece
         </p>
     </td>
   </tr>
   <tr>
-    <th>EP05 / US19</th>
+    <th>EP06 / US24</th>
     <th>Registro de usuario</th>
     <td>
       <p> Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema </p>
@@ -2195,10 +2406,10 @@ Segmento objetivo: Agricultor
         <p> Cuando el usuario ingrese un nombre inválido </p>
         <p> Entonces se muestra un mensaje de error, indicando que el nombre escrito no puede ser utilizado para crear una cuenta </p>
     </td>
-    <td>EP05</td>
+    <td>EP065</td>
   </tr>
   <tr>
-    <th>EP05 / TS-US19</th>
+    <th>EP06 / TS-US24</th>
     <th>Registrar Usuario</th>
     <td>
       <p> Como desarrollador </p>
@@ -2241,10 +2452,10 @@ Segmento objetivo: Agricultor
         <p> Entonces se recibe una respuesta con el status 400 </p>
         <p> Y un mensaje con el valor de “La contraseña no incluye al menos una letra mayúscula, una letra minúscula, un número y un carácter especial” es mostrado </p>
     </td>
-    <td>EP05</td>
+    <td>EP06</td>
   </tr>
   <tr>
-    <th>EP05 / US20</th>
+    <th>EP06 / US25</th>
     <th>Acceso de usuario</th>
     <td>
       <p> Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema </p>
@@ -2272,10 +2483,10 @@ Segmento objetivo: Agricultor
         <p> Entonces el sistema activa automáticamente la cuenta</p>
         <p> Y se redirige al usuario a la página principal de la aplicación</p>
     </td>
-    <td>EP05</td>
+    <td>EP06</td>
   </tr>
   <tr>
-    <th>EP05 / TS-US20</th>
+    <th>EP06 / TS-US25</th>
     <th>Acceder Usuarios</th>
     <td>
       <p> Como desarrollador </p>
@@ -2306,11 +2517,11 @@ Segmento objetivo: Agricultor
         <p> Entonces se recibe una respuesta con el status 400 </p>
         <p> Y un mensaje con el valor “Faltan Datos” es mostrado </p>
     </td>
-    <td>EP05</td>
+    <td>EP06</td>
   </tr>
-  <!--EPIC 06-->
+  <!--EPIC 07-->
   <tr>
-    <th>EP06 / US21</th>
+    <th>EP07 / US26</th>
     <th>Actualización de contraseña</th>
     <td>
       <p> Como usuario de cualquiera de los segmentos objetivos </p>
@@ -2336,10 +2547,10 @@ Segmento objetivo: Agricultor
         <p> Y da clic en “Cambiar” </p>
         <p> Entonces se muestra un mensaje de confirmación, indicando que se cambió la contraseña </p>
     </td>
-    <td>EP06</td>
+    <td>EP07</td>
   </tr>
   <tr>
-    <th>EP06 / TS-US21</th>
+    <th>EP07 / TS-US26</th>
     <th>Actualizar de contraseña</th>
     <td>
       <p> Como desarrollador </p>
@@ -2360,10 +2571,10 @@ Segmento objetivo: Agricultor
         <p> Y el mensaje “La contraseña ha sido cambiada” es mostrado </p>
         <p> Y el sistema cambia la contraseña actual por la proporcionada </p>
     </td>
-    <td>EP06</td>
+    <td>EP07</td>
   </tr>
   <tr>
-    <th>EP06 / TS-US22</th>
+    <th>EP07 / US27</th>
     <th>Recuperación de Contraseña</th>
     <td>
       <p> Como usuario de cualquiera de los segmentos objetivos </p>
@@ -2393,10 +2604,10 @@ Segmento objetivo: Agricultor
         <p> Cuando el usuario ingresa una contraseña igual a la que actualmente está utilizando </p>
         <p> Entonces se muestra un mensaje de error, indicando que no puede cambiarse a la misma contraseña que está actualmente en uso </p>
     </td>
-    <td>EP06</td>
+    <td>EP07</td>
   </tr>
   <tr>
-    <th>EP06 / TS-US22</th>
+    <th>EP07 / TS-US27</th>
     <th>Recuperar Contraseña</th>
     <td>
       <p> Como desarrollador </p>
@@ -2433,7 +2644,7 @@ Segmento objetivo: Agricultor
         <p> Entonces se recibe una respuesta con el status 400 </p>
         <p> Y un mensaje con el valor “Contraseña no proporcionada” es mostrado </p>
     </td>
-    <td>EP06</td>
+    <td>EP07</td>
   </tr>
 </table>
 
