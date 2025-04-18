@@ -2651,7 +2651,37 @@ Segmento objetivo: Agricultor
 ## 3.3. Impact Mapping
 
 ## 3.4. Product Backlog
-
+Se utilizó la aplicación Trello para el desarrollo del product backlog **[Trello Board](https://trello.com/invite/b/68029db69b9160a847867db7/ATTIe60cc61d919ec781877b36318d877ec2F1FD4DE3/desarrollo-de-soluciones-iot)**
+![Product Backlog](img/product-backlog.png)
+|Orden|User Story ID|Título|Descripción|Story Points|
+| - | - | - | - | - |
+| 1 | US12 | Interacción con el riego automático | Como agricultor quiero poder activar y desactivar el riego automático para tener mayor control con el agua que se está utilizando para el regado de cultivos | 5 |
+| 2 | US08 | Verificación de humedad del suelo | Como agricultor quiero contar con indicador de la humedad del suelo de cada uno de mis cultivos para asegurarme que cada uno de los suelos esté en el estado correcto para no arruinar los cultivos| 5 |
+| 3 | US09 | Verificación de temperatura del suelo | Como agricultor quiero contar con indicador de la temperatura del suelo de cada uno de mis cultivos para asegurarme que el suelo en donde se encuentran mis cultivos se encuentren con la temperatura correcta para no arruinar los cultivos | 5 |
+| 4 | US13 | Notificaciones de regado | Como agricultor quiero que la aplicación cuente con notificaciones que me indiquen cuándo se inicia el regado de cada cultivo para saber cuándo se está regando los cultivos | 3 |
+| 5 | US11 | Historial del cultivo | Como agricultor quiero contar con una historial de cultivos para visualizar cómo han estado los cultivos en los últimos días | 5 |
+| 6 | US14 | Limites en el uso agua por cultivo | Como agricultor quiero que la aplicación me permita limitar la cantidad de agua utilizada por cada cultivo para asegurarme que ningún cultivo utilice agua de más | 3 |
+| 7 | US15 | Cantidad de agua disponible | Como agricultor quiero verificar la cantidad de agua disponible para mis cultivos para visualizar si tengo suficiente agua para mis culivos | 5 |
+| 8 | US16 | Historial de consumo de agua mensual | Como agricultor quiero contar con una historial de consumo de agua mensual para visualizar cuánta agua utilizo por mes | 3 |
+| 9 | US17 | Apagar y Encender los Sistemas | Como agricultor quiero poder apagar y encender los sistemas en cualquier momento para no gastar energía innecesariamente | 2 |
+| 10 | US18 | Verificación del estado del sistema de regado | Como agricultor quiero poder verificar el estado del sistema de regado para asegurarme que estén funcionando correctamente | 5 |
+| 11 | US19 | Verificación del estado del sensor de humedad | Como agricultor quiero poder verificar el estado del sensor de humedad para asegurarme que esté funcionando correctamente | 5 |
+| 12 | US20 | Verificación del estado del sensor de temperatura | Como agricultor quiero poder verificar el estado del sensor de temperatura para asegurarme que esté funcionando correctamente | 5 |
+| 13 | US21 | Verificación del estado de la batería | Como agricultor quiero poder verificar el estado de la batería para asegurarme que esté funcionando correctamente | 3 |
+| 14 | US22 | Añadir un nuevo sistema de HydroSmart | Como agricultor quiero poder agregar un nuevo sistema de HydroSmart para automatizar aún más el proceso de regado de mis cultivos | 3 |
+| 15 | US23 | Quitar un sistema de HydroSmart | Como agricultor quiero poder quitar un sistema de HydroSmart para no tener sistemas que ya no utilizo en la plataformas | 3 |
+| 16 | US10 | Acciones Recomendadas | Como agricultor quiero contar una interfaz que me permita ver qué acciones debo realizar en situaciones de peligro para que mis cultivos siempre se encuentren saludables y a salvo | 2 |
+| 17 | US24 | Registro de usuarios | Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema quiero poder registrarme en la aplicación para acceder a todas sus funcionalidades | 3 |
+| 18 | US25 | Acceso de Usuarios | Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema quiero poder iniciar sesión en la aplicación utilizando mi dirección de correo electrónico y contraseña para acceder a mi cuenta y utilizar todas las funcionalidades de la aplicación | 3 |
+| 19 | US26 | Actualización de contraseña | Como usuario de cualquiera de los segmentos objetivos quiero poder cambiar mi contraseña para mantener mi cuenta segura | 3 |
+| 20 | US27 | Recuperación de contraseña | Como usuario de cualquiera de los segmentos objetivos quiero tener la capacidad de restablecer mi contraseña en caso de olvidarla para así poder acceder nuevamente a mi cuenta | 3 |
+| 21 | US01 |	Implementación de Barra de navegación |	Como visitante quiero tener la opción de atravesar todas las secciones de la landing page a través de una barra de navegación para facilitar el acceso a la información |	1 |
+| 22 | US02 |	Implementación de Barra de navegación | Como visitante quiero visualizar el logo y descripción de la empresa para verificar que estoy en la landing page oficial de la empresa | 1 |
+| 23 | US03 |	Detalles y Servicios de la empresa | Como visitante quiero visualizar los detalles y servicios de la empresa para conocer de qué manera se puede utilizar la aplicación | 1 |
+| 24 | US04 |	Clientes de la empresa | Como visitante quiero visualizar las experiencias de clientes previos de la empresa para es que la vida de los usuarios cambió al utilizar la aplicación	1
+| 25 | US05 |	Acerca de nosotros | Como visitante quiero visualizar la misión y visión de la empresa para conocer qué planes tienen a futuro | 1 |
+| 26 | US06 |	Implementación de un Footer |	Como visitante quiero visualizar un Footer al final de la página para ver las redes sociales asociadas a la empresa |	1 |
+| 27 | US07 |	Translación a la aplicación web |	Como visitante quiero contar con un botón que me redirija a la aplicación web para tener un acceso directo y rápido a ella | 1 |
 # Capítulo IV: Solution Software Design
 
 ## 4.1. Strategic-Level Domain-Driven Design
