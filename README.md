@@ -2273,6 +2273,133 @@ Segmento objetivo: Agricultor
     </td>
     <td>EP05</td>
   </tr>
+  <!--EPIC 06-->
+  <tr>
+    <th>EP06 / US21</th>
+    <th>Actualización de contraseña</th>
+    <td>
+      <p> Como usuario de cualquiera de los segmentos objetivos </p>
+      <p> Quiero poder cambiar mi contraseña </p>
+      <p> Para mantener mi cuenta segura </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Entrar en el entorno “Contraseña”</h5>
+        <p> Dado que el usuario se encuentra en el entorno “Configuración” </p>
+        <p> Cuando el usuario seleccione el botón "Contraseña”</p>
+        <p> Entonces se redirige al usuario al entorno “Contraseña” </p>
+      <h5>Escenario 2: Ingreso al entorno “Cambiar Contraseña”</h5>
+        <p> Dado que el usuario se encuentra en el entorno “Contraseña” </p>
+        <p> Cuando el usuario complete el campo mostrado con la contraseña actual </p>
+        <p> Entonces se redirige al usuario al entorno “Cambiar contraseña” </p>
+      <h5>Escenario 3: Contraseña incorrecta</h5>
+        <p> Dado que el usuario se encuentra en el entorno “Contraseña” </p>
+        <p> Cuando el usuario complete el campo mostrado con una contraseña diferente a la actual </p>
+        <p> Entonces se muestra un mensaje de error, indicando que la contraseña escrita no coincide con la contraseña actual </p>
+      <h5>Escenario 4: Cambio de contraseña exitoso</h5>
+        <p> Dado que el usuario se encuentra en el entorno “Cambiar contraseña” </p>
+        <p> Cuando el usuario ingrese la nueva contraseña </p>
+        <p> Y da clic en “Cambiar” </p>
+        <p> Entonces se muestra un mensaje de confirmación, indicando que se cambió la contraseña </p>
+    </td>
+    <td>EP06</td>
+  </tr>
+  <tr>
+    <th>EP06 / TS-US21</th>
+    <th>Actualizar de contraseña</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero permitir al usuario cambiar su contraseña actual mediante un entorno aislado del resto de los entornos </p>
+      <p> Para mantener el cambio de contraseña como un método aislado del resto que no pueda afectar ninguna de las otras funcionalidades de la aplicación </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Contraseña actual incorrecta</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud PUT sea enviada con los datos del campo “Contraseña Actual” al presionar el botón “Comprobar” </p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y el mensaje “La contraseña escrita no coincide con la actual” es mostrado </p>
+        <p> Y el sistema muestra solo las tareas que están etiquetadas con la etiqueta seleccionada </p>
+      <h5>Escenario 2: Cambio de contraseña exitoso</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud PUT sea enviada con los datos de los campos “Nueva Contraseña” y “Confirmar Contraseña” al presionar el botón “Cambiar” </p>
+        <p> Entonces se recibe una respuesta con el status 202 </p>
+        <p> Y el mensaje “La contraseña ha sido cambiada” es mostrado </p>
+        <p> Y el sistema cambia la contraseña actual por la proporcionada </p>
+    </td>
+    <td>EP06</td>
+  </tr>
+  <tr>
+    <th>EP06 / TS-US22</th>
+    <th>Recuperación de Contraseña</th>
+    <td>
+      <p> Como usuario de cualquiera de los segmentos objetivos </p>
+      <p> Quiero tener la capacidad de restablecer mi contraseña en caso de olvidarla </p>
+      <p> Para así poder acceder nuevamente a mi cuenta </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Ingreso al entorno “Recuperar Contraseña”</h5>
+        <p> Dado que el usuario se encuentra en la página “Inicio sesión” </p>
+        <p> Cuando el usuario dé clic en "Olvidé mi contraseña" </p>
+        <p> Entonces se redirige al usuario al entorno “Recuperar Contraseña” </p>
+      <h5>Escenario 2: Recuperación con dirección de correo electrónico válido</h5>
+        <p> Dado que el usuario se encuentra en el entorno “Recuperar Contraseña” </p>
+        <p> Cuando el usuario escriba una dirección de correo electrónico registrada en el sistema </p>
+        <p> Entonces se muestra el entorno “Nueva Contraseña” </p>
+      <h5>Escenario 3: Recuperación con dirección de correo electrónico inválido</h5>
+        <p> Dado que el usuario se encuentra en el entorno “Recuperar Contraseña” </p>
+        <p> Cuando el usuario proporcione una dirección de correo electrónico que no se encuentra actualmente registrada en el sistema </p>
+        <p> Entonces se muestra un mensaje de error, indicando que la dirección de correo electrónico no está registrada en el sistema </p>
+      <h5>Escenario 4: Restablecimiento de contraseña exitoso</h5>
+        <p> Dado que el usuario se encuentra en la página “Nueva Contraseña” </p>
+        <p> Cuando el usuario ingresa una nueva contraseña </p>
+        <p> Entonces se muestra un mensaje de confirmación, indicando que la contraseña se ha restablecido correctamente </p>
+        <p> Y se redirige al usuario a la página “Inicio Sesión”</p>
+      <h5>Escenario 5: Restablecimiento de contraseña con la misma contraseña que la original</h5>
+        <p> Dado que el usuario se encuentra en la página “Recuperar Contraseña” </p>
+        <p> Cuando el usuario ingresa una contraseña igual a la que actualmente está utilizando </p>
+        <p> Entonces se muestra un mensaje de error, indicando que no puede cambiarse a la misma contraseña que está actualmente en uso </p>
+    </td>
+    <td>EP06</td>
+  </tr>
+  <tr>
+    <th>EP06 / TS-US22</th>
+    <th>Recuperar Contraseña</th>
+    <td>
+      <p> Como desarrollador </p>
+      <p> Quiero que el sistema permita a los usuarios recuperar su contraseña </p>
+      <p> Para permitir que los usuarios tengan un método para acceder de nuevo a la aplicación si es que se han olvidado de su contraseña </p>
+    </td>
+    <td>
+      <h5>Escenario 1: Recuperación con dirección de correo electrónico válido</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con el dato de dirección de correo electrónico </p>
+        <p> Y la dirección de correo electrónico ingresada esté registrada en el sistema </p>
+        <p> Entonces se recibe una respuesta con el status 202 </p>
+        <p> Y el sistema permite el acceso al usuario al entorno “Nueva Contraseña” </p>
+      <h5>Escenario 2: Recuperación con dirección de correo electrónico inválido</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con el dato de dirección de correo electrónico </p>
+        <p> Y la dirección de correo electrónico ingresada no se encuentre registrada en el sistema </p>
+        <p> Entonces se recibe una respuesta con el status 401 </p>
+        <p> Y un mensaje con el valor “El correo electrónico es incorrecto” es mostrado </p>
+      <h5>Escenario 3: Restablecimiento de contraseña exitoso </h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con el dato de una nueva contraseña </p>
+        <p> Entonces se recibe una respuesta con el status 202</p>
+        <p> Y el sistema redirige al usuario a la página principal </p>
+      <h5>Escenario 4: Restablecimiento de contraseña con la misma contraseña que la original</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada con el dato de una contraseña</p>
+        <p> Y la contraseña sea la misma que la contraseña actual </p>
+        <p> Entonces se recibe una respuesta con el status 406 </p>
+        <p> Y un mensaje con el valor “La nueva contraseña coincide con la actual” es mostrado </p>
+      <h5>Escenario 5: Restablecimiento de contraseña sin proporcionar una contraseña</h5>
+        <p> Dado que el ENDPOINT/usuario está disponible </p>
+        <p> Cuando una solicitud POST sea enviada sin datos</p>
+        <p> Entonces se recibe una respuesta con el status 400 </p>
+        <p> Y un mensaje con el valor “Contraseña no proporcionada” es mostrado </p>
+    </td>
+    <td>EP06</td>
+  </tr>
 </table>
 
 ## 3.3. Impact Mapping
