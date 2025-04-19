@@ -2688,6 +2688,50 @@ Se utilizó la aplicación Trello para el desarrollo del product backlog **[Trel
 
 ### 4.1.1. EventStorming
 
+Tomando en cuenta el Domain-Driven Design, hicimos todo el proceso de Event Storming en una pizarra en Miro. De este modo, se llegaron a identificar los Bounded Contexts de nuestro sistema.
+
+[Tablero de Miro con Event Storming](https://miro.com/welcomeonboard/UWVqWXkzM01CTlJFcGFxOTR0WHNvc1U0M2hBNUtQM1VLR0NnY0dOL1YzREsxdXdNWnFGcFVXdTRBVmhHSm0rbWsxb0JzRGNuaE84WGVQK3oyT3BzY2E4UGY5VUUzM2dBd3JJeE1sbGF1ZWN4Z1YyM1h4ZGJMZWhkaG9SbnNkNzhnbHpza3F6REdEcmNpNEFOMmJXWXBBPT0hdjE=?share_link_id=584797912906)
+
+**Paso 1: Unstructured Exploration**
+
+![Paso 1: Unstructured Exploration](img/event-storming-1.jpg)
+
+**Paso 2: Timelines**
+
+![Paso 2: Timelines](img/event-storming-2.jpg)
+
+**Paso 3: Pain points**
+
+![Paso 3: Pain points](img/event-storming-3.jpg)
+
+**Paso 4: Pivotal points**
+
+![Paso 4: Pivotal points](img/event-storming-4.jpg)
+
+**Paso 5: Commands**
+
+![Paso 5: Commands](img/event-storming-5.jpg)
+
+**Paso 6: Policies**
+
+![Paso 6: Policies](img/event-storming-6.jpg)
+
+**Paso 7: Read models**
+
+![Paso 7: Read models](img/event-storming-7.jpg)
+
+**Paso 8: External systems**
+
+![Paso 8: External systems](img/event-storming-8.jpg)
+
+**Paso 9: Aggregates**
+
+![Paso 9: Aggregates](img/event-storming-9.jpg)
+
+**Paso 10: Bounded contexts**
+
+![Paso 10: Bounded contexts](img/event-storming-10.jpg)
+
 #### 4.1.1.1. Candidate Context Discovery
 
 #### 4.1.1.2. Domain Message Flows Modeling
