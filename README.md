@@ -341,7 +341,7 @@ Nuestra startup se llama IoT Solutions y se especializa en enfrentar los desafí
     </td>
     <td>
       <p>
-        Descripción básica de Sebastian
+        Soy Sebastian, estudiante del séptimo ciclo de Ingeniería de Software. A lo largo de mi formación he adquirido experiencia trabajando con diversos lenguajes como C++, Python, C# y Java, aplicando principios de programación orientada a objetos. Además, he desarrollado proyectos web utilizando Angular y Vue para el frontend, y he implementado servicios backend con Spring Boot y .NET. También he explorado el desarrollo móvil con Kotlin y Dart, y tengo manejo de bases de datos como SQL Server, MySQL y SQLite. 
       </p>
     </td>
   </tr>
