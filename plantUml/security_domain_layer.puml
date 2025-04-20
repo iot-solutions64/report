@@ -1,0 +1,85 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+package "Security Domain Layer" {
+
+    enum RoleName {
+        FARMER
+        ADMINISTRATOR
+    }
+
+    enum PermissionName {
+        VIEW_DASHBOARD
+        MANAGE_USERS
+        ACCESS_SETTINGS
+    }
+
+    class User {
+        -userId: UUID
+        -username: String
+        -passwordHash: String
+        -registrationDate: Date
+        -email: String
+        +getUserId(): UUID
+        +getUsername(): String
+        +getPasswordHash(): String
+        +getRegistrationDate(): Date
+        +getEmail(): String
+    }
+
+    class Role {
+        -roleId: UUID
+        -roleName: RoleName
+        -permissions: List<Permission>
+        +getRoleId(): UUID
+        +getRoleName(): RoleName
+        +getPermissions(): List<Permission>
+    }
+
+    class Permission {
+        -permissionId: UUID
+        -permissionName: PermissionName
+        +getPermissionId(): UUID
+        +getPermissionName(): PermissionName
+    }
+
+    class AuthenticationResult {
+        -isSuccess: Boolean
+        -accessToken: String
+        +getIsSuccess(): Boolean
+        +getAccessToken(): String
+    }
+
+    class AuthorizationResult {
+        -isAuthorized: Boolean
+        +getIsAuthorized(): Boolean
+    }
+
+    class UserRegistrationService {
+        +registerUser(username: String, password: String, email: String): User
+    }
+
+    class UserAuthenticationService {
+        +authenticate(username: String, password: String): AuthenticationResult
+    }
+
+    class UserAuthorizationService {
+        +authorize(user: User, action: String): AuthorizationResult
+    }
+
+    class UserSessionService {
+        +login(user: User): void
+        +logout(user: User): void
+    }
+
+    User "1" --> "0..*" Role : has >
+    Role "1" --> "0..*" Permission : grants >
+    AuthenticationResult "1" --> "1" User : relates >
+    AuthorizationResult "1" --> "1" User : checks >
+    UserRegistrationService --> UserRegistrationInterface : implements >
+    UserAuthenticationService --> UserAuthenticationInterface : implements >
+    UserAuthorizationService --> UserAuthorizationInterface : implements >
+    UserSessionService --> NotificationServiceInterface : uses >
+}
+
+@enduml

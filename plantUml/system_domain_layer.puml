@@ -1,0 +1,87 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+
+package "System Domain Layer" {
+
+    enum SystemStatus {
+        ON
+        OFF
+        SHUTTING_DOWN
+    }
+
+    class SystemState {
+        -status: SystemStatus
+        -lastStatusChange: Date
+        +getStatus(): SystemStatus
+        +getLastStatusChange(): Date
+    }
+
+    class SystemStatusReport {
+        -overallStatus: SystemStatus
+        -subsystemStatuses: List<SystemStatus> 
+        +getOverallStatus(): SystemStatus
+        +getSubsystemStatuses(): List<SystemStatus>
+    }
+
+    interface SystemStatusRequestInterface {
+        +getSystemStatus(): SystemState
+    }
+
+    interface SystemInformationDisplayInterface {
+        +displaySystemStatus(report: SystemStatusReport): void
+    }
+
+    interface SystemControlInterface {
+        +turnOnSystem(): void
+        +turnOffSystem(): void
+    }
+
+    class SystemStatusService {
+        +getSystemState(): SystemState
+        +generateSystemStatusReport(): SystemStatusReport
+    }
+
+    class SystemStartupService {
+        +startSystem(): void
+        +initializeSubsystems(): void
+    }
+
+    class SystemShutdownService {
+        +shutdownSystem(): void
+        +shutdownSubsystems(): void
+    }
+
+    class SystemStatusRepository {
+        +saveSystemState(state: SystemState): void
+        +getSystemState(): SystemState
+    }
+
+    class SystemControlHardwareInterface {
+        +turnOnHardware(): void
+        +turnOffHardware(): void
+    }
+
+    class SubsystemStatusIntegrations {
+        +getSoilStatus(): SystemStatus
+        +getIrrigationStatus(): SystemStatus
+        +getSecurityStatus(): SystemStatus
+    }
+
+    SystemState --> SystemStatus
+    SystemStatusReport --> SystemStatus
+    SystemStatusReport --> "1..*" SystemStatus
+    SystemStatusService --> SystemState : uses >
+    SystemStatusService --> SystemStatusReport : uses >
+    SystemStatusRequestInterface ..> SystemStatusService : calls >
+    SystemInformationDisplayInterface ..> SystemStatusReport : displays >
+    SystemControlInterface ..> SystemControlHardwareInterface : uses >
+    SystemControlInterface ..> SystemStartupService : triggers >
+    SystemControlInterface ..> SystemShutdownService : triggers >
+    SystemStartupService --> SubsystemStatusIntegrations : coordinates >
+    SystemShutdownService --> SubsystemStatusIntegrations : coordinates >
+    SystemStatusRepository --> SystemState : persists >
+    SubsystemStatusIntegrations --> "1..*" SystemStatusReport : aggregates >
+}
+
+@enduml

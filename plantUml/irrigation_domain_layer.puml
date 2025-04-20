@@ -1,0 +1,94 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+package "Irrigation Domain Layer" {
+
+    enum IrrigationStatus {
+        STARTED
+        RUNNING
+        ENDED
+    }
+
+    enum AutomaticIrrigationStatus {
+        ACTIVE
+        INACTIVE
+    }
+
+    class IrrigationSession {
+        -sessionId: String
+        -startTime: LocalDateTime
+        -endTime: LocalDateTime
+        -requestedWaterAmount: float
+        -deliveredWaterAmount: float
+        -irrigationStatus: IrrigationStatus
+        +start(): void
+        +end(): void
+        +isRunning(): boolean
+    }
+
+    class WaterTankLevel {
+        -currentLevel: float
+        -capacity: float
+        +getAvailableWater(): float
+        +isBelowThreshold(thresholds: WaterLevelThresholds): boolean
+    }
+
+    class WaterLevelThresholds {
+        -normalLevelThreshold: float
+        -lowLevelThreshold: float
+        +isLow(level: float): boolean
+    }
+
+    class IrrigationSchedule {
+        -startTime: LocalTime
+        -duration: Duration
+        -soilConditionTriggers: List<SoilConditionTrigger>
+        +isDueNow(currentTime: LocalTime): boolean
+        +getTriggers(): List<SoilConditionTrigger>
+    }
+
+    class SoilConditionTrigger {
+        -minHumidity: float
+        -maxHumidity: float
+        -minTemperature: float
+        -maxTemperature: float
+        +matches(humidity: float, temperature: float): boolean
+    }
+
+    class WaterLimit {
+        -limitValue: float
+        -period: String
+        +isExceeded(totalUsed: float): boolean
+    }
+
+    interface IrrigationControlInterface {
+        +startIrrigation(): void
+        +stopIrrigation(): void
+    }
+
+    interface WaterTankLevelDisplayInterface {
+        +displayWaterLevel(): void
+    }
+
+    interface WaterLimitManagementInterface {
+        +getWaterLimit(): WaterLimit
+        +setWaterLimit(limit: WaterLimit): void
+    }
+
+    interface AutomaticIrrigationControlInterface {
+        +activate(): void
+        +deactivate(): void
+    }
+
+    interface NotificationServiceInterface {
+        +sendNotification(message: String): void
+    }
+
+    IrrigationSchedule --> SoilConditionTrigger : contains >
+    IrrigationSession --> IrrigationStatus
+    IrrigationSchedule --> AutomaticIrrigationStatus
+    WaterTankLevel --> WaterLevelThresholds : uses >
+    SoilConditionTrigger <-- IrrigationSchedule : uses >
+}
+
+@enduml

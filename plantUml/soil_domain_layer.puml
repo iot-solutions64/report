@@ -1,0 +1,83 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+package "System Domain Layer" {
+
+    enum SystemStatus {
+        ON
+        OFF
+        SHUTTING_DOWN
+    }
+
+    class SystemState {
+        -status: SystemStatus
+        -lastStatusChange: Date
+        +getStatus(): SystemStatus
+        +getLastStatusChange(): Date
+    }
+
+    class SystemStatusReport {
+        -overallStatus: SystemStatus
+        -subsystemStatuses: List<SystemStatus>
+        +getOverallStatus(): SystemStatus
+        +getSubsystemStatuses(): List<SystemStatus>
+    }
+
+    class SystemStatusService {
+        +getSystemState(): SystemState
+        +generateSystemStatusReport(): SystemStatusReport
+    }
+
+    class SystemStartupService {
+        +startSystem(): void
+        +initializeSubsystems(): void
+    }
+
+    class SystemShutdownService {
+        +shutdownSystem(): void
+        +shutdownSubsystems(): void
+    }
+
+    class SystemStatusRepository {
+        +saveSystemState(state: SystemState): void
+        +getSystemState(): SystemState
+    }
+
+    class SystemControlHardwareInterface {
+        +turnOnHardware(): void
+        +turnOffHardware(): void
+    }
+
+    class SubsystemStatusIntegrations {
+        +getSoilStatus(): SystemStatus
+        +getIrrigationStatus(): SystemStatus
+        +getSecurityStatus(): SystemStatus
+    }
+
+    interface SystemStatusRequestInterface {
+        +getSystemStatus(): SystemState
+    }
+
+    interface SystemInformationDisplayInterface {
+        +displaySystemStatus(report: SystemStatusReport): void
+    }
+
+    interface SystemControlInterface {
+        +turnOnSystem(): void
+        +turnOffSystem(): void
+    }
+
+    SystemStatusService --> SystemState : uses >
+    SystemStatusService --> SystemStatusReport : generates >
+    SystemStatusRequestInterface ..> SystemStatusService : calls >
+    SystemInformationDisplayInterface ..> SystemStatusReport : displays >
+    SystemControlInterface ..> SystemControlHardwareInterface : controls >
+    SystemControlInterface ..> SystemStartupService : triggers >
+    SystemControlInterface ..> SystemShutdownService : triggers >
+    SystemStatusRepository --> SystemState : stores >
+    SystemStartupService --> SubsystemStatusIntegrations : communicates >
+    SystemShutdownService --> SubsystemStatusIntegrations : communicates >
+    SubsystemStatusIntegrations --> SystemStatusReport : aggregates >
+}
+
+@enduml
