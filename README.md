@@ -2842,6 +2842,7 @@ Este bounded context se encarga de la gestión de los datos relacionados al rieg
 #### 4.2.2.5. Component Level Diagrams
 
 ![Diagrama de Componentes: Cantidad de Agua](img/c4-component-agua.png)
+![Diagrama de Componentes: Regado Automático](img/c4-component-regado.png)
 
 #### 4.2.2.6. Code Level Diagrams
 ##### 4.2.2.6.1. Domain Layer Class Diagrams
