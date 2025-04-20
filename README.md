@@ -2521,6 +2521,14 @@ Segmento objetivo: Agricultor
   </tr>
   <!--EPIC 07-->
   <tr>
+    <td colspan="5">
+      <h5 style="text-align: center">EPIC 7: Administración de Contraseña de Usuarios</h5>
+        <p>
+          Como usuario, quiero poder actualizar mi contraseña para asegurarme que mi cuenta esté segura
+        </p>
+    </td>
+  </tr>
+  <tr>
     <th>EP07 / US26</th>
     <th>Actualización de contraseña</th>
     <td>
