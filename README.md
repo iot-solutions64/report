@@ -2802,11 +2802,11 @@ Este bounded context se encarga de la gestión de los datos relacionados a la hu
 
 ##### 4.2.1.6.1. Domain Layer Class Diagrams
 
-![Diagrama de Clases de Bounded Context: Soil](img/soil-domain-layer.png))
+![Diagrama de Clases de Bounded Context: Soil](img/soil-domain-layer.png)
 
 ##### 4.2.1.6.2. Database Design Diagram
 
-![Diagrama de Base de Datos de Bounded Context: Soil](img/soil-database-diagram.jpg))
+![Diagrama de Base de Datos de Bounded Context: Soil](img/soil-database-diagram.jpg)
 
 
 ### 4.2.2. Bounded Context: Irrigation
@@ -2861,11 +2861,11 @@ Este bounded context se encarga de la gestión de los datos relacionados al rieg
 
 ##### 4.2.2.6.1. Domain Layer Class Diagrams
 
-![Diagrama de Clases de Bounded Context: Irrigation](img/irrigation-domain-layer.png))
+![Diagrama de Clases de Bounded Context: Irrigation](img/irrigation-domain-layer.png)
 
 ##### 4.2.2.6.2. Database Design Diagram
 
-![Diagrama de Base de Datos de Bounded Context: Irrigation](img/irrigation-database-diagram.jpg))
+![Diagrama de Base de Datos de Bounded Context: Irrigation](img/irrigation-database-diagram.jpg)
 
 
 ### 4.2.3. Bounded Context: Security
@@ -2907,11 +2907,11 @@ Este bounded context se encarga de la gestión de los datos relacionados a la se
 #### 4.2.3.6. Code Level Diagrams
 ##### 4.2.3.6.1. Domain Layer Class Diagrams
 
-![Diagrama de Clases de Bounded Context: Security](img/security-domain-layer.png))
+![Diagrama de Clases de Bounded Context: Security](img/security-domain-layer.png)
 
 ##### 4.2.3.6.2. Database Design Diagram
 
-![Diagrama de Base de Datos de Bounded Context: Security](img/security-database-diagram.jpg))
+![Diagrama de Base de Datos de Bounded Context: Security](img/security-database-diagram.jpg)
 
 ### 4.2.4. Bounded Context: System
 
@@ -2950,11 +2950,11 @@ Este bounded context se encarga de la gestión de los datos relacionados a los s
 #### 4.2.4.6. Code Level Diagrams
 ##### 4.2.4.6.1. Domain Layer Class Diagrams
 
-![Diagrama de Clases de Bounded Context: System](img/system-domain-layer.png))
+![Diagrama de Clases de Bounded Context: System](img/system-domain-layer.png)
 
 ##### 4.2.4.6.2. Database Design Diagram
 
-![Diagrama de Base de Datos de Bounded Context: System](img/system-database-diagram.jpg))
+![Diagrama de Base de Datos de Bounded Context: System](img/system-database-diagram.jpg)
 
 
 # Capítulo V: Solution UI/UX Design
