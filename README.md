@@ -2696,7 +2696,13 @@ Se utilizó la aplicación Trello para el desarrollo del product backlog **[Trel
 
 ### 4.1.1. EventStorming
 
+A continuación se presentan los resultados del proceso de Event Storming realizado para el diseño de la arquitectura del sistema. Este proceso se llevó a cabo con el objetivo de identificar los diferentes bounded contexts y los flujos de mensajes entre ellos.
+
+#### 4.1.1.1. Candidate Context Discovery
+
 Tomando en cuenta el Domain-Driven Design, hicimos todo el proceso de Event Storming en una pizarra en Miro. De este modo, se llegaron a identificar los Bounded Contexts de nuestro sistema.
+
+Para esto, realizamos una sesión grupal donde se identificaron los diferentes eventos, comandos y políticas que componen el sistema. Duró aproximadamente 2 horas.
 
 [Tablero de Miro con Event Storming](https://miro.com/welcomeonboard/UWVqWXkzM01CTlJFcGFxOTR0WHNvc1U0M2hBNUtQM1VLR0NnY0dOL1YzREsxdXdNWnFGcFVXdTRBVmhHSm0rbWsxb0JzRGNuaE84WGVQK3oyT3BzY2E4UGY5VUUzM2dBd3JJeE1sbGF1ZWN4Z1YyM1h4ZGJMZWhkaG9SbnNkNzhnbHpza3F6REdEcmNpNEFOMmJXWXBBPT0hdjE=?share_link_id=584797912906)
 
@@ -2740,11 +2746,33 @@ Tomando en cuenta el Domain-Driven Design, hicimos todo el proceso de Event Stor
 
 ![Paso 10: Bounded contexts](img/event-storming-10.jpg)
 
-#### 4.1.1.1. Candidate Context Discovery
-
 #### 4.1.1.2. Domain Message Flows Modeling
 
+Los siguientes diagramas muestran el flujo de mensajes de los diferentes bounded contexts. Estos diagramas fueron creados utilizando la herramienta de Miro, y muestran cómo los diferentes bounded contexts interactúan entre sí a través de eventos y comandos.
+
+![Flujo de Mensajes de Dominio 1](img/domain-message-flow-1.jpg)
+
+![Flujo de Mensajes de Dominio 2](img/domain-message-flow-2.jpg)
+
+![Flujo de Mensajes de Dominio 3](img/domain-message-flow-3.jpg)
+
+![Flujo de Mensajes de Dominio 4](img/domain-message-flow-4.jpg)
+
+![Flujo de Mensajes de Dominio 5](img/domain-message-flow-5.jpg)
+
+![Flujo de Mensajes de Dominio 6](img/domain-message-flow-6.jpg)
+
 #### 4.1.1.3. Bounded Context Canvases
+
+Los siguientes diagramas muestran los bounded contexts de nuestro sistema. Estos diagramas fueron creados utilizando la herramienta de Miro, y detallan más a fondo cada uno de los bounded contexts, incluyendo su clasificación, eventos, comandos, mensajes y sistemas.
+
+![Bounded Context Canvas: Security](img/security-context-canvas.jpg)
+
+![Bounded Context Canvas: System](img/system-context-canvas.jpg)
+
+![Bounded Context Canvas: Soil](img/soil-context-canvas.jpg)
+
+![Bounded Context Canvas: Irrigation](img/irrigation-context-canvas.jpg)
 
 ### 4.1.2. Context Mapping
 
