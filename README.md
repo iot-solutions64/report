@@ -2766,13 +2766,18 @@ Los siguientes diagramas muestran el flujo de mensajes de los diferentes bounded
 
 Los siguientes diagramas muestran los bounded contexts de nuestro sistema. Estos diagramas fueron creados utilizando la herramienta de Miro, y detallan más a fondo cada uno de los bounded contexts, incluyendo su clasificación, eventos, comandos, mensajes y sistemas.
 
-![Bounded Context Canvas: Security](img/security-context-canvas.jpg)
-
-![Bounded Context Canvas: System](img/system-context-canvas.jpg)
-
+**Soil Context Canvas**
 ![Bounded Context Canvas: Soil](img/soil-context-canvas.jpg)
 
+**Irrigation Context Canvas**
 ![Bounded Context Canvas: Irrigation](img/irrigation-context-canvas.jpg)
+
+**Security Context Canvas**
+![Bounded Context Canvas: Security](img/security-context-canvas.jpg)
+
+**System Context Canvas**
+![Bounded Context Canvas: System](img/system-context-canvas.jpg)
+
 
 ### 4.1.2. Context Mapping
 
