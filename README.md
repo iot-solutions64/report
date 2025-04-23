@@ -2797,6 +2797,39 @@ Los siguientes diagramas muestran los bounded contexts de nuestro sistema. Estos
 
 ### 4.1.2. Context Mapping
 
+Durante el proceso de modelado del dominio para HydroSmart, identificamos cuatro Bounded Contexts principales: *Soil*, *Irrigation*, *Security* y *System*. A partir de esta base, realizamos una serie de reflexiones y escenarios de reestructuración para evaluar cómo podrían reorganizarse las capacidades del sistema y qué tipo de relación surgiría entre contextos. A continuación, explicamos el proceso seguido y las alternativas consideradas:
+
+**Análisis de Contextos:**
+
+- *Soil ↔ Irrigation*: Existe una fuerte dependencia, ya que los datos del suelo son necesarios para decisiones de riego. Aquí se establece una relación de tipo Customer/Supplier, donde Irrigation depende de los datos provistos por Soil.
+
+- *Security ↔ Todos los contextos*: Security es un contexto transversal que proporciona autenticación y autorización. Aquí es viable aplicar un patrón Shared Kernel si los demás contextos comparten usuarios autenticados, o Conformist si los contextos consumidores simplemente aceptan las reglas impuestas por Security.
+
+- *System ↔ Farmer*: Aquí observamos una relación directa, donde el Farmer interactúa con el sistema físico de riego. System es relativamente autónomo y puede funcionar bajo un modelo independiente, salvo las acciones iniciadas por otros contextos como Irrigation.
+
+**Escenarios alternativos:**
+
+*¿Qué pasaría si movemos la lógica de validación de sensores del contexto Irrigation al contexto System?*
+Esto podría reducir la carga de responsabilidades del contexto Irrigation, delegando el manejo del hardware a System. Sin embargo, crearía más dependencia técnica entre ambos contextos.
+
+*¿Qué pasaría si partimos Irrigation en: Control Manual y Automatización?*
+Ayudaría a diferenciar entre las acciones directas del usuario y las decisiones tomadas por IA. Esto favorecería el mantenimiento y la escalabilidad de funcionalidades como predicción climática. No obstante, podría aumentar la complejidad del sistema al introducir más contextos.
+
+*¿Qué pasaría si duplicamos la funcionalidad de visualización de historial en Soil y en Irrigation?*
+Esto rompería dependencia entre contextos en tiempo real, aunque aumentaría la duplicación de datos.
+
+**Decisión final:**
+
+Tras evaluar estas opciones, consideramos lo siguiente como la estructura más coherente:
+
+- Separación clara de responsabilidades entre autenticación, análisis de suelo y riego, permitiendo un desarrollo y despliegue independiente.
+
+- Delegación de interacciones con hardware al IoT Gateway, manteniendo los contextos de negocio agnósticos al detalle técnico.
+
+- Establecer un patrón Shared Kernel para Security, donde los modelos de usuario y permisos son compartidos entre contextos.
+
+- Uso de un API Gateway como frontera de comunicación entre contextos internos y externos, centralizando la orquestación y simplificando la exposición de servicios.
+
 ### 4.1.3. Software Architecture
 
 #### 4.1.3.1. System Landscape Diagram
