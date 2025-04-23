@@ -754,6 +754,22 @@ Las entrevistas representan una estrategia de investigación que implica el inte
 **Resumen:** Alessandra, de 20 años, tiene un familiar que se dedica a la agricultura en una zona rural de la Sierra, donde cultiva papa, maíz y habas. Señala que uno de los principales problemas es el acceso irregular al agua y la falta de tecnología para un mejor aprovechamiento. Su familiar no lleva un control preciso del riego ni utiliza herramientas digitales, por lo que muchas veces termina usando más agua de la necesaria. El riego es una tarea física y demandante, especialmente por la necesidad de trasladar agua. Además, cree que la calidad del agua puede afectar directamente a los cultivos. Debido a estas dificultades, Alessandra considera que su familiar estaría muy interesado en probar una aplicación que ayude a automatizar y optimizar el sistema de riego, sobre todo ante los efectos del cambio climático y las sequías recientes.
 
 
+**Entrevista 3**
+
+**Entrevistador:** Piero Delgado
+
+**Entrevistado:** Daniel Ruiz
+
+**Edad:** 20 años
+
+**Distrito:** Juliaca
+
+**Enlace a entrevista:** [Entrevista 3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/ET59gr1V_RRNlVe7KSxEUq0Bt_f0nIgvl56lpxFdHF-FAA?e=lzHZC6)
+
+<img src="img/entrevista3.png" alt="Entrevista 3" width="100%" />
+
+**Resumen:** En la entrevista, Daniel describe su rutina diaria como agotadora, iniciando desde las 4 o 5 a.m. y trabajando hasta el anochecer. Cultiva principalmente papa y camote en un clima complicado, donde el manejo del agua representa un gran desafío debido a la irregularidad del clima. No lleva un control exacto del riego ni usa herramientas tecnológicas, regando de dos a tres veces por semana en las mañanas. Reconoce que gasta más agua de la necesaria y que la calidad del agua afecta directamente a sus cultivos. Finalmente, muestra interés en una aplicación que automatice el riego y le brinde alertas, ya que considera que le ayudaría a optimizar sus procesos y ahorrar agua.
+
 ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
