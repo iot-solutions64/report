@@ -2965,6 +2965,8 @@ Tras evaluar estas opciones, consideramos lo siguiente como la estructura más c
 
 #### 4.1.3.4. Deployment Diagrams
 
+![Diagrama de Despliegue](img/c4-deployment.jpg)
+
 ## 4.2. Tactical-Level Domain-Driven Design
 
 ### 4.2.1. Bounded Context: Soil
