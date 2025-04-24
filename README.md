@@ -43,7 +43,6 @@
 
 <p align="center"><b>Abril 2025</b></p>
 
-
 # Registro de versiones
 
 <table>
@@ -149,118 +148,132 @@
 # Project Report Collaboration Insights
 
 ### TB1
+
 TBD
 
 # Tabla de Contenidos
 
-### [Registro de Versiones](#registro-de-versiones)  
-### [Student Outcome](#student-outcome)  
-### [Capítulo I: Introducción](#capítulo-i-introducción)  
-- [1.1. Startup Profile](#11-startup-profile)  
-  - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)  
-  - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)  
-- [1.2. Solution Profile](#12-solution-profile)  
-  - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)  
-  - [1.2.2. Lean UX Process](#122-lean-ux-process)  
-    - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)  
-    - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)  
-    - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)  
-    - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)  
-- [1.3. Segmentos objetivo](#13-segmentos-objetivo)  
-### [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)  
-- [2.1. Competidores](#21-competidores)  
-  - [2.1.1. Análisis competitivo](#211-análisis-competitivo)  
-  - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)  
-- [2.2. Entrevistas](#22-entrevistas)  
-  - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)  
-  - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)  
-  - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)  
-- [2.3. Needfinding](#23-needfinding)  
-  - [2.3.1. User Personas](#231-user-personas)  
-  - [2.3.2. User Task Matrix](#232-user-task-matrix)  
-  - [2.3.3. User Journey Mapping](#233-user-journey-mapping)  
-  - [2.3.4. Empathy Mapping](#234-empathy-mapping)  
-  - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)  
-- [2.4. Ubiquitous Language](#24-ubiquitous-language)  
-### [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)  
-- [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)  
-- [3.2. User Stories](#32-user-stories)  
-- [3.3. Impact Mapping](#33-impact-mapping)  
-- [3.4. Product Backlog](#34-product-backlog)  
+### [Registro de Versiones](#registro-de-versiones)
 
-### [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)  
-- [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)  
-  - [4.1.1. EventStorming](#411-eventstorming)  
-    - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)  
-    - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)  
-    - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)  
-  - [4.1.2. Context Mapping](#412-context-mapping)  
-  - [4.1.3. Software Architecture](#413-software-architecture)  
-    - [4.1.3.1. System Landscape Diagram](#4131-system-landscape-diagram)  
-    - [4.1.3.2. Context Level Diagrams](#4132-context-level-diagrams)  
-    - [4.1.3.3. Container Level Diagrams](#4133-container-level-diagrams)  
-    - [4.1.3.4. Deployment Diagrams](#4134-deployment-diagrams)  
-- [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)  
-  - [4.2.X. Bounded Context: <Bounded Context Name>](#42x-bounded-context-bounded-context-name)  
-    - [4.2.X.1. Domain Layer](#42x1-domain-layer)  
-    - [4.2.X.2. Interface Layer](#42x2-interface-layer)  
-    - [4.2.X.3. Application Layer](#42x3-application-layer)  
-    - [4.2.X.4. Infrastructure Layer](#42x4-infrastructure-layer)  
-    - [4.2.X.5. Component Level Diagrams](#42x5-component-level-diagrams)  
-    - [4.2.X.6. Code Level Diagrams](#42x6-code-level-diagrams)  
-      - [4.2.X.6.1. Domain Layer Class Diagrams](#42x61-domain-layer-class-diagrams)  
-      - [4.2.X.6.2. Database Design Diagram](#42x62-database-design-diagram)  
+### [Student Outcome](#student-outcome)
 
-### [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)  
-- [5.1. Style Guidelines](#51-style-guidelines)  
-  - [5.1.1. General Style Guidelines](#511-general-style-guidelines)  
-  - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)  
-- [5.2. Information Architecture](#52-information-architecture)  
-  - [5.2.1. Organization Systems](#521-organization-systems)  
-  - [5.2.2. Labeling Systems](#522-labeling-systems)  
-  - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)  
-  - [5.2.4. Searching Systems](#524-searching-systems)  
-  - [5.2.5. Navigation Systems](#525-navigation-systems)  
-- [5.3. Landing Page UI Design](#53-landing-page-ui-design)  
-  - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)  
-  - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)  
-- [5.4. Applications UX/UI Design](#54-applications-uxui-design)  
-  - [5.4.1. Applications Wireframes](#541-applications-wireframes)  
-  - [5.4.2. Applications Wireflow Diagrams](#542-applications-wireflow-diagrams)  
-  - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)  
-  - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)  
-- [5.5. Applications Prototyping](#55-applications-prototyping)  
+### [Capítulo I: Introducción](#capítulo-i-introducción)
 
-### [Capítulo VI: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)  
-- [6.1. Software Configuration Management](#61-software-configuration-management)  
-  - [6.1.1. Development Environment Configuration](#611-development-environment-configuration)  
-  - [6.1.2. Source Code Management](#612-source-code-management)  
-  - [6.1.3. Style Guide & Conventions](#613-style-guide--conventions)  
-  - [6.1.4. Deployment Configuration](#614-deployment-configuration)  
-- [6.2. Implementation](#62-implementation)  
-  - [6.2.X. Sprint n](#62x-sprint-n)  
-    - [6.2.X.1. Sprint Planning n](#62x1-sprint-planning-n)  
-    - [6.2.X.2. Aspect Leaders and Collaborators](#62x2-aspect-leaders-and-collaborators)  
-    - [6.2.X.3. Sprint Backlog n](#62x3-sprint-backlog-n)  
-    - [6.2.X.4. Development Evidence](#62x4-development-evidence)  
-    - [6.2.X.5. Testing Suite Evidence](#62x5-testing-suite-evidence)  
-    - [6.2.X.6. Execution Evidence](#62x6-execution-evidence)  
-    - [6.2.X.7. Services Documentation](#62x7-services-documentation)  
-    - [6.2.X.8. Deployment Evidence](#62x8-deployment-evidence)  
-    - [6.2.X.9. Collaboration Insights](#62x9-collaboration-insights)  
-- [6.3. Validation Interviews](#63-validation-interviews)  
-  - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)  
-  - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)  
-  - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)  
-- [6.4. Video About-the-Product](#64-video-about-the-product)  
+- [1.1. Startup Profile](#11-startup-profile)
+  - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+  - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+- [1.2. Solution Profile](#12-solution-profile)
+  - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+  - [1.2.2. Lean UX Process](#122-lean-ux-process)
+    - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+    - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+    - [1.2.2.3. Lean UX Hypothesis Statements](#1223-lean-ux-hypothesis-statements)
+    - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+- [1.3. Segmentos objetivo](#13-segmentos-objetivo)
 
-### [7. Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)  
-### [8. Video About-the-Team](#video-about-the-team)  
-### [9. Bibliografía](#bibliografía)  
+### [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation--analysis)
+
+- [2.1. Competidores](#21-competidores)
+  - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+  - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+- [2.2. Entrevistas](#22-entrevistas)
+  - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
+  - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+  - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+- [2.3. Needfinding](#23-needfinding)
+  - [2.3.1. User Personas](#231-user-personas)
+  - [2.3.2. User Task Matrix](#232-user-task-matrix)
+  - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+  - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+  - [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
+- [2.4. Ubiquitous Language](#24-ubiquitous-language)
+
+### [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+
+- [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
+- [3.2. User Stories](#32-user-stories)
+- [3.3. Impact Mapping](#33-impact-mapping)
+- [3.4. Product Backlog](#34-product-backlog)
+
+### [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
+
+- [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
+  - [4.1.1. EventStorming](#411-eventstorming)
+    - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
+    - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
+    - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
+  - [4.1.2. Context Mapping](#412-context-mapping)
+  - [4.1.3. Software Architecture](#413-software-architecture)
+    - [4.1.3.1. System Landscape Diagram](#4131-system-landscape-diagram)
+    - [4.1.3.2. Context Level Diagrams](#4132-context-level-diagrams)
+    - [4.1.3.3. Container Level Diagrams](#4133-container-level-diagrams)
+    - [4.1.3.4. Deployment Diagrams](#4134-deployment-diagrams)
+- [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
+  - [4.2.X. Bounded Context: <Bounded Context Name>](#42x-bounded-context-bounded-context-name)
+    - [4.2.X.1. Domain Layer](#42x1-domain-layer)
+    - [4.2.X.2. Interface Layer](#42x2-interface-layer)
+    - [4.2.X.3. Application Layer](#42x3-application-layer)
+    - [4.2.X.4. Infrastructure Layer](#42x4-infrastructure-layer)
+    - [4.2.X.5. Component Level Diagrams](#42x5-component-level-diagrams)
+    - [4.2.X.6. Code Level Diagrams](#42x6-code-level-diagrams)
+      - [4.2.X.6.1. Domain Layer Class Diagrams](#42x61-domain-layer-class-diagrams)
+      - [4.2.X.6.2. Database Design Diagram](#42x62-database-design-diagram)
+
+### [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-uiux-design)
+
+- [5.1. Style Guidelines](#51-style-guidelines)
+  - [5.1.1. General Style Guidelines](#511-general-style-guidelines)
+  - [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
+- [5.2. Information Architecture](#52-information-architecture)
+  - [5.2.1. Organization Systems](#521-organization-systems)
+  - [5.2.2. Labeling Systems](#522-labeling-systems)
+  - [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+  - [5.2.4. Searching Systems](#524-searching-systems)
+  - [5.2.5. Navigation Systems](#525-navigation-systems)
+- [5.3. Landing Page UI Design](#53-landing-page-ui-design)
+  - [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
+  - [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
+- [5.4. Applications UX/UI Design](#54-applications-uxui-design)
+  - [5.4.1. Applications Wireframes](#541-applications-wireframes)
+  - [5.4.2. Applications Wireflow Diagrams](#542-applications-wireflow-diagrams)
+  - [5.4.3. Applications Mock-ups](#543-applications-mock-ups)
+  - [5.4.4. Applications User Flow Diagrams](#544-applications-user-flow-diagrams)
+- [5.5. Applications Prototyping](#55-applications-prototyping)
+
+### [Capítulo VI: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)
+
+- [6.1. Software Configuration Management](#61-software-configuration-management)
+  - [6.1.1. Development Environment Configuration](#611-development-environment-configuration)
+  - [6.1.2. Source Code Management](#612-source-code-management)
+  - [6.1.3. Style Guide & Conventions](#613-style-guide--conventions)
+  - [6.1.4. Deployment Configuration](#614-deployment-configuration)
+- [6.2. Implementation](#62-implementation)
+  - [6.2.X. Sprint n](#62x-sprint-n)
+    - [6.2.X.1. Sprint Planning n](#62x1-sprint-planning-n)
+    - [6.2.X.2. Aspect Leaders and Collaborators](#62x2-aspect-leaders-and-collaborators)
+    - [6.2.X.3. Sprint Backlog n](#62x3-sprint-backlog-n)
+    - [6.2.X.4. Development Evidence](#62x4-development-evidence)
+    - [6.2.X.5. Testing Suite Evidence](#62x5-testing-suite-evidence)
+    - [6.2.X.6. Execution Evidence](#62x6-execution-evidence)
+    - [6.2.X.7. Services Documentation](#62x7-services-documentation)
+    - [6.2.X.8. Deployment Evidence](#62x8-deployment-evidence)
+    - [6.2.X.9. Collaboration Insights](#62x9-collaboration-insights)
+- [6.3. Validation Interviews](#63-validation-interviews)
+  - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
+  - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
+  - [6.3.3. Evaluaciones según heurísticas](#633-evaluaciones-según-heurísticas)
+- [6.4. Video About-the-Product](#64-video-about-the-product)
+
+### [7. Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
+
+### [8. Video About-the-Team](#video-about-the-team)
+
+### [9. Bibliografía](#bibliografía)
+
 ### [10. Anexos](#anexos)
 
-
 # Student Outcome
+
 > **ABET – EAC - Student Outcome 5** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
 
 <table>
@@ -290,9 +303,11 @@ TBD
 ### 1.1.1. Descripción de la Startup
 
 Somos el grupo IOT Solutions, una startup especializada en enfrentar los desafíos del riego agrícola. Para ello, el equipo ha desarrollado la aplicación **HydroSmart** con la tecnología de Internet de las Cosas. Con la aplicación, los usuarios podrán optimizar el uso del agua a través de sensores de humedad y sistemas de riego automatizados, facilitando así la gestión eficiente y sostenible de sus cultivos.
+
 <!-- Cambiar a este si no les gusta el cambio. Borrar, de lo contrario
 Nuestra startup se llama IoT Solutions y se especializa en enfrentar los desafíos del riego agrícola mediante nuestra solución inteligente HydroSmart. Nos enfocamos en optimizar el uso del agua a través de sensores de humedad y sistemas de riego automatizados, facilitando una gestión eficiente y sostenible de los cultivos.
 -->
+
 **Misión**: Brindar a los agricultores una herramienta accesible e inteligente para optimizar el uso del agua en sus cultivos, promoviendo una agricultura más sostenible, eficiente y rentable.
 
 **Visión**: Ser líderes en innovación tecnológica para el riego agrícola, contribuyendo al desarrollo sostenible de la agricultura mediante soluciones basadas en IoT.
@@ -352,7 +367,7 @@ Nuestra startup se llama IoT Solutions y se especializa en enfrentar los desafí
     </td>
     <td>
       <p>
-        Descripción básica de Natanael
+        Soy Natanael David, estudiante de octavo ciclo de Ingeniería de Software en la UPC. Tengo experiencia en el desarrollo de aplicaciones web del lado de back-end utilizando frameworks y lenguajes de programacion como NestJS, Springboot y Golang, así como en el desarrollo de aplicaciones móviles con Flutter. También tengo conocimientos en el uso de bases de datos SQL como PostgresSQL y MySQL al igual que tengo conocimiento en el uso de Docker. Me considero una persona responsable y comprometida con mis proyectos, siempre buscando aprender y mejorar mis habilidades.
       </p>
     </td>
   </tr>
@@ -380,9 +395,10 @@ La gestión ineficiente del agua en el riego agrícola representa un desafío cr
 
 **How:** A través de HydroSmart, se instalarán sensores de humedad en el suelo conectados a un sistema automatizado de riego. El sistema analiza en tiempo real las condiciones del cultivo y activa el riego solo cuando es necesario, asegurando un uso óptimo del recurso hídrico.
 
-**How much:** Según la Escuela de Gestión Pública de la Universidad del Pacífico (2022) el sector agropecuario absorbe la mayor cantidad de fuerza laboral en la economía peruana, representando el 27.5% de la población activa  en 2021. Esta cifra resalta la importancia de abordar los desafíos del sector, como la ineficiencia en el uso del agua, para mejorar la productividad y el bienestar de millones de trabajadores agrícolas.
+**How much:** Según la Escuela de Gestión Pública de la Universidad del Pacífico (2022) el sector agropecuario absorbe la mayor cantidad de fuerza laboral en la economía peruana, representando el 27.5% de la población activa en 2021. Esta cifra resalta la importancia de abordar los desafíos del sector, como la ineficiencia en el uso del agua, para mejorar la productividad y el bienestar de millones de trabajadores agrícolas.
 
 ### 1.2.2 Lean UX Process
+
 #### 1.2.2.1. Lean UX Problem Statements
 
 **Problem Statement 1**
@@ -420,6 +436,7 @@ En muchos casos, los agricultores carecen de tecnología que les brinde informac
 **Problem Statement 3**
 
 El riego automatizado es aún una práctica poco adoptada por los agricultores debido a su costo y complejidad. Muchos agricultores desconocen las tecnologías disponibles y cómo podrían implementarlas de forma rentable en sus cultivos.
+
 <table>
   <tr>
     <td><strong>El producto tiene como objetivo facilitar la implementación de sistemas de riego automatizado accesibles y fáciles de usar.</strong></td>
@@ -431,7 +448,6 @@ El riego automatizado es aún una práctica poco adoptada por los agricultores d
     <td>¿Podría HydroSmart ofrecer una solución de riego automatizado fácil de implementar y a un costo accesible para los agricultores?</td>
    </tr>
 </table>
- 
 
 #### 1.2.2.2. Lean UX Assumptions
 
@@ -465,17 +481,18 @@ HydroSmart es utilizado principalmente durante las estaciones de crecimiento de 
 HydroSmart debe tener una interfaz simple, clara y fácil de usar, ideal para agricultores con poca experiencia tecnológica. La aplicación debe ser intuitiva y rápida, mostrando los datos de manera visual y comprensible. Además, debe ser robusta, segura y capaz de manejar grandes volúmenes de datos sin fallos.
 
 ##### **Business Assumptions**
-  1. **Creo que mis clientes necesitan** una solución que les permita gestionar de manera eficiente el uso del agua y optimizar el riego en sus cultivos, mejorando así la productividad y reduciendo costos.
-  2. **Estas necesidades se pueden resolver con** el uso de sensores de humedad del suelo, un sistema de riego automatizado y una plataforma accesible que brinde recomendaciones basadas en datos precisos y en tiempo real.
-  3. **Mis clientes iniciales son** agricultores de pequeña y mediana escala que buscan mejorar la eficiencia del uso del agua en sus cultivos, especialmente en áreas agrícolas de Perú.
-  4. **El valor N.°1 que mi cliente quiere de mi servicio es** la mejora de la eficiencia en el uso del agua, la reducción de costos operativos y el aumento de la productividad de sus cultivos, adoptando prácticas sostenibles.
-  5. **Mi cliente también puede obtener estos beneficios adicionales:** Una aplicación web y móvil que les permita adminisitrar el regado todos sus cultivos
-  6. **Voy a adquirir la mayoría de mis clientes a través de** campañas de marketing digital dirigidas, demostraciones en ferias agrícolas, y asociaciones con cooperativas agrícolas locales que promuevan la adopción de tecnologías innovadoras.
-  7. **Haré dinero a través de** la venta de suscripciones mensuales a nuestra plataforma HydroSmart.
-  8. **Mi competencia principal en el mercado serán** otras soluciones tecnológicas para la agricultura como PRISMAB y Netafim Perú.
-  9. **Los venceremos debido a que** la aplicación cuenta con una interfaz de usuario muy sencilla de utilizar, con una curva de aprendizaje mínima, por lo que todo tipo de usuario puede adquirirlo y usarlo sin ningún tipo de problemas
-  10. **Mi mayor riesgo de producto es** la falta de confianza de los agricultores en la tecnología y la resistencia al cambio, ya que muchos están acostumbrados a métodos de riego tradicionales.
-  11. **Resolveremos esto a través de** una estrategia educativa que incluya tutoriales fáciles de seguir, demostraciones prácticas y casos de éxito que demuestren el valor tangible de nuestra solución. Además, ofreceremos soporte técnico continuo.
+
+1. **Creo que mis clientes necesitan** una solución que les permita gestionar de manera eficiente el uso del agua y optimizar el riego en sus cultivos, mejorando así la productividad y reduciendo costos.
+2. **Estas necesidades se pueden resolver con** el uso de sensores de humedad del suelo, un sistema de riego automatizado y una plataforma accesible que brinde recomendaciones basadas en datos precisos y en tiempo real.
+3. **Mis clientes iniciales son** agricultores de pequeña y mediana escala que buscan mejorar la eficiencia del uso del agua en sus cultivos, especialmente en áreas agrícolas de Perú.
+4. **El valor N.°1 que mi cliente quiere de mi servicio es** la mejora de la eficiencia en el uso del agua, la reducción de costos operativos y el aumento de la productividad de sus cultivos, adoptando prácticas sostenibles.
+5. **Mi cliente también puede obtener estos beneficios adicionales:** Una aplicación web y móvil que les permita adminisitrar el regado todos sus cultivos
+6. **Voy a adquirir la mayoría de mis clientes a través de** campañas de marketing digital dirigidas, demostraciones en ferias agrícolas, y asociaciones con cooperativas agrícolas locales que promuevan la adopción de tecnologías innovadoras.
+7. **Haré dinero a través de** la venta de suscripciones mensuales a nuestra plataforma HydroSmart.
+8. **Mi competencia principal en el mercado serán** otras soluciones tecnológicas para la agricultura como PRISMAB y Netafim Perú.
+9. **Los venceremos debido a que** la aplicación cuenta con una interfaz de usuario muy sencilla de utilizar, con una curva de aprendizaje mínima, por lo que todo tipo de usuario puede adquirirlo y usarlo sin ningún tipo de problemas
+10. **Mi mayor riesgo de producto es** la falta de confianza de los agricultores en la tecnología y la resistencia al cambio, ya que muchos están acostumbrados a métodos de riego tradicionales.
+11. **Resolveremos esto a través de** una estrategia educativa que incluya tutoriales fáciles de seguir, demostraciones prácticas y casos de éxito que demuestren el valor tangible de nuestra solución. Además, ofreceremos soporte técnico continuo.
 
 <!--
 Agregar como extra (?)
@@ -483,9 +500,11 @@ El cliente podría optar por abandonar el uso de HydroSmart si no ve mejoras sig
 
 Nuestro enfoque principal es ayudar a los agricultores a optimizar el uso del agua y mejorar la eficiencia del riego mediante una solución sencilla, rentable y eficaz, enfocada en el cuidado y la sostenibilidad de los cultivos.
 -->
+
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
 ##### Hypothesis Statement 1
+
 Creemos que al proporcionar a los agricultores acceso a datos en tiempo real sobre la humedad del suelo y automatizar el proceso de riego, mejoraremos la eficiencia del uso del agua en los cultivos.
 
 Sabremos que esto es cierto
@@ -495,6 +514,7 @@ Cuando se observe una reducción del 20% en el consumo de agua durante los prime
 ---
 
 ##### Hypothesis Statement 2
+
 Creemos que al ofrecer un sistema de riego automatizado accesible y fácil de usar, aumentaremos la adopción de la tecnología entre los agricultores de pequeña y mediana escala.
 
 Sabremos que esto es cierto
@@ -504,6 +524,7 @@ Cuando el 30% de los agricultores que usan HydroSmart durante los primeros 3 mes
 ---
 
 ##### Hypothesis Statement 3
+
 Creemos que al permitir a los agricultores tomar decisiones informadas sobre el riego, se aumentará la productividad y rentabilidad de sus cultivos.
 
 Sabremos que esto es cierto
@@ -517,22 +538,22 @@ Cuando se observe un incremento del 15% en la productividad de los cultivos de l
 ## 1.3. Segmentos objetivo
 
 ##### Agricultores
+
 Los agricultores en Perú enfrentan desafíos en la gestión del agua para el riego debido a la falta de tecnologías adecuadas y prácticas sostenibles, lo que afecta la productividad y rentabilidad. HydroSmart les ofrecerá una solución para optimizar su uso del agua promoviendo una agricultura más eficiente y sostenible.
 
-|**Segmento objetivo**|Agricultores|
-| :- | :- |
-|**Edad**|25-55 años|
-|**Ubicación**|Perú|
-|**Sexo**|Masculino y Femenino|
-|**Formación educativa**|Primaria, Secundaria o Técnico|
-|**Poder adquisitivo**|Bajo y medio|
+| **Segmento objetivo**   | Agricultores                   |
+| :---------------------- | :----------------------------- |
+| **Edad**                | 25-55 años                     |
+| **Ubicación**           | Perú                           |
+| **Sexo**                | Masculino y Femenino           |
+| **Formación educativa** | Primaria, Secundaria o Técnico |
+| **Poder adquisitivo**   | Bajo y medio                   |
 
 # Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores
 
 ### 2.1.1. Análisis competitivo
-
 
 <table>
    <tr>
@@ -701,23 +722,24 @@ Los agricultores en Perú enfrentan desafíos en la gestión del agua para el ri
 
 **Mejora continua:** Siempre tener en cuenta las opiniones de los usuarios, y así obtener feedback, sugerencias y casos de éxito para alimentar el desarrollo del producto. Por otro lado, se puede analizar mensualmente las funcionalidades de los competidores y priorizar mejoras clave en base a lo que el usuario realmente valora.
 
-
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
+
 Las entrevistas representan una estrategia de investigación que implica el intercambio de diálogo con el propósito de adquirir datos, empleando cuestionamientos específicos para explorar en profundidad el pensamiento y la visión de la persona objeto de estudio.
 
 ##### Segmento Objetivo: Agricultor
-  1. En pocas palabras, ¿Cómo describiría su día a día como agricultor?
-  2. ¿Con qué cultivos trabaja actualmente y en qué zona se ubica su terreno?
-  3. ¿Cuáles son los principales problemas que enfrenta en el manejo del agua para sus cultivos?
-  4. ¿Lleva usted un control sobre cuándo y cuánto riega sus cultivos?
-  5. ¿Utiliza alguna herramienta o aplicación para manejar el control de sus cultivos?
-  6. ¿Cuántas veces al día o a la semana suele regar sus cultivos? ¿Y en qué horarios normalmente lo hace?
-  7. ¿Cree que gasta más agua de la que realmente necesita para regar sus cultivos?
-  8. ¿Le parece que regar los cultivos es una tarea pesada o cansada? ¿Por qué?
-  9. ¿Cree que la calidad del agua que usa para regar afecta a sus cultivos? ¿Por qué?
-  10. Si existiera una aplicación que controle el sistema de riego por usted y le avise cuando se esté regando los cultivos, ¿estaría dispuesto a probarla?
+
+1. En pocas palabras, ¿Cómo describiría su día a día como agricultor?
+2. ¿Con qué cultivos trabaja actualmente y en qué zona se ubica su terreno?
+3. ¿Cuáles son los principales problemas que enfrenta en el manejo del agua para sus cultivos?
+4. ¿Lleva usted un control sobre cuándo y cuánto riega sus cultivos?
+5. ¿Utiliza alguna herramienta o aplicación para manejar el control de sus cultivos?
+6. ¿Cuántas veces al día o a la semana suele regar sus cultivos? ¿Y en qué horarios normalmente lo hace?
+7. ¿Cree que gasta más agua de la que realmente necesita para regar sus cultivos?
+8. ¿Le parece que regar los cultivos es una tarea pesada o cansada? ¿Por qué?
+9. ¿Cree que la calidad del agua que usa para regar afecta a sus cultivos? ¿Por qué?
+10. Si existiera una aplicación que controle el sistema de riego por usted y le avise cuando se esté regando los cultivos, ¿estaría dispuesto a probarla?
 
 ### 2.2.2. Registro de entrevistas
 
@@ -731,7 +753,7 @@ Las entrevistas representan una estrategia de investigación que implica el inte
 
 **Distrito:** Lurín
 
-**Enlace a entrevista:** [Entrevista en Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b127_upc_edu_pe/EfplQNX-V1hArtEGzQFt-3ABzYYTV6e37eDV4HN7HzpS2A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=yWJug5)
+**Enlace a entrevista:** [Entrevista 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b127_upc_edu_pe/EfplQNX-V1hArtEGzQFt-3ABzYYTV6e37eDV4HN7HzpS2A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=yWJug5)
 
 <img src="img/entrevista1.png" alt="Entrevista 1" width="100%" />
 
@@ -753,7 +775,6 @@ Las entrevistas representan una estrategia de investigación que implica el inte
 
 **Resumen:** Alessandra, de 20 años, tiene un familiar que se dedica a la agricultura en una zona rural de la Sierra, donde cultiva papa, maíz y habas. Señala que uno de los principales problemas es el acceso irregular al agua y la falta de tecnología para un mejor aprovechamiento. Su familiar no lleva un control preciso del riego ni utiliza herramientas digitales, por lo que muchas veces termina usando más agua de la necesaria. El riego es una tarea física y demandante, especialmente por la necesidad de trasladar agua. Además, cree que la calidad del agua puede afectar directamente a los cultivos. Debido a estas dificultades, Alessandra considera que su familiar estaría muy interesado en probar una aplicación que ayude a automatizar y optimizar el sistema de riego, sobre todo ante los efectos del cambio climático y las sequías recientes.
 
-
 **Entrevista 3**
 
 **Entrevistador:** Piero Delgado
@@ -770,20 +791,116 @@ Las entrevistas representan una estrategia de investigación que implica el inte
 
 **Resumen:** En la entrevista, Daniel describe su rutina diaria como agotadora, iniciando desde las 4 o 5 a.m. y trabajando hasta el anochecer. Cultiva principalmente papa y camote en un clima complicado, donde el manejo del agua representa un gran desafío debido a la irregularidad del clima. No lleva un control exacto del riego ni usa herramientas tecnológicas, regando de dos a tres veces por semana en las mañanas. Reconoce que gasta más agua de la necesaria y que la calidad del agua afecta directamente a sus cultivos. Finalmente, muestra interés en una aplicación que automatice el riego y le brinde alertas, ya que considera que le ayudaría a optimizar sus procesos y ahorrar agua.
 
+**Entrevista 4**
+
+**Entrevistador:** Natanael Soto
+
+**Entrevistado:** Joan Talizo
+
+**Edad:** 23 años
+
+**Distrito:** San Borja
+
+**Enlace a entrevista:** [Entrevista 4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201c607_upc_edu_pe/EbbhKUuOTmNNqMKW-p63mLoBRCd69GVFByVTkfS2IgIhcg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VvZDam)
+
+<img src="img/entrevista4.png" alt="Entrevista 4" width="100%" />
+
+**Resumen:** Joan, un joven agricultor de Puno, trabaja sus campos de quinua, papa y otros productos en la zona de Tonco, además de cuidar su rebaño de ovejas. Su día a día es exigente, marcado por la revisión y el cuidado manual de sus cultivos. Un problema importante que enfrenta es la gestión del agua para el riego, especialmente durante las sequías, debido a la distancia y la falta de sistemas precisos. Lleva el control del riego de forma manual y reconoce que a veces gasta más agua de la necesaria. Regar es una tarea pesada para él, y la calidad del agua que utiliza también le preocupa por su impacto en las plantas. Ante la posibilidad de usar una aplicación que controle el riego, John se muestra muy interesado en probarla para ahorrar agua, tiempo y asegurar un riego óptimo, incluso sin buena señal.
+
 ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
 
+Para esta sección se presentan personajes ficticios de acuerdo al segmento objetivo. La información que se ha utilizado para elaborar el User persona se obtuvo de las entrevistas realizadas previamente al segmento objetivo en cuestion. La intención de las entrevistas era conocer un poco más a las personas a las que la aplicación está dirigida. Entre la información de las entrevistas que fue utilizada tenemos demografía, metas, motivaciones, frustraciones, marcas relacionadas con el tema que envuelve a la aplicación, canales digitales que más utiliza, etc. Para la creación de esta sección se utilizó la plataforma UXPressia.
+
+<img src="img/user_persona.png" alt="User Persona" width="100%" />
+
 ### 2.3.2. User Task Matrix
+
+En esta sección se presenta el user task matrix, herramienta centrada en el segmento objetivo (agricultor), que nos permitirá identificar las tareas y objetivos claves del usuario. Además, nos permitirá priorizar características y funcionalidades al momento de realizar el product backlog. Para la frecuencia se han considerado cinco opciones:nunca ,casi nunca, a veces, a menudo ,siempre; y para la importancia tres opciones: bajo, medio, alto.
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">User task Matrix</th>
+      <th colspan="2">Maria Huaman</th>
+    </tr>
+    <tr>
+      <th>Frecuencia</th>
+      <th>Importancia</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Revisar humedad del suelo desde la app</td>
+      <td>Siempre</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Activar/desactivar el sistema de riego automático</td>
+      <td>A menudo</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Ver alertas de exceso o falta de riego</td>
+      <td>Siempre</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Consultar el historial de riego</td>
+      <td>A veces</td>
+      <td>Medio</td>
+    </tr>
+    <tr>
+      <td>Verificar el consumo mensual de agua</td>
+      <td>A veces</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Controlar manualmente el riego si es necesario</td>
+      <td>Casi nunca</td>
+      <td>Alto</td>
+    </tr>
+    <tr>
+      <td>Revisar el estado de sensores (batería, conectividad)</td>
+      <td>A veces</td>
+      <td>Medio</td>
+    </tr>
+    <tr>
+      <td>Configurar límites personalizados de riego por cultivo</td>
+      <td>Casi nunca</td>
+      <td>Medio</td>
+    </tr>
+    <tr>
+      <td>Contactar soporte técnico o ver tutorial</td>
+      <td>Casi nunca</td>
+      <td>Bajo</td>
+    </tr>
+  </tbody>
+</table>
 
 ### 2.3.3. User Journey Mapping
 
+En esta sección se presentarán los user journey mapping para el user persona.
+
+**User Journey Mapping: Agricultor**
+
+<img src="img/user_journey_mapping.png" alt="User Journey Mapping" width="100%" /> 
+ 
 ### 2.3.4. Empathy Mapping
 
+En esta sección se presentarán los empathy mapping de acuerdo al user persona que se realizo. El empathy mapping será de utilidad debido a que podemos conocer a mayor detalle a nuestros clientes, lo que nos permite mejorar algunos aspectos de la aplicación.
+
+**Segmento objetivo: Agricultor**
+
+<img src="img/empathy_mapping.png" alt="Empathy Mapping" width="100%" />
+
 ### 2.3.5. As-is Scenario Mapping
+
 Segmento objetivo: Agricultor
+
 <table>
   <tr>
     <th>Fase</th>
@@ -840,27 +957,28 @@ Segmento objetivo: Agricultor
 
 ## 2.4. Ubiquitous Language
 
-| **Término (en inglés)**    | **Término (en español)**       | **Definición** |
-|----------------------------|--------------------------------|----------------|
-| **Farmer**                 | Agricultor                     | Persona que se dedica al cultivo de la tierra y al manejo de cultivos agrícolas. |
-| **Irrigation**             | Riego                          | Proceso de aplicar agua a los cultivos de manera controlada para asegurar su crecimiento. |
-| **Smart irrigation system**| Sistema de riego inteligente   | Tecnología que permite automatizar y optimizar el uso del agua en el riego agrícola, considerando factores climáticos y del suelo. |
-| **Water efficiency**       | Eficiencia del agua            | Grado en que el uso del agua logra el máximo beneficio con el menor desperdicio posible. |
-| **Crop yield**             | Rendimiento de cultivo         | Cantidad de producto agrícola cosechado por unidad de área sembrada. |
-| **Water scarcity**         | Escasez de agua                | Situación en la que la disponibilidad de agua es insuficiente para satisfacer las demandas agrícolas y otras necesidades. |
-| **Sustainable agriculture**| Agricultura sostenible         | Práctica agrícola que busca equilibrar la producción de alimentos con el cuidado del medio ambiente y los recursos naturales. |
-| **Weather data**           | Datos climáticos               | Información relacionada al clima (temperatura, humedad, lluvia, etc.) usada para tomar decisiones en el riego. |
-| **Soil moisture**          | Humedad del suelo              | Cantidad de agua presente en el suelo, relevante para determinar la necesidad de riego. |
-| **Field**                  | Campo                          | Terreno destinado al cultivo de productos agrícolas. |
-| **Agricultural productivity**| Productividad agrícola      | Relación entre la producción obtenida y los recursos utilizados en la actividad agrícola. |
-| **Irrigation scheduling**  | Programación de riego          | Planificación del momento y duración del riego según las necesidades del cultivo y condiciones ambientales. |
-| **Climate change**         | Cambio climático               | Alteraciones significativas y duraderas en los patrones del clima, que afectan la disponibilidad de agua y la producción agrícola. |
-
+| **Término (en inglés)**       | **Término (en español)**     | **Definición**                                                                                                                     |
+| ----------------------------- | ---------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **Farmer**                    | Agricultor                   | Persona que se dedica al cultivo de la tierra y al manejo de cultivos agrícolas.                                                   |
+| **Irrigation**                | Riego                        | Proceso de aplicar agua a los cultivos de manera controlada para asegurar su crecimiento.                                          |
+| **Smart irrigation system**   | Sistema de riego inteligente | Tecnología que permite automatizar y optimizar el uso del agua en el riego agrícola, considerando factores climáticos y del suelo. |
+| **Water efficiency**          | Eficiencia del agua          | Grado en que el uso del agua logra el máximo beneficio con el menor desperdicio posible.                                           |
+| **Crop yield**                | Rendimiento de cultivo       | Cantidad de producto agrícola cosechado por unidad de área sembrada.                                                               |
+| **Water scarcity**            | Escasez de agua              | Situación en la que la disponibilidad de agua es insuficiente para satisfacer las demandas agrícolas y otras necesidades.          |
+| **Sustainable agriculture**   | Agricultura sostenible       | Práctica agrícola que busca equilibrar la producción de alimentos con el cuidado del medio ambiente y los recursos naturales.      |
+| **Weather data**              | Datos climáticos             | Información relacionada al clima (temperatura, humedad, lluvia, etc.) usada para tomar decisiones en el riego.                     |
+| **Soil moisture**             | Humedad del suelo            | Cantidad de agua presente en el suelo, relevante para determinar la necesidad de riego.                                            |
+| **Field**                     | Campo                        | Terreno destinado al cultivo de productos agrícolas.                                                                               |
+| **Agricultural productivity** | Productividad agrícola       | Relación entre la producción obtenida y los recursos utilizados en la actividad agrícola.                                          |
+| **Irrigation scheduling**     | Programación de riego        | Planificación del momento y duración del riego según las necesidades del cultivo y condiciones ambientales.                        |
+| **Climate change**            | Cambio climático             | Alteraciones significativas y duraderas en los patrones del clima, que afectan la disponibilidad de agua y la producción agrícola. |
 
 # Capítulo III: Requirements Specification
 
 ## 3.1. To-Be Scenario Mapping
+
 Segmento objetivo: Agricultor
+
 <table>
   <tr>
     <th>Fase</th>
@@ -2675,6 +2793,7 @@ Segmento objetivo: Agricultor
 ## 3.3. Impact Mapping
 
 ## 3.4. Product Backlog
+
 Se utilizó la aplicación Trello para el desarrollo del product backlog **[Trello Board](https://trello.com/invite/b/68029db69b9160a847867db7/ATTIe60cc61d919ec781877b36318d877ec2F1FD4DE3/desarrollo-de-soluciones-iot)**
 ![Product Backlog](img/product-backlog.png)
 |Orden|User Story ID|Título|Descripción|Story Points|
@@ -2699,13 +2818,14 @@ Se utilizó la aplicación Trello para el desarrollo del product backlog **[Trel
 | 18 | US25 | Acceso de Usuarios | Como usuario de cualquiera de los segmentos objetivos sin una cuenta en el sistema quiero poder iniciar sesión en la aplicación utilizando mi dirección de correo electrónico y contraseña para acceder a mi cuenta y utilizar todas las funcionalidades de la aplicación | 3 |
 | 19 | US26 | Actualización de contraseña | Como usuario de cualquiera de los segmentos objetivos quiero poder cambiar mi contraseña para mantener mi cuenta segura | 3 |
 | 20 | US27 | Recuperación de contraseña | Como usuario de cualquiera de los segmentos objetivos quiero tener la capacidad de restablecer mi contraseña en caso de olvidarla para así poder acceder nuevamente a mi cuenta | 3 |
-| 21 | US01 |	Implementación de Barra de navegación |	Como visitante quiero tener la opción de atravesar todas las secciones de la landing page a través de una barra de navegación para facilitar el acceso a la información |	1 |
-| 22 | US02 |	Implementación de Barra de navegación | Como visitante quiero visualizar el logo y descripción de la empresa para verificar que estoy en la landing page oficial de la empresa | 1 |
-| 23 | US03 |	Detalles y Servicios de la empresa | Como visitante quiero visualizar los detalles y servicios de la empresa para conocer de qué manera se puede utilizar la aplicación | 1 |
-| 24 | US04 |	Clientes de la empresa | Como visitante quiero visualizar las experiencias de clientes previos de la empresa para es que la vida de los usuarios cambió al utilizar la aplicación | 1 |
-| 25 | US05 |	Acerca de nosotros | Como visitante quiero visualizar la misión y visión de la empresa para conocer qué planes tienen a futuro | 1 |
-| 26 | US06 |	Implementación de un Footer |	Como visitante quiero visualizar un Footer al final de la página para ver las redes sociales asociadas a la empresa |	1 |
-| 27 | US07 |	Translación a la aplicación web |	Como visitante quiero contar con un botón que me redirija a la aplicación web para tener un acceso directo y rápido a ella | 1 |
+| 21 | US01 | Implementación de Barra de navegación | Como visitante quiero tener la opción de atravesar todas las secciones de la landing page a través de una barra de navegación para facilitar el acceso a la información | 1 |
+| 22 | US02 | Implementación de Barra de navegación | Como visitante quiero visualizar el logo y descripción de la empresa para verificar que estoy en la landing page oficial de la empresa | 1 |
+| 23 | US03 | Detalles y Servicios de la empresa | Como visitante quiero visualizar los detalles y servicios de la empresa para conocer de qué manera se puede utilizar la aplicación | 1 |
+| 24 | US04 | Clientes de la empresa | Como visitante quiero visualizar las experiencias de clientes previos de la empresa para es que la vida de los usuarios cambió al utilizar la aplicación | 1 |
+| 25 | US05 | Acerca de nosotros | Como visitante quiero visualizar la misión y visión de la empresa para conocer qué planes tienen a futuro | 1 |
+| 26 | US06 | Implementación de un Footer | Como visitante quiero visualizar un Footer al final de la página para ver las redes sociales asociadas a la empresa | 1 |
+| 27 | US07 | Translación a la aplicación web | Como visitante quiero contar con un botón que me redirija a la aplicación web para tener un acceso directo y rápido a ella | 1 |
+
 # Capítulo IV: Solution Software Design
 
 ## 4.1. Strategic-Level Domain-Driven Design
@@ -2794,28 +2914,27 @@ Los siguientes diagramas muestran los bounded contexts de nuestro sistema. Estos
 **System Context Canvas**
 ![Bounded Context Canvas: System](img/system-context-canvas.jpg)
 
-
 ### 4.1.2. Context Mapping
 
-Durante el proceso de modelado del dominio para HydroSmart, identificamos cuatro Bounded Contexts principales: *Soil*, *Irrigation*, *Security* y *System*. A partir de esta base, realizamos una serie de reflexiones y escenarios de reestructuración para evaluar cómo podrían reorganizarse las capacidades del sistema y qué tipo de relación surgiría entre contextos. A continuación, explicamos el proceso seguido y las alternativas consideradas:
+Durante el proceso de modelado del dominio para HydroSmart, identificamos cuatro Bounded Contexts principales: _Soil_, _Irrigation_, _Security_ y _System_. A partir de esta base, realizamos una serie de reflexiones y escenarios de reestructuración para evaluar cómo podrían reorganizarse las capacidades del sistema y qué tipo de relación surgiría entre contextos. A continuación, explicamos el proceso seguido y las alternativas consideradas:
 
 **Análisis de Contextos:**
 
-- *Soil ↔ Irrigation*: Existe una fuerte dependencia, ya que los datos del suelo son necesarios para decisiones de riego. Aquí se establece una relación de tipo Customer/Supplier, donde Irrigation depende de los datos provistos por Soil.
+- _Soil ↔ Irrigation_: Existe una fuerte dependencia, ya que los datos del suelo son necesarios para decisiones de riego. Aquí se establece una relación de tipo Customer/Supplier, donde Irrigation depende de los datos provistos por Soil.
 
-- *Security ↔ Todos los contextos*: Security es un contexto transversal que proporciona autenticación y autorización. Aquí es viable aplicar un patrón Shared Kernel si los demás contextos comparten usuarios autenticados, o Conformist si los contextos consumidores simplemente aceptan las reglas impuestas por Security.
+- _Security ↔ Todos los contextos_: Security es un contexto transversal que proporciona autenticación y autorización. Aquí es viable aplicar un patrón Shared Kernel si los demás contextos comparten usuarios autenticados, o Conformist si los contextos consumidores simplemente aceptan las reglas impuestas por Security.
 
-- *System ↔ Farmer*: Aquí observamos una relación directa, donde el Farmer interactúa con el sistema físico de riego. System es relativamente autónomo y puede funcionar bajo un modelo independiente, salvo las acciones iniciadas por otros contextos como Irrigation.
+- _System ↔ Farmer_: Aquí observamos una relación directa, donde el Farmer interactúa con el sistema físico de riego. System es relativamente autónomo y puede funcionar bajo un modelo independiente, salvo las acciones iniciadas por otros contextos como Irrigation.
 
 **Escenarios alternativos:**
 
-*¿Qué pasaría si movemos la lógica de validación de sensores del contexto Irrigation al contexto System?*
+_¿Qué pasaría si movemos la lógica de validación de sensores del contexto Irrigation al contexto System?_
 Esto podría reducir la carga de responsabilidades del contexto Irrigation, delegando el manejo del hardware a System. Sin embargo, crearía más dependencia técnica entre ambos contextos.
 
-*¿Qué pasaría si partimos Irrigation en: Control Manual y Automatización?*
+_¿Qué pasaría si partimos Irrigation en: Control Manual y Automatización?_
 Ayudaría a diferenciar entre las acciones directas del usuario y las decisiones tomadas por IA. Esto favorecería el mantenimiento y la escalabilidad de funcionalidades como predicción climática. No obstante, podría aumentar la complejidad del sistema al introducir más contextos.
 
-*¿Qué pasaría si duplicamos la funcionalidad de visualización de historial en Soil y en Irrigation?*
+_¿Qué pasaría si duplicamos la funcionalidad de visualización de historial en Soil y en Irrigation?_
 Esto rompería dependencia entre contextos en tiempo real, aunque aumentaría la duplicación de datos.
 
 **Decisión final:**
@@ -2833,11 +2952,17 @@ Tras evaluar estas opciones, consideramos lo siguiente como la estructura más c
 ### 4.1.3. Software Architecture
 
 #### 4.1.3.1. System Landscape Diagram
+
 ![Diagrama de Paisaje de Sistema](img/c4-landscape.png)
+
 #### 4.1.3.2. Context Level Diagrams
+
 ![Diagrama de Contexto](img/c4-context.png)
+
 #### 4.1.3.3. Container Level Diagrams
+
 ![Diagrama de Contenedores](img/c4-container.png)
+
 #### 4.1.3.4. Deployment Diagrams
 
 ## 4.2. Tactical-Level Domain-Driven Design
@@ -2853,6 +2978,7 @@ Este bounded context se encarga de la gestión de los datos relacionados a la hu
 - **SoilAnomalyDetector**: Esta clase contiene la lógica para detectar si los valores de humedad o temperatura del suelo están fuera de los límites definidos en SoilParameterThresholds.
 
 **Enum:**
+
 - **ParameterType**: Define los tipos de parámetros de suelo que se están midiendo (humidity, temperature).
 
 #### 4.2.1.2. Interface Layer
@@ -2890,7 +3016,6 @@ Este bounded context se encarga de la gestión de los datos relacionados a la hu
 
 ![Diagrama de Base de Datos de Bounded Context: Soil](img/soil-database-diagram.jpg)
 
-
 ### 4.2.2. Bounded Context: Irrigation
 
 Este bounded context se encarga de la gestión de los datos relacionados al riego automático de los cultivos. Este contexto es el encargado de mantener el control de los sistemas de riego y de la cantidad de agua que se utiliza para el riego de los cultivos. Además, este contexto es el encargado de enviar las notificaciones al usuario cuando se inicie o detenga el riego de los cultivos, además de enviar las notificaciones al usuario cuando la cantidad de agua utilizada para el riego de los cultivos se encuentre fuera de los límites establecidos por el usuario.
@@ -2905,6 +3030,7 @@ Este bounded context se encarga de la gestión de los datos relacionados al rieg
 - **SoilConditionTrigger**: Define las condiciones del suelo que activan el riego automático. Contiene atributos como minHumidity, maxHumidity, minTemperature, maxTemperature.
 
 **Enum:**
+
 - **IrrigationStatus**: Define los posibles estados de una sesión de riego (started, running, ended).
 - **AutomaticIrrigationStatus**: Define los estados del riego automático (active, inactive).
 
@@ -2949,7 +3075,6 @@ Este bounded context se encarga de la gestión de los datos relacionados al rieg
 
 ![Diagrama de Base de Datos de Bounded Context: Irrigation](img/irrigation-database-diagram.jpg)
 
-
 ### 4.2.3. Bounded Context: Security
 
 Este bounded context se encarga de la gestión de los datos relacionados a la seguridad del sistema. Este contexto es el encargado de verificar las credenciales de los usuarios y de gestionar el registro de los usuarios en el sistema.
@@ -2987,6 +3112,7 @@ Este bounded context se encarga de la gestión de los datos relacionados a la se
 ![Diagrama de Componentes: Auth](img/c4-component-auth.png)
 
 #### 4.2.3.6. Code Level Diagrams
+
 ##### 4.2.3.6.1. Domain Layer Class Diagrams
 
 ![Diagrama de Clases de Bounded Context: Security](img/security-domain-layer.png)
@@ -3005,6 +3131,7 @@ Este bounded context se encarga de la gestión de los datos relacionados a los s
 - **SystemStatusReport**: Representa un informe del estado del sistema, que incluye el estado general y información sobre los diferentes subsistemas. Contiene atributos como overallStatus, subsystemStatuses (lista de estados de otros Bounded Contexts).
 
 **Enum:**
+
 - **SystemStatus**: Define los posibles estados del sistema (on, off, shutting_down).
 
 #### 4.2.4.2. Interface Layer
@@ -3030,6 +3157,7 @@ Este bounded context se encarga de la gestión de los datos relacionados a los s
 ![Diagrama de Componentes: Dispositivo IOT](img/c4-component-iot-device.png)
 
 #### 4.2.4.6. Code Level Diagrams
+
 ##### 4.2.4.6.1. Domain Layer Class Diagrams
 
 ![Diagrama de Clases de Bounded Context: System](img/system-domain-layer.png)
@@ -3037,7 +3165,6 @@ Este bounded context se encarga de la gestión de los datos relacionados a los s
 ##### 4.2.4.6.2. Database Design Diagram
 
 ![Diagrama de Base de Datos de Bounded Context: System](img/system-database-diagram.jpg)
-
 
 # Capítulo V: Solution UI/UX Design
 
@@ -3127,6 +3254,6 @@ Este bounded context se encarga de la gestión de los datos relacionados a los s
 
 # Bibliografía
 
-Escuela de Gestión Pública de la Universidad del Pacífico. (2022). Informe de evidencia: Sector agropecuario en el Perú. *Universidad del Pacífico*. https://www.up.edu.pe/egp/programas-especializacion_copy%281%29/SiteAssets/Lists/Observatorio/AllItems/Informe%20de%20Evidencia%20sector%20Agropecuario%20-%20EGP.pdf
+Escuela de Gestión Pública de la Universidad del Pacífico. (2022). Informe de evidencia: Sector agropecuario en el Perú. _Universidad del Pacífico_. https://www.up.edu.pe/egp/programas-especializacion_copy%281%29/SiteAssets/Lists/Observatorio/AllItems/Informe%20de%20Evidencia%20sector%20Agropecuario%20-%20EGP.pdf
 
 # Anexos
