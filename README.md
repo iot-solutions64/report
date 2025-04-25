@@ -2791,6 +2791,7 @@ Segmento objetivo: Agricultor
 </table>
 
 ## 3.3. Impact Mapping
+![Impact Mapping](img/impact-mapping.png)
 
 ## 3.4. Product Backlog
 
