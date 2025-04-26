@@ -43,6 +43,8 @@
 
 <p align="center"><b>Abril 2025</b></p>
 
+<div style="page-break-after: always;"></div>
+
 # Registro de versiones
 
 <table>
@@ -601,9 +603,11 @@ Sabremos que esto es cierto
 
 Cuando se observe un incremento del 15% en la productividad de los cultivos de los agricultores que utilicen HydroSmart durante los primeros 6 meses.
 
+<div style="page-break-after: always;"></div>
+
 #### 1.2.2.4. Lean UX Canvas
 
-<img src="img/lean-ux-canvas.png" alt="Lean UX Canvas" width="100%" />
+<img src="img/lean-ux-canvas.png" alt="Lean UX Canvas" width="90%" />
 
 ## 1.3. Segmentos objetivo
 
@@ -939,7 +943,7 @@ Idioma: Español.
 
 Para esta sección se presentan personajes ficticios de acuerdo al segmento objetivo. La información que se ha utilizado para elaborar el User persona se obtuvo de las entrevistas realizadas previamente al segmento objetivo en cuestion. La intención de las entrevistas era conocer un poco más a las personas a las que la aplicación está dirigida. Entre la información de las entrevistas que fue utilizada tenemos demografía, metas, motivaciones, frustraciones, marcas relacionadas con el tema que envuelve a la aplicación, canales digitales que más utiliza, etc. Para la creación de esta sección se utilizó la plataforma UXPressia.
 
-<img src="img/user_persona.png" alt="User Persona" width="100%" />
+<img src="img/user_persona.png" alt="User Persona" height="1000px" width="auto" />
 
 ### 2.3.2. User Task Matrix
 
@@ -1005,6 +1009,8 @@ En esta sección se presenta el user task matrix, herramienta centrada en el seg
   </tbody>
 </table>
 
+<div style="page-break-after: always;"></div>
+
 ### 2.3.3. User Journey Mapping
 
 En esta sección se presentarán los user journey mapping para el user persona.
@@ -1013,13 +1019,17 @@ En esta sección se presentarán los user journey mapping para el user persona.
 
 <img src="img/user_journey_mapping.png" alt="User Journey Mapping" width="100%" /> 
  
+<div style="page-break-after: always;"></div>
+
 ### 2.3.4. Empathy Mapping
 
 En esta sección se presentarán los empathy mapping de acuerdo al user persona que se realizo. El empathy mapping será de utilidad debido a que podemos conocer a mayor detalle a nuestros clientes, lo que nos permite mejorar algunos aspectos de la aplicación.
 
 **Segmento objetivo: Agricultor**
 
-<img src="img/empathy_mapping.png" alt="Empathy Mapping" width="100%" />
+<img src="img/empathy_mapping.png" alt="Empathy Mapping" width="85%" />
+
+<div style="page-break-after: always;"></div>
 
 ### 2.3.5. As-is Scenario Mapping
 
@@ -1078,6 +1088,8 @@ Segmento objetivo: Agricultor
     <td>Intranquilo. Aunque sé que tengo ya bastante experiencia regando los cultivos, uno nunca puede estar 100% seguro que lo haya hecho perfectamente</td>
   </tr>
 </table>
+
+<div style="page-break-after: always;"></div>
 
 ## 2.4. Ubiquitous Language
 
@@ -1158,6 +1170,8 @@ Segmento objetivo: Agricultor
     <td>Contento. Ahora que el riego ha terminado, puedo enfocarme al 100% en mis otras actividades</td>
   </tr>
 </table>
+
+<div style="page-break-after: always;"></div>
 
 ## 3.2. User Stories
 
@@ -1374,6 +1388,8 @@ Segmento objetivo: Agricultor
     <td> Recuperar de contraseña</td>
   </tr>
 </table>
+
+<p></p>
 
 <table>
   <tr>
@@ -2947,7 +2963,7 @@ Se utilizó la aplicación Trello para el desarrollo del product backlog **[Trel
 | 20 | US27 | Recuperación de contraseña | Como usuario de cualquiera de los segmentos objetivos quiero tener la capacidad de restablecer mi contraseña en caso de olvidarla para así poder acceder nuevamente a mi cuenta | 3 |
 | 21 | US01 | Implementación de Barra de navegación | Como visitante quiero tener la opción de atravesar todas las secciones de la landing page a través de una barra de navegación para facilitar el acceso a la información | 1 |
 | 22 | US02 | Implementación de Barra de navegación | Como visitante quiero visualizar el logo y descripción de la empresa para verificar que estoy en la landing page oficial de la empresa | 1 |
-| 23 | US03 | Detalles y Servicios de la empresa | Como visitante quiero visualizar los detalles y servicios de la empresa para conocer de qué manera se puede utilizar la aplicación | 1 |
+| 23 | US03 | Detalles y Servicios de la empresa | Como visitante quiero visualizar los detalles y servicios de la empresa para   conocer de qué manera se puede utilizar la aplicación | 1 |
 | 24 | US04 | Clientes de la empresa | Como visitante quiero visualizar las experiencias de clientes previos de la empresa para es que la vida de los usuarios cambió al utilizar la aplicación | 1 |
 | 25 | US05 | Acerca de nosotros | Como visitante quiero visualizar la misión y visión de la empresa para conocer qué planes tienen a futuro | 1 |
 | 26 | US06 | Implementación de un Footer | Como visitante quiero visualizar un Footer al final de la página para ver las redes sociales asociadas a la empresa | 1 |
@@ -2979,37 +2995,49 @@ Para esto, realizamos una sesión grupal donde se identificaron los diferentes e
 
 ![Paso 2: Timelines](img/event-storming-2.jpg)
 
+<div style="page-break-after: always;"></div>
+
 **Paso 3: Pain points**
 
 ![Paso 3: Pain points](img/event-storming-3.jpg)
+
+<div style="page-break-after: always;"></div>
 
 **Paso 4: Pivotal points**
 
 ![Paso 4: Pivotal points](img/event-storming-4.jpg)
 
+<div style="page-break-after: always;"></div>
+
 **Paso 5: Commands**
 
 ![Paso 5: Commands](img/event-storming-5.jpg)
 
+<div style="page-break-after: always;"></div>
+
 **Paso 6: Policies**
 
-![Paso 6: Policies](img/event-storming-6.jpg)
+<img src="img/event-storming-6.jpg" alt="Paso 6: Policies" width="90%">
 
 **Paso 7: Read models**
 
-![Paso 7: Read models](img/event-storming-7.jpg)
+<img src="img/event-storming-7.jpg" alt="Paso 7: Read models" width="90%">
+
+<div style="page-break-after: always;"></div>
 
 **Paso 8: External systems**
 
 ![Paso 8: External systems](img/event-storming-8.jpg)
 
+<div style="page-break-after: always;"></div>
+
 **Paso 9: Aggregates**
 
-![Paso 9: Aggregates](img/event-storming-9.jpg)
+<img src="img/event-storming-9.jpg" alt="Paso 9: Aggregates" width="90%">
 
 **Paso 10: Bounded contexts**
 
-![Paso 10: Bounded contexts](img/event-storming-10.jpg)
+<img src="img/event-storming-10.jpg" alt="Paso 10: Bounded contexts" width="100%">
 
 #### 4.1.1.2. Domain Message Flows Modeling
 
@@ -3078,11 +3106,15 @@ Tras evaluar estas opciones, consideramos lo siguiente como la estructura más c
 
 - Uso de un API Gateway como frontera de comunicación entre contextos internos y externos, centralizando la orquestación y simplificando la exposición de servicios.
 
+<div style="page-break-after: always;"></div>
+
 ### 4.1.3. Software Architecture
 
 #### 4.1.3.1. System Landscape Diagram
 
 ![Diagrama de Paisaje de Sistema](img/c4-landscape.png)
+
+<div style="page-break-after: always;"></div>
 
 #### 4.1.3.2. Context Level Diagrams
 
@@ -3134,8 +3166,8 @@ Este bounded context se encarga de la gestión de los datos relacionados a la hu
 
 #### 4.2.1.5. Component Level Diagrams
 
-![Diagrama de Componentes: Temperatura](img/c4-component-temp.png)
-![Diagrama de Componentes: Humedad](img/c4-component-hum.png)
+<img src="img/c4-component-temp.png" alt="Diagrama de Componentes: Temperatura" width="90%">
+<img src="img/c4-component-hum.png" alt="Diagrama de Componentes: Humedad" width="90%">
 
 #### 4.2.1.6. Code Level Diagrams
 
@@ -3193,8 +3225,9 @@ Este bounded context se encarga de la gestión de los datos relacionados al rieg
 
 #### 4.2.2.5. Component Level Diagrams
 
-![Diagrama de Componentes: Cantidad de Agua](img/c4-component-agua.png)
-![Diagrama de Componentes: Regado Automático](img/c4-component-regado.png)
+<img src="img/c4-component-agua.png" alt="Diagrama de Componentes: Irrigation" width="80%"/>
+  
+<img src="img/c4-component-regado.png" alt="Diagrama de Componentes: Regado Automático" width="80%"/>
 
 #### 4.2.2.6. Code Level Diagrams
 
