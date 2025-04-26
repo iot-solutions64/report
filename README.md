@@ -46,6 +46,21 @@
 <div style="page-break-after: always;"></div>
 
 # Registro de versiones
+<!-- Global table styles -->
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  th {
+    background-color: #f2f2f2;
+    text-align: center;
+  }
+</style>
 
 <table>
   <thead>
