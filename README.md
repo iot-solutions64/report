@@ -868,13 +868,16 @@ El análisis de entrevistas a agricultores revela patrones comunes que permiten 
 **Segmento Demográfico:**
 
 Edad: Principalmente jóvenes adultos (25 a 55 años).
+
 Sexo: Masculino y Femenino.
+
 Ocupación: Jóvenes que trabajan en la gestión de cultivos.
 
 
 **Segmento Geográfico:**
 
 País: Perú.
+
 Idioma: Español.
 
 
