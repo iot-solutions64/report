@@ -147,8 +147,6 @@
 
 # Project Report Collaboration Insights
 
-### TB1
-
 <table>
   <tr>
     <th colspan="2">Entrega TB1</th>
