@@ -151,7 +151,9 @@
 
 <table>
   <tr>
-    <th>Entrega TB1</th>
+    <th colspan="2">Entrega TB1</th>
+  </tr>
+  <tr>
     <td>
       <p> Para la entrega TB1 se realizaron los 4 primeros capítulos del informe. A cada integrante se le asignó una parte específica a desarrollar y el informe completo se realizó con éxito.</p>
       <p> El informe se realizó en el siguiente repositorio:</p>
