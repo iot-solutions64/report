@@ -151,6 +151,8 @@
 
 TBD
 
+<div style="page-break-after: always;"></div>
+
 # Tabla de Contenidos
 
 ### [Registro de Versiones](#registro-de-versiones)
@@ -299,6 +301,8 @@ TBD
 
 ### [10. Anexos](#anexos)
 
+<div style="page-break-after: always;"></div>
+
 # Student Outcome
 
 > **ABET – EAC - Student Outcome 5** La capacidad de funcionar efectivamente en un equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
@@ -322,6 +326,8 @@ TBD
     </tr>
   </tbody>
 </table>
+
+<div style="page-break-after: always;"></div>
 
 # Capítulo 1: Presentación
 
@@ -575,6 +581,8 @@ Los agricultores en Perú enfrentan desafíos en la gestión del agua para el ri
 | **Sexo**                | Masculino y Femenino           |
 | **Formación educativa** | Primaria, Secundaria o Técnico |
 | **Poder adquisitivo**   | Bajo y medio                   |
+
+<div style="page-break-after: always;"></div>
 
 # Capítulo II: Requirements Elicitation & Analysis
 
@@ -999,6 +1007,8 @@ Segmento objetivo: Agricultor
 | **Agricultural productivity** | Productividad agrícola       | Relación entre la producción obtenida y los recursos utilizados en la actividad agrícola.                                          |
 | **Irrigation scheduling**     | Programación de riego        | Planificación del momento y duración del riego según las necesidades del cultivo y condiciones ambientales.                        |
 | **Climate change**            | Cambio climático             | Alteraciones significativas y duraderas en los patrones del clima, que afectan la disponibilidad de agua y la producción agrícola. |
+
+<div style="page-break-after: always;"></div>
 
 # Capítulo III: Requirements Specification
 
@@ -2854,6 +2864,8 @@ Se utilizó la aplicación Trello para el desarrollo del product backlog **[Trel
 | 26 | US06 | Implementación de un Footer | Como visitante quiero visualizar un Footer al final de la página para ver las redes sociales asociadas a la empresa | 1 |
 | 27 | US07 | Translación a la aplicación web | Como visitante quiero contar con un botón que me redirija a la aplicación web para tener un acceso directo y rápido a ella | 1 |
 
+<div style="page-break-after: always;"></div>
+
 # Capítulo IV: Solution Software Design
 
 ## 4.1. Strategic-Level Domain-Driven Design
@@ -3196,6 +3208,8 @@ Este bounded context se encarga de la gestión de los datos relacionados a los s
 
 ![Diagrama de Base de Datos de Bounded Context: System](img/system-database-diagram.jpg)
 
+<div style="page-break-after: always;"></div>
+
 # Capítulo V: Solution UI/UX Design
 
 ## 5.1. Style Guidelines
@@ -3233,6 +3247,8 @@ Este bounded context se encarga de la gestión de los datos relacionados a los s
 ### 5.4.4. Applications User Flow Diagrams
 
 ## 5.5. Applications Prototyping
+
+<div style="page-break-after: always;"></div>
 
 # Capítulo VI: Product Implementation, Validation & Deployment
 
@@ -3278,9 +3294,13 @@ Este bounded context se encarga de la gestión de los datos relacionados a los s
 
 ## 6.4. Video About-the-Product
 
+<div style="page-break-after: always;"></div>
+
 # Conclusiones y Recomendaciones
 
 # Video About-the-Team
+
+<div style="page-break-after: always;"></div>
 
 # Bibliografía
 
