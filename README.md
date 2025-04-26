@@ -149,7 +149,22 @@
 
 ### TB1
 
-TBD
+<table>
+  <tr>
+    <th>Entrega TB1</th>
+    <td>
+      <p> Para la entrega TB1 se realizaron los 4 primeros capítulos del informe. A cada integrante se le asignó una parte específica a desarrollar y el informe completo se realizó con éxito.</p>
+      <p> El informe se realizó en el siguiente repositorio:</p>
+      <p>Reporte: <a href="https://github.com/iot-solutions64/report">Documento TB1</a></p>
+    </td>
+    <td>
+      <img src="img/insights-tb1.png">
+      <img src="img/commits-1-tb1.png">
+      <img src="img/commits-2-tb1.png">
+    </td>
+  </tr>
+</table>
+
 
 <div style="page-break-after: always;"></div>
 
