@@ -46,6 +46,7 @@
 <div style="page-break-after: always;"></div>
 
 # Registro de versiones
+
 <!-- Global table styles -->
 <style>
   table {
@@ -181,7 +182,6 @@
     </td>
   </tr>
 </table>
-
 
 <div style="page-break-after: always;"></div>
 
@@ -360,6 +360,8 @@
           <p>Para este entregable, demostré capacidad de trabajo en equipo al coordinar con mis compañeros para mantener una línea de trabajo coherente y asegurar el cumplimiento puntual de las tareas asignadas. Participé activamente en la división equitativa de actividades y contribuyendo de manera eficiente para lograr los objetivos colectivos.</p>
         <h4>Salinas Torres, Salvador Antonio</h4>
           <p>Para este entregable, se dividió las actividades de forma igualitaria para que todos los miembros puedan aportar eficientemente en el trabajo. Siempre estuve al tanto de las actividades que ibamos realizando y las que faltaban realizar.</p>
+        <h4>Soto Salis, Natanael David</h4>
+          <p>Para este entregable, se dividió las tareas de forma equitativa entre todos los miembros del equipo, asegurando que cada uno tuviera una parte justa del trabajo. Me mantuve al tanto de los avances de mis compañeros y contribuí con mis ideas para mejorar el desarrollo del proyecto.</p>
       </td>
       <td>Conclusiones generales</td>
     </tr>
@@ -375,6 +377,8 @@
           <p>Para este entregable, contribuí al desarrollo del proyecto mediante la propuesta de ideas. Además, me mantuve informado sobre los avances colectivos del equipo, lo que permitió planificar adecuadamente las tareas correspondientes y establecer metas claras.</p>
         <h4>Salinas Torres, Salvador Antonio</h4>
           <p>Para este entregable, siempre estuve al tanto de los avances que realizamos todos los miembros en conjunto. De esta forma, se planificaron las tareas a realizar y las metas a cumplir para la fecha límite del entregable.</p>
+        <h4>Soto Salis, Natanael David</h4>
+          <p>Para este entregable, me mantuve al tanto de los avances de mis compañeros y contribuí con mis ideas para mejorar el desarrollo del proyecto. Además, se establecieron metas y tareas a cumplir para asegurar que todos estemos alineados en el trabajo.</p>
       </td>
       <td>Conclusiones generales</td>
     </tr>
@@ -904,7 +908,6 @@ Las entrevistas representan una estrategia de investigación que implica el inte
 
 El análisis de entrevistas a agricultores revela patrones comunes que permiten identificar características clave para crear arquetipos representativos. Este grupo se distingue por los problemas que tienen con el control del agua y su gran necesidad de apoyo técnico. Las entrevistas proporcionan una visión detallada de los desafíos y expectativas de estos agricultores, especialmente respecto al uso de herramientas tecnológicas para tener un sistema de riego automatizado.
 
-
 **Segmento Demográfico:**
 
 Edad: Principalmente jóvenes adultos (25 a 55 años).
@@ -913,27 +916,23 @@ Sexo: Masculino y Femenino.
 
 Ocupación: Jóvenes que trabajan en la gestión de cultivos.
 
-
 **Segmento Geográfico:**
 
 País: Perú.
 
 Idioma: Español.
 
-
 **Segmento Psicográfico:**
 
-*Clase Social:* NSE C y NSE D, debido a que trabajan en granjas familiares pequeñas con recursos limitados.
+_Clase Social:_ NSE C y NSE D, debido a que trabajan en granjas familiares pequeñas con recursos limitados.
 
-*Intereses:* Buscan mejorar sus cultivos y optimizar el uso del agua, además de estar interesados en aprender sobre nuevas tecnologías que puedan ayudarles en su trabajo diario.
-
+_Intereses:_ Buscan mejorar sus cultivos y optimizar el uso del agua, además de estar interesados en aprender sobre nuevas tecnologías que puedan ayudarles en su trabajo diario.
 
 **Segmento Conductual:**
 
-*Conocimientos:* Tienen conocimientos básicos sobre riego y cultivos, pero carecen de experiencia en el uso de tecnologías avanzadas.
+_Conocimientos:_ Tienen conocimientos básicos sobre riego y cultivos, pero carecen de experiencia en el uso de tecnologías avanzadas.
 
-*Actitudes:* Muestran disposición a aprender y adoptar nuevas tecnologías, pero necesitan apoyo y orientación para hacerlo de manera efectiva.
-
+_Actitudes:_ Muestran disposición a aprender y adoptar nuevas tecnologías, pero necesitan apoyo y orientación para hacerlo de manera efectiva.
 
 **Características Objetivas:**
 
@@ -942,7 +941,6 @@ Idioma: Español.
 - Utilizan principalmente celulares con Android y navegador Chrome.
 
 - No han utilizado aplicaciones de riego automatizado.
-
 
 **Características Subjetivas:**
 
@@ -2948,6 +2946,7 @@ Segmento objetivo: Agricultor
 </table>
 
 ## 3.3. Impact Mapping
+
 ![Impact Mapping](img/impact-mapping.png)
 
 ## 3.4. Product Backlog
@@ -2978,7 +2977,7 @@ Se utilizó la aplicación Trello para el desarrollo del product backlog **[Trel
 | 20 | US27 | Recuperación de contraseña | Como usuario de cualquiera de los segmentos objetivos quiero tener la capacidad de restablecer mi contraseña en caso de olvidarla para así poder acceder nuevamente a mi cuenta | 3 |
 | 21 | US01 | Implementación de Barra de navegación | Como visitante quiero tener la opción de atravesar todas las secciones de la landing page a través de una barra de navegación para facilitar el acceso a la información | 1 |
 | 22 | US02 | Implementación de Barra de navegación | Como visitante quiero visualizar el logo y descripción de la empresa para verificar que estoy en la landing page oficial de la empresa | 1 |
-| 23 | US03 | Detalles y Servicios de la empresa | Como visitante quiero visualizar los detalles y servicios de la empresa para   conocer de qué manera se puede utilizar la aplicación | 1 |
+| 23 | US03 | Detalles y Servicios de la empresa | Como visitante quiero visualizar los detalles y servicios de la empresa para conocer de qué manera se puede utilizar la aplicación | 1 |
 | 24 | US04 | Clientes de la empresa | Como visitante quiero visualizar las experiencias de clientes previos de la empresa para es que la vida de los usuarios cambió al utilizar la aplicación | 1 |
 | 25 | US05 | Acerca de nosotros | Como visitante quiero visualizar la misión y visión de la empresa para conocer qué planes tienen a futuro | 1 |
 | 26 | US06 | Implementación de un Footer | Como visitante quiero visualizar un Footer al final de la página para ver las redes sociales asociadas a la empresa | 1 |
