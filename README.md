@@ -317,10 +317,22 @@ TBD
   </thead>
   <tbody>
     <tr>
-      <td>criterio 1 (WIP)</td>
+      <td>Trabaja en equipo para proporcionar liderazgo en forma conjunta</td>
       <td>
         <p><strong>Paredes Puente, Sebastian Roberto</strong></p>
         <p>Acciones</p>
+        <p><strong>Delgado Corrales, Piero Gonzalo</strong></p>
+        <p>Durante esta entrega, coordiné constantemente con el equipo para mantener una línea de trabajo coherente y me comprometí a cumplir puntualmente con las tareas asignadas para evitar retrasos que pudieran afectar el avance colectivo.</p>
+      </td>
+      <td>Conclusiones generales</td>
+    </tr>
+    <tr>
+      <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
+      <td>
+        <p><strong>Paredes Puente, Sebastian Roberto</strong></p>
+        <p>Acciones</p>
+        <p><strong>Delgado Corrales, Piero Gonzalo</strong></p>
+        <p>Durante esta entrega, opiné sobre distintas partes del informe y características de la aplicación, aportando sugerencias que fueron consideradas por el equipo para mejorar el desarrollo del proyecto.</p>
       </td>
       <td>Conclusiones generales</td>
     </tr>
