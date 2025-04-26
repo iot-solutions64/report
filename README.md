@@ -860,6 +860,55 @@ Las entrevistas representan una estrategia de investigación que implica el inte
 
 ### 2.2.3. Análisis de entrevistas
 
+**Segmento: Agricultores**
+
+El análisis de entrevistas a agricultores revela patrones comunes que permiten identificar características clave para crear arquetipos representativos. Este grupo se distingue por los problemas que tienen con el control del agua y su gran necesidad de apoyo técnico. Las entrevistas proporcionan una visión detallada de los desafíos y expectativas de estos agricultores, especialmente respecto al uso de herramientas tecnológicas para tener un sistema de riego automatizado.
+
+
+**Segmento Demográfico:**
+
+Edad: Principalmente jóvenes adultos (25 a 55 años).
+Sexo: Masculino y Femenino.
+Ocupación: Jóvenes que trabajan en la gestión de cultivos.
+
+
+**Segmento Geográfico:**
+
+País: Perú.
+Idioma: Español.
+
+
+**Segmento Psicográfico:**
+
+*Clase Social:* NSE C y NSE D, debido a que trabajan en granjas familiares pequeñas con recursos limitados.
+
+*Intereses:* Buscan mejorar sus cultivos y optimizar el uso del agua, además de estar interesados en aprender sobre nuevas tecnologías que puedan ayudarles en su trabajo diario.
+
+
+**Segmento Conductual:**
+
+*Conocimientos:* Tienen conocimientos básicos sobre riego y cultivos, pero carecen de experiencia en el uso de tecnologías avanzadas.
+
+*Actitudes:* Muestran disposición a aprender y adoptar nuevas tecnologías, pero necesitan apoyo y orientación para hacerlo de manera efectiva.
+
+
+**Características Objetivas:**
+
+- Tienen acceso limitado a internet.
+
+- Utilizan principalmente celulares con Android y navegador Chrome.
+
+- No han utilizado aplicaciones de riego automatizado.
+
+
+**Características Subjetivas:**
+
+- Se sienten motivados por el deseo de sacar adelante sus cultivos y mejorar su calidad de vida.
+
+- Valoran la simplicidad y facilidad de uso en las herramientas tecnológicas.
+
+- Buscan soluciones que les ayuden a optimizar el uso del agua y mejorar la productividad de sus cultivos.
+
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
