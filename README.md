@@ -310,33 +310,39 @@ TBD
 <table>
   <thead>
     <tr>
-      <th><strong>Criterio específico</strong></th>
-      <th><strong>Acciones realizadas</strong></th>
-      <th><strong>Conclusiones</strong></th>
+      <th>Criterio específico</th>
+      <th>Acciones realizadas</th>
+      <th>Conclusiones</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Trabaja en equipo para proporcionar liderazgo en forma conjunta</td>
       <td>
-        <h4>Paredes Puente, Sebastian Roberto</h4>
-        <p>TB1: En este entrega, demostré capacidad de trabajo en equipo al coordinar con mis compañeros para mantener una línea de trabajo coherente y asegurar el cumplimiento puntual de las tareas asignadas. Participé activamente en la división equitativa de actividades y contribuyendo de manera eficiente para lograr los objetivos colectivos.</p>
+        <h3>TB1</h3>
         <h4>Delgado Corrales, Piero Gonzalo</h4>
-        <p>TB1: Durante esta entrega, coordiné constantemente con el equipo para mantener una línea de trabajo coherente y me comprometí a cumplir puntualmente con las tareas asignadas para evitar retrasos que pudieran afectar el avance colectivo.</p>
+          <p>Para este entregable, coordiné constantemente con el equipo para mantener una línea de trabajo coherente y me comprometí a cumplir puntualmente con las tareas asignadas para evitar retrasos que pudieran afectar el avance colectivo.</p>
+        <h4> Neyra Santa Cruz, Marcelo Sebastian </h4>
+          <p>Para este entregable, como líder de equipo, asigné a cada uno de los integrantes del equipo su parte correspondiente. También, aporté al grupo manteniendome activo en los avances y actividades realizadas</p>
+        <h4>Paredes Puente, Sebastian Roberto</h4>
+          <p>Para este entregable, demostré capacidad de trabajo en equipo al coordinar con mis compañeros para mantener una línea de trabajo coherente y asegurar el cumplimiento puntual de las tareas asignadas. Participé activamente en la división equitativa de actividades y contribuyendo de manera eficiente para lograr los objetivos colectivos.</p>
         <h4>Salinas Torres, Salvador Antonio</h4>
-        <p>TB1: Para este entregable, se dividió las actividades de forma igualitaria para que todos los miembros puedan aportar eficientemente en el trabajo. Siempre estuve al tanto de las actividades que ibamos realizando y las que faltaban realizar.</p>
+          <p>Para este entregable, se dividió las actividades de forma igualitaria para que todos los miembros puedan aportar eficientemente en el trabajo. Siempre estuve al tanto de las actividades que ibamos realizando y las que faltaban realizar.</p>
       </td>
       <td>Conclusiones generales</td>
     </tr>
     <tr>
       <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
       <td>
-        <h4>Paredes Puente, Sebastian Roberto</h4>
-        <p>TB1: En esta entrega, contribuí al desarrollo del proyecto mediante la propuesta de ideas. Además, me mantuve informado sobre los avances colectivos del equipo, lo que permitió planificar adecuadamente las tareas correspondientes y establecer metas claras.</p>
+        <h3>TB1</h3>
         <h4>Delgado Corrales, Piero Gonzalo</h4>
-        <p>TB1: Durante esta entrega, opiné sobre distintas partes del informe y características de la aplicación, aportando sugerencias que fueron consideradas por el equipo para mejorar el desarrollo del proyecto.</p>
+          <p>Para este entregable, opiné sobre distintas partes del informe y características de la aplicación, aportando sugerencias que fueron consideradas por el equipo para mejorar el desarrollo del proyecto.</p>
+        <h4> Neyra Santa Cruz, Marcelo Sebastian </h4>
+          <p>Para este entregable, como líder de equipo, establecí metas y planifiqué los avances de cada uno de los entregables para cumplir con el objetivo propuesto. Para asegurarme que se esté trabajando correctamente, se realizaron algunas reuniones y se coordinó constantemente por la plataforma WhatsApp</p>
+        <h4>Paredes Puente, Sebastian Roberto</h4>
+          <p>Para este entregable, contribuí al desarrollo del proyecto mediante la propuesta de ideas. Además, me mantuve informado sobre los avances colectivos del equipo, lo que permitió planificar adecuadamente las tareas correspondientes y establecer metas claras.</p>
         <h4>Salinas Torres, Salvador Antonio</h4>
-        <p>TB1: Siempre estuve al tanto de los avances que realizamos todos los miembros en conjunto. De esta forma, se planificaron las tareas a realizar y las metas a cumplir para la fecha límite del entregable.</p>
+          <p>Para este entregable, siempre estuve al tanto de los avances que realizamos todos los miembros en conjunto. De esta forma, se planificaron las tareas a realizar y las metas a cumplir para la fecha límite del entregable.</p>
       </td>
       <td>Conclusiones generales</td>
     </tr>
