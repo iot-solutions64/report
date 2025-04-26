@@ -320,7 +320,7 @@ TBD
       <td>Trabaja en equipo para proporcionar liderazgo en forma conjunta</td>
       <td>
         <h4>Paredes Puente, Sebastian Roberto</h4>
-        <p>TB1: Acciones</p>
+        <p>TB1: En este entrega, demostré capacidad de trabajo en equipo al coordinar con mis compañeros para mantener una línea de trabajo coherente y asegurar el cumplimiento puntual de las tareas asignadas. Participé activamente en la división equitativa de actividades y contribuyendo de manera eficiente para lograr los objetivos colectivos.</p>
         <h4>Delgado Corrales, Piero Gonzalo</h4>
         <p>TB1: Durante esta entrega, coordiné constantemente con el equipo para mantener una línea de trabajo coherente y me comprometí a cumplir puntualmente con las tareas asignadas para evitar retrasos que pudieran afectar el avance colectivo.</p>
         <h4>Salinas Torres, Salvador Antonio</h4>
@@ -332,7 +332,7 @@ TBD
       <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
       <td>
         <h4>Paredes Puente, Sebastian Roberto</h4>
-        <p>TB1: Acciones</p>
+        <p>TB1: En esta entrega, contribuí al desarrollo del proyecto mediante la propuesta de ideas. Además, me mantuve informado sobre los avances colectivos del equipo, lo que permitió planificar adecuadamente las tareas correspondientes y establecer metas claras.</p>
         <h4>Delgado Corrales, Piero Gonzalo</h4>
         <p>TB1: Durante esta entrega, opiné sobre distintas partes del informe y características de la aplicación, aportando sugerencias que fueron consideradas por el equipo para mejorar el desarrollo del proyecto.</p>
         <h4>Salinas Torres, Salvador Antonio</h4>
