@@ -1,83 +1,43 @@
 @startuml
 skinparam classAttributeIconSize 0
 
-package "System Domain Layer" {
+package "Soil Domain Layer" {
 
-    enum SystemStatus {
-        ON
-        OFF
-        SHUTTING_DOWN
+    enum ParameterType {
+        HUMIDITY
+        TEMPERATURE
     }
 
-    class SystemState {
-        -status: SystemStatus
-        -lastStatusChange: Date
-        +getStatus(): SystemStatus
-        +getLastStatusChange(): Date
+    class SoilData {
+        -humidity: float
+        -temperature: float
+        -timestamp: Date
+        -location: String
+        +getHumidity(): float
+        +getTemperature(): float
+        +getTimestamp(): Date
+        +getLocation(): String
     }
 
-    class SystemStatusReport {
-        -overallStatus: SystemStatus
-        -subsystemStatuses: List<SystemStatus>
-        +getOverallStatus(): SystemStatus
-        +getSubsystemStatuses(): List<SystemStatus>
+    class SoilParameterThresholds {
+        -minHumidity: float
+        -maxHumidity: float
+        -minTemperature: float
+        -maxTemperature: float
+        +getMinHumidity(): float
+        +getMaxHumidity(): float
+        +getMinTemperature(): float
+        +getMaxTemperature(): float
     }
 
-    class SystemStatusService {
-        +getSystemState(): SystemState
-        +generateSystemStatusReport(): SystemStatusReport
+    class SoilAnomalyDetector {
+        +isHumidityOutOfRange(data: SoilData, thresholds: SoilParameterThresholds): boolean
+        +isTemperatureOutOfRange(data: SoilData, thresholds: SoilParameterThresholds): boolean
     }
 
-    class SystemStartupService {
-        +startSystem(): void
-        +initializeSubsystems(): void
-    }
+    SoilAnomalyDetector --> SoilParameterThresholds : uses >
+    SoilAnomalyDetector --> SoilData : uses >
 
-    class SystemShutdownService {
-        +shutdownSystem(): void
-        +shutdownSubsystems(): void
-    }
-
-    class SystemStatusRepository {
-        +saveSystemState(state: SystemState): void
-        +getSystemState(): SystemState
-    }
-
-    class SystemControlHardwareInterface {
-        +turnOnHardware(): void
-        +turnOffHardware(): void
-    }
-
-    class SubsystemStatusIntegrations {
-        +getSoilStatus(): SystemStatus
-        +getIrrigationStatus(): SystemStatus
-        +getSecurityStatus(): SystemStatus
-    }
-
-    interface SystemStatusRequestInterface {
-        +getSystemStatus(): SystemState
-    }
-
-    interface SystemInformationDisplayInterface {
-        +displaySystemStatus(report: SystemStatusReport): void
-    }
-
-    interface SystemControlInterface {
-        +turnOnSystem(): void
-        +turnOffSystem(): void
-    }
-
-    SystemStatusService --> SystemState : uses >
-    SystemStatusService --> SystemStatusReport : generates >
-    SystemStatusRequestInterface ..> SystemStatusService : calls >
-    SystemInformationDisplayInterface ..> SystemStatusReport : displays >
-    SystemControlInterface ..> SystemControlHardwareInterface : controls >
-    SystemControlInterface ..> SystemStartupService : triggers >
-    SystemControlInterface ..> SystemShutdownService : triggers >
-    SystemStatusRepository --> SystemState : stores >
-    SystemStartupService --> SubsystemStatusIntegrations : communicates >
-    SystemShutdownService --> SubsystemStatusIntegrations : communicates >
-    SubsystemStatusIntegrations --> SystemStatusReport : aggregates >
 }
 
 @enduml
