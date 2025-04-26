@@ -3435,6 +3435,8 @@ Este bounded context se encarga de la gestión de los datos relacionados a los s
 
 # Conclusiones y Recomendaciones
 
+La estructura aplicada del proceso Lean UX ha permitido a nuestra startup, IoT Solutions, identificar los segmentos objetivos, competidores y necesidades del mercado para el desarrollo de HydroSmart. Desde la formulación inicial de problem statements hasta la elaboración de hypothesis statements y la construcción del Lean UX Canvas, cada etapa ha fortalecido la eficiencia y agilidad del proyecto. Además, se realizó un análisis exhaustivo de competidores, entrevistas y actividades de needfinding, cuyo resultado fue fundamental en la investigación del capítulo II, permitiendo diseñar una solución que responde a las necesidades reales de nuestros usuarios.
+
 # Video About-the-Team
 
 <div style="page-break-after: always;"></div>
