@@ -363,7 +363,10 @@
         <h4>Soto Salis, Natanael David</h4>
           <p>Para este entregable, se dividió las tareas de forma equitativa entre todos los miembros del equipo, asegurando que cada uno tuviera una parte justa del trabajo. Me mantuve al tanto de los avances de mis compañeros y contribuí con mis ideas para mejorar el desarrollo del proyecto.</p>
       </td>
-      <td>Conclusiones generales</td>
+      <td>
+        <h4>TB1</h4>
+        <p>Para la entrega de la TB1, a cada integrante del grupo se le asignó una parte del informe para trabajar de manera más dinámica. Al final del proceso, se revisó en conjunto todo el informe para levantar alguna observación que se haya visto</p>
+      </td>
     </tr>
     <tr>
       <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
@@ -380,7 +383,10 @@
         <h4>Soto Salis, Natanael David</h4>
           <p>Para este entregable, me mantuve al tanto de los avances de mis compañeros y contribuí con mis ideas para mejorar el desarrollo del proyecto. Además, se establecieron metas y tareas a cumplir para asegurar que todos estemos alineados en el trabajo.</p>
       </td>
-      <td>Conclusiones generales</td>
+      <td>
+        <h4>TB1</h4>
+        <p>Para la entrega de la TB1, se establecieron metas a cumplir, siendo la principal la validación de nuestro proyecto. Se cumplieron con todos los puntos pedidos en el tiempo indicado</p>
+      </td>
     </tr>
   </tbody>
 </table>
@@ -838,6 +844,8 @@ Las entrevistas representan una estrategia de investigación que implica el inte
 
 ### 2.2.2. Registro de entrevistas
 
+Enlace del video de las entrevista: [Enlace a Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217241_upc_edu_pe/Ee74xVmCHXdCqRbfXAxMVYcBWwsAtbc9I_3-GWoUAOtq4A?e=53DCcG&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
 **Entrevista 1**
 
 **Entrevistador:** Salvador Salinas
@@ -848,9 +856,7 @@ Las entrevistas representan una estrategia de investigación que implica el inte
 
 **Distrito:** Lurín
 
-**Enlace a entrevista:** [Entrevista 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b127_upc_edu_pe/EfplQNX-V1hArtEGzQFt-3ABzYYTV6e37eDV4HN7HzpS2A?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=yWJug5)
-
-<img src="img/entrevista1.png" alt="Entrevista 1" width="100%" />
+![Entrevista a Anderson Gonza](img/entrevista1.png)
 
 **Resumen:** Anderson es un agricultor de 23 años que cultiva hortalizas junto a su padre en Lurín. Mencionó que uno de los problemas con el agua es la irregularidad en el suministro de agua del canal y la presión que a veces no alcanza. Comenta que es bastante problable que se utilice más agua de la necesaria al no tener un control sobre este. De esta forma, le gustaría contar con una herramienta que le ayude a optimizar el riego. Anderson está dispuesto a probar una aplicación que le facilite esta tarea.
 
@@ -864,9 +870,7 @@ Las entrevistas representan una estrategia de investigación que implica el inte
 
 **Distrito:** San Juan de Lurigancho
 
-**Enlace a entrevista:** [Entrevista 2](https://youtu.be/gyszZzqHZyA)
-
-<img src="img/entrevista2.png" alt="Entrevista 2" width="100%" />
+![Entrevista a Alessandra Chaupis](img/entrevista2.png)
 
 **Resumen:** Alessandra, de 20 años, tiene un familiar que se dedica a la agricultura en una zona rural de la Sierra, donde cultiva papa, maíz y habas. Señala que uno de los principales problemas es el acceso irregular al agua y la falta de tecnología para un mejor aprovechamiento. Su familiar no lleva un control preciso del riego ni utiliza herramientas digitales, por lo que muchas veces termina usando más agua de la necesaria. El riego es una tarea física y demandante, especialmente por la necesidad de trasladar agua. Además, cree que la calidad del agua puede afectar directamente a los cultivos. Debido a estas dificultades, Alessandra considera que su familiar estaría muy interesado en probar una aplicación que ayude a automatizar y optimizar el sistema de riego, sobre todo ante los efectos del cambio climático y las sequías recientes.
 
@@ -880,9 +884,7 @@ Las entrevistas representan una estrategia de investigación que implica el inte
 
 **Distrito:** Juliaca
 
-**Enlace a entrevista:** [Entrevista 3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/ET59gr1V_RRNlVe7KSxEUq0Bt_f0nIgvl56lpxFdHF-FAA?e=lzHZC6)
-
-<img src="img/entrevista3.png" alt="Entrevista 3" width="100%" />
+![Entrevista a Daniel Ruiz](img/entrevista3.png)
 
 **Resumen:** En la entrevista, Daniel describe su rutina diaria como agotadora, iniciando desde las 4 o 5 a.m. y trabajando hasta el anochecer. Cultiva principalmente papa y camote en un clima complicado, donde el manejo del agua representa un gran desafío debido a la irregularidad del clima. No lleva un control exacto del riego ni usa herramientas tecnológicas, regando de dos a tres veces por semana en las mañanas. Reconoce que gasta más agua de la necesaria y que la calidad del agua afecta directamente a sus cultivos. Finalmente, muestra interés en una aplicación que automatice el riego y le brinde alertas, ya que considera que le ayudaría a optimizar sus procesos y ahorrar agua.
 
@@ -895,12 +897,23 @@ Las entrevistas representan una estrategia de investigación que implica el inte
 **Edad:** 23 años
 
 **Distrito:** San Borja
-
-**Enlace a entrevista:** [Entrevista 4](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201c607_upc_edu_pe/EbbhKUuOTmNNqMKW-p63mLoBRCd69GVFByVTkfS2IgIhcg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=VvZDam)
-
-<img src="img/entrevista4.png" alt="Entrevista 4" width="100%" />
+![Entrevista a Joan Talizo](img/entrevista4.png")
 
 **Resumen:** Joan, un joven agricultor de Puno, trabaja sus campos de quinua, papa y otros productos en la zona de Tonco, además de cuidar su rebaño de ovejas. Su día a día es exigente, marcado por la revisión y el cuidado manual de sus cultivos. Un problema importante que enfrenta es la gestión del agua para el riego, especialmente durante las sequías, debido a la distancia y la falta de sistemas precisos. Lleva el control del riego de forma manual y reconoce que a veces gasta más agua de la necesaria. Regar es una tarea pesada para él, y la calidad del agua que utiliza también le preocupa por su impacto en las plantas. Ante la posibilidad de usar una aplicación que controle el riego, John se muestra muy interesado en probarla para ahorrar agua, tiempo y asegurar un riego óptimo, incluso sin buena señal.
+
+**Entrevista 5**
+
+**Entrevistador:** Marcelo Neyra
+
+**Entrevistado:** Giancarlo Paredes
+
+**Edad:** 18 años
+
+**Distrito:** San Borja
+
+![Entrevista Giancarlo Paredes](img/entrevista5.png)
+
+**Resumen:** Giancarlo Paredes es un joven de 18 años perteneciente a una familia de agrícolas. Nos menciona que cuenta con cultivos de maiz y kiwicha que revisa diariamente. En cuanto al manejo del agua, nos comenta que no suele tener muchos problemas con el agua, ya que en donde vive hay abundante agua, y que lleva un control para sus dos tipos de cultivos, debido a que no se riegan con la misma frecuencia. Por último, considera que la calidad del agua no afecta a sus cultivos, ya que toda viene de un lago cercano a donde vive, llamada "Laguna del Parón" 
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -3432,16 +3445,19 @@ Este bounded context se encarga de la gestión de los datos relacionados a los s
 
 <div style="page-break-after: always;"></div>
 
-# Conclusiones y Recomendaciones
+### Conclusiones y Recomendaciones
 
 La estructura aplicada del proceso Lean UX ha permitido a nuestra startup, IoT Solutions, identificar los segmentos objetivos, competidores y necesidades del mercado para el desarrollo de HydroSmart. Desde la formulación inicial de problem statements hasta la elaboración de hypothesis statements y la construcción del Lean UX Canvas, cada etapa ha fortalecido la eficiencia y agilidad del proyecto. Además, se realizó un análisis exhaustivo de competidores, entrevistas y actividades de needfinding, cuyo resultado fue fundamental en la investigación del capítulo II, permitiendo diseñar una solución que responde a las necesidades reales de nuestros usuarios.
 
-# Video About-the-Team
+### Video About-the-Team
 
 <div style="page-break-after: always;"></div>
 
-# Bibliografía
+### Bibliografía
 
 Escuela de Gestión Pública de la Universidad del Pacífico. (2022). Informe de evidencia: Sector agropecuario en el Perú. _Universidad del Pacífico_. https://www.up.edu.pe/egp/programas-especializacion_copy%281%29/SiteAssets/Lists/Observatorio/AllItems/Informe%20de%20Evidencia%20sector%20Agropecuario%20-%20EGP.pdf
 
-# Anexos
+### Anexos
+Video de Entrevista: [Enlace a Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217241_upc_edu_pe/Ee74xVmCHXdCqRbfXAxMVYcBWwsAtbc9I_3-GWoUAOtq4A?e=53DCcG&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+Product Backlog: [Enlace a Trello](https://trello.com/invite/b/68029db69b9160a847867db7/ATTIe60cc61d919ec781877b36318d877ec2F1FD4DE3/desarrollo-de-soluciones-iot)
