@@ -47,7 +47,7 @@
 
 # Registro de versiones
 
-<!-- Global table styles -->
+<!-- Global table styles (uncomment if needed)
 <style>
   table {
     width: 100%;
@@ -62,6 +62,7 @@
     text-align: center;
   }
 </style>
+-->
 
 <table>
   <thead>
