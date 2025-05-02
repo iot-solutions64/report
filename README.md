@@ -843,6 +843,18 @@ Las entrevistas representan una estrategia de investigación que implica el inte
 9. ¿Cree que la calidad del agua que usa para regar afecta a sus cultivos? ¿Por qué?
 10. Si existiera una aplicación que controle el sistema de riego por usted y le avise cuando se esté regando los cultivos, ¿estaría dispuesto a probarla?
 
+##### Objetivo
+
+El propósito de estas entrevistas es entender a fondo cómo los agricultores gestionan el riego de sus cultivos en el día a día. Queremos conocer sus hábitos, dificultades y necesidades reales en el uso del agua, ya que este recurso es clave tanto para la productividad como para el ahorro.
+
+Con la información que usted nos comparta, podremos diseñar una aplicación práctica, sencilla y útil, que le ayude a optimizar el uso del agua, reducir el desperdicio y mejorar el rendimiento de sus cultivos. Nos enfocamos especialmente en dos aspectos:
+
+- Cuánta agua se utiliza realmente durante el riego.
+
+- Qué problemas enfrentan los agricultores al tratar de controlar o automatizar el riego.
+
+Nuestro objetivo final es brindarle una herramienta que facilite su trabajo, ahorre agua y mejore sus resultados sin complicarle la vida.
+
 ### 2.2.2. Registro de entrevistas
 
 Enlace del video de las entrevista: [Enlace a Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217241_upc_edu_pe/Ee74xVmCHXdCqRbfXAxMVYcBWwsAtbc9I_3-GWoUAOtq4A?e=53DCcG&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
