@@ -3378,6 +3378,45 @@ Este bounded context se encarga de la gestión de los datos relacionados a los s
 
 ### 5.1.1. General Style Guidelines
 
+<strong>Consistencia Visual: </strong>Mantener una coherencia visual en todos los aspectos de la aplicación es clave para crear una experiencia intuitiva. Esto incluye el uso de una paleta de colores uniforme que refleje la naturaleza y la vida agrícola, una tipografía legible y tamaños de fuente adecuados para facilitar la lectura en diferentes condiciones de luz.
+
+<p align="center">
+  <img alt="Consistencia visual" src="img/consistencia-visual.jpg" width="600">
+</p>
+
+<strong>Simplicidad y Claridad: </strong>La interfaz debe ser sencilla y fácil de navegar, con un diseño limpio que evite la sobrecarga de información. El uso de un lenguaje claro y directo es fundamental para asegurar que los usuarios, independientemente de su nivel de experiencia con la tecnología, puedan entender rápidamente cómo utilizar la aplicación.
+
+<p align="center">
+  <img alt="Simplicidad y claridad" src="img/simplicidad-y-claridad.jpg" width="600">
+</p>
+
+<strong>Accesibilidad: </strong>Diseñar la aplicación teniendo en cuenta las necesidades de accesibilidad, como texto ampliable, contraste de colores para personas con discapacidades visuales, y compatibilidad con tecnologías de asistencia como lectores de pantalla.
+
+<p align="center">
+  <img alt="necesidades de accesibilidad de usuarios" src="img/accesibilidad.png" width="600">
+</p>
+
+<strong>Logo: </strong>El logotipo de Hydrosmart representa la esencia de la tecnología al servicio del campo peruano. En el centro, una gota de agua simboliza la eficiencia hídrica, elemento vital para la agricultura. Dentro de la gota, brota una pequeña planta verde, reflejo del crecimiento, la vida y la sostenibilidad. Esta integración visual transmite el objetivo del producto: aspersores inteligentes que permiten a los agricultores peruanos regar sus cultivos de forma más precisa, eficiente y responsable con el medio ambiente. El diseño circular sugiere continuidad, cuidado y conexión con la tierra.
+
+<p align="center">
+  <img alt="Logo" src="img/hydrosmart-logo.png" width="600">
+</p>
+
+
+<strong>Tipografía: </strong>La tipografía seleccionada para Agrosupport es "Roboto", una fuente sans-serif moderna y altamente legible. Roboto destaca por su estilo limpio y contemporáneo, transmitiendo profesionalismo y actualización. La elección de Roboto garantiza que el texto en las interfaces de usuario sea fácilmente legible y mantenga una apariencia moderna y uniforme. Además, Roboto es una fuente versátil que ofrece una amplia gama de pesos y estilos, permitiendo una adaptación flexible a diferentes contextos y tamaños de texto en la aplicación.
+
+<p align="center">
+  <img alt="Tipografía" src="img/typography.png" width="600">
+</p>
+
+
+<strong>Colores: </strong>IoT Solutions 64 ha definido una paleta de colores moderna y equilibrada para garantizar una identidad visual coherente y atractiva tanto en la landing page como en la aplicación móvil de HydroSmart. Los tonos azules transmiten tecnología y confianza, el verde representa el crecimiento y la conexión con la naturaleza, mientras que el rojo resalta elementos clave de interacción. Los colores neutros aportan claridad, calidez y equilibrio visual. Esta paleta refuerza el compromiso de la marca con soluciones inteligentes, eficientes y amigables para el agricultor peruano.
+
+<p align="center">
+  <img alt="Paleta de colores" src="img/colors.png" width="600">
+</p>
+ 
+
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
 ## 5.2. Information Architecture
