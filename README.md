@@ -3419,6 +3419,8 @@ Este bounded context se encarga de la gestión de los datos relacionados a los s
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
+Para mantener una identidad visual en todos los puntos de contacto, la interfaz de usuario en la web, la aplicación móvil y los dispositivos IoT seguirá las mismas directrices establecidas en el apartado de General Style Guidelines. Se utilizará la misma paleta de colores y tipografía, garantizando una experiencia uniforme, reconocible y alineada con los valores de la marca HydroSmart.
+
 ## 5.2. Information Architecture
 
 ### 5.2.1. Organization Systems
