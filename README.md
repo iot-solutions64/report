@@ -3481,6 +3481,50 @@ La interfaz de la aplicación HydroSmart está diseñada para una navegación ef
 
 ### 5.3.1. Landing Page Wireframe
 
+
+Los wireframes son el esquema básico de la Landing page, mostrando la estructura principal y la disposición de los elementos. Aquí se detallan las secciones clave como el encabezado, el área de beneficios, las llamadas a la acción y la ubicación de imágenes, enfocándose en la usabilidad y el flujo de la página sin distracciones visuales.
+
+
+**Página de inicio**
+
+<img src="img/wireframe-inicio.png" alt="Wireframe - Inicio">
+
+**Página de inicio (versión móvil)**
+
+<img src="img/wireframe-inicio-mobile.png" alt="Wireframe - Inicio (móvil)">
+
+**Página de Problemática**
+
+<img src="img/wireframe-problematica.png" alt="Wireframe - Problemática">
+
+**Página de Problemática (versión móvil)**
+
+<img src="img/wireframe-problematica-mobile.png" alt="Wireframe - Problemática (móvil)">
+
+**Página de Características**
+
+<img src="img/wireframe-caracteristicas.png" alt="Wireframe - Características">
+
+**Página de Características (versión móvil)**
+
+<img src="img/wireframe-caracteristicas-mobile.png" alt="Wireframe - Características (móvil)">
+
+**Página de Sobre Nosotros**
+
+<img src="img/wireframe-nosotros.png" alt="Wireframe - Nosotros">
+
+**Página de Sobre Nosotros (versión móvil)**
+
+<img src="img/wireframe-nosotros-mobile.png" alt="Wireframe - Nosotros (móvil)">
+
+**Página de Contacto**
+
+<img src="img/wireframe-contacto.png" alt="Wireframe - Contacto">
+
+**Página de Contacto (versión móvil)**
+
+<img src="img/wireframe-contacto-mobile.png" alt="Wireframe - Contacto (móvil)">
+
 ### 5.3.2. Landing Page Mock-up
 
 ## 5.4. Applications UX/UI Design
