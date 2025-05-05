@@ -3479,6 +3479,9 @@ La interfaz de la aplicación HydroSmart está diseñada para una navegación ef
 
 ## 5.3. Landing Page UI Design
 
+Link del Figma de los wireframes y mockups de la landing page: https://www.figma.com/design/t5ZCVaxwwvv3f73ZR73WYq/Iot-Solutions---Landing-Page?node-id=0-1&t=OWeHU0WHyO5VgVB0-1
+
+
 ### 5.3.1. Landing Page Wireframe
 
 
@@ -3526,6 +3529,52 @@ Los wireframes son el esquema básico de la Landing page, mostrando la estructur
 <img src="img/wireframe-contacto-mobile.png" alt="Wireframe - Contacto (móvil)">
 
 ### 5.3.2. Landing Page Mock-up
+
+Los mockups añaden detalles visuales y de diseño a los wireframes, mostrando la paleta de colores, tipografía y estilo gráfico que tendrá la landing page. Representan cómo se verá la página final, integrando los elementos visuales que harán la experiencia más atractiva y coherente con la marca.
+
+**Página de inicio**
+
+<img src="img/mockup-inicio.png" alt="Mock-up - Inicio">
+
+**Página de inicio (versión móvil)**
+
+<img src="img/mockup-inicio-mobile.png" alt="Mock-up - Inicio (móvil)">
+
+**Página de Problemática**
+
+<img src="img/mockup-problematica.png" alt="Mock-up - Problemática">
+
+**Página de Problemática (versión móvil)**
+
+<img src="img/mockup-problematica-mobile.png" alt="Mock-up - Problemática (móvil)">
+
+**Página de Características**
+
+<img src="img/mockup-caracteristicas.png" alt="Mock-up - Características">
+
+**Página de Características (versión móvil)**
+
+<img src="img/mockup-caracteristicas-mobile.png" alt="Mock-up - Características (móvil)">
+
+**Página de Sobre Nosotros**
+
+<img src="img/mockup-nosotros.png" alt="Mock-up - Nosotros">
+
+**Página de Sobre Nosotros (versión móvil)**
+
+<img src="img/mockup-nosotros-mobile.png" alt="Mock-up - Nosotros (móvil)">
+
+**Página de Contacto**
+
+<img src="img/mockup-contacto.png" alt="Mock-up - Contacto">
+
+
+
+**Página de Contacto (versión móvil)**
+
+<img src="img/mockup-contacto-mobile.png" alt="Mock-up - Contacto (móvil)">
+
+
 
 ## 5.4. Applications UX/UI Design
 
