@@ -3410,7 +3410,7 @@ Este bounded context se encarga de la gestión de los datos relacionados a los s
 </p>
 
 
-<strong>Colores: </strong>IoT Solutions 64 ha definido una paleta de colores moderna y equilibrada para garantizar una identidad visual coherente y atractiva tanto en la landing page como en la aplicación móvil de HydroSmart. Los tonos azules transmiten tecnología y confianza, el verde representa el crecimiento y la conexión con la naturaleza, mientras que el rojo resalta elementos clave de interacción. Los colores neutros aportan claridad, calidez y equilibrio visual. Esta paleta refuerza el compromiso de la marca con soluciones inteligentes, eficientes y amigables para el agricultor peruano.
+<strong>Colores: </strong>IoT Solutions ha definido una paleta de colores moderna y equilibrada para garantizar una identidad visual coherente y atractiva tanto en la landing page como en la aplicación web y móvil de HydroSmart. Los tonos azules transmiten tecnología y confianza, el verde representa el crecimiento y la conexión con la naturaleza, mientras que el rojo resalta elementos clave de interacción. Los colores neutros aportan claridad, calidez y equilibrio visual. Esta paleta refuerza el compromiso de la marca con soluciones inteligentes, eficientes y amigables para el agricultor peruano.
 
 <p align="center">
   <img alt="Paleta de colores" src="img/colors.png" width="600">
@@ -3429,9 +3429,53 @@ Para mantener una identidad visual en todos los puntos de contacto, la interfaz 
 
 ### 5.2.3. SEO Tags and Meta Tags
 
+Para mejorar la visibilidad y el rendimiento de HydroSmart en motores de búsqueda y en las tiendas de aplicaciones, se han implementado las siguientes etiquetas SEO y metaetiquetas:
+
+<strong>Metaetiqueta de Descripción: </strong>Proporciona una breve descripción del contenido y propósito de la aplicación, ayudando a los usuarios a entender de qué se trata la aplicación y a mejorar la tasa de clics.
+
+````
+<meta name="description" content="HydroSmart is a platform that provides farmers with the necessary information to improve their farming practices.">
+````
+
+
+<strong>Metaetiqueta de Autor: </strong>Especifica el autor de la aplicación, lo que ayuda a atribuir la propiedad intelectual y la fuente del contenido.
+
+````
+<meta name="author" content="IoT Solutions">
+````
+<strong>Metaetiqueta de Robots: </strong>Indica a los motores de búsqueda cómo deben indexar y rastrear la página, permitiendo que se indexe y que se sigan los enlaces en la aplicación.
+
+````
+<meta name="robots" content="index, follow">
+````
+
+
+<strong>Etiqueta de Título: </strong> Define el título de la aplicación que aparece en los resultados de búsqueda y en las pestañas del navegador.
+
+````
+<title>HydroSmart</title>
+````
+
+<strong>Etiqueta de Idioma: </strong> Especifica el idioma principal del contenido de la aplicación para ayudar a los motores de búsqueda a entender y clasificar el contenido adecuadamente.
+
+````
+<html lang="en">
+````
+
+<p align="center">
+  <img src="img/seoTAGS.png" alt="SEO tags" width="600">
+</p>
+
 ### 5.2.4. Searching Systems
 
 ### 5.2.5. Navigation Systems
+
+La interfaz de la aplicación HydroSmart está diseñada para una navegación eficiente, con características adaptadas a la usabilidad en portales web como pantallas táctiles:
+
+ - ***Menús de Navegación:*** Menús adaptados para dispositivos móviles o de escritorio, que pueden incluir menús desplegables, botones en la parte superior o inferior de la pantalla, y accesos directos.
+
+ - ***Navegación por Pestañas:*** Utiliza pestañas en la parte superior o inferior de la pantalla para organizar el contenido en secciones o categorías, permitiendo a los usuarios cambiar entre diferentes secciones sin necesidad de cargar nuevas pantallas.
+
 
 ## 5.3. Landing Page UI Design
 
