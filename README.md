@@ -3140,11 +3140,14 @@ Tras evaluar estas opciones, consideramos lo siguiente como la estructura más c
 
 - Separación clara de responsabilidades entre autenticación, análisis de suelo y riego, permitiendo un desarrollo y despliegue independiente.
 
-- Delegación de interacciones con hardware al IoT Gateway, manteniendo los contextos de negocio agnósticos al detalle técnico.
+- Soil → Irrigation: Irrigation depende de los datos de Soil para tomar decisiones de riego. (Customer/Supplier)
 
-- Establecer un patrón Shared Kernel para Security, donde los modelos de usuario y permisos son compartidos entre contextos.
+- Security ↔ Todos: Establecer un patrón Shared Kernel para Security, donde los modelos de usuario y permisos son compartidos entre contextos.
 
-- Uso de un API Gateway como frontera de comunicación entre contextos internos y externos, centralizando la orquestación y simplificando la exposición de servicios.
+- Irrigation → System: Irrigation decide cuándo activar el riego, y System ejecuta esas decisiones operando hardware físico (Conformist).
+
+![Context Mapping](img/context-mapping.jpg)
+
 
 <div style="page-break-after: always;"></div>
 
