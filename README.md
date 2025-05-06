@@ -3174,35 +3174,55 @@ Tras evaluar estas opciones, consideramos lo siguiente como la estructura más c
 
 Este bounded context se encarga de la gestión de los datos relacionados a la humedad y temperatura del suelo. Este contexto es el encargado de recibir los datos de los sensores y almacenarlos en la base de datos. Además, este contexto es el encargado de enviar las notificaciones al usuario cuando la humedad o temperatura del suelo se encuentren fuera de los límites establecidos por el usuario.
 
+### 4.2.1. Bounded Context: Soil
+
+Este Bounded Context es responsable de la gestión de los datos de humedad y temperatura del suelo, integrando los sensores y las notificaciones para garantizar que los valores de los parámetros se mantengan dentro de los rangos definidos por el usuario. El contexto maneja tanto el almacenamiento de datos como la lógica para alertar al usuario cuando los valores de humedad o temperatura exceden los umbrales definidos.
+
 #### 4.2.1.1. Domain Layer
 
-- **SoilData**: Esta clase representa los datos de humedad y temperatura del suelo en un momento específico. Contiene atributos como humidity, temperature, timestamp y location.
-- **SoilParameterThresholds**: Esta clase define los límites aceptables para los parámetros de humedad y temperatura del suelo definidos por el usuario. Contiene atributos como minHumidity, maxHumidity, minTemperature, maxTemperature.
-- **SoilAnomalyDetector**: Esta clase contiene la lógica para detectar si los valores de humedad o temperatura del suelo están fuera de los límites definidos en SoilParameterThresholds.
+El Core Domain Layer dentro del contexto de Soil se representa a través de las siguientes clases y componentes:
 
-**Enum:**
+- **SoilData (Entity)**: Esta clase representa los datos de humedad y temperatura del suelo en un momento específico. Contiene atributos como `humidity`, `temperature`, `timestamp` y `location`. La entidad SoilData mantiene la consistencia de los datos y garantiza que las mediciones estén asociadas correctamente con la ubicación y el tiempo en que fueron capturados.
 
-- **ParameterType**: Define los tipos de parámetros de suelo que se están midiendo (humidity, temperature).
+- **SoilParameterThresholds (Value Object)**: Este objeto de valor representa los límites definidos por el usuario para la humedad y temperatura del suelo. Asegura que los valores de humedad (`minHumidity`, `maxHumidity`) y temperatura (`minTemperature`, `maxTemperature`) se mantengan dentro de un rango adecuado y se considera inmutable una vez establecido.
+
+- **SoilAnomalyDetector (Domain Service)**: Este servicio de dominio contiene la lógica para detectar si los valores de humedad o temperatura del suelo están fuera de los límites definidos en **SoilParameterThresholds**. Si se detecta una anomalía, el servicio genera una alerta para notificar al usuario.
+
+- **SoilNotificationService (Domain Service)**: Este servicio de dominio se encarga de enviar notificaciones al usuario. Utiliza los resultados del **SoilAnomalyDetector** para determinar si es necesario generar una alerta. Se integra con sistemas de mensajería o notificaciones push para informar al usuario en tiempo real sobre las variaciones en los parámetros del suelo.
+
+- **ParameterType (Enum)**: Define los tipos de parámetros de suelo que se están midiendo (humidity, temperature).
 
 #### 4.2.1.2. Interface Layer
 
-- **SoilInformationDisplayInterface**: Esta interfaz define los métodos para mostrar la información actual del suelo (humedad, temperatura).
-- **SoilDataRequestInterface**: Esta interfaz define los métodos para solicitar datos de humedad o temperatura del suelo.
-- **SoilDetailsRequestInterface**: Esta interfaz define los métodos para solicitar detalles específicos del suelo.
-- **NotificationServiceInterface**: Esta interfaz define el método para enviar notificaciones al usuario.
+En la capa de Interface Layer, se gestionan las interacciones con el usuario y las solicitudes externas al sistema, como la visualización de datos, la actualización de los parámetros y la notificación de anomalías. Esta capa se compone de interfaces que facilitan la interacción entre el **Domain Layer** y los servicios o consumidores de la aplicación.
+
+- **SoilInformationDisplayInterface (Controller)**: Esta interfaz define los métodos para presentar los datos del suelo al usuario. Actúa como un controlador que consume información de la **Application Layer** y se encarga de formatearla para su presentación en la interfaz de usuario. Contiene métodos como `showHumidity(SoilData data)` y `showTemperature(SoilData data)`.
+
+- **SoilDataRequestInterface (Consumer)**: Esta interfaz define los métodos para recibir y procesar solicitudes de datos de humedad o temperatura del suelo. Recibe las peticiones del frontend o de otros sistemas y las pasa a los servicios correspondientes en la capa de aplicación. Contiene el método `getSoilData(location, timestamp)`.
+
+- **SoilDetailsRequestInterface (Consumer)**: Esta interfaz maneja las solicitudes de detalles específicos sobre el suelo, como el historial de cambios de humedad y temperatura o el estado actual de los sensores. Incluye métodos como `getSoilHistory(location)` y `getSensorDetails(sensorId)`.
+
+- **NotificationServiceInterface (Controller)**: Esta interfaz gestiona el envío de notificaciones al usuario. Está vinculada a la **SoilNotificationService** en la **Application Layer** y se encarga de invocar los métodos necesarios para notificar al usuario cuando se detectan anomalías. Contiene el método `sendAlert(notificationMessage)`.
 
 #### 4.2.1.3. Application Layer
 
-- **SoilAnomalyDetectionService**: Este servicio utiliza el SoilAnomalyDetector para verificar si los datos del suelo están dentro de los rangos aceptables.
-- **SoilNotificationService**: Este servicio se encarga de enviar notificaciones al usuario cuando los datos del suelo están fuera de los límites establecidos.
-- **SoilDataQueryService**: Este servicio se encarga de responder a las consultas sobre la información del suelo y sus detalles para el usuario.
-- **SoilDataCommandService**: Este servicio se encarga de recibir y procesar los comandos relacionados con los datos del suelo, como la actualización de los límites de humedad y temperatura.
+En la capa de Application Layer orquesta los procesos del negocio utilizando los servicios de dominio definidos en la **Domain Layer**. Es aquí donde se manejan los flujos de procesos y la interacción con otros componentes.
+
+- **SoilAnomalyDetectionService (Command Handler)**: Este servicio procesa los comandos relacionados con la detección de anomalías en los datos del suelo. Utiliza la clase **SoilAnomalyDetector** para verificar si los valores de humedad y temperatura están dentro de los rangos definidos por el usuario. Contiene el método `detectAnomalies(SoilData data)`.
+
+- **SoilNotificationService (Event Handler)**: Este servicio escucha los eventos de anomalías detectadas por el **SoilAnomalyDetectionService** y se encarga de disparar eventos o realizar acciones como el envío de notificaciones a través de diferentes canales. Contiene métodos como `sendNotification(alertMessage)` y `handleAnomalyEvent(event)`.
+
+- **SoilDataQueryService (Query Handler)**: Este servicio recibe consultas relacionadas con los datos del suelo. Gestiona solicitudes como la información actual del suelo o el historial de mediciones. Contiene métodos como `querySoilData(location)` y `querySoilHistory(sensorId)`.
+
+- **SoilDataCommandService (Command Handler)**: Este servicio gestiona las acciones que modifican los datos del suelo, como la actualización de los parámetros definidos por el usuario. Actúa como intermediario entre los controladores que envían comandos y los servicios de dominio. Contiene métodos como `updateSoilThresholds(newThresholds)` y `storeNewSoilData(soilData)`.
 
 #### 4.2.1.4. Infrastructure Layer
 
-- **SoilDataRepository**: Esta clase se encarga de la persistencia de los datos del suelo en la base de datos. Utiliza un ORM para interactuar con la base de datos.
-- **ThresholdsRepository**: Este repositorio gestiona el almacenamiento y la recuperación de los límites definidos por el usuario (SoilParameterThresholds).
-- **SensorDataRepository**: Este repositorio se encarga de almacenar y recuperar los datos de los sensores de humedad y temperatura del suelo.
+La Infrastructure Layer se encarga de la persistencia de los datos y la comunicación con servicios externos como bases de datos, sistemas de mensajería o servicios de correo electrónico. Aquí se implementan las interfaces definidas en la **Domain Layer**, como los repositorios.
+
+- **SoilDataRepository (Repository)**: Implementa la persistencia de los datos del suelo en la base de datos. Utiliza un ORM para interactuar con la base de datos, almacenando los objetos **SoilData** y recuperándolos según la ubicación o el timestamp. Contiene métodos como `save(SoilData data)` y `findByLocation(location)`.
+
+- **ThresholdsRepository (Repository)**: Este repositorio almacena y recupera los límites de humedad y temperatura definidos por el usuario (**SoilParameterThresholds**). Interactúa con la base de datos para mantener estos valores actualizados y es utilizado por los servicios en la **Application Layer**.
 
 #### 4.2.1.5. Component Level Diagrams
 
@@ -3225,43 +3245,49 @@ Este bounded context se encarga de la gestión de los datos relacionados al rieg
 
 #### 4.2.2.1. Domain Layer
 
-- **IrrigationSession**: Representa una sesión de riego específica. Contiene atributos como sessionId, startTime, endTime, requestedWaterAmount, deliveredWaterAmount, irrigationStatus.
-- **WaterTankLevel**: Representa el nivel actual de agua en el tanque de riego. Contiene atributos como currentLevel, capacity.
-- **WaterLevelThresholds**: Define los límites para el nivel de agua en el tanque (normalLevelThreshold, lowLevelThreshold).
-- **IrrigationSchedule**: Define la configuración para el riego automático, incluyendo la hora de inicio, la duración y los criterios basados en los datos del suelo. Contiene atributos como startTime, duration, soilConditionTriggers
-- **WaterLimit**: Representa el límite máximo de agua a utilizar en un periodo determinado. Contiene atributos como limitValue, period.
-- **SoilConditionTrigger**: Define las condiciones del suelo que activan el riego automático. Contiene atributos como minHumidity, maxHumidity, minTemperature, maxTemperature.
+El Domain Layer del contexto de Irrigation define las reglas del negocio y los conceptos fundamentales relacionados con las sesiones de riego, los niveles de agua y las condiciones que activan el riego automático.
 
-**Enum:**
-
-- **IrrigationStatus**: Define los posibles estados de una sesión de riego (started, running, ended).
-- **AutomaticIrrigationStatus**: Define los estados del riego automático (active, inactive).
+- **IrrigationSession (Entity)**: Representa una sesión de riego específica. Contiene atributos como `sessionId`, `startTime`, `endTime`, `requestedWaterAmount`, `deliveredWaterAmount` e `irrigationStatus`. Gestiona el ciclo de vida de una sesión y su estado actual.
+- **WaterTankLevel (Entity)**: Representa el estado actual del nivel de agua en el tanque. Contiene atributos como `currentLevel` y `capacity`. Se utiliza para monitorear y validar la disponibilidad de agua.
+- **WaterLevelThresholds (Value Object)**: Define los límites de referencia para los niveles del tanque. Incluye valores como `normalLevelThreshold` y `lowLevelThreshold`. Permite determinar si se requiere acción correctiva.
+- **IrrigationSchedule (Entity)**: Contiene la configuración del riego automático, como la hora de inicio (`startTime`), duración (`duration`) y los disparadores de condiciones del suelo (`soilConditionTriggers`).
+- **WaterLimit (Value Object)**: Representa el límite máximo permitido de agua en un periodo específico. Incluye atributos como `limitValue` y `period`.
+- **SoilConditionTrigger (Value Object)**: Define los parámetros del suelo (ej. `minHumidity`, `maxTemperature`) que deben cumplirse para activar el riego automático.
+- **IrrigationStatus (Enum)**: Enumera los estados posibles de una sesión de riego: `started`, `running`, `ended`.
+- **AutomaticIrrigationStatus (Enum)**: Enumera los estados del sistema de riego automático: `active`, `inactive`.
 
 #### 4.2.2.2. Interface Layer
 
-- **IrrigationControlInterface**: Define los métodos para iniciar y detener el riego manualmente.
-- **WaterTankLevelDisplayInterface**: Define el método para mostrar el nivel actual del tanque de agua.
-- **WaterLimitManagementInterface**: Define los métodos para solicitar y cambiar los límites de agua.
-- **AutomaticIrrigationControlInterface**: Define los métodos para activar y desactivar el riego automático.
-- **NotificationServiceInterface**: Define el método para enviar notificaciones al usuario.
+Esta capa expone interfaces para interactuar con los servicios de riego, ya sea de manera manual o automática. Permite a los usuarios iniciar procesos, visualizar información relevante y recibir alertas.
+
+- **IrrigationControlInterface (Controller)**: Define los métodos que permiten al usuario iniciar o detener el riego manualmente. Incluye `startIrrigation()` y `stopIrrigation()`.
+- **WaterTankLevelDisplayInterface (Controller)**: Permite mostrar el nivel actual del tanque de agua al usuario. Incluye el método `showTankLevel()`.
+- **WaterLimitManagementInterface (Controller)**: Gestiona las solicitudes para visualizar o modificar los límites de uso de agua. Incluye métodos como `getWaterLimit()` y `updateWaterLimit(newLimit)`.
+- **AutomaticIrrigationControlInterface (Controller)**: Gestiona la activación o desactivación del sistema de riego automático. Contiene métodos como `activateAutomaticIrrigation()` y `deactivateAutomaticIrrigation()`.
+- **NotificationServiceInterface (Controller)**: Expone la funcionalidad para enviar notificaciones al usuario. Invoca a los servicios de la Application Layer para emitir alertas cuando ocurren eventos relevantes.
 
 #### 4.2.2.3. Application Layer
 
-- **IrrigationCommandService**: Este servicio se encarga de procesar los comandos relacionados con el riego manual, como iniciar y detener el riego. Interactúa con la capa de dominio para cambiar el estado de las sesiones de riego.
-- **WaterLevelMonitoringService**: Este servicio monitoriza el nivel del tanque de agua y puede generar notificaciones si el nivel cae por debajo de los umbrales definidos.
-- **WaterLimitManagementService**: Este servicio gestiona la lógica para cambiar y restaurar los límites de agua. Puede validar las solicitudes de cambio antes de actualizar el límite.
-- **AutomaticIrrigationService**: Este servicio implementa la lógica para el riego automático, consultando la configuración del IrrigationSchedule y los datos del suelo ( interactua con el Bounded Context Soil). Activa o desactiva el riego según las condiciones definidas.
-- **IrrigationNotificationService**: Este servicio se encarga de enviar notificaciones relacionadas con el riego, como el inicio, la finalización, los niveles bajos de agua o los cambios en el estado del riego automático.
+La Application Layer orquesta la lógica del negocio mediante el uso de servicios que actúan como command, query y event handlers. Controla los flujos de proceso que afectan al dominio de riego.
+
+- **IrrigationCommandService (Command Handler)**: Gestiona los comandos para iniciar o detener el riego manual. Interactúa con **IrrigationSession** y actualiza su estado. Incluye métodos como `startSession()` y `endSession()`.
+- **WaterLevelMonitoringService (Event Handler)**: Supervisa el nivel del tanque de agua. Cuando detecta que los valores bajan por debajo del umbral, genera un evento que puede disparar notificaciones o bloquear el inicio de nuevas sesiones de riego.
+- **WaterLimitManagementService (Command Handler)**: Se encarga de validar y actualizar los límites de agua establecidos por el usuario. Asegura que las nuevas configuraciones no violen políticas definidas.
+- **AutomaticIrrigationService (Command Handler)**: Ejecuta la lógica del riego automático según la configuración del **IrrigationSchedule** y las condiciones obtenidas desde el contexto **Soil**. Decide si se inicia o detiene automáticamente una sesión.
+- **IrrigationNotificationService (Event Handler)**: Maneja los eventos generados durante las sesiones de riego o por los monitores, y se encarga de emitir notificaciones. Incluye métodos como `notifyIrrigationStarted()`, `notifyLowWaterLevel()` y `notifyWaterLimitExceeded()`.
 
 #### 4.2.2.4. Infrastructure Layer
 
-- **IrrigationActuator**: Este componente interactúa con el hardware real para controlar el flujo de agua (abrir y cerrar válvulas).
-- **WaterTankLevelSensor**: Este componente se encarga de leer los datos del sensor de nivel de agua del tanque.
-- **IrrigationSessionRepository**: Este repositorio persiste la información de las sesiones de riego (IrrigationSession).
-- **WaterLevelRepository**: Este repositorio almacena y recupera la información del nivel del tanque de agua (WaterTankLevel).
-- **WaterLimitRepository**: Este repositorio gestiona el almacenamiento y la recuperación de los límites de agua (WaterLimit).
-- **IrrigationScheduleRepository**: Este repositorio almacena y recupera la configuración del riego automático (IrrigationSchedule).
-- **NotificationService**: Se encarga del envío real de las notificaciones.
+La Infrastructure Layer implementa la persistencia y la integración con sensores, actuadores físicos y servicios externos como notificaciones.
+
+- **IrrigationActuator (External Device Handler)**: Controla el hardware físico para abrir y cerrar válvulas de riego. Se invoca desde la Application Layer para ejecutar comandos físicos.
+- **WaterTankLevelSensor (Sensor Reader)**: Se conecta al sensor del tanque para obtener datos actualizados del nivel de agua.
+- **IrrigationSessionRepository (Repository)**: Guarda y recupera sesiones de riego (**IrrigationSession**) en la base de datos. Implementa métodos como `save(session)` y `findActiveSessions()`.
+- **WaterLevelRepository (Repository)**: Persiste y consulta datos del nivel de agua (**WaterTankLevel**) asociados a un tanque.
+- **WaterLimitRepository (Repository)**: Administra la información relacionada a los límites de uso de agua (**WaterLimit**).
+- **IrrigationScheduleRepository (Repository)**: Almacena la configuración del riego automático (**IrrigationSchedule**), permitiendo que sea consultada o modificada según sea necesario.
+- **NotificationService (Integration Service)**: Se encarga de enviar las notificaciones a través de correo, push o mensajería (accede a un sistema externo de correos electrónicos). Implementa la interfaz definida en la capa de presentación.
+- **ClimateApiIntegrationService (Integration Service)**: Se conecta con una API externa de clima para obtener condiciones ambientales en tiempo real (acceso a servicio externo). Se utiliza en conjunto con el riego automático para decidir si activar el riego
 
 #### 4.2.2.5. Component Level Diagrams
 
@@ -3285,31 +3311,40 @@ Este bounded context se encarga de la gestión de los datos relacionados a la se
 
 #### 4.2.3.1. Domain Layer
 
-- **User**: Representa a un usuario del sistema. Contiene atributos como userId, username, passwordHash, registrationDate, email.
-- **Role**: Representa los diferentes roles que pueden tener los usuarios en el sistema (Farmer, Administrator). Contiene atributos como roleId, roleName, permissions.
-- **Permission**: Representa una acción específica que un usuario con un determinado rol puede realizar. Contiene atributos como permissionId, permissionName.
-- **AuthenticationResult**: Representa el resultado de un intento de autenticación, indicando si fue exitoso o fallido y, en caso de éxito, se le asocia un token de acceso.
-- **AuthorizationResult**: Representa el resultado de una verificación de acceso, indicando si el usuario tiene permiso para realizar una acción específica.
+La capa de dominio define los conceptos centrales de seguridad, como usuarios, roles, permisos y los resultados de los procesos de autenticación y autorización.
+
+- **User (Entity)**: Representa a un usuario registrado en el sistema. Atributos: `userId`, `username`, `passwordHash`, `registrationDate`, `email`.
+- **Role (Entity)**: Representa un rol que puede tener un usuario, como `Farmer` o `Administrator`. Atributos: `roleId`, `roleName`, `permissions`.
+- **Permission (Value Object)**: Define una acción específica permitida, como `view_dashboard` o `manage_users`. Atributos: `permissionId`, `permissionName`.
+- **AuthenticationResult (Value Object)**: Representa el resultado de un intento de autenticación. Indica si fue exitoso y, si lo fue, incluye un token de acceso.
+- **AuthorizationResult (Value Object)**: Representa si un usuario tiene permiso para realizar una acción específica. Puede incluir información contextual como recurso y motivo de denegación.
 
 #### 4.2.3.2. Interface Layer
 
-- **UserRegistrationInterface**: Define el método para registrar un nuevo usuario.
-- **UserAuthenticationInterface**: Define el método para autenticar a un usuario.
-- **UserAuthorizationInterface**: Define el método para verificar si un usuario tiene permiso para realizar una acción.
-- **NotificationServiceInterface**: Define el método para enviar notificaciones, como la confirmación de registro.
+La capa de interfaz expone las operaciones que permiten a los usuarios interactuar con el sistema de seguridad, como registrarse, iniciar sesión o verificar acceso.
+
+- **UserRegistrationInterface (Controller)**: Expone el método `registerUser(userData)` para registrar nuevos usuarios.
+- **UserAuthenticationInterface (Controller)**: Expone el método `authenticateUser(credentials)` para validar las credenciales y generar un token.
+- **UserAuthorizationInterface (Controller)**: Expone el método `authorize(userId, action)` para verificar si un usuario tiene permiso para ejecutar una acción.
+- **NotificationServiceInterface (Controller)**: Utilizado para enviar notificaciones relacionadas con la seguridad, como confirmaciones de registro o alertas de acceso.
 
 #### 4.2.3.3. Application Layer
 
-- **UserRegistrationService**: Este servicio se encarga de procesar las solicitudes de registro de nuevos usuarios. Valida la información, crea el usuario en el dominio y utiliza la UserRepository para guardar las credenciales. También puede enviar una notificación de registro a través de la NotificationServiceInterface.
-- **UserAuthenticationService**: Este servicio se encarga de autenticar a los usuarios que intentan iniciar sesión, devuelve un AuthenticationResult.
-- **UserAuthorizationService**: Este servicio determina si un usuario autenticado tiene permiso para acceder a una funcionalidad o recurso específico. Utiliza la información del User y sus Role para tomar la decisión.
-- **UserSessionService**: Este servicio gestiona las sesiones de los usuarios que han iniciado sesión, manteniendo el estado de "logged in". También maneja el proceso de cierre de sesión.
+Esta capa orquesta los procesos de seguridad, integrando los repositorios y servicios de infraestructura con las reglas del dominio.
+
+- **UserRegistrationService (Command Handler)**: Gestiona el flujo completo de registro. Valida datos, crea una instancia de `User`, guarda en el repositorio y notifica por correo al usuario.
+- **UserAuthenticationService (Command Handler)**: Realiza la verificación de credenciales, genera un `AuthenticationResult` con token si es válido.
+- **UserAuthorizationService (Query Handler)**: Determina si un usuario puede realizar una acción específica, evaluando sus roles y permisos asociados.
+- **UserSessionService (Session Manager)**: Administra el estado de sesión del usuario: login, logout, y validación de tokens activos.
 
 #### 4.2.3.4. Infrastructure Layer
 
-- **UserRepository**: Este repositorio se encarga de la persistencia de la información de los usuarios (User).
-- **RoleRepository**: Este repositorio gestiona la persistencia de los roles de usuario (Role) y sus permisos asociados (Permission).
-- **EmailNotificationService**: Se encarga de enviar correos electrónicos para la confirmación de registro u otras notificaciones de seguridad.
+Esta capa implementa la persistencia de datos y la interacción con servicios externos como el correo electrónico.
+
+- **UserRepository (Repository)**: Almacena y recupera información de los usuarios (**User**), permitiendo búsquedas por `username` o `email`.
+- **RoleRepository (Repository)**: Gestiona la información de roles y permisos (**Role**, **Permission**), incluyendo asignación de permisos.
+- **EmailNotificationService (Integration Service)**: Implementa el envío real de correos electrónicos para confirmar registros o notificar eventos importantes de seguridad (accede a un sistema externo de correos electrónicos).
+- **PasswordResetService (Integration Service)**: Gestiona el proceso de restablecimiento de contraseñas, enviando correos electrónicos con enlaces de restablecimiento a los usuarios (accede a un sistema externo de correos electrónicos).
 
 #### 4.2.3.5. Component Level Diagrams
 
@@ -3331,30 +3366,36 @@ Este bounded context se encarga de la gestión de los datos relacionados a los s
 
 #### 4.2.4.1. Domain Layer
 
-- **SystemState**: Representa el estado actual del sistema. Contiene atributos como status, lastStatusChange.
-- **SystemStatusReport**: Representa un informe del estado del sistema, que incluye el estado general y información sobre los diferentes subsistemas. Contiene atributos como overallStatus, subsystemStatuses (lista de estados de otros Bounded Contexts).
+Define los conceptos centrales para representar y comunicar el estado general del sistema.
 
-**Enum:**
+- **SystemState (Entity)**: Representa el estado actual del sistema. Atributos: `status`, `lastStatusChange`.
+- **SystemStatusReport (Value Object)**: Contiene un informe del estado del sistema completo, incluyendo el estado general (`overallStatus`) y los estados de cada subsistema (`subsystemStatuses`), que provienen de otros Bounded Contexts.
 
-- **SystemStatus**: Define los posibles estados del sistema (on, off, shutting_down).
+- **SystemStatus (Enum)**: Enumera los posibles estados de operación del sistema: `on`, `off`, `shutting_down`.
 
 #### 4.2.4.2. Interface Layer
 
-- **SystemStatusRequestInterface**: Define el método para solicitar el estado actual del sistema.
-- **SystemInformationDisplayInterface**: Define el método para mostrar la información del estado del sistema.
-- **SystemControlInterface**: Define los métodos para solicitar el encendido y apagado del sistema.
+Define las interfaces mediante las cuales se solicitan y muestran los estados del sistema, y se controla su encendido o apagado.
+
+- **SystemStatusRequestInterface (Controller)**: Expone el método `getCurrentSystemStatus()` para consultar el estado actual del sistema.
+- **SystemInformationDisplayInterface (Controller)**: Proporciona el método `displaySystemInformation(statusReport)` para mostrar los datos relevantes al usuario.
+- **SystemControlInterface (Controller)**: Permite encender (`startSystem()`) y apagar (`shutdownSystem()`) el sistema.
 
 #### 4.2.4.3. Application Layer
 
-- **SystemStatusService**: Este servicio se encarga de obtener y proporcionar el estado actual del sistema. Utiliza el SystemState y el SystemStatusReport para generar un informe completo del estado del sistema.
-- **SystemStartupService**: Este servicio gestiona el proceso de encendido del sistema, realizando las inicializaciones necesarias en los diferentes subsistemas.
-- **SystemShutdownService**: Este servicio gestiona el proceso de apagado del sistema, coordinando el cierre de los diferentes subsistemas de forma segura.
+Contiene la lógica para gestionar el estado operativo del sistema y coordinar acciones entre los distintos subsistemas.
+
+- **SystemStatusService (Query Handler)**: Obtiene el estado actual consultando `SystemState` y agregando datos de `SystemStatusReport`.
+- **SystemStartupService (Command Handler)**: Coordina la secuencia de inicio del sistema, incluyendo la inicialización de subsistemas.
+- **SystemShutdownService (Command Handler)**: Coordina el apagado seguro del sistema, solicitando a cada subsistema su cierre controlado.
 
 #### 4.2.4.4. Infrastructure Layer
 
-- **SystemStatusRepository**: Este repositorio se encarga de la persistencia del estado actual del sistema (SystemState).
-- **SystemControlHardwareInterface**: Este componente interactúa con el hardware subyacente para realizar las acciones de encendido y apagado del sistema.
-- **SubsystemStatusIntegrations**: Componentes que se encargan de comunicarse con los repositorios o servicios de los otros Bounded Contexts ("Soil", "Irrigation", "Security") para obtener sus estados y agregarlos al SystemStatusReport.
+Provee la implementación técnica de persistencia y control físico del sistema.
+
+- **SystemStatusRepository (Repository)**: Almacena y recupera el estado actual del sistema (`SystemState`).
+- **SystemControlHardwareInterface (Hardware Integration)**: Realiza acciones físicas de encendido y apagado del sistema mediante interacción directa con hardware.
+- **SubsystemStatusIntegrations (Integration Services)**: Se comunican con los otros Bounded Contexts (`Soil`, `Irrigation`, `Security`) para consultar sus estados y componer el `SystemStatusReport`.
 
 #### 4.2.4.5. Component Level Diagrams
 
