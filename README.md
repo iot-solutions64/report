@@ -3469,6 +3469,8 @@ Para mantener una identidad visual en todos los puntos de contacto, la interfaz 
 
 ### 5.2.1. Organization Systems
 
+En IoT Solutions, aplicamos una jerarquía visual clara y adaptativa tanto en plataformas móviles como web para HydroSmart, nuestra solución inteligente para el riego automatizado de cultivos. Esta estructura visual permite resaltar la información más importante y facilita que los usuarios controlen fácilmente aspectos clave del entorno agrícola, como la temperatura, la humedad y el nivel de agua. La interfaz está organizada de manera secuencial para guiar al usuario a través de sus funciones principales: la vista Cultivos, donde se pueden añadir, editar y eliminar cultivos; la vista Agua, que muestra la cantidad de agua restante en litros y el historial de consumo de los aspersores inteligentes; y la vista Sistemas, donde se detalla el estado de los sistemas activos (por ejemplo: “Sistema de cultivo de zanahorias activo, batería al 70%”). Esta categorización del contenido asegura una experiencia fluida y centrada en las necesidades del agricultor moderno.
+
 ### 5.2.2. Labeling Systems
 
 ### 5.2.3. SEO Tags and Meta Tags
