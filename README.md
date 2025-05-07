@@ -3469,14 +3469,14 @@ Para mantener una identidad visual en todos los puntos de contacto, la interfaz 
 
 ### 5.2.1. Organization Systems
 
-En IoT Solutions, aplicamos una jerarquía visual clara y adaptativa tanto en plataformas móviles como web para HydroSmart, nuestra solución inteligente para el riego automatizado de cultivos. Esta estructura visual permite resaltar la información más importante y facilita que los usuarios controlen fácilmente aspectos clave del entorno agrícola, como la temperatura, la humedad y el nivel de agua. La interfaz está organizada de manera secuencial para guiar al usuario a través de sus funciones principales: la vista Cultivos, donde se pueden añadir, editar y eliminar cultivos; la vista Agua, que muestra la cantidad de agua restante en litros y el historial de consumo de los aspersores inteligentes; y la vista Sistemas, donde se detalla el estado de los sistemas activos (por ejemplo: “Sistema de cultivo de zanahorias activo, batería al 70%”). Esta categorización del contenido asegura una experiencia fluida y centrada en las necesidades del agricultor moderno.
+En IoT Solutions, aplicamos una jerarquía visual clara y adaptativa tanto en plataformas móviles como web para HydroSmart, nuestra solución inteligente para el riego automatizado de cultivos. Esta estructura visual permite resaltar la información más importante y facilita que los usuarios controlen fácilmente aspectos clave del entorno agrícola, como la temperatura, la humedad y el nivel de agua. La interfaz está organizada de manera secuencial para guiar al usuario a través de sus funciones principales: la vista Cultivos, donde se pueden añadir, editar y eliminar cultivos; la vista Agua, que muestra la cantidad de agua restante en litros y el historial de consumo de los aspersores inteligentes; y la vista Sistemas, donde se detalla el estado de los sistemas activos (los sistemas de aspersores para un tipo de cultivo, también se podrá visualizar la batería de este sistema”). Esta categorización del contenido asegura una experiencia fluida y centrada en las necesidades del agricultor moderno.
 
 ### 5.2.2. Labeling Systems
 
 Para HydroSmart, hemos diseñado un sistema de etiquetado claro tanto para la aplicación móvil como para la versión web, con el objetivo de optimizar la experiencia del usuario y facilitar la navegación entre las funcionalidades clave. Las etiquetas empleadas en la interfaz son:
 
 Vista del Agricultor:
-<table> <tbody> <tr> <th>Cultivos - Crops</th> <td>Permite al usuario añadir, editar o eliminar cultivos registrados en el sistema.</td> </tr> <tr> <th>Gestión de agua - Water Management</th> <td>Muestra la cantidad de agua restante en litros, el historial de consumo por aspersores inteligentes y opciones de control hídrico.</td> </tr> <tr> <th>Sistemas - Systems</th> <td>Presenta información sobre el estado de los sistemas activos, como el tipo de cultivo, el estado operativo y el nivel de batería.</td> </tr> <tr> <th>Logout</th> <td>Permite al usuario cerrar sesión y salir de su cuenta de manera segura.</td> </tr> </tbody> </table>
+<table> <tbody> <tr> <th>Cultivos - Crops</th> <td>Permite al usuario añadir, editar o eliminar cultivos registrados en el sistema.</td> </tr> <tr> <th>Gestión de agua - Water Management</th> <td>Muestra la cantidad de agua restante en litros, el historial de consumo por aspersores inteligentes y opciones de control hídrico.</td> </tr> <tr> <th>Sistemas - Systems</th> <td>Presenta información sobre el estado de los sistemas activos y el nivel de batería.</td> </tr> <tr> <th>Logout</th> <td>Permite al usuario cerrar sesión y salir de su cuenta de manera segura.</td> </tr> </tbody> </table>
 
 ### 5.2.3. SEO Tags and Meta Tags
 
@@ -3518,6 +3518,8 @@ Para mejorar la visibilidad y el rendimiento de HydroSmart en motores de búsque
 </p>
 
 ### 5.2.4. Searching Systems
+
+En HydroSmart, el sistema de búsqueda ha sido diseñado para integrarse de forma fluida con la jerarquía visual clara y secuencial que caracteriza tanto a la versión móvil como web de la aplicación. Esta funcionalidad permite a los usuarios localizar fácilmente cultivos específicos, consultar el historial de cultivos registrados, acceder a tutoriales desde la sección de acciones recomendadas, y filtrar sistemas de riego activos según criterios como el tipo de cultivo, el estado operativo o el nivel de batería. Asimismo, en la vista de gestión del agua, los usuarios pueden buscar por fechas o patrones de consumo. Este enfoque mejora significativamente la experiencia del usuario, permitiendo un acceso rápido y preciso a la información relevante, y facilitando una toma de decisiones eficiente en la gestión agrícola automatizada.
 
 ### 5.2.5. Navigation Systems
 
