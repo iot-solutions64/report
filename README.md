@@ -3657,13 +3657,75 @@ Los mockups añaden detalles visuales y de diseño a los wireframes, mostrando l
 
 ## 6.2. Implementation
 
-### 6.2.X. Sprint n
+### 6.2.1. Sprint 1
 
-#### 6.2.X.1. Sprint Planning n
+#### 6.2.1.1. Sprint Planning 1
 
-#### 6.2.X.2. Aspect Leaders and Collaborators
+Se planeó el primer sprint a través de una reunión presencial. Para ello, se hizo la siguiente tabla para registrar la información que se discutió.
 
-#### 6.2.X.3. Sprint Backlog n
+<table>
+  <tr>
+    <th>Sprint #</th>
+    <td>Sprint 1</td>
+  </tr>
+  <tr>
+    <th colspan="2"><strong>Sprint Planning Background</strong></th>
+  </tr>
+  <tr>
+    <th>Date</th>
+    <td>2025-05-03</td>
+  </tr>
+  <tr>
+    <th>Time</th>
+    <td>01:00 PM</td>
+  </tr>
+  <tr>
+    <th>Location</th>
+    <td>Presencial (En la universidad)</td>
+  </tr>
+  <tr>
+    <th>Prepared by</th>
+    <td>Paredes Puente, Sebastian Roberto</td>
+  </tr>
+  <tr>
+    <th>Attendees (to planning meeting)</th>
+    <td>
+      <p>Delgado Corrales, Piero Gonzalo</p>
+      <p>Paredes Puente, Sebastián Roberto</p>
+      <p>Salinas Torres, Salvador Antonio</p>
+      <p>Soto Salis, Natanael David</p>
+      <p>Neyra Santa Cruz, Marcelo Sebastian</p>
+    </td>
+  </tr>
+  <tr>
+    <th>Sprint n - 1 Review Summary</th>
+    <td>No hubo sprint anterior</td>
+  </tr>
+  <tr>
+    <th>Sprint n - 1 Retrospective Summary</th>
+    <td>No hubo sprint anterior</td>
+  </tr>
+  <tr>
+    <th colspan="2"><strong>Sprint Goal & User Stories</strong></th>
+  </tr>
+  <tr>
+    <th>Sprint 1 Goal</th>
+    <td>Desarrollar la landing page, el frontend web, backend de la aplicacion; asimismo, despliegar la landing page</td>
+  </tr>
+  <tr>
+    <th>Sprint 1 Velocity</th>
+    <td>44</td>
+  </tr>
+  <tr>
+    <th>Sum of Story Points</th>
+    <td>44</td>
+  </tr>
+  </tr>
+</table>
+
+#### 6.2.1.2. Aspect Leaders and Collaborators
+
+#### 6.2.1.3. Sprint Backlog 1
 
 #### 6.2.X.4. Development Evidence
 
