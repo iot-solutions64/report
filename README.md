@@ -3690,11 +3690,11 @@ Se planeó el primer sprint a través de una reunión presencial. Para ello, se 
   <tr>
     <th>Attendees (to planning meeting)</th>
     <td>
-      <p>Delgado Corrales, Piero Gonzalo</p>
       <p>Paredes Puente, Sebastián Roberto</p>
-      <p>Salinas Torres, Salvador Antonio</p>
-      <p>Soto Salis, Natanael David</p>
+      <p>Delgado Corrales, Piero Gonzalo</p>
       <p>Neyra Santa Cruz, Marcelo Sebastian</p>
+      <p>Soto Salis, Natanael David</p>
+      <p>Salinas Torres, Salvador Antonio</p>
     </td>
   </tr>
   <tr>
@@ -3724,6 +3724,20 @@ Se planeó el primer sprint a través de una reunión presencial. Para ello, se 
 </table>
 
 #### 6.2.1.2. Aspect Leaders and Collaborators
+
+
+En esta sección se presenta el equipo que participará en la elaboración del artefacto **Leadership-and-Collaboration Matrix (LACX)**, con el objetivo de brindar claridad y efectividad en la comunicación dentro del equipo. Para ello, se han identificado tres aspectos principales dentro del alcance del Sprint: **Desarrollo de Backend**, **Desarrollo de Frontend Web** y **Desarrollo de Landing Page**.
+
+Cada aspecto tiene asignados un líder y colaboradores que serán responsables de su ejecución. La matriz de liderazgo y colaboración es la siguiente:
+
+| **Team Member** (Last Name, First Name) | **GitHub Username** | **Desarrollo de Backend** | **Desarrollo de Frontend Web** | **Desarrollo de Landing Page** |
+|----------------------------------------|---------------------|---------------------------|-------------------------------|--------------------------------|
+| Paredes Puente, Sebastian Roberto          | sebastian123gonzalo       | -                         | -                             | L                              |
+| Delgado Corrales, Piero Gonzalo           | PieroD04              | -                         | -                             | L                              |
+| Neyra Santa Cruz, Marcelo Sebastian          | SN-Marcelo       | L                         | -                             | -                              |
+| Soto Salis, Natanael David           | NickDavid811       | C                         | -                             | -                              |
+| Salinas Torres, Salvador Antonio          | salvadoorssalinas       | -                         | C                             | -                              |
+
 
 #### 6.2.1.3. Sprint Backlog 1
 
