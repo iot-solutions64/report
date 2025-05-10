@@ -3633,9 +3633,148 @@ Los mockups añaden detalles visuales y de diseño a los wireframes, mostrando l
 
 ### 5.4.1. Applications Wireframes
 
+En este apartado, se muestran todos los wireframes necesarios para cumplir las funcionalidades indicadas en las User Stories con sus escenarios relacionados con la aplicación. Se muestra la versión y móvil y web de cada uno de los wireframes.
+
+**Sección de Registro e Inicio de Sesión**
+
+<img src="img/web-wireframe-1.png" alt="Wireframe - Aplicación">
+
+<img src="img/mobile-wireframe-1.png" alt="Wireframe - Aplicación (móvil)" width="400px">
+
+
+**Gestión de Cultivos**
+
+<img src="img/web-wireframe-2.png" alt="Wireframe - Aplicación">
+
+<img src="img/mobile-wireframe-2.png" alt="Wireframe - Aplicación (móvil)" width="500px">
+
+
+**Detalle de Cultivo**
+
+<img src="img/web-wireframe-3.png" alt="Wireframe - Aplicación">
+
+<img src="img/mobile-wireframe-3.png" alt="Wireframe - Aplicación (móvil)" width="500px">
+
+
+**Gestión de Agua**
+
+<img src="img/web-wireframe-4.png" alt="Wireframe - Aplicación">
+
+<img src="img/mobile-wireframe-4.png" alt="Wireframe - Aplicación (móvil)" width="350px">
+
+
+**Gestión de Sistemas**
+
+<img src="img/web-wireframe-5.png" alt="Wireframe - Aplicación">
+
+<img src="img/mobile-wireframe-5.png" alt="Wireframe - Aplicación (móvil)" width="400px">
+
+
+**Agregar nuevo sistema**
+
+<img src="img/web-wireframe-6.png" alt="Wireframe - Aplicación">
+
+<img src="img/mobile-wireframe-6.png" alt="Wireframe - Aplicación (móvil)" width="500px">
+
 ### 5.4.2. Applications Wireflow Diagrams
 
+Se presentan los wireflow diagrams de la aplicación, que muestran el flujo de navegación entre las diferentes pantallas y funcionalidades. Estos diagramas ayudan a visualizar cómo los usuarios interactuarán con la aplicación y cómo se moverán entre las distintas secciones.
+
+
+En este wireflow, se muestra como un usuario sin cuenta puede registrarse en la aplicación. Si el registro es exitoso, se le redirige a iniciar sesión. Si el registro falla, se le muestra un mensaje de error.
+
+<img src="img/wireflow1.png" alt="Wireflow Diagram" width="800px">
+
+
+En este wireflow, se muestra como un usuario registrado puede iniciar sesión en la aplicación. Si las credenciales son correctas, se le redirige a la vista de cultivos. Si las credenciales son incorrectas, se le muestra un mensaje de error.
+
+<img src="img/wireflow2.png" alt="Wireflow Diagram" width="800px">
+
+
+En este wireflow, se muestra como el usuario agricultor puede ver la lista de cultivos. Desde esta vista, puede agregar un nuevo cultivo, editar uno existente o eliminarlo. Al seleccionar un cultivo, se le redirige a la vista de detalle del cultivo.
+
+<img src="img/wireflow3.png" alt="Wireflow Diagram" width="800px">
+
+
+En este wireflow, se muestra como el usuario agricultor puede ver la vista de detalle del cultivo. Desde esta vista, puede ver datos como la humedad, temperatura.
+
+<img src="img/wireflow4.png" alt="Wireflow Diagram" width="800px">
+
+
+En este wireflow, se muestra como el usuario agricultor puede actuar frente algún evento de alerta. Así, se le recomendará tutoriales para actuar frente a la alerta.
+
+<img src="img/wireflow5.png" alt="Wireflow Diagram" width="800px">
+
+
+En este wireflow, se muestra como el usuario agricultor desde la vista de detalles del suelo, puede dirigirse a ver el sistema perteneciente al cultivo y ver el estado del sistema.
+
+<img src="img/wireflow6.png" alt="Wireflow Diagram" width="800px">
+
+
+En este wireflow, se muestra como el usuario agricultor desde la vista de detalles del cultivo, puede dirigirse a ver el historial de cultivos. Puede ver el historial limitado (30 días) o el historial completo.
+
+<img src="img/wireflow7.png" alt="Wireflow Diagram" width="800px">
+
+
+En este wireflow, se muestra como el usuario agricultor puede ver la gestión del agua, así como la cantidad de agua que se ha utilizado cada mes. Además, cuenta con el botón para ver el historial detallado de consumo de agua,  que muestra un gráfico de barras con el consumo de agua por mes.
+
+<img src="img/wireflow8.png" alt="Wireflow Diagram" width="800px">
+
+
+En este wireflow, se muestra como el usuario agricultor puede ver los sistemas que tiene. Desde esta vista, puede ver la lista completa de sistemas, editar uno existente o eliminarlo. Al seleccionar un sistema, se le redirige a la vista de detalle del sistema.
+
+<img src="img/wireflow9.png" alt="Wireflow Diagram" width="800px">
+
+
+En este wireflow, se muestra como el usuario agricultor puede agregar un nuevo sistema. Al seleccionar esta opción, se empezará a buscar sistemas disponibles. Si se encuentra un sistema, se le redirige a la vista de detalle del sistema. Si no se encuentra un sistema, se le muestra un mensaje de que no se encontraron sistemas disponibles.
+
+<img src="img/wireflow10.png" alt="Wireflow Diagram" width="800px">
+
 ### 5.4.3. Applications Mock-ups
+
+A continuación se presentan los mockups de la aplicación, que muestran el diseño visual final de cada pantalla, incluyendo colores, tipografía y elementos gráficos. Estos mockups reflejan cómo se verá la aplicación en su versión final.
+
+**Sección de Registro e Inicio de Sesión**
+
+<img src="img/web-mockup-1.png" alt="Mock-up - Aplicación">
+
+<img src="img/mobile-mockup-1.png" alt="Mock-up - Aplicación (móvil)" width="400px">
+
+
+**Gestión de Cultivos**
+
+<img src="img/web-mockup-2.png" alt="Mock-up - Aplicación">
+
+<img src="img/mobile-mockup-2.png" alt="Mock-up - Aplicación (móvil)" width="500px">
+
+
+**Detalle de Cultivo**
+
+<img src="img/web-mockup-3.png" alt="Mock-up - Aplicación">
+
+<img src="img/mobile-mockup-3.png" alt="Mock-up - Aplicación (móvil)" width="500px">
+
+
+**Gestión de Agua**
+
+<img src="img/web-mockup-4.png" alt="Mock-up - Aplicación">
+
+<img src="img/mobile-mockup-4.png" alt="Mock-up - Aplicación (móvil)" width="350px">
+
+
+**Gestión de Sistemas**
+
+<img src="img/web-mockup-5.png" alt="Mock-up - Aplicación">
+
+<img src="img/mobile-mockup-5.png" alt="Mock-up - Aplicación (móvil)" width="500px">
+
+
+**Agregar nuevo sistema**
+
+<img src="img/web-mockup-6.png" alt="Mock-up - Aplicación">
+
+<img src="img/mobile-mockup-6.png" alt="Mock-up - Aplicación (móvil)" width="500px">
+
 
 ### 5.4.4. Applications User Flow Diagrams
 
