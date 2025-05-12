@@ -3917,11 +3917,11 @@ Se planeó el primer sprint a través de una reunión presencial. Para ello, se 
   </tr>
   <tr>
     <th>Sprint 1 Velocity</th>
-    <td>44</td>
+    <td>37</td>
   </tr>
   <tr>
     <th>Sum of Story Points</th>
-    <td>44</td>
+    <td>37</td>
   </tr>
   </tr>
 </table>
@@ -3943,6 +3943,128 @@ Cada aspecto tiene asignados un líder y colaboradores que serán responsables d
 
 
 #### 6.2.1.3. Sprint Backlog 1
+
+El objetivo de este primer sprint fue el de desarrollar la landing page, el frontend web, backend de la aplicacion; asimismo, desplegar la landing page
+
+<table>
+<tr><th colspan="1" valign="top">Sprint #</th><th colspan="7" valign="top">Sprint 1</th></tr>
+<tr><td colspan="2" valign="top">User Story</td><td colspan="6" valign="top">Work-Item / Task</td></tr>
+<tr>
+  <td colspan="1" valign="top">Id</td>
+  <td colspan="1" valign="top">Title</td>
+  <td colspan="1" valign="top">Id</td>
+  <td colspan="1" valign="top">Title</td>
+  <td colspan="1" valign="top">Description</td>
+  <td colspan="1" valign="top">Estimation</td>
+  <td colspan="1" valign="top">Assigned To</td>
+  <td colspan="1" valign="top">Status (To-Do / In-Process / Review / Done)</td>
+</tr>
+
+<!-- US01 -->
+<tr>
+  <td>US01</td><td>Implementación de Barra de navegación</td>
+  <td>T01</td><td>Diseñar barra de navegación</td><td>Diseño visual y estructura HTML/CSS</td><td>0.5</td><td>Sebastian Paredes</td><td>To-Do</td>
+</tr>
+<tr>
+  <td></td><td></td>
+  <td>T02</td><td>Implementar navegación funcional</td><td>Implementar anclas y navegación responsive</td><td>0.5</td><td>Sebastian Paredes</td><td>To-Do</td>
+</tr>
+
+<!-- US02 -->
+<tr>
+  <td>US02</td><td>Visualizar logo y descripción</td>
+  <td>T03</td><td>Agregar logo y descripción</td><td>Insertar logo de empresa y texto representativo</td><td>1</td><td>Sebastian Paredes</td><td>To-Do</td>
+</tr>
+
+<!-- US03 -->
+<tr>
+  <td>US03</td><td>Detalles y Servicios de la empresa</td>
+  <td>T04</td><td>Diseñar sección de servicios</td><td>Presentar beneficios y características del sistema</td><td>1</td><td>Sebastian Paredes</td><td>To-Do</td>
+</tr>
+
+<!-- US04 -->
+<tr>
+  <td>US04</td><td>Clientes de la empresa</td>
+  <td>T05</td><td>Testimonios de clientes</td><td>Agregar opiniones reales o ficticias de usuarios</td><td>1</td><td>Sebastian Paredes</td><td>To-Do</td>
+</tr>
+
+<!-- US05 -->
+<tr>
+  <td>US05</td><td>Acerca de nosotros</td>
+  <td>T06</td><td>Diseñar sección misión/visión</td><td>Mostrar propósito y valores de la empresa</td><td>1</td><td>Sebastian Paredes</td><td>To-Do</td>
+</tr>
+
+<!-- US06 -->
+<tr>
+  <td>US06</td><td>Implementación de un Footer</td>
+  <td>T07</td><td>Agregar Footer</td><td>Diseño con links y redes sociales</td><td>1</td><td>Sebastian Paredes</td><td>To-Do</td>
+</tr>
+
+<!-- US07 -->
+<tr>
+  <td>US07</td><td>Translación a la aplicación web</td>
+  <td>T08</td><td>Botón de acceso web</td><td>Enlace directo a aplicación web desde la landing</td><td>1</td><td>Sebastian Paredes</td><td>To-Do</td>
+</tr>
+
+<!-- US09 -->
+<tr>
+  <td>US09</td><td>Verificación de temperatura del suelo</td>
+  <td>T10</td><td>Lectura de temperatura del suelo</td><td>Mostrar datos del sensor de temperatura</td><td>3</td><td>Marcelo Neyra, Natanael Solis</td><td>To-Do</td>
+</tr>
+
+<!-- US10 -->
+<tr>
+  <td>US10</td><td>Acciones Recomendadas</td>
+  <td>T11</td><td>Diseñar interfaz de recomendaciones</td><td>Mostrar alertas o sugerencias por estado de cultivo</td><td>2</td><td>Piero Delgado, Salvador Salinas</td><td>To-Do</td>
+</tr>
+
+<!-- US12 -->
+<tr>
+  <td>US12</td><td>Interacción con el riego automático</td>
+  <td>T12</td><td>Activar/desactivar riego</td><td>Control manual del sistema de riego</td><td>5</td><td>Marcelo Neyra, Natanael Solis</td><td>To-Do</td>
+</tr>
+
+<!-- US14 -->
+<tr>
+  <td>US14</td><td>Limites en el uso agua por cultivo</td>
+  <td>T13</td><td>Configurar límites de agua</td><td>Restringir consumo por cultivo</td><td>3</td><td>Marcelo Neyra, Natanael Solis</td><td>To-Do</td>
+</tr>
+
+<!-- US15 -->
+<tr>
+  <td>US15</td><td>Cantidad de agua disponible</td>
+  <td>T14</td><td>Mostrar nivel de agua</td><td>Medidor en tiempo real del tanque o depósito</td><td>5</td><td>Piero Delgado, Salvador Salinas</td><td>To-Do</td>
+</tr>
+
+<!-- US22 -->
+<tr>
+  <td>US22</td><td>Añadir nuevo sistema HydroSmart</td>
+  <td>T15</td><td>Formulario de registro de sistema</td><td>Permitir añadir nuevos nodos/sistemas</td><td>3</td><td>Piero Delgado, Salvador Salinas</td><td>To-Do</td>
+</tr>
+
+<!-- US23 -->
+<tr>
+  <td>US23</td><td>Quitar un sistema de HydroSmart</td>
+  <td>T16</td><td>Eliminar sistema existente</td><td>Permitir borrar un sistema inactivo</td><td>3</td><td>Piero Delgado, Salvador Salinas</td><td>To-Do</td>
+</tr>
+
+<!-- US24 -->
+<tr>
+  <td>US24</td><td>Registro de usuarios</td>
+  <td>T17</td><td>Formulario de registro</td><td>Campos de nombre, correo y contraseña</td><td>3</td><td>Piero Delgado, Salvador Salinas</td><td>To-Do</td>
+</tr>
+
+<!-- US25 -->
+<tr>
+  <td>US25</td><td>Acceso de Usuarios</td>
+  <td>T18</td><td>Login de usuario</td><td>Inicio de sesión con correo y contraseña</td><td>3</td><td>Piero Delgado, Salvador Salinas</td><td>To-Do</td>
+</tr>
+
+</table>
+
+
+
+
 
 #### 6.2.X.4. Development Evidence
 
