@@ -4062,10 +4062,6 @@ El objetivo de este primer sprint fue el de desarrollar la landing page, el fron
 
 </table>
 
-
-
-
-
 #### 6.2.X.4. Development Evidence
 
 #### 6.2.X.5. Testing Suite Evidence
@@ -4076,7 +4072,22 @@ El objetivo de este primer sprint fue el de desarrollar la landing page, el fron
 
 #### 6.2.X.8. Deployment Evidence
 
-#### 6.2.X.9. Collaboration Insights
+#### 6.2.1.9. Collaboration Insights
+ 
+Durante el Sprint 1, el equipo mantuvo una comunicación efectiva y constante mediante reuniones diarias tipo *daily scrum*, donde se revisaba el avance de las tareas, se resolvían bloqueos y se coordinaban actividades clave. Además, se utilizó WhatsApp como canal principal de comunicación para intercambiar información, compartir recursos y dar seguimiento en tiempo real al desarrollo.
+
+En cuanto a la gestión del código, se trabajó de forma diferenciada según el tipo de repositorio:
+
+- **Repositorio del reporte**: Todo el trabajo se realizó directamente en la rama `main`, permitiendo un control centralizado del contenido del informe sin la necesidad de múltiples ramas, lo que facilitó un flujo más directo de edición y seguimiento.
+
+- **Repositorio de la landing page**: Se desarrolló completamente en la rama `main`, ya que se trataba de un componente más estático y enfocado en presentación, lo cual no requirió una estructura compleja de ramas.
+
+- **Repositorios de frontend y backend de la aplicación**: Se implementó un flujo de trabajo basado en ramas, utilizando una rama `develop` como base de desarrollo y ramas específicas con el prefijo `/feature` para el desarrollo de funcionalidades individuales. Esto permitió un control más organizado, facilitando pruebas, revisiones y eventual integración al entorno principal.
+
+Este enfoque mixto permitió mantener un equilibrio entre agilidad y control del desarrollo. Gracias a la colaboración constante del equipo y a una adecuada distribución de tareas, se cumplieron exitosamente los objetivos del Sprint 1, asegurando un progreso sólido y bien documentado en este reporte.
+
+<img src="img/team-collaboration-insights-report-1.png" alt="Team Collaboration Insights 1">
+ 
 
 ## 6.3. Validation Interviews
 
