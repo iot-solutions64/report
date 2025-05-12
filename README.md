@@ -3631,6 +3631,8 @@ Los mockups añaden detalles visuales y de diseño a los wireframes, mostrando l
 
 ## 5.4. Applications UX/UI Design
 
+Link del Figma de Applications UX/UI Design: https://www.figma.com/design/dZGHe90xVgeIrFnflNogzc/UX-UI-Design--IoT?node-id=5257-5961&t=WAEc6KnZiu5vW5He-1
+
 ### 5.4.1. Applications Wireframes
 
 En este apartado, se muestran todos los wireframes necesarios para cumplir las funcionalidades indicadas en las User Stories con sus escenarios relacionados con la aplicación. Se muestra la versión y móvil y web de cada uno de los wireframes.
@@ -3660,7 +3662,7 @@ En este apartado, se muestran todos los wireframes necesarios para cumplir las f
 
 <img src="img/web-wireframe-4.png" alt="Wireframe - Aplicación">
 
-<img src="img/mobile-wireframe-4.png" alt="Wireframe - Aplicación (móvil)" width="500px">
+<img src="img/mobile-wireframe-4.png" alt="Wireframe - Aplicación (móvil)">
 
 
 **Gestión de Sistemas**
@@ -3706,12 +3708,12 @@ En este wireflow, se muestra como el usuario agricultor puede actuar frente alg�
 <img src="img/wireflow5.png" alt="Wireflow Diagram" width="800px">
 
 
-En este wireflow, se muestra como el usuario agricultor desde la vista de detalles del suelo, puede dirigirse a ver el sistema perteneciente al cultivo y ver el estado del sistema.
+En este wireflow, se muestra como el usuario agricultor desde la vista de detalles del cultivo, puede dirigirse a ver el historial de cultivos. Puede ver el historial limitado (30 días) o el historial completo.
 
 <img src="img/wireflow6.png" alt="Wireflow Diagram" width="800px">
 
 
-En este wireflow, se muestra como el usuario agricultor desde la vista de detalles del cultivo, puede dirigirse a ver el historial de cultivos. Puede ver el historial limitado (30 días) o el historial completo.
+En este wireflow, se muestra como el usuario agricultor desde la vista de detalles del suelo, puede dirigirse a ver el sistema perteneciente al cultivo y ver el estado del sistema.
 
 <img src="img/wireflow7.png" alt="Wireflow Diagram" width="800px">
 
@@ -3721,14 +3723,19 @@ En este wireflow, se muestra como el usuario agricultor puede ver la gestión de
 <img src="img/wireflow8.png" alt="Wireflow Diagram" width="800px">
 
 
-En este wireflow, se muestra como el usuario agricultor puede ver los sistemas que tiene. Desde esta vista, puede ver la lista completa de sistemas, editar uno existente o eliminarlo. Al seleccionar un sistema, se le redirige a la vista de detalle del sistema.
+En este wireflow, se muestra como el usuario agricultor puede ver la gestión de los tanques de agua. Desde esta vista, puede ver la lista completa de tanques, agregar uno nuevo, editar uno existente o eliminarlo.
 
 <img src="img/wireflow9.png" alt="Wireflow Diagram" width="800px">
 
 
-En este wireflow, se muestra como el usuario agricultor puede agregar un nuevo sistema. Al seleccionar esta opción, se empezará a buscar sistemas disponibles. Si se encuentra un sistema, se le redirige a la vista de detalle del sistema. Si no se encuentra un sistema, se le muestra un mensaje de que no se encontraron sistemas disponibles.
+En este wireflow, se muestra como el usuario agricultor puede ver los sistemas que tiene. Desde esta vista, puede ver la lista completa de sistemas, editar uno existente o eliminarlo. Al seleccionar un sistema, se le redirige a la vista de detalle del sistema.
 
 <img src="img/wireflow10.png" alt="Wireflow Diagram" width="800px">
+
+
+En este wireflow, se muestra como el usuario agricultor puede agregar un nuevo sistema. Al seleccionar esta opción, se empezará a buscar sistemas disponibles. Si se encuentra un sistema, lo podrá agregar y se le redirige a la vista de detalle del sistema. Si no se encuentra un sistema, se le muestra un mensaje de que no se encontraron sistemas disponibles.
+
+<img src="img/wireflow11.png" alt="Wireflow Diagram" width="800px">
 
 ### 5.4.3. Applications Mock-ups
 
@@ -3759,7 +3766,7 @@ A continuación se presentan los mockups de la aplicación, que muestran el dise
 
 <img src="img/web-mockup-4.png" alt="Mock-up - Aplicación">
 
-<img src="img/mobile-mockup-4.png" alt="Mock-up - Aplicación (móvil)" width="500px">
+<img src="img/mobile-mockup-4.png" alt="Mock-up - Aplicación (móvil)">
 
 
 **Gestión de Sistemas**
@@ -3779,6 +3786,7 @@ A continuación se presentan los mockups de la aplicación, que muestran el dise
 ### 5.4.4. Applications User Flow Diagrams
 
 En este apartado se presentan los diagramas de flujo de usuario (User Flow Diagrams) que ilustran el recorrido del usuario a través de la aplicación, desde el registro hasta la gestión de cultivos y sistemas. Estos diagramas ayudan a entender cómo los usuarios interactúan con la aplicación y cómo se mueven entre las diferentes funcionalidades.
+
 
 En este user flow, se muestra como un usuario sin cuenta puede registrarse en la aplicación. Si el registro es exitoso, se le redirige a iniciar sesión. Si el registro falla, se le muestra un mensaje de error.
 
@@ -3805,12 +3813,12 @@ En este user flow, se muestra como el usuario agricultor puede actuar frente alg
 <img src="img/userflow5.png" alt="User Flow Diagram" width="800px">
 
 
-En este user flow, se muestra como el usuario agricultor desde la vista de detalles del suelo, puede dirigirse a ver el sistema perteneciente al cultivo y ver el estado del sistema.
+En este user flow, se muestra como el usuario agricultor desde la vista de detalles del cultivo, puede dirigirse a ver el historial de cultivos. Puede ver el historial limitado (30 días) o el historial completo.
 
 <img src="img/userflow6.png" alt="User Flow Diagram" width="800px">
 
 
-En este user flow, se muestra como el usuario agricultor desde la vista de detalles del cultivo, puede dirigirse a ver el historial de cultivos. Puede ver el historial limitado (30 días) o el historial completo.
+En este user flow, se muestra como el usuario agricultor desde la vista de detalles del suelo, puede dirigirse a ver el sistema perteneciente al cultivo y ver el estado del sistema.
 
 <img src="img/userflow7.png" alt="User Flow Diagram" width="800px">
 
@@ -3820,14 +3828,19 @@ En este user flow, se muestra como el usuario agricultor puede ver la gestión d
 <img src="img/userflow8.png" alt="User Flow Diagram" width="800px">
 
 
-En este user flow, se muestra como el usuario agricultor puede ver los sistemas que tiene. Desde esta vista, puede ver la lista completa de sistemas, editar uno existente o eliminarlo. Al seleccionar un sistema, se le redirige a la vista de detalle del sistema.
+En este user flow, se muestra como el usuario agricultor puede ver la gestión de los tanques de agua. Desde esta vista, puede ver la lista completa de tanques, agregar uno nuevo, editar uno existente o eliminarlo.
 
 <img src="img/userflow9.png" alt="User Flow Diagram" width="800px">
 
 
-En este user flow, se muestra como el usuario agricultor puede agregar un nuevo sistema. Al seleccionar esta opción, se empezará a buscar sistemas disponibles. Si se encuentra un sistema, se le redirige a la vista de detalle del sistema. Si no se encuentra un sistema, se le muestra un mensaje de que no se encontraron sistemas disponibles.
+En este user flow, se muestra como el usuario agricultor puede ver los sistemas que tiene. Desde esta vista, puede ver la lista completa de sistemas, editar uno existente o eliminarlo. Al seleccionar un sistema, se le redirige a la vista de detalle del sistema.
 
 <img src="img/userflow10.png" alt="User Flow Diagram" width="800px">
+
+
+En este user flow, se muestra como el usuario agricultor puede agregar un nuevo sistema. Al seleccionar esta opción, se empezará a buscar sistemas disponibles. Si se encuentra un sistema, lo podrá agregar y se le redirige a la vista de detalle del sistema. Si no se encuentra un sistema, se le muestra un mensaje de que no se encontraron sistemas disponibles.
+
+<img src="img/userflow11.png" alt="User Flow Diagram" width="800px">
 
 ## 5.5. Applications Prototyping
 
