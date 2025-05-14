@@ -3463,7 +3463,31 @@ Provee la implementación técnica de persistencia y control físico del sistema
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
-Para mantener una identidad visual en todos los puntos de contacto, la interfaz de usuario en la web, la aplicación móvil y los dispositivos IoT seguirá las mismas directrices establecidas en el apartado de General Style Guidelines. Se utilizará la misma paleta de colores y tipografía, garantizando una experiencia uniforme, reconocible y alineada con los valores de la marca HydroSmart.
+Para mantener una identidad visual coherente en todos los puntos de contacto, la interfaz de usuario en la web, la aplicación móvil y los dispositivos IoT seguirá las mismas directrices establecidas en la sección de **General Style Guidelines**. Se utilizará la misma paleta de colores y tipografía, garantizando una experiencia uniforme, reconocible y alineada con los valores del proyecto **HydroSmart**.
+
+A continuación, se detallan los lineamientos visuales clave para la interfaz de usuario en estas plataformas:
+
+- **Botones (default, Hover, Pressed, Inactive):** El diseño y comportamiento de los botones será consistente a través de todos los dispositivos, respetando la paleta de colores y los efectos visuales para estados de interacción.
+  
+- **Tamaño de la Fuente (Font Size):** Se mantendrá un tamaño de fuente estandarizado que optimiza la legibilidad tanto en pantallas pequeñas como grandes, asegurando una experiencia de usuario clara y accesible.
+
+- **Espaciado (Spacing):** El espaciado entre los elementos será uniforme para crear una interfaz limpia y ordenada, mejorando la navegación y la estética general.
+
+- **Sistema de Rejillas (Grid System):** El sistema de rejillas se adapta a diferentes tamaños de pantalla, garantizando una estructura organizada en dispositivos móviles, tabletas y escritorios.
+
+A continuación, se presentan las imágenes correspondientes a estos lineamientos visuales:
+
+1. **Botones (default, Hover, Pressed, Inactive):**  
+   ![Botones](img/buttonStyles.png)
+
+2. **Tamaño de la Fuente (Font Size):**  
+   ![Tamaño de la Fuente](img/fontSize.png)
+
+3. **Espaciado (Spacing):**  
+   ![Espaciado](img/spacing.png)
+
+4. **Sistema de Rejillas (Grid System):**  
+   ![Sistema de Rejillas](img/gridStyles.png)
 
 ## 5.2. Information Architecture
 
