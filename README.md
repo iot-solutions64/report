@@ -4226,7 +4226,7 @@ El objetivo de este primer sprint fue el de desarrollar la landing page, el fron
 
 </table>
 
-#### 6.2.X.4. Development Evidence
+#### 6.2.1.4. Development Evidence
 Para esta entrega, se realizaron 3 aplicaciones, la landing page, frontend web application y backend application. Las 3 aplicaciones se realizaron en paralelo y en los siguientes repositorios:
 
 1. Backend Application: **[Repositorio Backend](https://github.com/iot-solutions64/backend)**
@@ -4273,9 +4273,10 @@ Para esta entrega, se realizaron 3 aplicaciones, la landing page, frontend web a
 | frontend-web | develop | bee3943d6249408b73229922e93a61251c720d77 | Merge pull request #6 from iot-solutions64/feature/system | feat: system views | 13/05/2025 |
 | frontend-web | develop | c9bab9bd92d94b4583996ecdcc27147f800cb786 | feat: suggestion videos for recommended actions | none | 14/05/2025 |
 | frontend-web | develop | 8f149fe532fcbfcc1146f83673973ead79c6daf7 | Merge pull request #7 from iot-solutions64/feature/recommended-actions | none | 14/05/2025 |
-#### 6.2.X.5. Testing Suite Evidence
 
-#### 6.2.X.6. Execution Evidence
+#### 6.2.1.5. Testing Suite Evidence
+
+#### 6.2.1.6. Execution Evidence
 
 ##### Para esta entrega, se han desarrollado los siguientes endpoints en el backend
 ##### Controlador de Autenticación de usuario
@@ -4346,9 +4347,19 @@ Se han desarrollado 2 vistas para la gestión de sistemas. La primera vista es l
 ![Vista de Sistemas Detalle](img/sprint1-execution-frontend-11.png)
 
 
-#### 6.2.X.7. Services Documentation
+#### 6.2.1.7. Services Documentation
 
-#### 6.2.X.8. Deployment Evidence
+#### 6.2.1.8. Deployment Evidence
+
+Para el despliegue del frontend, se utilizó Netlify, una plataforma de despliegue y alojamiento para aplicaciones web modernas. Permite desplegar aplicaciones de forma rápida y sencilla, con integración continua y escalabilidad automática. El frontend está disponible en el siguiente enlace: [Frontend Web Application](https://hydrosmart-iot.netlify.app/)
+
+Primero, se creó una cuenta de Netlify y se accedió a la aplicación. Luego, se hizo clic en el botón "New site from GitHub" y se seleccionó el repositorio de GitHub donde se encuentra el código del frontend.
+![Selección de repositorio](img/sprint1-deployment-frontend-1.png)
+
+Después, se seleccionó la rama `release` y se configuraron las opciones de despliegue. Finalmente, se hizo clic en el botón "Deploy site" para iniciar el proceso de despliegue.
+
+![Despliegue de la aplicación](img/sprint1-deployment-frontend-2.png)
+![Aplicación desplegada](img/sprint1-deployment-frontend-3.png)
 
 #### 6.2.1.9. Collaboration Insights
  
