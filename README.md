@@ -4351,6 +4351,15 @@ Se han desarrollado 2 vistas para la gestión de sistemas. La primera vista es l
 
 #### 6.2.1.8. Deployment Evidence
 
+Para el despliegue de la landing se utilizó GitHub Pages, un servicio de alojamiento gratuito proporcionado por GitHub que permite publicar sitios web directamente desde un repositorio. Esta opción es ideal para proyectos estáticos como landings, ya que ofrece una integración sencilla y directa con GitHub.
+
+Primero, se creó el repositorio en GitHub y se subieron los archivos del proyecto de la landing. Luego, se accedió a la configuración del repositorio, sección "Pages", y se eligió la rama principal (main) como fuente de publicación, seleccionando la carpeta raíz.
+
+Después de guardar los cambios, GitHub generó automáticamente la URL pública del sitio web, la cual quedó disponible en minutos. La landing puede ser visitada en el siguiente enlace: [Landing Page](https://iot-solutions64.github.io/landing-page/)
+
+![Despliegue de la aplicación](img/sprint1-deployment-landing-1.png)
+
+
 Para el despliegue del frontend, se utilizó Netlify, una plataforma de despliegue y alojamiento para aplicaciones web modernas. Permite desplegar aplicaciones de forma rápida y sencilla, con integración continua y escalabilidad automática. El frontend está disponible en el siguiente enlace: [Frontend Web Application](https://hydrosmart-iot.netlify.app/)
 
 Primero, se creó una cuenta de Netlify y se accedió a la aplicación. Luego, se hizo clic en el botón "New site from GitHub" y se seleccionó el repositorio de GitHub donde se encuentra el código del frontend.
