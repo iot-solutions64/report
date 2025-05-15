@@ -3878,6 +3878,16 @@ En este user flow, se muestra como el usuario agricultor puede agregar un nuevo 
 
 ## 5.5. Applications Prototyping
 
+En esta sección se presentan los prototipos de la aplicación HydroSmart, tanto para la versión web como para la versión móvil. Estos prototipos permiten visualizar y probar la interfaz de usuario y la experiencia de usuario antes de la implementación final.
+
+[Enlace a prototipo web en Figma](https://www.figma.com/proto/dZGHe90xVgeIrFnflNogzc/UX-UI-Design--IoT?node-id=5121-1796&p=f&t=IDlzW8jHozdgLpV7-1&scaling=scale-down&content-scaling=fixed&page-id=3122%3A648&starting-point-node-id=5121%3A1796)
+
+[Enlace a prototipo móvil en Figma](https://www.figma.com/proto/dZGHe90xVgeIrFnflNogzc/UX-UI-Design--IoT?node-id=5148-8913&p=f&t=t6iW7Xef8vPinDsu-1&scaling=scale-down&content-scaling=fixed&page-id=5148%3A7382&starting-point-node-id=5148%3A8913)
+
+<img src="img/applications-prototyping.png" alt="Prototipo de la aplicación" width="600px">
+
+[Enlace a video de prototipo web y móvil](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b127_upc_edu_pe/EZgB4ykAX9ZCmvwzDKE6VVEB2ibqPGudFnnR1NwBbRU2XQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=KhDFvR)
+
 <div style="page-break-after: always;"></div>
 
 # Capítulo VI: Product Implementation, Validation & Deployment
