@@ -3896,11 +3896,131 @@ En esta sección se presentan los prototipos de la aplicación HydroSmart, tanto
 
 ### 6.1.1. Development Environment Configuration
 
+**Product UX/UI Design**
+
+Se realizaron los productos de UX con la herramienta UXPressia, así como el User Persona, Empathy Mapping, Impact Mapping, entre otras. Gracias a esto pudimos modelar bien los diseños de la experiencia de usuario, lo cual nos sirve para poder ponernos en una mejor perspectiva para nuestros segmentos objetivo. Por otro lado, hicimos los prototipos de la aplicación móvil utilizando la herramienta Figma, la cual nos permitió crear los Wireframes y Mock-ups para tener un diseño previo al desarrollo de la aplicación.
+
+
+**Software Development**
+
+Como principales IDEs, utilizamos WebStorm y Intellij Idea, con los cuales estamos más familiarizados por ser de Jetbrains. Por otro lado, para el desarrollo usamos los lenguajes aprendidos previamente, como HTML y CSS para la landing page, Java para el backend, JavaScript para el frontend web, y Dart para la aplicación móvil.
+
+
+**Software Testing**
+
+Las pruebas de aceptación son importantes a realizar para comprobar que los criterios de aceptación planteados están favoreciendo a las necesidades del negocio y cumplir con los requerimientos, para lo cual utilizamos el lenguaje Gherkin. Este consiste en trabajar el escenario con Given When Then, y lograr identificar las variables de input y output, lo cual es sencillo de entender para todos ya que utiliza lenguaje natural. Gracias a este, es que se logra garantizar la calidad del software, por ello cumple un papel esencial en los proyectos de desarrollo.
+
 ### 6.1.2. Source Code Management
+
+Usuarios de GitHub
+
+<table>
+  <thead>
+    <tr>
+        <th>Integrante</th>
+        <th>Usuario de GitHub</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+        <td>Delgado Corrales, Piero Gonzalo</td>
+        <td>PieroD04</td>
+    </tr>
+    <tr>
+        <td>Paredes Puente, Sebastián Roberto</td>
+        <td>sebastian123gonzalo</td>
+    </tr>
+    <tr>
+        <td>Salinas Torres, Salvador Antonio</td>
+        <td>salvadoorssalinas</td>
+    </tr>
+    <tr>
+        <td>Neyra Santa Cruz, Marcelo Sebastian</td>
+        <td>SN-Marcelo</td>
+    </tr>
+    <tr>
+        <td>Soto Salis, Natanael David</td>
+        <td>NickDavid811</td>
+    </tr>
+  </tbody>
+</table>
+
+**URL de la organización en GitHub:** https://github.com/iot-solutions64
+
+Para el desarrollo del trabajo se hará uso de GitFlow, el cual es un modelo de flujo de trabajo para la gestión de control de versiones Git. Está compuesta por ramas y cada una cumple un propósito distinto. Las ramas que utilizamos son: Feature, Develop, Release y Main.
 
 ### 6.1.3. Style Guide & Conventions
 
+En el desarrollo de este trabajo, se utilizará una gran variedad de lenguajes para trabajar en el Landing Page, Frontend Web y Mobile Application. Para ello, se utilizará la siguiente guía de estilos y convenciones.
+
+**HTML**
+
+Es el lenguaje utilizado para estructurar el contenido de una página web, brindando una variedad de elementos posibles como texto, imágenes, formularios, etc.
+https://www.w3schools.com/html/html5_syntax.asp
+
+- Declarar el tipo de documento en la primera línea con \<!DOCTYPE html>.
+- Respetar la estructura básica del HTML: \<html>, \<head>, \<body>.
+- Declarar el título de la página para dar a conocer al usuario en qué página se encuentra. (Usar el elemento \<title> en \<head>)
+- Se usará la indentación coherente para lograr una lectura sencilla del código, por lo que es importante tener la tabulación correcta para cada nivel de anidamiento.
+- Siempre cerrar los elementos que lo requieran, ya sea una división, párrafo, título. (Si se declara una \<div>, siempre cerrarlo con \</div>)
+- Declarar el atributo “alt” para las imágenes.
+
+
+**CSS**
+
+Es el lenguaje utilizado para definir el diseño de la página web, así como los estilos, fuentes, colores, contenedores, etc.
+https://google.github.io/styleguide/htmlcssguide.html
+- Usar indentación de forma correcta.
+- Los nombres para elementos deben ser cortos y en minúsculas.
+- Declarar los colores en código hexadecimal. (Ejemplo: #024A86)
+- Dejar comentarios para conocer el propósito del estilo y su uso.
+- El diseño debe ser responsive para que los usuarios lo puedan visualizar cómodamente desde el dispositivo en qué se encuentren.
+
+
+**JavaScript**
+
+Es un lenguaje de programación utilizado para crear interactividad en la página web, así como la lógica de negocio.
+https://google.github.io/styleguide/jsguide.html
+
+- Declarar nombres coherentes y descriptivos para variables, funciones y clases.
+- Incluir comentarios que expliquen claramente el propósito de cada bloque de código.
+- Finalizar cada línea con punto y coma para mantener consistencia.
+- Usar const y let de forma adecuada: const para valores que no cambian y let para aquellos que sí.
+- Emplear comparaciones estrictas (=== y !==) para evitar errores de tipo.
+- Aprovechar el tipado de TypeScript para declarar tipos explícitos y prevenir errores en tiempo de compilación.
+
+**Dart**
+
+Es un lenguaje de programación utilizado para crear aplicaciones móviles. Se utiliza para crear la aplicación móvil de HydroSmart, la cual está desarrollada en Flutter.
+https://dart.dev/guides/language/effective-dart
+
+- Nombrar las variables, funciones y clases con CamelCase, además de ser significativos y cortos.
+- Usar lowerCamelCase para los nombres de las variables y funciones.
+- Usar indentación correctamente para un código coherente y ordenado.
+- Usar comillas dobles (“) para las cadenas de texto.
+- Dejar comentarios en cada bloque de código para explicar su funcionalidad.
+- Declarar constantes cuando sean variables que no cambiarán su valor a lo largo de todo el código.
+
+**Java**
+
+Es un lenguaje de programación utilizado para la programación web, programación móvil, entre otros. Es capaz de adaptarse para funcionar en distintas plataformas. https://google.github.io/styleguide/javaguide.html
+
+- Nombrar las variables, funciones y clases con CamelCase, además de ser significativos y cortos.
+- Utilizar HTTPS para establecer una conexión segura.
+- Usar indentación correctamente para un código coherente y ordenado.
+- Usar comillas dobles (“) para las cadenas de texto.
+- Dejar comentarios en cada bloque de código para explicar su funcionalidad.
+- Declarar constantes cuando sean variables que no cambiarán su valor a lo largo de todo el código.
+
 ### 6.1.4. Deployment Configuration
+
+Para la configuración del despliegue de la aplicación, utilizaremos Git, un sistema de control de versiones distribuido que es bastante utilizado en proyectos de desarrollo de software. Es una herramienta esencial para trabajar colaborativamente y poder hacer el seguimiento de los cambios realizados por los miembros del grupo. Una de sus mejores ventajas es su capacidad para rastrear los cambios en los archivos de un proyecto a lo largo del tiempo. Con Git, es posible crear ramas, realizar cambios en ellas y fusionarlos eficientemente, permitiendo que varios desarrolladores trabajen en diferentes aspectos del proyecto simultáneamente sin interferencias.
+
+Por otro lado, tenemos a GitHub, el cual es la plataforma para poder alojar repositorios de Git. Es uno de los servicios más utilizados por desarrolladores de forma mundial, ya que permite manejar repositorios públicos y privados para almacenar el código en la nube. A parte de ello, maneja el historial de los repositorios, permitiendo a los usuarios acceder a todas las versiones trabajadas, permitiendo que puedan retornar a una versión anterior en caso lo deseen. Ofrece otras herramientas que son muy útiles como los pull requests, los cuales son solicitudes de revisiones de una rama y luego poder fusionarla con otra rama.
+
+Asimismo, utilizaremos el sistema de GitHub Pages para desplegar la Landing Page de nuestro proyecto. Este es un servicio que ofrece GitHub para alojar sitios web estáticos de forma gratuita. Permite a los desarrolladores alojar un sitio web directamente desde un repositorio de GitHub, lo que facilita la publicación de sitios web sin tener que preocuparse por la infraestructura de alojamiento.
+
+Para el Backend se usará Railway, que es un servicio de alojamiento de aplicaciones web y APIs. Permite a los desarrolladores desplegar sus aplicaciones en la nube sin necesidad de preocuparse por la infraestructura subyacente. Finalmente, para la aplicación web se usará Netlify, una plataforma de despliegue y alojamiento para aplicaciones web modernas. Permite desplegar aplicaciones de forma rápida y sencilla, con integración continua y escalabilidad automática.
 
 ## 6.2. Implementation
 
@@ -3980,10 +4100,10 @@ Cada aspecto tiene asignados un líder y colaboradores que serán responsables d
 | **Team Member** (Last Name, First Name) | **GitHub Username** | **Desarrollo de Backend** | **Desarrollo de Frontend Web** | **Desarrollo de Landing Page** |
 |----------------------------------------|---------------------|---------------------------|-------------------------------|--------------------------------|
 | Paredes Puente, Sebastian Roberto          | sebastian123gonzalo       | -                         | -                             | L                              |
-| Delgado Corrales, Piero Gonzalo           | PieroD04              | -                         | -                             | L                              |
+| Delgado Corrales, Piero Gonzalo           | PieroD04              | -                         | L                             | -                              |
+| Salinas Torres, Salvador Antonio          | salvadoorssalinas       | -                         | C                             | -                              |
 | Neyra Santa Cruz, Marcelo Sebastian          | SN-Marcelo       | L                         | -                             | -                              |
 | Soto Salis, Natanael David           | NickDavid811       | C                         | -                             | -                              |
-| Salinas Torres, Salvador Antonio          | salvadoorssalinas       | -                         | C                             | -                              |
 
 
 #### 6.2.1.3. Sprint Backlog 1
