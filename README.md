@@ -75,16 +75,14 @@
   </thead>
   <tbody>
   <tr>
-      <td><strong>TB1</strong></td>
+      <th>TB1</th>
       <td>08/04/2025</td>
-      <td> <!--Agregar rowspan="num de entregas" en el futuro-->
-        <ul>
-          <li>Paredes Puente, Sebastian Roberto</li>
-          <li>Delgado Corrales, Piero Gonzalo</li>
-          <li>Salinas Torres, Salvador Antonio</li>
-          <li>Neyra Santa Cruz, Marcelo Sebastian</li>
-          <li>Soto Salis, Natanael David</li>
-        </ul>
+      <td rowspan="2"> <!--Agregar rowspan="num de entregas" en el futuro-->
+        <p>Paredes Puente, Sebastian Roberto</p>
+        <p>Delgado Corrales, Piero Gonzalo</p>
+        <p>Salinas Torres, Salvador Antonio</p>
+        <p>Neyra Santa Cruz, Marcelo Sebastian</p>
+        <p>Soto Salis, Natanael David</p>
       </td>
       <td>
         Se han agregado los siguientes capítulos
@@ -96,19 +94,21 @@
         </ul>
       </td>
   </tr>
+  <tr>
+      <th>Trabajo Parcial</th>
+      <td>14/05/2025</td>
+      <td>
+        Se han agregado los siguientes capítulos
+        <ul>
+          <li>Capítulo 5</li>
+          <li>Capítulo 6</li>
+        </ul>
+      </td>
+  </tr>
   <!--
   <tr>
-      <td><strong>TP1</strong></td>
+      <th>TB2</th>
       <td>--/--/--</td>
-      <td>
-        <ul>
-          <li>Paredes Puente, Sebastian Roberto</li>
-          <li>Delgado Corrales, Piero Gonzalo</li>
-          <li>Salinas Torres, Salvador Antonio</li>
-          <li>ALUMNO X</li>
-          <li>ALUMNO X</li>
-        </ul>
-      </td>
       <td>
         DESCRIPCION X
         <ul>
@@ -119,38 +119,8 @@
       </td>
   </tr>
   <tr>
-      <td><strong>TB2</strong></td>
+      <th>Trabajo Final</th>
       <td>--/--/--</td>
-      <td>
-        <ul>
-          <li>Paredes Puente, Sebastian Roberto</li>
-          <li>Delgado Corrales, Piero Gonzalo</li>
-          <li>Salinas Torres, Salvador Antonio</li>
-          <li>ALUMNO X</li>
-          <li>ALUMNO X</li>
-        </ul>
-      </td>
-      <td>
-        DESCRIPCION X
-        <ul>
-          <li>X</li>
-          <li>X</li>
-          <li>X</li>
-        </ul>
-      </td>
-  </tr>
-  <tr>
-      <td><strong>TF1</strong></td>
-      <td>--/--/--</td>
-      <td>
-        <ul>
-          <li>Paredes Puente, Sebastian Roberto</li>
-          <li>Delgado Corrales, Piero Gonzalo</li>
-          <li>Salinas Torres, Salvador Antonio</li>
-          <li>ALUMNO X</li>
-          <li>ALUMNO X</li>
-        </ul>
-      </td>
       <td>
         DESCRIPCION X
         <ul>
@@ -180,6 +150,20 @@
       <img src="img/insights-tb1.png">
       <img src="img/commits-1-tb1.png">
       <img src="img/commits-2-tb1.png">
+    </td>
+  </tr>
+  <tr>
+    <th colspan="2">Entrega Trabajo Parcial</th>
+  </tr>
+  <tr>
+    <td>
+      <p> Para la entrega TB1 se realizó la primera versión de la aplicación web, tanto el frontend como el backend, así como la landing page. El equipo se dividió en 3 subdivisiones, siendo 2 integrantes para el frontend, 2 para el backend y 1 para la landing page</p>
+      <p> El informe se realizó en el siguiente repositorio:</p>
+      <p>Reporte: <a href="https://github.com/iot-solutions64/report">Documento Trabajo Parcial</a></p>
+      <p>Aplicación Frontend: <a href="https://hydrosmart-iot.netlify.app">Enlace a la aplicación</a></p>
+    </td>
+    <td>
+      <p>TBD</p>
     </td>
   </tr>
 </table>
@@ -355,7 +339,7 @@
         <h3>TB1</h3>
         <h4>Delgado Corrales, Piero Gonzalo</h4>
           <p>Para este entregable, coordiné constantemente con el equipo para mantener una línea de trabajo coherente y me comprometí a cumplir puntualmente con las tareas asignadas para evitar retrasos que pudieran afectar el avance colectivo.</p>
-        <h4> Neyra Santa Cruz, Marcelo Sebastian </h4>
+        <h4>Neyra Santa Cruz, Marcelo Sebastian</h4>
           <p>Para este entregable, como líder de equipo, asigné a cada uno de los integrantes del equipo su parte correspondiente. También, aporté al grupo manteniendome activo en los avances y actividades realizadas</p>
         <h4>Paredes Puente, Sebastian Roberto</h4>
           <p>Para este entregable, demostré capacidad de trabajo en equipo al coordinar con mis compañeros para mantener una línea de trabajo coherente y asegurar el cumplimiento puntual de las tareas asignadas. Participé activamente en la división equitativa de actividades y contribuyendo de manera eficiente para lograr los objetivos colectivos.</p>
@@ -363,10 +347,23 @@
           <p>Para este entregable, se dividió las actividades de forma igualitaria para que todos los miembros puedan aportar eficientemente en el trabajo. Siempre estuve al tanto de las actividades que ibamos realizando y las que faltaban realizar.</p>
         <h4>Soto Salis, Natanael David</h4>
           <p>Para este entregable, se dividió las tareas de forma equitativa entre todos los miembros del equipo, asegurando que cada uno tuviera una parte justa del trabajo. Me mantuve al tanto de los avances de mis compañeros y contribuí con mis ideas para mejorar el desarrollo del proyecto.</p>
+        <h3>Trabajo Parcial</h3>
+        <h4>Delgado Corrales, Piero Gonzalo</h4>
+          <p>TBD</p>
+        <h4>Neyra Santa Cruz, Marcelo Sebastian</h4>
+          <p>Para este entregable, como líder de equipo, me encargué de gestionar al grupo para el correcto desarrollo de las 3 aplicaciones de esta entrega, el backend, frontend y landing page. Me aseguré de estar monitoreando el constante avance para cumplir con el nivel calidad esperado</p>
+        <h4>Paredes Puente, Sebastian Roberto</h4>
+          <p>TBD</p>
+        <h4>Salinas Torres, Salvador Antonio</h4>
+          <p>TBD</p>
+        <h4>Soto Salis, Natanael David</h4>
+          <p>TBD</p>
       </td>
       <td>
         <h4>TB1</h4>
         <p>Para la entrega de la TB1, a cada integrante del grupo se le asignó una parte del informe para trabajar de manera más dinámica. Al final del proceso, se revisó en conjunto todo el informe para levantar alguna observación que se haya visto</p>
+        <h4>Trabajo Parcial</h4>
+        <p>Para la entrega de la TB1, el grupo se dividió en pequeñas subdivisiones con el motivo de desarrollar correcta y eficientemente las aplicaciones. Al final del proceso, se revisaron todas las aplicaciones y el informe para levantar alguna observación que se haya encontrado</p>
       </td>
     </tr>
     <tr>
@@ -375,7 +372,7 @@
         <h3>TB1</h3>
         <h4>Delgado Corrales, Piero Gonzalo</h4>
           <p>Para este entregable, opiné sobre distintas partes del informe y características de la aplicación, aportando sugerencias que fueron consideradas por el equipo para mejorar el desarrollo del proyecto.</p>
-        <h4> Neyra Santa Cruz, Marcelo Sebastian </h4>
+        <h4>Neyra Santa Cruz, Marcelo Sebastian</h4>
           <p>Para este entregable, como líder de equipo, establecí metas y planifiqué los avances de cada uno de los entregables para cumplir con el objetivo propuesto. Para asegurarme que se esté trabajando correctamente, se realizaron algunas reuniones y se coordinó constantemente por la plataforma WhatsApp</p>
         <h4>Paredes Puente, Sebastian Roberto</h4>
           <p>Para este entregable, contribuí al desarrollo del proyecto mediante la propuesta de ideas. Además, me mantuve informado sobre los avances colectivos del equipo, lo que permitió planificar adecuadamente las tareas correspondientes y establecer metas claras.</p>
@@ -383,10 +380,23 @@
           <p>Para este entregable, siempre estuve al tanto de los avances que realizamos todos los miembros en conjunto. De esta forma, se planificaron las tareas a realizar y las metas a cumplir para la fecha límite del entregable.</p>
         <h4>Soto Salis, Natanael David</h4>
           <p>Para este entregable, me mantuve al tanto de los avances de mis compañeros y contribuí con mis ideas para mejorar el desarrollo del proyecto. Además, se establecieron metas y tareas a cumplir para asegurar que todos estemos alineados en el trabajo.</p>
+        <h3>Trabajo Parcial</h3>
+        <h4>Delgado Corrales, Piero Gonzalo</h4>
+          <p>TBD</p>
+        <h4>Neyra Santa Cruz, Marcelo Sebastian</h4>
+          <p>Para este entregable, como líder de equipo, establecí metas y planifiqué los avances de cada uno de las 3 aplicaciones solicitadas para este entregable. Para asegurarme que se esté trabajando correctamente, se realizaron algunas reuniones y se coordinó constantemente por la plataforma WhatsApp</p>
+        <h4>Paredes Puente, Sebastian Roberto</h4>
+          <p>TBD</p>
+        <h4>Salinas Torres, Salvador Antonio</h4>
+          <p>TBD</p>
+        <h4>Soto Salis, Natanael David</h4>
+          <p>TBD</p>
       </td>
       <td>
         <h4>TB1</h4>
         <p>Para la entrega de la TB1, se establecieron metas a cumplir, siendo la principal la validación de nuestro proyecto. Se cumplieron con todos los puntos pedidos en el tiempo indicado</p>
+        <h4>Trabajo Parcial</h4>
+        <p>Para la entrega del Trabajo Parcial, se establecieron metas a cumplir, siendo la principal la validación de las 3 aplicaciones realizadas. Se cumplieron con todos los puntos pedidos en el tiempo indicado y se espera mejorar las aplicaciones en las siguientes entregas</p>
       </td>
     </tr>
   </tbody>
