@@ -4097,7 +4097,52 @@ El objetivo de este primer sprint fue el de desarrollar la landing page, el fron
 </table>
 
 #### 6.2.X.4. Development Evidence
+Para esta entrega, se realizaron 3 aplicaciones, la landing page, frontend web application y backend application. Las 3 aplicaciones se realizaron en paralelo y en los siguientes repositorios:
 
+1. Backend Application: **[Repositorio Backend](https://github.com/iot-solutions64/backend)**
+2. Frontend Application: **[Repositorio Frontend](https://github.com/iot-solutions64/frontend-web)**
+3. Landing Page Application: **[Repositorio Landing Page](https://github.com/iot-solutions64/landing-page)**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date)|
+| --- | --- | --- | --- | --- | --- |
+| landing-page | main | 861f42b08f2eb0211a86a52ccd8c418616ece22c | feat: landing page sections added | none | 28/04/2025 |
+| landing-page | main | 708cc85ecf6810e19c021fd86b65775ed332f5e0 | feat: styles for "p" elements changed | none | 28/04/2025 |
+| landing-page | main | 53bd616aa03427668845c2dcf5fe981aee5617a9 | feat: content for features.html changed | none | 04/05/2025 |
+| landing-page | main | 0592d05e0012ca8f94e855344a4bed6ba3c07924 | fat: change Iot-solutions64 for IoT Solutions | none | 04/05/2025 |
+| landing-page | main | e56261c796f1650f58238cddc54423ae2f8ed771 | feat: update about-app.css | none | 04/05/2025 |
+| landing-page | main | 4a96374ed318ba7388f21cacee73204bdfdf2cc8 | feat: index.html updated | none | 04/05/2025 |
+| landing-page | main | 4e7e16a99807e32537f51153d8c895e4c530e68c | feat: update about-app.css | none | 04/05/2025 |
+| landing-page | main | e021f2e0685b7e1dfa3bcad46cce9ed2a221bf44 | feat: update styles.css | none | 05/05/2025 |
+| landing-page | main | f87be5bd81178e3ea44cf05fd52c9f4275542766 | fix: styles for sections fixed | none | 10/05/2025 |
+| landing-page | main | 4847a7a047c48185add3e0835bc7bfffbf11de3f | fix: about-app styles updated | none | 10/05/2025 |
+| landing-page | main | 5e836925436c0aec61de506660b620cdcad2c834 | fix: about us section updated | none | 10/05/2025 |
+| landing-page | main | 2872cde860a5d55952bdd988a68cf5d32e35c51c | fix: update other sections | none | 10/05/2025 |
+| landing-page | main | 17bfe1a050ea0589df32624f1ab18f79dd466b5a | feat: update styles for contact section | none | 12/05/2025 |
+| landing-page | main | 9cf423c5755c96250b973f065ea88e0a6c5a3347 | feat: styles.css updated | none | 12/05/2025 |
+| frontend-web | develop | 9e6648d9c3830ec467bedbaddf10d747e58c06b2 | feat: base project | none | 07/05/2025 |
+| frontend-web | develop | bf49b9d8a13651b990b23e81cfb9824221ec7337 | feat: add navbar styles & functionality | none | 07/05/2025 |
+| frontend-web | develop | e5e5ffb0bd3861e36046b98e36051618270c047d | feat: add login | none | 07/05/2025 |
+| frontend-web | develop | 313be98fb4184d39af887edfd6191af1120d76a1 | feat: add signup | none | 07/05/2025 |
+| frontend-web | develop | 5ecf8b2a6da7fcd6b0ae875d01906970229dca30 | feat: add base table & fab for crops page | none | 07/05/2025 |
+| frontend-web | develop | 4fce6f12b458331cd4e766649a9ba199d4a02fbc | feat: create add crop dialog | none | 07/05/2025 |
+| frontend-web | develop | 95db3437c31040b495d96a29a8828b554f7c3912 | feat: create delete crop dialog | none | 07/05/2025 |
+| frontend-web | develop | 62bd22035d8b5f1cc091e76e659a2748ef462252 | feat: creat edit crop dialog | none | 07/05/2025 |
+| frontend-web | develop | d72a2d18007efd259034d39a8f10cbc49cfe5219 | feat: add route to crop detail | none | 07/05/2025 |
+| frontend-web | develop | fe31afd2c0280548b47bc704fd3bc9db8b1c318d | Merge pull request #1 from iot-solutions64/feature/crops | feat: add page 'Cultivos' | 07/05/2025 |
+| frontend-web | develop | 2e8994e23aa101bedebf2087b97d260aba531ad0 | feat: add water management page | none | 07/05/2025 |
+| frontend-web | develop | 51c71558a6ca9e1da5fd925adc5fa18945553461 | Merge pull request #2 from iot-solutions64/feature/water | feat: add water management page & water graph | 07/05/2025 |
+| frontend-web | develop | 047fc53a12c19141f1ef1c1a403b05c43f3a9e6a | feat: add tanks page & add functionality | none | 11/05/2025 |
+| frontend-web | develop | 2b90b6b7572abaae9de1cfea69be3721c228678d | feat(water-tanks): add delete & edit functionality | none | 12/05/2025 |
+| frontend-web | develop | 1ef37ac574b9f02b50d93abaf430961bf454c16a | feat: add systems page | none | 12/05/2025 |
+| frontend-web | develop | 9b17a4d7123974eab28ae7cf41130677fdeda8eb | feat: add system detail page | none | 12/05/2025 |
+| frontend-web | develop | a18a687dea068391d8985a0c4975ae32dcc56a8b | feat: add name attr to system | none | 12/05/2025 |
+| frontend-web | develop | 0487483ca4552df907517df70044ba96a6cadc5d | feat: add edit system page | none | 12/05/2025 |
+| frontend-web | develop | 1d06f886b73084269193b0684a3b7dcfeaabe98c | feat: finish add system page | none | 12/05/2025 |
+| frontend-web | develop | 11c30bdc743bd219c9626046b602bb49dff9ae7d | feat: add crop history | none | 12/05/2025 |
+| frontend-web | develop | a1bd221fb7d20323e8356eaddac0ded36e3815af | style: add responsiveness to system tables | none | 12/05/2025 |
+| frontend-web | develop | bee3943d6249408b73229922e93a61251c720d77 | Merge pull request #6 from iot-solutions64/feature/system | feat: system views | 13/05/2025 |
+| frontend-web | develop | c9bab9bd92d94b4583996ecdcc27147f800cb786 | feat: suggestion videos for recommended actions | none | 14/05/2025 |
+| frontend-web | develop | 8f149fe532fcbfcc1146f83673973ead79c6daf7 | Merge pull request #7 from iot-solutions64/feature/recommended-actions | none | 14/05/2025 |
 #### 6.2.X.5. Testing Suite Evidence
 
 #### 6.2.X.6. Execution Evidence
