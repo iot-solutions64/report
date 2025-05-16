@@ -4403,21 +4403,21 @@ Asimismo, para la landing page ya desplegada, se hicieron las siguientes seccion
 #### 6.2.1.7. Services Documentation
 Se han desarrollado los siguientes controladores para esta entrega
 ##### Controlador de Autenticación de usuario
-![Controlador Auth](img/sprint1-execution-1.png)
+![Controlador Auth](img/sprint1-services-1.png)
 En este controlador podemos encontrar 2 endpoints. Ambos están relacionados con la autenticación de usuarios. Estos endpoints están disponibles para cualquier persona
 1. `POST /api/v1/authentication/sign-up` Permite al usuario crear un nuevo usuario dentro de la aplicación
 2. `POST /api/v1/authentication/sign-in` Permite al usuario entrar a la aplicación con un nombre y contraseña
 ##### Controlador de Usuarios
-![Controlador Usuarios](img/sprint1-execution-2.png)
+![Controlador Usuarios](img/sprint1-services-2.png)
 En este controlador podemos encontrar 2 endpoints. Ambos están relacionados con la obtención de usuarios previamente creados en la aplicación. Solo se pueden acceder a estos endpoints con un usuario autenticado
 1. `GET api/v1/users` Permite al usuario recuperar a todos los usuarios de la aplicación. Este endpoint solo se utiliza con motivos de prueba y no será directamente accesible por cualquier persona
 2. `GET api/v1/users/{userId}` Mediante un id proporcionado, el usuario puede recuperar la información de un usuario
 ##### Controlador de Roles
-![Controlador Roles](img/sprint1-execution-3.png)
+![Controlador Roles](img/sprint1-services-3.png)
 En este controlador se puede encontrar 1 endpoint relacionado con la obtención de roles de usuario. Solo se puede acceder a este endpoint con un usuario autenticado
 1. `GET api/v1/roles` Permite al usuario recuperar todos los roles existentes
 ##### Controlador de Cultivos
-![Controlador Cultivos](img/sprint1-execution-4.png)
+![Controlador Cultivos](img/sprint1-services-4.png)
 En este controladr se pueden encontrar 9 endpoints relacionados con la obtención y creación de datos de cultivos. Ninguno de estos endpoints es accesible para un usuario sin autenticación. También, algunos de ellos serán únicamente accesibles para el sistema IOT, no para el usuario general
 1. `GET api/v1/crop/{userId}` Mediante un id proporcionado, el usuario puede recuperar todos los cultivos de un usuario determinado
 2. `GET api/v1/crop/{cropId}/reference` Recupera únicamente las referencias (id) de las clases Temperature, Humidity y WaterTank que están relacionadas con el crop indicado
