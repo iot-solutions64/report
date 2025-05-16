@@ -355,7 +355,7 @@
         <h4>Paredes Puente, Sebastian Roberto</h4>
           <p>En esta entrega, trabajamos en equipo y compartimos el liderazgo. Yo me encargué de la landing page, coordinándome con el grupo para asegurar coherencia y buenos resultados.</p>
         <h4>Salinas Torres, Salvador Antonio</h4>
-          <p>TBD</p>
+          <p>En este entregable, nos dividimos las tareas de forma equitativa, para que todos los integrantes podamos participar de forma eficiente. En mi caso, apoyé en el desarollo del frontend y las pruebas unitarias de este mismo.</p>
         <h4>Soto Salis, Natanael David</h4>
           <p>Para este entregable, el asignamiento de los puntos fue clave para delimitar de manera justa el desarrolla del proyecto. En mi caso me fue encargado el desarrollo del backend y el despliegue del mismo.</p>
       </td>
@@ -388,7 +388,7 @@
         <h4>Paredes Puente, Sebastian Roberto</h4>
           <p>En esta etapa del proyecto, logramos fomentar un entorno colaborativo e inclusivo. Juntos definimos metas, organizamos las tareas y logramos cumplir los objetivos del proyecto a tiempo, siempre ayudandonos entre nosotros.</p>
         <h4>Salinas Torres, Salvador Antonio</h4>
-          <p>TBD</p>
+          <p>En este caso, participé en la planificación de las tareas a realizar para el frontend. Para ello, se revisaron las historias de usuario ya planteadas para cumplir con los requisitos funcionales que brindan valor al usuario.</p>
         <h4>Soto Salis, Natanael David</h4>
           <p>Para esta entrega, se planifico correctamente los puntos a desarrollar y en el cual el equipo se desempeño de manera correcta y cumplio con los objetivos.</p>
       </td>
