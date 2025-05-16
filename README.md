@@ -4337,37 +4337,6 @@ test("Get all crops of non-existent user", async () => {
 
 
 #### 6.2.1.6. Execution Evidence
-
-##### Para esta entrega, se han desarrollado los siguientes endpoints en el backend
-##### Controlador de Autenticación de usuario
-![Controlador Auth](img/sprint1-execution-1.png)
-En este controlador podemos encontrar 2 endpoints. Ambos están relacionados con la autenticación de usuarios. Estos endpoints están disponibles para cualquier persona
-1. `POST /api/v1/authentication/sign-up` Permite al usuario crear un nuevo usuario dentro de la aplicación
-2. `POST /api/v1/authentication/sign-in` Permite al usuario entrar a la aplicación con un nombre y contraseña
-##### Controlador de Usuarios
-![Controlador Usuarios](img/sprint1-execution-2.png)
-En este controlador podemos encontrar 2 endpoints. Ambos están relacionados con la obtención de usuarios previamente creados en la aplicación. Solo se pueden acceder a estos endpoints con un usuario autenticado
-1. `GET api/v1/users` Permite al usuario recuperar a todos los usuarios de la aplicación. Este endpoint solo se utiliza con motivos de prueba y no será directamente accesible por cualquier persona
-2. `GET api/v1/users/{userId}` Mediante un id proporcionado, el usuario puede recuperar la información de un usuario
-##### Controlador de Roles
-![Controlador Roles](img/sprint1-execution-3.png)
-En este controlador se puede encontrar 1 endpoint relacionado con la obtención de roles de usuario. Solo se puede acceder a este endpoint con un usuario autenticado
-1. `GET api/v1/roles` Permite al usuario recuperar todos los roles existentes
-##### Controlador de Cultivos
-![Controlador Cultivos](img/sprint1-execution-4.png)
-En este controladr se pueden encontrar 9 endpoints relacionados con la obtención y creación de datos de cultivos. Ninguno de estos endpoints es accesible para un usuario sin autenticación. También, algunos de ellos serán únicamente accesibles para el sistema IOT, no para el usuario general
-1. `GET api/v1/crop/{userId}` Mediante un id proporcionado, el usuario puede recuperar todos los cultivos de un usuario determinado
-2. `GET api/v1/crop/{cropId}/reference` Recupera únicamente las referencias (id) de las clases Temperature, Humidity y WaterTank que están relacionadas con el crop indicado
-3. `GET api/v1/crop/{cropId}/light` Recupera los datos más importantes (temperatura, humedad y cantidad de agua leída) de las clases Temperature, Humidity y WaterTank que están relacionadas con el crop indicado
-4. `GET api/v1/crop/{cropId}/detailed` Recupera todos los datos de las clases Temperature, Humidity y WaterTank que están relacionadas con el crop indicado
-5. `POST api/v1/crop` Permite al usuario crear un nuevo cultivo dentro de la aplicación. Las entidades Temperature, Humidity y WaterTank se crean y asignan al cultivo automáticamente
-6. `PUT api/v1/crop/{cropId}/temperature` Se actualiza la información de la temperatura (la temperatura leída y el límite máximo y mínimo)
-7. `PUT api/v1/crop/{cropId}/humidity` Se actualiza la información de la humedad (la humedad leída y el límite máximo y mínimo)
-8. `PATCH api/v1/crop/{cropId}/temperature` Se cambia únicamente la temperatura leída
-9. `PATCH api/v1/crop/{cropId}/humidity` Se cambia únicamente la humedad leída
-
-##### Para esta entrega, se han desarrollado los siguientes vistas en el frontend
-
 Se ha desarrollado un video que muestra el funcionamiento de la aplicación. En este video se puede ver la interacción con el frontend.
 
 [Video de Execution Evidence - Frontend](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/EeTbmKhGXVtDrXsDYhBpS-QB2eRk3b0jeFIh7aGEaFQFEw?e=aLZZEV)
@@ -4432,7 +4401,33 @@ Asimismo, para la landing page ya desplegada, se hicieron las siguientes seccion
 
 
 #### 6.2.1.7. Services Documentation
-
+Se han desarrollado los siguientes controladores para esta entrega
+##### Controlador de Autenticación de usuario
+![Controlador Auth](img/sprint1-execution-1.png)
+En este controlador podemos encontrar 2 endpoints. Ambos están relacionados con la autenticación de usuarios. Estos endpoints están disponibles para cualquier persona
+1. `POST /api/v1/authentication/sign-up` Permite al usuario crear un nuevo usuario dentro de la aplicación
+2. `POST /api/v1/authentication/sign-in` Permite al usuario entrar a la aplicación con un nombre y contraseña
+##### Controlador de Usuarios
+![Controlador Usuarios](img/sprint1-execution-2.png)
+En este controlador podemos encontrar 2 endpoints. Ambos están relacionados con la obtención de usuarios previamente creados en la aplicación. Solo se pueden acceder a estos endpoints con un usuario autenticado
+1. `GET api/v1/users` Permite al usuario recuperar a todos los usuarios de la aplicación. Este endpoint solo se utiliza con motivos de prueba y no será directamente accesible por cualquier persona
+2. `GET api/v1/users/{userId}` Mediante un id proporcionado, el usuario puede recuperar la información de un usuario
+##### Controlador de Roles
+![Controlador Roles](img/sprint1-execution-3.png)
+En este controlador se puede encontrar 1 endpoint relacionado con la obtención de roles de usuario. Solo se puede acceder a este endpoint con un usuario autenticado
+1. `GET api/v1/roles` Permite al usuario recuperar todos los roles existentes
+##### Controlador de Cultivos
+![Controlador Cultivos](img/sprint1-execution-4.png)
+En este controladr se pueden encontrar 9 endpoints relacionados con la obtención y creación de datos de cultivos. Ninguno de estos endpoints es accesible para un usuario sin autenticación. También, algunos de ellos serán únicamente accesibles para el sistema IOT, no para el usuario general
+1. `GET api/v1/crop/{userId}` Mediante un id proporcionado, el usuario puede recuperar todos los cultivos de un usuario determinado
+2. `GET api/v1/crop/{cropId}/reference` Recupera únicamente las referencias (id) de las clases Temperature, Humidity y WaterTank que están relacionadas con el crop indicado
+3. `GET api/v1/crop/{cropId}/light` Recupera los datos más importantes (temperatura, humedad y cantidad de agua leída) de las clases Temperature, Humidity y WaterTank que están relacionadas con el crop indicado
+4. `GET api/v1/crop/{cropId}/detailed` Recupera todos los datos de las clases Temperature, Humidity y WaterTank que están relacionadas con el crop indicado
+5. `POST api/v1/crop` Permite al usuario crear un nuevo cultivo dentro de la aplicación. Las entidades Temperature, Humidity y WaterTank se crean y asignan al cultivo automáticamente
+6. `PUT api/v1/crop/{cropId}/temperature` Se actualiza la información de la temperatura (la temperatura leída y el límite máximo y mínimo)
+7. `PUT api/v1/crop/{cropId}/humidity` Se actualiza la información de la humedad (la humedad leída y el límite máximo y mínimo)
+8. `PATCH api/v1/crop/{cropId}/temperature` Se cambia únicamente la temperatura leída
+9. `PATCH api/v1/crop/{cropId}/humidity` Se cambia únicamente la humedad leída
 #### 6.2.1.8. Deployment Evidence
 
 Para el despliegue de la landing se utilizó GitHub Pages, un servicio de alojamiento gratuito proporcionado por GitHub que permite publicar sitios web directamente desde un repositorio. Esta opción es ideal para proyectos estáticos como landings, ya que ofrece una integración sencilla y directa con GitHub.
