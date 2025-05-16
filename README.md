@@ -4406,6 +4406,30 @@ Se han desarrollado 2 vistas para la gestión de sistemas. La primera vista es l
 
 ![Vista de Sistemas Detalle](img/sprint1-execution-frontend-11.png)
 
+Asimismo, para la landing page ya desplegada, se hicieron las siguientes secciones:
+
+**Seccion de Inicio**
+
+![Vista de Inicio](img/evidence-home.png)
+
+**Seccion de Problematica**
+
+![Vista de Problematica](img/evidence-about-app.png)
+
+**Seccion de Caracteristicas**
+
+![Vista de Caracteristicas](img/evidence-feature.png)
+
+**Seccion de Sobres Nosotros**
+
+![Vista de Sobres Nosotros](img/evidence-about-us.png)
+
+**Seccion de Contacto**
+
+![Vista de Contacto](img/evidence-contact.png)
+
+[Video de Execution Evidence - Landing Page](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217239_upc_edu_pe/ETBuyqKqonBPgndNL7XCJeYBSLIl9CMO7B1pcx3Y-E6LKQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NbjxIf)
+
 
 #### 6.2.1.7. Services Documentation
 
