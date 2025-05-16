@@ -357,7 +357,7 @@
         <h4>Salinas Torres, Salvador Antonio</h4>
           <p>TBD</p>
         <h4>Soto Salis, Natanael David</h4>
-          <p>TBD</p>
+          <p>Para este entregable, el asignamiento de los puntos fue clave para delimitar de manera justa el desarrolla del proyecto. En mi caso me fue encargado el desarrollo del backend y el despliegue del mismo.</p>
       </td>
       <td>
         <h4>TB1</h4>
@@ -390,7 +390,7 @@
         <h4>Salinas Torres, Salvador Antonio</h4>
           <p>TBD</p>
         <h4>Soto Salis, Natanael David</h4>
-          <p>TBD</p>
+          <p>Para esta entrega, se planifico correctamente los puntos a desarrollar y en el cual el equipo se desempeño de manera correcta y cumplio con los objetivos.</p>
       </td>
       <td>
         <h4>TB1</h4>
@@ -936,7 +936,7 @@ Enlace del video de las entrevista: [Enlace a Microsoft Stream](https://upcedupe
 
 ![Entrevista Giancarlo Paredes](img/entrevista5.png)
 
-**Resumen:** Giancarlo Paredes es un joven de 18 años perteneciente a una familia de agrícolas. Nos menciona que cuenta con cultivos de maiz y kiwicha que revisa diariamente. En cuanto al manejo del agua, nos comenta que no suele tener muchos problemas con el agua, ya que en donde vive hay abundante agua, y que lleva un control para sus dos tipos de cultivos, debido a que no se riegan con la misma frecuencia. Por último, considera que la calidad del agua no afecta a sus cultivos, ya que toda viene de un lago cercano a donde vive, llamada "Laguna del Parón" 
+**Resumen:** Giancarlo Paredes es un joven de 18 años perteneciente a una familia de agrícolas. Nos menciona que cuenta con cultivos de maiz y kiwicha que revisa diariamente. En cuanto al manejo del agua, nos comenta que no suele tener muchos problemas con el agua, ya que en donde vive hay abundante agua, y que lleva un control para sus dos tipos de cultivos, debido a que no se riegan con la misma frecuencia. Por último, considera que la calidad del agua no afecta a sus cultivos, ya que toda viene de un lago cercano a donde vive, llamada "Laguna del Parón"
 
 ### 2.2.3. Análisis de entrevistas
 
@@ -3158,7 +3158,6 @@ Tras evaluar estas opciones, consideramos lo siguiente como la estructura más c
 
 ![Context Mapping](img/context-mapping.jpg)
 
-
 <div style="page-break-after: always;"></div>
 
 ### 4.1.3. Software Architecture
@@ -3456,20 +3455,17 @@ Provee la implementación técnica de persistencia y control físico del sistema
   <img alt="Logo" src="img/hydrosmart-logo.png" width="600">
 </p>
 
-
 <strong>Tipografía: </strong>La tipografía seleccionada para HydroSmart es "Roboto", una fuente sans-serif moderna y altamente legible. Roboto destaca por su estilo limpio y contemporáneo, transmitiendo profesionalismo y actualización. La elección de Roboto garantiza que el texto en las interfaces de usuario sea fácilmente legible y mantenga una apariencia moderna y uniforme. Además, Roboto es una fuente versátil que ofrece una amplia gama de pesos y estilos, permitiendo una adaptación flexible a diferentes contextos y tamaños de texto en la aplicación.
 
 <p align="center">
   <img alt="Tipografía" src="img/typography.png" width="600">
 </p>
 
-
 <strong>Colores: </strong>IoT Solutions ha definido una paleta de colores moderna y equilibrada para garantizar una identidad visual coherente y atractiva tanto en la landing page como en la aplicación web y móvil de HydroSmart. Los tonos azules transmiten tecnología y confianza, el verde representa el crecimiento y la conexión con la naturaleza, mientras que el rojo resalta elementos clave de interacción. Los colores neutros aportan claridad, calidez y equilibrio visual. Esta paleta refuerza el compromiso de la marca con soluciones inteligentes, eficientes y amigables para el agricultor peruano.
 
 <p align="center">
   <img alt="Paleta de colores" src="img/colors.png" width="600">
 </p>
- 
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines
 
@@ -3478,7 +3474,6 @@ Para mantener una identidad visual coherente en todos los puntos de contacto, la
 A continuación, se detallan los lineamientos visuales clave para la interfaz de usuario en estas plataformas:
 
 - **Botones (default, Hover, Pressed, Inactive):** El diseño y comportamiento de los botones será consistente a través de todos los dispositivos, respetando la paleta de colores y los efectos visuales para estados de interacción.
-  
 - **Tamaño de la Fuente (Font Size):** Se mantendrá un tamaño de fuente estandarizado que optimiza la legibilidad tanto en pantallas pequeñas como grandes, asegurando una experiencia de usuario clara y accesible.
 
 - **Espaciado (Spacing):** El espaciado entre los elementos será uniforme para crear una interfaz limpia y ordenada, mejorando la navegación y la estética general.
@@ -3510,6 +3505,7 @@ En IoT Solutions, aplicamos una jerarquía visual clara y adaptativa tanto en pl
 Para HydroSmart, hemos diseñado un sistema de etiquetado claro tanto para la aplicación móvil como para la versión web, con el objetivo de optimizar la experiencia del usuario y facilitar la navegación entre las funcionalidades clave. Las etiquetas empleadas en la interfaz son:
 
 Vista del Agricultor:
+
 <table> <tbody> <tr> <th>Cultivos - Crops</th> <td>Permite al usuario añadir, editar o eliminar cultivos registrados en el sistema.</td> </tr> <tr> <th>Gestión de agua - Water Management</th> <td>Muestra la cantidad de agua restante en litros, el historial de consumo por aspersores inteligentes y opciones de control hídrico.</td> </tr> <tr> <th>Sistemas - Systems</th> <td>Presenta información sobre el estado de los sistemas activos para los diferentes cultivos que se tengan, se puede visualizar factores como humedad, temperatura, cantidad de agua y el nivel de batería del sistema.</td> </tr> <tr> <th>Logout</th> <td>Permite al usuario cerrar sesión y salir de su cuenta de manera segura.</td> </tr> </tbody> </table>
 
 ### 5.2.3. SEO Tags and Meta Tags
@@ -3518,34 +3514,33 @@ Para mejorar la visibilidad y el rendimiento de HydroSmart en motores de búsque
 
 <strong>Metaetiqueta de Descripción: </strong>Proporciona una breve descripción del contenido y propósito de la aplicación, ayudando a los usuarios a entender de qué se trata la aplicación y a mejorar la tasa de clics.
 
-````
+```
 <meta name="description" content="HydroSmart is a platform that provides farmers with the necessary information to improve their farming practices.">
-````
-
+```
 
 <strong>Metaetiqueta de Autor: </strong>Especifica el autor de la aplicación, lo que ayuda a atribuir la propiedad intelectual y la fuente del contenido.
 
-````
+```
 <meta name="author" content="IoT Solutions">
-````
+```
+
 <strong>Metaetiqueta de Robots: </strong>Indica a los motores de búsqueda cómo deben indexar y rastrear la página, permitiendo que se indexe y que se sigan los enlaces en la aplicación.
 
-````
+```
 <meta name="robots" content="index, follow">
-````
-
+```
 
 <strong>Etiqueta de Título: </strong> Define el título de la aplicación que aparece en los resultados de búsqueda y en las pestañas del navegador.
 
-````
+```
 <title>HydroSmart</title>
-````
+```
 
 <strong>Etiqueta de Idioma: </strong> Especifica el idioma principal del contenido de la aplicación para ayudar a los motores de búsqueda a entender y clasificar el contenido adecuadamente.
 
-````
+```
 <html lang="en">
-````
+```
 
 <p align="center">
   <img src="img/seoTAGS.png" alt="SEO tags" width="600">
@@ -3559,21 +3554,17 @@ En HydroSmart, el sistema de búsqueda ha sido diseñado para integrarse de form
 
 La interfaz de la aplicación HydroSmart está diseñada para una navegación eficiente, con características adaptadas a la usabilidad en portales web como pantallas táctiles:
 
- - ***Menús de Navegación:*** Menús adaptados para dispositivos móviles o de escritorio, que pueden incluir menús desplegables, botones en la parte superior o inferior de la pantalla, y accesos directos.
+- **_Menús de Navegación:_** Menús adaptados para dispositivos móviles o de escritorio, que pueden incluir menús desplegables, botones en la parte superior o inferior de la pantalla, y accesos directos.
 
- - ***Navegación por Pestañas:*** Utiliza pestañas en la parte superior o inferior de la pantalla para organizar el contenido en secciones o categorías, permitiendo a los usuarios cambiar entre diferentes secciones sin necesidad de cargar nuevas pantallas.
-
+- **_Navegación por Pestañas:_** Utiliza pestañas en la parte superior o inferior de la pantalla para organizar el contenido en secciones o categorías, permitiendo a los usuarios cambiar entre diferentes secciones sin necesidad de cargar nuevas pantallas.
 
 ## 5.3. Landing Page UI Design
 
 Link del Figma de los wireframes y mockups de la landing page: https://www.figma.com/design/t5ZCVaxwwvv3f73ZR73WYq/Iot-Solutions---Landing-Page?node-id=0-1&t=OWeHU0WHyO5VgVB0-1
 
-
 ### 5.3.1. Landing Page Wireframe
 
-
 Los wireframes son el esquema básico de la Landing page, mostrando la estructura principal y la disposición de los elementos. Aquí se detallan las secciones clave como el encabezado, el área de beneficios, las llamadas a la acción y la ubicación de imágenes, enfocándose en la usabilidad y el flujo de la página sin distracciones visuales.
-
 
 **Página de inicio**
 
@@ -3655,13 +3646,9 @@ Los mockups añaden detalles visuales y de diseño a los wireframes, mostrando l
 
 <img src="img/mockup-contacto.png" alt="Mock-up - Contacto">
 
-
-
 **Página de Contacto (versión móvil)**
 
 <img src="img/mockup-contacto-mobile.png" alt="Mock-up - Contacto (móvil)">
-
-
 
 ## 5.4. Applications UX/UI Design
 
@@ -3677,13 +3664,11 @@ En este apartado, se muestran todos los wireframes necesarios para cumplir las f
 
 <img src="img/mobile-wireframe-1.png" alt="Wireframe - Aplicación (móvil)" width="600px">
 
-
 **Gestión de Cultivos**
 
 <img src="img/web-wireframe-2.png" alt="Wireframe - Aplicación">
 
 <img src="img/mobile-wireframe-2.png" alt="Wireframe - Aplicación (móvil)" width="600px">
-
 
 **Detalle de Cultivo**
 
@@ -3691,20 +3676,17 @@ En este apartado, se muestran todos los wireframes necesarios para cumplir las f
 
 <img src="img/mobile-wireframe-3.png" alt="Wireframe - Aplicación (móvil)" width="600px">
 
-
 **Gestión de Agua**
 
 <img src="img/web-wireframe-4.png" alt="Wireframe - Aplicación">
 
 <img src="img/mobile-wireframe-4.png" alt="Wireframe - Aplicación (móvil)">
 
-
 **Gestión de Sistemas**
 
 <img src="img/web-wireframe-5.png" alt="Wireframe - Aplicación">
 
 <img src="img/mobile-wireframe-5.png" alt="Wireframe - Aplicación (móvil)" width="600px">
-
 
 **Agregar nuevo sistema**
 
@@ -3716,56 +3698,45 @@ En este apartado, se muestran todos los wireframes necesarios para cumplir las f
 
 Se presentan los wireflow diagrams de la aplicación, que muestran el flujo de navegación entre las diferentes pantallas y funcionalidades. Estos diagramas ayudan a visualizar cómo los usuarios interactuarán con la aplicación y cómo se moverán entre las distintas secciones.
 
-
 En este wireflow, se muestra como un usuario sin cuenta puede registrarse en la aplicación. Si el registro es exitoso, se le redirige a iniciar sesión. Si el registro falla, se le muestra un mensaje de error.
 
 <img src="img/wireflow1.png" alt="Wireflow Diagram" width="800px">
-
 
 En este wireflow, se muestra como un usuario registrado puede iniciar sesión en la aplicación. Si las credenciales son correctas, se le redirige a la vista de cultivos. Si las credenciales son incorrectas, se le muestra un mensaje de error.
 
 <img src="img/wireflow2.png" alt="Wireflow Diagram" width="800px">
 
-
 En este wireflow, se muestra como el usuario agricultor puede ver la lista de cultivos. Desde esta vista, puede agregar un nuevo cultivo, editar uno existente o eliminarlo. Al seleccionar un cultivo, se le redirige a la vista de detalle del cultivo.
 
 <img src="img/wireflow3.png" alt="Wireflow Diagram" width="800px">
-
 
 En este wireflow, se muestra como el usuario agricultor puede ver la vista de detalle del cultivo. Desde esta vista, puede ver datos como la humedad, temperatura.
 
 <img src="img/wireflow4.png" alt="Wireflow Diagram" width="800px">
 
-
 En este wireflow, se muestra como el usuario agricultor puede actuar frente algún evento de alerta. Así, se le recomendará tutoriales para actuar frente a la alerta.
 
 <img src="img/wireflow5.png" alt="Wireflow Diagram" width="800px">
-
 
 En este wireflow, se muestra como el usuario agricultor desde la vista de detalles del cultivo, puede dirigirse a ver el historial de cultivos. Puede ver el historial limitado (30 días) o el historial completo.
 
 <img src="img/wireflow6.png" alt="Wireflow Diagram" width="800px">
 
-
 En este wireflow, se muestra como el usuario agricultor desde la vista de detalles del suelo, puede dirigirse a ver el sistema perteneciente al cultivo y ver el estado del sistema.
 
 <img src="img/wireflow7.png" alt="Wireflow Diagram" width="800px">
 
-
-En este wireflow, se muestra como el usuario agricultor puede ver la gestión del agua, así como la cantidad de agua que se ha utilizado cada mes. Además, cuenta con el botón para ver el historial detallado de consumo de agua,  que muestra un gráfico de barras con el consumo de agua por mes.
+En este wireflow, se muestra como el usuario agricultor puede ver la gestión del agua, así como la cantidad de agua que se ha utilizado cada mes. Además, cuenta con el botón para ver el historial detallado de consumo de agua, que muestra un gráfico de barras con el consumo de agua por mes.
 
 <img src="img/wireflow8.png" alt="Wireflow Diagram" width="800px">
-
 
 En este wireflow, se muestra como el usuario agricultor puede ver la gestión de los tanques de agua. Desde esta vista, puede ver la lista completa de tanques, agregar uno nuevo, editar uno existente o eliminarlo.
 
 <img src="img/wireflow9.png" alt="Wireflow Diagram" width="800px">
 
-
 En este wireflow, se muestra como el usuario agricultor puede ver los sistemas que tiene. Desde esta vista, puede ver la lista completa de sistemas, editar uno existente o eliminarlo. Al seleccionar un sistema, se le redirige a la vista de detalle del sistema.
 
 <img src="img/wireflow10.png" alt="Wireflow Diagram" width="800px">
-
 
 En este wireflow, se muestra como el usuario agricultor puede agregar un nuevo sistema. Al seleccionar esta opción, se empezará a buscar sistemas disponibles. Si se encuentra un sistema, lo podrá agregar y se le redirige a la vista de detalle del sistema. Si no se encuentra un sistema, se le muestra un mensaje de que no se encontraron sistemas disponibles.
 
@@ -3781,13 +3752,11 @@ A continuación se presentan los mockups de la aplicación, que muestran el dise
 
 <img src="img/mobile-mockup-1.png" alt="Mock-up - Aplicación (móvil)" width="600px">
 
-
 **Gestión de Cultivos**
 
 <img src="img/web-mockup-2.png" alt="Mock-up - Aplicación">
 
 <img src="img/mobile-mockup-2.png" alt="Mock-up - Aplicación (móvil)" width="600px">
-
 
 **Detalle de Cultivo**
 
@@ -3795,13 +3764,11 @@ A continuación se presentan los mockups de la aplicación, que muestran el dise
 
 <img src="img/mobile-mockup-3.png" alt="Mock-up - Aplicación (móvil)" width="600px">
 
-
 **Gestión de Agua**
 
 <img src="img/web-mockup-4.png" alt="Mock-up - Aplicación">
 
 <img src="img/mobile-mockup-4.png" alt="Mock-up - Aplicación (móvil)">
-
 
 **Gestión de Sistemas**
 
@@ -3809,68 +3776,55 @@ A continuación se presentan los mockups de la aplicación, que muestran el dise
 
 <img src="img/mobile-mockup-5.png" alt="Mock-up - Aplicación (móvil)" width="600px">
 
-
 **Agregar nuevo sistema**
 
 <img src="img/web-mockup-6.png" alt="Mock-up - Aplicación">
 
 <img src="img/mobile-mockup-6.png" alt="Mock-up - Aplicación (móvil)" width="600px">
 
-
 ### 5.4.4. Applications User Flow Diagrams
 
 En este apartado se presentan los diagramas de flujo de usuario (User Flow Diagrams) que ilustran el recorrido del usuario a través de la aplicación, desde el registro hasta la gestión de cultivos y sistemas. Estos diagramas ayudan a entender cómo los usuarios interactúan con la aplicación y cómo se mueven entre las diferentes funcionalidades.
-
 
 En este user flow, se muestra como un usuario sin cuenta puede registrarse en la aplicación. Si el registro es exitoso, se le redirige a iniciar sesión. Si el registro falla, se le muestra un mensaje de error.
 
 <img src="img/userflow1.png" alt="User Flow Diagram" width="800px">
 
-
 En este user flow, se muestra como un usuario registrado puede iniciar sesión en la aplicación. Si las credenciales son correctas, se le redirige a la vista de cultivos. Si las credenciales son incorrectas, se le muestra un mensaje de error.
 
 <img src="img/userflow2.png" alt="User Flow Diagram" width="800px">
-
 
 En este user flow, se muestra como el usuario agricultor puede ver la lista de cultivos. Desde esta vista, puede agregar un nuevo cultivo, editar uno existente o eliminarlo. Al seleccionar un cultivo, se le redirige a la vista de detalle del cultivo.
 
 <img src="img/userflow3.png" alt="User Flow Diagram" width="800px">
 
-
 En este user flow, se muestra como el usuario agricultor puede ver la vista de detalle del cultivo. Desde esta vista, puede ver datos como la humedad, temperatura.
 
 <img src="img/userflow4.png" alt="User Flow Diagram" width="800px">
-
 
 En este user flow, se muestra como el usuario agricultor puede actuar frente algún evento de alerta. Así, se le recomendará tutoriales para actuar frente a la alerta.
 
 <img src="img/userflow5.png" alt="User Flow Diagram" width="800px">
 
-
 En este user flow, se muestra como el usuario agricultor desde la vista de detalles del cultivo, puede dirigirse a ver el historial de cultivos. Puede ver el historial limitado (30 días) o el historial completo.
 
 <img src="img/userflow6.png" alt="User Flow Diagram" width="800px">
-
 
 En este user flow, se muestra como el usuario agricultor desde la vista de detalles del suelo, puede dirigirse a ver el sistema perteneciente al cultivo y ver el estado del sistema.
 
 <img src="img/userflow7.png" alt="User Flow Diagram" width="800px">
 
-
-En este user flow, se muestra como el usuario agricultor puede ver la gestión del agua, así como la cantidad de agua que se ha utilizado cada mes. Además, cuenta con el botón para ver el historial detallado de consumo de agua,  que muestra un gráfico de barras con el consumo de agua por mes.
+En este user flow, se muestra como el usuario agricultor puede ver la gestión del agua, así como la cantidad de agua que se ha utilizado cada mes. Además, cuenta con el botón para ver el historial detallado de consumo de agua, que muestra un gráfico de barras con el consumo de agua por mes.
 
 <img src="img/userflow8.png" alt="User Flow Diagram" width="800px">
-
 
 En este user flow, se muestra como el usuario agricultor puede ver la gestión de los tanques de agua. Desde esta vista, puede ver la lista completa de tanques, agregar uno nuevo, editar uno existente o eliminarlo.
 
 <img src="img/userflow9.png" alt="User Flow Diagram" width="800px">
 
-
 En este user flow, se muestra como el usuario agricultor puede ver los sistemas que tiene. Desde esta vista, puede ver la lista completa de sistemas, editar uno existente o eliminarlo. Al seleccionar un sistema, se le redirige a la vista de detalle del sistema.
 
 <img src="img/userflow10.png" alt="User Flow Diagram" width="800px">
-
 
 En este user flow, se muestra como el usuario agricultor puede agregar un nuevo sistema. Al seleccionar esta opción, se empezará a buscar sistemas disponibles. Si se encuentra un sistema, lo podrá agregar y se le redirige a la vista de detalle del sistema. Si no se encuentra un sistema, se le muestra un mensaje de que no se encontraron sistemas disponibles.
 
@@ -3900,11 +3854,9 @@ En esta sección se presentan los prototipos de la aplicación HydroSmart, tanto
 
 Se realizaron los productos de UX con la herramienta UXPressia, así como el User Persona, Empathy Mapping, Impact Mapping, entre otras. Gracias a esto pudimos modelar bien los diseños de la experiencia de usuario, lo cual nos sirve para poder ponernos en una mejor perspectiva para nuestros segmentos objetivo. Por otro lado, hicimos los prototipos de la aplicación móvil utilizando la herramienta Figma, la cual nos permitió crear los Wireframes y Mock-ups para tener un diseño previo al desarrollo de la aplicación.
 
-
 **Software Development**
 
 Como principales IDEs, utilizamos WebStorm y Intellij Idea, con los cuales estamos más familiarizados por ser de Jetbrains. Por otro lado, para el desarrollo usamos los lenguajes aprendidos previamente, como HTML y CSS para la landing page, Java para el backend, JavaScript para el frontend web, y Dart para la aplicación móvil.
-
 
 **Software Testing**
 
@@ -3965,17 +3917,16 @@ https://www.w3schools.com/html/html5_syntax.asp
 - Siempre cerrar los elementos que lo requieran, ya sea una división, párrafo, título. (Si se declara una \<div>, siempre cerrarlo con \</div>)
 - Declarar el atributo “alt” para las imágenes.
 
-
 **CSS**
 
 Es el lenguaje utilizado para definir el diseño de la página web, así como los estilos, fuentes, colores, contenedores, etc.
 https://google.github.io/styleguide/htmlcssguide.html
+
 - Usar indentación de forma correcta.
 - Los nombres para elementos deben ser cortos y en minúsculas.
 - Declarar los colores en código hexadecimal. (Ejemplo: #024A86)
 - Dejar comentarios para conocer el propósito del estilo y su uso.
 - El diseño debe ser responsive para que los usuarios lo puedan visualizar cómodamente desde el dispositivo en qué se encuentren.
-
 
 **JavaScript**
 
@@ -4097,13 +4048,12 @@ En esta sección se presenta el equipo que participará en la elaboración del a
 Cada aspecto tiene asignados un líder y colaboradores que serán responsables de su ejecución. La matriz de liderazgo y colaboración es la siguiente:
 
 | **Team Member** (Last Name, First Name) | **GitHub Username** | **Desarrollo de Backend** | **Desarrollo de Frontend Web** | **Desarrollo de Landing Page** |
-|----------------------------------------|---------------------|---------------------------|-------------------------------|--------------------------------|
-| Paredes Puente, Sebastian Roberto          | sebastian123gonzalo       | -                         | -                             | L                              |
-| Delgado Corrales, Piero Gonzalo           | PieroD04              | -                         | L                             | -                              |
-| Salinas Torres, Salvador Antonio          | salvadoorssalinas       | -                         | C                             | -                              |
-| Neyra Santa Cruz, Marcelo Sebastian          | SN-Marcelo       | L                         | -                             | -                              |
-| Soto Salis, Natanael David           | NickDavid811       | C                         | -                             | -                              |
-
+| --------------------------------------- | ------------------- | ------------------------- | ------------------------------ | ------------------------------ |
+| Paredes Puente, Sebastian Roberto       | sebastian123gonzalo | -                         | -                              | L                              |
+| Delgado Corrales, Piero Gonzalo         | PieroD04            | -                         | L                              | -                              |
+| Salinas Torres, Salvador Antonio        | salvadoorssalinas   | -                         | C                              | -                              |
+| Neyra Santa Cruz, Marcelo Sebastian     | SN-Marcelo          | L                         | -                              | -                              |
+| Soto Salis, Natanael David              | NickDavid811        | C                         | -                              | -                              |
 
 #### 6.2.1.3. Sprint Backlog 1
 
@@ -4226,60 +4176,61 @@ El objetivo de este primer sprint fue el de desarrollar la landing page, el fron
 </table>
 
 #### 6.2.1.4. Development Evidence
+
 Para esta entrega, se realizaron 3 aplicaciones, la landing page, frontend web application y backend application. Las 3 aplicaciones se realizaron en paralelo y en los siguientes repositorios:
 
 1. Backend Application: **[Repositorio Backend](https://github.com/iot-solutions64/backend)**
 2. Frontend Application: **[Repositorio Frontend](https://github.com/iot-solutions64/frontend-web)**
 3. Landing Page Application: **[Repositorio Landing Page](https://github.com/iot-solutions64/landing-page)**
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date)|
-| --- | --- | --- | --- | --- | --- |
-| landing-page | main | 861f42b08f2eb0211a86a52ccd8c418616ece22c | feat: landing page sections added | none | 28/04/2025 |
-| landing-page | main | 708cc85ecf6810e19c021fd86b65775ed332f5e0 | feat: styles for "p" elements changed | none | 28/04/2025 |
-| landing-page | main | 53bd616aa03427668845c2dcf5fe981aee5617a9 | feat: content for features.html changed | none | 04/05/2025 |
-| landing-page | main | 0592d05e0012ca8f94e855344a4bed6ba3c07924 | fat: change Iot-solutions64 for IoT Solutions | none | 04/05/2025 |
-| landing-page | main | e56261c796f1650f58238cddc54423ae2f8ed771 | feat: update about-app.css | none | 04/05/2025 |
-| landing-page | main | 4a96374ed318ba7388f21cacee73204bdfdf2cc8 | feat: index.html updated | none | 04/05/2025 |
-| landing-page | main | 4e7e16a99807e32537f51153d8c895e4c530e68c | feat: update about-app.css | none | 04/05/2025 |
-| landing-page | main | e021f2e0685b7e1dfa3bcad46cce9ed2a221bf44 | feat: update styles.css | none | 05/05/2025 |
-| landing-page | main | f87be5bd81178e3ea44cf05fd52c9f4275542766 | fix: styles for sections fixed | none | 10/05/2025 |
-| landing-page | main | 4847a7a047c48185add3e0835bc7bfffbf11de3f | fix: about-app styles updated | none | 10/05/2025 |
-| landing-page | main | 5e836925436c0aec61de506660b620cdcad2c834 | fix: about us section updated | none | 10/05/2025 |
-| landing-page | main | 2872cde860a5d55952bdd988a68cf5d32e35c51c | fix: update other sections | none | 10/05/2025 |
-| landing-page | main | 17bfe1a050ea0589df32624f1ab18f79dd466b5a | feat: update styles for contact section | none | 12/05/2025 |
-| landing-page | main | 9cf423c5755c96250b973f065ea88e0a6c5a3347 | feat: styles.css updated | none | 12/05/2025 |
-| frontend-web | develop | 9e6648d9c3830ec467bedbaddf10d747e58c06b2 | feat: base project | none | 07/05/2025 |
-| frontend-web | develop | bf49b9d8a13651b990b23e81cfb9824221ec7337 | feat: add navbar styles & functionality | none | 07/05/2025 |
-| frontend-web | develop | e5e5ffb0bd3861e36046b98e36051618270c047d | feat: add login | none | 07/05/2025 |
-| frontend-web | develop | 313be98fb4184d39af887edfd6191af1120d76a1 | feat: add signup | none | 07/05/2025 |
-| frontend-web | develop | 5ecf8b2a6da7fcd6b0ae875d01906970229dca30 | feat: add base table & fab for crops page | none | 07/05/2025 |
-| frontend-web | develop | 4fce6f12b458331cd4e766649a9ba199d4a02fbc | feat: create add crop dialog | none | 07/05/2025 |
-| frontend-web | develop | 95db3437c31040b495d96a29a8828b554f7c3912 | feat: create delete crop dialog | none | 07/05/2025 |
-| frontend-web | develop | 62bd22035d8b5f1cc091e76e659a2748ef462252 | feat: creat edit crop dialog | none | 07/05/2025 |
-| frontend-web | develop | d72a2d18007efd259034d39a8f10cbc49cfe5219 | feat: add route to crop detail | none | 07/05/2025 |
-| frontend-web | develop | fe31afd2c0280548b47bc704fd3bc9db8b1c318d | Merge pull request #1 from iot-solutions64/feature/crops | feat: add page 'Cultivos' | 07/05/2025 |
-| frontend-web | develop | 2e8994e23aa101bedebf2087b97d260aba531ad0 | feat: add water management page | none | 07/05/2025 |
-| frontend-web | develop | 51c71558a6ca9e1da5fd925adc5fa18945553461 | Merge pull request #2 from iot-solutions64/feature/water | feat: add water management page & water graph | 07/05/2025 |
-| frontend-web | develop | 047fc53a12c19141f1ef1c1a403b05c43f3a9e6a | feat: add tanks page & add functionality | none | 11/05/2025 |
-| frontend-web | develop | 2b90b6b7572abaae9de1cfea69be3721c228678d | feat(water-tanks): add delete & edit functionality | none | 12/05/2025 |
-| frontend-web | develop | 1ef37ac574b9f02b50d93abaf430961bf454c16a | feat: add systems page | none | 12/05/2025 |
-| frontend-web | develop | 9b17a4d7123974eab28ae7cf41130677fdeda8eb | feat: add system detail page | none | 12/05/2025 |
-| frontend-web | develop | a18a687dea068391d8985a0c4975ae32dcc56a8b | feat: add name attr to system | none | 12/05/2025 |
-| frontend-web | develop | 0487483ca4552df907517df70044ba96a6cadc5d | feat: add edit system page | none | 12/05/2025 |
-| frontend-web | develop | 1d06f886b73084269193b0684a3b7dcfeaabe98c | feat: finish add system page | none | 12/05/2025 |
-| frontend-web | develop | 11c30bdc743bd219c9626046b602bb49dff9ae7d | feat: add crop history | none | 12/05/2025 |
-| frontend-web | develop | a1bd221fb7d20323e8356eaddac0ded36e3815af | style: add responsiveness to system tables | none | 12/05/2025 |
-| frontend-web | develop | bee3943d6249408b73229922e93a61251c720d77 | Merge pull request #6 from iot-solutions64/feature/system | feat: system views | 13/05/2025 |
-| frontend-web | develop | c9bab9bd92d94b4583996ecdcc27147f800cb786 | feat: suggestion videos for recommended actions | none | 14/05/2025 |
-| frontend-web | develop | 8f149fe532fcbfcc1146f83673973ead79c6daf7 | Merge pull request #7 from iot-solutions64/feature/recommended-actions | none | 14/05/2025 |
+| Repository   | Branch  | Commit Id                                | Commit Message                                                         | Commit Message Body                           | Commited on (Date) |
+| ------------ | ------- | ---------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------- | ------------------ |
+| landing-page | main    | 861f42b08f2eb0211a86a52ccd8c418616ece22c | feat: landing page sections added                                      | none                                          | 28/04/2025         |
+| landing-page | main    | 708cc85ecf6810e19c021fd86b65775ed332f5e0 | feat: styles for "p" elements changed                                  | none                                          | 28/04/2025         |
+| landing-page | main    | 53bd616aa03427668845c2dcf5fe981aee5617a9 | feat: content for features.html changed                                | none                                          | 04/05/2025         |
+| landing-page | main    | 0592d05e0012ca8f94e855344a4bed6ba3c07924 | fat: change Iot-solutions64 for IoT Solutions                          | none                                          | 04/05/2025         |
+| landing-page | main    | e56261c796f1650f58238cddc54423ae2f8ed771 | feat: update about-app.css                                             | none                                          | 04/05/2025         |
+| landing-page | main    | 4a96374ed318ba7388f21cacee73204bdfdf2cc8 | feat: index.html updated                                               | none                                          | 04/05/2025         |
+| landing-page | main    | 4e7e16a99807e32537f51153d8c895e4c530e68c | feat: update about-app.css                                             | none                                          | 04/05/2025         |
+| landing-page | main    | e021f2e0685b7e1dfa3bcad46cce9ed2a221bf44 | feat: update styles.css                                                | none                                          | 05/05/2025         |
+| landing-page | main    | f87be5bd81178e3ea44cf05fd52c9f4275542766 | fix: styles for sections fixed                                         | none                                          | 10/05/2025         |
+| landing-page | main    | 4847a7a047c48185add3e0835bc7bfffbf11de3f | fix: about-app styles updated                                          | none                                          | 10/05/2025         |
+| landing-page | main    | 5e836925436c0aec61de506660b620cdcad2c834 | fix: about us section updated                                          | none                                          | 10/05/2025         |
+| landing-page | main    | 2872cde860a5d55952bdd988a68cf5d32e35c51c | fix: update other sections                                             | none                                          | 10/05/2025         |
+| landing-page | main    | 17bfe1a050ea0589df32624f1ab18f79dd466b5a | feat: update styles for contact section                                | none                                          | 12/05/2025         |
+| landing-page | main    | 9cf423c5755c96250b973f065ea88e0a6c5a3347 | feat: styles.css updated                                               | none                                          | 12/05/2025         |
+| frontend-web | develop | 9e6648d9c3830ec467bedbaddf10d747e58c06b2 | feat: base project                                                     | none                                          | 07/05/2025         |
+| frontend-web | develop | bf49b9d8a13651b990b23e81cfb9824221ec7337 | feat: add navbar styles & functionality                                | none                                          | 07/05/2025         |
+| frontend-web | develop | e5e5ffb0bd3861e36046b98e36051618270c047d | feat: add login                                                        | none                                          | 07/05/2025         |
+| frontend-web | develop | 313be98fb4184d39af887edfd6191af1120d76a1 | feat: add signup                                                       | none                                          | 07/05/2025         |
+| frontend-web | develop | 5ecf8b2a6da7fcd6b0ae875d01906970229dca30 | feat: add base table & fab for crops page                              | none                                          | 07/05/2025         |
+| frontend-web | develop | 4fce6f12b458331cd4e766649a9ba199d4a02fbc | feat: create add crop dialog                                           | none                                          | 07/05/2025         |
+| frontend-web | develop | 95db3437c31040b495d96a29a8828b554f7c3912 | feat: create delete crop dialog                                        | none                                          | 07/05/2025         |
+| frontend-web | develop | 62bd22035d8b5f1cc091e76e659a2748ef462252 | feat: creat edit crop dialog                                           | none                                          | 07/05/2025         |
+| frontend-web | develop | d72a2d18007efd259034d39a8f10cbc49cfe5219 | feat: add route to crop detail                                         | none                                          | 07/05/2025         |
+| frontend-web | develop | fe31afd2c0280548b47bc704fd3bc9db8b1c318d | Merge pull request #1 from iot-solutions64/feature/crops               | feat: add page 'Cultivos'                     | 07/05/2025         |
+| frontend-web | develop | 2e8994e23aa101bedebf2087b97d260aba531ad0 | feat: add water management page                                        | none                                          | 07/05/2025         |
+| frontend-web | develop | 51c71558a6ca9e1da5fd925adc5fa18945553461 | Merge pull request #2 from iot-solutions64/feature/water               | feat: add water management page & water graph | 07/05/2025         |
+| frontend-web | develop | 047fc53a12c19141f1ef1c1a403b05c43f3a9e6a | feat: add tanks page & add functionality                               | none                                          | 11/05/2025         |
+| frontend-web | develop | 2b90b6b7572abaae9de1cfea69be3721c228678d | feat(water-tanks): add delete & edit functionality                     | none                                          | 12/05/2025         |
+| frontend-web | develop | 1ef37ac574b9f02b50d93abaf430961bf454c16a | feat: add systems page                                                 | none                                          | 12/05/2025         |
+| frontend-web | develop | 9b17a4d7123974eab28ae7cf41130677fdeda8eb | feat: add system detail page                                           | none                                          | 12/05/2025         |
+| frontend-web | develop | a18a687dea068391d8985a0c4975ae32dcc56a8b | feat: add name attr to system                                          | none                                          | 12/05/2025         |
+| frontend-web | develop | 0487483ca4552df907517df70044ba96a6cadc5d | feat: add edit system page                                             | none                                          | 12/05/2025         |
+| frontend-web | develop | 1d06f886b73084269193b0684a3b7dcfeaabe98c | feat: finish add system page                                           | none                                          | 12/05/2025         |
+| frontend-web | develop | 11c30bdc743bd219c9626046b602bb49dff9ae7d | feat: add crop history                                                 | none                                          | 12/05/2025         |
+| frontend-web | develop | a1bd221fb7d20323e8356eaddac0ded36e3815af | style: add responsiveness to system tables                             | none                                          | 12/05/2025         |
+| frontend-web | develop | bee3943d6249408b73229922e93a61251c720d77 | Merge pull request #6 from iot-solutions64/feature/system              | feat: system views                            | 13/05/2025         |
+| frontend-web | develop | c9bab9bd92d94b4583996ecdcc27147f800cb786 | feat: suggestion videos for recommended actions                        | none                                          | 14/05/2025         |
+| frontend-web | develop | 8f149fe532fcbfcc1146f83673973ead79c6daf7 | Merge pull request #7 from iot-solutions64/feature/recommended-actions | none                                          | 14/05/2025         |
 
 #### 6.2.1.5. Testing Suite Evidence
 
 En el caso del frontend, se realizaron las pruebas unitarias en Vue haciendo uso de Vitest, un framework de pruebas para JavaScript. Se realizaron pruebas unitarias para los componentes de la aplicación, así como para las funciones que se utilizan en la misma. Las pruebas se encuentran en el directorio `tests` del repositorio del frontend.
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date)|
-| --- | --- | --- | --- | --- | --- |
-| frontend-web | release | 2333e4153fca238820a22406ad04e7dc2c6f2327 | test: unit tests for auth and crop services | none | 15/05/2025 |
+| Repository   | Branch  | Commit Id                                | Commit Message                              | Commit Message Body | Commited on (Date) |
+| ------------ | ------- | ---------------------------------------- | ------------------------------------------- | ------------------- | ------------------ |
+| frontend-web | release | 2333e4153fca238820a22406ad04e7dc2c6f2327 | test: unit tests for auth and crop services | none                | 15/05/2025         |
 
 Se realizaron pruebas unitarias para los servicios de autenticación y cultivos. En la prueba de autenticación, se realizaron pruebas para los métodos de inicio de sesión exitoso con credenciales correctas, o erróneo al usar credenciales incorrectas. En la prueba de cultivos, se realizaron pruebas para la obtención de cultivos de un usuario existente y un usuario inexistente.
 
@@ -4326,21 +4277,20 @@ test("Get all crops of non-existent user", async () => {
 })
 ```
 
-
 **Resultados de las pruebas unitarias de autenticación y cultivos**
 
 <img src="img/auth-unit-tests.png" alt="Pruebas unitarias de autenticación" width="600"/>
 
 <img src="img/crop-unit-tests.png" alt="Pruebas unitarias de cultivos" width="600"/>
 
-
-
 #### 6.2.1.6. Execution Evidence
+
 Se ha desarrollado un video que muestra el funcionamiento de la aplicación. En este video se puede ver la interacción con el frontend.
 
 [Video de Execution Evidence - Frontend](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/EeTbmKhGXVtDrXsDYhBpS-QB2eRk3b0jeFIh7aGEaFQFEw?e=aLZZEV)
 
 ##### Vista de Autenticación
+
 Se han desarrollado 2 vistas para la autenticación de usuarios, una para el registro y otra para el inicio de sesión. Ambas vistas están disponibles para cualquier persona que acceda a la aplicación.
 
 ![Vista de Login](img/sprint1-execution-frontend-1.png)
@@ -4348,6 +4298,7 @@ Se han desarrollado 2 vistas para la autenticación de usuarios, una para el reg
 ![Vista de Registro](img/sprint1-execution-frontend-2.png)
 
 ###### Vista de Cultivos
+
 Se han desarrollado 4 vistas para la gestión de cultivos. La primera vista es la vista principal, donde se pueden ver todos los campos de cultivos del usuario. La segunda vista es la vista de detalle, donde se puede ver información detallada de un cultivo en específico. La tercera vista es la vista de acciones recomendadas, donde se pueden ver las acciones recomendadas para un cultivo en específico. Todas estas vistas son accesibles únicamente para usuarios autenticados. La cuarta es la vista de historial, donde se pueden ver los datos históricos de un cultivo en específico. Asimismo, se incluyeron dialogs para agregar, editar y eliminar cultivos.
 
 ![Vista de Cultivo](img/sprint1-execution-frontend-3.png)
@@ -4359,6 +4310,7 @@ Se han desarrollado 4 vistas para la gestión de cultivos. La primera vista es l
 ![Vista de Cultivo Historial](img/sprint1-execution-frontend-6.png)
 
 ##### Vista de Gestión de agua
+
 Se han desarrollado 3 vistas para la gestión de agua. La primera vista es la vista principal, donde se pueden ver los valores totales de los tanques de agua del usuario y un historial mensual de uso de agua. La segunda vista es la vista de detalle, donde se puede ver información detallada de cada tanque. La tercera vista es un gráfico que muestra el historial mensual de agua utilizada.
 
 ![Vista de Agua](img/sprint1-execution-frontend-7.png)
@@ -4368,6 +4320,7 @@ Se han desarrollado 3 vistas para la gestión de agua. La primera vista es la vi
 ![Vista de Agua Historial](img/sprint1-execution-frontend-9.png)
 
 ##### Vista de Sistemas
+
 Se han desarrollado 2 vistas para la gestión de sistemas. La primera vista es la vista principal, donde se pueden ver todos los sistemas del usuario. La segunda vista es la vista de detalle, donde se puede ver información detallada de un sistema en específico.
 
 ![Vista de Sistemas](img/sprint1-execution-frontend-10.png)
@@ -4398,27 +4351,38 @@ Asimismo, para la landing page ya desplegada, se hicieron las siguientes seccion
 
 [Video de Execution Evidence - Landing Page](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217239_upc_edu_pe/ETBuyqKqonBPgndNL7XCJeYBSLIl9CMO7B1pcx3Y-E6LKQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NbjxIf)
 
-
 #### 6.2.1.7. Services Documentation
 
 Se han desarrollado los siguientes controladores para esta entrega
+
 ##### Controlador de Autenticación de usuario
+
 ![Controlador Auth](img/sprint1-services-1.png)
 En este controlador podemos encontrar 2 endpoints. Ambos están relacionados con la autenticación de usuarios. Estos endpoints están disponibles para cualquier persona
+
 1. `POST /api/v1/authentication/sign-up` Permite al usuario crear un nuevo usuario dentro de la aplicación
 2. `POST /api/v1/authentication/sign-in` Permite al usuario entrar a la aplicación con un nombre y contraseña
+
 ##### Controlador de Usuarios
+
 ![Controlador Usuarios](img/sprint1-services-2.png)
 En este controlador podemos encontrar 2 endpoints. Ambos están relacionados con la obtención de usuarios previamente creados en la aplicación. Solo se pueden acceder a estos endpoints con un usuario autenticado
+
 1. `GET api/v1/users` Permite al usuario recuperar a todos los usuarios de la aplicación. Este endpoint solo se utiliza con motivos de prueba y no será directamente accesible por cualquier persona
 2. `GET api/v1/users/{userId}` Mediante un id proporcionado, el usuario puede recuperar la información de un usuario
+
 ##### Controlador de Roles
+
 ![Controlador Roles](img/sprint1-services-3.png)
 En este controlador se puede encontrar 1 endpoint relacionado con la obtención de roles de usuario. Solo se puede acceder a este endpoint con un usuario autenticado
+
 1. `GET api/v1/roles` Permite al usuario recuperar todos los roles existentes
+
 ##### Controlador de Cultivos
+
 ![Controlador Cultivos](img/sprint1-services-4.png)
 En este controladr se pueden encontrar 9 endpoints relacionados con la obtención y creación de datos de cultivos. Ninguno de estos endpoints es accesible para un usuario sin autenticación. También, algunos de ellos serán únicamente accesibles para el sistema IOT, no para el usuario general
+
 1. `GET api/v1/crop/{userId}` Mediante un id proporcionado, el usuario puede recuperar todos los cultivos de un usuario determinado
 2. `GET api/v1/crop/{cropId}/reference` Recupera únicamente las referencias (id) de las clases Temperature, Humidity y WaterTank que están relacionadas con el crop indicado
 3. `GET api/v1/crop/{cropId}/light` Recupera los datos más importantes (temperatura, humedad y cantidad de agua leída) de las clases Temperature, Humidity y WaterTank que están relacionadas con el crop indicado
@@ -4439,7 +4403,6 @@ Después de guardar los cambios, GitHub generó automáticamente la URL pública
 
 ![Despliegue de la aplicación](img/sprint1-deployment-landing-1.png)
 
-
 Para el despliegue del frontend, se utilizó Netlify, una plataforma de despliegue y alojamiento para aplicaciones web modernas. Permite desplegar aplicaciones de forma rápida y sencilla, con integración continua y escalabilidad automática. El frontend está disponible en el siguiente enlace: [Frontend Web Application](https://hydrosmart-iot.netlify.app/)
 
 Primero, se creó una cuenta de Netlify y se accedió a la aplicación. Luego, se hizo clic en el botón "New site from GitHub" y se seleccionó el repositorio de GitHub donde se encuentra el código del frontend.
@@ -4450,9 +4413,28 @@ Después, se seleccionó la rama `release` y se configuraron las opciones de des
 ![Despliegue de la aplicación](img/sprint1-deployment-frontend-2.png)
 ![Aplicación desplegada](img/sprint1-deployment-frontend-3.png)
 
+Para el despliegue del backend, se utilizó Railway, una plataforma de despliegue y alojamiento para aplicaciones web modernas. Permite desplegar aplicaciones de forma rápida y sencilla, con integración continua y escalabilidad automática. El backend está disponible en el siguiente enlace:
+[Backend Web Application](https://api-hydrosmart.up.railway.app/swagger-ui/index.html)
+
+![Railway Logo](img/railway_logo.png)
+
+Primero, se crea un nuevo proyecto y se crea como vacio.
+![Creación de proyecto](img/proyecto_vacio_railway.png)
+
+Luego se crea un servicio vacio y una base de datos de tipo PostgreSQL.
+![Creación de servicio](img/backend_basededatos_railway.png)
+
+Luego se configura las variables de entorno, repositorio y rama del mismo de donde se va a desplegar el backend y la url del servicio backend.
+![Configuración de variables de entorno](img/entorno_variable_backend.png)
+![Configuración de variables de entorno](img/respositorio_backend_railway.png)
+![Configuración de variables de entorno](img/url_backend_railway.png)
+
+Y por ultimo se muestra como activo el despliegue del backend.
+![Despliegue de la aplicación](img/active_backend_railway.png)
+
 #### 6.2.1.9. Collaboration Insights
- 
-Durante el Sprint 1, el equipo mantuvo una comunicación efectiva y constante mediante reuniones diarias tipo *daily scrum*, donde se revisaba el avance de las tareas, se resolvían bloqueos y se coordinaban actividades clave. Además, se utilizó WhatsApp como canal principal de comunicación para intercambiar información, compartir recursos y dar seguimiento en tiempo real al desarrollo.
+
+Durante el Sprint 1, el equipo mantuvo una comunicación efectiva y constante mediante reuniones diarias tipo _daily scrum_, donde se revisaba el avance de las tareas, se resolvían bloqueos y se coordinaban actividades clave. Además, se utilizó WhatsApp como canal principal de comunicación para intercambiar información, compartir recursos y dar seguimiento en tiempo real al desarrollo.
 
 En cuanto a la gestión del código, se trabajó de forma diferenciada según el tipo de repositorio:
 
@@ -4465,7 +4447,6 @@ En cuanto a la gestión del código, se trabajó de forma diferenciada según el
 Este enfoque mixto permitió mantener un equilibrio entre agilidad y control del desarrollo. Gracias a la colaboración constante del equipo y a una adecuada distribución de tareas, se cumplieron exitosamente los objetivos del Sprint 1, asegurando un progreso sólido y bien documentado en este reporte.
 
 <img src="img/team-collaboration-insights-report-1.png" alt="Team Collaboration Insights 1">
- 
 
 ## 6.3. Validation Interviews
 
@@ -4492,6 +4473,7 @@ La estructura aplicada del proceso Lean UX ha permitido a nuestra startup, IoT S
 Escuela de Gestión Pública de la Universidad del Pacífico. (2022). Informe de evidencia: Sector agropecuario en el Perú. _Universidad del Pacífico_. https://www.up.edu.pe/egp/programas-especializacion_copy%281%29/SiteAssets/Lists/Observatorio/AllItems/Informe%20de%20Evidencia%20sector%20Agropecuario%20-%20EGP.pdf
 
 ### Anexos
+
 Video de Entrevista: [Enlace a Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217241_upc_edu_pe/Ee74xVmCHXdCqRbfXAxMVYcBWwsAtbc9I_3-GWoUAOtq4A?e=53DCcG&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 Product Backlog: [Enlace a Trello](https://trello.com/invite/b/68029db69b9160a847867db7/ATTIe60cc61d919ec781877b36318d877ec2F1FD4DE3/desarrollo-de-soluciones-iot)
