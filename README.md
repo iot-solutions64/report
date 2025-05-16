@@ -4225,7 +4225,7 @@ Para esta entrega, se realizaron 3 aplicaciones, la landing page, frontend web a
 | frontend-web | develop | 8f149fe532fcbfcc1146f83673973ead79c6daf7 | Merge pull request #7 from iot-solutions64/feature/recommended-actions | none                                          | 14/05/2025         |
 
 #### 6.2.1.5. Testing Suite Evidence
-
+##### Frontend Web Application Testing
 En el caso del frontend, se realizaron las pruebas unitarias en Vue haciendo uso de Vitest, un framework de pruebas para JavaScript. Se realizaron pruebas unitarias para los componentes de la aplicación, así como para las funciones que se utilizan en la misma. Las pruebas se encuentran en el directorio `tests` del repositorio del frontend.
 
 | Repository   | Branch  | Commit Id                                | Commit Message                              | Commit Message Body | Commited on (Date) |
@@ -4282,6 +4282,618 @@ test("Get all crops of non-existent user", async () => {
 <img src="img/auth-unit-tests.png" alt="Pruebas unitarias de autenticación" width="600"/>
 
 <img src="img/crop-unit-tests.png" alt="Pruebas unitarias de cultivos" width="600"/>
+
+##### Backend Application Testing
+Para las pruebas, se utilizó las funciones predeterminadas de Spring Boot Java, así como la biblioteca Mockito y Jupiter
+```
+<dependency>
+  <groupId>org.mockito</groupId>
+  <artifactId>mockito-core</artifactId>
+  <version>5.15.2</version>
+  <scope>test</scope>
+</dependency>
+<dependency>
+  <groupId>org.junit.jupiter</groupId>
+  <artifactId>junit-jupiter</artifactId>
+  <version>5.10.0</version>
+  <scope>test</scope>
+</dependency>
+```
+Las pruebas fueron realizadas en una rama aparte y se encuentran en el bajo el directorio tests creado automáticamente por Intellij Idea.
+![Testing Backend 1](img/sprint-testing-back-1.png)
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
+| --| -- | -- | -- | -- | -- |
+| backend | test/soil | e8659deb94ab17b7fefc8d873b603d81c452c8ed | feat: added test classes | none | 15/05/2025 |
+
+**Pruebas unitarias de autenticación**
+
+```
+@SpringBootTest
+class UserCommandServiceTests {
+
+    @Mock
+    private UserRepository userRepository;
+    @Mock private HashingService hashingService;
+    @Mock private TokenService tokenService;
+    @Mock private RoleRepository roleRepository;
+
+    @InjectMocks
+    private UserCommandServiceImpl userCommandService;
+
+    private final String username = "testuser";
+    private final String rawPassword = "password123";
+    private final String hashedPassword = "hashed123";
+    private final String token = "mockedToken";
+
+    private User user;
+
+    @BeforeEach
+    void setUp() {
+        MockitoAnnotations.openMocks(this);
+        user = new User(username, hashedPassword);
+        user.setId(1L);
+        user.setRoles(Set.of(new Role(Roles.ROLE_USER)));
+    }
+
+    @Test
+    void testHandleSignInSuccess() {
+        // Arrange
+        SignInCommand command = new SignInCommand(username, rawPassword);
+        when(userRepository.findByUsername(username)).thenReturn(Optional.of(user));
+        when(hashingService.matches(rawPassword, hashedPassword)).thenReturn(true);
+        when(tokenService.generateToken(username)).thenReturn(token);
+
+        // Act
+        Optional<ImmutablePair<User, String>> result = userCommandService.handle(command);
+
+        // Assert
+        assertTrue(result.isPresent());
+        assertEquals(username, result.get().getLeft().getUsername());
+        assertEquals(token, result.get().getRight());
+    }
+
+    @Test
+    void testHandleSignInUserNotFound() {
+        SignInCommand command = new SignInCommand("nonexistent", rawPassword);
+        when(userRepository.findByUsername("nonexistent")).thenReturn(Optional.empty());
+
+        RuntimeException exception = assertThrows(RuntimeException.class, () -> {
+            userCommandService.handle(command);
+        });
+        assertEquals("User not found", exception.getMessage());
+    }
+
+    @Test
+    void testHandleSignInInvalidPassword() {
+        SignInCommand command = new SignInCommand(username, "wrongPassword");
+        when(userRepository.findByUsername(username)).thenReturn(Optional.of(user));
+        when(hashingService.matches("wrongPassword", hashedPassword)).thenReturn(false);
+
+        RuntimeException exception = assertThrows(RuntimeException.class, () -> {
+            userCommandService.handle(command);
+        });
+        assertEquals("Invalid password", exception.getMessage());
+    }
+
+    @Test
+    void testHandleSignUpSuccess() {
+        SignUpCommand command = new SignUpCommand(username, rawPassword, List.of(new Role(Roles.ROLE_USER)));
+
+        when(userRepository.existsByUsername(username)).thenReturn(false);
+        when(roleRepository.findByName(Roles.ROLE_USER)).thenReturn(Optional.of(new Role(Roles.ROLE_USER)));
+        when(hashingService.encode(rawPassword)).thenReturn(hashedPassword);
+        when(userRepository.findByUsername(username)).thenReturn(Optional.of(user));
+
+        Optional<User> result = userCommandService.handle(command);
+
+        assertTrue(result.isPresent());
+        assertEquals(username, result.get().getUsername());
+    }
+
+    @Test
+    void testHandleSignUpUsernameExists() {
+        SignUpCommand command = new SignUpCommand(username, rawPassword, List.of(new Role(Roles.ROLE_USER)));
+        when(userRepository.existsByUsername(username)).thenReturn(true);
+
+        RuntimeException exception = assertThrows(RuntimeException.class, () -> {
+            userCommandService.handle(command);
+        });
+
+        assertEquals("Username already exists", exception.getMessage());
+    }
+
+    @Test
+    void testHandleSignUpInvalidRole() {
+        SignUpCommand command = new SignUpCommand(username, rawPassword, List.of(new Role(Roles.ROLE_ADMIN)));
+        when(userRepository.existsByUsername(username)).thenReturn(false);
+        when(roleRepository.findByName(Roles.ROLE_ADMIN)).thenReturn(Optional.empty());
+
+        RuntimeException exception = assertThrows(RuntimeException.class, () -> {
+            userCommandService.handle(command);
+        });
+
+        assertEquals("Role title not found", exception.getMessage());
+    }
+}
+```
+
+```
+@SpringBootTest
+public class UserQueryServiceTests {
+    private UserRepository userRepository;
+    private UserQueryService userQueryService;
+
+    @BeforeEach
+    public void setUp() {
+        userRepository = Mockito.mock(UserRepository.class);
+        userQueryService = new UserQueryServiceImpl(userRepository);
+    }
+
+    @Test
+    public void testFindAllUsers() {
+        // Arrange
+        User user1 = new User("john", "hashed123");
+        User user2 = new User("jane", "hashed456");
+        when(userRepository.findAll()).thenReturn(List.of(user1, user2));
+
+        // Act
+        List<User> result = userQueryService.handle(new GetAllUsersQuery());
+
+        // Assert
+        assertEquals(2, result.size());
+        assertEquals("john", result.get(0).getUsername());
+        verify(userRepository, times(1)).findAll();
+    }
+
+    @Test
+    public void testUserExistsByIdQuery() {
+        // Arrange
+        User user = new User("john", "hashed123");
+        user.setId(1L);
+        when(userRepository.findById(1L)).thenReturn(Optional.of(user));
+
+        // Act
+        Optional<User> result = userQueryService.handle(new GetUserByIdQuery(1L));
+
+        // Assert
+        assertTrue(result.isPresent());
+        assertEquals("john", result.get().getUsername());
+        verify(userRepository, times(1)).findById(1L);
+    }
+
+    @Test
+    public void testUserDoesNotExistByIdQuery() {
+        when(userRepository.findById(999L)).thenReturn(Optional.empty());
+
+        Optional<User> result = userQueryService.handle(new GetUserByIdQuery(999L));
+
+        assertTrue(result.isEmpty());
+        verify(userRepository).findById(999L);
+    }
+
+    @Test
+    public void testUserExistsByUsernameQuery() {
+        User user = new User("jane", "hashed456");
+        when(userRepository.findByUsername("jane")).thenReturn(Optional.of(user));
+
+        Optional<User> result = userQueryService.handle(new GetUserByUsernameQuery("jane"));
+
+        assertTrue(result.isPresent());
+        assertEquals("jane", result.get().getUsername());
+        verify(userRepository).findByUsername("jane");
+    }
+
+    @Test
+    public void testUserDoesNotExistByUsernameQuery() {
+        when(userRepository.findByUsername("ghost")).thenReturn(Optional.empty());
+
+        Optional<User> result = userQueryService.handle(new GetUserByUsernameQuery("ghost"));
+
+        assertTrue(result.isEmpty());
+        verify(userRepository).findByUsername("ghost");
+    }
+}
+```
+
+**Pruebas unitarias de cultivos**
+
+```
+@SpringBootTest
+public class CropCommandServiceTests {
+    private CropRepository cropRepository;
+    private TemperatureRepository temperatureRepository;
+    private HumidityRepository humidityRepository;
+    private UserContextFacade userContextFacade;
+    private CropCommandServiceImpl cropCommandService;
+
+    @BeforeEach
+    public void setUp() {
+        cropRepository = mock(CropRepository.class);
+        temperatureRepository = mock(TemperatureRepository.class);
+        humidityRepository = mock(HumidityRepository.class);
+        userContextFacade = mock(UserContextFacade.class);
+        cropCommandService = new CropCommandServiceImpl(
+                cropRepository,
+                temperatureRepository,
+                humidityRepository,
+                userContextFacade
+        );
+    }
+
+    @Test
+    public void testCreateCropCommandSuccess() {
+        // Arrange
+        Long userId = 1L, tempId = 10L, humId = 20L;
+        CreateCropCommand command = new CreateCropCommand("Maíz", userId, tempId, humId);
+
+        User mockUser = new User("user", "pass");
+        Temperature mockTemp = new Temperature();
+        Humidity mockHum = new Humidity();
+
+        when(userContextFacade.fetchUserById(userId)).thenReturn(mockUser);
+        when(temperatureRepository.findById(tempId)).thenReturn(Optional.of(mockTemp));
+        when(humidityRepository.findById(humId)).thenReturn(Optional.of(mockHum));
+
+        // Act
+        Optional<Crop> result = cropCommandService.handle(command);
+
+        // Assert
+        assertTrue(result.isPresent());
+        assertEquals("Maíz", result.get().getName());
+        verify(cropRepository, times(1)).save(any(Crop.class));
+    }
+
+    @Test
+    public void testCreateCropCommandTemperatureNotFound() {
+        CreateCropCommand command = new CreateCropCommand("Trigo", 1L, 999L, 20L);
+
+        when(userContextFacade.fetchUserById(1L)).thenReturn(new User("user", "pass"));
+        when(temperatureRepository.findById(999L)).thenReturn(Optional.empty());
+
+        RuntimeException exception = assertThrows(RuntimeException.class, () ->
+                cropCommandService.handle(command)
+        );
+        assertEquals("Temperature not found", exception.getMessage());
+        verify(cropRepository, never()).save(any());
+    }
+
+    @Test
+    public void testCreateCropCommandHumidityNotFound() {
+        CreateCropCommand command = new CreateCropCommand("Cebada", 1L, 10L, 999L);
+
+        when(userContextFacade.fetchUserById(1L)).thenReturn(new User("user", "pass"));
+        when(temperatureRepository.findById(10L)).thenReturn(Optional.of(new Temperature()));
+        when(humidityRepository.findById(999L)).thenReturn(Optional.empty());
+
+        RuntimeException exception = assertThrows(RuntimeException.class, () ->
+                cropCommandService.handle(command)
+        );
+        assertEquals("Humidity not found", exception.getMessage());
+        verify(cropRepository, never()).save(any());
+    }
+
+    @Test
+    public void testCreateCropCommandUserNotFound() {
+        CreateCropCommand command = new CreateCropCommand("Soja", 99L, 10L, 20L);
+
+        when(userContextFacade.fetchUserById(99L)).thenReturn(null);
+
+        assertThrows(NullPointerException.class, () ->
+                cropCommandService.handle(command)
+        );
+        verify(cropRepository, never()).save(any());
+    }
+}
+```
+
+```
+@SpringBootTest
+public class CropQueryServiceTests {
+    private CropRepository cropRepository;
+    private CropQueryServiceImpl cropQueryService;
+
+    @BeforeEach
+    public void setUp() {
+        cropRepository = mock(CropRepository.class);
+        cropQueryService = new CropQueryServiceImpl(cropRepository);
+    }
+
+    @Test
+    public void testGetCropByIdQuerySuccess() {
+        Long cropId = 1L;
+        Crop mockCrop = new Crop();
+        when(cropRepository.findById(cropId)).thenReturn(Optional.of(mockCrop));
+
+        var query = new GetCropByIdQuery(cropId);
+        Optional<Crop> result = cropQueryService.handle(query);
+
+        assertTrue(result.isPresent());
+        assertEquals(mockCrop, result.get());
+        verify(cropRepository, times(1)).findById(cropId);
+    }
+
+    @Test
+    public void testGetCropByIdQueryNotFound() {
+        Long cropId = 99L;
+        when(cropRepository.findById(cropId)).thenReturn(Optional.empty());
+
+        var query = new GetCropByIdQuery(cropId);
+        Optional<Crop> result = cropQueryService.handle(query);
+
+        assertTrue(result.isEmpty());
+        verify(cropRepository, times(1)).findById(cropId);
+    }
+
+    @Test
+    public void testGetAllCropsByUserIdQuerySuccess() {
+        Long userId = 1L;
+        List<Crop> mockCrops = List.of(new Crop(), new Crop());
+        when(cropRepository.findByUserId(userId)).thenReturn(mockCrops);
+
+        var query = new GetAllCropsByUserIdQuery(userId);
+        List<Crop> result = cropQueryService.handle(query);
+
+        assertEquals(2, result.size());
+        verify(cropRepository, times(1)).findByUserId(userId);
+    }
+
+    @Test
+    public void testGetCropByIdQueryNullId() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            new GetCropByIdQuery(null);
+        });
+        assertEquals("cropId cannot be null", exception.getMessage());
+    }
+
+    @Test
+    public void testGetCropByIdQueryNegativeId() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            new GetCropByIdQuery(-1L);
+        });
+        assertEquals("cropId cannot be negative", exception.getMessage());
+    }
+
+    @Test
+    public void testGetAllCropsByUserIdQueryNullId() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            new GetAllCropsByUserIdQuery(null);
+        });
+        assertEquals("userId cannot be null", exception.getMessage());
+    }
+
+    @Test
+    public void testGetAllCropsByUserIdQueryNegativeId() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            new GetAllCropsByUserIdQuery(-1L);
+        });
+        assertEquals("userId cannot be negative", exception.getMessage());
+    }
+}
+```
+
+```
+@SpringBootTest
+public class HumidityCommandServiceTests {
+    private HumidityRepository humidityRepository;
+    private HumidityStatusRepository humidityStatusRepository;
+    private HumidityCommandServiceImpl humidityCommandService;
+
+    @BeforeEach
+    public void setUp() {
+        humidityRepository = mock(HumidityRepository.class);
+        humidityStatusRepository = mock(HumidityStatusRepository.class);
+        humidityCommandService = new HumidityCommandServiceImpl(humidityRepository, humidityStatusRepository);
+    }
+
+    @Test
+    public void testCreateHumiditySuccess() {
+        CreateHumidityCommand command = new CreateHumidityCommand(60.0f, 50.0f, 70.0f);
+        HumidityStatus status = new HumidityStatus(HumidityStatusList.FAVORABLE);
+
+        when(humidityStatusRepository.findByName(HumidityStatusList.FAVORABLE))
+                .thenReturn(Optional.of(status));
+
+        Humidity expectedHumidity = new Humidity(command, status);
+        when(humidityRepository.save(any(Humidity.class))).thenReturn(expectedHumidity);
+
+        var result = humidityCommandService.handle(command);
+
+        assertTrue(result.isPresent());
+        assertEquals(expectedHumidity.getHumidity(), result.get().getHumidity());
+        verify(humidityRepository).save(any(Humidity.class));
+    }
+
+    @Test
+    public void testCreateHumidityInvalidThresholds() {
+        CreateHumidityCommand command = new CreateHumidityCommand(60.0f, 80.0f, 70.0f);
+
+        var exception = assertThrows(RuntimeException.class, () -> {
+            humidityCommandService.handle(command);
+        });
+
+        assertEquals("The min threshold cannot be greater than the max threshold", exception.getMessage());
+        verify(humidityRepository, never()).save(any());
+    }
+
+    @Test
+    public void testUpdateHumiditySuccess() {
+        UpdateHumidityCommand command = new UpdateHumidityCommand(1L, 65.0f, 50.0f, 70.0f);
+        Humidity existingHumidity = new Humidity();
+        existingHumidity.setId(1L);
+
+        HumidityStatus status = new HumidityStatus(HumidityStatusList.FAVORABLE);
+
+        when(humidityRepository.findById(1L)).thenReturn(Optional.of(existingHumidity));
+        when(humidityStatusRepository.findByName(any(HumidityStatusList.class)))
+                .thenReturn(Optional.of(status));
+        when(humidityRepository.save(any())).thenReturn(existingHumidity);
+
+        var result = humidityCommandService.handle(command);
+
+        assertTrue(result.isPresent());
+        verify(humidityRepository).save(existingHumidity);
+    }
+
+    @Test
+    public void testUpdateHumidityHumidityNotFound() {
+        UpdateHumidityCommand command = new UpdateHumidityCommand(1L, 60.0f, 50.0f, 70.0f);
+
+        when(humidityRepository.findById(1L)).thenReturn(Optional.empty());
+
+        var exception = assertThrows(RuntimeException.class, () -> {
+            humidityCommandService.handle(command);
+        });
+
+        assertEquals("Humidity not found", exception.getMessage());
+    }
+
+    @Test
+    public void testPatchHumiditySuccess() {
+        PatchHumidityCommand command = new PatchHumidityCommand(1L, 66.0f);
+        Humidity existingHumidity = new Humidity();
+        existingHumidity.setId(1L);
+        existingHumidity.setHumidityMinThreshold(50.0f);
+        existingHumidity.setHumidityMaxThreshold(70.0f);
+
+        HumidityStatus status = new HumidityStatus(HumidityStatusList.FAVORABLE);
+
+        when(humidityRepository.findById(1L)).thenReturn(Optional.of(existingHumidity));
+        when(humidityStatusRepository.findByName(any(HumidityStatusList.class)))
+                .thenReturn(Optional.of(status));
+
+        humidityCommandService.handle(command);
+
+        verify(humidityRepository).save(existingHumidity);
+        assertEquals(66.0f, existingHumidity.getHumidity());
+    }
+
+    @Test
+    public void testFindStatus_StatusNotFound_Throws() {
+        when(humidityStatusRepository.findByName(HumidityStatusList.FLOODED))
+                .thenReturn(Optional.empty());
+
+        var command = new CreateHumidityCommand(100.0f, 50.0f, 70.0f);
+
+        assertThrows(RuntimeException.class, () -> {
+            humidityCommandService.handle(command);
+        });
+    }
+}
+```
+
+```
+@SpringBootTest
+public class TemperatureCommandServiceTests {
+    @Mock
+    private TemperatureRepository temperatureRepository;
+
+    @Mock
+    private TemperatureStatusRepository temperatureStatusRepository;
+
+    @InjectMocks
+    private TemperatureCommandServiceImpl temperatureCommandService;
+
+    private final Float MIN = 10.0f;
+    private final Float MAX = 30.0f;
+
+    @Test
+    void testCreateTemperatureSuccess() {
+        // Arrange
+        CreateTemperatureCommand command = new CreateTemperatureCommand(25.0f, MIN, MAX);
+        TemperatureStatus status = new TemperatureStatus(TemperatureStatusList.FAVORABLE);
+        Temperature temperature = new Temperature(command, status);
+
+        Mockito.when(temperatureStatusRepository.findByName(TemperatureStatusList.FAVORABLE))
+                .thenReturn(Optional.of(status));
+        Mockito.when(temperatureRepository.save(Mockito.any(Temperature.class)))
+                .thenReturn(temperature);
+
+        // Act
+        Optional<Temperature> result = temperatureCommandService.handle(command);
+
+        // Assert
+        assertTrue(result.isPresent());
+        assertEquals(command.temperature(), result.get().getTemperature());
+        assertEquals(TemperatureStatusList.FAVORABLE, result.get().getTemperatureStatus().getName());
+    }
+
+    @Test
+    void testUpdateTemperatureSuccess() {
+        // Arrange
+        UpdateTemperatureCommand command = new UpdateTemperatureCommand(1L, 32.0f, MIN, MAX);
+        Temperature existing = new Temperature(new CreateTemperatureCommand(25.0f, MIN, MAX),
+                new TemperatureStatus(TemperatureStatusList.FAVORABLE));
+        existing.setId(1L);
+
+        TemperatureStatus newStatus = new TemperatureStatus(TemperatureStatusList.SLIGHTLY_UNFAVORABLE_OVER);
+
+        Mockito.when(temperatureRepository.findById(1L))
+                .thenReturn(Optional.of(existing));
+        Mockito.when(temperatureStatusRepository.findByName(TemperatureStatusList.SLIGHTLY_UNFAVORABLE_OVER))
+                .thenReturn(Optional.of(newStatus));
+        Mockito.when(temperatureRepository.save(Mockito.any(Temperature.class)))
+                .thenAnswer(i -> i.getArguments()[0]);
+
+        // Act
+        Optional<Temperature> result = temperatureCommandService.handle(command);
+
+        // Assert
+        assertTrue(result.isPresent());
+        assertEquals(command.temperature(), result.get().getTemperature());
+        assertEquals(TemperatureStatusList.SLIGHTLY_UNFAVORABLE_OVER, result.get().getTemperatureStatus().getName());
+    }
+
+    @Test
+    void testPatchTemperatureSuccess() {
+        // Arrange
+        PatchTemperatureCommand command = new PatchTemperatureCommand(1L, 8.0f); // Slightly unfavorable under
+        Temperature existing = new Temperature(new CreateTemperatureCommand(15.0f, MIN, MAX),
+                new TemperatureStatus(TemperatureStatusList.FAVORABLE));
+        existing.setId(1L);
+
+        TemperatureStatus newStatus = new TemperatureStatus(TemperatureStatusList.SLIGHTLY_UNFAVORABLE_UNDER);
+
+        Mockito.when(temperatureRepository.findById(1L))
+                .thenReturn(Optional.of(existing));
+        Mockito.when(temperatureStatusRepository.findByName(TemperatureStatusList.SLIGHTLY_UNFAVORABLE_UNDER))
+                .thenReturn(Optional.of(newStatus));
+        Mockito.when(temperatureRepository.save(Mockito.any(Temperature.class)))
+                .thenAnswer(i -> i.getArguments()[0]);
+
+        // Act
+        temperatureCommandService.handle(command);
+
+        // Assert
+        assertEquals(command.temperature(), existing.getTemperature());
+        assertEquals(TemperatureStatusList.SLIGHTLY_UNFAVORABLE_UNDER, existing.getTemperatureStatus().getName());
+    }
+
+    @Test
+    void testInvalidThreshold() {
+        // Arrange
+        CreateTemperatureCommand command = new CreateTemperatureCommand(25.0f, 40.0f, 20.0f);
+
+        // Act & Assert
+        Exception exception = assertThrows(RuntimeException.class, () ->
+                temperatureCommandService.handle(command));
+        assertEquals("The min threshold cannot be greater than the max threshold", exception.getMessage());
+    }
+
+    @Test
+    void testInvalidStatus() {
+        // Arrange
+        CreateTemperatureCommand command = new CreateTemperatureCommand(25.0f, MIN, MAX);
+
+        Mockito.when(temperatureStatusRepository.findByName(TemperatureStatusList.FAVORABLE))
+                .thenReturn(Optional.empty());
+
+        // Act & Assert
+        assertThrows(RuntimeException.class, () ->
+                temperatureCommandService.handle(command));
+    }
+}
+```
 
 #### 6.2.1.6. Execution Evidence
 
