@@ -4310,7 +4310,7 @@ Las pruebas fueron realizadas en una rama aparte y se encuentran en el bajo el d
 
 **Pruebas unitarias de autenticación**
 
-```
+```bash
 @SpringBootTest
 class UserCommandServiceTests {
 
@@ -4420,7 +4420,7 @@ class UserCommandServiceTests {
 }
 ```
 
-```
+```bash
 @SpringBootTest
 public class UserQueryServiceTests {
     private UserRepository userRepository;
@@ -4500,7 +4500,7 @@ public class UserQueryServiceTests {
 
 **Pruebas unitarias de cultivos**
 
-```
+```bash
 @SpringBootTest
 public class CropCommandServiceTests {
     private CropRepository cropRepository;
@@ -4589,7 +4589,7 @@ public class CropCommandServiceTests {
 }
 ```
 
-```
+```bash
 @SpringBootTest
 public class CropQueryServiceTests {
     private CropRepository cropRepository;
@@ -4674,7 +4674,7 @@ public class CropQueryServiceTests {
 }
 ```
 
-```
+```bash
 @SpringBootTest
 public class HumidityCommandServiceTests {
     private HumidityRepository humidityRepository;
@@ -4784,7 +4784,7 @@ public class HumidityCommandServiceTests {
 }
 ```
 
-```
+```bash
 @SpringBootTest
 public class TemperatureCommandServiceTests {
     @Mock
