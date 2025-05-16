@@ -148,8 +148,6 @@
     </td>
     <td>
       <img src="img/insights-tb1.png">
-      <img src="img/commits-1-tb1.png">
-      <img src="img/commits-2-tb1.png">
     </td>
   </tr>
   <tr>
@@ -161,9 +159,15 @@
       <p> El informe se realizó en el siguiente repositorio:</p>
       <p>Reporte: <a href="https://github.com/iot-solutions64/report">Documento Trabajo Parcial</a></p>
       <p>Aplicación Frontend: <a href="https://hydrosmart-iot.netlify.app">Enlace a la aplicación</a></p>
+      <p>Página Landing Page: <a href="https://iot-solutions64.github.io/landing-page/">Enlace a la página</p>
     </td>
     <td>
-      <p>TBD</p>
+      <p>Frontend</p>
+      <img src="img/insights-tp-1.png">
+      <p>Backend</p>
+      <img src="img/insights-tp-2.png">
+      <p>Landing Page</p>
+      <img src="img/insights-tp-3.png">
     </td>
   </tr>
 </table>
@@ -4223,8 +4227,67 @@ Para esta entrega, se realizaron 3 aplicaciones, la landing page, frontend web a
 | frontend-web | develop | 11c30bdc743bd219c9626046b602bb49dff9ae7d | feat: add crop history                                                 | none                                          | 12/05/2025         |
 | frontend-web | develop | a1bd221fb7d20323e8356eaddac0ded36e3815af | style: add responsiveness to system tables                             | none                                          | 12/05/2025         |
 | frontend-web | develop | bee3943d6249408b73229922e93a61251c720d77 | Merge pull request #6 from iot-solutions64/feature/system              | feat: system views                            | 13/05/2025         |
-| frontend-web | develop | c9bab9bd92d94b4583996ecdcc27147f800cb786 | feat: suggestion videos for recommended actions                        | none                                          | 14/05/2025         |
-| frontend-web | develop | 8f149fe532fcbfcc1146f83673973ead79c6daf7 | Merge pull request #7 from iot-solutions64/feature/recommended-actions | none                                          | 14/05/2025         |
+| frontend-web | develop | c9bab9bd92d94b4583996ecdcc27147f800cb786 | feat: suggestion videos for recommended actions | none                                          | 14/05/2025         |
+| frontend-web | develop | 8f149fe532fcbfcc1146f83673973ead79c6daf7 | Merge pull request #7 from iot-solutions64/feature/recommended-actions | none | 14/05/2025 |
+| backend | develop | 8ec2c9a839cda75c39766ab9e46af3d2556e2c0b | first commit | none | 09/05/2025 |
+| backend | develop | 74530fcd51e9c236a0d12be61c00fa7b20d3bcc2 | feat: added shared files | none | 09/05/2025 |
+| backend | develop | 6e31ac6a37a7f3c0f4c065b4ec16d282490a5b38 | chore: updated dependencies | none | 09/05/2025 |
+| backend | develop | aea8a64377135b60a65f7380461651323433857b | chore: added application properties | none | 09/05/2025 |
+| backend | develop | 1b2cea194207a92096776ef3f9e703fa5e18545f | feat: added security domain layer | none | 09/05/2025 |
+| backend | develop | 0b211015c22c2585a12316f262539cb0c2536351 | fix(security): updated file name | none | 09/05/2025 |
+| backend | develop | 5888d96b9be6c471de04673ec70b277a5d65cade | feat(security): added security services | none | 09/05/2025 |
+| backend | develop | a921026caabf92b764425b04d12a3d6ff011fe46 | feat(security): added security repositories | none | 09/05/2025 |
+| backend | develop | db3d22cd5acc68a90fb1f33ef0349ac6ac077ded | feat(security): added application layer | none | 09/05/2025 |
+| backend | develop | 229ff2657ac8e0c01e96af2e97fde729a853b5ce | feat(security): added infrastructure layer | none | 09/05/2025 |
+| backend | develop | af1ff9c49677e81f9a66ce323415ac9a86cc03c7 | feat(security): added interfaces layer | none | 09/05/2025 |
+| backend | develop | 641fc7d7f8f97b4d4d9ca4022a64f5f12fe0f312 | feat(security): added user facade | none | 09/05/2025 |
+| backend | develop | 4345da70de507c31d015c458c2576a5675b335fc | chore: updated dependencies | none | 10/05/2025 |
+| backend | develop | fb132a259b1fac47f0a269bbfe5c85ac08bef3a4 | feat(soil): added aggregates and entities | none | 10/05/2025 |
+| backend | develop | e76abaf9f42a369b72b38ff151b13b24685028a4 | feat(soil): added more classes to the domain layer | none | 10/05/2025 |
+| backend | develop | a9b6c69cd458dc633e2a2fb2abe020b8211d932d | chore(soil): moved all the classes to the correct folder | none | 10/05/2025 |
+| backend | develop | 745a739d6c9c71a9869f4aaed7f69d2b3d9a87aa | feat(soil): added command service | none | 10/05/2025 |
+| backend | develop | ea960387655e6404086c23245275667a0889ed97 | feat(soil): added crop services | none | 10/05/2025 |
+| backend | develop | a82872996519a8bb1a25fec0442d415acfb234e9 | feat(soil): updated crop domain layer to include a user attribute | none | 10/05/2025 |
+| backend | develop | c29bbdfc62c609d3f85bb48c244a16f736dd5b9c | feat(soil): added soil infrastructure layer | none | 10/05/2025 |
+| backend | develop | 2fcc918859ec9d2600655fd39baa013cddb7d4dc | feat(soil): added soil application layer | none | 10/05/2025 |
+| backend | develop | 647685d34937795f09c97c14be0ae4c25d0a3316 | feat(soil): added a more specific threshold in the humidity and temperature classes | none | 10/05/2025 |
+| backend | develop | fb8c566793e21b9f45da80ed7070341c83e698ed | feat(soil): added soil related resources | none | 10/05/2025 |
+| backend | develop | ad8554116dde3218b6ed1f3ee35e7a4280cf282e | refactor(soil): changed the order of the parameters | none | 10/05/2025 |
+| backend | develop | 1beecc64a36d0c1c93397ce8b8eac673646bf338 | feat(soil): added the missing parameters | none | 10/05/2025 |
+| backend | develop | c22fd05513460d89842a5a3d87aef46eeafdeffd | feat(soil): added resource transform classes | none | 10/05/2025 |
+| backend | develop | 63427c8900e949ed2e95a877f0daafcd0e1fccd2 | feat(soil): added crop controller | none | 10/05/2025 |
+| backend | develop | 974a696b13c869fc80859e2699f7f21e28dde693 | feat(soil): updated the domain layer to include for more functionality | none | 10/05/2025 |
+| backend | develop | dfc4983ec5f52b850dfb6b74c1873b984f76e8fc | feat(soil): added patch, create and update commands for the humidity entity | none | 10/05/2025 |
+| backend | develop | 72acfc65d312fd7a890ecc1394c9c35918108ddb | chore(soil): added comments to the commands for better understandability | none | 10/05/2025 |
+| backend | develop | 8267dc88a52daf50af0570b5d0065742b3035383 | refactor(soil): deleted the suggestions attributes to avoid redundancy | none | 10/05/2025 |
+| backend | develop | 7b5e038b52461c1f5fa8eeaef41e9896f31a1dc9 | feat(soil): added the command and query services impl for the humidity and temperature classes | none | 11/05/2025 |
+| backend | develop | 0761e54cfbe98b540f843f0271e0ec9beda1aea9 | feat(soil): added the resources of the humidity and temperature classes | none | 11/05/2025 |
+| backend | develop | b2ea998e54cf26014b7526fc0e93bae12d4db2d7 | feat(soil): added transform classes | none | 11/05/2025 |
+| backend | develop | da73b2e4ca7372a234f3704e22403efca476c085 | feat(soil): added more transform classes | none | 11/05/2025 |
+| backend | develop | f8aea1359afd778cc614c2acec981b3960dc1306 | feat(soil): added temp and hum queries | none | 11/05/2025 |
+| backend | develop | 8ddc1f652a97fdb5a56a3175e3b41e9aa31ff4e9 | feat(soil): added temp and hum query services | none | 11/05/2025 |
+| backend | develop | 2cf4ec3f223817db5eb627a573f6c3c6427cecc9 | feat(soil): added temp and hum query services impl | none | 11/05/2025 |
+| backend | develop | b93b4be50758e64d4a16454ebd7ec95aadb27e79 | fix(soil): added missing @service | none | 11/05/2025 |
+| backend | develop | 3d63f524c58218a54f2cca2a36b32ee07a74ad78 | refactor(soil): remove the id from the resources to protect the data | none | 11/05/2025 |
+| backend | develop | 5e26f058e9b35a2c372ba378943f28c5eb0a1a1d | refactor(soil): removed the hum and temp query services | none | 11/05/2025 |
+| backend | develop | 209885ca67fc53e6a723fd355e1090d80924b25a | refactor(soil): removed id from patch resources to keep data save | none | 11/05/2025 |
+| backend | develop | 97e90bf33e5f80ebe27b448b1b9de4328bd1a4c9 | feat(soil): added more functions to the controller | none | 11/05/2025 |
+| backend | develop | 3c14bdfddeeb4acbb0d26b62355fc173a4b991f4 | feat(security): added crop list to the user class | none | 11/05/2025 |
+| backend | develop | 91f4d4b5a9fe8e6f7bdab417faa8a707088d3637 | feat(soil): added name attribute to the crop related classes | none | 11/05/2025 |
+| backend | develop | 37beb85e9e0a97142cc4a64e6aa575ad2ad216a5 | feat(soil): added the missing post method | none | 12/05/2025 |
+| backend | develop | d74383682c8664c7156d703c45f4a89dcb79c8b8 | fix(soil): added missing inheritance | none | 12/05/2025 |
+| backend | develop | 726f36ca68ba9337bd6e73278395f5cf2675a989 | fix(security): added missing class | none | 12/05/2025 |
+| backend | develop | 2831a7fa7687b086b827206cb5b83721b0ed7ec0 | feat(soil): added humidity and temperature seeding classes | none | 14/05/2025 |
+| backend | develop | 942ba6b72225e967e9dc7d063b7fd2946a396e1a | chore: changed dependencies | none | 14/05/2025 |
+| backend | develop | 9eb82a58c573d7fb382c803caf8af72196a3ceef | fix(soil): fixed some issues that prevented the CRUD functionality to work | none | 14/05/2025 |
+| backend | develop | 8784532aee808a2bf52274487e4b2216bb335696 | Merge pull request #1 from iot-solutions64/feature/soil | Feature/soil | 14/05/2025 |
+| backend | develop | 722a6f305404287baa0a7b07343d6c9e2309e4f2 | chore: set up Docker environment with env variables | none | 14/05/2025 |
+| backend | develop | e5ee57ae63e967eadcd5324353baa67b5d19ecce | chore: updated Dockerfile | none | 14/05/2025 |
+| backend | develop | b7cf4769a3ba522c15f719fa26b648d2b9fbf523 | chore: updated Dockerfile and pom | none | 14/05/2025 |
+| backend | develop | 28e66d0bb59f2b957d169f88cd94e70604c3ef1e | chore: updated open api servers | none | 14/05/2025 |
+| backend | develop | 0eb3684c1a8096ace7a0a2264792d7870450eb22 | chore: updated pom | none | 14/05/2025 |
+| backend | test/soil | b61eca545b7ab13fe350e3faeb7c831fd766b617 | fix(soil): fixed an issue with how the statuses are handled | none | 16/05/2025 |
+| backend | test/soil | e8659deb94ab17b7fefc8d873b603d81c452c8ed | feat: added test classes | none | 16/05/2025 |
 
 #### 6.2.1.5. Testing Suite Evidence
 ##### Frontend Web Application Testing
