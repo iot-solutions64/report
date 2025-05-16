@@ -4276,6 +4276,66 @@ Para esta entrega, se realizaron 3 aplicaciones, la landing page, frontend web a
 
 #### 6.2.1.5. Testing Suite Evidence
 
+En el caso del frontend, se realizaron las pruebas unitarias en Vue haciendo uso de Vitest, un framework de pruebas para JavaScript. Se realizaron pruebas unitarias para los componentes de la aplicación, así como para las funciones que se utilizan en la misma. Las pruebas se encuentran en el directorio `tests` del repositorio del frontend.
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date)|
+| --- | --- | --- | --- | --- | --- |
+| frontend-web | release | 2333e4153fca238820a22406ad04e7dc2c6f2327 | test: unit tests for auth and crop services | none | 15/05/2025 |
+
+Se realizaron pruebas unitarias para los servicios de autenticación y cultivos. En la prueba de autenticación, se realizaron pruebas para los métodos de inicio de sesión exitoso con credenciales correctas, o erróneo al usar credenciales incorrectas. En la prueba de cultivos, se realizaron pruebas para la obtención de cultivos de un usuario existente y un usuario inexistente.
+
+**Pruebas unitarias de autenticación**
+
+```bash
+test("User login successful", async () => {
+    const authService = new AuthenticationService();
+    const response = await authService.signIn("string", "string");
+    const loginResponse = LoginResponse.fromJson(response.data);
+    console.log("loginResponse:", loginResponse);
+    expect(loginResponse.token).toBeDefined();
+});
+
+test("User login fail", async () => {
+    const authService = new AuthenticationService();
+    try {
+        const response = await authService.signIn("invalidUser", "invalidPassword");
+    } catch(e) {
+        console.log("error:", e.response.status);
+        expect(e.response.status).toBe(401);
+    }
+});
+```
+
+**Pruebas unitarias de cultivos**
+
+```bash
+test("Get all crops of user 1", async () => {
+    const cropsService = new CropService();
+    const response = await cropsService.getCropsByUserId(1);
+    console.log("crops:", response.data);
+    expect(response.status).toBe(200);
+})
+
+test("Get all crops of non-existent user", async () => {
+    const cropsService = new CropService();
+    try {
+        const response = await cropsService.getCropsByUserId(-1);
+    } catch (e) {
+        console.log("error:", e.response.status);
+        expect(e.response.status).toBe(401);
+    }
+})
+```
+
+
+**Resultados de las pruebas unitarias de autenticación y cultivos**
+
+<img src="img/auth-unit-tests.png" alt="Pruebas unitarias de autenticación" width="600"/>
+
+<img src="img/crop-unit-tests.png" alt="Pruebas unitarias de cultivos" width="600"/>
+
+
+
 #### 6.2.1.6. Execution Evidence
 
 ##### Para esta entrega, se han desarrollado los siguientes endpoints en el backend
