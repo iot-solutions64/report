@@ -4310,7 +4310,7 @@ En este controladr se pueden encontrar 9 endpoints relacionados con la obtenció
 
 Se ha desarrollado un video que muestra el funcionamiento de la aplicación. En este video se puede ver la interacción con el frontend.
 
-[Video de Execution Evidence - Frontend](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/EXA0XbjgVhpPsGIL5MuJXz4BrvVcmgS-k6DW_f6VI3caSQ?e=OlKLLj)
+[Video de Execution Evidence - Frontend](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/EeTbmKhGXVtDrXsDYhBpS-QB2eRk3b0jeFIh7aGEaFQFEw?e=aLZZEV)
 
 ##### Vista de Autenticación
 Se han desarrollado 2 vistas para la autenticación de usuarios, una para el registro y otra para el inicio de sesión. Ambas vistas están disponibles para cualquier persona que acceda a la aplicación.
