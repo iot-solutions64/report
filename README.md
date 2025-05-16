@@ -639,8 +639,6 @@ Sabremos que esto es cierto
 
 Cuando se observe un incremento del 15% en la productividad de los cultivos de los agricultores que utilicen HydroSmart durante los primeros 6 meses.
 
-<div style="page-break-after: always;"></div>
-
 #### 1.2.2.4. Lean UX Canvas
 
 <img src="img/lean-ux-canvas.png" alt="Lean UX Canvas" width="90%" />
@@ -986,6 +984,8 @@ _Actitudes:_ Muestran disposición a aprender y adoptar nuevas tecnologías, per
 
 - Buscan soluciones que les ayuden a optimizar el uso del agua y mejorar la productividad de sus cultivos.
 
+<div style="page-break-after: always;"></div>
+
 ## 2.3. Needfinding
 
 ### 2.3.1. User Personas
@@ -993,6 +993,8 @@ _Actitudes:_ Muestran disposición a aprender y adoptar nuevas tecnologías, per
 Para esta sección se presentan personajes ficticios de acuerdo al segmento objetivo. La información que se ha utilizado para elaborar el User persona se obtuvo de las entrevistas realizadas previamente al segmento objetivo en cuestion. La intención de las entrevistas era conocer un poco más a las personas a las que la aplicación está dirigida. Entre la información de las entrevistas que fue utilizada tenemos demografía, metas, motivaciones, frustraciones, marcas relacionadas con el tema que envuelve a la aplicación, canales digitales que más utiliza, etc. Para la creación de esta sección se utilizó la plataforma UXPressia.
 
 <img src="img/user_persona.png" alt="User Persona" height="1000px" width="auto" />
+
+<div style="page-break-after: always;"></div>
 
 ### 2.3.2. User Task Matrix
 
@@ -4401,17 +4403,18 @@ Primero, se creó el repositorio en GitHub y se subieron los archivos del proyec
 
 Después de guardar los cambios, GitHub generó automáticamente la URL pública del sitio web, la cual quedó disponible en minutos. La landing puede ser visitada en el siguiente enlace: [Landing Page](https://iot-solutions64.github.io/landing-page/)
 
-![Despliegue de la aplicación](img/sprint1-deployment-landing-1.png)
+<img src="img/sprint1-deployment-landing-1.png" alt="Despliegue de la aplicación" width="80%"/>
 
 Para el despliegue del frontend, se utilizó Netlify, una plataforma de despliegue y alojamiento para aplicaciones web modernas. Permite desplegar aplicaciones de forma rápida y sencilla, con integración continua y escalabilidad automática. El frontend está disponible en el siguiente enlace: [Frontend Web Application](https://hydrosmart-iot.netlify.app/)
 
 Primero, se creó una cuenta de Netlify y se accedió a la aplicación. Luego, se hizo clic en el botón "New site from GitHub" y se seleccionó el repositorio de GitHub donde se encuentra el código del frontend.
-![Selección de repositorio](img/sprint1-deployment-frontend-1.png)
+
+<img src="img/sprint1-deployment-frontend-1.png" alt="Selección de repositorio" width="80%"/>
 
 Después, se seleccionó la rama `release` y se configuraron las opciones de despliegue. Finalmente, se hizo clic en el botón "Deploy site" para iniciar el proceso de despliegue.
 
-![Despliegue de la aplicación](img/sprint1-deployment-frontend-2.png)
-![Aplicación desplegada](img/sprint1-deployment-frontend-3.png)
+<img src="img/sprint1-deployment-frontend-2.png" alt="Despliegue de la aplicación" width="80%"/>
+<img src="img/sprint1-deployment-frontend-3.png" alt="Aplicación desplegada" width="80%"/>
 
 Para el despliegue del backend, se utilizó Railway, una plataforma de despliegue y alojamiento para aplicaciones web modernas. Permite desplegar aplicaciones de forma rápida y sencilla, con integración continua y escalabilidad automática. El backend está disponible en el siguiente enlace:
 [Backend Web Application](https://api-hydrosmart.up.railway.app/swagger-ui/index.html)
@@ -4419,15 +4422,19 @@ Para el despliegue del backend, se utilizó Railway, una plataforma de despliegu
 ![Railway Logo](img/railway_logo.png)
 
 Primero, se crea un nuevo proyecto y se crea como vacio.
-![Creación de proyecto](img/proyecto_vacio_railway.png)
+
+<img src="img/proyecto_vacio_railway.png" alt="Creación de proyecto" width="80%"/>
 
 Luego se crea un servicio vacio y una base de datos de tipo PostgreSQL.
-![Creación de servicio](img/backend_basededatos_railway.png)
+<img src="img/backend_basededatos_railway.png" alt="Creación de servicio" width="80%"/>
 
 Luego se configura las variables de entorno, repositorio y rama del mismo de donde se va a desplegar el backend y la url del servicio backend.
-![Configuración de variables de entorno](img/entorno_variable_backend.png)
-![Configuración de variables de entorno](img/respositorio_backend_railway.png)
-![Configuración de variables de entorno](img/url_backend_railway.png)
+
+<img src="img/entorno_variable_backend.png" alt="Configuración de variables de entorno" width="80%"/>
+
+<img src="img/respositorio_backend_railway.png" alt="Configuración de variables de entorno" width="80%"/>
+
+<img src="img/url_backend_railway.png" alt="Configuración de variables de entorno" width="80%"/>
 
 Y por ultimo se muestra como activo el despliegue del backend.
 ![Despliegue de la aplicación](img/active_backend_railway.png)
@@ -4446,7 +4453,7 @@ En cuanto a la gestión del código, se trabajó de forma diferenciada según el
 
 Este enfoque mixto permitió mantener un equilibrio entre agilidad y control del desarrollo. Gracias a la colaboración constante del equipo y a una adecuada distribución de tareas, se cumplieron exitosamente los objetivos del Sprint 1, asegurando un progreso sólido y bien documentado en este reporte.
 
-<img src="img/team-collaboration-insights-report-1.png" alt="Team Collaboration Insights 1">
+<img src="img/team-collaboration-insights-report-1.png" alt="Team Collaboration Insights 1" width="80%"/>
 
 ## 6.3. Validation Interviews
 
