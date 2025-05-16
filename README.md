@@ -353,7 +353,7 @@
         <h4>Neyra Santa Cruz, Marcelo Sebastian</h4>
           <p>Para este entregable, como líder de equipo, me encargué de gestionar al grupo para el correcto desarrollo de las 3 aplicaciones de esta entrega, el backend, frontend y landing page. Me aseguré de estar monitoreando el constante avance para cumplir con el nivel calidad esperado</p>
         <h4>Paredes Puente, Sebastian Roberto</h4>
-          <p>TBD</p>
+          <p>En esta entrega, trabajamos en equipo y compartimos el liderazgo. Yo me encargué de la landing page, coordinándome con el grupo para asegurar coherencia y buenos resultados.</p>
         <h4>Salinas Torres, Salvador Antonio</h4>
           <p>TBD</p>
         <h4>Soto Salis, Natanael David</h4>
@@ -386,7 +386,7 @@
         <h4>Neyra Santa Cruz, Marcelo Sebastian</h4>
           <p>Para este entregable, como líder de equipo, establecí metas y planifiqué los avances de cada uno de las 3 aplicaciones solicitadas para este entregable. Para asegurarme que se esté trabajando correctamente, se realizaron algunas reuniones y se coordinó constantemente por la plataforma WhatsApp</p>
         <h4>Paredes Puente, Sebastian Roberto</h4>
-          <p>TBD</p>
+          <p>En esta etapa del proyecto, logramos fomentar un entorno colaborativo e inclusivo. Juntos definimos metas, organizamos las tareas y logramos cumplir los objetivos del proyecto a tiempo, siempre ayudandonos entre nosotros.</p>
         <h4>Salinas Torres, Salvador Antonio</h4>
           <p>TBD</p>
         <h4>Soto Salis, Natanael David</h4>
