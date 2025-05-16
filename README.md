@@ -349,7 +349,7 @@
           <p>Para este entregable, se dividió las tareas de forma equitativa entre todos los miembros del equipo, asegurando que cada uno tuviera una parte justa del trabajo. Me mantuve al tanto de los avances de mis compañeros y contribuí con mis ideas para mejorar el desarrollo del proyecto.</p>
         <h3>Trabajo Parcial</h3>
         <h4>Delgado Corrales, Piero Gonzalo</h4>
-          <p>TBD</p>
+          <p>Para esta entrega, coordiné con el equipo para el desarrollo del backend, frontend y landing page. Me comprometí con desarollar el frontend y asegurarme de que cumpliera con los requisitos establecidos.</p>
         <h4>Neyra Santa Cruz, Marcelo Sebastian</h4>
           <p>Para este entregable, como líder de equipo, me encargué de gestionar al grupo para el correcto desarrollo de las 3 aplicaciones de esta entrega, el backend, frontend y landing page. Me aseguré de estar monitoreando el constante avance para cumplir con el nivel calidad esperado</p>
         <h4>Paredes Puente, Sebastian Roberto</h4>
@@ -382,7 +382,7 @@
           <p>Para este entregable, me mantuve al tanto de los avances de mis compañeros y contribuí con mis ideas para mejorar el desarrollo del proyecto. Además, se establecieron metas y tareas a cumplir para asegurar que todos estemos alineados en el trabajo.</p>
         <h3>Trabajo Parcial</h3>
         <h4>Delgado Corrales, Piero Gonzalo</h4>
-          <p>TBD</p>
+          <p>Para esta entrega, planifique las tareas a desarrollar para crear la aplicación web. Me aseguré de que cada tarea se cumpliera a tiempo y de que se mantuviera una buena comunicación de los avances con el equipo.</p>
         <h4>Neyra Santa Cruz, Marcelo Sebastian</h4>
           <p>Para este entregable, como líder de equipo, establecí metas y planifiqué los avances de cada uno de las 3 aplicaciones solicitadas para este entregable. Para asegurarme que se esté trabajando correctamente, se realizaron algunas reuniones y se coordinó constantemente por la plataforma WhatsApp</p>
         <h4>Paredes Puente, Sebastian Roberto</h4>
@@ -4092,7 +4092,6 @@ Se planeó el primer sprint a través de una reunión presencial. Para ello, se 
 
 #### 6.2.1.2. Aspect Leaders and Collaborators
 
-
 En esta sección se presenta el equipo que participará en la elaboración del artefacto **Leadership-and-Collaboration Matrix (LACX)**, con el objetivo de brindar claridad y efectividad en la comunicación dentro del equipo. Para ello, se han identificado tres aspectos principales dentro del alcance del Sprint: **Desarrollo de Backend**, **Desarrollo de Frontend Web** y **Desarrollo de Landing Page**.
 
 Cada aspecto tiene asignados un líder y colaboradores que serán responsables de su ejecución. La matriz de liderazgo y colaboración es la siguiente:
@@ -4401,6 +4400,7 @@ Asimismo, para la landing page ya desplegada, se hicieron las siguientes seccion
 
 
 #### 6.2.1.7. Services Documentation
+
 Se han desarrollado los siguientes controladores para esta entrega
 ##### Controlador de Autenticación de usuario
 ![Controlador Auth](img/sprint1-services-1.png)
@@ -4428,6 +4428,7 @@ En este controladr se pueden encontrar 9 endpoints relacionados con la obtenció
 7. `PUT api/v1/crop/{cropId}/humidity` Se actualiza la información de la humedad (la humedad leída y el límite máximo y mínimo)
 8. `PATCH api/v1/crop/{cropId}/temperature` Se cambia únicamente la temperatura leída
 9. `PATCH api/v1/crop/{cropId}/humidity` Se cambia únicamente la humedad leída
+
 #### 6.2.1.8. Deployment Evidence
 
 Para el despliegue de la landing se utilizó GitHub Pages, un servicio de alojamiento gratuito proporcionado por GitHub que permite publicar sitios web directamente desde un repositorio. Esta opción es ideal para proyectos estáticos como landings, ya que ofrece una integración sencilla y directa con GitHub.
