@@ -41,7 +41,7 @@
   </tr>
 </table>
 
-<p align="center"><b>Abril 2025</b></p>
+<p align="center"><b>Junio 2025</b></p>
 
 <div style="page-break-after: always;"></div>
 
@@ -297,16 +297,26 @@
   - [6.1.3. Style Guide & Conventions](#613-style-guide--conventions)
   - [6.1.4. Deployment Configuration](#614-deployment-configuration)
 - [6.2. Implementation](#62-implementation)
-  - [6.2.X. Sprint n](#62x-sprint-n)
-    - [6.2.X.1. Sprint Planning n](#62x1-sprint-planning-n)
-    - [6.2.X.2. Aspect Leaders and Collaborators](#62x2-aspect-leaders-and-collaborators)
-    - [6.2.X.3. Sprint Backlog n](#62x3-sprint-backlog-n)
-    - [6.2.X.4. Development Evidence](#62x4-development-evidence)
-    - [6.2.X.5. Testing Suite Evidence](#62x5-testing-suite-evidence)
-    - [6.2.X.6. Execution Evidence](#62x6-execution-evidence)
-    - [6.2.X.7. Services Documentation](#62x7-services-documentation)
-    - [6.2.X.8. Deployment Evidence](#62x8-deployment-evidence)
-    - [6.2.X.9. Collaboration Insights](#62x9-collaboration-insights)
+  - [6.2.1. Sprint 1](#621-sprint-1)
+    - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-1)
+    - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
+    - [6.2.1.3. Sprint Backlog 1](#6213-sprint-backlog-n)
+    - [6.2.1.4. Development Evidence](#6214-development-evidence)
+    - [6.2.1.5. Testing Suite Evidence](#6215-testing-suite-evidence)
+    - [6.2.1.6. Execution Evidence](#6216-execution-evidence)
+    - [6.2.1.7. Services Documentation](#6217-services-documentation)
+    - [6.2.1.8. Deployment Evidence](#6218-deployment-evidence)
+    - [6.2.1.9. Collaboration Insights](#6219-collaboration-insights)
+  - [6.2.2. Sprint 2](#622-sprint-2)
+    - [6.2.2.1. Sprint Planning 2](#6221-sprint-planning-2)
+    - [6.2.2.2. Aspect Leaders and Collaborators](#6222-aspect-leaders-and-collaborators)
+    - [6.2.2.3. Sprint Backlog 2](#6223-sprint-backlog-n)
+    - [6.2.2.4. Development Evidence](#6224-development-evidence)
+    - [6.2.2.5. Testing Suite Evidence](#6225-testing-suite-evidence)
+    - [6.2.2.6. Execution Evidence](#6226-execution-evidence)
+    - [6.2.2.7. Services Documentation](#6227-services-documentation)
+    - [6.2.2.8. Deployment Evidence](#6228-deployment-evidence)
+    - [6.2.2.9. Collaboration Insights](#6229-collaboration-insights)
 - [6.3. Validation Interviews](#63-validation-interviews)
   - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
   - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
@@ -5111,6 +5121,99 @@ En cuanto a la gestión del código, se trabajó de forma diferenciada según el
 Este enfoque mixto permitió mantener un equilibrio entre agilidad y control del desarrollo. Gracias a la colaboración constante del equipo y a una adecuada distribución de tareas, se cumplieron exitosamente los objetivos del Sprint 1, asegurando un progreso sólido y bien documentado en este reporte.
 
 <img src="img/team-collaboration-insights-report-1.png" alt="Team Collaboration Insights 1" width="80%"/>
+
+### 6.2.2. Sprint 2
+
+#### 6.2.2.1. Sprint Planning 2
+
+Se planeó el segundo sprint a través de una reunión presencial. Para ello, se hizo la siguiente tabla para registrar la información que se discutió.
+
+<table>
+  <tr>
+    <th>Sprint #</th>
+    <td>Sprint 2</td>
+  </tr>
+  <tr>
+    <th colspan="2"><strong>Sprint Planning Background</strong></th>
+  </tr>
+  <tr>
+    <th>Date</th>
+    <td>2025-05-26</td>
+  </tr>
+  <tr>
+    <th>Time</th>
+    <td>01:00 PM</td>
+  </tr>
+  <tr>
+    <th>Location</th>
+    <td>Presencial (En la universidad)</td>
+  </tr>
+  <tr>
+    <th>Prepared by</th>
+    <td>Salinas Torres, Salvador Antonio</td>
+  </tr>
+  <tr>
+    <th>Attendees (to planning meeting)</th>
+    <td>
+      <p>Delgado Corrales, Piero Gonzalo</p>
+      <p>Neyra Santa Cruz, Marcelo Sebastian</p>
+      <p>Paredes Puente, Sebastián Roberto</p>
+      <p>Soto Salis, Natanael David</p>
+      <p>Salinas Torres, Salvador Antonio</p>
+    </td>
+  </tr>
+  <tr>
+    <th>Sprint n - 1 Review Summary</th>
+    <td>Se desarolló la landing page, y una parte del frontend web y del backend de la aplicación.</td>
+  </tr>
+  <tr>
+    <th>Sprint n - 1 Retrospective Summary</th>
+    <td>Se dividieron las tareas entre los desarrolladores de equipo. Sin embargo, hubo algunos percances al cumplir las fechas límite establecidas, por lo que se espera poder mejorar y cumplir con ello en este nuevo sprint.</td>
+  </tr>
+  <tr>
+    <th colspan="2"><strong>Sprint Goal & User Stories</strong></th>
+  </tr>
+  <tr>
+    <th>Sprint 2 Goal</th>
+    <td>Seguir con el desarrollo del frontend web y backend. Comenzar desarrollo de frontend móvil y la configuración del dispositivo IoT.</td>
+  </tr>
+  <tr>
+    <th>Sprint 2 Velocity</th>
+    <td>-</td>
+  </tr>
+  <tr>
+    <th>Sum of Story Points</th>
+    <td>-</td>
+  </tr>
+  </tr>
+</table>
+
+#### 6.2.2.2. Aspect Leaders and Collaborators
+
+En esta sección se presenta el equipo que participará en la elaboración del artefacto **Leadership-and-Collaboration Matrix (LACX)**, con el objetivo de brindar claridad y efectividad en la comunicación dentro del equipo. Para ello, se han identificado tres aspectos principales dentro del alcance del Sprint: **Desarrollo de Backend**, **Desarrollo de Frontend Web**, **Desarrollo de Frontend Móvil** y **Desarrollo de Configuración IoT**.
+
+| **Team Member** (Last Name, First Name) | **GitHub Username** | **Desarrollo de Backend** | **Desarrollo de Frontend Web** | **Desarrollo de Frontend Móvil** | **Desarrollo de Configuración IoT** |
+| --------------------------------------- | ------------------- | ------------------------- | ------------------------------ | ------------------------------   | ----------------------------------  |
+| Delgado Corrales, Piero Gonzalo         | PieroD04            | -                         | C                              | -                                | L                                   |
+| Paredes Puente, Sebastian Roberto       | sebastian123gonzalo | C                         | L                              | -                                | C                                   |
+| Salinas Torres, Salvador Antonio        | salvadoorssalinas   | -                         | -                              | L                                | C                                   |
+| Neyra Santa Cruz, Marcelo Sebastian     | SN-Marcelo          | L                         | C                              | -                                | C                                   |
+| Soto Salis, Natanael David              | NickDavid811        | -                         | -                              | C                                | C                                   |
+
+#### 6.2.2.3. Sprint Backlog 2
+
+#### 6.2.2.4. Development Evidence
+
+#### 6.2.2.5. Testing Suite Evidence
+
+#### 6.2.2.6. Execution Evidence
+
+#### 6.2.2.7. Services Documentation
+
+#### 6.2.2.8. Deployment Evidence
+
+#### 6.2.2.9. Collaboration Insights
+
 
 ## 6.3. Validation Interviews
 
