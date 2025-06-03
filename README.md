@@ -5219,6 +5219,58 @@ En esta sección se presenta el equipo que participará en la elaboración del a
 
 ### 6.3.1. Diseño de Entrevistas
 
+Se realizarán entrevistas con agricultores que enfrentan problemas en la gestión del agua para validar la funcionalidad de la solución para ello se considerará la prueba de la Landing Page, la aplicación web, el aplicativo móvil y el sistema embebido. Se busca conocer la percepción del usuario sobre la claridad, utilidad y usabilidad de ambos componentes.
+
+**Preguntas sobre la Landing Page**
+Para la landing page se considerará los userflows de:
+- Ingreso y exploración general del sitio
+- Lectura de la sección "Sobre Nosotros"
+- Interacción con botones de contacto o llamada a la acción (CTA)
+
+1. ¿La información presentada en la landing te resulta útil para entender qué ofrece HydroSmart?
+2. ¿La cantidad de información mostrada te parece adecuada? ¿Agregarías o quitarías algo?
+3. ¿La sección "Sobre Nosotros" te brinda confianza en la empresa y su producto?
+4. ¿Los botones de contacto o CTA son claros y fáciles de encontrar?
+5. ¿Qué opinas del orden y diseño general de la página?
+6. ¿Los colores, íconos y elementos visuales te resultan atractivos y apropiados?
+
+**Preguntas sobre la Aplicación Web**
+Para la aplicación web se considerará los userflows de:
+- Creación de cuenta e inicio de sesión
+- Interacción con la sección de cultivos
+- Consulta de datos de temperatura, humedad y agua
+- Revisión de recomendaciones y alertas
+
+1. ¿La navegación por la aplicación web es intuitiva y fácil de seguir?
+2. ¿La información sobre los cultivos y sus necesidades es clara y comprensible?
+3. ¿Te resulta fácil encontrar los datos de temperatura, humedad y agua de tus cultivos?
+4. ¿La sección de recomendaciones y alertas cumple con tus expectativas y te resulta útil?
+5. ¿La visualización de datos históricos te parece relevante?
+6. ¿Consideras que la aplicación web es fácil de usar en tu día a día?
+
+**Preguntas sobre la Aplicación Móvil**
+Para la aplicación móvil se considerará los userflows de:
+- Creación de cuenta e inicio de sesión
+- Interacción con la sección de cultivos
+- Consulta de datos de temperatura, humedad y agua
+- Revisión de recomendaciones y alertas
+
+1. ¿Crees que la aplicación móvil es fácil de usar en comparación con la versión web?
+2. ¿La navegación por la aplicación móvil es fluida y rápida?
+3. ¿La información sobre los cultivos y sus necesidades es clara y comprensible en la versión móvil?
+4. ¿Te resulta fácil encontrar los datos de temperatura, humedad y agua de tus cultivos en la aplicación móvil?
+
+**Preguntas para el sistema embebido**
+Para el sistema embebido se considerará los userflows de:
+-Visualización de simulación del funcionamiento del sistema
+-Configuracion de datos del tanque de agua
+-Visualización del envío de datos simulados a la plataforma
+
+1. ¿La simulación te permite entender cómo funcionará el sistema real?
+2. ¿Crees que la precisión de las lecturas del sistema embebido son adecuadas?
+3. ¿Consideras útil que el sensor envíe datos automáticamente sin intervención manual?
+4. ¿Qué aspectos de la simulación o del sistema mejorarías para adaptarlo mejor a tus necesidades?
+
 ### 6.3.2. Registro de Entrevistas
 
 ### 6.3.3. Evaluaciones según heurísticas
