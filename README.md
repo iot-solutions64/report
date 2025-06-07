@@ -9,7 +9,7 @@
   <p><strong>Curso:</strong> Desarrollo de Soluciones IOT (1ASI0572)</p>
   <p><strong>Sección:</strong> 2942</p>
   <p><strong>Profesor:</strong> León Baca, Marco Antonio</p>
-  <p><strong>"Informe de Trabajo Final"</strong></p>
+  <p><strong>Informe de Trabajo Final</strong></p>
   <p><strong>Startup:</strong> IoT Solutions</p>
   <p><strong>Producto:</strong> HydroSmart</p>
 </div>
@@ -76,7 +76,7 @@
   <tr>
       <th>TB1</th>
       <td>08/04/2025</td>
-      <td rowspan="2"> <!--Agregar rowspan="num de entregas" en el futuro-->
+      <td rowspan="3">
         <p>Paredes Puente, Sebastian Roberto</p>
         <p>Delgado Corrales, Piero Gonzalo</p>
         <p>Salinas Torres, Salvador Antonio</p>
@@ -104,32 +104,13 @@
         </ul>
       </td>
   </tr>
-  <!--
   <tr>
       <th>TB2</th>
-      <td>--/--/--</td>
+      <td>07/06/2025</td>
       <td>
-        DESCRIPCION X
-        <ul>
-          <li>X</li>
-          <li>X</li>
-          <li>X</li>
-        </ul>
+        Se han agregado nuevas secciones al capítulo 6
       </td>
   </tr>
-  <tr>
-      <th>Trabajo Final</th>
-      <td>--/--/--</td>
-      <td>
-        DESCRIPCION X
-        <ul>
-          <li>X</li>
-          <li>X</li>
-          <li>X</li>
-        </ul>
-      </td>
-  </tr>
-  -->
   </tbody>
 </table>
 
@@ -154,16 +135,50 @@
   </tr>
   <tr>
     <td>
-      <p> Para la entrega TB1 se realizó la primera versión de la aplicación web, tanto el frontend como el backend, así como la landing page. El equipo se dividió en 3 subdivisiones, siendo 2 integrantes para el frontend, 2 para el backend y 1 para la landing page</p>
-      <p> El informe se realizó en el siguiente repositorio:</p>
+      <p> Para la entrega Trabajo Parcial se realizó la primera versión de la aplicación web, tanto el frontend como el backend, así como la landing page. El equipo se dividió en 3 subdivisiones, siendo 2 integrantes para el frontend, 2 para el backend y 1 para la landing page</p>
+      <p>Los avances se registraron en los siguientes repositorios:</p>
       <p>Reporte: <a href="https://github.com/iot-solutions64/report">Documento Trabajo Parcial</a></p>
-      <p>Aplicación Frontend: <a href="https://hydrosmart-iot.netlify.app">Enlace a la aplicación</a></p>
+      <p>Frontend Web: <a href="https://github.com/iot-solutions64/frontend-web">Repositorio del Frontend Web</a></p>
+      <p>Backend: <a href="https://github.com/iot-solutions64/backend">Repositorio del Backend</a></p>
+      <p>Landing Page: <a href="https://github.com/iot-solutions64/landing-page">Repositorio de la Landing Page</a></p>
+      <p>Por otro lado, aquí se encuentran los enlaces directos a las aplicaciones desarrolladas para este entregable:</p>
+      <p>Aplicación Frontend Web: <a href="https://hydrosmart-iot.netlify.app">Enlace a la aplicación</a></p>
+      <p>Aplicación Backend: <a href="https://api-hydrosmart.up.railway.app/swagger-ui/index.html">Enlace a la aplicación</a></p>
       <p>Página Landing Page: <a href="https://iot-solutions64.github.io/landing-page/">Enlace a la página</p>
     </td>
     <td>
-      <p>Frontend</p>
+      <p>Frontend Web</p>
       <img src="img/insights-tp-1.png">
       <p>Backend</p>
+      <img src="img/insights-tp-2.png">
+      <p>Landing Page</p>
+      <img src="img/insights-tp-3.png">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p> Para la entrega TB2, se realizó la segunda versión de la aplicaciones Backend y Frontend, la simulación del dispositivo embebido en Wokwi, el Edge API y la primera versión del sistema embebido</p>
+      <p>Los avances se registraron en los siguientes repositorios:</p>
+      <p>Reporte: <a href="https://github.com/iot-solutions64/report">Documento Trabajo Parcial</a></p>
+      <p>Frontend Web: <a href="https://github.com/iot-solutions64/frontend-web">Repositorio del Frontend Web</a></p>
+      <p>Frontend Móvil: <a href="https://github.com/iot-solutions64/frontend-movil">Repositorio del Frontend Móvil</a></p>
+      <p>Backend: <a href="https://github.com/iot-solutions64/backend">Repositorio del Backend</a></p>
+      <p>Simulación de la sistema embebido: <a href="https://github.com/iot-solutions64/wokwi">Repositorio de la sistema embebido</a></p>
+      <p>Landing Page: <a href="https://github.com/iot-solutions64/landing-page">Repositorio de la Landing Page</a></p>
+      <p>Por otro lado, aquí se encuentran los enlaces directos a las aplicaciones desarrolladas para este entregable:</p>
+      <p>Aplicación Frontend Web: <a href="https://hydrosmart-iot.netlify.app">Enlace a la aplicación</a></p>
+      <p>Aplicación Backend: <a href="https://api-hydrosmart.up.railway.app/swagger-ui/index.html">Enlace a la aplicación</a></p>
+      <p>sistema embebido: <a href="https://wokwi.com/projects/431338881324863489">Enlace a la aplicación</a></p>
+      <p>Página Landing Page: <a href="https://iot-solutions64.github.io/landing-page/">Enlace a la página</p>
+    </td>
+    <td>
+      <p>Frontend Web</p>
+      <img src="img/insights-tp-1.png">
+      <p>Frontend Móvil</p>
+      <img src="img/insights-tp-1.png">
+      <p>Backend</p>
+      <img src="img/insights-tp-2.png">
+      <p>sistema embebido</p>
       <img src="img/insights-tp-2.png">
       <p>Landing Page</p>
       <img src="img/insights-tp-3.png">
@@ -324,11 +339,8 @@
 - [6.4. Video About-the-Product](#64-video-about-the-product)
 
 ### [7. Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
-
 ### [8. Video About-the-Team](#video-about-the-team)
-
 ### [9. Bibliografía](#bibliografía)
-
 ### [10. Anexos](#anexos)
 
 <div style="page-break-after: always;"></div>
@@ -371,12 +383,25 @@
           <p>En este entregable, nos dividimos las tareas de forma equitativa, para que todos los integrantes podamos participar de forma eficiente. En mi caso, apoyé en el desarollo del frontend y las pruebas unitarias de este mismo.</p>
         <h4>Soto Salis, Natanael David</h4>
           <p>Para este entregable, el asignamiento de los puntos fue clave para delimitar de manera justa el desarrolla del proyecto. En mi caso me fue encargado el desarrollo del backend y el despliegue del mismo.</p>
+        <h3>TB2</h3>
+        <h4>Delgado Corrales, Piero Gonzalo</h4>
+          <p>Para este entregable, después de una reunión de coordinación con el equipo, quedamos en que yo me encargaría de desarrollar y mejorar tanto la aplicación web como la simulación del sistema embebido en Wokwi. Me comprometí a desarollar ambas aplicaciones correctamente y en asegurarme de que cumpliera con los requisitos establecidos.</p>
+        <h4>Neyra Santa Cruz, Marcelo Sebastian</h4>
+          <p>Para este entregable, como líder de equipo, me encargué de gestionar al grupo para el correcto desarrollo de las 6 aplicaciones de esta entrega, el backend, frontend web, frontend móvil, la landing page, la simulación de la sistema embebido en Wokwi y su implementación real hecha con un microcontrolador ESP32, un sensor de temperatura y humedad y un sensor de distancia. Me aseguré de estar monitoreando el constante avance para cumplir con el nivel calidad esperado</p>
+        <h4>Paredes Puente, Sebastian Roberto</h4>
+          <p>Para este entregable, después de una reunión de coordinación con el equipo, quedamos en que yo me encargaría de desarrollar y mejorar la aplicación backend. Me comprometí a desarrollar la aplicación correctamente y en asegurarme de que cumpliera con los requisitos establecidos.</p>
+        <h4>Salinas Torres, Salvador Antonio</h4>
+          <p>Para este entregable, después de una reunión de coordinación con el equipo, quedamos en que yo me encargaría de desarrollar la aplicación frontend móvil. Me comprometí a desarrollar la aplicación correctamente y en asegurarme de que cumpliera con los requisitos establecidos.</p>
+        <h4>Soto Salis, Natanael David</h4>
+          <p>Para este entregable, después de una reunión de coordinación con el equipo, quedamos en que yo me encargaría de desarrollar la aplicación frontend móvil. Me comprometí a desarrollar la aplicación correctamente y en asegurarme de que cumpliera con los requisitos establecidos.</p>
       </td>
       <td>
         <h4>TB1</h4>
-        <p>Para la entrega de la TB1, a cada integrante del grupo se le asignó una parte del informe para trabajar de manera más dinámica. Al final del proceso, se revisó en conjunto todo el informe para levantar alguna observación que se haya visto</p>
+        <p>Para la entrega de la TB1, a cada integrante del grupo se le asignó una parte del informe para trabajar de manera más dinámica. Al final del proceso, se revisó en conjunto todo el informe para levantar alguna observación que se haya visto.</p>
         <h4>Trabajo Parcial</h4>
-        <p>Para la entrega de la TB1, el grupo se dividió en pequeñas subdivisiones con el motivo de desarrollar correcta y eficientemente las aplicaciones. Al final del proceso, se revisaron todas las aplicaciones y el informe para levantar alguna observación que se haya encontrado</p>
+        <p>Para la entrega del Trabajo Parcial, el grupo se dividió en pequeñas subdivisiones con el motivo de desarrollar correcta y eficientemente las aplicaciones. Al final del proceso, se revisaron todas las aplicaciones y el informe para levantar alguna observación que se haya encontrado.</p>
+        <h4>TB2</h4>
+        <p>Para la entrega de la TB2, el equipo se enfocó en terminar y mejorar las aplicaciones previamente desarrolladas y en iniciar con el desarrollo de las aplicaciones Frontend Móvil y el Sistema Embebido. Al final del proceso, se revisaron todas las aplicaciones y el informe para levantar alguna observación que se haya encontrado.</p>
       </td>
     </tr>
     <tr>
@@ -395,21 +420,34 @@
           <p>Para este entregable, me mantuve al tanto de los avances de mis compañeros y contribuí con mis ideas para mejorar el desarrollo del proyecto. Además, se establecieron metas y tareas a cumplir para asegurar que todos estemos alineados en el trabajo.</p>
         <h3>Trabajo Parcial</h3>
         <h4>Delgado Corrales, Piero Gonzalo</h4>
-          <p>Para esta entrega, planifique las tareas a desarrollar para crear la aplicación web. Me aseguré de que cada tarea se cumpliera a tiempo y de que se mantuviera una buena comunicación de los avances con el equipo.</p>
+          <p>Para este entregable, planifique las tareas a desarrollar para crear la aplicación web. Me aseguré de que cada tarea se cumpliera a tiempo y de que se mantuviera una buena comunicación de los avances con el equipo.</p>
         <h4>Neyra Santa Cruz, Marcelo Sebastian</h4>
-          <p>Para este entregable, como líder de equipo, establecí metas y planifiqué los avances de cada uno de las 3 aplicaciones solicitadas para este entregable. Para asegurarme que se esté trabajando correctamente, se realizaron algunas reuniones y se coordinó constantemente por la plataforma WhatsApp</p>
+          <p>Para este entregable, como líder de equipo, establecí metas y planifiqué los avances de cada una de las 3 aplicaciones solicitadas para este entregable. Para asegurarme que se esté trabajando correctamente, se realizaron algunas reuniones y se coordinó constantemente por la plataforma WhatsApp</p>
         <h4>Paredes Puente, Sebastian Roberto</h4>
-          <p>En esta etapa del proyecto, logramos fomentar un entorno colaborativo e inclusivo. Juntos definimos metas, organizamos las tareas y logramos cumplir los objetivos del proyecto a tiempo, siempre ayudandonos entre nosotros.</p>
+          <p>Para este entregable, logramos fomentar un entorno colaborativo e inclusivo. Juntos definimos metas, organizamos las tareas y logramos cumplir los objetivos del proyecto a tiempo, siempre ayudandonos entre nosotros.</p>
         <h4>Salinas Torres, Salvador Antonio</h4>
-          <p>En este caso, participé en la planificación de las tareas a realizar para el frontend. Para ello, se revisaron las historias de usuario ya planteadas para cumplir con los requisitos funcionales que brindan valor al usuario.</p>
+          <p>Para este entregable, participé en la planificación de las tareas a realizar para el frontend. Para ello, se revisaron las historias de usuario ya planteadas para cumplir con los requisitos funcionales que brindan valor al usuario.</p>
         <h4>Soto Salis, Natanael David</h4>
-          <p>Para esta entrega, se planifico correctamente los puntos a desarrollar y en el cual el equipo se desempeño de manera correcta y cumplio con los objetivos.</p>
+          <p>Para este entregable, se planifico correctamente los puntos a desarrollar y en el cual el equipo se desempeño de manera correcta y cumplio con los objetivos.</p>
+        <h3>TB2</h3>
+        <h4>Delgado Corrales, Piero Gonzalo</h4>
+          <p>Para este entregable, establecí una meta propia de concluir con el desarrollo de la aplicación frontend web y de la simulación del sistema embebido. Para ello, planifiqué las tareas que debía desarrollar y me aseguré de cumplir con todos los requisitos y objetivos planteados por el equipo</p>
+        <h4>Neyra Santa Cruz, Marcelo Sebastian</h4>
+          <p>Para este entregable, como líder de equipo, establecí metas y planifiqué los avances de cada una de las 6 aplicaciones solicitadas para este entregable. Para asegurarme que se esté trabajando correctamente, se realizaron algunas reuniones y se coordinó constantemente por la plataforma WhatsApp</p>
+        <h4>Paredes Puente, Sebastian Roberto</h4>
+          <p>Para este entregable, establecí una meta propia de concluir con el desarrollo del backend y ayudar con el desarrollo de la aplicación frontend web. Para ello, planifiqué las tareas que debía desarrollar y me aseguré de cumplir con todos los requisitos y objetivos planteados por el equipo</p>
+        <h4>Salinas Torres, Salvador Antonio</h4>
+          <p>Para este entregable, establecí una meta propia de concluir con el desarrollo de la aplicación móvil. Para ello, planifiqué las tareas que debía desarrollar y me aseguré de cumplir con todos los requisitos y objetivos planteados por el equipo</p>
+        <h4>Soto Salis, Natanael David</h4>
+          <p>Para este entregable, establecí una meta propia de concluir con el desarrollo de la aplicación frontend móvil y edge API. Para ello, planifiqué las tareas que debía desarrollar y me aseguré de cumplir con todos los requisitos y objetivos planteados por el equipo</p>
       </td>
       <td>
         <h4>TB1</h4>
         <p>Para la entrega de la TB1, se establecieron metas a cumplir, siendo la principal la validación de nuestro proyecto. Se cumplieron con todos los puntos pedidos en el tiempo indicado</p>
         <h4>Trabajo Parcial</h4>
         <p>Para la entrega del Trabajo Parcial, se establecieron metas a cumplir, siendo la principal la validación de las 3 aplicaciones realizadas. Se cumplieron con todos los puntos pedidos en el tiempo indicado y se espera mejorar las aplicaciones en las siguientes entregas</p>
+        <h4>TB2</h4>
+        <p>Para la entrega del TB2, se establecieron metas a cumplir, siendo la principal la validación de las 6 aplicaciones realizadas. Se cumplieron con todos los puntos pedidos en el tiempo indicado y para el siguiente y último entregable solo se desarrollarán algunas mejoras para arreglar pequeños errores en la aplicación y la interfaz del usuario</p>
       </td>
     </tr>
   </tbody>
@@ -614,13 +652,6 @@ HydroSmart debe tener una interfaz simple, clara y fácil de usar, ideal para ag
 9. **Los venceremos debido a que** la aplicación cuenta con una interfaz de usuario muy sencilla de utilizar, con una curva de aprendizaje mínima, por lo que todo tipo de usuario puede adquirirlo y usarlo sin ningún tipo de problemas
 10. **Mi mayor riesgo de producto es** la falta de confianza de los agricultores en la tecnología y la resistencia al cambio, ya que muchos están acostumbrados a métodos de riego tradicionales.
 11. **Resolveremos esto a través de** una estrategia educativa que incluya tutoriales fáciles de seguir, demostraciones prácticas y casos de éxito que demuestren el valor tangible de nuestra solución. Además, ofreceremos soporte técnico continuo.
-
-<!--
-Agregar como extra (?)
-El cliente podría optar por abandonar el uso de HydroSmart si no ve mejoras significativas en la eficiencia del riego y en la productividad de sus cultivos durante los primeros meses de uso.
-
-Nuestro enfoque principal es ayudar a los agricultores a optimizar el uso del agua y mejorar la eficiencia del riego mediante una solución sencilla, rentable y eficaz, enfocada en el cuidado y la sostenibilidad de los cultivos.
--->
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 
@@ -5163,11 +5194,11 @@ Se planeó el segundo sprint a través de una reunión presencial. Para ello, se
     </td>
   </tr>
   <tr>
-    <th>Sprint n - 1 Review Summary</th>
+    <th>Sprint N°1 Review Summary</th>
     <td>Se desarolló la landing page, y una parte del frontend web y del backend de la aplicación.</td>
   </tr>
   <tr>
-    <th>Sprint n - 1 Retrospective Summary</th>
+    <th>Sprint N°1 Retrospective Summary</th>
     <td>Se dividieron las tareas entre los desarrolladores de equipo. Sin embargo, hubo algunos percances al cumplir las fechas límite establecidas, por lo que se espera poder mejorar y cumplir con ello en este nuevo sprint.</td>
   </tr>
   <tr>
