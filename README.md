@@ -962,7 +962,7 @@ Enlace del video de las entrevista: [Enlace a Microsoft Stream](https://upcedupe
 **Edad:** 23 años
 
 **Distrito:** San Borja
-![Entrevista a Joan Talizo](img/entrevista4.png")
+![Entrevista a Joan Talizo](img/entrevista4.png)
 
 **Resumen:** Joan, un joven agricultor de Puno, trabaja sus campos de quinua, papa y otros productos en la zona de Tonco, además de cuidar su rebaño de ovejas. Su día a día es exigente, marcado por la revisión y el cuidado manual de sus cultivos. Un problema importante que enfrenta es la gestión del agua para el riego, especialmente durante las sequías, debido a la distancia y la falta de sistemas precisos. Lleva el control del riego de forma manual y reconoce que a veces gasta más agua de la necesaria. Regar es una tarea pesada para él, y la calidad del agua que utiliza también le preocupa por su impacto en las plantas. Ante la posibilidad de usar una aplicación que controle el riego, John se muestra muy interesado en probarla para ahorrar agua, tiempo y asegurar un riego óptimo, incluso sin buena señal.
 
