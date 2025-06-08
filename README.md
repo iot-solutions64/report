@@ -5421,6 +5421,131 @@ Para el sistema embebido se considerará los userflows de:
 
 ### 6.3.3. Evaluaciones según heurísticas
 
+**Site o App a Evaluar:** HydroSmart
+
+**Tareas a evaluar:**
+
+El alcance de esta evaluación incluye la revisión de usabilidad de las siguientes tareas:
+1. Acceder a la aplicación desde la landing page
+2. Enviar un mensaje de contacto desde la landing page
+1. Crear cuenta en la aplicación
+2. Inicio de sesión
+3. Visualizar sección de cultivos
+4. Visualizar datos de temperatura, humedad y agua
+5. Visualizar información de tanques de agua
+6. Visualizar recomendaciones
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+1. Recuperación de cuenta
+
+**ESCALA DE SEVERIDAD:**
+*Los errores serán puntuados tomando en cuenta la siguiente escala de severidad*
+|***Nivel***|***Descripción***|
+| :-: | :-: |
+|*1*|*Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.*|
+|*2*|*Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase*|
+|*3*|*Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.*|
+|*4*|*Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.*|
+
+**TABLA DE RESUMEN:**
+
+|**#**|**Problema**|**Escala de severidad**|**Heurística/principio violada(o)**|
+| :- | :- | :- | :- |
+|1| El botón de 'Ir a la app' en la landing page no redirige a la aplicación | 4 | Information Architecture: Is it usable? |
+|2| El formulario de contacto no confirma el envío del mensaje | 3 | Usability: Visibility of system status |
+|3| El campo de contraseña de iniciar sesión no tiene para visualizar la contraseña | 2 | Usability: User control and freedom |
+|4| Algunos campos en crear cultivo aceptan texto en lugar de solo números | 2 | Usability: Error prevention |
+|5| Videos de recomendación sin miniatura no muestran una imagen de referencia | 3 | Usability: Recognition rather than recall |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+
+**PROBLEMA #1:** El botón de 'Ir a la app' en la landing page no redirige a la aplicación
+
+**Severidad:** 4
+
+**Heurística violada:** Information Architecture: Is it usable?
+
+**Problema**: Si el usuario intenta acceder a la aplicación desde la landing page, el botón "Ir a la app" no redirige correctamente a la aplicación web. Esto impide que los usuarios puedan acceder a la funcionalidad principal del producto, lo que es crítico para su experiencia.
+
+**Imagen:**
+<img src="img/heuristica1.png" width="60%">
+
+_Imagen 2XX. Heuristica 1_
+
+**Recomendación:**  Redirigir el botón "Ir a la app" a la URL correcta de la aplicación web. Esto asegurará que los usuarios puedan acceder fácilmente a la funcionalidad principal del producto. 
+
+-----
+
+**PROBLEMA #2:** El formulario de contacto no confirma el envío del mensaje
+
+**Severidad:** 2
+
+**Heurística violada:** Usability: Visibility of system status
+
+**Problema**: Cuando el usuario envía un mensaje a través del formulario de contacto en la landing page, no recibe ninguna confirmación de que su mensaje ha sido enviado y solo se reinicia el formulario.
+
+**Imagen:**
+<img src="img/heuristica2.png" width="60%">
+
+_Imagen 2XX. Heuristica 2_
+
+**Recomendación:** Implementar un mensaje de confirmación que se muestre al usuario después de enviar el formulario, indicando que su mensaje ha sido enviado correctamente.
+
+-----
+
+**PROBLEMA #3:** El campo de contraseña de iniciar sesión no tiene para visualizar la contraseña
+
+**Severidad:** 2
+
+**Heurística violada:** Usability: User control and freedom
+
+**Problema**: En la pantalla de inicio de sesión, el campo de contraseña no tiene un botón para mostrar u ocultar la contraseña ingresada. Esto puede dificultar que los usuarios verifiquen que han ingresado correctamente su contraseña. Lo que sí se implementa en crear cuenta.
+
+**Imagen:**
+<img src="img/heuristica3.png" width="60%">
+
+_Imagen 2XX. Heuristica 3_
+
+<img src="img/heuristica3-1.png" width="60%">
+
+_Imagen 2XX. Heuristica 3 implementada en creación de cuenta_
+
+
+**Recomendación:** Agregar un ícono o botón al lado del campo de contraseña que permita a los usuarios alternar entre mostrar y ocultar la contraseña ingresada como en crear cuenta.
+
+-----
+
+**PROBLEMA #4:** Algunos campos en crear cultivo aceptan texto en lugar de solo números
+
+**Severidad:** 2
+
+**Heurística violada:** Usability: Error prevention
+
+**Problema**: En la pantalla de creación de cultivo, algunos campos que deberían aceptar solo números (como el campo de temperatura) permiten ingresar texto. Esto puede llevar a errores en la entrada de datos y confusión para el usuario.
+
+**Imagen:**
+<img src="img/heuristica4.png" width="60%">
+_Imagen 2XX. Heuristica 4_
+
+**Recomendación:** Implementar validaciones en los campos de entrada para asegurarse de que solo se acepten números en los campos correspondientes. Esto ayudará a prevenir errores y mejorará la experiencia del usuario al ingresar datos.
+
+-----
+
+**PROBLEMA #5:** Videos de recomendación sin miniatura no muestran una imagen de referencia
+
+**Severidad:** 3
+
+**Heurística violada:** Usability: Recognition rather than recall
+
+**Problema**: En la sección de recomendaciones, algunos videos no tienen miniatura, y tampoco se muestra una imagen de referencia cuando esto falta. Esto puede dificultar que los usuarios reconozcan que se trata de un video lo que afecta la usabilidad de la sección de recomendaciones.
+
+**Imagen:**
+<img src="img/heuristica5.png" width="60%">
+
+_Imagen 2XX. Heuristica 5_
+
+**Recomendación:** Agregar una imagen de referencia (placeholder) para los videos sin miniatura. Esto permitirá a los usuarios reconocer fácilmente que se trata de un video y mejorará la usabilidad de la sección de recomendaciones.
+
 ## 6.4. Video About-the-Product
 
 <div style="page-break-after: always;"></div>
