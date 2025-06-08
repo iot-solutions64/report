@@ -5469,7 +5469,7 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 
 **Imagen:**
 
-<img src="img/heuristica1.png" height="500px">
+<img src="img/heuristica1.png" width="60%">
 
 _Imagen 2XX. Heuristica 1_
 
@@ -5487,7 +5487,7 @@ _Imagen 2XX. Heuristica 1_
 
 **Imagen:**
 
-<img src="img/heuristica2.png" height="500px">
+<img src="img/heuristica2.png" width="60%">
 
 _Imagen 2XX. Heuristica 2_
 
@@ -5546,7 +5546,7 @@ _Imagen 2XX. Heuristica 4_
 
 **Imagen:**
 
-<img src="img/heuristica5.png" width="500px">
+<img src="img/heuristica5.png" height="500px">
 
 _Imagen 2XX. Heuristica 5_
 
