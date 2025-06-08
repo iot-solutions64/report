@@ -5468,7 +5468,8 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 **Problema**: Si el usuario intenta acceder a la aplicación desde la landing page, el botón "Ir a la app" no redirige correctamente a la aplicación web. Esto impide que los usuarios puedan acceder a la funcionalidad principal del producto, lo que es crítico para su experiencia.
 
 **Imagen:**
-<img src="img/heuristica1.png" width="60%">
+
+<img src="img/heuristica1.png" height="300px">
 
 _Imagen 2XX. Heuristica 1_
 
@@ -5485,7 +5486,8 @@ _Imagen 2XX. Heuristica 1_
 **Problema**: Cuando el usuario envía un mensaje a través del formulario de contacto en la landing page, no recibe ninguna confirmación de que su mensaje ha sido enviado y solo se reinicia el formulario.
 
 **Imagen:**
-<img src="img/heuristica2.png" width="60%">
+
+<img src="img/heuristica2.png" height="300px">
 
 _Imagen 2XX. Heuristica 2_
 
@@ -5502,11 +5504,12 @@ _Imagen 2XX. Heuristica 2_
 **Problema**: En la pantalla de inicio de sesión, el campo de contraseña no tiene un botón para mostrar u ocultar la contraseña ingresada. Esto puede dificultar que los usuarios verifiquen que han ingresado correctamente su contraseña. Lo que sí se implementa en crear cuenta.
 
 **Imagen:**
-<img src="img/heuristica3.png" width="60%">
+
+<img src="img/heuristica3.png" height="300px">
 
 _Imagen 2XX. Heuristica 3_
 
-<img src="img/heuristica3-1.png" width="60%">
+<img src="img/heuristica3-1.png" height="300px">
 
 _Imagen 2XX. Heuristica 3 implementada en creación de cuenta_
 
@@ -5524,7 +5527,9 @@ _Imagen 2XX. Heuristica 3 implementada en creación de cuenta_
 **Problema**: En la pantalla de creación de cultivo, algunos campos que deberían aceptar solo números (como el campo de temperatura) permiten ingresar texto. Esto puede llevar a errores en la entrada de datos y confusión para el usuario.
 
 **Imagen:**
-<img src="img/heuristica4.png" width="60%">
+
+<img src="img/heuristica4.png" height="300px">
+
 _Imagen 2XX. Heuristica 4_
 
 **Recomendación:** Implementar validaciones en los campos de entrada para asegurarse de que solo se acepten números en los campos correspondientes. Esto ayudará a prevenir errores y mejorará la experiencia del usuario al ingresar datos.
@@ -5540,6 +5545,7 @@ _Imagen 2XX. Heuristica 4_
 **Problema**: En la sección de recomendaciones, algunos videos no tienen miniatura, y tampoco se muestra una imagen de referencia cuando esto falta. Esto puede dificultar que los usuarios reconozcan que se trata de un video lo que afecta la usabilidad de la sección de recomendaciones.
 
 **Imagen:**
+
 <img src="img/heuristica5.png" width="60%">
 
 _Imagen 2XX. Heuristica 5_
