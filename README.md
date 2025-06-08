@@ -5469,7 +5469,7 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 
 **Imagen:**
 
-<img src="img/heuristica1.png" height="300px">
+<img src="img/heuristica1.png" height="500px">
 
 _Imagen 2XX. Heuristica 1_
 
@@ -5487,7 +5487,7 @@ _Imagen 2XX. Heuristica 1_
 
 **Imagen:**
 
-<img src="img/heuristica2.png" height="300px">
+<img src="img/heuristica2.png" height="500px">
 
 _Imagen 2XX. Heuristica 2_
 
@@ -5505,11 +5505,11 @@ _Imagen 2XX. Heuristica 2_
 
 **Imagen:**
 
-<img src="img/heuristica3.png" height="300px">
+<img src="img/heuristica3.png" height="500px">
 
 _Imagen 2XX. Heuristica 3_
 
-<img src="img/heuristica3-1.png" height="300px">
+<img src="img/heuristica3-1.png" height="500px">
 
 _Imagen 2XX. Heuristica 3 implementada en creación de cuenta_
 
@@ -5528,7 +5528,7 @@ _Imagen 2XX. Heuristica 3 implementada en creación de cuenta_
 
 **Imagen:**
 
-<img src="img/heuristica4.png" height="300px">
+<img src="img/heuristica4.png" height="500px">
 
 _Imagen 2XX. Heuristica 4_
 
@@ -5546,7 +5546,7 @@ _Imagen 2XX. Heuristica 4_
 
 **Imagen:**
 
-<img src="img/heuristica5.png" width="60%">
+<img src="img/heuristica5.png" width="500px">
 
 _Imagen 2XX. Heuristica 5_
 
