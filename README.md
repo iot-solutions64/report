@@ -5367,6 +5367,19 @@ El objetivo de este segundo sprint fue concluir con el desarrollo de las aplicac
 
 Se realizarán entrevistas con agricultores que enfrentan problemas en la gestión del agua para validar la funcionalidad de la solución para ello se considerará la prueba de la aplicación web y el aplicativo móvil. Se busca conocer la percepción del usuario sobre la claridad, utilidad y usabilidad de dichos componentes.
 
+**Preguntas sobre la Landing Page**
+Para la landing page se considerará los userflows de:
+- Ingreso y exploración general del sitio
+- Lectura de la sección "Sobre Nosotros"
+- Interacción con botones de contacto o llamada a la acción (CTA)
+
+1. ¿La información presentada en la landing te resulta útil para entender qué ofrece HydroSmart?
+2. ¿La cantidad de información mostrada te parece adecuada? ¿Agregarías o quitarías algo?
+3. ¿La sección "Sobre Nosotros" te brinda confianza en la empresa y su producto?
+4. ¿Los botones de contacto o CTA son claros y fáciles de encontrar?
+5. ¿Qué opinas del orden y diseño general de la página?
+6. ¿Los colores, íconos y elementos visuales te resultan atractivos y apropiados?
+
 **Preguntas sobre el Frontend**
 Para la aplicación se considerará los userflows de:
 - Creación de cuenta e inicio de sesión
