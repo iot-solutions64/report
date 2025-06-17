@@ -5400,6 +5400,22 @@ Para la aplicación se considerará los userflows de:
 
 ### 6.3.2. Registro de Entrevistas
 
+Enlace del video de las entrevistas: [Enlace a Microsoft Stream](#)
+
+**Entrevista 1**
+
+**Entrevistador:** Salvador Salinas
+
+**Entrevistado:** Anderson Gonza
+
+**Edad:** 23 años
+
+**Distrito:** Lurín
+
+![Entrevista a Anderson Gonza](img/validation-interview-1.png)
+
+**Resumen:** En esta entrevista de validación, Anderson destacó la utilidad de la información presentada en la landing page sobre la problemática y solución. Asimismo, menciona que la claridad y transparencia en la sección "Sobre Nosotros" brinda confianza. Respecto a la aplicación, comenta que la encontró fácil de usar y accesible para todos, ya que puede revisar el estado de temperatura y humedad sin mayor problema. También expresó que le gusta mucho que pueda usar la aplicación desde su celular para facilitar el acceso mientras trabaja en el campo.
+
 ### 6.3.3. Evaluaciones según heurísticas
 
 **Site o App a Evaluar:** HydroSmart
