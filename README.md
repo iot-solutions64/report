@@ -5210,11 +5210,11 @@ Se planeó el segundo sprint a través de una reunión presencial. Para ello, se
   </tr>
   <tr>
     <th>Sprint 2 Velocity</th>
-    <td>-</td>
+    <td>50</td>
   </tr>
   <tr>
     <th>Sum of Story Points</th>
-    <td>-</td>
+    <td>74</td>
   </tr>
   </tr>
 </table>
