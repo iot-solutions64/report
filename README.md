@@ -5416,6 +5416,25 @@ Enlace del video de las entrevistas: [Enlace a Microsoft Stream](#)
 
 **Resumen:** En esta entrevista de validación, Anderson destacó la utilidad de la información presentada en la landing page sobre la problemática y solución. Asimismo, menciona que la claridad y transparencia en la sección "Sobre Nosotros" brinda confianza. Respecto a la aplicación, comenta que la encontró fácil de usar y accesible para todos, ya que puede revisar el estado de temperatura y humedad sin mayor problema. También expresó que le gusta mucho que pueda usar la aplicación desde su celular para facilitar el acceso mientras trabaja en el campo.
 
+Enlace del video de las entrevistas: [Enlace a Microsoft Stream](#)
+
+**Entrevista 2**
+
+**Entrevistador:** Sebastian Paredes
+
+**Entrevistado:** Adrian Levano
+
+**Edad:** 27 años
+
+**Distrito:** La Molina
+
+![Entrevista a Anderson Gonza](img/validation-interview-2.png)
+
+**Resumen:** Durante entrevista de validación, Adrian consideró que la landing page está bien diseñada, con colores e imágenes apropiadas al tema agrícola, y destacó que la organización de los elementos permite una comprensión clara del producto. Opinó que la información es suficiente para entender la propuesta sin resultar abrumadora. En cuanto a la aplicación móvil, mencionó que le pareció fácil de navegar y accesible para cualquier usuario, resaltando que prefiere utilizarla desde el celular por la comodidad que esto representa en su trabajo diario. En general, valoró positivamente tanto el diseño como la funcionalidad de la plataforma.
+
+
+Enlace del video de: [Entrevista 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217239_upc_edu_pe/EUFsr0B5D99LoaT1VsFZDwEBFY6_-3KKdDwL9RzZFDl5iA?e=vhX3qQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
 ### 6.3.3. Evaluaciones según heurísticas
 
 **Site o App a Evaluar:** HydroSmart
