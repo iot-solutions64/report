@@ -5206,15 +5206,15 @@ Se planeó el segundo sprint a través de una reunión presencial. Para ello, se
   </tr>
   <tr>
     <th>Sprint 2 Goal</th>
-    <td>Seguir con el desarrollo del frontend web y backend. Comenzar desarrollo de frontend móvil y la configuración del dispositivo IoT.</td>
+    <td>Seguir con el desarrollo del frontend web y backend. Implementar mejoras de la landing page. Comenzar desarrollo de frontend móvil, edge api y sistema embebido.</td>
   </tr>
   <tr>
     <th>Sprint 2 Velocity</th>
-    <td>50</td>
+    <td>51</td>
   </tr>
   <tr>
     <th>Sum of Story Points</th>
-    <td>74</td>
+    <td>75</td>
   </tr>
   </tr>
 </table>
@@ -5232,7 +5232,7 @@ En esta sección se presenta el equipo que participará en la elaboración del a
 | Soto Salis, Natanael David              | NickDavid811        | -                         | -                              | C                                | C                                   |
 
 #### 6.2.2.3. Sprint Backlog 2
-El objetivo de este segundo sprint fue concluir con el desarrollo de las aplicaciones iniciadas en el anterior sprint y desarrollar el Edge API y el Sistema Embebido
+El objetivo de este segundo sprint fue concluir con el desarrollo de las aplicaciones iniciadas en el anterior sprint. Además de desarrollar el Edge API y el sistema Embebido.
 
 ![Sprint Backlog 2](img/sprint-backlog-2.png)
 
@@ -5244,107 +5244,113 @@ El objetivo de este segundo sprint fue concluir con el desarrollo de las aplicac
   <td>Id</td><td>Title</td><td>Description</td><td>Estimation (In Hours)</td>
   <td>Assigned To</td><td>Status (To-Do / In-Process / Review / Done)</td>
 </tr>
+<!-- US01 -->
+<tr>
+  <td>US01</td><td>Implementación de Barra de navegación</td>
+  <td>T01</td><td>Botón CTA</td><td>Añadir botón que redirija a la página de inicio de sesión de la aplicación web</td><td>1</td>
+  <td>Sebastian Paredes</td><td>Done</td>
+</tr>
 <!-- US09 -->
 <tr>
   <td>US09</td><td>Verificación de temperatura del suelo</td>
-  <td>T01</td><td>Lectura de temperatura del suelo</td><td>Mostrar datos del sensor de temperatura</td><td>3</td>
+  <td>T02</td><td>Lectura de temperatura del suelo</td><td>Mostrar datos del sensor de temperatura</td><td>3</td>
   <td>Marcelo Neyra, Natanael Solis</td><td>Done</td>
 </tr>
 <!-- US08 -->
 <tr>
   <td>US08</td><td>Verificación de humedad del suelo</td>
-  <td>T02</td><td>Lectura de humedad del suelo</td><td>Mostrar datos del sensor de humedad</td><td>4</td>
+  <td>T03</td><td>Lectura de humedad del suelo</td><td>Mostrar datos del sensor de humedad</td><td>4</td>
   <td>Marcelo Neyra, Natanael Solis</td><td>Done</td>
 </tr>
 <!-- US12 -->
 <tr>
   <td>US12</td><td>Interacción con el riego automático</td>
-  <td>T03</td><td>Activar/desactivar riego</td><td>Control manual del sistema de riego</td><td>5</td><td>Marcelo Neyra, Natanael Solis</td><td>Done</td>
+  <td>T04</td><td>Activar/desactivar riego</td><td>Control manual del sistema de riego</td><td>5</td><td>Marcelo Neyra, Natanael Solis</td><td>Done</td>
 </tr>
 <!-- US15 -->
 <tr>
   <td>US15</td><td>Cantidad de agua disponible</td>
-  <td>T04</td><td>Mostrar nivel de agua</td><td>Medidor en tiempo real del tanque o depósito</td><td>5</td><td>Piero Delgado, Salvador Salinas</td><td>Done</td>
+  <td>T05</td><td>Mostrar nivel de agua</td><td>Medidor en tiempo real del tanque o depósito</td><td>5</td><td>Piero Delgado, Salvador Salinas</td><td>Done</td>
 </tr>
 <!-- US14 -->
 <tr>
   <td>US14</td><td>Limites en el uso agua por cultivo</td>
-  <td>T05</td><td>Configurar límites de agua</td><td>Restringir consumo por cultivo</td><td>3</td><td>Marcelo Neyra, Natanael Solis</td><td>Done</td>
+  <td>T06</td><td>Configurar límites de agua</td><td>Restringir consumo por cultivo</td><td>3</td><td>Marcelo Neyra, Natanael Solis</td><td>Done</td>
 </tr>
 <!-- US13 -->
 <tr>
   <td>US13</td><td>Notificaciones de regado</td>
-  <td>T05</td><td>Notificaciones de regado</td><td>Notificar al cambiar el estado del sistema de regado</td><td>3</td><td>Marcelo Neyra, Natanael Solis</td><td>Done</td>
+  <td>T07</td><td>Notificaciones de regado</td><td>Notificar al cambiar el estado del sistema de regado</td><td>3</td><td>Marcelo Neyra, Natanael Solis</td><td>Done</td>
 </tr>
 <!-- US11 -->
 <tr>
   <td>US11</td><td>Historial del cultivo</td>
-  <td>T06</td><td>Mostrar historial del cultivo</td><td>Mostrar el historial mensual del estado (humedad y temperatura promedio) del cultivo</td><td>4</td><td>Piero Delgado, Salvador Salinas</td><td>In Process</td>
+  <td>T08</td><td>Mostrar historial del cultivo</td><td>Mostrar el historial mensual del estado (humedad y temperatura promedio) del cultivo</td><td>4</td><td>Piero Delgado, Salvador Salinas</td><td>In Process</td>
 </tr>
 <!-- US16 -->
 <tr>
   <td>US16</td><td>Historial de consumo de agua mensual</td>
-  <td>T07</td><td>Historial de consumo mensual de agua</td><td>Mostrar el historial mensual de la cantidad de agua utilizada por tanque</td><td>4</td><td>Sebastian Paredes, Salvador Salinas</td><td>In Process</td>
+  <td>T09</td><td>Historial de consumo mensual de agua</td><td>Mostrar el historial mensual de la cantidad de agua utilizada por tanque</td><td>4</td><td>Sebastian Paredes, Salvador Salinas</td><td>In Process</td>
 </tr>
 <!-- US10 -->
 <tr>
   <td>US10</td><td>Acciones Recomendadas</td>
-  <td>T08</td><td>Diseñar interfaz de recomendaciones</td><td>Mostrar alertas o sugerencias por estado de cultivo</td><td>2</td><td>Piero Delgado, Salvador Salinas</td><td>Done</td>
+  <td>T10</td><td>Diseñar interfaz de recomendaciones</td><td>Mostrar alertas o sugerencias por estado de cultivo</td><td>2</td><td>Piero Delgado, Salvador Salinas</td><td>Done</td>
 </tr>
 <!-- US17 -->
 <tr>
   <td>US17</td><td>Apagar y Encender los Sistemas</td>
-  <td>T09</td><td>Apagar y Encender los Sistemas</td><td>Contar con un botón que permita apagar y encender los sistemas</td><td>2</td><td>Sebastian Paredes</td><td>To Do</td>
+  <td>T11</td><td>Apagar y Encender los Sistemas</td><td>Contar con un botón que permita apagar y encender los sistemas</td><td>2</td><td>Sebastian Paredes</td><td>To Do</td>
 </tr>
 <!-- US24 -->
 <tr>
   <td>US24</td><td>Registro de usuarios</td>
-  <td>T10</td><td>Formulario de registro</td><td>Campos de nombre, correo y contraseña</td><td>3</td><td>Piero Delgado, Salvador Salinas</td><td>Done</td>
+  <td>T12</td><td>Formulario de registro</td><td>Campos de nombre, correo y contraseña</td><td>3</td><td>Piero Delgado, Salvador Salinas</td><td>Done</td>
 </tr>
 <!-- US25 -->
 <tr>
   <td>US25</td><td>Acceso de Usuarios</td>
-  <td>T11</td><td>Login de usuario</td><td>Inicio de sesión con correo y contraseña</td><td>3</td><td>Piero Delgado, Salvador Salinas</td><td>Done</td>
+  <td>T13</td><td>Login de usuario</td><td>Inicio de sesión con correo y contraseña</td><td>3</td><td>Piero Delgado, Salvador Salinas</td><td>Done</td>
 </tr>
 <!-- US26 -->
 <tr>
   <td>US26</td><td>Actualización de contraseña</td>
-  <td>T12</td><td>Actualizar contraseña</td><td>Permitir la actualización de contraseña</td><td>3</td><td>Sebastian Paredes, Marcelo Neyra</td><td>Done</td>
+  <td>T14</td><td>Actualizar contraseña</td><td>Permitir la actualización de contraseña</td><td>3</td><td>Sebastian Paredes, Marcelo Neyra</td><td>Done</td>
 </tr>
 <!-- US27 -->
 <tr>
   <td>US27</td><td>Recuperación de contraseña</td>
-  <td>T13</td><td>Recuperar contraseña</td><td>Permitir la recuperación de contraseña, mediante el envío de un correo</td><td>3</td><td>Sebastian Paredes, Marcelo Neyra</td><td>Done</td>
+  <td>T15</td><td>Recuperar contraseña</td><td>Permitir la recuperación de contraseña, mediante el envío de un correo</td><td>3</td><td>Sebastian Paredes, Marcelo Neyra</td><td>Done</td>
 </tr>
 <!-- US18 -->
 <tr>
   <td>US18</td><td>Verificación del estado del sistema de regado</td>
-  <td>T14</td><td>Estado del sistema de regado</td><td>Visualizar el estado del sistema de regado</td><td>4</td><td>Piero Delgado, Sebastian Paredes</td><td>To Do</td>
+  <td>T16</td><td>Estado del sistema de regado</td><td>Visualizar el estado del sistema de regado</td><td>4</td><td>Piero Delgado, Sebastian Paredes</td><td>To Do</td>
 </tr>
 <!-- US19 -->
 <tr>
   <td>US19</td><td>Verificación del estado del sensor de humedad</td>
-  <td>T15</td><td>Estado del sensor de humedad</td><td>Visualizar el estado del sensor de humedad</td><td>4</td><td>Natanael Soto, Marcelo Neyra</td><td>To Do</td>
+  <td>T17</td><td>Estado del sensor de humedad</td><td>Visualizar el estado del sensor de humedad</td><td>4</td><td>Natanael Soto, Marcelo Neyra</td><td>To Do</td>
 </tr>
 <!-- US20 -->
 <tr>
   <td>US20</td><td>Verificación del estado del sensor de temperatura</td>
-  <td>T16</td><td>Estado del sensor de temperatura</td><td>Visualizar el estado del sensor de temperatura</td><td>4</td><td>Natanael Soto, Marcelo Neyra</td><td>To Do</td>
+  <td>T18</td><td>Estado del sensor de temperatura</td><td>Visualizar el estado del sensor de temperatura</td><td>4</td><td>Natanael Soto, Marcelo Neyra</td><td>To Do</td>
 </tr>
 <!-- US21 -->
 <tr>
   <td>US21</td><td>Verificación de la batería</td>
-  <td>T17</td><td>Estado de la batería</td><td>Visualizar el estado de la batería</td><td>3</td><td>Piero Delgado, Salvador Salinas</td><td>To-Do</td>
+  <td>T19</td><td>Estado de la batería</td><td>Visualizar el estado de la batería</td><td>3</td><td>Piero Delgado, Salvador Salinas</td><td>To-Do</td>
 </tr>
 <!-- US22 -->
 <tr>
   <td>US22</td><td>Añadir nuevo sistema HydroSmart</td>
-  <td>T18</td><td>Formulario de registro de sistema</td><td>Permitir añadir nuevos nodos/sistemas</td><td>3</td><td>Marcelo Neyra</td><td>To-Do</td>
+  <td>T20</td><td>Formulario de registro de sistema</td><td>Permitir añadir nuevos nodos/sistemas</td><td>3</td><td>Marcelo Neyra</td><td>To-Do</td>
 </tr>
 <!-- US23 -->
 <tr>
   <td>US23</td><td>Quitar un sistema de HydroSmart</td>
-  <td>T19</td><td>Eliminar sistema existente</td><td>Permitir borrar un sistema inactivo</td><td>3</td><td>Marcelo Neyra</td><td>To-Do</td>
+  <td>T21</td><td>Eliminar sistema existente</td><td>Permitir borrar un sistema inactivo</td><td>3</td><td>Marcelo Neyra</td><td>To-Do</td>
 </tr>
 </table>
 
