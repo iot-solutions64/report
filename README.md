@@ -5411,15 +5411,19 @@ Se reajustó el tamaño del texto, la organización de los campos y el color de 
 Se utilizaron los siguientes componentes:
 ###### ESP32
 Este microcontrolador ejecutará todas las funciones necesarias para el correcto funcionamiento de la aplicación.
+
 ![ESP32](img/sprint-2-execution-iot-0.png)
 ###### DHT22
 Este sensor detectará la temperatura en grados celsius y la humedad en porcentaje
+
 ![DHT22](img/sprint-2-execution-iot-1.png)
 ###### HC-SR04 Ultrasonic Distance Sensor
 Este sensor detectará la distancia, en centímetros, entre el sensor y el agua. Este sensor sería puesto en la parte superior de un tanque de agua y, según la distancia entre el agua y el sensor, se podría estimar la cantidad de agua restante en el tanque.
+
 ![HC-SR04](img/sprint-2-execution-iot-2.png)
 ###### Luz Led + Resistor
 Este actuador se encenderá al detectar una anomalía. El resistor es de 220 Ω
+
 ![Luz Led](img/sprint-2-execution-iot-3.png)
 
 - Funcionalidades:
@@ -5441,17 +5445,21 @@ El sistema de regado automático se encendería de dos maneras:
 El flujo de la aplicación es el siguiente:
 ###### Definición de variables
 Aquí, se define las variables necesarias para la conexión con el servicio MQTT, la funcionalidades de Wifi y los intervalos de envío de datos
+
 ![Variables](img/sprint-2-execution-iot-5.png)
 ###### Setup
 En el Setup, se inicializa el sistema y el administrador de MQTT
+
 ![Setup](img/sprint-2-execution-iot-6.png)
 ###### Loop
 En el Loop, se mantiene activa la conexión con MQTT y se actualiza el estado de los sensores y actuadores cada cierto tiempo
+
 ![Loop](img/sprint-2-execution-iot-7.png)
 
 ----
 ##### Ejecución del sistema
 Al iniciar el sistema, en la consola aparecerá un mensaje como el siguiente:
+
 ![Ejecucion](img/sprint-2-execution-iot-8.png)
 
 
@@ -5461,43 +5469,56 @@ Para este sprint, se desarrolló la primera versión del sistema embebido físic
 Se utilizaron los siguientes componentes:
 ###### ESP32
 A diferencia del microcontrolador del prototipo, cuenta con 38 pines en ves de 30. Se encarga de manejar toda la lógica principal de la aplicación
+
 ![ESP32](img/sprint-2-execution-iot-fisico-1.jpg)
 ###### HC-SR04 Ultrasonic Distance Sensor
 Funciona de la misma manera que el prototipo: Este sensor detectará la distancia, en centímetros, entre el sensor y el agua. Este sensor sería puesto en la parte superior de un tanque de agua y, según la distancia entre el agua y el sensor, se podría estimar la cantidad de agua restante en el tanque.
+
 ![HC-SR04](img/sprint-2-execution-iot-fisico-2.jpg)
 ###### DHT11
 A diferencia del DHT22 del prototipo, este sensor no cuenta con un pin NC, no obstante, como no se utilizaba en el prototipo, no es un problema. Este sensor detectará la temperatura en grados celsius y la humedad en porcentaje
+
 ![DHT22](img/sprint-2-execution-iot-fisico-3.jpg)
 ###### Luz Led + Resistor
 Funciona de la misma manera que el prototipo: Este actuador se encenderá al detectar una anomalía. El resistor es de 220 Ω
+
 ![Luz Led](img/sprint-2-execution-iot-fisico-4.jpg)
 ###### Cables Breadboard Jumper
 Estos cambles fueron utilizados para la conexión de los sensores y actuadores con el ESP32
+
 ![Sistema Embebido Completo](img/sprint-2-execution-iot-fisico-5.jpg)
 ###### Cables Female to Male Depont
 Estos cables fueron utilizados para la conexión entre el ESP32 y el breadboard
+
 ![Sistema Embebido Completo](img/sprint-2-execution-iot-fisico-6.jpg)
 ###### Vista completa
+
 ![Sistema Embebido Completo](img/sprint-2-execution-iot-fisico-7.jpg)
+
 ![Sistema Embebido Completo](img/sprint-2-execution-iot-fisico-8.jpg)
 ----
 ##### Flujo básico de la aplicación
 El flujo de la aplicación se mantiene
 ###### Definición de variables
 Aquí, se define las variables necesarias para la conexión con el servicio MQTT, la funcionalidades de Wifi y los intervalos de envío de datos
+
 ![Variables](img/sprint-2-execution-iot-5.png)
 ###### Setup
 En el Setup, se inicializa el sistema y el administrador de MQTT
+
 ![Setup](img/sprint-2-execution-iot-6.png)
 ###### Loop
 En el Loop, se mantiene activa la conexión con MQTT y se actualiza el estado de los sensores y actuadores cada cierto tiempo
+
 ![Loop](img/sprint-2-execution-iot-7.png)
 
 ----
 ###### Prueba básica del sistema
 Antes de empezar con el funcionamiento real, se realizó una pequeña prueba para comprobar el funcionamiento correcto del sistema. Para ello, se realizó un pequeño programa que enciende una luz led. Este fue el resultado:
+
 ![Prueba](img/sprint-2-execution-iot-fisico-9.jpg)
 
+Una vez comprobado el correcto funcionamiento, se construyó la primera versión del sistema
 
 ----
 ##### Ejecución del sistema
