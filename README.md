@@ -5359,6 +5359,148 @@ El objetivo de este segundo sprint fue concluir con el desarrollo de las aplicac
 #### 6.2.2.5. Testing Suite Evidence
 
 #### 6.2.2.6. Execution Evidence
+En esta sección, se incluirán los cambios realizados a la aplicación Web y la landing page, así como la vista de la primera versión de los sistemas embebidos realizados:
+1. **Landing Page**
+- Vista Contacto:
+Se realizaron mejoras en la interfaz gráfica
+![Contacto Landing Page](img/sprint-2-execution-landing-1.png)
+- Navbar:
+Se arregló un error que impedía el translado a la aplicación desde cualquier interfaz. También, se mejoró ligeramente la interfaz
+![Navbar Landing Page](img/sprint-2-execution-landing-2.png)
+
+2. **Aplicación Frontend Web**
+- Vista Sign In / Sign Up
+Se añadió un "Progress Spinner" que se muestra al intentar iniciar sesión o al crear un usuario:
+![Sign In/Up](img/sprint-2-execution-web-1.png)
+- Vista Navbar
+Se mejoró ligeramente la vista del navbar
+![Navbar Web](img/sprint-2-execution-web-2.png)
+- Vista Crops
+Se mejoró la organización de la tabla
+![Crops](img/sprint-2-execution-web-3.png)
+- Vista Crop Details
+Se mejoró la vista de la tarjeta principal, así como el tamaño del texto y los componentes
+![Crop Detail](img/sprint-2-execution-web-4.png)
+- Vista Recommended Actions
+Se mejoró ligeramente la organización de la vista, así como el tamaño del texto y los componentes
+![Recommended Actions](img/sprint-2-execution-web-5.png)
+- Vista Crop Short History / History
+Se mejoró ligeramente la organización de la vista
+![Crop Short History](img/sprint-2-execution-web-6.png)
+- Vista System Detail
+Se mejoró ligeramente la organización de la vista
+![Systems](img/sprint-2-execution-web-7.png)
+- Vista System List
+Se mejoró ligeramente la organización de la vista
+![Systems](img/sprint-2-execution-web-8.png)
+- Vista Water Management
+Se reorganizaron las tarjetas y se reajustó el tamaño de los componentes para que entren mejor en la pantalla
+![Water Management](img/sprint-2-execution-web-9.png)
+- Vista Water Tank
+Se reajustó el tamaño de los componentes para mayor claridad en la pantalla
+![Water Tank](img/sprint-2-execution-web-10.png)
+- Vista Water Usage
+Se reajustó muy ligeramente la vista
+![Water Usage](img/sprint-2-execution-web-11.png)
+- Vista Dialog
+Se reajustó el tamaño del texto, la organización de los campos y el color de los botones para una mayor claridad
+![Dialogs](img/sprint-2-execution-web-12.png)
+
+3. **Sistema Embebido (Prototipo en Wokwi)**
+- Componentes utilizados:
+Se utilizaron los siguientes componentes:
+###### ESP32
+Este microcontrolador ejecutará todas las funciones necesarias para el correcto funcionamiento de la aplicación.
+![ESP32](img/sprint-2-execution-iot-0.png)
+###### DHT22
+Este sensor detectará la temperatura en grados celsius y la humedad en porcentaje
+![DHT22](img/sprint-2-execution-iot-1.png)
+###### HC-SR04 Ultrasonic Distance Sensor
+Este sensor detectará la distancia, en centímetros, entre el sensor y el agua. Este sensor sería puesto en la parte superior de un tanque de agua y, según la distancia entre el agua y el sensor, se podría estimar la cantidad de agua restante en el tanque.
+![HC-SR04](img/sprint-2-execution-iot-2.png)
+###### Luz Led + Resistor
+Este actuador se encenderá al detectar una anomalía. El resistor es de 220 Ω
+![Luz Led](img/sprint-2-execution-iot-3.png)
+
+- Funcionalidades:
+###### Detección de Temperatura y Humedad:
+Utilizando un DHT22, se detecta la humedad y la temperatura. Si es que se detecta una temperatura o humedad inadecuada (muy alta o muy baja), se encenderá la luz led
+###### Detección de Cantidad de Agua en el Tanque:
+Utilizando un HC-SR04 Ultrasonic Distance Sensor, se detecta la distancia entre el sensor y el agua. Si es que la cantidad de agua detectada, es muy baja, se encenderá la luz led
+###### Informar sobre anomalías:
+Utilizando una luz led de color rojo, si es que cualquiera de los sensores detecta una anomalía (lecturas fuera de lo esperado), se encenderá la luz led. De lo contrario, se mantendrá apagada.
+###### Regado automático (no implementado):
+El sistema de regado automático se encendería de dos maneras:
+- Si es que se tiene un regado programado, se riega a la hora esperada
+- Si es que se detecta una humedad muy baja o una temperatura muy alta, se empieza a regar
+###### Vista completa
+![Sistema Embebido Completo](img/sprint-2-execution-iot-4.png)
+
+----
+##### Flujo básico de la aplicación
+El flujo de la aplicación es el siguiente:
+###### Definición de variables
+Aquí, se define las variables necesarias para la conexión con el servicio MQTT, la funcionalidades de Wifi y los intervalos de envío de datos
+![Variables](img/sprint-2-execution-iot-5.png)
+###### Setup
+En el Setup, se inicializa el sistema y el administrador de MQTT
+![Setup](img/sprint-2-execution-iot-6.png)
+###### Loop
+En el Loop, se mantiene activa la conexión con MQTT y se actualiza el estado de los sensores y actuadores cada cierto tiempo
+![Loop](img/sprint-2-execution-iot-7.png)
+
+----
+##### Ejecución del sistema
+Al iniciar el sistema, en la consola aparecerá un mensaje como el siguiente:
+![Ejecucion](img/sprint-2-execution-iot-8.png)
+
+
+5. **Sistema Embebido (Físico)**
+Para este sprint, se desarrolló la primera versión del sistema embebido físico. Este cuenta con las mismas funcionalidades que el anterior, sin embargo, se cambió el DHT22 por un DHT11.
+- Componentes utilizados:
+Se utilizaron los siguientes componentes:
+###### ESP32
+A diferencia del microcontrolador del prototipo, cuenta con 38 pines en ves de 30. Se encarga de manejar toda la lógica principal de la aplicación
+![ESP32](img/sprint-2-execution-iot-fisico-1.jpg)
+###### HC-SR04 Ultrasonic Distance Sensor
+Funciona de la misma manera que el prototipo: Este sensor detectará la distancia, en centímetros, entre el sensor y el agua. Este sensor sería puesto en la parte superior de un tanque de agua y, según la distancia entre el agua y el sensor, se podría estimar la cantidad de agua restante en el tanque.
+![HC-SR04](img/sprint-2-execution-iot-fisico-2.jpg)
+###### DHT11
+A diferencia del DHT22 del prototipo, este sensor no cuenta con un pin NC, no obstante, como no se utilizaba en el prototipo, no es un problema. Este sensor detectará la temperatura en grados celsius y la humedad en porcentaje
+![DHT22](img/sprint-2-execution-iot-fisico-3.jpg)
+###### Luz Led + Resistor
+Funciona de la misma manera que el prototipo: Este actuador se encenderá al detectar una anomalía. El resistor es de 220 Ω
+![Luz Led](img/sprint-2-execution-iot-fisico-4.jpg)
+###### Cables Breadboard Jumper
+Estos cambles fueron utilizados para la conexión de los sensores y actuadores con el ESP32
+![Sistema Embebido Completo](img/sprint-2-execution-iot-fisico-5.jpg)
+###### Cables Female to Male Depont
+Estos cables fueron utilizados para la conexión entre el ESP32 y el breadboard
+![Sistema Embebido Completo](img/sprint-2-execution-iot-fisico-6.jpg)
+###### Vista completa
+![Sistema Embebido Completo](img/sprint-2-execution-iot-fisico-7.jpg)
+![Sistema Embebido Completo](img/sprint-2-execution-iot-fisico-8.jpg)
+----
+##### Flujo básico de la aplicación
+El flujo de la aplicación se mantiene
+###### Definición de variables
+Aquí, se define las variables necesarias para la conexión con el servicio MQTT, la funcionalidades de Wifi y los intervalos de envío de datos
+![Variables](img/sprint-2-execution-iot-5.png)
+###### Setup
+En el Setup, se inicializa el sistema y el administrador de MQTT
+![Setup](img/sprint-2-execution-iot-6.png)
+###### Loop
+En el Loop, se mantiene activa la conexión con MQTT y se actualiza el estado de los sensores y actuadores cada cierto tiempo
+![Loop](img/sprint-2-execution-iot-7.png)
+
+----
+###### Prueba básica del sistema
+Antes de empezar con el funcionamiento real, se realizó una pequeña prueba para comprobar el funcionamiento correcto del sistema. Para ello, se realizó un pequeño programa que enciende una luz led. Este fue el resultado:
+![Prueba](img/sprint-2-execution-iot-fisico-9.jpg)
+
+
+----
+##### Ejecución del sistema
 
 #### 6.2.2.7. Services Documentation
 
