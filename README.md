@@ -5524,6 +5524,43 @@ Una vez comprobado el correcto funcionamiento, se construyó la primera versión
 ##### Ejecución del sistema
 
 #### 6.2.2.7. Services Documentation
+##### Controlador de Cultivos
+Se han modificado y/o agregado los siguientes endpoints del controlador
+
+![Controlador Cultivos](img/sprint-2-services-1.png)
+
+1. `PATCH api/v1/crop/{cropId}/temperature` Se actualiza la temperatura leída
+2. `PATCH api/v1/crop/{cropId}/humidity` Se actualiza la humedad leída
+3. `PATCH api/v1/crop/{cropId}/temperature-threshold` Se actualiza los límites máximos y mínimos de la temperatura
+4. `PATCH api/v1/crop/{cropId}/humidity-threshold` Se actualiza los límites máximos y mínimos de la humedad
+
+##### Controlador de Tanques de agua
+Este nuevo controlador se encarga de manejar las instancias de Tanques de Agua
+
+![Controlador Tanques de Agua](img/sprint-2-services-2.png)
+
+1. `POST api/v1/water-tanks` Crea una nueva instancia Water Tank
+2. `GET api/v1/water-tanks/{id}` Devuelve una instancia de Water Tank utilizando el ID
+3. `GET api/v1/water-tanks/user/{userId}` Devuelve una lista de instancias de Water Tank relacionadas con el ID del usuario proporcionado
+4. `PATCH api/v1/water-tanks/name` Se actualiza el nombre del tanque de agua
+5. `PATCH api/v1/water-tanks/{id}/water-remaining` Se actualiza la cantidad de agua del tanque de agua
+6. `PATCH api/v1/water-tanks/{id}/status/{status}` Se actualiza el estatus del tanque de agua
+
+##### Controlador de Restablecer Contraseña
+Este nuevo controlador se encarga de manejar las solicitudes de restablecimiento de contraseña
+
+![Controlador Tanques de Agua](img/sprint-2-services-3.png)
+
+1. `POST password-reset/request` Se envía un email para iniciar con el restablecimiento de contraseña
+2. `GET password-reset/confirm` Se envía un token para confirmar el cambio de contraseña
+
+##### Controlador de Sensores
+Este nuevo controlador se encarga de mapear los datos obtenidos por el Edge API a la base de datos principal
+
+![Controlador Tanques de Agua](img/sprint-2-services-4.png)
+
+1. `GET api/v1/iot/data` Se recupera una lista de los datos recolectados por el sensor
+2. `POST api/v1/iot/data` Se envían los datos (temperatura, humedad, volumen, timestamp)
 
 #### 6.2.2.8. Deployment Evidence
 
