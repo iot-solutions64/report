@@ -162,26 +162,29 @@
       <p>Reporte: <a href="https://github.com/iot-solutions64/report">Documento Trabajo Parcial</a></p>
       <p>Frontend Web: <a href="https://github.com/iot-solutions64/frontend-web">Repositorio del Frontend Web</a></p>
       <p>Frontend Móvil: <a href="https://github.com/iot-solutions64/frontend-movil">Repositorio del Frontend Móvil</a></p>
+      <p>Edge API: <a href="https://github.com/iot-solutions64/edge-api">Repositorio del Edge API</a></p>
       <p>Backend: <a href="https://github.com/iot-solutions64/backend">Repositorio del Backend</a></p>
-      <p>Simulación de la sistema embebido: <a href="https://github.com/iot-solutions64/wokwi">Repositorio de la sistema embebido</a></p>
+      <p>Simulación de la Sistema Embebido: <a href="https://github.com/iot-solutions64/wokwi">Repositorio de la sistema embebido</a></p>
       <p>Landing Page: <a href="https://github.com/iot-solutions64/landing-page">Repositorio de la Landing Page</a></p>
       <p>Por otro lado, aquí se encuentran los enlaces directos a las aplicaciones desarrolladas para este entregable:</p>
       <p>Aplicación Frontend Web: <a href="https://hydrosmart-iot.netlify.app">Enlace a la aplicación</a></p>
       <p>Aplicación Backend: <a href="https://api-hydrosmart.up.railway.app/swagger-ui/index.html">Enlace a la aplicación</a></p>
-      <p>sistema embebido: <a href="https://wokwi.com/projects/431338881324863489">Enlace a la aplicación</a></p>
+      <p>Sistema Embebido: <a href="https://wokwi.com/projects/431338881324863489">Enlace a la aplicación</a></p>
       <p>Página Landing Page: <a href="https://iot-solutions64.github.io/landing-page/">Enlace a la página</p>
     </td>
     <td>
       <p>Frontend Web</p>
-      <img src="img/insights-tp-1.png">
+      <img src="img/sprint-2-insights-1.png">
       <p>Frontend Móvil</p>
-      <img src="img/insights-tp-1.png">
+      <img src="img/sprint-2-insights-2.png">
       <p>Backend</p>
-      <img src="img/insights-tp-2.png">
-      <p>sistema embebido</p>
-      <img src="img/insights-tp-2.png">
+      <img src="img/sprint-2-insights-3.png">
+      <p>Edge API</p>
+      <img src="img/sprint-2-insights-4.png">
+      <p>Prototipo del Sistema Embebido en Wokwi</p>
+      <img src="img/sprint-2-insights-5.png">
       <p>Landing Page</p>
-      <img src="img/insights-tp-3.png">
+      <img src="img/sprint-2-insights-6.png">
     </td>
   </tr>
 </table>
