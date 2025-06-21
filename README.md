@@ -5729,6 +5729,32 @@ Esto se realizó utilizando el comando `flutter build apk --release` en la termi
 ![HydroSmart APK](img/sprint-2-deployment-apk.png)
 
 #### 6.2.2.9. Collaboration Insights
+Durante el Sprint 2, el equipo mantuvo una comunicación efectiva y constante mediante reuniones diarias tipo *daily scrum*, donde se revisaba el avance de las tareas, se resolvían bloqueos y se coordinaban actividades clave. Además, se utilizó WhatsApp como canal principal de comunicación para intercambiar información, compartir recursos y dar seguimiento en tiempo real al desarrollo.
+
+En cuanto a la gestión del código, se trabajó de forma diferenciada según el tipo de repositorio:
+
+- **Repositorio del reporte**: Todo el trabajo se realizó directamente en la rama `main`, permitiendo un control centralizado del contenido del informe sin la necesidad de múltiples ramas, lo que facilitó un flujo más directo de edición y seguimiento.
+
+- **Repositorio de la landing page**: Se desarrolló completamente en la rama `main`, ya que se trataba de un componente más estático y enfocado en presentación, lo cual no requirió una estructura compleja de ramas.
+
+- **Repositorios de frontend, backend y edge api de la aplicación**: Se implementó un flujo de trabajo basado en ramas, también conocido como Gitflow, utilizando una rama `develop` como base de desarrollo, ramas específicas con el prefijo `/feature` para el desarrollo de funcionalidades individuales y la rama `hotfix` para cambios rápidos. Esto permitió un control más organizado, facilitando pruebas, revisiones y eventual integración al entorno principal.
+
+- **Repositorio wokwi**: Se desarrolló completamente en la rama `main`, ya que no se realizaron una gran cantidad de cambios en el proyecto y la mayor parte del desarrollo y esquematizado de la aplicación fue realizado en el primer commit.
+
+Este enfoque mixto permitió mantener un equilibrio entre agilidad y control del desarrollo. Gracias a la colaboración constante del equipo y a una adecuada distribución de tareas, se cumplieron exitosamente los objetivos del Sprint 1, asegurando un progreso sólido y bien documentado en este reporte.
+
+###### Frontend Web
+![Insights](img/sprint-2-insights-1.png)
+###### Frontend Mobile
+![Insights](img/sprint-2-insights-2.png)
+###### Frontend Backend
+![Insights](img/sprint-2-insights-3.png)
+###### Frontend Edge API
+![Insights](img/sprint-2-insights-4.png)
+###### Frontend Prototipo en Wokwi
+![Insights](img/sprint-2-insights-5.png)
+###### Frontend Landing Page
+![Insights](img/sprint-2-insights-6.png)
 
 
 ## 6.3. Validation Interviews
