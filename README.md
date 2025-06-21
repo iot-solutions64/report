@@ -47,7 +47,6 @@
 
 # Registro de versiones
 
-
 <style>
   table {
     width: 100%;
@@ -342,8 +341,11 @@
 - [6.4. Video About-the-Product](#64-video-about-the-product)
 
 ### [7. Conclusiones y Recomendaciones](#conclusiones-y-recomendaciones)
+
 ### [8. Video About-the-Team](#video-about-the-team)
+
 ### [9. Bibliografía](#bibliografía)
+
 ### [10. Anexos](#anexos)
 
 <div style="page-break-after: always;"></div>
@@ -4215,108 +4217,110 @@ Para esta entrega, se realizaron 3 aplicaciones, la landing page, frontend web a
 2. Frontend Application: **[Repositorio Frontend](https://github.com/iot-solutions64/frontend-web)**
 3. Landing Page Application: **[Repositorio Landing Page](https://github.com/iot-solutions64/landing-page)**
 
-| Repository   | Branch  | Commit Id                                | Commit Message                                                         | Commit Message Body                           | Commited on (Date) |
-| ------------ | ------- | ---------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------- | ------------------ |
-| landing-page | main    | 861f42b08f2eb0211a86a52ccd8c418616ece22c | feat: landing page sections added                                      | none                                          | 28/04/2025         |
-| landing-page | main    | 708cc85ecf6810e19c021fd86b65775ed332f5e0 | feat: styles for "p" elements changed                                  | none                                          | 28/04/2025         |
-| landing-page | main    | 53bd616aa03427668845c2dcf5fe981aee5617a9 | feat: content for features.html changed                                | none                                          | 04/05/2025         |
-| landing-page | main    | 0592d05e0012ca8f94e855344a4bed6ba3c07924 | fat: change Iot-solutions64 for IoT Solutions                          | none                                          | 04/05/2025         |
-| landing-page | main    | e56261c796f1650f58238cddc54423ae2f8ed771 | feat: update about-app.css                                             | none                                          | 04/05/2025         |
-| landing-page | main    | 4a96374ed318ba7388f21cacee73204bdfdf2cc8 | feat: index.html updated                                               | none                                          | 04/05/2025         |
-| landing-page | main    | 4e7e16a99807e32537f51153d8c895e4c530e68c | feat: update about-app.css                                             | none                                          | 04/05/2025         |
-| landing-page | main    | e021f2e0685b7e1dfa3bcad46cce9ed2a221bf44 | feat: update styles.css                                                | none                                          | 05/05/2025         |
-| landing-page | main    | f87be5bd81178e3ea44cf05fd52c9f4275542766 | fix: styles for sections fixed                                         | none                                          | 10/05/2025         |
-| landing-page | main    | 4847a7a047c48185add3e0835bc7bfffbf11de3f | fix: about-app styles updated                                          | none                                          | 10/05/2025         |
-| landing-page | main    | 5e836925436c0aec61de506660b620cdcad2c834 | fix: about us section updated                                          | none                                          | 10/05/2025         |
-| landing-page | main    | 2872cde860a5d55952bdd988a68cf5d32e35c51c | fix: update other sections                                             | none                                          | 10/05/2025         |
-| landing-page | main    | 17bfe1a050ea0589df32624f1ab18f79dd466b5a | feat: update styles for contact section                                | none                                          | 12/05/2025         |
-| landing-page | main    | 9cf423c5755c96250b973f065ea88e0a6c5a3347 | feat: styles.css updated                                               | none                                          | 12/05/2025         |
-| frontend-web | develop | 9e6648d9c3830ec467bedbaddf10d747e58c06b2 | feat: base project                                                     | none                                          | 07/05/2025         |
-| frontend-web | develop | bf49b9d8a13651b990b23e81cfb9824221ec7337 | feat: add navbar styles & functionality                                | none                                          | 07/05/2025         |
-| frontend-web | develop | e5e5ffb0bd3861e36046b98e36051618270c047d | feat: add login                                                        | none                                          | 07/05/2025         |
-| frontend-web | develop | 313be98fb4184d39af887edfd6191af1120d76a1 | feat: add signup                                                       | none                                          | 07/05/2025         |
-| frontend-web | develop | 5ecf8b2a6da7fcd6b0ae875d01906970229dca30 | feat: add base table & fab for crops page                              | none                                          | 07/05/2025         |
-| frontend-web | develop | 4fce6f12b458331cd4e766649a9ba199d4a02fbc | feat: create add crop dialog                                           | none                                          | 07/05/2025         |
-| frontend-web | develop | 95db3437c31040b495d96a29a8828b554f7c3912 | feat: create delete crop dialog                                        | none                                          | 07/05/2025         |
-| frontend-web | develop | 62bd22035d8b5f1cc091e76e659a2748ef462252 | feat: creat edit crop dialog                                           | none                                          | 07/05/2025         |
-| frontend-web | develop | d72a2d18007efd259034d39a8f10cbc49cfe5219 | feat: add route to crop detail                                         | none                                          | 07/05/2025         |
-| frontend-web | develop | fe31afd2c0280548b47bc704fd3bc9db8b1c318d | Merge pull request #1 from iot-solutions64/feature/crops               | feat: add page 'Cultivos'                     | 07/05/2025         |
-| frontend-web | develop | 2e8994e23aa101bedebf2087b97d260aba531ad0 | feat: add water management page                                        | none                                          | 07/05/2025         |
-| frontend-web | develop | 51c71558a6ca9e1da5fd925adc5fa18945553461 | Merge pull request #2 from iot-solutions64/feature/water               | feat: add water management page & water graph | 07/05/2025         |
-| frontend-web | develop | 047fc53a12c19141f1ef1c1a403b05c43f3a9e6a | feat: add tanks page & add functionality                               | none                                          | 11/05/2025         |
-| frontend-web | develop | 2b90b6b7572abaae9de1cfea69be3721c228678d | feat(water-tanks): add delete & edit functionality                     | none                                          | 12/05/2025         |
-| frontend-web | develop | 1ef37ac574b9f02b50d93abaf430961bf454c16a | feat: add systems page                                                 | none                                          | 12/05/2025         |
-| frontend-web | develop | 9b17a4d7123974eab28ae7cf41130677fdeda8eb | feat: add system detail page                                           | none                                          | 12/05/2025         |
-| frontend-web | develop | a18a687dea068391d8985a0c4975ae32dcc56a8b | feat: add name attr to system                                          | none                                          | 12/05/2025         |
-| frontend-web | develop | 0487483ca4552df907517df70044ba96a6cadc5d | feat: add edit system page                                             | none                                          | 12/05/2025         |
-| frontend-web | develop | 1d06f886b73084269193b0684a3b7dcfeaabe98c | feat: finish add system page                                           | none                                          | 12/05/2025         |
-| frontend-web | develop | 11c30bdc743bd219c9626046b602bb49dff9ae7d | feat: add crop history                                                 | none                                          | 12/05/2025         |
-| frontend-web | develop | a1bd221fb7d20323e8356eaddac0ded36e3815af | style: add responsiveness to system tables                             | none                                          | 12/05/2025         |
-| frontend-web | develop | bee3943d6249408b73229922e93a61251c720d77 | Merge pull request #6 from iot-solutions64/feature/system              | feat: system views                            | 13/05/2025         |
-| frontend-web | develop | c9bab9bd92d94b4583996ecdcc27147f800cb786 | feat: suggestion videos for recommended actions | none                                          | 14/05/2025         |
-| frontend-web | develop | 8f149fe532fcbfcc1146f83673973ead79c6daf7 | Merge pull request #7 from iot-solutions64/feature/recommended-actions | none | 14/05/2025 |
-| backend | develop | 8ec2c9a839cda75c39766ab9e46af3d2556e2c0b | first commit | none | 09/05/2025 |
-| backend | develop | 74530fcd51e9c236a0d12be61c00fa7b20d3bcc2 | feat: added shared files | none | 09/05/2025 |
-| backend | develop | 6e31ac6a37a7f3c0f4c065b4ec16d282490a5b38 | chore: updated dependencies | none | 09/05/2025 |
-| backend | develop | aea8a64377135b60a65f7380461651323433857b | chore: added application properties | none | 09/05/2025 |
-| backend | develop | 1b2cea194207a92096776ef3f9e703fa5e18545f | feat: added security domain layer | none | 09/05/2025 |
-| backend | develop | 0b211015c22c2585a12316f262539cb0c2536351 | fix(security): updated file name | none | 09/05/2025 |
-| backend | develop | 5888d96b9be6c471de04673ec70b277a5d65cade | feat(security): added security services | none | 09/05/2025 |
-| backend | develop | a921026caabf92b764425b04d12a3d6ff011fe46 | feat(security): added security repositories | none | 09/05/2025 |
-| backend | develop | db3d22cd5acc68a90fb1f33ef0349ac6ac077ded | feat(security): added application layer | none | 09/05/2025 |
-| backend | develop | 229ff2657ac8e0c01e96af2e97fde729a853b5ce | feat(security): added infrastructure layer | none | 09/05/2025 |
-| backend | develop | af1ff9c49677e81f9a66ce323415ac9a86cc03c7 | feat(security): added interfaces layer | none | 09/05/2025 |
-| backend | develop | 641fc7d7f8f97b4d4d9ca4022a64f5f12fe0f312 | feat(security): added user facade | none | 09/05/2025 |
-| backend | develop | 4345da70de507c31d015c458c2576a5675b335fc | chore: updated dependencies | none | 10/05/2025 |
-| backend | develop | fb132a259b1fac47f0a269bbfe5c85ac08bef3a4 | feat(soil): added aggregates and entities | none | 10/05/2025 |
-| backend | develop | e76abaf9f42a369b72b38ff151b13b24685028a4 | feat(soil): added more classes to the domain layer | none | 10/05/2025 |
-| backend | develop | a9b6c69cd458dc633e2a2fb2abe020b8211d932d | chore(soil): moved all the classes to the correct folder | none | 10/05/2025 |
-| backend | develop | 745a739d6c9c71a9869f4aaed7f69d2b3d9a87aa | feat(soil): added command service | none | 10/05/2025 |
-| backend | develop | ea960387655e6404086c23245275667a0889ed97 | feat(soil): added crop services | none | 10/05/2025 |
-| backend | develop | a82872996519a8bb1a25fec0442d415acfb234e9 | feat(soil): updated crop domain layer to include a user attribute | none | 10/05/2025 |
-| backend | develop | c29bbdfc62c609d3f85bb48c244a16f736dd5b9c | feat(soil): added soil infrastructure layer | none | 10/05/2025 |
-| backend | develop | 2fcc918859ec9d2600655fd39baa013cddb7d4dc | feat(soil): added soil application layer | none | 10/05/2025 |
-| backend | develop | 647685d34937795f09c97c14be0ae4c25d0a3316 | feat(soil): added a more specific threshold in the humidity and temperature classes | none | 10/05/2025 |
-| backend | develop | fb8c566793e21b9f45da80ed7070341c83e698ed | feat(soil): added soil related resources | none | 10/05/2025 |
-| backend | develop | ad8554116dde3218b6ed1f3ee35e7a4280cf282e | refactor(soil): changed the order of the parameters | none | 10/05/2025 |
-| backend | develop | 1beecc64a36d0c1c93397ce8b8eac673646bf338 | feat(soil): added the missing parameters | none | 10/05/2025 |
-| backend | develop | c22fd05513460d89842a5a3d87aef46eeafdeffd | feat(soil): added resource transform classes | none | 10/05/2025 |
-| backend | develop | 63427c8900e949ed2e95a877f0daafcd0e1fccd2 | feat(soil): added crop controller | none | 10/05/2025 |
-| backend | develop | 974a696b13c869fc80859e2699f7f21e28dde693 | feat(soil): updated the domain layer to include for more functionality | none | 10/05/2025 |
-| backend | develop | dfc4983ec5f52b850dfb6b74c1873b984f76e8fc | feat(soil): added patch, create and update commands for the humidity entity | none | 10/05/2025 |
-| backend | develop | 72acfc65d312fd7a890ecc1394c9c35918108ddb | chore(soil): added comments to the commands for better understandability | none | 10/05/2025 |
-| backend | develop | 8267dc88a52daf50af0570b5d0065742b3035383 | refactor(soil): deleted the suggestions attributes to avoid redundancy | none | 10/05/2025 |
-| backend | develop | 7b5e038b52461c1f5fa8eeaef41e9896f31a1dc9 | feat(soil): added the command and query services impl for the humidity and temperature classes | none | 11/05/2025 |
-| backend | develop | 0761e54cfbe98b540f843f0271e0ec9beda1aea9 | feat(soil): added the resources of the humidity and temperature classes | none | 11/05/2025 |
-| backend | develop | b2ea998e54cf26014b7526fc0e93bae12d4db2d7 | feat(soil): added transform classes | none | 11/05/2025 |
-| backend | develop | da73b2e4ca7372a234f3704e22403efca476c085 | feat(soil): added more transform classes | none | 11/05/2025 |
-| backend | develop | f8aea1359afd778cc614c2acec981b3960dc1306 | feat(soil): added temp and hum queries | none | 11/05/2025 |
-| backend | develop | 8ddc1f652a97fdb5a56a3175e3b41e9aa31ff4e9 | feat(soil): added temp and hum query services | none | 11/05/2025 |
-| backend | develop | 2cf4ec3f223817db5eb627a573f6c3c6427cecc9 | feat(soil): added temp and hum query services impl | none | 11/05/2025 |
-| backend | develop | b93b4be50758e64d4a16454ebd7ec95aadb27e79 | fix(soil): added missing @service | none | 11/05/2025 |
-| backend | develop | 3d63f524c58218a54f2cca2a36b32ee07a74ad78 | refactor(soil): remove the id from the resources to protect the data | none | 11/05/2025 |
-| backend | develop | 5e26f058e9b35a2c372ba378943f28c5eb0a1a1d | refactor(soil): removed the hum and temp query services | none | 11/05/2025 |
-| backend | develop | 209885ca67fc53e6a723fd355e1090d80924b25a | refactor(soil): removed id from patch resources to keep data save | none | 11/05/2025 |
-| backend | develop | 97e90bf33e5f80ebe27b448b1b9de4328bd1a4c9 | feat(soil): added more functions to the controller | none | 11/05/2025 |
-| backend | develop | 3c14bdfddeeb4acbb0d26b62355fc173a4b991f4 | feat(security): added crop list to the user class | none | 11/05/2025 |
-| backend | develop | 91f4d4b5a9fe8e6f7bdab417faa8a707088d3637 | feat(soil): added name attribute to the crop related classes | none | 11/05/2025 |
-| backend | develop | 37beb85e9e0a97142cc4a64e6aa575ad2ad216a5 | feat(soil): added the missing post method | none | 12/05/2025 |
-| backend | develop | d74383682c8664c7156d703c45f4a89dcb79c8b8 | fix(soil): added missing inheritance | none | 12/05/2025 |
-| backend | develop | 726f36ca68ba9337bd6e73278395f5cf2675a989 | fix(security): added missing class | none | 12/05/2025 |
-| backend | develop | 2831a7fa7687b086b827206cb5b83721b0ed7ec0 | feat(soil): added humidity and temperature seeding classes | none | 14/05/2025 |
-| backend | develop | 942ba6b72225e967e9dc7d063b7fd2946a396e1a | chore: changed dependencies | none | 14/05/2025 |
-| backend | develop | 9eb82a58c573d7fb382c803caf8af72196a3ceef | fix(soil): fixed some issues that prevented the CRUD functionality to work | none | 14/05/2025 |
-| backend | develop | 8784532aee808a2bf52274487e4b2216bb335696 | Merge pull request #1 from iot-solutions64/feature/soil | Feature/soil | 14/05/2025 |
-| backend | develop | 722a6f305404287baa0a7b07343d6c9e2309e4f2 | chore: set up Docker environment with env variables | none | 14/05/2025 |
-| backend | develop | e5ee57ae63e967eadcd5324353baa67b5d19ecce | chore: updated Dockerfile | none | 14/05/2025 |
-| backend | develop | b7cf4769a3ba522c15f719fa26b648d2b9fbf523 | chore: updated Dockerfile and pom | none | 14/05/2025 |
-| backend | develop | 28e66d0bb59f2b957d169f88cd94e70604c3ef1e | chore: updated open api servers | none | 14/05/2025 |
-| backend | develop | 0eb3684c1a8096ace7a0a2264792d7870450eb22 | chore: updated pom | none | 14/05/2025 |
-| backend | test/soil | b61eca545b7ab13fe350e3faeb7c831fd766b617 | fix(soil): fixed an issue with how the statuses are handled | none | 16/05/2025 |
-| backend | test/soil | e8659deb94ab17b7fefc8d873b603d81c452c8ed | feat: added test classes | none | 16/05/2025 |
+| Repository   | Branch    | Commit Id                                | Commit Message                                                                                 | Commit Message Body                           | Commited on (Date) |
+| ------------ | --------- | ---------------------------------------- | ---------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------ |
+| landing-page | main      | 861f42b08f2eb0211a86a52ccd8c418616ece22c | feat: landing page sections added                                                              | none                                          | 28/04/2025         |
+| landing-page | main      | 708cc85ecf6810e19c021fd86b65775ed332f5e0 | feat: styles for "p" elements changed                                                          | none                                          | 28/04/2025         |
+| landing-page | main      | 53bd616aa03427668845c2dcf5fe981aee5617a9 | feat: content for features.html changed                                                        | none                                          | 04/05/2025         |
+| landing-page | main      | 0592d05e0012ca8f94e855344a4bed6ba3c07924 | fat: change Iot-solutions64 for IoT Solutions                                                  | none                                          | 04/05/2025         |
+| landing-page | main      | e56261c796f1650f58238cddc54423ae2f8ed771 | feat: update about-app.css                                                                     | none                                          | 04/05/2025         |
+| landing-page | main      | 4a96374ed318ba7388f21cacee73204bdfdf2cc8 | feat: index.html updated                                                                       | none                                          | 04/05/2025         |
+| landing-page | main      | 4e7e16a99807e32537f51153d8c895e4c530e68c | feat: update about-app.css                                                                     | none                                          | 04/05/2025         |
+| landing-page | main      | e021f2e0685b7e1dfa3bcad46cce9ed2a221bf44 | feat: update styles.css                                                                        | none                                          | 05/05/2025         |
+| landing-page | main      | f87be5bd81178e3ea44cf05fd52c9f4275542766 | fix: styles for sections fixed                                                                 | none                                          | 10/05/2025         |
+| landing-page | main      | 4847a7a047c48185add3e0835bc7bfffbf11de3f | fix: about-app styles updated                                                                  | none                                          | 10/05/2025         |
+| landing-page | main      | 5e836925436c0aec61de506660b620cdcad2c834 | fix: about us section updated                                                                  | none                                          | 10/05/2025         |
+| landing-page | main      | 2872cde860a5d55952bdd988a68cf5d32e35c51c | fix: update other sections                                                                     | none                                          | 10/05/2025         |
+| landing-page | main      | 17bfe1a050ea0589df32624f1ab18f79dd466b5a | feat: update styles for contact section                                                        | none                                          | 12/05/2025         |
+| landing-page | main      | 9cf423c5755c96250b973f065ea88e0a6c5a3347 | feat: styles.css updated                                                                       | none                                          | 12/05/2025         |
+| frontend-web | develop   | 9e6648d9c3830ec467bedbaddf10d747e58c06b2 | feat: base project                                                                             | none                                          | 07/05/2025         |
+| frontend-web | develop   | bf49b9d8a13651b990b23e81cfb9824221ec7337 | feat: add navbar styles & functionality                                                        | none                                          | 07/05/2025         |
+| frontend-web | develop   | e5e5ffb0bd3861e36046b98e36051618270c047d | feat: add login                                                                                | none                                          | 07/05/2025         |
+| frontend-web | develop   | 313be98fb4184d39af887edfd6191af1120d76a1 | feat: add signup                                                                               | none                                          | 07/05/2025         |
+| frontend-web | develop   | 5ecf8b2a6da7fcd6b0ae875d01906970229dca30 | feat: add base table & fab for crops page                                                      | none                                          | 07/05/2025         |
+| frontend-web | develop   | 4fce6f12b458331cd4e766649a9ba199d4a02fbc | feat: create add crop dialog                                                                   | none                                          | 07/05/2025         |
+| frontend-web | develop   | 95db3437c31040b495d96a29a8828b554f7c3912 | feat: create delete crop dialog                                                                | none                                          | 07/05/2025         |
+| frontend-web | develop   | 62bd22035d8b5f1cc091e76e659a2748ef462252 | feat: creat edit crop dialog                                                                   | none                                          | 07/05/2025         |
+| frontend-web | develop   | d72a2d18007efd259034d39a8f10cbc49cfe5219 | feat: add route to crop detail                                                                 | none                                          | 07/05/2025         |
+| frontend-web | develop   | fe31afd2c0280548b47bc704fd3bc9db8b1c318d | Merge pull request #1 from iot-solutions64/feature/crops                                       | feat: add page 'Cultivos'                     | 07/05/2025         |
+| frontend-web | develop   | 2e8994e23aa101bedebf2087b97d260aba531ad0 | feat: add water management page                                                                | none                                          | 07/05/2025         |
+| frontend-web | develop   | 51c71558a6ca9e1da5fd925adc5fa18945553461 | Merge pull request #2 from iot-solutions64/feature/water                                       | feat: add water management page & water graph | 07/05/2025         |
+| frontend-web | develop   | 047fc53a12c19141f1ef1c1a403b05c43f3a9e6a | feat: add tanks page & add functionality                                                       | none                                          | 11/05/2025         |
+| frontend-web | develop   | 2b90b6b7572abaae9de1cfea69be3721c228678d | feat(water-tanks): add delete & edit functionality                                             | none                                          | 12/05/2025         |
+| frontend-web | develop   | 1ef37ac574b9f02b50d93abaf430961bf454c16a | feat: add systems page                                                                         | none                                          | 12/05/2025         |
+| frontend-web | develop   | 9b17a4d7123974eab28ae7cf41130677fdeda8eb | feat: add system detail page                                                                   | none                                          | 12/05/2025         |
+| frontend-web | develop   | a18a687dea068391d8985a0c4975ae32dcc56a8b | feat: add name attr to system                                                                  | none                                          | 12/05/2025         |
+| frontend-web | develop   | 0487483ca4552df907517df70044ba96a6cadc5d | feat: add edit system page                                                                     | none                                          | 12/05/2025         |
+| frontend-web | develop   | 1d06f886b73084269193b0684a3b7dcfeaabe98c | feat: finish add system page                                                                   | none                                          | 12/05/2025         |
+| frontend-web | develop   | 11c30bdc743bd219c9626046b602bb49dff9ae7d | feat: add crop history                                                                         | none                                          | 12/05/2025         |
+| frontend-web | develop   | a1bd221fb7d20323e8356eaddac0ded36e3815af | style: add responsiveness to system tables                                                     | none                                          | 12/05/2025         |
+| frontend-web | develop   | bee3943d6249408b73229922e93a61251c720d77 | Merge pull request #6 from iot-solutions64/feature/system                                      | feat: system views                            | 13/05/2025         |
+| frontend-web | develop   | c9bab9bd92d94b4583996ecdcc27147f800cb786 | feat: suggestion videos for recommended actions                                                | none                                          | 14/05/2025         |
+| frontend-web | develop   | 8f149fe532fcbfcc1146f83673973ead79c6daf7 | Merge pull request #7 from iot-solutions64/feature/recommended-actions                         | none                                          | 14/05/2025         |
+| backend      | develop   | 8ec2c9a839cda75c39766ab9e46af3d2556e2c0b | first commit                                                                                   | none                                          | 09/05/2025         |
+| backend      | develop   | 74530fcd51e9c236a0d12be61c00fa7b20d3bcc2 | feat: added shared files                                                                       | none                                          | 09/05/2025         |
+| backend      | develop   | 6e31ac6a37a7f3c0f4c065b4ec16d282490a5b38 | chore: updated dependencies                                                                    | none                                          | 09/05/2025         |
+| backend      | develop   | aea8a64377135b60a65f7380461651323433857b | chore: added application properties                                                            | none                                          | 09/05/2025         |
+| backend      | develop   | 1b2cea194207a92096776ef3f9e703fa5e18545f | feat: added security domain layer                                                              | none                                          | 09/05/2025         |
+| backend      | develop   | 0b211015c22c2585a12316f262539cb0c2536351 | fix(security): updated file name                                                               | none                                          | 09/05/2025         |
+| backend      | develop   | 5888d96b9be6c471de04673ec70b277a5d65cade | feat(security): added security services                                                        | none                                          | 09/05/2025         |
+| backend      | develop   | a921026caabf92b764425b04d12a3d6ff011fe46 | feat(security): added security repositories                                                    | none                                          | 09/05/2025         |
+| backend      | develop   | db3d22cd5acc68a90fb1f33ef0349ac6ac077ded | feat(security): added application layer                                                        | none                                          | 09/05/2025         |
+| backend      | develop   | 229ff2657ac8e0c01e96af2e97fde729a853b5ce | feat(security): added infrastructure layer                                                     | none                                          | 09/05/2025         |
+| backend      | develop   | af1ff9c49677e81f9a66ce323415ac9a86cc03c7 | feat(security): added interfaces layer                                                         | none                                          | 09/05/2025         |
+| backend      | develop   | 641fc7d7f8f97b4d4d9ca4022a64f5f12fe0f312 | feat(security): added user facade                                                              | none                                          | 09/05/2025         |
+| backend      | develop   | 4345da70de507c31d015c458c2576a5675b335fc | chore: updated dependencies                                                                    | none                                          | 10/05/2025         |
+| backend      | develop   | fb132a259b1fac47f0a269bbfe5c85ac08bef3a4 | feat(soil): added aggregates and entities                                                      | none                                          | 10/05/2025         |
+| backend      | develop   | e76abaf9f42a369b72b38ff151b13b24685028a4 | feat(soil): added more classes to the domain layer                                             | none                                          | 10/05/2025         |
+| backend      | develop   | a9b6c69cd458dc633e2a2fb2abe020b8211d932d | chore(soil): moved all the classes to the correct folder                                       | none                                          | 10/05/2025         |
+| backend      | develop   | 745a739d6c9c71a9869f4aaed7f69d2b3d9a87aa | feat(soil): added command service                                                              | none                                          | 10/05/2025         |
+| backend      | develop   | ea960387655e6404086c23245275667a0889ed97 | feat(soil): added crop services                                                                | none                                          | 10/05/2025         |
+| backend      | develop   | a82872996519a8bb1a25fec0442d415acfb234e9 | feat(soil): updated crop domain layer to include a user attribute                              | none                                          | 10/05/2025         |
+| backend      | develop   | c29bbdfc62c609d3f85bb48c244a16f736dd5b9c | feat(soil): added soil infrastructure layer                                                    | none                                          | 10/05/2025         |
+| backend      | develop   | 2fcc918859ec9d2600655fd39baa013cddb7d4dc | feat(soil): added soil application layer                                                       | none                                          | 10/05/2025         |
+| backend      | develop   | 647685d34937795f09c97c14be0ae4c25d0a3316 | feat(soil): added a more specific threshold in the humidity and temperature classes            | none                                          | 10/05/2025         |
+| backend      | develop   | fb8c566793e21b9f45da80ed7070341c83e698ed | feat(soil): added soil related resources                                                       | none                                          | 10/05/2025         |
+| backend      | develop   | ad8554116dde3218b6ed1f3ee35e7a4280cf282e | refactor(soil): changed the order of the parameters                                            | none                                          | 10/05/2025         |
+| backend      | develop   | 1beecc64a36d0c1c93397ce8b8eac673646bf338 | feat(soil): added the missing parameters                                                       | none                                          | 10/05/2025         |
+| backend      | develop   | c22fd05513460d89842a5a3d87aef46eeafdeffd | feat(soil): added resource transform classes                                                   | none                                          | 10/05/2025         |
+| backend      | develop   | 63427c8900e949ed2e95a877f0daafcd0e1fccd2 | feat(soil): added crop controller                                                              | none                                          | 10/05/2025         |
+| backend      | develop   | 974a696b13c869fc80859e2699f7f21e28dde693 | feat(soil): updated the domain layer to include for more functionality                         | none                                          | 10/05/2025         |
+| backend      | develop   | dfc4983ec5f52b850dfb6b74c1873b984f76e8fc | feat(soil): added patch, create and update commands for the humidity entity                    | none                                          | 10/05/2025         |
+| backend      | develop   | 72acfc65d312fd7a890ecc1394c9c35918108ddb | chore(soil): added comments to the commands for better understandability                       | none                                          | 10/05/2025         |
+| backend      | develop   | 8267dc88a52daf50af0570b5d0065742b3035383 | refactor(soil): deleted the suggestions attributes to avoid redundancy                         | none                                          | 10/05/2025         |
+| backend      | develop   | 7b5e038b52461c1f5fa8eeaef41e9896f31a1dc9 | feat(soil): added the command and query services impl for the humidity and temperature classes | none                                          | 11/05/2025         |
+| backend      | develop   | 0761e54cfbe98b540f843f0271e0ec9beda1aea9 | feat(soil): added the resources of the humidity and temperature classes                        | none                                          | 11/05/2025         |
+| backend      | develop   | b2ea998e54cf26014b7526fc0e93bae12d4db2d7 | feat(soil): added transform classes                                                            | none                                          | 11/05/2025         |
+| backend      | develop   | da73b2e4ca7372a234f3704e22403efca476c085 | feat(soil): added more transform classes                                                       | none                                          | 11/05/2025         |
+| backend      | develop   | f8aea1359afd778cc614c2acec981b3960dc1306 | feat(soil): added temp and hum queries                                                         | none                                          | 11/05/2025         |
+| backend      | develop   | 8ddc1f652a97fdb5a56a3175e3b41e9aa31ff4e9 | feat(soil): added temp and hum query services                                                  | none                                          | 11/05/2025         |
+| backend      | develop   | 2cf4ec3f223817db5eb627a573f6c3c6427cecc9 | feat(soil): added temp and hum query services impl                                             | none                                          | 11/05/2025         |
+| backend      | develop   | b93b4be50758e64d4a16454ebd7ec95aadb27e79 | fix(soil): added missing @service                                                              | none                                          | 11/05/2025         |
+| backend      | develop   | 3d63f524c58218a54f2cca2a36b32ee07a74ad78 | refactor(soil): remove the id from the resources to protect the data                           | none                                          | 11/05/2025         |
+| backend      | develop   | 5e26f058e9b35a2c372ba378943f28c5eb0a1a1d | refactor(soil): removed the hum and temp query services                                        | none                                          | 11/05/2025         |
+| backend      | develop   | 209885ca67fc53e6a723fd355e1090d80924b25a | refactor(soil): removed id from patch resources to keep data save                              | none                                          | 11/05/2025         |
+| backend      | develop   | 97e90bf33e5f80ebe27b448b1b9de4328bd1a4c9 | feat(soil): added more functions to the controller                                             | none                                          | 11/05/2025         |
+| backend      | develop   | 3c14bdfddeeb4acbb0d26b62355fc173a4b991f4 | feat(security): added crop list to the user class                                              | none                                          | 11/05/2025         |
+| backend      | develop   | 91f4d4b5a9fe8e6f7bdab417faa8a707088d3637 | feat(soil): added name attribute to the crop related classes                                   | none                                          | 11/05/2025         |
+| backend      | develop   | 37beb85e9e0a97142cc4a64e6aa575ad2ad216a5 | feat(soil): added the missing post method                                                      | none                                          | 12/05/2025         |
+| backend      | develop   | d74383682c8664c7156d703c45f4a89dcb79c8b8 | fix(soil): added missing inheritance                                                           | none                                          | 12/05/2025         |
+| backend      | develop   | 726f36ca68ba9337bd6e73278395f5cf2675a989 | fix(security): added missing class                                                             | none                                          | 12/05/2025         |
+| backend      | develop   | 2831a7fa7687b086b827206cb5b83721b0ed7ec0 | feat(soil): added humidity and temperature seeding classes                                     | none                                          | 14/05/2025         |
+| backend      | develop   | 942ba6b72225e967e9dc7d063b7fd2946a396e1a | chore: changed dependencies                                                                    | none                                          | 14/05/2025         |
+| backend      | develop   | 9eb82a58c573d7fb382c803caf8af72196a3ceef | fix(soil): fixed some issues that prevented the CRUD functionality to work                     | none                                          | 14/05/2025         |
+| backend      | develop   | 8784532aee808a2bf52274487e4b2216bb335696 | Merge pull request #1 from iot-solutions64/feature/soil                                        | Feature/soil                                  | 14/05/2025         |
+| backend      | develop   | 722a6f305404287baa0a7b07343d6c9e2309e4f2 | chore: set up Docker environment with env variables                                            | none                                          | 14/05/2025         |
+| backend      | develop   | e5ee57ae63e967eadcd5324353baa67b5d19ecce | chore: updated Dockerfile                                                                      | none                                          | 14/05/2025         |
+| backend      | develop   | b7cf4769a3ba522c15f719fa26b648d2b9fbf523 | chore: updated Dockerfile and pom                                                              | none                                          | 14/05/2025         |
+| backend      | develop   | 28e66d0bb59f2b957d169f88cd94e70604c3ef1e | chore: updated open api servers                                                                | none                                          | 14/05/2025         |
+| backend      | develop   | 0eb3684c1a8096ace7a0a2264792d7870450eb22 | chore: updated pom                                                                             | none                                          | 14/05/2025         |
+| backend      | test/soil | b61eca545b7ab13fe350e3faeb7c831fd766b617 | fix(soil): fixed an issue with how the statuses are handled                                    | none                                          | 16/05/2025         |
+| backend      | test/soil | e8659deb94ab17b7fefc8d873b603d81c452c8ed | feat: added test classes                                                                       | none                                          | 16/05/2025         |
 
 #### 6.2.1.5. Testing Suite Evidence
+
 ##### Frontend Web Application Testing
+
 En el caso del frontend, se realizaron las pruebas unitarias en Vue haciendo uso de Vitest, un framework de pruebas para JavaScript. Se realizaron pruebas unitarias para los componentes de la aplicación, así como para las funciones que se utilizan en la misma. Las pruebas se encuentran en el directorio `tests` del repositorio del frontend.
 
 | Repository   | Branch  | Commit Id                                | Commit Message                              | Commit Message Body | Commited on (Date) |
@@ -4375,7 +4379,9 @@ test("Get all crops of non-existent user", async () => {
 <img src="img/crop-unit-tests.png" alt="Pruebas unitarias de cultivos" width="600"/>
 
 ##### Backend Application Testing
+
 Para las pruebas, se utilizó las funciones predeterminadas de Spring Boot Java, así como la biblioteca Mockito y Jupiter
+
 ```
 <dependency>
   <groupId>org.mockito</groupId>
@@ -4390,12 +4396,13 @@ Para las pruebas, se utilizó las funciones predeterminadas de Spring Boot Java,
   <scope>test</scope>
 </dependency>
 ```
+
 Las pruebas fueron realizadas en una rama aparte y se encuentran en el bajo el directorio tests creado automáticamente por Intellij Idea.
 ![Testing Backend 1](img/sprint-testing-back-1.png)
 
-| Repository | Branch | Commit Id | Commit Message | Commit Message Body | Commited on (Date) |
-| --| -- | -- | -- | -- | -- |
-| backend | test/soil | e8659deb94ab17b7fefc8d873b603d81c452c8ed | feat: added test classes | none | 15/05/2025 |
+| Repository | Branch    | Commit Id                                | Commit Message           | Commit Message Body | Commited on (Date) |
+| ---------- | --------- | ---------------------------------------- | ------------------------ | ------------------- | ------------------ |
+| backend    | test/soil | e8659deb94ab17b7fefc8d873b603d81c452c8ed | feat: added test classes | none                | 15/05/2025         |
 
 **Pruebas unitarias de autenticación**
 
@@ -5227,7 +5234,7 @@ Se planeó el segundo sprint a través de una reunión presencial. Para ello, se
 En esta sección se presenta el equipo que participará en la elaboración del artefacto **Leadership-and-Collaboration Matrix (LACX)**, con el objetivo de brindar claridad y efectividad en la comunicación dentro del equipo. Para ello, se han identificado tres aspectos principales dentro del alcance del Sprint: **Desarrollo de Backend**, **Desarrollo de Frontend Web**, **Desarrollo de Frontend Móvil** y **Desarrollo de Configuración IoT**.
 
 | **Team Member** (Last Name, First Name) | **GitHub Username** | **Desarrollo de Backend** | **Desarrollo de Frontend Web** | **Desarrollo de Frontend Móvil** | **Desarrollo de Configuración IoT** |
-| --------------------------------------- | ------------------- | ------------------------- | ------------------------------ | ------------------------------   | ----------------------------------  |
+| --------------------------------------- | ------------------- | ------------------------- | ------------------------------ | -------------------------------- | ----------------------------------- |
 | Delgado Corrales, Piero Gonzalo         | PieroD04            | -                         | C                              | -                                | L                                   |
 | Paredes Puente, Sebastian Roberto       | sebastian123gonzalo | C                         | L                              | -                                | C                                   |
 | Salinas Torres, Salvador Antonio        | salvadoorssalinas   | -                         | -                              | L                                | C                                   |
@@ -5235,6 +5242,7 @@ En esta sección se presenta el equipo que participará en la elaboración del a
 | Soto Salis, Natanael David              | NickDavid811        | -                         | -                              | C                                | C                                   |
 
 #### 6.2.2.3. Sprint Backlog 2
+
 El objetivo de este segundo sprint fue concluir con el desarrollo de las aplicaciones iniciadas en el anterior sprint. Además de desarrollar el Edge API y el sistema embebido.
 
 ![Sprint Backlog 2](img/sprint-backlog-2.png)
@@ -5368,164 +5376,235 @@ En esta sección se incluirán los cambios realizados a la aplicación y la land
 5. Edge API: **[Repositorio Edge API](https://github.com/iot-solutions64/edge-api)**
 6. Sistema Embebido: **[Repositorio Sistema Embebido](https://wokwi.com/projects/431338881324863489)**
 
-| Repository   | Branch  | Commit Id                                | Commit Message                                                         | Commit Message Body                           | Commited on (Date) |
-| ------------ | ------- | ---------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------- | ------------------ |
-| frontend-movil | develop | e574e8af0b13ef49541fd8288c31c10cb0770727 | feat: create placeholder pages| none | 28/05/2025 |
-| frontend-movil | develop | 351b094fb6d81e743e529cf6c1f210ec345d033d | feat: update titles for sections | none | 29/05/2025 |
-| frontend-movil | feature/crops | 38a01a934739e002f51e93e9dad74b7a739fc9e6 | feat: crops list | none | 29/05/2025 |
-| frontend-movil | feature/crops | 5c28a73246d8bfe790639e9d20b33ee944adbb62 | feat: create crop model + update crop list | none | 29/05/2025 |
-| frontend-movil | feature/crops | 8f57b15a73a703e849b45c9dfe8174538887653a | feat: crop detail page | none | 29/05/2025 |
-| frontend-movil | feature/crops | 266e79330b33cefc65e645fb6401bce455b4e61e | feat: crop history page | none | 29/05/2025 |
-| frontend-movil | feature/crops | 43121b5caaa4e0f26514ab94e0fd7b1c464f7d76 | feat: recommended actions (videos) page | none | 29/05/2025 |
-| frontend-movil | feature/crops | 5876f4b02bb7e9124bd818afddbbf9a7ef7a0b09 | style: change signin, signup button color | none | 30/05/2025 |
-| frontend-movil | develop | 676a413046ed5b98670a152a31ad4c6b234a18d8 | style: little adjustments on various pages | none | 31/05/2025 |
-| frontend-movil | feature/irrigation | f470c58e58dcefa65c8f6105ba19d82178393324 | feat: irrigation page, water tanks pages | none | 31/05/2025 |
-| frontend-movil | feature/irrigation | 2f58075007bbb2e3f568dd353ffa1d43fd09c45b | feat: update navigation bar ,sign up snackbar | none | 31/05/2025 |
-| frontend-movil | feature/irrigation | 5661636e719e60c9535565b2121aafb5f56da34b | feat: water graph page | none | 31/05/2025 |
-| frontend-movil | feature/system | 29892e91c4d9bcec2cd033e638e68da60a6c93ce | feat: systems page + update styles for add buttons | none | 31/05/2025 |
-| frontend-movil | feature/system | 027914bf4c5ec2c2eda3cf7a9a4e1d3fe7d00ff6 | feat: system detail page | none | 01/06/2025 |
-| frontend-movil | feature/system | 29ae8bc54453d70db5759e15b381e7ca0b56a904 | feat: add, edit & delete system pages | none | 01/06/2025 |
-| frontend-movil | feature/irrigation | b838d681ce4d1582dee929125cd3cdae53d2900d | feat: water tank management updated | none | 04/06/2025 |
-| frontend-movil | develop | 1fc4711a7ee52b4aa0360c8b54afc7486d4db4fd | feat: add icon visibility to password | none | 06/06/2025 |
-| frontend-movil | feature/services | ec2e7ea853b7ad94c192da5a4a0d83d31141462e | feat: add tanks logic on soil page + minor changes | none | 06/06/2025 |
-| frontend-movil | feature/services | 1b65f3c52d6278b76720f14b30510aa1ba9cfa64 | feat: update fetch water data to use real data | none | 06/06/2025 |
-| frontend-movil | feature/services | 84c5dc012672a3a36010fd09aef924032a04a7a9 | feat: update crop crud | none | 07/06/2025 |
-| frontend-movil | feature/services | baeaa544c0b4be9d5f9edf2ac72851c2f7806be9 | feat: get crop-detailed logic implemented | none | 08/06/2025 |
-| frontend-movil | feature/services | ad7e860c99c92d9c9f0f1ea4903a6ed5ab5ae046 | feat: heuristics correction | none | 08/06/2025 |
-| frontend-movil | feature/services | fdae25c19115453d78d08da63d25fed8aadf7005 | hotfix: removed unnecessary "{id}" | in the patch methods to be inline with the changes of the backend | 10/06/2025 |
-| frontend-movil | feature/services | c18e9ab21f25c883b234c1e85c4dd6c93a984f44 | feat: solve warn problems | none | 13/06/2025 |
-| frontend-movil | feature/services | 00edd11b562573f1d6b74b94bff77d1e790d31c1 | feat: update edit crop | none | 14/06/2025 |
-| frontend-movil | feature/services | 97b67c25e427387037ea701adf71984916f2d15e | refactor: add logo image asset | none | 18/06/2025 |
-| wokwi | main | 22d70695ef7fc9064ebbf2de14bbca2e8230cf5a | feat: base project with modest iot | none | 26/05/2025 |
-| wokwi | main | f30a788532c03fd686ee189e8fe918822ae24e41 | docs: add readme | none | 26/05/2025 |
-| wokwi | main | 49760c66e9e273e79138c019ed0ed5df257f90dc | feat: add functionality to project | none | 02/06/2025 |
-| wokwi | main | 8157f0913c766f42ce5f28a0c77601b03d26b53b | chore: move files to new folders | none | 03/06/2025 |
-| wokwi | main | 22d70695ef7fc9064ebbf2de14bbca2e8230cf5a | docs: user-stories.md updated | none | 06/06/2025 |
-| wokwi | main | 6a43c156b2f76b4916ca9e3f24fccfc1e405f96e | feat: add wifi communication | none | 06/06/2025 |
-| wokwi | main | a6e79cba402273a07b503a531dc9145fed86bbbe | feat: add config to use mqtt | none | 11/06/2025 |
-| wokwi | main | cfc5192731cbf986f2e80de08f1038256947b35a | feat: change to arduino json to send data | none | 11/06/2025 |
-| wokwi | main | f664c66a85bac245aa74190af31a36a5785a352e | docs: add mqtt manager to class diagram | none | 11/06/2025 |
-| wokwi | main | 10a4d6ce322b10ee21e671d3ab0190add7e3379e | feat: add irrigation validation with edge api | none | 11/06/2025 |
-| wokwi | main | b4d295a0372565c2f773b8f805f4a74c60dd5dbd | feat: retrieve threshold from edge | none | 14/06/2025 |
-| wokwi | main | 281fb25857974e9ea2445a9bc8a1678fbc68649a | fix: add missing temperature value | none | 14/06/2025 |
-| wokwi | main | 30199276063605a206fe6c4181c1ee7baa689f4c | fix: missing send data | none | 14/06/2025 |
-| wokwi | main | b96ae395985154edf187d990f7a615b60318f4f3 | chore: change mqtt topic | none | 21/06/2025 |
+| Repository     | Branch                 | Commit Id                                | Commit Message                                                                                         | Commit Message Body                                               | Commited on (Date) |
+| -------------- | ---------------------- | ---------------------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------- | ------------------ |
+| frontend-movil | develop                | e574e8af0b13ef49541fd8288c31c10cb0770727 | feat: create placeholder pages                                                                         | none                                                              | 28/05/2025         |
+| frontend-movil | develop                | 351b094fb6d81e743e529cf6c1f210ec345d033d | feat: update titles for sections                                                                       | none                                                              | 29/05/2025         |
+| frontend-movil | feature/crops          | 38a01a934739e002f51e93e9dad74b7a739fc9e6 | feat: crops list                                                                                       | none                                                              | 29/05/2025         |
+| frontend-movil | feature/crops          | 5c28a73246d8bfe790639e9d20b33ee944adbb62 | feat: create crop model + update crop list                                                             | none                                                              | 29/05/2025         |
+| frontend-movil | feature/crops          | 8f57b15a73a703e849b45c9dfe8174538887653a | feat: crop detail page                                                                                 | none                                                              | 29/05/2025         |
+| frontend-movil | feature/crops          | 266e79330b33cefc65e645fb6401bce455b4e61e | feat: crop history page                                                                                | none                                                              | 29/05/2025         |
+| frontend-movil | feature/crops          | 43121b5caaa4e0f26514ab94e0fd7b1c464f7d76 | feat: recommended actions (videos) page                                                                | none                                                              | 29/05/2025         |
+| frontend-movil | feature/crops          | 5876f4b02bb7e9124bd818afddbbf9a7ef7a0b09 | style: change signin, signup button color                                                              | none                                                              | 30/05/2025         |
+| frontend-movil | develop                | 676a413046ed5b98670a152a31ad4c6b234a18d8 | style: little adjustments on various pages                                                             | none                                                              | 31/05/2025         |
+| frontend-movil | feature/irrigation     | f470c58e58dcefa65c8f6105ba19d82178393324 | feat: irrigation page, water tanks pages                                                               | none                                                              | 31/05/2025         |
+| frontend-movil | feature/irrigation     | 2f58075007bbb2e3f568dd353ffa1d43fd09c45b | feat: update navigation bar ,sign up snackbar                                                          | none                                                              | 31/05/2025         |
+| frontend-movil | feature/irrigation     | 5661636e719e60c9535565b2121aafb5f56da34b | feat: water graph page                                                                                 | none                                                              | 31/05/2025         |
+| frontend-movil | feature/system         | 29892e91c4d9bcec2cd033e638e68da60a6c93ce | feat: systems page + update styles for add buttons                                                     | none                                                              | 31/05/2025         |
+| frontend-movil | feature/system         | 027914bf4c5ec2c2eda3cf7a9a4e1d3fe7d00ff6 | feat: system detail page                                                                               | none                                                              | 01/06/2025         |
+| frontend-movil | feature/system         | 29ae8bc54453d70db5759e15b381e7ca0b56a904 | feat: add, edit & delete system pages                                                                  | none                                                              | 01/06/2025         |
+| frontend-movil | feature/irrigation     | b838d681ce4d1582dee929125cd3cdae53d2900d | feat: water tank management updated                                                                    | none                                                              | 04/06/2025         |
+| frontend-movil | develop                | 1fc4711a7ee52b4aa0360c8b54afc7486d4db4fd | feat: add icon visibility to password                                                                  | none                                                              | 06/06/2025         |
+| frontend-movil | feature/services       | ec2e7ea853b7ad94c192da5a4a0d83d31141462e | feat: add tanks logic on soil page + minor changes                                                     | none                                                              | 06/06/2025         |
+| frontend-movil | feature/services       | 1b65f3c52d6278b76720f14b30510aa1ba9cfa64 | feat: update fetch water data to use real data                                                         | none                                                              | 06/06/2025         |
+| frontend-movil | feature/services       | 84c5dc012672a3a36010fd09aef924032a04a7a9 | feat: update crop crud                                                                                 | none                                                              | 07/06/2025         |
+| frontend-movil | feature/services       | baeaa544c0b4be9d5f9edf2ac72851c2f7806be9 | feat: get crop-detailed logic implemented                                                              | none                                                              | 08/06/2025         |
+| frontend-movil | feature/services       | ad7e860c99c92d9c9f0f1ea4903a6ed5ab5ae046 | feat: heuristics correction                                                                            | none                                                              | 08/06/2025         |
+| frontend-movil | feature/services       | fdae25c19115453d78d08da63d25fed8aadf7005 | hotfix: removed unnecessary "{id}"                                                                     | in the patch methods to be inline with the changes of the backend | 10/06/2025         |
+| frontend-movil | feature/services       | c18e9ab21f25c883b234c1e85c4dd6c93a984f44 | feat: solve warn problems                                                                              | none                                                              | 13/06/2025         |
+| frontend-movil | feature/services       | 00edd11b562573f1d6b74b94bff77d1e790d31c1 | feat: update edit crop                                                                                 | none                                                              | 14/06/2025         |
+| frontend-movil | feature/services       | 97b67c25e427387037ea701adf71984916f2d15e | refactor: add logo image asset                                                                         | none                                                              | 18/06/2025         |
+| wokwi          | main                   | 22d70695ef7fc9064ebbf2de14bbca2e8230cf5a | feat: base project with modest iot                                                                     | none                                                              | 26/05/2025         |
+| wokwi          | main                   | f30a788532c03fd686ee189e8fe918822ae24e41 | docs: add readme                                                                                       | none                                                              | 26/05/2025         |
+| wokwi          | main                   | 49760c66e9e273e79138c019ed0ed5df257f90dc | feat: add functionality to project                                                                     | none                                                              | 02/06/2025         |
+| wokwi          | main                   | 8157f0913c766f42ce5f28a0c77601b03d26b53b | chore: move files to new folders                                                                       | none                                                              | 03/06/2025         |
+| wokwi          | main                   | 22d70695ef7fc9064ebbf2de14bbca2e8230cf5a | docs: user-stories.md updated                                                                          | none                                                              | 06/06/2025         |
+| wokwi          | main                   | 6a43c156b2f76b4916ca9e3f24fccfc1e405f96e | feat: add wifi communication                                                                           | none                                                              | 06/06/2025         |
+| wokwi          | main                   | a6e79cba402273a07b503a531dc9145fed86bbbe | feat: add config to use mqtt                                                                           | none                                                              | 11/06/2025         |
+| wokwi          | main                   | cfc5192731cbf986f2e80de08f1038256947b35a | feat: change to arduino json to send data                                                              | none                                                              | 11/06/2025         |
+| wokwi          | main                   | f664c66a85bac245aa74190af31a36a5785a352e | docs: add mqtt manager to class diagram                                                                | none                                                              | 11/06/2025         |
+| wokwi          | main                   | 10a4d6ce322b10ee21e671d3ab0190add7e3379e | feat: add irrigation validation with edge api                                                          | none                                                              | 11/06/2025         |
+| wokwi          | main                   | b4d295a0372565c2f773b8f805f4a74c60dd5dbd | feat: retrieve threshold from edge                                                                     | none                                                              | 14/06/2025         |
+| wokwi          | main                   | 281fb25857974e9ea2445a9bc8a1678fbc68649a | fix: add missing temperature value                                                                     | none                                                              | 14/06/2025         |
+| wokwi          | main                   | 30199276063605a206fe6c4181c1ee7baa689f4c | fix: missing send data                                                                                 | none                                                              | 14/06/2025         |
+| wokwi          | main                   | b96ae395985154edf187d990f7a615b60318f4f3 | chore: change mqtt topic                                                                               | none                                                              | 21/06/2025         |
+| landing-page   | main                   | 6bbddb0fcd53c858f8a184e22d15e86b47c24c52 | feat: added url for button Ir a la App                                                                 | none                                                              | 17/06/2025         |
+| landing-page   | main                   | 228c89ff72540eab5613716f0501c111ff454461 | fix: update contact form                                                                               | none                                                              | 08/06/2025         |
+| landing-page   | main                   | 8ecd4c48ff930418b1b996d709592840e34fa58e | feat: add url for Ir a la app button                                                                   | none                                                              | 08/06/2025         |
+| landing-page   | main                   | d6a57f7b6d09284f822a2058b6543b772a832d96 | feat: update styles.css                                                                                | none                                                              | 15/05/2025         |
+| edge-api       | main                   | dc4e255ebab5699fc8b98ae3e092445545572bbd | fix: endpoint without env error                                                                        | none                                                              | 21/06/2025         |
+| edge-api       | main                   | 226c2c7e1c6af3b0463ae7b0f336bd0167c54abf | feat: add threshold endpoint                                                                           | none                                                              | 21/06/2025         |
+| edge-api       | main                   | 3a89e7c246412a546d90130461f568f1f39acbb8 | feat: updated services and constants                                                                   | none                                                              | 20/06/2025         |
+| edge-api       | main                   | b151c3da63ae69019e5d807dc86ec340a4273b31 | feat: add auth settings and connect to backend                                                         | none                                                              | 11/06/2025         |
+| edge-api       | main                   | 5ab27fe3846751c66d567fd3a916a2ab6f85efc8 | fix: reorder .gitignore entries for clarity                                                            | none                                                              | 11/06/2025         |
+| edge-api       | main                   | 9e11dff456e53169af209c7c6c2b78673ba7e3f7 | chore: remove .idea folder from version control                                                        | none                                                              | 11/06/2025         |
+| edge-api       | main                   | c2dd1095c1c985ce6c54791c78728557b6e0381e | feat: /irrigation/status added in index.ts                                                             | none                                                              | 11/06/2025         |
+| edge-api       | main                   | d074d897d3eb483a254cf8247d8b1e1a7ae06013 | chore: remove unnecesary post                                                                          | none                                                              | 11/06/2025         |
+| edge-api       | main                   | 84e04bf84403a375dfba8d774be840dd3f4d9c1a | feat: add post & change sensor data                                                                    | none                                                              | 11/06/2025         |
+| edge-api       | main                   | ad395bf7864d768b576ec60d965189bed8733301 | feat: added mqtt for received data from wokwi simulator                                                | none                                                              | 11/06/2025         |
+| frontend-web   | develop                | 566386ef62d33cccaf67b5af373681e87e3c49f3 | Merge pull request #12 from iot-solutions64/feature/ui-improvement                                     | Feature/UI improvement                                            | 08/06/2025         |
+| frontend-web   | feature/ui-improvement | 0ebe195ff13284b70bf345c80f23e433c9f3b4dc | style: updated the system styles                                                                       | none                                                              | 08/06/2025         |
+| frontend-web   | develop                | d3b22e0825f3d646dfaced0fa569c1060d934a17 | style: updated the water tank styles                                                                   | none                                                              | 08/06/2025         |
+| frontend-web   | develop                | 48adb40f1520b55b38dd6bd8803b0147ee2fc455 | style: updated the crop styles                                                                         | none                                                              | 08/06/2025         |
+| frontend-web   | develop                | f2d1136e7719c974264b0651c6fe625e31a03468 | style: updated the navbar styles                                                                       | none                                                              | 08/06/2025         |
+| frontend-web   | develop                | 226dbd646841b8096b39d69ed98c7131130d681c | style: updated the navbar styles                                                                       | none                                                              | 07/06/2025         |
+| frontend-web   | develop                | 56ece9efb78af675405cd42de9fd355e38f00a09 | style: updated the navbar styles                                                                       | none                                                              | 07/06/2025         |
+| frontend-web   | develop                | 89bf9d175a5321e17d69261cca0caa6927a0fb1e | Merge pull request #11 from iot-solutions64/develop                                                    | Develop                                                           | 07/06/2025         |
+| frontend-web   | develop                | 55fd50f2b6b7da116fd1dbe22eb22a9b0767343f | Merge pull request #10 from iot-solutions64/main                                                       | Main                                                              | 07/06/2025         |
+| frontend-web   | main                   | 7a47bd081cdf089c91ee19ea905ea7d577607468 | Merge pull request #9 from iot-solutions64/release                                                     | Release V1.0.0                                                    | 15/05/2025         |
+| frontend-web   | release                | 2333e4153fca238820a22406ad04e7dc2c6f2327 | test: unit tests for auth and crop services                                                            | none                                                              | 15/05/2025         |
+| frontend-web   | release                | dc1057dda2be2c924cfab47889dcd97b91c63ae3 | fix: update table title for water management                                                           | none                                                              | 15/05/2025         |
+| frontend-web   | release                | 45e100bbac6d4d91a41b8ac1e12078fce8d69032 | fix: fixed error message not showing on login                                                          | none                                                              | 15/05/2025         |
+| frontend-web   | release                | 8fbdd676d460f687ba5f7ae48c386ee9ee690b39 | fix: logout doesnt work again                                                                          | none                                                              | 15/05/2025         |
+| frontend-web   | release                | 9da7edcc75ebd75c56aa6888f4a3f96aa38ae964 | fix: logout didnt work                                                                                 | none                                                              | 15/05/2025         |
+| frontend-web   | release                | a8ac1fededbe803ee51e82c5026060279731a237 | chore: change tank value                                                                               | none                                                              | 15/05/2025         |
+| frontend-web   | release                | 57d86bf8a6df1f705c8195bc6cd74016275d11f3 | Merge pull request #8 from iot-solutions64/release                                                     | Release                                                           | 15/05/2025         |
+| backend        | develop                | d440a370c46a859fb5fefdfd0a476e1e12a14284 | feat: add threshold endpoint                                                                           | none                                                              | 21/06/2025         |
+| backend        | develop                | 8b52a9ee9913f7cb98d32ab959ba06e13df97c34 | fix: fixed endpoint name to prevent overlap                                                            | none                                                              | 21/06/2025         |
+| backend        | develop                | 9eaaa40c70701439b91635229d9d7e23eb7f1468 | feat: added one more endpoint for the frontend                                                         | none                                                              | 21/06/2025         |
+| backend        | develop                | 7e64cddd1989a2778edbf14f94cc01b61d7cd693 | feat: updated websecurity                                                                              | none                                                              | 20/06/2025         |
+| backend        | develop                | bcad160df12571355980797cef2abb64b3ee4304 | feat: updated websecurity                                                                              | none                                                              | 20/06/2025         |
+| backend        | develop                | 0f916fe98b0bbd1c69af4ded73f9f22a4a7e7690 | feat: updated dockerfile and added paths in websecurity                                                | none                                                              | 20/06/2025         |
+| backend        | develop                | f3ba8c16f4754f10ac2c4bd384eab5692a3d708a | Merge pull request #11 from iot-solutions64/hotfix                                                     | Hotfix                                                            | 14/06/2025         |
+| backend        | develop                | ee48acb93a4b2956f4c4164297f775ccc5be3e69 | hotfix: deleted id                                                                                     | none                                                              | 14/06/2025         |
+| backend        | develop                | f3c5ffcf2f52f4448407e0d866b5d4c84d713fe3 | hotfix: changed the way the endpoint data is handled                                                   | none                                                              | 14/06/2025         |
+| backend        | develop                | 2b780baebc881a9a66fc958702e9acdf5f73e7a7 | hotfix: changed the way the endpoint data is handled                                                   | none                                                              | 14/06/2025         |
+| backend        | develop                | 50db19d31e6ea9256b993b271955b64b190e5f9d | Merge pull request #9 from iot-solutions64/develop                                                     | Develop                                                           | 14/06/2025         |
+| backend        | develop                | 4163b41b0727ce2a70c1cb7ce290ba9862e257ff | feat: add sensor modules and our endpoints                                                             | none                                                              | 11/06/2025         |
+| backend        | develop                | 03d50a4cbb9104d9446efe265f2a2f04d89d0c3d | hotfix: removed unnecessary "{id}" in the patch methods                                                | none                                                              | 10/06/2025         |
+| backend        | develop                | 4e7dd012aac8c3442550aab9e5c2d340db61858c | Merge pull request #7 from iot-solutions64/feature/irrigation                                          | Feature/irrigation                                                | 31/05/2025         |
+| backend        | feature/irrigation     | a5b64c526fa87b85d5697bbf9c52b1a78f971c87 | feat(email): added email service                                                                       | none                                                              | 31/05/2025         |
+| backend        | feature/irrigation     | 0adf7016f33435176ca0526c144f613aa769fb59 | feat(water tank): added delete method and updated the crop class to handle a water tank id null value  | none                                                              | 31/05/2025         |
+| backend        | feature/irrigation     | 0ab605b4f57da21cd218738c852a67c387da5d61 | refactor(crop): changed the resources to include the water tank and irrigation classes in the response | none                                                              | 31/05/2025         |
+| backend        | feature/irrigation     | f1c764cd347c2425f2cb7db38b2a4bdb063bc36e | feat(water tank): added patch methods                                                                  | none                                                              | 31/05/2025         |
+| backend        | feature/irrigation     | d31f2fc5d39e20fc19252bea43caa736290d45c8 | feat(water tank): added get and post methods                                                           | none                                                              | 31/05/2025         |
+| backend        | feature/irrigation     | cf805c7aab01a78cf6fa1de4ad621ebd4fff8a75 | feat: connected the crop, irrigation and water tank tables                                             | none                                                              | 30/05/2025         |
+| backend        | feature/crop           | f02a28fb71e7e99b98ebb0efe1f485a2ccbb00db | feat: update PasswordResetController                                                                   | none                                                              | 27/05/2025         |
+| backend        | feature/crop           | ef9b013970d951aed56c109ddb3f6b3f2e28dbfc | feat: sent email reset link functionality added                                                        | none                                                              | 27/05/2025         |
+| backend        | develop                | 0bad8fe3bc463d61f7582526397e45a3b3eb63ed | Merge pull request #6 from iot-solutions64/feature/irrigation                                          | Feature/irrigation                                                | 18/05/2025         |
+| backend        | develop                | 698dc7d06e8186542f563fc1fd7587bc338b4d91 | chore: merged both of the feature branches                                                             | none                                                              | 18/05/2025         |
+| backend        | develop                | 4605e2f3fce7f81bbb743c46455c9b2de19d425c | feat: changed the way the irrigation and water tank are handled                                        | none                                                              | 18/05/2025         |
+| backend        | develop                | 06f4aa149a010125567359a8de5aa8a814a20a8e | feat: changed the way the irrigation and water tank are handled                                        | none                                                              | 18/05/2025         |
+| backend        | develop                | 9ea705d5ba6de8ff7eec9d349f47106c580139eb | feat: endpoint delete crop added                                                                       | none                                                              | 17/05/2025         |
+| backend        | develop                | cb2f6e9c63cd7042a147fd873a8e9454de7f923a | Merge pull request #4 from iot-solutions64/feature/irrigation                                          | Feature/irrigation                                                | 17/05/2025         |
+| backend        | feature/irrigation     | 5411e63eaaa942874922faf32d3abb0c972c64e5 | Merge branch 'develop' into feature/irrigation                                                         | none                                                              | 17/05/2025         |
+| backend        | feature/irrigation     | 2c9395faa92605dba49cebfce8ddbbb49a1c4037 | chore: made changes to allow merging                                                                   | none                                                              | 17/05/2025         |
+| backend        | develop                | 166bb3668b250e7346b6c1b8d9fc9adbfd12cf60 | Merge pull request #2 from iot-solutions64/test/soil                                                   | Test/soil                                                         | 17/05/2025         |
+| backend        | develop                | 5a17b107c7d969bc96cb035f4f643aa3b680fb71 | feat: add irriigation bounded context                                                                  | none                                                              | 16/05/2025         |
 
 #### 6.2.2.5. Testing Suite Evidence
 
 #### 6.2.2.6. Execution Evidence
+
 En esta sección, se incluirán los cambios realizados a la aplicación Web y la landing page, así como la vista de la primera versión de los sistemas embebidos realizados:
+
 1. **Landing Page**
+
 - Vista Contacto:
-Se realizaron mejoras en la interfaz gráfica
-![Contacto Landing Page](img/sprint-2-execution-landing-1.png)
+  Se realizaron mejoras en la interfaz gráfica
+  ![Contacto Landing Page](img/sprint-2-execution-landing-1.png)
 - Navbar:
-Se arregló un error que impedía el translado a la aplicación desde cualquier interfaz. También, se mejoró ligeramente la interfaz
-![Navbar Landing Page](img/sprint-2-execution-landing-2.png)
+  Se arregló un error que impedía el translado a la aplicación desde cualquier interfaz. También, se mejoró ligeramente la interfaz
+  ![Navbar Landing Page](img/sprint-2-execution-landing-2.png)
 
 2. **Aplicación Frontend Web**
+
 - Vista Sign In / Sign Up
-Se añadió un "Progress Spinner" que se muestra al intentar iniciar sesión o al crear un usuario:
-![Sign In/Up](img/sprint-2-execution-web-1.png)
+  Se añadió un "Progress Spinner" que se muestra al intentar iniciar sesión o al crear un usuario:
+  ![Sign In/Up](img/sprint-2-execution-web-1.png)
 - Vista Navbar
-Se mejoró ligeramente la vista del navbar
-![Navbar Web](img/sprint-2-execution-web-2.png)
+  Se mejoró ligeramente la vista del navbar
+  ![Navbar Web](img/sprint-2-execution-web-2.png)
 - Vista Crops
-Se mejoró la organización de la tabla
-![Crops](img/sprint-2-execution-web-3.png)
+  Se mejoró la organización de la tabla
+  ![Crops](img/sprint-2-execution-web-3.png)
 - Vista Crop Details
-Se mejoró la vista de la tarjeta principal, así como el tamaño del texto y los componentes
-![Crop Detail](img/sprint-2-execution-web-4.png)
+  Se mejoró la vista de la tarjeta principal, así como el tamaño del texto y los componentes
+  ![Crop Detail](img/sprint-2-execution-web-4.png)
 - Vista Recommended Actions
-Se mejoró ligeramente la organización de la vista, así como el tamaño del texto y los componentes
-![Recommended Actions](img/sprint-2-execution-web-5.png)
+  Se mejoró ligeramente la organización de la vista, así como el tamaño del texto y los componentes
+  ![Recommended Actions](img/sprint-2-execution-web-5.png)
 - Vista Crop Short History / History
-Se mejoró ligeramente la organización de la vista
-![Crop Short History](img/sprint-2-execution-web-6.png)
+  Se mejoró ligeramente la organización de la vista
+  ![Crop Short History](img/sprint-2-execution-web-6.png)
 - Vista System Detail
-Se mejoró ligeramente la organización de la vista
-![Systems](img/sprint-2-execution-web-7.png)
+  Se mejoró ligeramente la organización de la vista
+  ![Systems](img/sprint-2-execution-web-7.png)
 - Vista System List
-Se mejoró ligeramente la organización de la vista
-![Systems](img/sprint-2-execution-web-8.png)
+  Se mejoró ligeramente la organización de la vista
+  ![Systems](img/sprint-2-execution-web-8.png)
 - Vista Water Management
-Se reorganizaron las tarjetas y se reajustó el tamaño de los componentes para que entren mejor en la pantalla
-![Water Management](img/sprint-2-execution-web-9.png)
+  Se reorganizaron las tarjetas y se reajustó el tamaño de los componentes para que entren mejor en la pantalla
+  ![Water Management](img/sprint-2-execution-web-9.png)
 - Vista Water Tank
-Se reajustó el tamaño de los componentes para mayor claridad en la pantalla
-![Water Tank](img/sprint-2-execution-web-10.png)
+  Se reajustó el tamaño de los componentes para mayor claridad en la pantalla
+  ![Water Tank](img/sprint-2-execution-web-10.png)
 - Vista Water Usage
-Se reajustó muy ligeramente la vista
-![Water Usage](img/sprint-2-execution-web-11.png)
+  Se reajustó muy ligeramente la vista
+  ![Water Usage](img/sprint-2-execution-web-11.png)
 - Vista Dialog
-Se reajustó el tamaño del texto, la organización de los campos y el color de los botones para una mayor claridad
-![Dialogs](img/sprint-2-execution-web-12.png)
+  Se reajustó el tamaño del texto, la organización de los campos y el color de los botones para una mayor claridad
+  ![Dialogs](img/sprint-2-execution-web-12.png)
 
 3. **Aplicación Móvil**
+
 - Vista Sign In / Sign Up
-Se añadió la vista de Sign In y Sign Up
-<img src="img/sprint-2-execution-movil-1.png" height="700px" alt="Sign In/Up" />
+  Se añadió la vista de Sign In y Sign Up
+  <img src="img/sprint-2-execution-movil-1.png" height="700px" alt="Sign In/Up" />
 
 - Vista Crops
-Se implementó la vista de Cultivos, donde se pueden ver todos los cultivos del usuario.
-<img src="img/sprint-2-execution-movil-2.png" height="700px" alt="Crops" />
+  Se implementó la vista de Cultivos, donde se pueden ver todos los cultivos del usuario.
+  <img src="img/sprint-2-execution-movil-2.png" height="700px" alt="Crops" />
 
 - Vista Crop Details
-Se implementó la vista de detalle de un cultivo, donde se pueden ver los datos más importantes del cultivo
-<img src="img/sprint-2-execution-movil-3.png" height="700px" alt="Crop Details" />
+  Se implementó la vista de detalle de un cultivo, donde se pueden ver los datos más importantes del cultivo
+  <img src="img/sprint-2-execution-movil-3.png" height="700px" alt="Crop Details" />
 
 - Vista Recommended Actions
-Se agregó la vista de acciones recomendadas, donde se pueden ver las acciones recomendadas para un cultivo en específico
-<img src="img/sprint-2-execution-movil-4.png" height="700px" alt="Recommended Actions" />
+  Se agregó la vista de acciones recomendadas, donde se pueden ver las acciones recomendadas para un cultivo en específico
+  <img src="img/sprint-2-execution-movil-4.png" height="700px" alt="Recommended Actions" />
 
 - Vista Crop Short History / History
-Se agregó la vista de historial de un cultivo
-<img src="img/sprint-2-execution-movil-5.png" height="700px" alt="Crop Short History" />
+  Se agregó la vista de historial de un cultivo
+  <img src="img/sprint-2-execution-movil-5.png" height="700px" alt="Crop Short History" />
 
 - Vista System Detail
-Se agregó la vista de detalle de un sistema
-<img src="img/sprint-2-execution-movil-6.png" height="700px" alt="System Detail" />
+  Se agregó la vista de detalle de un sistema
+  <img src="img/sprint-2-execution-movil-6.png" height="700px" alt="System Detail" />
 
 - Vista Water Management
-Se implementó la vista de gestión de agua, donde se pueden ver los valores totales de los tanques de agua del usuario y un historial mensual de uso de agua
-<img src="img/sprint-2-execution-movil-7.png" height="700px" alt="Water Management" />
+  Se implementó la vista de gestión de agua, donde se pueden ver los valores totales de los tanques de agua del usuario y un historial mensual de uso de agua
+  <img src="img/sprint-2-execution-movil-7.png" height="700px" alt="Water Management" />
 
 4. **Sistema Embebido (Prototipo en Wokwi) + Edge API**
-Se ha desarrollado un video que muestra el funcionamiento del sistema embebido con su integración a la Edge API.
-[Video de Execution Evidence - Sistema Embebido y Edge API](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/Efk8mWRhga5AgZDPfKKtoxEBauu6mfJLdKA78bXqn9rdJg?e=6MKvbw)
+   Se ha desarrollado un video que muestra el funcionamiento del sistema embebido con su integración a la Edge API.
+   [Video de Execution Evidence - Sistema Embebido y Edge API](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/Efk8mWRhga5AgZDPfKKtoxEBMJKyGxBlWF61LwWszd3mlw?e=9kkajL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 Se utilizaron los siguientes componentes:
-  - ESP32: Este microcontrolador ejecutará todas las funciones necesarias para el correcto funcionamiento de la aplicación.
+
+- ESP32: Este microcontrolador ejecutará todas las funciones necesarias para el correcto funcionamiento de la aplicación.
   ![ESP32](img/sprint-2-execution-iot-0.png)
-  - DHT22: Este sensor detectará la temperatura en grados celsius y la humedad en porcentaje
+- DHT22: Este sensor detectará la temperatura en grados celsius y la humedad en porcentaje
   ![DHT22](img/sprint-2-execution-iot-1.png)
-  - HC-SR04 Ultrasonic Distance Sensor: Este sensor detectará la distancia, en centímetros, entre el sensor y el agua. Este sensor sería puesto en la parte superior de un tanque de agua y, según la distancia entre el agua y el sensor, se podría estimar la cantidad de agua restante en el tanque.
+- HC-SR04 Ultrasonic Distance Sensor: Este sensor detectará la distancia, en centímetros, entre el sensor y el agua. Este sensor sería puesto en la parte superior de un tanque de agua y, según la distancia entre el agua y el sensor, se podría estimar la cantidad de agua restante en el tanque.
   ![HC-SR04](img/sprint-2-execution-iot-2.png)
-  - Luz Led + Resistor: Este actuador se encenderá al detectar una anomalía. El resistor es de 220 Ω
+- Luz Led + Resistor: Este actuador se encenderá al detectar una anomalía. El resistor es de 220 Ω
   ![Luz Led](img/sprint-2-execution-iot-3.png)
 
-  Se implementaron las siguientes funcionalidades:
-  - **Detección de Temperatura y Humedad:** Utilizando un DHT22, se detecta la humedad y la temperatura. Si es que se detecta una temperatura o humedad inadecuada (muy alta o muy baja), se encenderá la luz led
-  - **Detección de Cantidad de Agua en el Tanque:** Utilizando un HC-SR04 Ultrasonic Distance Sensor, se detecta la distancia entre el sensor y el agua. Si es que la cantidad de agua detectada, es muy baja, se encenderá la luz led
-  - **Informar sobre anomalías:** Utilizando una luz led de color rojo, si es que cualquiera de los sensores detecta una anomalía (lecturas fuera de lo esperado), se encenderá la luz led. De lo contrario, se mantendrá apagada.
-  - **Regado automático:** El sistema de regado automático se encendería de dos maneras:
-    - Si es que se tiene un regado programado, se riega a la hora esperada (no implementado)
-    - Si es que se detecta una humedad muy baja o una temperatura muy alta, se empieza a regar
+Se implementaron las siguientes funcionalidades:
 
-  Vista completa del sistema embebido:
-  ![Sistema Embebido Completo](img/sprint-2-execution-iot-4.png)
+- **Detección de Temperatura y Humedad:** Utilizando un DHT22, se detecta la humedad y la temperatura. Si es que se detecta una temperatura o humedad inadecuada (muy alta o muy baja), se encenderá la luz led
+- **Detección de Cantidad de Agua en el Tanque:** Utilizando un HC-SR04 Ultrasonic Distance Sensor, se detecta la distancia entre el sensor y el agua. Si es que la cantidad de agua detectada, es muy baja, se encenderá la luz led
+- **Informar sobre anomalías:** Utilizando una luz led de color rojo, si es que cualquiera de los sensores detecta una anomalía (lecturas fuera de lo esperado), se encenderá la luz led. De lo contrario, se mantendrá apagada.
+- **Regado automático:** El sistema de regado automático se encendería de dos maneras:
+  - Si es que se tiene un regado programado, se riega a la hora esperada (no implementado)
+  - Si es que se detecta una humedad muy baja o una temperatura muy alta, se empieza a regar
 
-----
+Vista completa del sistema embebido:
+![Sistema Embebido Completo](img/sprint-2-execution-iot-4.png)
+
+---
 
 El flujo de la aplicación es el siguiente:
-1. Definición de variables: Se define las variables necesarias para la conexión con el servicio MQTT, la funcionalidades de Wifi y los intervalos de envío de datos
-![Variables](img/sprint-2-execution-iot-5.png)
-2. Setup: Se inicializa el sistema y el administrador de MQTT
-![Setup](img/sprint-2-execution-iot-6.png)
-3. Loop: Se mantiene activa la conexión con MQTT y se actualiza el estado de los sensores y actuadores cada cierto tiempo
-![Loop](img/sprint-2-execution-iot-7.png)
 
-----
+1. Definición de variables: Se define las variables necesarias para la conexión con el servicio MQTT, la funcionalidades de Wifi y los intervalos de envío de datos
+   ![Variables](img/sprint-2-execution-iot-5.png)
+2. Setup: Se inicializa el sistema y el administrador de MQTT
+   ![Setup](img/sprint-2-execution-iot-6.png)
+3. Loop: Se mantiene activa la conexión con MQTT y se actualiza el estado de los sensores y actuadores cada cierto tiempo
+   ![Loop](img/sprint-2-execution-iot-7.png)
+
+---
 
 Al iniciar el sistema, en la consola aparecerá un mensaje como el siguiente:
 
@@ -5552,20 +5631,21 @@ Y, si es que la temperatura o humedad están fuera de los valores adecuados, se 
 ![Ejecucion 6](img/sprint-2-execution-iot-13.png)
 
 5. **Sistema Embebido (Físico)**
-Para este sprint, se desarrolló la primera versión del sistema embebido físico. Este cuenta con las mismas funcionalidades que el anterior, sin embargo, se cambió el DHT22 por un DHT11.
+   Para este sprint, se desarrolló la primera versión del sistema embebido físico. Este cuenta con las mismas funcionalidades que el anterior, sin embargo, se cambió el DHT22 por un DHT11.
 
 Se utilizaron los siguientes componentes:
-  - ESP32: A diferencia del microcontrolador del prototipo, cuenta con 38 pines en ves de 30. Se encarga de manejar toda la lógica principal de la aplicación
+
+- ESP32: A diferencia del microcontrolador del prototipo, cuenta con 38 pines en ves de 30. Se encarga de manejar toda la lógica principal de la aplicación
   ![ESP32](img/sprint-2-execution-iot-fisico-1.jpg)
-  - HC-SR04 Ultrasonic Distance Sensor: Este sensor detectará la distancia, en centímetros, entre el sensor y el agua. Este sensor sería puesto en la parte superior de un tanque de agua y, según la distancia entre el agua y el sensor, se podría estimar la cantidad de agua restante en el tanque.
+- HC-SR04 Ultrasonic Distance Sensor: Este sensor detectará la distancia, en centímetros, entre el sensor y el agua. Este sensor sería puesto en la parte superior de un tanque de agua y, según la distancia entre el agua y el sensor, se podría estimar la cantidad de agua restante en el tanque.
   ![HC-SR04](img/sprint-2-execution-iot-fisico-2.jpg)
-  - DHT11: A diferencia del DHT22 del prototipo, este sensor no cuenta con un pin NC, no obstante, como no se utilizaba en el prototipo, no es un problema. Este sensor detectará la temperatura en grados celsius y la humedad en porcentaje.
+- DHT11: A diferencia del DHT22 del prototipo, este sensor no cuenta con un pin NC, no obstante, como no se utilizaba en el prototipo, no es un problema. Este sensor detectará la temperatura en grados celsius y la humedad en porcentaje.
   ![DHT11](img/sprint-2-execution-iot-fisico-3.jpg)
-  - Luz Led + Resistor: Funciona de la misma manera que el prototipo. Este actuador se encenderá al detectar una anomalía. El resistor es de 220 Ω
+- Luz Led + Resistor: Funciona de la misma manera que el prototipo. Este actuador se encenderá al detectar una anomalía. El resistor es de 220 Ω
   ![Luz Led](img/sprint-2-execution-iot-fisico-4.jpg)
-  - Cables Breadboard Jumper: Estos cables fueron utilizados para la conexión de los sensores y actuadores con el ESP32
+- Cables Breadboard Jumper: Estos cables fueron utilizados para la conexión de los sensores y actuadores con el ESP32
   ![Sistema Embebido Completo](img/sprint-2-execution-iot-fisico-5.jpg)
-  - Cables Female to Male Dupont: Estos cables fueron utilizados para la conexión entre el ESP32 y el breadboard
+- Cables Female to Male Dupont: Estos cables fueron utilizados para la conexión entre el ESP32 y el breadboard
   ![Sistema Embebido Completo](img/sprint-2-execution-iot-fisico-6.jpg)
 
 Vista completa del sistema embebido físico:
@@ -5574,7 +5654,7 @@ Vista completa del sistema embebido físico:
 
 ![Sistema Embebido Completo](img/sprint-2-execution-iot-fisico-8.jpg)
 
-----
+---
 
 Antes de empezar con el funcionamiento real, se realizó una pequeña prueba para comprobar el funcionamiento correcto del sistema. Para ello, se realizó un pequeño programa que enciende una luz led. Este fue el resultado:
 
@@ -5582,13 +5662,15 @@ Antes de empezar con el funcionamiento real, se realizó una pequeña prueba par
 
 Una vez comprobado el correcto funcionamiento, se construyó la primera versión del sistema.
 
-----
+---
 
 Se siguió el mismo flujo que en la ejecución del prototipo. Al final, este fue el resultado:
 ![Resultado](img/sprint-2-execution-iot-fisico-10.jpeg)
 
 #### 6.2.2.7. Services Documentation
+
 ##### Controlador de Cultivos
+
 Se han modificado y/o agregado los siguientes endpoints del controlador
 
 ![Controlador Cultivos](img/sprint-2-services-1.png)
@@ -5599,6 +5681,7 @@ Se han modificado y/o agregado los siguientes endpoints del controlador
 4. `PATCH api/v1/crop/{cropId}/humidity-threshold` Se actualiza los límites máximos y mínimos de la humedad
 
 ##### Controlador de Tanques de agua
+
 Este nuevo controlador se encarga de manejar las instancias de Tanques de Agua
 
 ![Controlador Tanques de Agua](img/sprint-2-services-2.png)
@@ -5611,6 +5694,7 @@ Este nuevo controlador se encarga de manejar las instancias de Tanques de Agua
 6. `PATCH api/v1/water-tanks/{id}/status/{status}` Se actualiza el estatus del tanque de agua
 
 ##### Controlador de Restablecer Contraseña
+
 Este nuevo controlador se encarga de manejar las solicitudes de restablecimiento de contraseña
 
 ![Controlador Tanques de Agua](img/sprint-2-services-3.png)
@@ -5619,6 +5703,7 @@ Este nuevo controlador se encarga de manejar las solicitudes de restablecimiento
 2. `GET password-reset/confirm` Se envía un token para confirmar el cambio de contraseña
 
 ##### Controlador de Sensores
+
 Este nuevo controlador se encarga de mapear los datos obtenidos por el Edge API a la base de datos principal
 
 ![Controlador Tanques de Agua](img/sprint-2-services-4.png)
@@ -5627,8 +5712,10 @@ Este nuevo controlador se encarga de mapear los datos obtenidos por el Edge API 
 2. `POST api/v1/iot/data` Se envían los datos (temperatura, humedad, volumen, timestamp)
 
 ##### MQTT Service
+
 El Edge API fue desarrollado con MQTT, un protocolo de envío de datos estándar para IOT.
 El servicio principal se ve de la siguiente manera:
+
 ```bash
 export class MqttService {
   private client: MqttClient;
@@ -5669,9 +5756,11 @@ export class MqttService {
   }
 }
 ```
+
 El proposito de este bloque de código es de manejar toda la conexión relacionada con MQTT, así como mostrar en la consola el estado de conexión entre el MQTT y el Sistema Embebido
 
 Por otro lado, tenemos la conexión entre el backend y el Edge API:
+
 ```bash
 export async function sendDataToBackend(data: SensorData): Promise<void> {
   try {
@@ -5699,10 +5788,9 @@ export async function sendDataToBackend(data: SensorData): Promise<void> {
 
 Este bloque de código se encarga de enviar los datos obtenidos por los sensores al backend, para luego ser almacenados, utilizados y mostrados por las aplicaciones Frontend
 
-
 #### 6.2.2.8. Deployment Evidence
 
-Para el despliegue de la aplicación móvil, se exportó el proyecto a un APK. El APK se puede descargar desde el siguiente enlace: 
+Para el despliegue de la aplicación móvil, se exportó el proyecto a un APK. El APK se puede descargar desde el siguiente enlace:
 
 [HydroSmart APK](https://drive.google.com/drive/folders/1Yxmbz_3_UVJywm3reoKRQUB18wk7-HfZ?usp=sharing)
 
@@ -5713,7 +5801,8 @@ Esto se realizó utilizando el comando `flutter build apk --release` en la termi
 Las configuraciones para el despliegue del resto de aplicaciones se han mantenido igual
 
 #### 6.2.2.9. Collaboration Insights
-Durante el Sprint 2, el equipo mantuvo una comunicación efectiva y constante mediante reuniones diarias tipo *daily scrum*, donde se revisaba el avance de las tareas, se resolvían bloqueos y se coordinaban actividades clave. Además, se utilizó WhatsApp como canal principal de comunicación para intercambiar información, compartir recursos y dar seguimiento en tiempo real al desarrollo.
+
+Durante el Sprint 2, el equipo mantuvo una comunicación efectiva y constante mediante reuniones diarias tipo _daily scrum_, donde se revisaba el avance de las tareas, se resolvían bloqueos y se coordinaban actividades clave. Además, se utilizó WhatsApp como canal principal de comunicación para intercambiar información, compartir recursos y dar seguimiento en tiempo real al desarrollo.
 
 En cuanto a la gestión del código, se trabajó de forma diferenciada según el tipo de repositorio:
 
@@ -5728,18 +5817,28 @@ En cuanto a la gestión del código, se trabajó de forma diferenciada según el
 Este enfoque mixto permitió mantener un equilibrio entre agilidad y control del desarrollo. Gracias a la colaboración constante del equipo y a una adecuada distribución de tareas, se cumplieron exitosamente los objetivos del Sprint 1, asegurando un progreso sólido y bien documentado en este reporte.
 
 ###### Frontend Web
-![Insights](img/sprint-2-insights-1.png)
-###### Frontend Mobile
-![Insights](img/sprint-2-insights-2.png)
-###### Frontend Backend
-![Insights](img/sprint-2-insights-3.png)
-###### Frontend Edge API
-![Insights](img/sprint-2-insights-4.png)
-###### Frontend Prototipo en Wokwi
-![Insights](img/sprint-2-insights-5.png)
-###### Frontend Landing Page
-![Insights](img/sprint-2-insights-6.png)
 
+![Insights](img/sprint-2-insights-1.png)
+
+###### Frontend Mobile
+
+![Insights](img/sprint-2-insights-2.png)
+
+###### Frontend Backend
+
+![Insights](img/sprint-2-insights-3.png)
+
+###### Frontend Edge API
+
+![Insights](img/sprint-2-insights-4.png)
+
+###### Frontend Prototipo en Wokwi
+
+![Insights](img/sprint-2-insights-5.png)
+
+###### Frontend Landing Page
+
+![Insights](img/sprint-2-insights-6.png)
 
 ## 6.3. Validation Interviews
 
@@ -5749,6 +5848,7 @@ Se realizarán entrevistas con agricultores que enfrentan problemas en la gesti�
 
 **Preguntas sobre la Landing Page**
 Para la landing page se considerará los userflows de:
+
 - Ingreso y exploración general del sitio
 - Lectura de la sección "Sobre Nosotros"
 - Interacción con botones de contacto o llamada a la acción (CTA)
@@ -5762,6 +5862,7 @@ Para la landing page se considerará los userflows de:
 
 **Preguntas sobre el Frontend**
 Para la aplicación se considerará los userflows de:
+
 - Creación de cuenta e inicio de sesión
 - Interacción con la sección de cultivos
 - Consulta de datos de temperatura, humedad y agua
@@ -5812,22 +5913,6 @@ Para la aplicación se considerará los userflows de:
 
 **Resumen:** Durante entrevista de validación, Adrian consideró que la landing page está bien diseñada, con colores e imágenes apropiadas al tema agrícola, y destacó que la organización de los elementos permite una comprensión clara del producto. Opinó que la información es suficiente para entender la propuesta sin resultar abrumadora. En cuanto a la aplicación móvil, mencionó que le pareció fácil de navegar y accesible para cualquier usuario, resaltando que prefiere utilizarla desde el celular por la comodidad que esto representa en su trabajo diario. En general, valoró positivamente tanto el diseño como la funcionalidad de la plataforma.
 
-**Entrevista 3**
-
-**Entrevistador:** Piero Delgado
-
-**Entrevistado:** Daniel Ruiz
-
-**Edad:** 20 años
-
-**Distrito:** Juliaca
-
-**Enlace:** [Entrevista 3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/EV6bd8y5RdtJhTBDIqeLgSoB9uAraqn4ZElD97THW_08Fg?e=Z5CmbJ)
-
-![Entrevista a Daniel Ruiz](img/validation-interview-3.png)
-
-**Resumen:** En la entrevista de validación, Daniel evaluó positivamente la landing page y el aplicativo web. Primero, en la landing page mencionó que la información es clara, concisa y genera confianza, también consideró útil la organización por secciones y le gustó el diseño. Aunque, sugirió mejorar la visibilidad de algunos textos en el formulario de contacto. Por otro lado, en el aplicativo web, indicó que el registro y navegación son intuitivos, y que la gestión de cultivos, tanques y sensores ofrece información relevante y útil para el monitoreo agrícola. Propuso mejoras como filtros para priorizar tanques usados con frecuencia.
-
 ### 6.3.3. Evaluaciones según heurísticas
 
 **Site o App a Evaluar:** HydroSmart
@@ -5835,36 +5920,38 @@ Para la aplicación se considerará los userflows de:
 **Tareas a evaluar:**
 
 El alcance de esta evaluación incluye la revisión de usabilidad de las siguientes tareas:
+
 1. Acceder a la aplicación desde la landing page
 2. Enviar un mensaje de contacto desde la landing page
-1. Crear cuenta en la aplicación
-2. Inicio de sesión
-3. Visualizar sección de cultivos
-4. Visualizar datos de temperatura, humedad y agua
-5. Visualizar información de tanques de agua
-6. Visualizar recomendaciones
+3. Crear cuenta en la aplicación
+4. Inicio de sesión
+5. Visualizar sección de cultivos
+6. Visualizar datos de temperatura, humedad y agua
+7. Visualizar información de tanques de agua
+8. Visualizar recomendaciones
 
 No están incluidas en esta versión de la evaluación las siguientes tareas:
+
 1. Recuperación de cuenta
 
 **ESCALA DE SEVERIDAD:**
-*Los errores serán puntuados tomando en cuenta la siguiente escala de severidad*
-|***Nivel***|***Descripción***|
+_Los errores serán puntuados tomando en cuenta la siguiente escala de severidad_
+|**_Nivel_**|**_Descripción_**|
 | :-: | :-: |
-|*1*|*Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.*|
-|*2*|*Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase*|
-|*3*|*Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta.*|
-|*4*|*Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.*|
+|_1_|_Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo._|
+|_2_|_Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase_|
+|_3_|_Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta._|
+|_4_|_Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento._|
 
 **TABLA DE RESUMEN:**
 
-|**#**|**Problema**|**Escala de severidad**|**Heurística/principio violada(o)**|
-| :- | :- | :- | :- |
-|1| El botón de 'Ir a la app' en la landing page no redirige a la aplicación | 4 | Information Architecture: Is it usable? |
-|2| El formulario de contacto no confirma el envío del mensaje | 3 | Usability: Visibility of system status |
-|3| El campo de contraseña de iniciar sesión no tiene para visualizar la contraseña | 2 | Usability: User control and freedom |
-|4| Algunos campos en crear cultivo aceptan texto en lugar de solo números | 2 | Usability: Error prevention |
-|5| Videos de recomendación sin miniatura no muestran una imagen de referencia | 3 | Usability: Recognition rather than recall |
+| **#** | **Problema**                                                                    | **Escala de severidad** | **Heurística/principio violada(o)**       |
+| :---- | :------------------------------------------------------------------------------ | :---------------------- | :---------------------------------------- |
+| 1     | El botón de 'Ir a la app' en la landing page no redirige a la aplicación        | 4                       | Information Architecture: Is it usable?   |
+| 2     | El formulario de contacto no confirma el envío del mensaje                      | 3                       | Usability: Visibility of system status    |
+| 3     | El campo de contraseña de iniciar sesión no tiene para visualizar la contraseña | 2                       | Usability: User control and freedom       |
+| 4     | Algunos campos en crear cultivo aceptan texto en lugar de solo números          | 2                       | Usability: Error prevention               |
+| 5     | Videos de recomendación sin miniatura no muestran una imagen de referencia      | 3                       | Usability: Recognition rather than recall |
 
 **DESCRIPCIÓN DE PROBLEMAS:**
 
@@ -5882,9 +5969,9 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 
 _Imagen 2XX. Heuristica 1_
 
-**Recomendación:**  Redirigir el botón "Ir a la app" a la URL correcta de la aplicación web. Esto asegurará que los usuarios puedan acceder fácilmente a la funcionalidad principal del producto. 
+**Recomendación:** Redirigir el botón "Ir a la app" a la URL correcta de la aplicación web. Esto asegurará que los usuarios puedan acceder fácilmente a la funcionalidad principal del producto.
 
------
+---
 
 **PROBLEMA #2:** El formulario de contacto no confirma el envío del mensaje
 
@@ -5902,7 +5989,7 @@ _Imagen 2XX. Heuristica 2_
 
 **Recomendación:** Implementar un mensaje de confirmación que se muestre al usuario después de enviar el formulario, indicando que su mensaje ha sido enviado correctamente.
 
------
+---
 
 **PROBLEMA #3:** El campo de contraseña de iniciar sesión no tiene para visualizar la contraseña
 
@@ -5922,10 +6009,9 @@ _Imagen 2XX. Heuristica 3_
 
 _Imagen 2XX. Heuristica 3 implementada en creación de cuenta_
 
-
 **Recomendación:** Agregar un ícono o botón al lado del campo de contraseña que permita a los usuarios alternar entre mostrar y ocultar la contraseña ingresada como en crear cuenta.
 
------
+---
 
 **PROBLEMA #4:** Algunos campos en crear cultivo aceptan texto en lugar de solo números
 
@@ -5943,7 +6029,7 @@ _Imagen 2XX. Heuristica 4_
 
 **Recomendación:** Implementar validaciones en los campos de entrada para asegurarse de que solo se acepten números en los campos correspondientes. Esto ayudará a prevenir errores y mejorará la experiencia del usuario al ingresar datos.
 
------
+---
 
 **PROBLEMA #5:** Videos de recomendación sin miniatura no muestran una imagen de referencia
 
@@ -5977,18 +6063,21 @@ La estructura aplicada del proceso Lean UX ha permitido a nuestra startup, IoT S
 
 Escuela de Gestión Pública de la Universidad del Pacífico. (2022). Informe de evidencia: Sector agropecuario en el Perú. _Universidad del Pacífico_. https://www.up.edu.pe/egp/programas-especializacion_copy%281%29/SiteAssets/Lists/Observatorio/AllItems/Informe%20de%20Evidencia%20sector%20Agropecuario%20-%20EGP.pdf
 
-
 <div style="page-break-after: always;"></div>
 
 ### Anexos
+
 ##### Repositorios
+
 1. Backend Application: **[Repositorio Backend](https://github.com/iot-solutions64/backend)**
 2. Frontend Application: **[Repositorio Frontend](https://github.com/iot-solutions64/frontend-web)**
 3. Mobile Application: **[Repositorio Mobile](https://github.com/iot-solutions64/frontend-movil)**
 4. Landing Page Application: **[Repositorio Landing Page](https://github.com/iot-solutions64/landing-page)**
 5. Edge API: **[Repositorio Edge API](https://github.com/iot-solutions64/edge-api)**
 6. Sistema Embebido: **[Repositorio Sistema Embebido](https://wokwi.com/projects/431338881324863489)**
+
 ##### Otros
+
 Video de Entrevista: [Enlace a Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217241_upc_edu_pe/Ee74xVmCHXdCqRbfXAxMVYcBWwsAtbc9I_3-GWoUAOtq4A?e=53DCcG&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 Product Backlog: [Enlace a Trello](https://trello.com/invite/b/68029db69b9160a847867db7/ATTIe60cc61d919ec781877b36318d877ec2F1FD4DE3/desarrollo-de-soluciones-iot)
