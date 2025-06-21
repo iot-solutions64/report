@@ -5235,7 +5235,7 @@ En esta sección se presenta el equipo que participará en la elaboración del a
 | Soto Salis, Natanael David              | NickDavid811        | -                         | -                              | C                                | C                                   |
 
 #### 6.2.2.3. Sprint Backlog 2
-El objetivo de este segundo sprint fue concluir con el desarrollo de las aplicaciones iniciadas en el anterior sprint. Además de desarrollar el Edge API y el sistema Embebido.
+El objetivo de este segundo sprint fue concluir con el desarrollo de las aplicaciones iniciadas en el anterior sprint. Además de desarrollar el Edge API y el sistema embebido.
 
 ![Sprint Backlog 2](img/sprint-backlog-2.png)
 
@@ -5396,8 +5396,19 @@ En esta sección se incluirán los cambios realizados a la aplicación y la land
 | frontend-movil | feature/services | c18e9ab21f25c883b234c1e85c4dd6c93a984f44 | feat: solve warn problems | none | 13/06/2025 |
 | frontend-movil | feature/services | 00edd11b562573f1d6b74b94bff77d1e790d31c1 | feat: update edit crop | none | 14/06/2025 |
 | frontend-movil | feature/services | 97b67c25e427387037ea701adf71984916f2d15e | refactor: add logo image asset | none | 18/06/2025 |
-
-
+| wokwi | main | 22d70695ef7fc9064ebbf2de14bbca2e8230cf5a | feat: base project with modest iot | none | 26/05/2025 |
+| wokwi | main | f30a788532c03fd686ee189e8fe918822ae24e41 | docs: add readme | none | 26/05/2025 |
+| wokwi | main | 49760c66e9e273e79138c019ed0ed5df257f90dc | feat: add functionality to project | none | 02/06/2025 |
+| wokwi | main | 8157f0913c766f42ce5f28a0c77601b03d26b53b | chore: move files to new folders | none | 03/06/2025 |
+| wokwi | main | 22d70695ef7fc9064ebbf2de14bbca2e8230cf5a | docs: user-stories.md updated | none | 06/06/2025 |
+| wokwi | main | 6a43c156b2f76b4916ca9e3f24fccfc1e405f96e | feat: add wifi communication | none | 06/06/2025 |
+| wokwi | main | a6e79cba402273a07b503a531dc9145fed86bbbe | feat: add config to use mqtt | none | 11/06/2025 |
+| wokwi | main | cfc5192731cbf986f2e80de08f1038256947b35a | feat: change to arduino json to send data | none | 11/06/2025 |
+| wokwi | main | f664c66a85bac245aa74190af31a36a5785a352e | docs: add mqtt manager to class diagram | none | 11/06/2025 |
+| wokwi | main | 10a4d6ce322b10ee21e671d3ab0190add7e3379e | feat: add irrigation validation with edge api | none | 11/06/2025 |
+| wokwi | main | b4d295a0372565c2f773b8f805f4a74c60dd5dbd | feat: retrieve threshold from edge | none | 14/06/2025 |
+| wokwi | main | 281fb25857974e9ea2445a9bc8a1678fbc68649a | fix: add missing temperature value | none | 14/06/2025 |
+| wokwi | main | 30199276063605a206fe6c4181c1ee7baa689f4c | fix: missing send data | none | 14/06/2025 |
 
 #### 6.2.2.5. Testing Suite Evidence
 
@@ -5505,9 +5516,9 @@ Utilizando un DHT22, se detecta la humedad y la temperatura. Si es que se detect
 Utilizando un HC-SR04 Ultrasonic Distance Sensor, se detecta la distancia entre el sensor y el agua. Si es que la cantidad de agua detectada, es muy baja, se encenderá la luz led
 ###### Informar sobre anomalías:
 Utilizando una luz led de color rojo, si es que cualquiera de los sensores detecta una anomalía (lecturas fuera de lo esperado), se encenderá la luz led. De lo contrario, se mantendrá apagada.
-###### Regado automático (no implementado):
+###### Regado automático:
 El sistema de regado automático se encendería de dos maneras:
-- Si es que se tiene un regado programado, se riega a la hora esperada
+- Si es que se tiene un regado programado, se riega a la hora esperada (no implementado)
 - Si es que se detecta una humedad muy baja o una temperatura muy alta, se empieza a regar
 ###### Vista completa
 ![Sistema Embebido Completo](img/sprint-2-execution-iot-4.png)
