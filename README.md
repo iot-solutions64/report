@@ -5631,6 +5631,12 @@ Este nuevo controlador se encarga de mapear los datos obtenidos por el Edge API 
 
 #### 6.2.2.8. Deployment Evidence
 
+Para el despliegue de la aplicación móvil, se exportó el proyecto a un APK. El APK se puede descargar desde el siguiente enlace: [HydroSmart APK](https://drive.google.com/drive/folders/1Yxmbz_3_UVJywm3reoKRQUB18wk7-HfZ?usp=sharing)
+
+Esto se realizó utilizando el comando `flutter build apk --release` en la terminal del proyecto móvil. El APK resultante se encuentra en la carpeta `build/app/outputs/flutter-apk/app-release.apk`.
+
+![HydroSmart APK](img/sprint-2-deployment-apk.png)
+
 #### 6.2.2.9. Collaboration Insights
 
 
