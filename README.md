@@ -5529,8 +5529,28 @@ Al iniciar el sistema, en la consola aparecerá un mensaje como el siguiente:
 
 ![Ejecucion](img/sprint-2-execution-iot-8.png)
 
+Para que se pueda conectar al Edge API, se necesario utilizar un LocalTunnel:
+
+![Ejecucion 2](img/sprint-2-execution-iot-9.png)
+
+Una vex encendido, cambiamos los dos endpoints en la clase `AutomaticIrrigationDevice.h`:
+
+![Ejecucion 3](img/sprint-2-execution-iot-10.png)
+
+Ahora que se podemos conectar el Edge API con el Sistema Embebido, no nos aparecerá el mensaje de error:
+
+![Ejecucion 4](img/sprint-2-execution-iot-11.png)
+
+Cada cierto tiempo, se mostrará en la consola los datos enviados:
+
+![Ejecucion 5](img/sprint-2-execution-iot-12.png)
+
+Y, si es que la temperatura o humedad están fuera de los valores adecuados, se encenderá la luz led:
+
+![Ejecucion 6](img/sprint-2-execution-iot-13.png)
 
 5. **Sistema Embebido (Físico)**
+
 Para este sprint, se desarrolló la primera versión del sistema embebido físico. Este cuenta con las mismas funcionalidades que el anterior, sin embargo, se cambió el DHT22 por un DHT11.
 - Componentes utilizados:
 Se utilizaron los siguientes componentes:
