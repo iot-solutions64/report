@@ -5727,11 +5727,15 @@ Este bloque de código se encarga de enviar los datos obtenidos por los sensores
 
 #### 6.2.2.8. Deployment Evidence
 
-Para el despliegue de la aplicación móvil, se exportó el proyecto a un APK. El APK se puede descargar desde el siguiente enlace: [HydroSmart APK](https://drive.google.com/drive/folders/1Yxmbz_3_UVJywm3reoKRQUB18wk7-HfZ?usp=sharing)
+Para el despliegue de la aplicación móvil, se exportó el proyecto a un APK. El APK se puede descargar desde el siguiente enlace: 
+
+[HydroSmart APK](https://drive.google.com/drive/folders/1Yxmbz_3_UVJywm3reoKRQUB18wk7-HfZ?usp=sharing)
 
 Esto se realizó utilizando el comando `flutter build apk --release` en la terminal del proyecto móvil. El APK resultante se encuentra en la carpeta `build/app/outputs/flutter-apk/app-release.apk`.
 
 ![HydroSmart APK](img/sprint-2-deployment-apk.png)
+
+Las configuraciones para el despliegue del resto de aplicaciones se han mantenido igual
 
 #### 6.2.2.9. Collaboration Insights
 Durante el Sprint 2, el equipo mantuvo una comunicación efectiva y constante mediante reuniones diarias tipo *daily scrum*, donde se revisaba el avance de las tareas, se resolvían bloqueos y se coordinaban actividades clave. Además, se utilizó WhatsApp como canal principal de comunicación para intercambiar información, compartir recursos y dar seguimiento en tiempo real al desarrollo.
