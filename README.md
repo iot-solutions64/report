@@ -5646,6 +5646,80 @@ Este nuevo controlador se encarga de mapear los datos obtenidos por el Edge API 
 1. `GET api/v1/iot/data` Se recupera una lista de los datos recolectados por el sensor
 2. `POST api/v1/iot/data` Se envían los datos (temperatura, humedad, volumen, timestamp)
 
+##### MQTT Service
+El Edge API fue desarrollado con MQTT, un protocolo de envío de datos estándar para IOT.
+El servicio principal se ve de la siguiente manera:
+```bash
+export class MqttService {
+  private client: MqttClient;
+  private latestData: SensorData | null = null;
+
+  constructor() {
+    this.client = mqtt.connect(MQTT_BROKER);
+    this.client.on("connect", this.onConnect);
+    this.client.on("message", this.onMessage);
+  }
+
+  private onConnect = () => {
+    console.log("Connected to MQTT broker");
+    this.client.subscribe(MQTT_TOPIC, (err) => {
+      if (err) {
+        console.error("MQTT subscription error:", err);
+      } else {
+        console.log("Subscribed to topic:", MQTT_TOPIC);
+      }
+    });
+  };
+
+  private onMessage = async (_topic: string, message: Buffer) => {
+    try {
+      const data = JSON.parse(message.toString());
+      this.latestData = { ...data, timestamp: Date.now() };
+      console.log("Received MQTT data:", this.latestData);
+      if (this.latestData) {
+        await sendDataToBackend(this.latestData);
+      }
+    } catch (e) {
+      console.error("Error parsing MQTT message:", e);
+    }
+  };
+
+  public getLatestData(): SensorData | null {
+    return this.latestData;
+  }
+}
+```
+El proposito de este bloque de código es de manejar toda la conexión relacionada con MQTT, así como mostrar en la consola el estado de conexión entre el MQTT y el Sistema Embebido
+
+Por otro lado, tenemos la conexión entre el backend y el Edge API:
+```bash
+export async function sendDataToBackend(data: SensorData): Promise<void> {
+  try {
+    await axios.patch(TEMPERATURE_ENDPOINT, { temperature: data.temperature });
+    console.log("Temperatura enviada al backend Spring Boot");
+
+    await axios.patch(HUMIDITY_ENDPOINT, { humidity: data.humidity });
+    console.log("Humedad enviada al backend Spring Boot");
+
+    await axios.patch(VOLUME_ENDPOINT, { waterAmount: data.volume });
+    console.log("Volumen enviado al backend Spring Boot");
+
+    await axios.post(`${process.env.BACKEND_URL}/api/v1/iot/data`, {
+      temperature: data.temperature,
+      humidity: data.humidity,
+      volume: data.volume,
+      timestamp: data.timestamp,
+    });
+    console.log("Datos enviados al nuevo endpoint del backend Spring Boot");
+  } catch (error) {
+    console.error("Error enviando datos al backend:", error);
+  }
+}
+```
+
+Este bloque de código se encarga de enviar los datos obtenidos por los sensores al backend, para luego ser almacenados, utilizados y mostrados por las aplicaciones Frontend
+
+
 #### 6.2.2.8. Deployment Evidence
 
 Para el despliegue de la aplicación móvil, se exportó el proyecto a un APK. El APK se puede descargar desde el siguiente enlace: [HydroSmart APK](https://drive.google.com/drive/folders/1Yxmbz_3_UVJywm3reoKRQUB18wk7-HfZ?usp=sharing)
