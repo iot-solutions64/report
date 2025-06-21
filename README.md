@@ -5365,6 +5365,8 @@ En esta sección se incluirán los cambios realizados a la aplicación y la land
 2. Frontend Application: **[Repositorio Frontend](https://github.com/iot-solutions64/frontend-web)**
 3. Mobile Application: **[Repositorio Mobile](https://github.com/iot-solutions64/frontend-movil)**
 4. Landing Page Application: **[Repositorio Landing Page](https://github.com/iot-solutions64/landing-page)**
+5. Edge API: **[Repositorio Edge API](https://github.com/iot-solutions64/edge-api)**
+6. Sistema Embebido: **[Repositorio Sistema Embebido](https://wokwi.com/projects/431338881324863489)**
 
 | Repository   | Branch  | Commit Id                                | Commit Message                                                         | Commit Message Body                           | Commited on (Date) |
 | ------------ | ------- | ---------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------- | ------------------ |
@@ -5981,8 +5983,18 @@ La estructura aplicada del proceso Lean UX ha permitido a nuestra startup, IoT S
 
 Escuela de Gestión Pública de la Universidad del Pacífico. (2022). Informe de evidencia: Sector agropecuario en el Perú. _Universidad del Pacífico_. https://www.up.edu.pe/egp/programas-especializacion_copy%281%29/SiteAssets/Lists/Observatorio/AllItems/Informe%20de%20Evidencia%20sector%20Agropecuario%20-%20EGP.pdf
 
-### Anexos
 
+<div style="page-break-after: always;"></div>
+
+### Anexos
+##### Repositorios
+1. Backend Application: **[Repositorio Backend](https://github.com/iot-solutions64/backend)**
+2. Frontend Application: **[Repositorio Frontend](https://github.com/iot-solutions64/frontend-web)**
+3. Mobile Application: **[Repositorio Mobile](https://github.com/iot-solutions64/frontend-movil)**
+4. Landing Page Application: **[Repositorio Landing Page](https://github.com/iot-solutions64/landing-page)**
+5. Edge API: **[Repositorio Edge API](https://github.com/iot-solutions64/edge-api)**
+6. Sistema Embebido: **[Repositorio Sistema Embebido](https://wokwi.com/projects/431338881324863489)**
+##### Otros
 Video de Entrevista: [Enlace a Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217241_upc_edu_pe/Ee74xVmCHXdCqRbfXAxMVYcBWwsAtbc9I_3-GWoUAOtq4A?e=53DCcG&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 Product Backlog: [Enlace a Trello](https://trello.com/invite/b/68029db69b9160a847867db7/ATTIe60cc61d919ec781877b36318d877ec2F1FD4DE3/desarrollo-de-soluciones-iot)
