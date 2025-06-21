@@ -5586,18 +5586,10 @@ Estos cables fueron utilizados para la conexión entre el ESP32 y el breadboard
 ----
 ##### Flujo básico de la aplicación
 El flujo de la aplicación se mantiene
+
+----
 ###### Definición de variables
-Aquí, se define las variables necesarias para la conexión con el servicio MQTT, la funcionalidades de Wifi y los intervalos de envío de datos
-
-![Variables](img/sprint-2-execution-iot-5.png)
-###### Setup
-En el Setup, se inicializa el sistema y el administrador de MQTT
-
-![Setup](img/sprint-2-execution-iot-6.png)
-###### Loop
-En el Loop, se mantiene activa la conexión con MQTT y se actualiza el estado de los sensores y actuadores cada cierto tiempo
-
-![Loop](img/sprint-2-execution-iot-7.png)
+Se han definido las mismas variables que en el prototipo en Wokwi
 
 ----
 ###### Prueba básica del sistema
@@ -5609,6 +5601,11 @@ Una vez comprobado el correcto funcionamiento, se construyó la primera versión
 
 ----
 ##### Ejecución del sistema
+Se siguió el mismo flujo que en la ejecución del prototipo
+
+Al final, este fue el resultado
+
+![Resultado](img/sprint-2-execution-iot-fisico-10.jpeg)
 
 #### 6.2.2.7. Services Documentation
 ##### Controlador de Cultivos
