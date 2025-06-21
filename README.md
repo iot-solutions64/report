@@ -5492,7 +5492,7 @@ Se implementó la vista de gestión de agua, donde se pueden ver los valores tot
 
 4. **Sistema Embebido (Prototipo en Wokwi) + Edge API**
 Se ha desarrollado un video que muestra el funcionamiento del sistema embebido con su integración a la Edge API.
-[Video de Execution Evidence - Sistema Embebido y Edge API](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/Efk8mWRhga5AgZDPfKKtoxEBMJKyGxBlWF61LwWszd3mlw?e=9kkajL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+[Video de Execution Evidence - Sistema Embebido y Edge API](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/Efk8mWRhga5AgZDPfKKtoxEBauu6mfJLdKA78bXqn9rdJg?e=6MKvbw)
 
 Se utilizaron los siguientes componentes:
   - ESP32: Este microcontrolador ejecutará todas las funciones necesarias para el correcto funcionamiento de la aplicación.
@@ -5812,6 +5812,21 @@ Para la aplicación se considerará los userflows de:
 
 **Resumen:** Durante entrevista de validación, Adrian consideró que la landing page está bien diseñada, con colores e imágenes apropiadas al tema agrícola, y destacó que la organización de los elementos permite una comprensión clara del producto. Opinó que la información es suficiente para entender la propuesta sin resultar abrumadora. En cuanto a la aplicación móvil, mencionó que le pareció fácil de navegar y accesible para cualquier usuario, resaltando que prefiere utilizarla desde el celular por la comodidad que esto representa en su trabajo diario. En general, valoró positivamente tanto el diseño como la funcionalidad de la plataforma.
 
+**Entrevista 3**
+
+**Entrevistador:** Piero Delgado
+
+**Entrevistado:** Daniel Ruiz
+
+**Edad:** 20 años
+
+**Distrito:** Juliaca
+
+**Enlace:** [Entrevista 3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/EV6bd8y5RdtJhTBDIqeLgSoB9uAraqn4ZElD97THW_08Fg?e=Z5CmbJ)
+
+![Entrevista a Daniel Ruiz](img/validation-interview-3.png)
+
+**Resumen:** En la entrevista de validación, Daniel evaluó positivamente la landing page y el aplicativo web. Primero, en la landing page mencionó que la información es clara, concisa y genera confianza, también consideró útil la organización por secciones y le gustó el diseño. Aunque, sugirió mejorar la visibilidad de algunos textos en el formulario de contacto. Por otro lado, en el aplicativo web, indicó que el registro y navegación son intuitivos, y que la gestión de cultivos, tanques y sensores ofrece información relevante y útil para el monitoreo agrícola. Propuso mejoras como filtros para priorizar tanques usados con frecuencia.
 
 ### 6.3.3. Evaluaciones según heurísticas
 
