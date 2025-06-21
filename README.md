@@ -5356,6 +5356,44 @@ El objetivo de este segundo sprint fue concluir con el desarrollo de las aplicac
 
 #### 6.2.2.4. Development Evidence
 
+En esta sección se incluirán los cambios realizados a la aplicación y la landing page, así como la vista de la primera versión de los sistemas embebidos realizados.
+
+1. Backend Application: **[Repositorio Backend](https://github.com/iot-solutions64/backend)**
+2. Frontend Application: **[Repositorio Frontend](https://github.com/iot-solutions64/frontend-web)**
+3. Mobile Application: **[Repositorio Mobile](https://github.com/iot-solutions64/frontend-movil)**
+4. Landing Page Application: **[Repositorio Landing Page](https://github.com/iot-solutions64/landing-page)**
+
+| Repository   | Branch  | Commit Id                                | Commit Message                                                         | Commit Message Body                           | Commited on (Date) |
+| ------------ | ------- | ---------------------------------------- | ---------------------------------------------------------------------- | --------------------------------------------- | ------------------ |
+| frontend-movil | develop | e574e8af0b13ef49541fd8288c31c10cb0770727 | feat: create placeholder pages| none | 28/05/2025 |
+| frontend-movil | develop | 351b094fb6d81e743e529cf6c1f210ec345d033d | feat: update titles for sections | none | 29/05/2025 |
+| frontend-movil | feature/crops | 38a01a934739e002f51e93e9dad74b7a739fc9e6 | feat: crops list | none | 29/05/2025 |
+| frontend-movil | feature/crops | 5c28a73246d8bfe790639e9d20b33ee944adbb62 | feat: create crop model + update crop list | none | 29/05/2025 |
+| frontend-movil | feature/crops | 8f57b15a73a703e849b45c9dfe8174538887653a | feat: crop detail page | none | 29/05/2025 |
+| frontend-movil | feature/crops | 266e79330b33cefc65e645fb6401bce455b4e61e | feat: crop history page | none | 29/05/2025 |
+| frontend-movil | feature/crops | 43121b5caaa4e0f26514ab94e0fd7b1c464f7d76 | feat: recommended actions (videos) page | none | 29/05/2025 |
+| frontend-movil | feature/crops | 5876f4b02bb7e9124bd818afddbbf9a7ef7a0b09 | style: change signin, signup button color | none | 30/05/2025 |
+| frontend-movil | develop | 676a413046ed5b98670a152a31ad4c6b234a18d8 | style: little adjustments on various pages | none | 31/05/2025 |
+| frontend-movil | feature/irrigation | f470c58e58dcefa65c8f6105ba19d82178393324 | feat: irrigation page, water tanks pages | none | 31/05/2025 |
+| frontend-movil | feature/irrigation | 2f58075007bbb2e3f568dd353ffa1d43fd09c45b | feat: update navigation bar ,sign up snackbar | none | 31/05/2025 |
+| frontend-movil | feature/irrigation | 5661636e719e60c9535565b2121aafb5f56da34b | feat: water graph page | none | 31/05/2025 |
+| frontend-movil | feature/system | 29892e91c4d9bcec2cd033e638e68da60a6c93ce | feat: systems page + update styles for add buttons | none | 31/05/2025 |
+| frontend-movil | feature/system | 027914bf4c5ec2c2eda3cf7a9a4e1d3fe7d00ff6 | feat: system detail page | none | 01/06/2025 |
+| frontend-movil | feature/system | 29ae8bc54453d70db5759e15b381e7ca0b56a904 | feat: add, edit & delete system pages | none | 01/06/2025 |
+| frontend-movil | feature/irrigation | b838d681ce4d1582dee929125cd3cdae53d2900d | feat: water tank management updated | none | 04/06/2025 |
+| frontend-movil | develop | 1fc4711a7ee52b4aa0360c8b54afc7486d4db4fd | feat: add icon visibility to password | none | 06/06/2025 |
+| frontend-movil | feature/services | ec2e7ea853b7ad94c192da5a4a0d83d31141462e | feat: add tanks logic on soil page + minor changes | none | 06/06/2025 |
+| frontend-movil | feature/services | 1b65f3c52d6278b76720f14b30510aa1ba9cfa64 | feat: update fetch water data to use real data | none | 06/06/2025 |
+| frontend-movil | feature/services | 84c5dc012672a3a36010fd09aef924032a04a7a9 | feat: update crop crud | none | 07/06/2025 |
+| frontend-movil | feature/services | baeaa544c0b4be9d5f9edf2ac72851c2f7806be9 | feat: get crop-detailed logic implemented | none | 08/06/2025 |
+| frontend-movil | feature/services | ad7e860c99c92d9c9f0f1ea4903a6ed5ab5ae046 | feat: heuristics correction | none | 08/06/2025 |
+| frontend-movil | feature/services | fdae25c19115453d78d08da63d25fed8aadf7005 | hotfix: removed unnecessary "{id}" | in the patch methods to be inline with the changes of the backend | 10/06/2025 |
+| frontend-movil | feature/services | c18e9ab21f25c883b234c1e85c4dd6c93a984f44 | feat: solve warn problems | none | 13/06/2025 |
+| frontend-movil | feature/services | 00edd11b562573f1d6b74b94bff77d1e790d31c1 | feat: update edit crop | none | 14/06/2025 |
+| frontend-movil | feature/services | 97b67c25e427387037ea701adf71984916f2d15e | refactor: add logo image asset | none | 18/06/2025 |
+
+
+
 #### 6.2.2.5. Testing Suite Evidence
 
 #### 6.2.2.6. Execution Evidence
@@ -5406,7 +5444,36 @@ Se reajustó muy ligeramente la vista
 Se reajustó el tamaño del texto, la organización de los campos y el color de los botones para una mayor claridad
 ![Dialogs](img/sprint-2-execution-web-12.png)
 
-3. **Sistema Embebido (Prototipo en Wokwi)**
+3. **Aplicación Móvil**
+- Vista Sign In / Sign Up
+Se añadió la vista de Sign In y Sign Up
+<img src="img/sprint-2-execution-movil-1.png" height="700px" alt="Sign In/Up" />
+
+- Vista Crops
+Se implementó la vista de Cultivos, donde se pueden ver todos los cultivos del usuario.
+<img src="img/sprint-2-execution-movil-2.png" height="700px" alt="Crops" />
+
+- Vista Crop Details
+Se implementó la vista de detalle de un cultivo, donde se pueden ver los datos más importantes del cultivo
+<img src="img/sprint-2-execution-movil-3.png" height="700px" alt="Crop Details" />
+
+- Vista Recommended Actions
+Se agregó la vista de acciones recomendadas, donde se pueden ver las acciones recomendadas para un cultivo en específico
+<img src="img/sprint-2-execution-movil-4.png" height="700px" alt="Recommended Actions" />
+
+- Vista Crop Short History / History
+Se agregó la vista de historial de un cultivo
+<img src="img/sprint-2-execution-movil-5.png" height="700px" alt="Crop Short History" />
+
+- Vista System Detail
+Se agregó la vista de detalle de un sistema
+<img src="img/sprint-2-execution-movil-6.png" height="700px" alt="System Detail" />
+
+- Vista Water Management
+Se implementó la vista de gestión de agua, donde se pueden ver los valores totales de los tanques de agua del usuario y un historial mensual de uso de agua
+<img src="img/sprint-2-execution-movil-7.png" height="700px" alt="Water Management" />
+
+4. **Sistema Embebido (Prototipo en Wokwi)**
 - Componentes utilizados:
 Se utilizaron los siguientes componentes:
 ###### ESP32
@@ -5606,8 +5673,6 @@ Para la aplicación se considerará los userflows de:
 
 ### 6.3.2. Registro de Entrevistas
 
-Enlace del video de las entrevistas: [Enlace a Microsoft Stream](#)
-
 **Entrevista 1**
 
 **Entrevistador:** Salvador Salinas
@@ -5617,6 +5682,8 @@ Enlace del video de las entrevistas: [Enlace a Microsoft Stream](#)
 **Edad:** 23 años
 
 **Distrito:** Lurín
+
+**Enlace:** [Entrevista 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b127_upc_edu_pe/EV8WyiwKr9VEpwHE57fkfV4BemNnk0Hitk1F_yY-YB-Nmg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NRhWHj)
 
 ![Entrevista a Anderson Gonza](img/validation-interview-1.png)
 
@@ -5632,12 +5699,12 @@ Enlace del video de las entrevistas: [Enlace a Microsoft Stream](#)
 
 **Distrito:** La Molina
 
+**Enlace:** [Entrevista 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217239_upc_edu_pe/EUFsr0B5D99LoaT1VsFZDwEBFY6_-3KKdDwL9RzZFDl5iA?e=vhX3qQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
 ![Entrevista a Anderson Gonza](img/validation-interview-2.png)
 
 **Resumen:** Durante entrevista de validación, Adrian consideró que la landing page está bien diseñada, con colores e imágenes apropiadas al tema agrícola, y destacó que la organización de los elementos permite una comprensión clara del producto. Opinó que la información es suficiente para entender la propuesta sin resultar abrumadora. En cuanto a la aplicación móvil, mencionó que le pareció fácil de navegar y accesible para cualquier usuario, resaltando que prefiere utilizarla desde el celular por la comodidad que esto representa en su trabajo diario. En general, valoró positivamente tanto el diseño como la funcionalidad de la plataforma.
 
-
-Enlace del video de: [Entrevista 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217239_upc_edu_pe/EUFsr0B5D99LoaT1VsFZDwEBFY6_-3KKdDwL9RzZFDl5iA?e=vhX3qQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 ### 6.3.3. Evaluaciones según heurísticas
 
