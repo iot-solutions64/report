@@ -5501,7 +5501,7 @@ import 'package:hydrosmart/main.dart';
 void main() {
   testWidgets('Muestra la pantalla de login si no está logueado', (WidgetTester tester) async {
     await tester.pumpWidget(MyApp(isLoggedIn: false));
-    await tester.pumpAndSettle(); 
+    await tester.pumpAndSettle();
     expect(find.byType(LoginPage), findsWidgets);
   });
 
@@ -6014,6 +6014,22 @@ Para la aplicación se considerará los userflows de:
 
 **Resumen:** Durante entrevista de validación, Adrian consideró que la landing page está bien diseñada, con colores e imágenes apropiadas al tema agrícola, y destacó que la organización de los elementos permite una comprensión clara del producto. Opinó que la información es suficiente para entender la propuesta sin resultar abrumadora. En cuanto a la aplicación móvil, mencionó que le pareció fácil de navegar y accesible para cualquier usuario, resaltando que prefiere utilizarla desde el celular por la comodidad que esto representa en su trabajo diario. En general, valoró positivamente tanto el diseño como la funcionalidad de la plataforma.
 
+**Entrevista 3**
+
+**Entrevistador:** Natanael Soto
+
+**Entrevistado:** Abraham Ayquipa
+
+**Edad:** 24 años
+
+**Distrito:** Huanuco
+
+**Enlace:** [Entrevista 3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201c607_upc_edu_pe/EYHc5Zez3rZOiOUhyjEMxDkB57nkvq5t5q7vZtmzoQ87LQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Fr2DfJ)
+
+![Entrevista a Abraham Ayquipa](img/validation-interview-4.png)
+
+**Resumen:** Durante la entrevista de validación, Abraham señaló que la landing page de HydroSmart es clara, con información suficiente y bien organizada, destacando la sección "Sobre Nosotros" como un elemento que genera confianza. Valoró el diseño visual y la facilidad para ubicar los botones de contacto, aunque sugirió que el CTA podría resaltar más. Sobre la aplicación, indicó que la creación de cuenta y navegación son intuitivas, con funciones claras y útiles para el manejo de cultivos. Destacó las alertas, los datos históricos y los gráficos como herramientas clave para su trabajo diario.
+
 ### 6.3.3. Evaluaciones según heurísticas
 
 **Site o App a Evaluar:** HydroSmart
@@ -6154,13 +6170,11 @@ A continuación, se presenta un video que funciona como evidencia de ejecución 
 
 [Video About-the-Product Micosoft stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217239_upc_edu_pe/EQMyGgqyyXtLgN5uEha1X7gBptbUSt4z21h2vLbivg2CmA?e=AEgJdc&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
-
 [Video About-the-Product Youtube](https://www.youtube.com/watch?v=69sPKWbm4OY)
 
 <img src="img/about-the-product.png" height="300px">
 
 _Imagen 2XX. About The Product_
-
 
 <div style="page-break-after: always;"></div>
 
