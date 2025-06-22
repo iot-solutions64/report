@@ -6284,8 +6284,6 @@ _Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 <img src="img/heuristica3-1.png" height="500px">
 
-_Imagen 2XX. Heuristica 3 implementada en creación de cuenta_
-
 **Recomendación:** Agregar un ícono o botón al lado del campo de contraseña que permita a los usuarios alternar entre mostrar y ocultar la contraseña ingresada como en crear cuenta.
 
 ---
@@ -6329,8 +6327,6 @@ A continuación, se presenta un video que funciona como evidencia de ejecución 
 [Video About-the-Product Youtube](https://www.youtube.com/watch?v=69sPKWbm4OY)
 
 <img src="img/about-the-product.png" height="300px">
-
-_Imagen 2XX. About The Product_
 
 <div style="page-break-after: always;"></div>
 
