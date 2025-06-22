@@ -5674,93 +5674,136 @@ En esta sección, se incluirán los cambios realizados a la aplicación Web y la
 
 - Vista Contacto:
   Se realizaron mejoras en la interfaz gráfica
+
   ![Contacto Landing Page](img/sprint-2-execution-landing-1.png)
+
 - Navbar:
   Se arregló un error que impedía el translado a la aplicación desde cualquier interfaz. También, se mejoró ligeramente la interfaz
+
   ![Navbar Landing Page](img/sprint-2-execution-landing-2.png)
 
 2. **Aplicación Frontend Web**
 
+Enlace del video de ejecución: **[Enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217241_upc_edu_pe/EWW48nMrzIZHrdDCxhzmcdoBMgAAhxexOtWlXHxurpeEjQ?e=Tiqbib&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)**
+
 - Vista Sign In / Sign Up
   Se añadió un "Progress Spinner" que se muestra al intentar iniciar sesión o al crear un usuario:
+
   ![Sign In/Up](img/sprint-2-execution-web-1.png)
+
 - Vista Navbar
   Se mejoró ligeramente la vista del navbar
+
   ![Navbar Web](img/sprint-2-execution-web-2.png)
+
 - Vista Crops
   Se mejoró la organización de la tabla
+
   ![Crops](img/sprint-2-execution-web-3.png)
+
 - Vista Crop Details
   Se mejoró la vista de la tarjeta principal, así como el tamaño del texto y los componentes
+
   ![Crop Detail](img/sprint-2-execution-web-4.png)
+
 - Vista Recommended Actions
   Se mejoró ligeramente la organización de la vista, así como el tamaño del texto y los componentes
+
   ![Recommended Actions](img/sprint-2-execution-web-5.png)
+
 - Vista Crop Short History / History
   Se mejoró ligeramente la organización de la vista
+
   ![Crop Short History](img/sprint-2-execution-web-6.png)
+
 - Vista System Detail
   Se mejoró ligeramente la organización de la vista
+
   ![Systems](img/sprint-2-execution-web-7.png)
+
 - Vista System List
   Se mejoró ligeramente la organización de la vista
+
   ![Systems](img/sprint-2-execution-web-8.png)
+
 - Vista Water Management
   Se reorganizaron las tarjetas y se reajustó el tamaño de los componentes para que entren mejor en la pantalla
+
   ![Water Management](img/sprint-2-execution-web-9.png)
+
 - Vista Water Tank
   Se reajustó el tamaño de los componentes para mayor claridad en la pantalla
+
   ![Water Tank](img/sprint-2-execution-web-10.png)
+
 - Vista Water Usage
   Se reajustó muy ligeramente la vista
+
   ![Water Usage](img/sprint-2-execution-web-11.png)
+
 - Vista Dialog
   Se reajustó el tamaño del texto, la organización de los campos y el color de los botones para una mayor claridad
+
   ![Dialogs](img/sprint-2-execution-web-12.png)
+
 
 3. **Aplicación Móvil**
 
 - Vista Sign In / Sign Up
   Se añadió la vista de Sign In y Sign Up
+
   <img src="img/sprint-2-execution-movil-1.png" height="700px" alt="Sign In/Up" />
 
 - Vista Crops
   Se implementó la vista de Cultivos, donde se pueden ver todos los cultivos del usuario.
+
   <img src="img/sprint-2-execution-movil-2.png" height="700px" alt="Crops" />
 
 - Vista Crop Details
   Se implementó la vista de detalle de un cultivo, donde se pueden ver los datos más importantes del cultivo
+
   <img src="img/sprint-2-execution-movil-3.png" height="700px" alt="Crop Details" />
 
 - Vista Recommended Actions
   Se agregó la vista de acciones recomendadas, donde se pueden ver las acciones recomendadas para un cultivo en específico
+
   <img src="img/sprint-2-execution-movil-4.png" height="700px" alt="Recommended Actions" />
 
 - Vista Crop Short History / History
   Se agregó la vista de historial de un cultivo
+
   <img src="img/sprint-2-execution-movil-5.png" height="700px" alt="Crop Short History" />
 
 - Vista System Detail
   Se agregó la vista de detalle de un sistema
+
   <img src="img/sprint-2-execution-movil-6.png" height="700px" alt="System Detail" />
 
 - Vista Water Management
   Se implementó la vista de gestión de agua, donde se pueden ver los valores totales de los tanques de agua del usuario y un historial mensual de uso de agua
+
   <img src="img/sprint-2-execution-movil-7.png" height="700px" alt="Water Management" />
 
 4. **Sistema Embebido (Prototipo en Wokwi) + Edge API**
    Se ha desarrollado un video que muestra el funcionamiento del sistema embebido con su integración a la Edge API.
-   [Video de Execution Evidence - Sistema Embebido y Edge API](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/Efk8mWRhga5AgZDPfKKtoxEBauu6mfJLdKA78bXqn9rdJg)
+   Prototipo del Sistema Embebido y Edge API: **[Enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/Efk8mWRhga5AgZDPfKKtoxEBauu6mfJLdKA78bXqn9rdJg)**
 
 Se utilizaron los siguientes componentes:
 
-- ESP32: Este microcontrolador ejecutará todas las funciones necesarias para el correcto funcionamiento de la aplicación.
+- **ESP32:** Este microcontrolador ejecutará todas las funciones necesarias para el correcto funcionamiento de la aplicación.
+
   ![ESP32](img/sprint-2-execution-iot-0.png)
-- DHT22: Este sensor detectará la temperatura en grados celsius y la humedad en porcentaje
+
+- **DHT22:** Este sensor detectará la temperatura en grados celsius y la humedad en porcentaje
+
   ![DHT22](img/sprint-2-execution-iot-1.png)
-- HC-SR04 Ultrasonic Distance Sensor: Este sensor detectará la distancia, en centímetros, entre el sensor y el agua. Este sensor sería puesto en la parte superior de un tanque de agua y, según la distancia entre el agua y el sensor, se podría estimar la cantidad de agua restante en el tanque.
+
+- **HC-SR04 Ultrasonic Distance Sensor:** Este sensor detectará la distancia, en centímetros, entre el sensor y el agua. Este sensor sería puesto en la parte superior de un tanque de agua y, según la distancia entre el agua y el sensor, se podría estimar la cantidad de agua restante en el tanque.
+
   ![HC-SR04](img/sprint-2-execution-iot-2.png)
-- Luz Led + Resistor: Este actuador se encenderá al detectar una anomalía. El resistor es de 220 Ω
+
+- **Luz Led + Resistor:** Este actuador se encenderá al detectar una anomalía. El resistor es de 220 Ω
+
   ![Luz Led](img/sprint-2-execution-iot-3.png)
 
 Se implementaron las siguientes funcionalidades:
@@ -5773,17 +5816,23 @@ Se implementaron las siguientes funcionalidades:
   - Si es que se detecta una humedad muy baja o una temperatura muy alta, se empieza a regar
 
 Vista completa del sistema embebido:
-![Sistema Embebido Completo](img/sprint-2-execution-iot-4.png)
+
+  ![Sistema Embebido Completo](img/sprint-2-execution-iot-4.png)
 
 ---
 
 El flujo de la aplicación es el siguiente:
 
 1. Definición de variables: Se define las variables necesarias para la conexión con el servicio MQTT, la funcionalidades de Wifi y los intervalos de envío de datos
+
    ![Variables](img/sprint-2-execution-iot-5.png)
+
 2. Setup: Se inicializa el sistema y el administrador de MQTT
+
    ![Setup](img/sprint-2-execution-iot-6.png)
+
 3. Loop: Se mantiene activa la conexión con MQTT y se actualiza el estado de los sensores y actuadores cada cierto tiempo
+
    ![Loop](img/sprint-2-execution-iot-7.png)
 
 ---
@@ -5817,17 +5866,28 @@ Y, si es que la temperatura o humedad están fuera de los valores adecuados, se 
 
 Se utilizaron los siguientes componentes:
 
-- ESP32: A diferencia del microcontrolador del prototipo, cuenta con 38 pines en ves de 30. Se encarga de manejar toda la lógica principal de la aplicación
+- **ESP32:** A diferencia del microcontrolador del prototipo, cuenta con 38 pines en ves de 30. Se encarga de manejar toda la lógica principal de la aplicación
+
   ![ESP32](img/sprint-2-execution-iot-fisico-1.jpg)
-- HC-SR04 Ultrasonic Distance Sensor: Este sensor detectará la distancia, en centímetros, entre el sensor y el agua. Este sensor sería puesto en la parte superior de un tanque de agua y, según la distancia entre el agua y el sensor, se podría estimar la cantidad de agua restante en el tanque.
+
+- **HC-SR04 Ultrasonic Distance Sensor:** Este sensor detectará la distancia, en centímetros, entre el sensor y el agua. Este sensor sería puesto en la parte superior de un tanque de agua y, según la distancia entre el agua y el sensor, se podría estimar la cantidad de agua restante en el tanque.
+
   ![HC-SR04](img/sprint-2-execution-iot-fisico-2.jpg)
-- DHT11: A diferencia del DHT22 del prototipo, este sensor no cuenta con un pin NC, no obstante, como no se utilizaba en el prototipo, no es un problema. Este sensor detectará la temperatura en grados celsius y la humedad en porcentaje.
+
+- **DHT11:** A diferencia del DHT22 del prototipo, este sensor no cuenta con un pin NC, no obstante, como no se utilizaba en el prototipo, no es un problema. Este sensor detectará la temperatura en grados celsius y la humedad en porcentaje.
+
   ![DHT11](img/sprint-2-execution-iot-fisico-3.jpg)
-- Luz Led + Resistor: Funciona de la misma manera que el prototipo. Este actuador se encenderá al detectar una anomalía. El resistor es de 220 Ω
+
+- **Luz Led + Resistor:** Funciona de la misma manera que el prototipo. Este actuador se encenderá al detectar una anomalía. El resistor es de 220 Ω
+
   ![Luz Led](img/sprint-2-execution-iot-fisico-4.jpg)
-- Cables Breadboard Jumper: Estos cables fueron utilizados para la conexión de los sensores y actuadores con el ESP32
+
+- **Cables Breadboard Jumper:** Estos cables fueron utilizados para la conexión de los sensores y actuadores con el ESP32
+
   ![Sistema Embebido Completo](img/sprint-2-execution-iot-fisico-5.jpg)
-- Cables Female to Male Dupont: Estos cables fueron utilizados para la conexión entre el ESP32 y el breadboard
+
+- **Cables Female to Male Dupont:** Estos cables fueron utilizados para la conexión entre el ESP32 y el breadboard
+
   ![Sistema Embebido Completo](img/sprint-2-execution-iot-fisico-6.jpg)
 
 Vista completa del sistema embebido físico:
@@ -5847,6 +5907,7 @@ Una vez comprobado el correcto funcionamiento, se construyó la primera versión
 ---
 
 Se siguió el mismo flujo que en la ejecución del prototipo. Al final, este fue el resultado:
+
 ![Resultado](img/sprint-2-execution-iot-fisico-10.jpeg)
 
 #### 6.2.2.7. Services Documentation
@@ -6289,6 +6350,9 @@ La estructura aplicada del proceso Lean UX ha permitido a nuestra startup, IoT S
 
 ### Video About-the-Team
 
+Enlace del video en Youtube: **[Enlace](https://youtu.be/N3mqPXvqnXs)**
+Enlace del video en Microsoft Stream: **[Enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217241_upc_edu_pe/EdQoyy0jSLNNmMI-6B1Bk2ABX6SwVtj4mh596xb-9m1bjg?e=9zlNXr&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)**
+
 <div style="page-break-after: always;"></div>
 
 ### Bibliografía
@@ -6314,5 +6378,6 @@ Video de Entrevista: [Enlace a Microsoft Stream](https://upcedupe-my.sharepoint.
 
 Product Backlog: [Enlace a Trello](https://trello.com/invite/b/68029db69b9160a847867db7/ATTIe60cc61d919ec781877b36318d877ec2F1FD4DE3/desarrollo-de-soluciones-iot)
 
+Video de Execution Evidence - Sistema Embebido y Edge API: [Enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/Efk8mWRhga5AgZDPfKKtoxEBauu6mfJLdKA78bXqn9rdJg)
 
 Validation Interviews: [Enlace a Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217241_upc_edu_pe/EZ28jyxC1JJMrLvML0hFhxABUvxEhhSNaQc6qNTCL_uB0g?e=7CDguf&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
