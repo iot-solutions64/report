@@ -5669,7 +5669,7 @@ En esta sección, se incluirán los cambios realizados a la aplicación Web y la
 
 4. **Sistema Embebido (Prototipo en Wokwi) + Edge API**
    Se ha desarrollado un video que muestra el funcionamiento del sistema embebido con su integración a la Edge API.
-   [Video de Execution Evidence - Sistema Embebido y Edge API](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/Efk8mWRhga5AgZDPfKKtoxEBMJKyGxBlWF61LwWszd3mlw?e=9kkajL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+   [Video de Execution Evidence - Sistema Embebido y Edge API](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/Efk8mWRhga5AgZDPfKKtoxEBauu6mfJLdKA78bXqn9rdJg)
 
 Se utilizaron los siguientes componentes:
 
