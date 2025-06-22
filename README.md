@@ -6250,8 +6250,6 @@ _Los errores serán puntuados tomando en cuenta la siguiente escala de severidad
 
 <img src="img/heuristica1.png" width="60%">
 
-_Imagen 2XX. Heuristica 1_
-
 **Recomendación:** Redirigir el botón "Ir a la app" a la URL correcta de la aplicación web. Esto asegurará que los usuarios puedan acceder fácilmente a la funcionalidad principal del producto.
 
 ---
@@ -6268,8 +6266,6 @@ _Imagen 2XX. Heuristica 1_
 
 <img src="img/heuristica2.png" width="60%">
 
-_Imagen 2XX. Heuristica 2_
-
 **Recomendación:** Implementar un mensaje de confirmación que se muestre al usuario después de enviar el formulario, indicando que su mensaje ha sido enviado correctamente.
 
 ---
@@ -6285,8 +6281,6 @@ _Imagen 2XX. Heuristica 2_
 **Imagen:**
 
 <img src="img/heuristica3.png" height="500px">
-
-_Imagen 2XX. Heuristica 3_
 
 <img src="img/heuristica3-1.png" height="500px">
 
@@ -6308,8 +6302,6 @@ _Imagen 2XX. Heuristica 3 implementada en creación de cuenta_
 
 <img src="img/heuristica4.png" height="500px">
 
-_Imagen 2XX. Heuristica 4_
-
 **Recomendación:** Implementar validaciones en los campos de entrada para asegurarse de que solo se acepten números en los campos correspondientes. Esto ayudará a prevenir errores y mejorará la experiencia del usuario al ingresar datos.
 
 ---
@@ -6325,8 +6317,6 @@ _Imagen 2XX. Heuristica 4_
 **Imagen:**
 
 <img src="img/heuristica5.png" height="500px">
-
-_Imagen 2XX. Heuristica 5_
 
 **Recomendación:** Agregar una imagen de referencia (placeholder) para los videos sin miniatura. Esto permitirá a los usuarios reconocer fácilmente que se trata de un video y mejorará la usabilidad de la sección de recomendaciones.
 
