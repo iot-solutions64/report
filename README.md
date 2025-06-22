@@ -5484,6 +5484,107 @@ En esta sección se incluirán los cambios realizados a la aplicación y la land
 
 #### 6.2.2.5. Testing Suite Evidence
 
+En esta sección se incluirán los casos de prueba realizados a la aplicación.
+
+**Aplicación móvil**
+
+Se realizaron pruebas unitarias a los servicios de la aplicación móvil.
+
+Test de navegación: En este test se prueba que la navegación a la página de inicio se realiza correctamente cuando el usuario está logueado.
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:flutter_test/flutter_test.dart';
+import 'package:hydrosmart/features/security/presentation/pages/login_page.dart';
+import 'package:hydrosmart/main.dart';
+
+void main() {
+  testWidgets('Muestra la pantalla de login si no está logueado', (WidgetTester tester) async {
+    await tester.pumpWidget(MyApp(isLoggedIn: false));
+    await tester.pumpAndSettle(); 
+    expect(find.byType(LoginPage), findsWidgets);
+  });
+
+  testWidgets('Muestra la pantalla de inicio si está logueado', (WidgetTester tester) async {
+    await tester.pumpWidget(MyApp(isLoggedIn: true));
+    await tester.pumpAndSettle();
+    expect(find.byType(BottomNavigationBar), findsOneWidget);
+  });
+}
+```
+
+Test de servicio: En este test se prueba que el servicio de autenticación funciona correctamente.
+
+```dart
+import 'package:flutter_test/flutter_test.dart';
+import 'package:hydrosmart/features/security/data/remote/security_service.dart';
+import 'package:hydrosmart/features/security/data/remote/user_dto.dart';
+import 'package:hydrosmart/core/resource.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
+
+import 'package:mockito/mockito.dart';
+import 'mocks/http_mock.mocks.dart';
+
+void main() {
+  late MockClient mockClient;
+  late SecurityService service;
+
+  setUp(() {
+    mockClient = MockClient();
+    service = SecurityService();
+  });
+
+  test('login devuelve Success cuando status 200', () async {
+    final userJson = {
+      "id": 1,
+      "username": "admin",
+      "token": "abc123"
+    };
+    when(mockClient.post(
+      any,
+      headers: anyNamed('headers'),
+      body: anyNamed('body'),
+    )).thenAnswer((_) async => http.Response(jsonEncode(userJson), 200));
+
+    final result = await service.login('admin', '12345');
+
+    expect(result, isA<Success<UserDto>>());
+    expect((result as Success<UserDto>).data!.username, 'admin');
+  });
+
+  test('login devuelve Error cuando status no es 200', () async {
+    when(mockClient.post(
+      any,
+      headers: anyNamed('headers'),
+      body: anyNamed('body'),
+    )).thenAnswer((_) async => http.Response('Unauthorized', 401));
+
+    final result = await service.login('test', 'wrong');
+
+    expect(result, isA<Error>());
+    expect((result as Error).message, contains('401'));
+  });
+
+  test('login devuelve Error cuando hay excepción', () async {
+    when(mockClient.post(
+      any,
+      headers: anyNamed('headers'),
+      body: anyNamed('body'),
+    )).thenThrow(Exception('Error: 401'));
+
+    final result = await service.login('test', 'fail');
+
+    expect(result, isA<Error>());
+    expect((result as Error).message, contains('Error: 401'));
+  });
+}
+```
+
+Resultados de las pruebas
+
+![Mobile testing results](img/sprint-2-testing-movil.png)
+
 #### 6.2.2.6. Execution Evidence
 
 En esta sección, se incluirán los cambios realizados a la aplicación Web y la landing page, así como la vista de la primera versión de los sistemas embebidos realizados:
