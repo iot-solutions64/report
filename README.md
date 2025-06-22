@@ -6049,9 +6049,16 @@ _Imagen 2XX. Heuristica 5_
 
 ## 6.4. Video About-the-Product
 
-Se ha desarrollado un video que muestra el funcionamiento de la aplicación y se habla del propósito de este mismo.
+A continuación, se presenta un video que funciona como evidencia de ejecución (execution evidence), pero también cumple un propósito promocional. En él se muestran de manera práctica las principales funcionalidades de nuestra aplicación, acompañado de una breve explicación de su propósito y un testimonio de uno de los entrevistados durante la fase de validación.
 
-[Video About-the-Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217239_upc_edu_pe/EWU7kfAzgq1Ah9mSGV2YEooBzTnM-acFOFUSxHjKRvzanw?e=WHtPEf&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+[Video About-the-Product Micosoft stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217239_upc_edu_pe/EQMyGgqyyXtLgN5uEha1X7gBptbUSt4z21h2vLbivg2CmA?e=AEgJdc&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+
+[Video About-the-Product Youtube](https://www.youtube.com/watch?v=69sPKWbm4OY)
+
+<img src="img/about-the-product.png" height="300px">
+
+_Imagen 2XX. About The Product_
 
 
 <div style="page-break-after: always;"></div>
