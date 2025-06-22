@@ -6049,6 +6049,11 @@ _Imagen 2XX. Heuristica 5_
 
 ## 6.4. Video About-the-Product
 
+Se ha desarrollado un video que muestra el funcionamiento de la aplicación y se habla del propósito de este mismo.
+
+[Video About-the-Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217239_upc_edu_pe/EWU7kfAzgq1Ah9mSGV2YEooBzTnM-acFOFUSxHjKRvzanw?e=WHtPEf&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+
 <div style="page-break-after: always;"></div>
 
 ### Conclusiones y Recomendaciones
