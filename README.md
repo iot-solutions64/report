@@ -5486,7 +5486,88 @@ En esta sección se incluirán los cambios realizados a la aplicación y la land
 
 En esta sección se incluirán los casos de prueba realizados a la aplicación.
 
-**Aplicación móvil**
+##### Aplicación Web
+Se realizaron pruebas unitarias a los servicios de la aplicación web
+
+###### Test de Crops
+En estos tests, se comprueban todos los métodos de la clase crops
+
+```typescript
+const cropService = new CropService();
+
+describe("CropService Integration Tests", () => {
+
+    test("Get all crops of user 1", async () => {
+        const response = await cropService.getCropsByUserId(1);
+        expect(Array.isArray(response)).toBe(true);
+        expect(response.length).toBeGreaterThanOrEqual(0);
+    });
+
+    test("Get light crops of user 1", async () => {
+        const response = await cropService.getLightCropsByUserId(1);
+        expect(Array.isArray(response)).toBe(true);
+    });
+
+    test("Get reference crop by ID", async () => {
+        const crop = await cropService.getReferenceCropById(1);
+        expect(crop.cropId).toBe(1);
+    });
+
+    test("Get light crop by ID", async () => {
+        const crop = await cropService.getLightCropById(1);
+        expect(crop.cropId).toBe(1);
+    });
+
+    test("Get detailed crop by ID", async () => {
+        const crop = await cropService.getDetailedCropById(1);
+        expect(crop.cropId).toBe(1);
+        expect(typeof crop.temperature).toBe("number");
+    });
+
+    test("Patch temperature by crop ID", async () => {
+        const result = await cropService.patchTemperatureByCropId(1, {
+            temperature: 23
+        } as TemperatureRequest);
+        expect(typeof result).toBe("string");
+    });
+
+    test("Patch temperature threshold by crop ID", async () => {
+        const response = await cropService.patchTemperatureThresholdByCropId(1, {
+            temperatureMinThreshold: 18,
+            temperatureMaxThreshold: 30
+        } as TemperatureThresholdRequest);
+
+        expect(response.temperatureMinThreshold).toBeLessThanOrEqual(response.temperatureMaxThreshold);
+    });
+
+    test("Patch humidity by crop ID", async () => {
+        const result = await cropService.patchHumidityByCropId(1, {
+            humidity: 45
+        } as HumidityRequest);
+        expect(typeof result).toBe("string");
+    });
+
+    test("Patch humidity threshold by crop ID", async () => {
+        const result = await cropService.patchHumidityThresholdByCropId(1, 45);
+        expect(result.humidity).toBe(45);
+    });
+
+    test("Delete crop by ID (assuming crop with ID 99 exists and is deletable)", async () => {
+        const result = await cropService.deleteByCropId(99);
+        expect(typeof result).toBe("string");
+    });
+
+    test("Handle error when crop ID not found", async () => {
+        try {
+            await cropService.getReferenceCropById(-1);
+        } catch (e: any) {
+            expect(e.response?.status).toBeGreaterThanOrEqual(400);
+        }
+    });
+});
+```
+
+##### Aplicación móvil
 
 Se realizaron pruebas unitarias a los servicios de la aplicación móvil.
 
@@ -5982,6 +6063,8 @@ Para la aplicación se considerará los userflows de:
 
 ### 6.3.2. Registro de Entrevistas
 
+Enlace al video de las entrevistas: **[Enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217241_upc_edu_pe/EZ28jyxC1JJMrLvML0hFhxABUvxEhhSNaQc6qNTCL_uB0g?e=7CDguf&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)**
+
 **Entrevista 1**
 
 **Entrevistador:** Salvador Salinas
@@ -5991,8 +6074,6 @@ Para la aplicación se considerará los userflows de:
 **Edad:** 23 años
 
 **Distrito:** Lurín
-
-**Enlace:** [Entrevista 1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b127_upc_edu_pe/EV8WyiwKr9VEpwHE57fkfV4BemNnk0Hitk1F_yY-YB-Nmg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=NRhWHj)
 
 ![Entrevista a Anderson Gonza](img/validation-interview-1.png)
 
@@ -6008,13 +6089,25 @@ Para la aplicación se considerará los userflows de:
 
 **Distrito:** La Molina
 
-**Enlace:** [Entrevista 2](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217239_upc_edu_pe/EUFsr0B5D99LoaT1VsFZDwEBFY6_-3KKdDwL9RzZFDl5iA?e=vhX3qQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
-
 ![Entrevista a Anderson Gonza](img/validation-interview-2.png)
 
 **Resumen:** Durante entrevista de validación, Adrian consideró que la landing page está bien diseñada, con colores e imágenes apropiadas al tema agrícola, y destacó que la organización de los elementos permite una comprensión clara del producto. Opinó que la información es suficiente para entender la propuesta sin resultar abrumadora. En cuanto a la aplicación móvil, mencionó que le pareció fácil de navegar y accesible para cualquier usuario, resaltando que prefiere utilizarla desde el celular por la comodidad que esto representa en su trabajo diario. En general, valoró positivamente tanto el diseño como la funcionalidad de la plataforma.
 
 **Entrevista 3**
+
+**Entrevistador:** Piero Delgado
+
+**Entrevistado:** Daniel Ruiz
+
+**Edad:** 20 años
+
+**Distrito:** Juliaca
+
+![Entrevista a Daniel Ruiz](img/validation-interview-3.png)
+
+**Resumen:** En la entrevista de validación, Daniel evaluó positivamente la landing page y el aplicativo web. Primero, en la landing page mencionó que la información es clara, concisa y genera confianza, también consideró útil la organización por secciones y le gustó el diseño. Aunque, sugirió mejorar la visibilidad de algunos textos en el formulario de contacto. Por otro lado, en el aplicativo web, indicó que el registro y navegación son intuitivos, y que la gestión de cultivos, tanques y sensores ofrece información relevante y útil para el monitoreo agrícola. Propuso mejoras como filtros para priorizar tanques usados con frecuencia.
+
+**Entrevista 4**
 
 **Entrevistador:** Natanael Soto
 
@@ -6024,11 +6117,23 @@ Para la aplicación se considerará los userflows de:
 
 **Distrito:** Huanuco
 
-**Enlace:** [Entrevista 3](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20201c607_upc_edu_pe/EYHc5Zez3rZOiOUhyjEMxDkB57nkvq5t5q7vZtmzoQ87LQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Fr2DfJ)
-
 ![Entrevista a Abraham Ayquipa](img/validation-interview-4.png)
 
 **Resumen:** Durante la entrevista de validación, Abraham señaló que la landing page de HydroSmart es clara, con información suficiente y bien organizada, destacando la sección "Sobre Nosotros" como un elemento que genera confianza. Valoró el diseño visual y la facilidad para ubicar los botones de contacto, aunque sugirió que el CTA podría resaltar más. Sobre la aplicación, indicó que la creación de cuenta y navegación son intuitivas, con funciones claras y útiles para el manejo de cultivos. Destacó las alertas, los datos históricos y los gráficos como herramientas clave para su trabajo diario.
+
+**Entrevista 4**
+
+**Entrevistador:** Marcelo Sebastian
+
+**Entrevistado:** Giancarlo Paredes
+
+**Edad:** 21 años
+
+**Distrito:** Caraz, Ancash
+
+![Entrevista a Anderson Gonza](img/validation-interview-5.png)
+
+**Resumen:** En esta entrevista, Giancarlo Paredes, un agricultor, destacó la buena presentación de tanto la Landing Page como la Aplicación Web. Cada una de las vistas le pareció bastante apropiada y no demostró dificultad al recorrer por las vistas
 
 ### 6.3.3. Evaluaciones según heurísticas
 
@@ -6208,3 +6313,6 @@ Escuela de Gestión Pública de la Universidad del Pacífico. (2022). Informe de
 Video de Entrevista: [Enlace a Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217241_upc_edu_pe/Ee74xVmCHXdCqRbfXAxMVYcBWwsAtbc9I_3-GWoUAOtq4A?e=53DCcG&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 Product Backlog: [Enlace a Trello](https://trello.com/invite/b/68029db69b9160a847867db7/ATTIe60cc61d919ec781877b36318d877ec2F1FD4DE3/desarrollo-de-soluciones-iot)
+
+
+Validation Interviews: [Enlace a Microsoft Stream](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217241_upc_edu_pe/EZ28jyxC1JJMrLvML0hFhxABUvxEhhSNaQc6qNTCL_uB0g?e=7CDguf&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
