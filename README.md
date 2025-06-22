@@ -396,7 +396,7 @@
         <h4>Paredes Puente, Sebastian Roberto</h4>
           <p>Para este entregable, después de una reunión de coordinación con el equipo, quedamos en que yo me encargaría de desarrollar y mejorar la aplicación backend. Me comprometí a desarrollar la aplicación correctamente y en asegurarme de que cumpliera con los requisitos establecidos.</p>
         <h4>Salinas Torres, Salvador Antonio</h4>
-          <p>Para este entregable, después de una reunión de coordinación con el equipo, quedamos en que yo me encargaría de desarrollar la aplicación frontend móvil. Me comprometí a desarrollar la aplicación correctamente y en asegurarme de que cumpliera con los requisitos establecidos.</p>
+          <p>Para este entregable, después de una reunión de coordinación con el equipo, yo me encargué principalmente del desarrollo de la aplicación móvil. Para ello organicé bien las tareas a realizar y me aseguré de que se cumplieran los requisitos establecidos. Igualmente, mantuve informado al equipo sobre los avances que se iban realizando.</p>
         <h4>Soto Salis, Natanael David</h4>
           <p>Para este entregable, después de una reunión de coordinación con el equipo, quedamos en que yo me encargaría de desarrollar la aplicación frontend móvil. Me comprometí a desarrollar la aplicación correctamente y en asegurarme de que cumpliera con los requisitos establecidos.</p>
       </td>
@@ -442,7 +442,7 @@
         <h4>Paredes Puente, Sebastian Roberto</h4>
           <p>Para este entregable, establecí una meta propia de concluir con el desarrollo del backend y ayudar con el desarrollo de la aplicación frontend web. Para ello, planifiqué las tareas que debía desarrollar y me aseguré de cumplir con todos los requisitos y objetivos planteados por el equipo</p>
         <h4>Salinas Torres, Salvador Antonio</h4>
-          <p>Para este entregable, establecí una meta propia de concluir con el desarrollo de la aplicación móvil. Para ello, planifiqué las tareas que debía desarrollar y me aseguré de cumplir con todos los requisitos y objetivos planteados por el equipo</p>
+          <p>Para este entregable, puse mi meta de concluir con el desarrollo de la aplicación móvil y la simulación del sistema embebido en Wokwi, así como un avance del sistema embebido real. De esta forma, planifiqué las tareas que debía realizar, asegurándome de cumplir con los requisitos y objetivos generales planteados por el equipo</p>
         <h4>Soto Salis, Natanael David</h4>
           <p>Para este entregable, establecí una meta propia de concluir con el desarrollo de la aplicación frontend móvil y edge API. Para ello, planifiqué las tareas que debía desarrollar y me aseguré de cumplir con todos los requisitos y objetivos planteados por el equipo</p>
       </td>
