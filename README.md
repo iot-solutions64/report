@@ -6083,6 +6083,92 @@ Este enfoque mixto permitió mantener un equilibrio entre agilidad y control del
 
 ![Insights](img/sprint-2-insights-6.png)
 
+### 6.2.3. Sprint 3
+
+#### 6.2.3.1. Sprint Planning 3
+
+Se planeó el tercer sprint a través de una reunión presencial. Para ello, se hizo la siguiente tabla para registrar la información que se discutió.
+
+<table>
+  <tr>
+    <th>Sprint #</th>
+    <td>Sprint 3</td>
+  </tr>
+  <tr>
+    <th colspan="2"><strong>Sprint Planning Background</strong></th>
+  </tr>
+  <tr>
+    <th>Date</th>
+    <td>2025-06-28</td>
+  </tr>
+  <tr>
+    <th>Time</th>
+    <td>01:00 PM</td>
+  </tr>
+  <tr>
+    <th>Location</th>
+    <td>Presencial (En la universidad)</td>
+  </tr>
+  <tr>
+    <th>Prepared by</th>
+    <td>Delgado Corrales, Piero Gonzalo</td>
+  </tr>
+  <tr>
+    <th>Attendees (to planning meeting)</th>
+    <td>
+      <p>Delgado Corrales, Piero Gonzalo</p>
+      <p>Neyra Santa Cruz, Marcelo Sebastian</p>
+      <p>Paredes Puente, Sebastián Roberto</p>
+      <p>Soto Salis, Natanael David</p>
+      <p>Salinas Torres, Salvador Antonio</p>
+    </td>
+  </tr>
+  <tr>
+    <th>Sprint N°2 Review Summary</th>
+    <td>Se mejoró la landing page y frontend web. Se desarrolló una primera versión del backend, edge api y sistema embebido de la aplicación.</td>
+  </tr>
+  <tr>
+    <th>Sprint N°1 Retrospective Summary</th>
+    <td>Se dividieron las tareas entre los desarrolladores de equipo. Se lograron realizar avances significativos en el tiempo establecido. Se busca mantener este ritmo en el presente sprint.</td>
+  </tr>
+  <tr>
+    <th colspan="2"><strong>Sprint Goal & User Stories</strong></th>
+  </tr>
+  <tr>
+    <th>Sprint 3 Goal</th>
+    <td>Terminar con el desarrollo de las aplicaciones de la solución HydroSmart (frontend, backend, edge api y sistema embebido), así como realizar las pruebas necesarias para validar el correcto funcionamiento de las integraciones entre los diferentes componentes que conforman la solución.</td>
+  </tr>
+  <tr>
+    <th>Sprint 3 Velocity</th>
+    <td>XX</td>
+  </tr>
+  <tr>
+    <th>Sum of Story Points</th>
+    <td>XX</td>
+  </tr>
+  </tr>
+</table>
+
+#### 6.2.3.2. Aspect Leaders and Collaborators
+
+En esta sección se presenta el equipo que participará en la elaboración del artefacto **Leadership-and-Collaboration Matrix (LACX)**, con el objetivo de brindar claridad y efectividad en la comunicación dentro del equipo. Para ello, se han identificado cinco aspectos principales dentro del alcance del Sprint: **Desarrollo de Backend**, **Desarrollo de Frontend Web**, **Desarrollo de Frontend Móvil**, **Desarrollo de Edge API** y **Desarrollo de Sistema Embebido**. Cada aspecto tiene un líder asignado y se especifica la participación de cada miembro del equipo en cada uno de ellos.
+
+| **Team Member** (Last Name, First Name) | **GitHub Username** | **Desarrollo de Backend** | **Desarrollo de Frontend Web** | **Desarrollo de Frontend Móvil** | **Desarrollo de Edge API** | **Desarrollo de Sistema Embebido** |
+| --------------------------------------- | ------------------- | ------------------------- | ------------------------------ | -------------------------------- | -------------------------- | ---------------------------------- |
+| Delgado Corrales, Piero Gonzalo         | PieroD04            | - | C | - | - | L |
+| Paredes Puente, Sebastian Roberto       | sebastian123gonzalo | L | - | C | - | - |
+| Salinas Torres, Salvador Antonio        | salvadoorssalinas   | - | - | L | C | - |
+| Neyra Santa Cruz, Marcelo Sebastian     | SN-Marcelo          | - | L | - | - | C |
+| Soto Salis, Natanael David              | NickDavid811        | C | - | - | L | - |
+
+#### 6.2.3.3. Sprint Backlog 3
+#### 6.2.3.4. Development Evidence
+#### 6.2.3.5. Testing Suite Evidence
+#### 6.2.3.6. Execution Evidence
+#### 6.2.3.7. Services Documentation
+#### 6.2.3.8. Deployment Evidence
+#### 6.2.3.9. Collaboration Insights
+
 ## 6.3. Validation Interviews
 
 ### 6.3.1. Diseño de Entrevistas
