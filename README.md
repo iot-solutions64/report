@@ -75,7 +75,7 @@
   <tr>
       <th>TB1</th>
       <td>08/04/2025</td>
-      <td rowspan="3">
+      <td rowspan="4">
         <p>Paredes Puente, Sebastian Roberto</p>
         <p>Delgado Corrales, Piero Gonzalo</p>
         <p>Salinas Torres, Salvador Antonio</p>
@@ -106,6 +106,13 @@
   <tr>
       <th>TB2</th>
       <td>07/06/2025</td>
+      <td>
+        Se han agregado nuevas secciones al capítulo 6
+      </td>
+  </tr>
+  <tr>
+      <th>Trabajo Final</th>
+      <td>28/06/2025</td>
       <td>
         Se han agregado nuevas secciones al capítulo 6
       </td>
@@ -155,8 +162,46 @@
     </td>
   </tr>
   <tr>
+    <th colspan="2">Entrega TB2</th>
+  </tr>
+  <tr>
     <td>
       <p> Para la entrega TB2, se realizó la segunda versión de la aplicaciones Backend y Frontend, la simulación del dispositivo embebido en Wokwi, el Edge API y la primera versión del sistema embebido</p>
+      <p>Los avances se registraron en los siguientes repositorios:</p>
+      <p>Reporte: <a href="https://github.com/iot-solutions64/report">Documento Trabajo Parcial</a></p>
+      <p>Frontend Web: <a href="https://github.com/iot-solutions64/frontend-web">Repositorio del Frontend Web</a></p>
+      <p>Frontend Móvil: <a href="https://github.com/iot-solutions64/frontend-movil">Repositorio del Frontend Móvil</a></p>
+      <p>Edge API: <a href="https://github.com/iot-solutions64/edge-api">Repositorio del Edge API</a></p>
+      <p>Backend: <a href="https://github.com/iot-solutions64/backend">Repositorio del Backend</a></p>
+      <p>Simulación de la Sistema Embebido: <a href="https://github.com/iot-solutions64/wokwi">Repositorio de la sistema embebido</a></p>
+      <p>Landing Page: <a href="https://github.com/iot-solutions64/landing-page">Repositorio de la Landing Page</a></p>
+      <p>Por otro lado, aquí se encuentran los enlaces directos a las aplicaciones desarrolladas para este entregable:</p>
+      <p>Aplicación Frontend Web: <a href="https://hydrosmart-iot.netlify.app">Enlace a la aplicación</a></p>
+      <p>Aplicación Backend: <a href="https://api-hydrosmart.up.railway.app/swagger-ui/index.html">Enlace a la aplicación</a></p>
+      <p>Sistema Embebido: <a href="https://wokwi.com/projects/431338881324863489">Enlace a la aplicación</a></p>
+      <p>Página Landing Page: <a href="https://iot-solutions64.github.io/landing-page/">Enlace a la página</p>
+    </td>
+    <td>
+      <p>Frontend Web</p>
+      <img src="img/sprint-2-insights-1.png">
+      <p>Frontend Móvil</p>
+      <img src="img/sprint-2-insights-2.png">
+      <p>Backend</p>
+      <img src="img/sprint-2-insights-3.png">
+      <p>Edge API</p>
+      <img src="img/sprint-2-insights-4.png">
+      <p>Prototipo del Sistema Embebido en Wokwi</p>
+      <img src="img/sprint-2-insights-5.png">
+      <p>Landing Page</p>
+      <img src="img/sprint-2-insights-6.png">
+    </td>
+  </tr>
+  <tr>
+    <th colspan="2">Entrega Trabajo Final</th>
+  </tr>
+  <tr>
+    <td>
+      <p> Para la entrega del Trabajo Final, se realizó la última versión de la aplicaciones Backend y Frontend, la simulación del dispositivo embebido en Wokwi, el Edge API y del sistema embebido</p>
       <p>Los avances se registraron en los siguientes repositorios:</p>
       <p>Reporte: <a href="https://github.com/iot-solutions64/report">Documento Trabajo Parcial</a></p>
       <p>Frontend Web: <a href="https://github.com/iot-solutions64/frontend-web">Repositorio del Frontend Web</a></p>
@@ -334,6 +379,16 @@
     - [6.2.2.7. Services Documentation](#6227-services-documentation)
     - [6.2.2.8. Deployment Evidence](#6228-deployment-evidence)
     - [6.2.2.9. Collaboration Insights](#6229-collaboration-insights)
+  - [6.2.3. Sprint 3](#623-sprint-3)
+    - [6.2.3.1. Sprint Planning 3](#6231-sprint-planning-3)
+    - [6.2.3.2. Aspect Leaders and Collaborators](#6232-aspect-leaders-and-collaborators)
+    - [6.2.3.3. Sprint Backlog 3](#6233-sprint-backlog-3)
+    - [6.2.3.4. Development Evidence](#6234-development-evidence)
+    - [6.2.3.5. Testing Suite Evidence](#6235-testing-suite-evidence)
+    - [6.2.3.6. Execution Evidence](#6236-execution-evidence)
+    - [6.2.3.7. Services Documentation](#6237-services-documentation)
+    - [6.2.3.8. Deployment Evidence](#6238-deployment-evidence)
+    - [6.2.3.9. Collaboration Insights](#6239-collaboration-insights)
 - [6.3. Validation Interviews](#63-validation-interviews)
   - [6.3.1. Diseño de Entrevistas](#631-diseño-de-entrevistas)
   - [6.3.2. Registro de Entrevistas](#632-registro-de-entrevistas)
@@ -399,6 +454,17 @@
           <p>Para este entregable, después de una reunión de coordinación con el equipo, yo me encargué principalmente del desarrollo de la aplicación móvil. Para ello organicé bien las tareas a realizar y me aseguré de que se cumplieran los requisitos establecidos. Igualmente, mantuve informado al equipo sobre los avances que se iban realizando.</p>
         <h4>Soto Salis, Natanael David</h4>
           <p>Para este entregable, después de una reunión de coordinación con el equipo, quedamos en que yo me encargaría de desarrollar la aplicación frontend móvil. Me comprometí a desarrollar la aplicación correctamente y en asegurarme de que cumpliera con los requisitos establecidos.</p>
+        <h3>Trabajo Final</h3>
+        <h4>Delgado Corrales, Piero Gonzalo</h4>
+          <p>Para este entregable, se coordinó en equipo para terminar de desarrollar todas las funcionalidades faltantes, así como mejorar las que ya estaban funcionando correctamente para un mejor entregable. Me encargué de desarrollar la Aplicación Embebida</p>
+        <h4>Neyra Santa Cruz, Marcelo Sebastian</h4>
+          <p>Para este entregable, como líder de equipo, me encargué de gestionar al grupo para concluir con el desarrollo de la aplicaciones, así como mejorar aquellas funcionalidades que ya estaban funcionando para presentar un mejor entregable. Me encargué de desarrollar la aplicación Embebida</p>
+        <h4>Paredes Puente, Sebastian Roberto</h4>
+          <p>Para este entregable, se coordinó en equipo para terminar de desarrollar todas las funcionalidades faltantes, así como mejorar las que ya estaban funcionando correctamente para un mejor entregable. Me encargué de desarrollar la Aplicación Frontend Web</p>
+        <h4>Salinas Torres, Salvador Antonio</h4>
+          <p>Para este entregable, se coordinó en equipo para terminar de desarrollar todas las funcionalidades faltantes, así como mejorar las que ya estaban funcionando correctamente para un mejor entregable. Me encargué de desarrollar la Aplicación Frontend Mobile</p>
+        <h4>Soto Salis, Natanael David</h4>
+          <p>Para este entregable, se coordinó en equipo para terminar de desarrollar todas las funcionalidades faltantes, así como mejorar las que ya estaban funcionando correctamente para un mejor entregable. Me encargué de desarrollar la Aplicación Backend</p>
       </td>
       <td>
         <h4>TB1</h4>
@@ -407,6 +473,8 @@
         <p>Para la entrega del Trabajo Parcial, el grupo se dividió en pequeñas subdivisiones con el motivo de desarrollar correcta y eficientemente las aplicaciones. Al final del proceso, se revisaron todas las aplicaciones y el informe para levantar alguna observación que se haya encontrado.</p>
         <h4>TB2</h4>
         <p>Para la entrega de la TB2, el equipo se enfocó en terminar y mejorar las aplicaciones previamente desarrolladas y en iniciar con el desarrollo de las aplicaciones Frontend Móvil y el Sistema Embebido. Al final del proceso, se revisaron todas las aplicaciones y el informe para levantar alguna observación que se haya encontrado.</p>
+        <h4>Trabajo Final</h4>
+        <p>Para la entrega de la Trabajo Final, el equipo se enfocó en terminar y mejorar las aplicaciones previamente desarrolladas. Al final del proceso, se revisaron todas las aplicaciones y el informe para levantar alguna observación que se haya encontrado.</p>
       </td>
     </tr>
     <tr>
