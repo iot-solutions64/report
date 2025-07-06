@@ -506,7 +506,7 @@
         <h4>Delgado Corrales, Piero Gonzalo</h4>
           <p>Para este entregable, establecí una meta propia de concluir con el desarrollo de la aplicación frontend web y de la simulación del sistema embebido. Para ello, planifiqué las tareas que debía desarrollar y me aseguré de cumplir con todos los requisitos y objetivos planteados por el equipo</p>
         <h4>Neyra Santa Cruz, Marcelo Sebastian</h4>
-          <p>Para este entregable, como líder de equipo, establecí metas y planifiqué los avances de cada una de las 6 aplicaciones solicitadas para este entregable. Para asegurarme que se esté trabajando correctamente, se realizaron algunas reuniones y se coordinó constantemente por la plataforma WhatsApp</p>
+          <p>Para este entregable, como líder de equipo, establecí metas y planifiqué las reuniones para concluir con cada una de las 6 aplicaciones solicitadas para este entregable</p>
         <h4>Paredes Puente, Sebastian Roberto</h4>
           <p>Para este entregable, establecí una meta propia de concluir con el desarrollo del backend y ayudar con el desarrollo de la aplicación frontend web. Para ello, planifiqué las tareas que debía desarrollar y me aseguré de cumplir con todos los requisitos y objetivos planteados por el equipo</p>
         <h4>Salinas Torres, Salvador Antonio</h4>
@@ -521,6 +521,8 @@
         <p>Para la entrega del Trabajo Parcial, se establecieron metas a cumplir, siendo la principal la validación de las 3 aplicaciones realizadas. Se cumplieron con todos los puntos pedidos en el tiempo indicado y se espera mejorar las aplicaciones en las siguientes entregas</p>
         <h4>TB2</h4>
         <p>Para la entrega del TB2, se establecieron metas a cumplir, siendo la principal la validación de las 6 aplicaciones realizadas. Se cumplieron con todos los puntos pedidos en el tiempo indicado y para el siguiente y último entregable solo se desarrollarán algunas mejoras para arreglar pequeños errores en la aplicación y la interfaz del usuario</p>
+        <h4>Trabajo Final</h4>
+        <p>Para la entrega del Trabajo Final, se establecieron metas a cumplir, siendo la principal concluir con las 6 aplicaciones realizadas. Se cumplieron con los requisitos más importantes en el tiempo indicado</p>
       </td>
     </tr>
   </tbody>
@@ -6230,11 +6232,136 @@ En esta sección se presenta el equipo que participará en la elaboración del a
 | Soto Salis, Natanael David              | NickDavid811        | C | - | - | L | - |
 
 #### 6.2.3.3. Sprint Backlog 3
+![Sprint Backlog 3](img/sprint-3-backlog.png)
+
+<table>
+<tr><th>Sprint #</th><th colspan="7">Sprint 2</th></tr>
+<tr><td colspan="2">User Story</td><td colspan="6">Work-Item / Task</td></tr>
+<tr>
+  <td>Id</td><td>Title</td>
+  <td>Id</td><td>Title</td><td>Description</td><td>Estimation (In Hours)</td>
+  <td>Assigned To</td><td>Status (To-Do / In-Process / Review / Done)</td>
+</tr>
+<!-- US01 -->
+<tr>
+  <td>US01</td><td>Implementación de Barra de navegación</td>
+  <td>T01</td><td>Botón CTA</td><td>Añadir botón que redirija a la página de inicio de sesión de la aplicación web</td><td>1</td>
+  <td>Sebastian Paredes</td><td>Done</td>
+</tr>
+<!-- US09 -->
+<tr>
+  <td>US09</td><td>Verificación de temperatura del suelo</td>
+  <td>T02</td><td>Lectura de temperatura del suelo</td><td>Mostrar datos del sensor de temperatura</td><td>3</td>
+  <td>Marcelo Neyra, Natanael Solis</td><td>Done</td>
+</tr>
+<!-- US08 -->
+<tr>
+  <td>US08</td><td>Verificación de humedad del suelo</td>
+  <td>T03</td><td>Lectura de humedad del suelo</td><td>Mostrar datos del sensor de humedad</td><td>4</td>
+  <td>Marcelo Neyra, Natanael Solis</td><td>Done</td>
+</tr>
+<!-- US12 -->
+<tr>
+  <td>US12</td><td>Interacción con el riego automático</td>
+  <td>T04</td><td>Activar/desactivar riego</td><td>Control manual del sistema de riego</td><td>5</td><td>Marcelo Neyra, Natanael Solis</td><td>Done</td>
+</tr>
+<!-- US15 -->
+<tr>
+  <td>US15</td><td>Cantidad de agua disponible</td>
+  <td>T05</td><td>Mostrar nivel de agua</td><td>Medidor en tiempo real del tanque o depósito</td><td>5</td><td>Piero Delgado, Salvador Salinas</td><td>Done</td>
+</tr>
+<!-- US14 -->
+<tr>
+  <td>US14</td><td>Limites en el uso agua por cultivo</td>
+  <td>T06</td><td>Configurar límites de agua</td><td>Restringir consumo por cultivo</td><td>3</td><td>Marcelo Neyra, Natanael Solis</td><td>Done</td>
+</tr>
+<!-- US13 -->
+<tr>
+  <td>US13</td><td>Notificaciones de regado</td>
+  <td>T07</td><td>Notificaciones de regado</td><td>Notificar al cambiar el estado del sistema de regado</td><td>3</td><td>Marcelo Neyra, Natanael Solis</td><td>Done</td>
+</tr>
+<!-- US11 -->
+<tr>
+  <td>US11</td><td>Historial del cultivo</td>
+  <td>T08</td><td>Mostrar historial del cultivo</td><td>Mostrar el historial mensual del estado (humedad y temperatura promedio) del cultivo</td><td>4</td><td>Piero Delgado, Salvador Salinas</td><td>To Review</td>
+</tr>
+<!-- US16 -->
+<tr>
+  <td>US16</td><td>Historial de consumo de agua mensual</td>
+  <td>T09</td><td>Historial de consumo mensual de agua</td><td>Mostrar el historial mensual de la cantidad de agua utilizada por tanque</td><td>4</td><td>Sebastian Paredes, Salvador Salinas</td><td>To Review</td>
+</tr>
+<!-- US10 -->
+<tr>
+  <td>US10</td><td>Acciones Recomendadas</td>
+  <td>T10</td><td>Diseñar interfaz de recomendaciones</td><td>Mostrar alertas o sugerencias por estado de cultivo</td><td>2</td><td>Piero Delgado, Salvador Salinas</td><td>Done</td>
+</tr>
+<!-- US17 -->
+<tr>
+  <td>US17</td><td>Apagar y Encender los Sistemas</td>
+  <td>T11</td><td>Apagar y Encender los Sistemas</td><td>Contar con un botón que permita apagar y encender los sistemas</td><td>2</td><td>Sebastian Paredes</td><td>To Do</td>
+</tr>
+<!-- US24 -->
+<tr>
+  <td>US24</td><td>Registro de usuarios</td>
+  <td>T12</td><td>Formulario de registro</td><td>Campos de nombre, correo y contraseña</td><td>3</td><td>Piero Delgado, Salvador Salinas</td><td>Done</td>
+</tr>
+<!-- US25 -->
+<tr>
+  <td>US25</td><td>Acceso de Usuarios</td>
+  <td>T13</td><td>Login de usuario</td><td>Inicio de sesión con correo y contraseña</td><td>3</td><td>Piero Delgado, Salvador Salinas</td><td>Done</td>
+</tr>
+<!-- US26 -->
+<tr>
+  <td>US26</td><td>Actualización de contraseña</td>
+  <td>T14</td><td>Actualizar contraseña</td><td>Permitir la actualización de contraseña</td><td>3</td><td>Sebastian Paredes, Marcelo Neyra</td><td>Done</td>
+</tr>
+<!-- US27 -->
+<tr>
+  <td>US27</td><td>Recuperación de contraseña</td>
+  <td>T15</td><td>Recuperar contraseña</td><td>Permitir la recuperación de contraseña, mediante el envío de un correo</td><td>3</td><td>Sebastian Paredes, Marcelo Neyra</td><td>Done</td>
+</tr>
+<!-- US18 -->
+<tr>
+  <td>US18</td><td>Verificación del estado del sistema de regado</td>
+  <td>T16</td><td>Estado del sistema de regado</td><td>Visualizar el estado del sistema de regado</td><td>4</td><td>Piero Delgado, Sebastian Paredes</td><td>To Do</td>
+</tr>
+<!-- US19 -->
+<tr>
+  <td>US19</td><td>Verificación del estado del sensor de humedad</td>
+  <td>T17</td><td>Estado del sensor de humedad</td><td>Visualizar el estado del sensor de humedad</td><td>4</td><td>Natanael Soto, Marcelo Neyra</td><td>To Do</td>
+</tr>
+<!-- US20 -->
+<tr>
+  <td>US20</td><td>Verificación del estado del sensor de temperatura</td>
+  <td>T18</td><td>Estado del sensor de temperatura</td><td>Visualizar el estado del sensor de temperatura</td><td>4</td><td>Natanael Soto, Marcelo Neyra</td><td>To Do</td>
+</tr>
+<!-- US21 -->
+<tr>
+  <td>US21</td><td>Verificación de la batería</td>
+  <td>T19</td><td>Estado de la batería</td><td>Visualizar el estado de la batería</td><td>3</td><td>Piero Delgado, Salvador Salinas</td><td>To-Do</td>
+</tr>
+<!-- US22 -->
+<tr>
+  <td>US22</td><td>Añadir nuevo sistema HydroSmart</td>
+  <td>T20</td><td>Formulario de registro de sistema</td><td>Permitir añadir nuevos nodos/sistemas</td><td>3</td><td>Marcelo Neyra</td><td>To-Do</td>
+</tr>
+<!-- US23 -->
+<tr>
+  <td>US23</td><td>Quitar un sistema de HydroSmart</td>
+  <td>T21</td><td>Eliminar sistema existente</td><td>Permitir borrar un sistema inactivo</td><td>3</td><td>Marcelo Neyra</td><td>To-Do</td>
+</tr>
+</table>
+
 #### 6.2.3.4. Development Evidence
+
 #### 6.2.3.5. Testing Suite Evidence
+
 #### 6.2.3.6. Execution Evidence
+
 #### 6.2.3.7. Services Documentation
+
 #### 6.2.3.8. Deployment Evidence
+
 #### 6.2.3.9. Collaboration Insights
 
 ## 6.3. Validation Interviews
