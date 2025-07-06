@@ -6365,88 +6365,1044 @@ Para esta Sprint 3, el equipo decidió realizar pruebas unitarias finales para v
 2. **Act (Ejecución):** Se ejecuta el método o función a probar.
 3. **Assert (Verificación):** Se comprueba que los resultados sean los esperados.
 
-Imagen con la estructura como ejemplo de los unit test realizados:
-
-![UnitTestStructure](img/unit-test-structure.png)
-
-A continuación se muestran las ejecuciones de los tests junto con una breve descripción de su propósito:
+A continuación se muestran los tests:
 
 ---
 
 **Test 1: PasswordResetTokenTest**  
 *Valida correctamente los getters y setters de la entidad `PasswordResetToken` para asegurar el correcto manejo del token de recuperación de contraseña.*  
+
+Código:
+
+```java
+class PasswordResetTokenTest {
+
+    @Test
+    void testPasswordResetTokenGettersAndSetters() {
+        // Arrange
+        PasswordResetToken token = new PasswordResetToken();
+        Long id = 1L;
+        String tokenValue = "testToken";
+        String email = "test@example.com";
+        boolean confirmed = true;
+        LocalDateTime expirationDate = LocalDateTime.now().plusDays(1);
+
+        // Act
+        token.setId(id);
+        token.setToken(tokenValue);
+        token.setEmail(email);
+        token.setConfirmed(confirmed);
+        token.setExpirationDate(expirationDate);
+
+        // Assert
+        assertEquals(id, token.getId());
+        assertEquals(tokenValue, token.getToken());
+        assertEquals(email, token.getEmail());
+        assertTrue(token.isConfirmed());
+        assertEquals(expirationDate, token.getExpirationDate());
+    }
+}
+```
+Ejecución:
 ![UnitTest1](img/test1-execution.jpeg)
 
 ---
 
 **Test 2: EmailServiceTest**  
 *Verifica que el servicio de email construya y envíe correctamente un mensaje de restablecimiento de contraseña utilizando el token generado.*  
+
+Código:
+```java
+class EmailServiceTest {
+    @Test
+    void testSendPasswordResetEmail() {
+        // Arrange
+        JavaMailSender mockMailSender = Mockito.mock(JavaMailSender.class);
+        EmailService emailService = new EmailService();
+        emailService.mailSender = mockMailSender;
+
+        String recipient = "test@example.com";
+        String token = "testToken";
+        String expectedResetUrl = "http://localhost:8080/password-reset/confirm?token=" + token;
+
+        ArgumentCaptor<SimpleMailMessage> messageCaptor = ArgumentCaptor.forClass(SimpleMailMessage.class);
+
+        // Act
+        emailService.sendPasswordResetEmail(recipient, token);
+
+        // Assert
+        Mockito.verify(mockMailSender).send(messageCaptor.capture());
+        SimpleMailMessage sentMessage = messageCaptor.getValue();
+
+        assertEquals(recipient, sentMessage.getTo()[0]);
+        assertEquals("Password Reset Request", sentMessage.getSubject());
+        assertEquals("Click the link to reset your password: " + expectedResetUrl, sentMessage.getText());
+    }
+}
+```
+Ejecución:
 ![UnitTest2](img/test2-execution.jpeg)
 
 ---
 
 **Test 3: IrrigationCommandServiceImplTest**  
 *Prueba el manejo de comandos para crear y actualizar configuraciones de riego, asegurando la persistencia adecuada y la asociación de estados.*  
+
+Código:
+```java
+class IrrigationCommandServiceImplTest {
+
+    @Test
+    void testHandleCreateIrrigationCommand() {
+        // Arrange
+        IrrigationRepository mockIrrigationRepository = mock(IrrigationRepository.class);
+        IrrigationStatusRepository mockIrrigationStatusRepository = mock(IrrigationStatusRepository.class);
+        IrrigationCommandServiceImpl service = new IrrigationCommandServiceImpl(mockIrrigationRepository, mockIrrigationStatusRepository);
+
+        CreateIrrigationCommand command = new CreateIrrigationCommand(100.0f);
+        IrrigationFrequency frequency = new IrrigationFrequency();
+        IrrigationStatus status = new IrrigationStatus(IrrigationStatusList.DISABLED);
+
+        when(mockIrrigationStatusRepository.findByName(IrrigationStatusList.DISABLED)).thenReturn(Optional.of(status));
+        when(mockIrrigationRepository.save(Mockito.any(Irrigation.class))).thenAnswer(invocation -> invocation.getArgument(0));
+
+        // Act
+        Optional<Irrigation> result = service.handle(command, frequency);
+
+        // Assert
+        assertTrue(result.isPresent());
+        assertEquals(command.maxWaterUsage(), result.get().getMaxWaterUsage());
+        assertEquals(status, result.get().getIrrigationStatus());
+        assertEquals(frequency, result.get().getFrequency());
+    }
+
+    @Test
+    void testHandleUpdateIrrigationCommand() {
+        // Arrange
+        IrrigationRepository mockIrrigationRepository = mock(IrrigationRepository.class);
+        IrrigationStatusRepository mockIrrigationStatusRepository = mock(IrrigationStatusRepository.class);
+        IrrigationCommandServiceImpl service = new IrrigationCommandServiceImpl(mockIrrigationRepository, mockIrrigationStatusRepository);
+
+        UpdateIrrigationCommand command = new UpdateIrrigationCommand(1L, 150.0f);
+        IrrigationFrequency frequency = new IrrigationFrequency();
+        IrrigationStatus status = new IrrigationStatus(IrrigationStatusList.ENABLED);
+        Irrigation existingIrrigation = new Irrigation();
+
+        when(mockIrrigationRepository.findById(command.id())).thenReturn(Optional.of(existingIrrigation));
+        when(mockIrrigationRepository.save(Mockito.any(Irrigation.class))).thenAnswer(invocation -> invocation.getArgument(0));
+
+        // Act
+        Optional<Irrigation> result = service.handle(command, status, frequency);
+
+        // Assert
+        assertTrue(result.isPresent());
+        assertEquals(command.maxWaterUsage(), result.get().getMaxWaterUsage());
+        assertEquals(status, result.get().getIrrigationStatus());
+        assertEquals(frequency, result.get().getFrequency());
+    }
+}
+```
+Ejecución:
 ![UnitTest3](img/test3-execution.jpeg)
 
 ---
 
 **Test 4: IrrigationStatusCommandServiceImplTest**  
 *Verifica que se registren correctamente los estados de riego iniciales en la base de datos si no existen previamente.*  
+
+Código:
+```java
+class IrrigationStatusCommandServiceImplTest {
+
+    @Test
+    void testHandleSeedIrrigationStatusCommand() {
+        // Arrange
+        IrrigationStatusRepository mockRepository = mock(IrrigationStatusRepository.class);
+        IrrigationStatusCommandServiceImpl service = new IrrigationStatusCommandServiceImpl(mockRepository);
+
+        SeedIrrigationStatusCommand command = new SeedIrrigationStatusCommand();
+
+        for (IrrigationStatusList status : IrrigationStatusList.values()) {
+            when(mockRepository.existsByName(status)).thenReturn(false);
+        }
+
+        // Act
+        service.handle(command);
+
+        // Assert
+        for (IrrigationStatusList status : IrrigationStatusList.values()) {
+            verify(mockRepository).existsByName(status);
+            verify(mockRepository).save(argThat(savedStatus ->
+                    savedStatus.getName().equals(status)
+            ));
+        }
+
+        verifyNoMoreInteractions(mockRepository);
+    }
+}
+```
+Ejecución:
 ![UnitTest4](img/test4-execution.jpeg)
 
 ---
 
 **Test 5: WaterTankCommandServiceImplTest**  
 *Valida la creación, modificación y eliminación de tanques de agua, así como sus estados y relación con cultivos.*  
+
+Código:
+```java
+class WaterTankCommandServiceImplTest {
+
+    @Test
+    void testHandleCreateWaterTankCommand() {
+        // Arrange
+        WaterTankRepository waterTankRepo = mock(WaterTankRepository.class);
+        WaterTankStatusRepository statusRepo = mock(WaterTankStatusRepository.class);
+        UserContextFacade userContext = mock(UserContextFacade.class);
+        CropContextFacade cropContext = mock(CropContextFacade.class);
+
+        WaterTankCommandServiceImpl service = new WaterTankCommandServiceImpl(
+                waterTankRepo, statusRepo, userContext, cropContext
+        );
+
+        CreateWaterTankCommand command = new CreateWaterTankCommand("Tank1", 100.0f, 500.0f, 1L);
+        WaterTankStatus status = new WaterTankStatus(WaterTankStatusList.DEACTIVATED);
+        User user = new User();
+
+        when(statusRepo.findByName(WaterTankStatusList.DEACTIVATED)).thenReturn(Optional.of(status));
+        when(userContext.fetchUserById(command.userId())).thenReturn(user);
+        when(waterTankRepo.save(any(WaterTank.class))).thenAnswer(inv -> inv.getArgument(0));
+
+        // Act
+        Optional<WaterTank> result = service.handle(command);
+
+        // Assert
+        assertTrue(result.isPresent());
+        assertEquals("Tank1", result.get().getName());
+        assertEquals(status, result.get().getStatus());
+    }
+
+    @Test
+    void testHandlePatchWaterTankNameCommand() {
+        WaterTankRepository waterTankRepo = mock(WaterTankRepository.class);
+        WaterTankStatusRepository statusRepo = mock(WaterTankStatusRepository.class);
+        UserContextFacade userContext = mock(UserContextFacade.class);
+        CropContextFacade cropContext = mock(CropContextFacade.class);
+
+        WaterTankCommandServiceImpl service = new WaterTankCommandServiceImpl(
+                waterTankRepo, statusRepo, userContext, cropContext
+        );
+
+        PatchWaterTankNameCommand command = new PatchWaterTankNameCommand(1L, "UpdatedName");
+        WaterTank tank = mock(WaterTank.class);
+
+        when(waterTankRepo.findById(1L)).thenReturn(Optional.of(tank));
+        when(tank.patchName(command)).thenReturn(tank);
+        when(waterTankRepo.save(tank)).thenReturn(tank);
+        when(tank.getName()).thenReturn("UpdatedName");
+
+        // Act
+        Optional<WaterTank> result = service.handle(command);
+
+        // Assert
+        assertTrue(result.isPresent());
+        assertEquals("UpdatedName", result.get().getName());
+    }
+
+    @Test
+    void testHandleDeleteWaterTankCommand() {
+        WaterTankRepository waterTankRepo = mock(WaterTankRepository.class);
+        CropContextFacade cropContext = mock(CropContextFacade.class);
+
+        WaterTankCommandServiceImpl service = new WaterTankCommandServiceImpl(
+                waterTankRepo,
+                mock(WaterTankStatusRepository.class),
+                mock(UserContextFacade.class),
+                cropContext
+        );
+
+        DeleteWaterTankCommand command = new DeleteWaterTankCommand(1L);
+        List<Crop> crops = List.of(mock(Crop.class), mock(Crop.class));
+
+        when(waterTankRepo.findById(1L)).thenReturn(Optional.of(mock(WaterTank.class)));
+        when(cropContext.getCropsByWaterTankId(1L)).thenReturn(crops);
+
+        // Act
+        service.handle(command);
+
+        // Assert
+        verify(cropContext).saveCrops(crops);
+        verify(waterTankRepo).deleteById(1L);
+    }
+}
+```
+Ejecución:
 ![UnitTest5](img/test5-execution.jpeg)
 
 ---
 
 **Test 6: WaterTankStatusCommandServiceImplTest**  
 *Prueba el sembrado de estados faltantes para tanques de agua, asegurando que solo los ausentes sean guardados.*  
+
+Código:
+```java
+class WaterTankStatusCommandServiceImplTest {
+
+    @Test
+    void testHandleSeedsMissingStatuses() {
+        // Arrange
+        WaterTankStatusRepository mockRepository = mock(WaterTankStatusRepository.class);
+
+        when(mockRepository.existsByName(WaterTankStatusList.DEACTIVATED)).thenReturn(true);
+        when(mockRepository.existsByName(WaterTankStatusList.ACTIVATED)).thenReturn(false);
+        when(mockRepository.existsByName(WaterTankStatusList.ERROR)).thenReturn(false);
+
+        WaterTankStatusCommandServiceImpl service = new WaterTankStatusCommandServiceImpl(mockRepository);
+        SeedWaterTankStatusCommand command = new SeedWaterTankStatusCommand();
+
+        // Act
+        service.handle(command);
+
+        // Assert
+        verify(mockRepository, times(1)).existsByName(WaterTankStatusList.DEACTIVATED);
+        verify(mockRepository, times(1)).existsByName(WaterTankStatusList.ACTIVATED);
+        verify(mockRepository, times(1)).existsByName(WaterTankStatusList.ERROR);
+
+        verify(mockRepository, never()).save(new WaterTankStatus(WaterTankStatusList.DEACTIVATED));
+        verify(mockRepository, times(1)).save(new WaterTankStatus(WaterTankStatusList.ACTIVATED));
+        verify(mockRepository, times(1)).save(new WaterTankStatus(WaterTankStatusList.ERROR));
+    }
+}
+```
+Ejecución:
 ![UnitTest6](img/test6-execution.jpeg)
 
 ---
 
 **Test 7: IrrigationTest**  
 *Comprueba el constructor y los métodos de actualización de la entidad `Irrigation` con comandos de creación y actualización.*  
+
+Código:
+```java
+class IrrigationTest {
+
+    @Test
+    void testConstructorWithCreateIrrigationCommand() {
+        // Arrange
+        CreateIrrigationCommand command = new CreateIrrigationCommand(100.0f);
+        IrrigationStatus status = new IrrigationStatus(IrrigationStatusList.DISABLED);
+        IrrigationFrequency frequency = new IrrigationFrequency();
+
+        // Act
+        Irrigation irrigation = new Irrigation(command, status, frequency);
+
+        // Assert
+        assertEquals(command.maxWaterUsage(), irrigation.getMaxWaterUsage());
+        assertEquals(status, irrigation.getIrrigationStatus());
+        assertEquals(frequency, irrigation.getFrequency());
+    }
+
+    @Test
+    void testUpdateIrrigation() {
+        // Arrange
+        Irrigation irrigation = new Irrigation();
+        UpdateIrrigationCommand command = new UpdateIrrigationCommand(1L, 150.0f);
+        IrrigationStatus newStatus = new IrrigationStatus(IrrigationStatusList.ENABLED);
+        IrrigationFrequency newFrequency = new IrrigationFrequency();
+
+        // Act
+        irrigation.updateIrrigation(command, newStatus, newFrequency);
+
+        // Assert
+        assertEquals(command.maxWaterUsage(), irrigation.getMaxWaterUsage());
+        assertEquals(newStatus, irrigation.getIrrigationStatus());
+        assertEquals(newFrequency, irrigation.getFrequency());
+    }
+}
+```
+Ejecución:
 ![UnitTest7](img/test7-execution.jpeg)
 
 ---
 
 **Test 8: WaterTankTest**  
 *Valida los constructores y métodos `patch` de la entidad `WaterTank`, para modificar nombre, cantidad de agua y estado.*  
+
+Código:
+```java
+class WaterTankTest {
+
+    @Test
+    void testConstructorWithCreateWaterTankCommand() {
+        // Arrange
+        CreateWaterTankCommand command = new CreateWaterTankCommand("Tank1", 100.0f, 500.0f, 1L);
+        WaterTankStatus status = new WaterTankStatus(WaterTankStatusList.DEACTIVATED);
+        User user = new User();
+
+        // Act
+        WaterTank waterTank = new WaterTank(command, status, user);
+
+        // Assert
+        assertEquals(command.name(), waterTank.getName());
+        assertEquals(command.waterAmountRemaining(), waterTank.getWaterAmountRemaining());
+        assertEquals(command.maxWaterCapacity(), waterTank.getMaxWaterCapacity());
+        assertEquals(status, waterTank.getStatus());
+        assertEquals(user, waterTank.getUser());
+    }
+
+    @Test
+    void testPatchName() {
+        // Arrange
+        WaterTank waterTank = new WaterTank();
+        PatchWaterTankNameCommand command = new PatchWaterTankNameCommand(1L, "UpdatedName");
+
+        // Act
+        waterTank.patchName(command);
+
+        // Assert
+        assertEquals("UpdatedName", waterTank.getName());
+    }
+
+    @Test
+    void testPatchWaterAmount() {
+        // Arrange
+        WaterTank waterTank = new WaterTank();
+        PatchWaterTankWaterAmountRemainingCommand command = new PatchWaterTankWaterAmountRemainingCommand(1L, 200.0f);
+
+        // Act
+        waterTank.patchWaterAmount(command);
+
+        // Assert
+        assertEquals(200.0f, waterTank.getWaterAmountRemaining());
+    }
+
+    @Test
+    void testPatchStatus() {
+        // Arrange
+        WaterTank waterTank = new WaterTank();
+        WaterTankStatus newStatus = new WaterTankStatus(WaterTankStatusList.ACTIVATED);
+
+        // Act
+        waterTank.patchStatus(newStatus);
+
+        // Assert
+        assertEquals(newStatus, waterTank.getStatus());
+    }
+}
+```
+Ejecución:
 ![UnitTest8](img/test8-execution.jpeg)
 
 ---
 
 **Test 9: UserCommandServiceTests**  
 *Evalúa los flujos de autenticación y registro de usuarios, incluyendo validaciones de existencia, contraseñas y roles.*  
+
+Código:
+```java
+@SpringBootTest
+class UserCommandServiceTests {
+    @Autowired
+    private UserRepository userRepository;
+    @Autowired
+    private HashingService hashingService;
+    @Autowired
+    private TokenService tokenService;
+    @Autowired
+    private RoleRepository roleRepository;
+    @Autowired
+    private UserCommandServiceImpl userCommandService;
+
+    private final String username = "testuser";
+    private final String rawPassword = "password123";
+    private final String hashedPassword = "hashed123";
+    private final String token = "mockedToken";
+
+    private User user;
+
+    @BeforeEach
+    void setUp() {
+        user = new User(username, hashedPassword);
+        user.setId(1L);
+        user.setRoles(Set.of(new Role(Roles.ROLE_USER)));
+    }
+
+    @Test
+    void testHandleSignInSuccess() {
+        // Arrange
+        SignInCommand command = new SignInCommand(username, rawPassword);
+        when(userRepository.findByUsername(username)).thenReturn(Optional.of(user));
+        when(hashingService.matches(rawPassword, hashedPassword)).thenReturn(true);
+        when(tokenService.generateToken(username)).thenReturn(token);
+
+        // Act
+        Optional<ImmutablePair<User, String>> result = userCommandService.handle(command);
+
+        // Assert
+        assertTrue(result.isPresent());
+        assertEquals(username, result.get().getLeft().getUsername());
+        assertEquals(token, result.get().getRight());
+    }
+
+    @Test
+    void testHandleSignInUserNotFound() {
+        SignInCommand command = new SignInCommand("nonexistent", rawPassword);
+        when(userRepository.findByUsername("nonexistent")).thenReturn(Optional.empty());
+
+        RuntimeException exception = assertThrows(RuntimeException.class, () -> {
+            userCommandService.handle(command);
+        });
+        assertEquals("User not found", exception.getMessage());
+    }
+
+    @Test
+    void testHandleSignInInvalidPassword() {
+        SignInCommand command = new SignInCommand(username, "wrongPassword");
+        when(userRepository.findByUsername(username)).thenReturn(Optional.of(user));
+        when(hashingService.matches("wrongPassword", hashedPassword)).thenReturn(false);
+
+        RuntimeException exception = assertThrows(RuntimeException.class, () -> {
+            userCommandService.handle(command);
+        });
+        assertEquals("Invalid password", exception.getMessage());
+    }
+
+    @Test
+    void testHandleSignUpSuccess() {
+        SignUpCommand command = new SignUpCommand(username, rawPassword, List.of(new Role(Roles.ROLE_USER)));
+
+        when(userRepository.existsByUsername(username)).thenReturn(false);
+        when(roleRepository.findByName(Roles.ROLE_USER)).thenReturn(Optional.of(new Role(Roles.ROLE_USER)));
+        when(hashingService.encode(rawPassword)).thenReturn(hashedPassword);
+        when(userRepository.findByUsername(username)).thenReturn(Optional.of(user));
+
+        Optional<User> result = userCommandService.handle(command);
+
+        assertTrue(result.isPresent());
+        assertEquals(username, result.get().getUsername());
+    }
+
+    @Test
+    void testHandleSignUpUsernameExists() {
+        SignUpCommand command = new SignUpCommand(username, rawPassword, List.of(new Role(Roles.ROLE_USER)));
+        when(userRepository.existsByUsername(username)).thenReturn(true);
+
+        RuntimeException exception = assertThrows(RuntimeException.class, () -> {
+            userCommandService.handle(command);
+        });
+
+        assertEquals("Username already exists", exception.getMessage());
+    }
+
+    @Test
+    void testHandleSignUpInvalidRole() {
+        SignUpCommand command = new SignUpCommand(username, rawPassword, List.of(new Role(Roles.ROLE_ADMIN)));
+        when(userRepository.existsByUsername(username)).thenReturn(false);
+        when(roleRepository.findByName(Roles.ROLE_ADMIN)).thenReturn(Optional.empty());
+
+        RuntimeException exception = assertThrows(RuntimeException.class, () -> {
+            userCommandService.handle(command);
+        });
+
+        assertEquals("Role title not found", exception.getMessage());
+    }
+
+    @Configuration
+    static class MockConfig {
+        @Bean
+        public UserRepository userRepository() {
+            return org.mockito.Mockito.mock(UserRepository.class);
+        }
+
+        @Bean
+        public HashingService hashingService() {
+            return org.mockito.Mockito.mock(HashingService.class);
+        }
+
+        @Bean
+        public TokenService tokenService() {
+            return org.mockito.Mockito.mock(TokenService.class);
+        }
+
+        @Bean
+        public RoleRepository roleRepository() {
+            return org.mockito.Mockito.mock(RoleRepository.class);
+        }
+
+        @Bean
+        public com.hydrosmart.security.infrastructure.tokens.jwt.BearerTokenService bearerTokenService() {
+            return org.mockito.Mockito.mock(com.hydrosmart.security.infrastructure.tokens.jwt.BearerTokenService.class);
+        }
+
+        @Bean
+        public UserCommandServiceImpl userCommandServiceImpl(UserRepository userRepository,
+                HashingService hashingService, TokenService tokenService, RoleRepository roleRepository) {
+            return new UserCommandServiceImpl(userRepository, hashingService, tokenService, roleRepository);
+        }
+    }
+}
+```
+Ejecución:
 ![UnitTest9](img/test9-execution.jpeg)
 
 ---
 
 **Test 10: UserQueryServiceTests**  
 *Verifica consultas sobre usuarios, tanto por ID como por nombre de usuario, así como la recuperación de todos los usuarios.*  
+
+Código:
+```java
+@SpringBootTest
+public class UserQueryServiceTests {
+    @MockBean
+    private UserRepository userRepository;
+    @Autowired
+    private UserQueryServiceImpl userQueryService;
+
+    @Test
+    public void testFindAllUsers() {
+        // Arrange
+        User user1 = new User("john", "hashed123");
+        User user2 = new User("jane", "hashed456");
+        when(userRepository.findAll()).thenReturn(List.of(user1, user2));
+
+        // Act
+        List<User> result = userQueryService.handle(new GetAllUsersQuery());
+
+        // Assert
+        assertEquals(2, result.size());
+        assertEquals("john", result.get(0).getUsername());
+        verify(userRepository, times(1)).findAll();
+    }
+
+    @Test
+    public void testUserExistsByIdQuery() {
+        // Arrange
+        User user = new User("john", "hashed123");
+        user.setId(1L);
+        when(userRepository.findById(1L)).thenReturn(Optional.of(user));
+
+        // Act
+        Optional<User> result = userQueryService.handle(new GetUserByIdQuery(1L));
+
+        // Assert
+        assertTrue(result.isPresent());
+        assertEquals("john", result.get().getUsername());
+        verify(userRepository, times(1)).findById(1L);
+    }
+
+    @Test
+    public void testUserDoesNotExistByIdQuery() {
+        when(userRepository.findById(999L)).thenReturn(Optional.empty());
+
+        Optional<User> result = userQueryService.handle(new GetUserByIdQuery(999L));
+
+        assertTrue(result.isEmpty());
+        verify(userRepository).findById(999L);
+    }
+
+    @Test
+    public void testUserExistsByUsernameQuery() {
+        User user = new User("jane", "hashed456");
+        when(userRepository.findByUsername("jane")).thenReturn(Optional.of(user));
+
+        Optional<User> result = userQueryService.handle(new GetUserByUsernameQuery("jane"));
+
+        assertTrue(result.isPresent());
+        assertEquals("jane", result.get().getUsername());
+        verify(userRepository).findByUsername("jane");
+    }
+
+    @Test
+    public void testUserDoesNotExistByUsernameQuery() {
+        when(userRepository.findByUsername("ghost")).thenReturn(Optional.empty());
+
+        Optional<User> result = userQueryService.handle(new GetUserByUsernameQuery("ghost"));
+
+        assertTrue(result.isEmpty());
+        verify(userRepository).findByUsername("ghost");
+    }
+}
+```
+Ejecución:
 ![UnitTest10](img/test10-execution.jpeg)
 
 ---
 
 **Test 11: CropCommandServiceTests**  
 *Prueba la creación de cultivos, validando todas sus dependencias (usuario, temperatura, humedad, riego, tanque) y su persistencia.*  
+
+Código:
+```java
+@SpringBootTest
+@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
+public class CropCommandServiceTests {
+    @Autowired
+    @Qualifier("cropRepository")
+    private CropRepository cropRepository;
+    @Autowired
+    @Qualifier("temperatureRepository")
+    private TemperatureRepository temperatureRepository;
+    @Autowired
+    @Qualifier("humidityRepository")
+    private HumidityRepository humidityRepository;
+    @Autowired
+    @Qualifier("userContextFacade")
+    private UserContextFacade userContextFacade;
+    @Autowired
+    @Qualifier("irrigationContextFacade")
+    private IrrigationContextFacade irrigationContextFacade;
+    @Autowired
+    @Qualifier("waterTankContextFacade")
+    private WaterTankContextFacade waterTankContextFacade;
+    @Autowired
+    @Qualifier("bearerTokenService")
+    private BearerTokenService bearerTokenService;
+    @Autowired
+    private CropCommandServiceImpl cropCommandService;
+
+    @Configuration
+    static class MockConfig {
+        @Bean
+        @Primary
+        public CropRepository cropRepository() {
+            return org.mockito.Mockito.mock(CropRepository.class);
+        }
+
+        @Bean
+        @Primary
+        public TemperatureRepository temperatureRepository() {
+            return org.mockito.Mockito.mock(TemperatureRepository.class);
+        }
+
+        @Bean
+        @Primary
+        public HumidityRepository humidityRepository() {
+            return org.mockito.Mockito.mock(HumidityRepository.class);
+        }
+
+        @Bean
+        @Primary
+        public UserContextFacade userContextFacade() {
+            return org.mockito.Mockito.mock(UserContextFacade.class);
+        }
+
+        @Bean
+        @Primary
+        public IrrigationContextFacade irrigationContextFacade() {
+            return org.mockito.Mockito.mock(IrrigationContextFacade.class);
+        }
+
+        @Bean
+        @Primary
+        public WaterTankContextFacade waterTankContextFacade() {
+            return org.mockito.Mockito.mock(WaterTankContextFacade.class);
+        }
+
+        @Bean
+        @Primary
+        public BearerTokenService bearerTokenService() {
+            return org.mockito.Mockito.mock(BearerTokenService.class);
+        }
+
+        @Bean
+        public CropCommandServiceImpl cropCommandServiceImpl(CropRepository cropRepository,
+                TemperatureRepository temperatureRepository,
+                HumidityRepository humidityRepository,
+                UserContextFacade userContextFacade,
+                IrrigationContextFacade irrigationContextFacade,
+                WaterTankContextFacade waterTankContextFacade) {
+            return new CropCommandServiceImpl(cropRepository, temperatureRepository, humidityRepository,
+                    userContextFacade, irrigationContextFacade, waterTankContextFacade);
+        }
+    }
+
+    @Test
+    public void testCreateCropCommandSuccess() {
+        // Arrange
+        Long userId = 1L, tempId = 10L, humId = 20L, irrId = 30L;
+        CreateCropCommand command = new CreateCropCommand("Maíz", userId, tempId, humId, irrId, 1L);
+
+        User mockUser = new User("user", "pass");
+        Temperature mockTemp = new Temperature();
+        Humidity mockHum = new Humidity();
+
+        when(userContextFacade.fetchUserById(userId)).thenReturn(mockUser);
+        when(temperatureRepository.findById(tempId)).thenReturn(Optional.of(mockTemp));
+        when(humidityRepository.findById(humId)).thenReturn(Optional.of(mockHum));
+        when(irrigationContextFacade.fetchIrrigationById(irrId)).thenReturn(TestMocks.mockIrrigation());
+        when(waterTankContextFacade.fetchWaterTankById(1L)).thenReturn(TestMocks.mockWaterTank());
+
+        // Act
+        Optional<Crop> result = cropCommandService.handle(command);
+
+        // Assert
+        assertTrue(result.isPresent());
+        assertEquals("Maíz", result.get().getName());
+        verify(cropRepository, times(1)).save(any(Crop.class));
+    }
+
+    @Test
+    public void testCreateCropCommandTemperatureNotFound() {
+        CreateCropCommand command = new CreateCropCommand("Trigo", 1L, 999L, 20L, 20L, 1L);
+
+        when(userContextFacade.fetchUserById(1L)).thenReturn(new User("user", "pass"));
+        when(temperatureRepository.findById(999L)).thenReturn(Optional.empty());
+
+        RuntimeException exception = assertThrows(RuntimeException.class, () -> cropCommandService.handle(command));
+        assertEquals("Temperature not found", exception.getMessage());
+        verify(cropRepository, never()).save(any());
+    }
+
+    @Test
+    public void testCreateCropCommandHumidityNotFound() {
+        CreateCropCommand command = new CreateCropCommand("Cebada", 1L, 10L, 999L, 20L, 1L);
+
+        when(userContextFacade.fetchUserById(1L)).thenReturn(new User("user", "pass"));
+        when(temperatureRepository.findById(10L)).thenReturn(Optional.of(new Temperature()));
+        when(humidityRepository.findById(999L)).thenReturn(Optional.empty());
+        when(waterTankContextFacade.fetchWaterTankById(anyLong())).thenReturn(TestMocks.mockWaterTank());
+        when(irrigationContextFacade.fetchIrrigationById(anyLong())).thenReturn(TestMocks.mockIrrigation());
+
+        RuntimeException exception = assertThrows(RuntimeException.class, () -> cropCommandService.handle(command));
+        assertEquals("Humidity not found", exception.getMessage());
+        verify(cropRepository, never()).save(any());
+    }
+
+    @Test
+    public void testCreateCropCommandUserNotFound() {
+        CreateCropCommand command = new CreateCropCommand("Soja", 99L, 10L, 20L, 20L, 1L);
+
+        when(userContextFacade.fetchUserById(99L)).thenReturn(null);
+        when(waterTankContextFacade.fetchWaterTankById(anyLong())).thenReturn(TestMocks.mockWaterTank());
+        when(irrigationContextFacade.fetchIrrigationById(anyLong())).thenReturn(TestMocks.mockIrrigation());
+
+        assertThrows(RuntimeException.class, () -> cropCommandService.handle(command));
+        verify(cropRepository, never()).save(any());
+    }
+}
+```
+Ejecución:
 ![UnitTest11](img/test11-execution.jpeg)
 
 ---
 
 **Test 12: CropQueryServiceTests**  
 *Verifica la consulta de cultivos por ID y por usuario, validando condiciones de entrada como nulos o IDs inválidos.*  
+
+Código:
+```java
+@SpringBootTest
+public class CropQueryServiceTests {
+
+    @Configuration
+    static class MockConfig {
+        @Bean
+        public CropRepository cropRepository() {
+            return mock(CropRepository.class);
+        }
+
+        @Bean
+        public CropQueryServiceImpl cropQueryService(CropRepository cropRepository) {
+            return new CropQueryServiceImpl(cropRepository);
+        }
+    }
+
+    @Autowired
+    private CropRepository cropRepository;
+
+    @Autowired
+    private CropQueryServiceImpl cropQueryService;
+
+    @Test
+    public void testGetCropByIdQuerySuccess() {
+        Long cropId = 1L;
+        Crop mockCrop = new Crop();
+        when(cropRepository.findById(cropId)).thenReturn(Optional.of(mockCrop));
+
+        var query = new GetCropByIdQuery(cropId);
+        Optional<Crop> result = cropQueryService.handle(query);
+
+        assertTrue(result.isPresent());
+        assertEquals(mockCrop, result.get());
+        verify(cropRepository, times(1)).findById(cropId);
+    }
+
+    @Test
+    public void testGetCropByIdQueryNotFound() {
+        Long cropId = 99L;
+        when(cropRepository.findById(cropId)).thenReturn(Optional.empty());
+
+        var query = new GetCropByIdQuery(cropId);
+        Optional<Crop> result = cropQueryService.handle(query);
+
+        assertTrue(result.isEmpty());
+        verify(cropRepository, times(1)).findById(cropId);
+    }
+
+    @Test
+    public void testGetAllCropsByUserIdQuerySuccess() {
+        Long userId = 1L;
+        List<Crop> mockCrops = List.of(new Crop(), new Crop());
+        when(cropRepository.findAllByUserId(userId)).thenReturn(mockCrops);
+
+        var query = new GetAllCropsByUserIdQuery(userId);
+        List<Crop> result = cropQueryService.handle(query);
+
+        assertEquals(2, result.size());
+        verify(cropRepository, times(1)).findAllByUserId(userId);
+    }
+
+    @Test
+    public void testGetCropByIdQueryNullId() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            new GetCropByIdQuery(null);
+        });
+        assertEquals("cropId cannot be null", exception.getMessage());
+    }
+
+    @Test
+    public void testGetCropByIdQueryNegativeId() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            new GetCropByIdQuery(-1L);
+        });
+        assertEquals("cropId cannot be negative", exception.getMessage());
+    }
+
+    @Test
+    public void testGetAllCropsByUserIdQueryNullId() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            new GetAllCropsByUserIdQuery(null);
+        });
+        assertEquals("userId cannot be null", exception.getMessage());
+    }
+
+    @Test
+    public void testGetAllCropsByUserIdQueryNegativeId() {
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            new GetAllCropsByUserIdQuery(-1L);
+        });
+        assertEquals("userId cannot be negative", exception.getMessage());
+    }
+}
+```
+Ejecución:
 ![UnitTest12](img/test12-execution.jpeg)
 
 ---
 
 **Test 13: TemperatureCommandServiceTests**  
 *Prueba la creación y actualización de temperaturas, asegurando la lógica de umbrales y asignación de estados según el valor.*  
+
+Código:
+```java
+@SpringBootTest
+public class TemperatureCommandServiceTests {
+
+        @Configuration
+        static class MockConfig {
+                @Bean
+                public TemperatureRepository temperatureRepository() {
+                        return Mockito.mock(TemperatureRepository.class);
+                }
+
+                @Bean
+                public TemperatureStatusRepository temperatureStatusRepository() {
+                        return Mockito.mock(TemperatureStatusRepository.class);
+                }
+
+                @Bean
+                public TemperatureCommandServiceImpl temperatureCommandService(TemperatureRepository temperatureRepository,
+                                                                               TemperatureStatusRepository temperatureStatusRepository) {
+                        return new TemperatureCommandServiceImpl(temperatureRepository, temperatureStatusRepository);
+                }
+        }
+
+        private final Float MIN = 10.0f;
+        private final Float MAX = 30.0f;
+
+        @Autowired
+        private TemperatureRepository temperatureRepository;
+
+        @Autowired
+        private TemperatureStatusRepository temperatureStatusRepository;
+
+        @Autowired
+        private TemperatureCommandServiceImpl temperatureCommandService;
+
+        @Test
+        void testCreateTemperatureSuccess() {
+                // Arrange
+                CreateTemperatureCommand command = new CreateTemperatureCommand(25.0f, MIN, MAX);
+                TemperatureStatus status = new TemperatureStatus(TemperatureStatusList.FAVORABLE);
+                Temperature temperature = new Temperature(command, status);
+
+                Mockito.when(temperatureStatusRepository.findByName(TemperatureStatusList.FAVORABLE))
+                        .thenReturn(Optional.of(status));
+                Mockito.when(temperatureRepository.save(Mockito.any(Temperature.class)))
+                        .thenReturn(temperature);
+
+                // Act
+                Optional<Temperature> result = temperatureCommandService.handle(command);
+
+                // Assert
+                assertTrue(result.isPresent());
+                assertEquals(command.temperature(), result.get().getTemperature());
+                assertEquals(TemperatureStatusList.FAVORABLE, result.get().getTemperatureStatus().getName());
+        }
+
+
+        @Test
+        void testPatchTemperatureSuccess() {
+                // Arrange
+                PatchTemperatureCommand command = new PatchTemperatureCommand(1L, 8.0f); 
+                Temperature existing = new Temperature(new CreateTemperatureCommand(15.0f, MIN, MAX),
+                        new TemperatureStatus(TemperatureStatusList.FAVORABLE));
+                existing.setId(1L);
+
+                TemperatureStatus newStatus = new TemperatureStatus(TemperatureStatusList.SLIGHTLY_UNFAVORABLE_UNDER);
+
+                Mockito.when(temperatureRepository.findById(1L))
+                        .thenReturn(Optional.of(existing));
+                Mockito.when(temperatureStatusRepository.findByName(TemperatureStatusList.SLIGHTLY_UNFAVORABLE_UNDER))
+                        .thenReturn(Optional.of(newStatus));
+                Mockito.when(temperatureRepository.save(Mockito.any(Temperature.class)))
+                        .thenAnswer(i -> i.getArguments()[0]);
+
+                // Act
+                temperatureCommandService.handle(command);
+
+                // Assert
+                assertEquals(command.temperature(), existing.getTemperature());
+                assertEquals(TemperatureStatusList.SLIGHTLY_UNFAVORABLE_UNDER,
+                        existing.getTemperatureStatus().getName());
+        }
+
+        @Test
+        void testInvalidThreshold() {
+                // Arrange
+                CreateTemperatureCommand command = new CreateTemperatureCommand(25.0f, 40.0f, 20.0f);
+
+                // Act & Assert
+                Exception exception = assertThrows(RuntimeException.class,
+                        () -> temperatureCommandService.handle(command));
+                assertEquals("The min threshold cannot be greater than the max threshold", exception.getMessage());
+        }
+
+        @Test
+        void testInvalidStatus() {
+                // Arrange
+                CreateTemperatureCommand command = new CreateTemperatureCommand(25.0f, MIN, MAX);
+
+                Mockito.when(temperatureStatusRepository.findByName(TemperatureStatusList.FAVORABLE))
+                        .thenReturn(Optional.empty());
+
+                // Act & Assert
+                assertThrows(RuntimeException.class, () -> temperatureCommandService.handle(command));
+        }
+}
+```
+Ejecución:
 ![UnitTest13](img/test13-execution.jpeg)
 
 #### 6.2.3.6. Execution Evidence
