@@ -6232,6 +6232,99 @@ En esta sección se presenta el equipo que participará en la elaboración del a
 #### 6.2.3.3. Sprint Backlog 3
 #### 6.2.3.4. Development Evidence
 #### 6.2.3.5. Testing Suite Evidence
+
+Para esta Sprint 3, el equipo decidió realizar pruebas unitarias finales para validar componentes clave del backend (como clases o servicios), los cuales son fundamentales para el correcto funcionamiento de nuestra aplicación tanto web como móvil.
+
+**Estructura de una prueba unitaria típica:**
+
+1. **Arrange (Preparación):** Se inicializan los objetos y dependencias necesarias.
+2. **Act (Ejecución):** Se ejecuta el método o función a probar.
+3. **Assert (Verificación):** Se comprueba que los resultados sean los esperados.
+
+Imagen con la estructura como ejemplo de los unit test realizados:
+
+![UnitTestStructure](img/unit-test-structure.png)
+
+A continuación se muestran las ejecuciones de los tests junto con una breve descripción de su propósito:
+
+---
+
+**Test 1: PasswordResetTokenTest**  
+*Valida correctamente los getters y setters de la entidad `PasswordResetToken` para asegurar el correcto manejo del token de recuperación de contraseña.*  
+![UnitTest1](img/test1-execution.jpeg)
+
+---
+
+**Test 2: EmailServiceTest**  
+*Verifica que el servicio de email construya y envíe correctamente un mensaje de restablecimiento de contraseña utilizando el token generado.*  
+![UnitTest2](img/test2-execution.jpeg)
+
+---
+
+**Test 3: IrrigationCommandServiceImplTest**  
+*Prueba el manejo de comandos para crear y actualizar configuraciones de riego, asegurando la persistencia adecuada y la asociación de estados.*  
+![UnitTest3](img/test3-execution.jpeg)
+
+---
+
+**Test 4: IrrigationStatusCommandServiceImplTest**  
+*Verifica que se registren correctamente los estados de riego iniciales en la base de datos si no existen previamente.*  
+![UnitTest4](img/test4-execution.jpeg)
+
+---
+
+**Test 5: WaterTankCommandServiceImplTest**  
+*Valida la creación, modificación y eliminación de tanques de agua, así como sus estados y relación con cultivos.*  
+![UnitTest5](img/test5-execution.jpeg)
+
+---
+
+**Test 6: WaterTankStatusCommandServiceImplTest**  
+*Prueba el sembrado de estados faltantes para tanques de agua, asegurando que solo los ausentes sean guardados.*  
+![UnitTest6](img/test6-execution.jpeg)
+
+---
+
+**Test 7: IrrigationTest**  
+*Comprueba el constructor y los métodos de actualización de la entidad `Irrigation` con comandos de creación y actualización.*  
+![UnitTest7](img/test7-execution.jpeg)
+
+---
+
+**Test 8: WaterTankTest**  
+*Valida los constructores y métodos `patch` de la entidad `WaterTank`, para modificar nombre, cantidad de agua y estado.*  
+![UnitTest8](img/test8-execution.jpeg)
+
+---
+
+**Test 9: UserCommandServiceTests**  
+*Evalúa los flujos de autenticación y registro de usuarios, incluyendo validaciones de existencia, contraseñas y roles.*  
+![UnitTest9](img/test9-execution.jpeg)
+
+---
+
+**Test 10: UserQueryServiceTests**  
+*Verifica consultas sobre usuarios, tanto por ID como por nombre de usuario, así como la recuperación de todos los usuarios.*  
+![UnitTest10](img/test10-execution.jpeg)
+
+---
+
+**Test 11: CropCommandServiceTests**  
+*Prueba la creación de cultivos, validando todas sus dependencias (usuario, temperatura, humedad, riego, tanque) y su persistencia.*  
+![UnitTest11](img/test11-execution.jpeg)
+
+---
+
+**Test 12: CropQueryServiceTests**  
+*Verifica la consulta de cultivos por ID y por usuario, validando condiciones de entrada como nulos o IDs inválidos.*  
+![UnitTest12](img/test12-execution.jpeg)
+
+---
+
+**Test 13: TemperatureCommandServiceTests**  
+*Prueba la creación y actualización de temperaturas, asegurando la lógica de umbrales y asignación de estados según el valor.*  
+![UnitTest13](img/test13-execution.jpeg)
+
 #### 6.2.3.6. Execution Evidence
 #### 6.2.3.7. Services Documentation
 #### 6.2.3.8. Deployment Evidence
