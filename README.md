@@ -218,17 +218,13 @@
     </td>
     <td>
       <p>Frontend Web</p>
-      <img src="img/sprint-2-insights-1.png">
-      <p>Frontend Móvil</p>
-      <img src="img/sprint-2-insights-2.png">
+      <img src="img/sprint-3-insights-1.png">
       <p>Backend</p>
       <img src="img/sprint-2-insights-3.png">
       <p>Edge API</p>
       <img src="img/sprint-2-insights-4.png">
       <p>Prototipo del Sistema Embebido en Wokwi</p>
-      <img src="img/sprint-2-insights-5.png">
-      <p>Landing Page</p>
-      <img src="img/sprint-2-insights-6.png">
+      <img src="img/sprint-3-insights-2.png">
     </td>
   </tr>
 </table>
@@ -6210,11 +6206,11 @@ Se planeó el tercer sprint a través de una reunión presencial. Para ello, se 
   </tr>
   <tr>
     <th>Sprint 3 Velocity</th>
-    <td>XX</td>
+    <td>20</td>
   </tr>
   <tr>
     <th>Sum of Story Points</th>
-    <td>XX</td>
+    <td>20</td>
   </tr>
   </tr>
 </table>
@@ -6355,8 +6351,6 @@ En esta sección se presenta el equipo que participará en la elaboración del a
 #### 6.2.3.4. Development Evidence
 
 #### 6.2.3.5. Testing Suite Evidence
-
-
 Para esta Sprint 3, el equipo decidió realizar pruebas unitarias finales para validar componentes clave del backend (como clases o servicios), los cuales son fundamentales para el correcto funcionamiento de nuestra aplicación tanto web como móvil.
 
 **Estructura de una prueba unitaria típica:**
@@ -7408,10 +7402,61 @@ Ejecución:
 #### 6.2.3.6. Execution Evidence
 
 #### 6.2.3.7. Services Documentation
+##### Controlador de Cultivos
+
+Se han modificado y/o agregado los siguientes endpoints del controlador
+
+![Controlador Cultivos](img/sprint-3-services-1.png)
+
+1. `GET api/v1/crop/user/{userId}/reference` Obtiene las referencias (id) de las otras tablas relacionadas con el crop del usuario proporcionado
+2. `GET api/v1/crop/user/{userId}/light` Obtiene los datos más importantes de las otras tablas relacionadas con el crop del usuario proporcionado
+
+##### Controlador de Tanques de Agua
+
+Se ha añadido un nuevo endpoint
+
+![Controlador Tanque de Agua](img/sprint-3-services-2.png)
+
+1. `GET api/v1/water-tanks/{id}/water-capacity` Actualiza la capacidad del agua del Tanque, proporcionadno un id
 
 #### 6.2.3.8. Deployment Evidence
-
+El despliegue de las aplicaciones se ha mantenido igual, por lo que esta sección queda en blanco
 #### 6.2.3.9. Collaboration Insights
+Durante el Sprint 3, el equipo mantuvo una comunicación efectiva y constante mediante reuniones diarias tipo _daily scrum_, donde se revisaba el avance de las tareas, se resolvían bloqueos y se coordinaban actividades clave. Además, se utilizó WhatsApp como canal principal de comunicación para intercambiar información, compartir recursos y dar seguimiento en tiempo real al desarrollo.
+
+En cuanto a la gestión del código, se trabajó de forma diferenciada según el tipo de repositorio:
+
+- **Repositorio del reporte**: Todo el trabajo se realizó directamente en la rama `main`, permitiendo un control centralizado del contenido del informe sin la necesidad de múltiples ramas, lo que facilitó un flujo más directo de edición y seguimiento.
+
+- **Repositorio de la landing page**: Se desarrolló completamente en la rama `main`, ya que se trataba de un componente más estático y enfocado en presentación, lo cual no requirió una estructura compleja de ramas.
+
+- **Repositorios de frontend, backend y edge api de la aplicación**: Se implementó un flujo de trabajo basado en ramas, también conocido como Gitflow, utilizando una rama `develop` como base de desarrollo, ramas específicas con el prefijo `/feature` para el desarrollo de funcionalidades individuales y la rama `hotfix` para cambios rápidos. Esto permitió un control más organizado, facilitando pruebas, revisiones y eventual integración al entorno principal.
+
+- **Repositorio wokwi**: Se desarrolló completamente en la rama `main`, ya que no se realizaron una gran cantidad de cambios en el proyecto y la mayor parte del desarrollo y esquematizado de la aplicación fue realizado en el primer commit.
+
+Este enfoque mixto permitió mantener un equilibrio entre agilidad y control del desarrollo. Gracias a la colaboración constante del equipo y a una adecuada distribución de tareas, se cumplieron exitosamente los objetivos del Sprint 1, asegurando un progreso sólido y bien documentado en este reporte.
+
+###### Frontend Web
+
+![Insights](img/sprint-3-insights-1.png)
+
+###### Frontend Mobile
+No se realizaron cambios
+
+###### Frontend Backend
+
+![Insights](img/sprint-2-insights-3.png)
+
+###### Frontend Edge API
+
+![Insights](img/sprint-2-insights-4.png)
+
+###### Prototipo en Wokwi
+
+![Insights](img/sprint-3-insights-2.png)
+
+###### Frontend Landing Page
+No se han hecho cambios
 
 ## 6.3. Validation Interviews
 
