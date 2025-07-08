@@ -6350,6 +6350,35 @@ En esta sección se presenta el equipo que participará en la elaboración del a
 
 #### 6.2.3.4. Development Evidence
 
+En esta sección se incluirán los cambios realizados a la aplicación y el sistema IoT, así como la vista de la primera versión de los sistemas embebidos realizados.
+
+1. Backend Application: **[Repositorio Backend](https://github.com/iot-solutions64/backend)**
+2. Frontend Application: **[Repositorio Frontend](https://github.com/iot-solutions64/frontend-web)**
+3. Mobile Application: **[Repositorio Mobile](https://github.com/iot-solutions64/frontend-movil)**
+4. Edge API: **[Repositorio Edge API](https://github.com/iot-solutions64/edge-api)**
+5. Sistema Embebido: **[Repositorio Sistema Embebido](https://wokwi.com/projects/431338881324863489)**
+
+| Repository | Branch | Commit Id | Commit Message | Commit Message | Commited on (Date) |
+| --- | --- | --- | ------ | ------ | ---- |
+| frontend-web | feature/backend-connection | 501e5fdf962300dc7792b627f1e048edbd4c9619 | feat: connected some crop and water tank services | none  | 27/06/2025 |
+| wokwi | main | 007f62c27eac3e519136f9d5e3c9278d6c9b0007 | feat: update pin assignment | none  | 28/06/2025 |
+| frontend-web | feature/backend-connection | 96e9bc13b253994dae604595c67d8b45072ca90e | fix: update ref types functionality | Error with auth store appears but its IDE related  | 03/07/2025 |
+| frontend-web | feature/backend-connection | a1b2e09cb4ec1fa12d264d1b09f3d90b14c82b52 | feat: improve add crop dialog | Also fix responsiveness of crop table  | 03/07/2025 |
+| frontend-web | feature/backend-connection | 0c4cf576245a53cd46a62c4d1be615465792ed41 | feat: improve edit crop dialog | none  | 03/07/2025 |
+| frontend-web | feature/backend-connection | 5bb45fda4a482195c59a8b5c17dd881d1afe853f | fix: add missing async & awaits | none  | 03/07/2025 |
+| frontend-web | feature/backend-connection | 152f236c95a299f25ed629753cd9929b534ad742 | feat: update tanks to connect to backend | none  | 03/07/2025 |
+| frontend-web | feature/backend-connection | 007f62c27eac3e519136f9d5e3c9278d6c9b0007 | feat: update crop by user id url | none  | 03/07/2025 |
+| backend | develop | bf562c03eeeafc519759cb3ca230afcfec1de085 | fix: mockBean for tests from bc soild deleted | none  | 03/07/2025 |
+| backend | develop | 136c87750338a11ed4db465ab09b8f879f6c83eb | fix: endpoint delete for crop updated | none  | 03/07/2025 |
+| backend | develop | a47d7761b7234281b95654fcfd9822d30de1d2c6 | feat: endpoint patch for water-total added | none  | 03/07/2025 |
+| backend | develop | cbb9e37fafa2b02d6bf7344ad1db303c96b694fb | feat: change name for an endpoint patch in waterTank controller | none  | 03/07/2025 |
+| backend | develop | a862fa991e16721ac38734d486a26c158456f3a3 | fix: fixed java version and endpoint names | none  | 03/07/2025 |
+| edge-api | develop | 24bd8eaa348c0a3c3159195fa1e2ccad51848612 | feat: migrate to domain driven design | none  | 04/07/2025 |
+| edge-api | develop | 691bff0d90169b28e7a3b9e0394f352264024119 | feat: add mqtt publish for thresholds | none  | 07/07/2025 |
+| frontend-movil | feature/services | e569a2bb9160f2fc0870f6341d07142c93f2df0a | feat: update baseUrl and getCrops endpoint | none  | 07/07/2025 |
+| wokwi | main | a11e8dabe99dd89171a1d78292a4ac75427bf084 | feat: update mqtt connection to retrieve data | none  | 07/07/2025 |
+
+
 #### 6.2.3.5. Testing Suite Evidence
 Para esta Sprint 3, el equipo decidió realizar pruebas unitarias finales para validar componentes clave del backend (como clases o servicios), los cuales son fundamentales para el correcto funcionamiento de nuestra aplicación tanto web como móvil.
 
