@@ -7430,6 +7430,14 @@ Ejecución:
 
 #### 6.2.3.6. Execution Evidence
 
+A continuación se presentan los enlaces a las evidencias de ejecución realizadas en el Sprint 3:
+
+Se muestra el video de la ejecución de la aplicación móvil de HydroSmart, donde se puede observar la interacción con los cultivos, el tanque de agua y las recomendaciones de riego.
+
+[Mobile Execution Evidence](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b127_upc_edu_pe/EaOoB2CCs6hPmfAnhrhrVH0BXrNNhpdYCHEVctDhntNKkA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=O6Jf3T)
+
+<img src="img/execution-evidence-mobile.png" alt="Mobile Execution Evidence" width="400">
+
 #### 6.2.3.7. Services Documentation
 ##### Controlador de Cultivos
 
