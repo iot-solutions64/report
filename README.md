@@ -7475,7 +7475,10 @@ Se ha añadido un nuevo endpoint
 1. `GET api/v1/water-tanks/{id}/water-capacity` Actualiza la capacidad del agua del Tanque, proporcionadno un id
 
 #### 6.2.3.8. Deployment Evidence
-El despliegue de las aplicaciones se ha mantenido igual, por lo que esta sección queda en blanco
+El despliegue de las aplicaciones se ha mantenido igual, por lo que esta sección queda en blanco.
+
+Para ver los enlaces de despliegue, se puede consultar la sección de **Enlaces de aplicaciones desplegadas** en Anexos.
+
 #### 6.2.3.9. Collaboration Insights
 Durante el Sprint 3, el equipo mantuvo una comunicación efectiva y constante mediante reuniones diarias tipo _daily scrum_, donde se revisaba el avance de las tareas, se resolvían bloqueos y se coordinaban actividades clave. Además, se utilizó WhatsApp como canal principal de comunicación para intercambiar información, compartir recursos y dar seguimiento en tiempo real al desarrollo.
 
@@ -7794,8 +7797,7 @@ Escuela de Gestión Pública de la Universidad del Pacífico. (2022). Informe de
 2. Landing Page: **[HydroSmart Landing Page](https://iot-solutions64.github.io/landing-page/)**
 3. Aplicación Móvil: **[HydroSmart Mobile](https://drive.google.com/drive/folders/1Yxmbz_3_UVJywm3reoKRQUB18wk7-HfZ?usp=sharing)**
 4. Backend: **[HydroSmart Backend](https://api-hydrosmart.up.railway.app/swagger-ui/index.html)**
-5. Edge API: **[HydroSmart Edge API](pendiente)**
-6. Sistema Embebido: **[HydroSmart Sistema Embebido](https://wokwi.com/projects/435611712902475777)**
+5. Sistema Embebido: **[HydroSmart Sistema Embebido](https://wokwi.com/projects/435611712902475777)**
 
 ##### Otros
 
