@@ -7780,7 +7780,7 @@ Escuela de Gestión Pública de la Universidad del Pacífico. (2022). Informe de
 
 1. Aplicación Web: **[HydroSmart Web](https://hydrosmart-iot.netlify.app)**
 2. Landing Page: **[HydroSmart Landing Page](https://iot-solutions64.github.io/landing-page/)**
-3. Aplicación Móvil: **[HydroSmart Mobile](pendiente)**
+3. Aplicación Móvil: **[HydroSmart Mobile](https://drive.google.com/drive/folders/1Yxmbz_3_UVJywm3reoKRQUB18wk7-HfZ?usp=sharing)**
 4. Backend: **[HydroSmart Backend](https://api-hydrosmart.up.railway.app/swagger-ui/index.html)**
 5. Edge API: **[HydroSmart Edge API](pendiente)**
 6. Sistema Embebido: **[HydroSmart Sistema Embebido](https://wokwi.com/projects/435611712902475777)**
