@@ -6194,7 +6194,7 @@ Se planeó el tercer sprint a través de una reunión presencial. Para ello, se 
     <td>Se mejoró la landing page y frontend web. Se desarrolló una primera versión del backend, edge api y sistema embebido de la aplicación.</td>
   </tr>
   <tr>
-    <th>Sprint N°1 Retrospective Summary</th>
+    <th>Sprint N°2 Retrospective Summary</th>
     <td>Se dividieron las tareas entre los desarrolladores de equipo. Se lograron realizar avances significativos en el tiempo establecido. Se busca mantener este ritmo en el presente sprint.</td>
   </tr>
   <tr>
@@ -7432,17 +7432,29 @@ Ejecución:
 
 A continuación se presentan los enlaces a las evidencias de ejecución realizadas en el Sprint 3:
 
+###### Aplicación Mobile
+
 Se muestra el video de la ejecución de la aplicación móvil de HydroSmart, donde se puede observar la interacción con los cultivos, el tanque de agua y las recomendaciones de riego.
 
 [Mobile Execution Evidence](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20221b127_upc_edu_pe/EaOoB2CCs6hPmfAnhrhrVH0BXrNNhpdYCHEVctDhntNKkA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=O6Jf3T)
 
 <img src="img/execution-evidence-mobile.png" alt="Mobile Execution Evidence" width="400">
 
+###### Aplicación Web
+
 Se muestra el video de la ejecución de la aplicación web de HydroSmart, donde se puede observar la interacción de los cultivos y el tanque de agua con el sistema embebido.
 
 [Web Execution Evidence](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/EU6FRY1344NMlgRoVip83MIBKKVPRHLcJLJHvZ3dNl1yPA?e=o2muiI&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 <img src="img/execution-evidence-web.png" alt="Web Execution Evidence" width="400">
+
+###### Aplicación Embebida
+
+Se muestra el video de la ejecución del Sistema Embebido de HydroSmart. Se ha añadido un nuevo componente Relay y se han arreglado los errores de transmisión de datos
+
+[IOT Execution Evidence](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202217241_upc_edu_pe/EfscLWzbn_ZDk28Xy8JRiqwB-2E933ymFLFcyhJn3Tn2tg?e=jJG8hm&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+<img src="img/sprint-3-execution-system.jpeg" alt="IOT Execution Evidence" width="400">
 
 #### 6.2.3.7. Services Documentation
 ##### Controlador de Cultivos
