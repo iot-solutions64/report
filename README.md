@@ -7438,6 +7438,12 @@ Se muestra el video de la ejecución de la aplicación móvil de HydroSmart, don
 
 <img src="img/execution-evidence-mobile.png" alt="Mobile Execution Evidence" width="400">
 
+Se muestra el video de la ejecución de la aplicación web de HydroSmart, donde se puede observar la interacción de los cultivos y el tanque de agua con el sistema embebido.
+
+[Web Execution Evidence](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210749_upc_edu_pe/EU6FRY1344NMlgRoVip83MIBKKVPRHLcJLJHvZ3dNl1yPA?e=o2muiI&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+<img src="img/execution-evidence-web.png" alt="Web Execution Evidence" width="400">
+
 #### 6.2.3.7. Services Documentation
 ##### Controlador de Cultivos
 
@@ -7769,6 +7775,15 @@ Escuela de Gestión Pública de la Universidad del Pacífico. (2022). Informe de
 4. Landing Page Application: **[Repositorio Landing Page](https://github.com/iot-solutions64/landing-page)**
 5. Edge API: **[Repositorio Edge API](https://github.com/iot-solutions64/edge-api)**
 6. Sistema Embebido: **[Repositorio Sistema Embebido](https://wokwi.com/projects/431338881324863489)**
+
+##### Enlaces de aplicaciones desplegadas
+
+1. Aplicación Web: **[HydroSmart Web](https://hydrosmart-iot.netlify.app)**
+2. Landing Page: **[HydroSmart Landing Page](https://iot-solutions64.github.io/landing-page/)**
+3. Aplicación Móvil: **[HydroSmart Mobile](pendiente)**
+4. Backend: **[HydroSmart Backend](https://api-hydrosmart.up.railway.app/swagger-ui/index.html)**
+5. Edge API: **[HydroSmart Edge API](pendiente)**
+6. Sistema Embebido: **[HydroSmart Sistema Embebido](https://wokwi.com/projects/435611712902475777)**
 
 ##### Otros
 
